@@ -37,6 +37,8 @@ jobs:
             .brushquay/evidence/**/*.log
             .brushquay/evidence/**/*.xml
             .brushquay/evidence/**/*.kws
+            .brushquay/build/product-test-reports/*.xml
+            .brushquay/build/product-test-reports/*.log
           include-hidden-files: true
           retention-days: 14
           if-no-files-found: warn

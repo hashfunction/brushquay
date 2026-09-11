@@ -150,7 +150,7 @@ def main():
             record['status'] = 'compiled'
             expected_tests = {'libs-ui-' + name for name in (
                 'KisBrushQuayIdentityTest', 'KisBrushQuayWorkspaceTest', 'KisExportPresetIntegrationTest',
-                'KisExportFileTransactionTest', 'KisExportPresetStoreTest')}
+                'KisExportFileTransactionTest', 'KisExportPresetStoreTest', 'KisClipboardNullTest')}
             test_pattern = '^(' + '|'.join(sorted(expected_tests)) + ')$'
             ctest = stage / 'tools/cmake/bin/ctest.exe'
             test_environment = dict(environment)

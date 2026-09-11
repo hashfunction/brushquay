@@ -1,9 +1,15 @@
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/product-test-reports")
+
 kis_add_test(KisBrushQuayWorkspaceTest.cpp
     TEST_NAME KisBrushQuayWorkspaceTest
+    TEST_ARGUMENTS -o "${CMAKE_BINARY_DIR}/product-test-reports/KisBrushQuayWorkspaceTest.xml,junitxml"
+        -o "${CMAKE_BINARY_DIR}/product-test-reports/KisBrushQuayWorkspaceTest.log,txt"
     LINK_LIBRARIES kritaui kritatestsdk)
 
 kis_add_test(KisBrushQuayIdentityTest.cpp
     TEST_NAME KisBrushQuayIdentityTest
+    TEST_ARGUMENTS -o "${CMAKE_BINARY_DIR}/product-test-reports/KisBrushQuayIdentityTest.xml,junitxml"
+        -o "${CMAKE_BINARY_DIR}/product-test-reports/KisBrushQuayIdentityTest.log,txt"
     LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Test)
 target_include_directories(KisBrushQuayIdentityTest PRIVATE ${CMAKE_SOURCE_DIR}/libs/global)
 
@@ -12,15 +18,27 @@ set_target_properties(KisBrushQuayIdentityTest PROPERTIES AUTORCC ON)
 
 kis_add_test(KisExportPresetIntegrationTest.cpp
     TEST_NAME KisExportPresetIntegrationTest
+    TEST_ARGUMENTS -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportPresetIntegrationTest.xml,junitxml"
+        -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportPresetIntegrationTest.log,txt"
     LINK_LIBRARIES kritaui kritaexportpresets kritatestsdk)
 
 kis_add_test(KisExportFileTransactionTest.cpp
     TEST_NAME KisExportFileTransactionTest
+    TEST_ARGUMENTS -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportFileTransactionTest.xml,junitxml"
+        -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportFileTransactionTest.log,txt"
     LINK_LIBRARIES kritaexportpresets Qt${QT_MAJOR_VERSION}::Test)
 
 kis_add_test(KisExportPresetStoreTest.cpp
     TEST_NAME KisExportPresetStoreTest
+    TEST_ARGUMENTS -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportPresetStoreTest.xml,junitxml"
+        -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportPresetStoreTest.log,txt"
     LINK_LIBRARIES kritaexportpresets Qt${QT_MAJOR_VERSION}::Test)
+
+kis_add_test(KisClipboardNullTest.cpp
+    TEST_NAME KisClipboardNullTest
+    TEST_ARGUMENTS -o "${CMAKE_BINARY_DIR}/product-test-reports/KisClipboardNullTest.xml,junitxml"
+        -o "${CMAKE_BINARY_DIR}/product-test-reports/KisClipboardNullTest.log,txt"
+    LINK_LIBRARIES kritaui kritatestsdk)
 
 kis_add_tests(
     kis_image_view_converter_test.cpp
