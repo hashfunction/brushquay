@@ -32,7 +32,7 @@ public:
 KisAboutApplication::KisAboutApplication(QWidget *parent)
     : KoDialog(parent)
 {
-    setWindowTitle(i18n("About Krita"));
+    setWindowTitle(i18n("About BrushQuay"));
     setButtons(KoDialog::Close);
 
     WdgAboutApplication *wdgTab = new WdgAboutApplication(this);
@@ -46,7 +46,7 @@ KisAboutApplication::KisAboutApplication(QWidget *parent)
     QString authors = i18n("<html>"
                           "<head/>"
                           "<body>"
-                          "<h1 align=\"center\">Created By</h1></p>"
+                          "<h1 align=\"center\">BrushQuay by Trieflow LLC</h1><p>Based on Krita. Independent distribution.</p><h2>Upstream developers</h2>"
                           "<p>");
 
     QFile fileDevelopers(":/developers.txt");
@@ -90,15 +90,10 @@ KisAboutApplication::KisAboutApplication(QWidget *parent)
     wdgTab->lblTranslators->setText(translatorHtml);
 
     QString sponsors = i18n(
-        "<html><head/><body>"
-        "<h1 align=\"center\">Development Fund</h1>"
-        "<p align=\"center\"> <a href=\"https://intel.com\"><img src=\":/intel.png\"></a> "
-        "<h2 align=\"center\">One Time Sponsors</h2>"
-        "<p align=\"center\"> <a href=\"https://www.unrealengine.com/en-US/megagrants\"><img src=\":/epic.png\"></a> "
-        "<p align=\"center\"> <a href=\"http://brokenrul.es/\"><img src=\":/broken_rules.png\"></a> "
-        "<p align=\"center\"> <a href=\"https://game-chuck.com/\"><img src=\":/gamechuck.png\"></a> "
-        "<p align=\"center\"> <a href=\"https://www.fosshub.com/Krita.html\"><img src=\":/fosshub.png\"></a> "
-        "<p align=\"center\"> <a href=\"http://www.asifa-hollywood.org/\"><img src=\":/asifa.png\"></a> "
+        "<html><body><h1>Upstream sponsor acknowledgments</h1>"
+        "<p>The upstream Krita project acknowledges Intel, Epic MegaGrants, Broken Rules, "
+        "Gamechuck, FossHub and ASIFA-Hollywood for their support.</p>"
+        "<p>These historical credits do not imply sponsorship or endorsement of BrushQuay.</p>"
         "</body></html>");
     wdgTab->lblKickstarter->setText(sponsors);
 
@@ -133,20 +128,14 @@ KisAboutApplication::KisAboutApplication(QWidget *parent)
                            "<head/>"
                            "<body>"
                            "<h1 align=\"center\"><b>Your Rights</b></h1>"
-                           "<p>Krita is released under the GNU General Public License (version 3 or any later version).</p>"
+                           "<p>BrushQuay is an independent Trieflow LLC product based on Krita, released under the GNU General Public License (version 3 or any later version).</p>"
                            "<p>This license grants people a number of freedoms:</p>"
                            "<ul>"
-                           "<li>You are free to use Krita, for any purpose</li>"
-                           "<li>You are free to distribute Krita</li>"
-                           "<li>You can study how Krita works and change it</li>"
-                           "<li>You can distribute changed versions of Krita</li>"
+                           "<li>You may use, study and modify BrushQuay.</li>"
+                           "<li>You may redistribute BrushQuay under the GNU GPL, including its source obligations.</li>"
                            "</ul>"
-                           "<p>The Krita Foundation and its projects on krita.org are <b>committed</b> to preserving Krita as free software.</p>"
                            "<h1 align=\"center\">Your artwork</h1>"
-                           "<p>What you create with Krita is your sole property. All your artwork is free for you to use as you like.</p>"
-                           "<p>That means that Krita can be used commercially, for any purpose. There are no restrictions whatsoever.</p>"
-                           "<p>Krita’s GNU GPL license guarantees you this freedom. Nobody is ever permitted to take it away, in contrast "
-                           "to trial or educational versions of commercial software that will forbid your work in commercial situations.</p>"
+                           "<p>The application license does not impose licensing terms on your independently created artwork.</p>"
                            "<br/><hr/><pre>");
 
     QFile licenseFile(":/LICENSE");

@@ -166,6 +166,12 @@ private Q_SLOTS:
         QVERIFY(KisExportPreset::deserialize(bytes, copy).ok());
         QCOMPARE(copy.properties["transparencyFillcolor"], QVariant(xml));
     }
+    void colorOpacityRoundTrip()
+    {
+        auto p=png(); p.properties.insert("transparencyFillcolor", "<color channeldepth=\"U8\" opacity=\"0.5\"><RGB r=\"1\" g=\"0\" b=\"0\" space=\"sRGB\"/></color>");
+        QByteArray data; QVERIFY(p.serialize(data).ok()); KisExportPreset copy;
+        QVERIFY(KisExportPreset::deserialize(data,copy).ok()); QCOMPARE(copy.properties,p.properties);
+    }
     void unsafeColorXml_data()
     {
         QTest::addColumn<QString>("xml");
@@ -175,6 +181,8 @@ private Q_SLOTS:
         QTest::newRow("path profile") << "<color><RGB space=\"C:/private.icc\"/></color>";
         QTest::newRow("metadata") << "<color><RGB/><metadata name=\"source\" value=\"/private\"/></color>";
         QTest::newRow("nested") << "<color><color><RGB/></color></color>";
+        QTest::newRow("integer channel overflow") << "<color channeldepth=\"U8\"><RGB r=\"999999\" g=\"0\" b=\"0\"/></color>";
+        QTest::newRow("invalid opacity") << "<color channeldepth=\"U8\" opacity=\"NaN\"><RGB r=\"1\" g=\"0\" b=\"0\"/></color>";
         QTest::newRow("invalid channel") << "<color channeldepth=\"U8\"><RGB r=\"NaN\" g=\"0\" b=\"0\"/></color>";
     }
     void unsafeColorXml()

@@ -20,6 +20,7 @@ xsi:schemaLocation="http://www.kde.org/standards/kxmlgui/1.0  http://www.kde.org
       <Action name="file_import_file"/>
       <Action name="file_export_file"/>
       <Action name="file_export_advanced"/>
+      <Action name="file_export_with_preset"/>
       <Separator/>
       <Action name="file_export_pdf"/>
       <Separator/>

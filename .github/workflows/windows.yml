@@ -1,4 +1,4 @@
-name: BrushQuay Windows foundation qualification
+name: BrushQuay Windows product qualification
 on:
   workflow_dispatch:
   push:
@@ -19,10 +19,12 @@ jobs:
         run: |
           python -m unittest discover -s build-tools/ci-scripts/tests -v
           if ($LASTEXITCODE -ne 0) { throw 'Locked dependency tests failed.' }
+          python -m unittest discover -s packaging/windows/msix/tests -v
+          if ($LASTEXITCODE -ne 0) { throw 'MSIX source validation tests failed.' }
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
-      - name: Compile the native Qt 6 foundation
+      - name: Compile and test the native Qt 6 product
         shell: pwsh
         run: ./build-tools/ci-scripts/build-locked-windows.ps1 -Python python -Jobs 2
       - name: Preserve metadata only
@@ -33,6 +35,7 @@ jobs:
           path: |
             .brushquay/evidence/**/*.json
             .brushquay/evidence/**/*.log
+            .brushquay/evidence/**/*.xml
           include-hidden-files: true
           retention-days: 14
           if-no-files-found: warn

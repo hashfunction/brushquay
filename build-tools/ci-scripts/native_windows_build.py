@@ -1,5 +1,5 @@
 # Copyright 2026 Trieflow LLC. SPDX-License-Identifier: GPL-3.0-or-later
-"""Compile the native baseline using verified inputs. Never package, sign or publish."""
+"""Compile and test the native product using verified inputs. Never package, sign or publish."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -138,7 +138,33 @@ def main():
         if not args.configure_only:
             run([command[0], '--build', str(build), '--parallel', str(args.jobs)], evidence / 'build.log', environment, source)
             record['status'] = 'compiled'
+            expected_tests = {'libs-ui-' + name for name in (
+                'KisBrushQuayIdentityTest', 'KisExportPresetIntegrationTest',
+                'KisExportFileTransactionTest', 'KisExportPresetStoreTest')}
+            test_pattern = '^(' + '|'.join(sorted(expected_tests)) + ')$'
+            ctest = stage / 'tools/cmake/bin/ctest.exe'
+            test_environment = dict(environment)
+            test_environment['PATH'] = str(build / 'bin') + ';' + environment['PATH']
+            test_environment['QT_QPA_PLATFORM'] = 'offscreen'
+            discovery = subprocess.check_output([str(ctest), '--test-dir', str(build), '-N',
+                '--show-only=json-v1', '-R', test_pattern], env=test_environment, text=True, encoding='utf-8')
+            (evidence / 'product-test-discovery.json').write_text(discovery, encoding='utf-8')
+            discovered = json.loads(discovery)['tests']
+            if len(discovered) != len(expected_tests) or {test['name'] for test in discovered} != expected_tests:
+                raise LockError('The native build did not register every required product test')
+            run([str(ctest), '--test-dir', str(build), '-R', test_pattern, '--no-tests=error',
+                 '--timeout', '180', '--output-on-failure', '--output-junit', str(evidence / 'product-tests.xml')],
+                evidence / 'product-tests.log', test_environment, source)
+            record['productTests'] = sorted(expected_tests)
+            record['status'] = 'compiled_and_product_tests_passed'
             run([command[0], '--install', str(build)], evidence / 'install.log', environment, source)
+            record['installedApplicationFiles'] = []
+            for relative in ('bin/brushquay.exe', 'bin/brushquay.com', 'bin/brushquay.dll'):
+                installed_file = install / relative
+                if not installed_file.is_file() or installed_file.stat().st_size == 0:
+                    raise LockError('Missing installed product binary: ' + relative)
+                record['installedApplicationFiles'].append({'path': relative, 'bytes': installed_file.stat().st_size,
+                    'sha256': hashlib.sha256(installed_file.read_bytes()).hexdigest()})
             record['status'] = 'compiled_and_installed_not_packaged'
         verify_stage(lock, cache, stage)
         record['inputStageUnchanged'] = True

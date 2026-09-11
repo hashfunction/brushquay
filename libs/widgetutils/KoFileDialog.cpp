@@ -51,6 +51,7 @@ public:
     {
     }
 
+    bool confirmOverwrite=true;
     QWidget *parent;
     KoFileDialog::DialogType type;
     QString dialogName;
@@ -64,6 +65,12 @@ public:
     QScopedPointer<KisPreviewFileDialog> fileDialog;
     QString mimeType;
 };
+
+void KoFileDialog::setConfirmOverwrite(bool enabled)
+{
+    d->confirmOverwrite=enabled;
+    if (d->fileDialog) d->fileDialog->setOption(QFileDialog::DontConfirmOverwrite,!enabled);
+}
 
 KoFileDialog::KoFileDialog(QWidget *parent,
                            KoFileDialog::DialogType type,
@@ -177,7 +184,7 @@ void KoFileDialog::createFileDialog()
     }
 
     d->fileDialog->setOption(QFileDialog::DontUseNativeDialog, optionDontUseNative);
-    d->fileDialog->setOption(QFileDialog::DontConfirmOverwrite, false);
+    d->fileDialog->setOption(QFileDialog::DontConfirmOverwrite, !d->confirmOverwrite);
     d->fileDialog->setOption(QFileDialog::HideNameFilterDetails, dontUseNative ? true : false);
 
 

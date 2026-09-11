@@ -1,0 +1,28 @@
+test_cache_mutation_invalidates_prior_stage_receipt (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_cache_symlink_is_not_followed_or_modified (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_case_alias_is_rejected_even_when_bytes_match (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_does_not_replace_corrupt_cache_entry (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_exact_archives_create_verifiable_stage_with_shared_owners (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_existing_stage_is_never_replaced (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_extra_file_in_stage_is_rejected (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_float_source_or_missing_dependency_or_url_scheme_is_rejected (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_hash_mismatch_never_enters_cache_or_stage (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_late_stage_owner_is_not_replaced_at_publication (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_metadata_hash_and_contents_are_both_checked (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_native_publication_preserves_even_an_empty_competing_directory (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_package_conflict_rejected_without_override (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_safe_same_archive_hardlinks_are_materialized (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_stage_verification_does_not_trust_modified_receipt (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_symlinks_and_escaping_hardlinks_are_rejected (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_traversal_windows_devices_ads_and_aliases_fail_closed (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_unknown_cache_entry_is_rejected (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_zip_toolchain_prefix_is_exact_and_not_executed (test_locked_windows_deps.LockedWindowsDepsTest) ... ok
+test_cmake_can_parse_generated_compiler_and_cache_paths (test_native_windows_build.NativeWindowsBuildTest) ... ok
+test_configuration_uses_exact_isolated_toolchain_and_offline_sources (test_native_windows_build.NativeWindowsBuildTest) ... ok
+test_system_environment_cannot_override_compiler_flags (test_native_windows_build.NativeWindowsBuildTest) ... ok
+test_windows_drive_space_and_unicode_path_arguments (test_native_windows_build.NativeWindowsBuildTest) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.051s
+
+OK

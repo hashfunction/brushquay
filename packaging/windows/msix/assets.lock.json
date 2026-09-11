@@ -1,0 +1,14 @@
+{
+  "Assets/Square150x150Logo.png": {
+    "bytes": 7007,
+    "sha256": "333a5c8ca31bf53c96d906f12f9b8f172a5fef37944c3171ae417e70aba96d0d"
+  },
+  "Assets/Square44x44Logo.png": {
+    "bytes": 1829,
+    "sha256": "2b82aacfe2b931821d052d2547d5a152af7d642d20c0cc71ae5255fd2e3c652d"
+  },
+  "Assets/StoreLogo.png": {
+    "bytes": 2134,
+    "sha256": "b9cfd4d32f11f8ae99e5ba47fe543292f856868d2302e0514b1ba691ee40f907"
+  }
+}

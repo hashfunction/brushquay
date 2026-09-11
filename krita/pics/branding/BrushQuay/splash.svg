@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>BrushQuay original splash</title><desc>Original geometric painting study. Copyright 2026 Trieflow LLC. CC0-1.0. No external assets, fonts, or user data.</desc>
+<defs><linearGradient id="sky" x2="1" y2="1"><stop stop-color="#241b40"/><stop offset="1" stop-color="#644295"/></linearGradient><linearGradient id="gold" x2="1" y2="0"><stop stop-color="#ffc56c"/><stop offset="1" stop-color="#ed806b"/></linearGradient></defs>
+<rect width="1440" height="900" fill="url(#sky)"/>
+<circle cx="1050" cy="374" r="234" fill="#8b65c3" opacity=".42"/>
+<path d="M168 673C390 240 701 854 1154 332" fill="none" stroke="url(#gold)" stroke-width="132" stroke-linecap="round"/>
+<path d="M119 771c369-216 664 201 1178-122" fill="none" stroke="#8fcecc" stroke-width="34" stroke-linecap="round"/>
+<path d="M401 699c192-62 368 91 652-62" fill="none" stroke="#e8c7ff" stroke-width="15" stroke-linecap="round" opacity=".75"/>
+<circle cx="382" cy="407" r="16" fill="#f3d0a7"/><circle cx="1266" cy="541" r="10" fill="#a9e3e3"/>
+</svg>

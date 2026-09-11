@@ -1,0 +1,12 @@
+[0/1] Re-running CMake...
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/.brushquay/domain-tests-sanitized
+[1/13] Automatic MOC for target KisExportPresetStoreTest
+[2/11] Automatic MOC for target KisExportFileTransactionTest
+[3/9] Automatic MOC for target KisBrushQuayIdentityTest
+[4/9] Automatic RCC for ../../krita/pics/branding/BrushQuay/branding.qrc
+[5/9] Building CXX object CMakeFiles/KisBrushQuayIdentityTest.dir/KisBrushQuayIdentityTest_autogen/mocs_compilation.cpp.o
+[6/9] Building CXX object CMakeFiles/KisBrushQuayIdentityTest.dir/KisBrushQuayIdentityTest_autogen/EDMLVHLG6Z/qrc_branding.cpp.o
+[7/9] Building CXX object CMakeFiles/KisBrushQuayIdentityTest.dir/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/libs/ui/tests/KisBrushQuayIdentityTest.cpp.o
+[8/9] Linking CXX executable KisBrushQuayIdentityTest

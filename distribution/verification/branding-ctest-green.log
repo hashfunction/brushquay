@@ -1,0 +1,12 @@
+Internal ctest changing into directory: /Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/.brushquay/domain-tests
+Test project /Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/.brushquay/domain-tests
+    Start 1: KisExportPresetStoreTest
+1/3 Test #1: KisExportPresetStoreTest .........   Passed    0.04 sec
+    Start 2: KisExportFileTransactionTest
+2/3 Test #2: KisExportFileTransactionTest .....   Passed    0.04 sec
+    Start 3: KisBrushQuayIdentityTest
+3/3 Test #3: KisBrushQuayIdentityTest .........   Passed    0.28 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) =   0.36 sec

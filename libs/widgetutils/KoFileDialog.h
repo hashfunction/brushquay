@@ -51,6 +51,9 @@ public:
 
     void setCaption(const QString &caption);
 
+    // Callers disabling this must capture target identity and request explicit consent themselves.
+    void setConfirmOverwrite(bool enabled);
+
     /**
      * @brief setDefaultDir set the default directory to defaultDir.
      *

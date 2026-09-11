@@ -101,7 +101,8 @@ KisNewsWidget::KisNewsWidget(QWidget *parent)
 
 void KisNewsWidget::setAnalyticsTracking(QString text)
 {
-    m_analyticsTrackingParameters = text;
+    Q_UNUSED(text);
+    m_analyticsTrackingParameters.clear();
 }
 
 bool KisNewsWidget::eventFilter(QObject *watched, QEvent *event)
@@ -115,68 +116,19 @@ bool KisNewsWidget::eventFilter(QObject *watched, QEvent *event)
 
 void KisNewsWidget::toggleNewsLanguage(QString langCode, bool enabled)
 {
-    // Sanity check: Since the code is adding the language code directly into
-    // the URL, this prevents any nasty surprises with malformed URLs.
-    Q_FOREACH(const char &ch, langCode.toLatin1()) {
-        bool isValidChar = ((ch >= 'a' && ch <= 'z') || ch == '-' || ch == '@');
-        if (!isValidChar) {
-            warnUI << "Ignoring attempt to toggle malformed news lang:" << langCode;
-            return;
-        }
-    }
-
-    QString feed = QStringLiteral("https://krita.org/%1/index.xml").arg(langCode);
-    if (enabled) {
-        m_enabledFeeds.insert(feed);
-        if (m_getNews) {
-            m_rssModel->addFeed(feed);
-        }
-    } else {
-        m_enabledFeeds.remove(feed);
-        if (m_getNews) {
-            m_rssModel->removeFeed(feed);
-        }
-    }
+    Q_UNUSED(langCode); Q_UNUSED(enabled);
+    // No upstream feeds are available in BrushQuay.
 }
 
 void KisNewsWidget::toggleNews(bool toggle)
 {
-    m_getNews = toggle;
-
-    KisConfig cfg(false);
-    cfg.writeEntry<bool>("FetchNews", toggle);
-
-    Q_FOREACH(const QString &feed, m_enabledFeeds) {
-        if (toggle) {
-            m_rssModel->addFeed(feed);
-        } else {
-            m_rssModel->removeFeed(feed);
-        }
-    }
+    Q_UNUSED(toggle);
+    m_getNews=false;
 }
 
 void KisNewsWidget::itemSelected(const QModelIndex &idx)
 {
-    if (idx.isValid()) {
-        QString link = idx.data(KisRssReader::RssRoles::LinkRole).toString();
-
-        // append query string for analytics tracking if we set it
-        if (m_analyticsTrackingParameters != "") {
-
-            // use title in analytics query string
-            QString linkTitle = idx.data(KisRssReader::RssRoles::TitleRole).toString();
-            linkTitle = linkTitle.simplified(); // trims and makes 1 white space
-            linkTitle = linkTitle.replace(" ", "");
-
-            m_analyticsTrackingParameters = m_analyticsTrackingParameters.append(linkTitle);
-            QDesktopServices::openUrl(QUrl(link.append(m_analyticsTrackingParameters)));
-
-        } else {
-            QDesktopServices::openUrl(QUrl(link));
-        }
-
-
-    }
+    Q_UNUSED(idx); // There are no remote news items in this distribution.
 }
 
 void KisNewsWidget::rssDataChanged()

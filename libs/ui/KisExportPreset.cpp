@@ -26,7 +26,12 @@ bool safeColorXml(const QString &xml)
     if (!doc.setContent(xml)) return false;
     const auto root = doc.documentElement();
     const QSet<QString> depths = {"U8", "U16", "F16", "F32", "F64"};
-    if (root.tagName() != "color" || root.attributes().size() != 1 || !depths.contains(root.attribute("channeldepth"))) return false;
+    if (root.tagName() != "color" || !depths.contains(root.attribute("channeldepth"))) return false;
+    if (root.attributes().size() != (root.hasAttribute("opacity") ? 2 : 1)) return false;
+    if (root.hasAttribute("opacity")) {
+        bool ok=false; const auto opacity=root.attribute("opacity").toDouble(&ok);
+        if (!ok || !std::isfinite(opacity) || opacity<0 || opacity>1) return false;
+    }
     const auto color = root.firstChildElement();
     if (color.isNull() || !color.nextSiblingElement().isNull() || !color.firstChildElement().isNull() || !root.text().trimmed().isEmpty()) return false;
     const QMap<QString, QStringList> models = {
@@ -39,6 +44,11 @@ bool safeColorXml(const QString &xml)
     for (const auto &channel : channels) {
         bool ok = false; const double value = color.attribute(channel).toDouble(&ok);
         if (!ok || !std::isfinite(value) || std::abs(value) > 1000000) return false;
+        if (root.attribute("channeldepth").startsWith('U')) {
+            const double minimum=color.tagName()=="Lab" && channel!="L"?-128.0:0.0;
+            const double maximum=color.tagName()=="Lab"?(channel=="L"?100.0:127.0):1.0;
+            if (value<minimum || value>maximum) return false;
+        }
     }
     auto attrs = color.attributes();
     for (int i = 0; i < attrs.size(); ++i) {

@@ -25,14 +25,17 @@ PASS   : KisExportPresetStoreTest::invalidData(pixel bytes)
 PASS   : KisExportPresetStoreTest::invalidData(wrong bool)
 PASS   : KisExportPresetStoreTest::invalidData(invalid range)
 PASS   : KisExportPresetStoreTest::localColorDefinitionRoundTrip()
+PASS   : KisExportPresetStoreTest::colorOpacityRoundTrip()
 PASS   : KisExportPresetStoreTest::unsafeColorXml(entity)
 PASS   : KisExportPresetStoreTest::unsafeColorXml(empty)
 PASS   : KisExportPresetStoreTest::unsafeColorXml(wrong root)
 PASS   : KisExportPresetStoreTest::unsafeColorXml(path profile)
 PASS   : KisExportPresetStoreTest::unsafeColorXml(metadata)
 PASS   : KisExportPresetStoreTest::unsafeColorXml(nested)
+PASS   : KisExportPresetStoreTest::unsafeColorXml(integer channel overflow)
+PASS   : KisExportPresetStoreTest::unsafeColorXml(invalid opacity)
 PASS   : KisExportPresetStoreTest::unsafeColorXml(invalid channel)
 PASS   : KisExportPresetStoreTest::malformedPresetNeverMutatesResult()
 PASS   : KisExportPresetStoreTest::cleanupTestCase()
-Totals: 34 passed, 0 failed, 0 skipped, 0 blacklisted, 18ms
+Totals: 37 passed, 0 failed, 0 skipped, 0 blacklisted, 26ms
 ********* Finished testing of KisExportPresetStoreTest *********

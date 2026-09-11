@@ -1,262 +1,216 @@
-from os import environ
-import os.path
+#!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 Trieflow LLC
+# SPDX-License-Identifier: GPL-3.0-or-later
+"""Build an unsigned BrushQuay MSIX from an explicitly audited install tree.
+
+No NSIS extraction, shell extension, signing service, tool discovery or downloads.
+The release owner supplies identity, source/license closure and exact SDK tools.
+"""
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
 import shutil
-import glob
+import stat
 import subprocess
 import sys
-import warnings
 import tempfile
+import xml.etree.ElementTree as ET
+from xml.sax.saxutils import escape
+from verify_brushquay_msix import checked_path, register_path, digest_stream, verify_msix
 
-if not environ.get('OUTPUT_DIR'):
-    environ['OUTPUT_DIR'] = fr"{os.getcwd()}\out"
-if not environ.get('KRITA_DIR'):
-    if not environ.get('KRITA_INSTALLER'):
-        print("ERROR: KRITA_DIR and KRITA_INSTALLER not specified, one of them must be set.")
-        sys.exit(1)
+HERE=Path(__file__).resolve().parent
+SOURCE=HERE.parents[2]
+sys.path.insert(0,str(SOURCE/'build-tools/ci-scripts'))
+from locked_windows_deps import publish_directory_no_replace
+FIELDS={'PackageName','Publisher','Version','MinWindowsVersion','MaxWindowsVersionTested'}
 
-# For CI, define both KRITA_DIR and KRITA_SHELLEX.
-# Do not use KRITA_SHELLEX if building outside of CI, unless you
-# don't mind this script modifying the contents of KRITA_DIR.
-if environ.get('KRITA_INSTALLER'):
-    if environ.get('KRITA_SHELLEX'):
-        print("ERROR: KRITA_SHELLEX must not be set if using KRITA_INSTALLER.")
-        sys.exit(1)
+def canonical(value): return (json.dumps(value,sort_keys=True,indent=2)+'\n').encode()
 
-useVerbosePackagingLog = (os.environ.get('KRITACI_VERBOSE_PACKAGING', '0').lower() in ['true', '1', 't', 'y', 'yes'])
+def version(value):
+    if not isinstance(value,str) or not re.fullmatch(r'(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)',value):
+        raise ValueError('Expected four-component Windows version')
+    numbers=tuple(map(int,value.split('.')))
+    if any(n>65535 for n in numbers): raise ValueError('Windows version component exceeds 65535')
+    return numbers
 
-# Subroutines
-
-def find_on_path(variable, executable):
-    os.environ[variable] = shutil.which(executable)
-
-# Begin
-
-print("*** Krita MSIX build script ***")
-
-if (not environ.get('WindowsSdkDir')) and environ.get('ProgramFiles(x86)'):
-    environ['WindowsSdkDir'] = fr"{environ['ProgramFiles(x86)']}\Windows Kits\10"
-if os.path.isdir(environ.get('WindowsSdkDir')):
-    for dir in glob.glob(fr"{environ['WindowsSdkDir']}\bin\10.*"):
-        if os.path.isfile(fr"{dir}\x64\makepri.exe"):
-            environ['MAKEPRI'] = fr"{dir}\x64\makepri.exe"
-        if os.path.isfile(fr"{dir}\x64\makeappx.exe"):
-            environ['MAKEAPPX'] = fr"{dir}\x64\makeappx.exe"
-        if os.path.isfile(fr"{dir}\x64\signtool.exe"):
-            environ['SIGNTOOL'] = fr"{dir}\x64\signtool.exe"
-    if (not environ['MAKEPRI']) and os.path.isfile(fr"{environ['WindowsSdkDir']}\bin\x64\makepri.exe"):
-        environ['MAKEPRI'] = fr"{environ['WindowsSdkDir']}\bin\x64\makepri.exe"
-    if (not environ['MAKEAPPX']) and os.path.isfile(fr"{environ['WindowsSdkDir']}\bin\x64\makeappx.exe"):
-        environ['MAKEAPPX'] = fr"{environ['WindowsSdkDir']}\bin\x64\makeappx.exe"
-    if (not environ['SIGNTOOL']) and os.path.isfile(fr"{environ['WindowsSdkDir']}\bin\x64\signtool.exe"):
-        environ['SIGNTOOL'] = fr"{environ['WindowsSdkDir']}\bin\x64\signtool.exe"
-
-if not environ.get('MAKEPRI'):
-    print("ERROR: makepri not found")
-    sys.exit(1)
-
-if not environ.get('MAKEAPPX'):
-    print("ERROR: makeappx not found")
-    sys.exit(1)
-
-if not environ.get('SIGNTOOL'):
-    print("ERROR: signtool not found")
-    sys.exit(1)
-
-scriptDir = os.path.realpath(os.path.dirname( os.path.realpath(__file__) ))
-
-try:
-    os.mkdir(environ['OUTPUT_DIR'])
-except FileExistsError:
-    # We may have already created it in build-windows-package.py,
-    # just ignore
-    pass
-
-if not environ['KRITA_DIR']:
-
-    print("\n=== Step 0: Extract files from installer")
-
-    if not environ.get("SEVENZIP_EXE"):
-        find_on_path("SEVENZIP_EXE", "7z.exe")
-    if not environ.get("SEVENZIP_EXE"):
-        find_on_path("SEVENZIP_EXE", "7za.exe")
-    if not environ.get("SEVENZIP_EXE"):
-        os.environ["SEVENZIP_EXE"] = fr"{environ.get('ProgramFiles')}\7-Zip\7z.exe"
-        if not os.path.isfile(os.environ["SEVENZIP_EXE"]):
-            os.environ["SEVENZIP_EXE"] = fr"{environ.get('ProgramFiles(x86)')}\\7-Zip\\7z.exe"
-        if not os.path.isfile(os.environ["SEVENZIP_EXE"]):
-            warnings.warn("7-Zip not found!")
-            sys.exit(102)
-
-    os.mkdir(fr"{environ['OUTPUT_DIR']}\installer_content")
-    commandToRun = f"{environ['SEVENZIP_EXE']} x {environ['KRITA_INSTALLER']}"
+def load_identity(path):
+    raw=Path(path).read_bytes()
+    if len(raw)>65536 or b'<!DOCTYPE' in raw.upper() or b'<!ENTITY' in raw.upper(): raise ValueError('Unsafe identity XML')
     try:
-        subprocess.check_call(commandToRun)
-    except subprocess.CalledProcessError:
-        warnings.warn(f"ERROR failed to extract installer {environ['KRITA_INSTALLER']}")
-        sys.exit(1)
-    environ['KRITA_DIR'] = fr"{environ['OUTPUT_DIR']}\installer_content"
-    shutil.rmtree(fr"{environ['KRITA_DIR']}\$PLUGINSDIR")
-    os.remove(fr"{environ['KRITA_DIR']}\uninstall.exe.nsis")
-    os.remove(fr"{environ['KRITA_DIR']}\uninstall.exe")
+        text=raw.decode('utf-8-sig')
+        root=ET.fromstring(text)
+    except (UnicodeDecodeError,ET.ParseError) as error: raise ValueError('Invalid identity XML') from error
+    if root.tag!='Project' or root.attrib or len(root)!=1 or root[0].tag!='PropertyGroup' or root[0].attrib:
+        raise ValueError('Identity must contain one PropertyGroup')
+    result={}
+    for node in root[0]:
+        if node.tag not in FIELDS or node.tag in result or node.attrib or len(node): raise ValueError('Unknown/duplicate identity field')
+        result[node.tag]=(node.text or '').strip()
+    if set(result)!=FIELDS or any(not v or 'REQUIRED' in v.upper() or 'KRITA' in v.upper() or
+        '03E730BB' in v.upper() or any(ord(c)<32 for c in v) for v in result.values()):
+        raise ValueError('Missing, placeholder or upstream identity')
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9.-]{1,48}[A-Za-z0-9]',result['PackageName']): raise ValueError('Invalid package name')
+    if not result['Publisher'].startswith('CN=') or len(result['Publisher'])>8192: raise ValueError('Invalid publisher distinguished name')
+    if version(result['Version'])[0]<1: raise ValueError('Package major version must be positive')
+    minimum=version(result['MinWindowsVersion']);tested=version(result['MaxWindowsVersionTested'])
+    if minimum<(10,0,17763,0) or tested<minimum: raise ValueError('Invalid Windows compatibility range')
+    return result
 
+def manifest_bytes(identity):
+    text=(HERE/'manifest.xml.in').read_text()
+    for key,value in identity.items(): text=text.replace('@'+key+'@',escape(value,{'"':'&quot;',"'":'&apos;'}))
+    if re.search(r'@[A-Za-z]+@',text): raise ValueError('Unresolved manifest field')
+    ET.fromstring(text)
+    return text.encode('utf-8')
 
-    print("=== Step 0 done. ===")
+def validate_audit(audit):
+    if not isinstance(audit,dict) or set(audit)!={'schema','sourceCommit','licenseReviewComplete','correspondingSourceComplete','files'}:
+        raise ValueError('Invalid audit schema')
+    if audit['schema']!=1 or not isinstance(audit['sourceCommit'],str) or not re.fullmatch('[0-9a-f]{40}',audit['sourceCommit']): raise ValueError('Missing immutable source commit')
+    if audit['licenseReviewComplete'] is not True or audit['correspondingSourceComplete'] is not True:
+        raise ValueError('License review and corresponding-source closure are required')
+    if not isinstance(audit['files'],list) or not audit['files']: raise ValueError('Empty audited install tree')
+    seen={};expected={}
+    for row in audit['files']:
+        if not isinstance(row,dict) or set(row)!={'path','bytes','sha256','license','source'}: raise ValueError('Invalid audited file record')
+        register_path(row['path'],seen)
+        if type(row['bytes']) is not int or row['bytes']<0 or not isinstance(row['sha256'],str) or not re.fullmatch('[0-9a-f]{64}',row['sha256']): raise ValueError('Invalid file hash/size')
+        if any(not isinstance(row[k],str) or not row[k].strip() or re.search(r'NOASSERTION|NONE|REQUIRED',row[k],re.I) for k in ('license','source')):
+            raise ValueError('Unresolved file license or source')
+        expected[row['path']]={'bytes':row['bytes'],'sha256':row['sha256']}
+    if 'bin/brushquay.exe' not in expected: raise ValueError('BrushQuay executable is missing')
+    return expected
 
+def reject_link(path):
+    info=path.lstat()
+    if stat.S_ISLNK(info.st_mode) or getattr(info,'st_file_attributes',0)&0x400:
+        raise ValueError('Symlink/reparse point refused: '+str(path))
+    return info
 
-if environ.get('KRITA_SHELLEX'):
+def regular_stream(path):
+    before=reject_link(path)
+    if not stat.S_ISREG(before.st_mode): raise ValueError('Expected a regular file: '+str(path))
+    fd=os.open(path,os.O_RDONLY|getattr(os,'O_BINARY',0)|getattr(os,'O_NOFOLLOW',0))
+    stream=os.fdopen(fd,'rb');after=os.fstat(fd)
+    if (before.st_dev,before.st_ino)!=(after.st_dev,after.st_ino) or not stat.S_ISREG(after.st_mode):
+        stream.close();raise ValueError('Input identity changed: '+str(path))
+    return stream
 
-    print("\n=== Step 0: Copy files for shell extension")
+def inventory(root):
+    root=Path(root);reject_link(root)
+    if not root.is_dir(): raise ValueError('Expected a directory')
+    result={};seen={}
+    def walk(directory):
+        for path in sorted(directory.iterdir()):
+            info=reject_link(path)
+            rel=path.relative_to(root).as_posix()
+            checked_path(rel)
+            if stat.S_ISDIR(info.st_mode): walk(path)
+            elif stat.S_ISREG(info.st_mode):
+                register_path(rel,seen)
+                with regular_stream(path) as stream: result[rel]=digest_stream(stream)
+            else: raise ValueError('Special file refused: '+rel)
+    walk(root)
+    return result
 
-    shellex = fr"{environ['KRITA_DIR']}\shellex"
+def verify_payload(root,expected):
+    actual=inventory(root)
+    if actual!=expected:
+        changed=sorted(set(actual)^set(expected) | {p for p in actual.keys()&expected.keys() if actual[p]!=expected[p]})
+        raise ValueError('File inventory/hash mismatch: '+', '.join(changed[:8]))
+
+def write_new(path,data):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    with path.open('xb') as stream: stream.write(data);stream.flush();os.fsync(stream.fileno())
+
+def stage_payload(install,audit,destination,identity):
+    expected=validate_audit(audit);install=Path(install);destination=Path(destination)
+    verify_payload(install,expected)
+    if os.path.lexists(destination): raise ValueError('Existing payload is never replaced')
+    destination.mkdir()
+    for rel,record in expected.items():
+        target=destination/'BrushQuay'/rel;target.parent.mkdir(parents=True,exist_ok=True)
+        with regular_stream(install/rel) as source, target.open('xb') as output:
+            shutil.copyfileobj(source,output,1024*1024)
+        with regular_stream(target) as stream:
+            if digest_stream(stream)!=record: raise ValueError('Input changed during copy: '+rel)
+    verify_payload(install,expected)
+    asset_lock=json.loads((HERE/'assets.lock.json').read_text())
+    if set(asset_lock)!={'Assets/StoreLogo.png','Assets/Square150x150Logo.png','Assets/Square44x44Logo.png'}:
+        raise ValueError('Only the three reviewed original package assets are allowed')
+    for rel,record in asset_lock.items():
+        checked_path(rel)
+        with regular_stream(HERE/'pkg'/rel) as stream:
+            data=stream.read()
+        if {'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}!=record: raise ValueError('Original artwork hash mismatch: '+rel)
+        write_new(destination/rel,data)
+    write_new(destination/'AppxManifest.xml',manifest_bytes(identity))
+    payload={'BrushQuay/'+rel:record for rel,record in expected.items()}
+    payload.update(asset_lock)
+    manifest=(destination/'AppxManifest.xml').read_bytes()
+    payload['AppxManifest.xml']={'bytes':len(manifest),'sha256':hashlib.sha256(manifest).hexdigest()}
+    verify_payload(destination,payload)
+    return payload
+
+def load_tools(path):
+    data=json.loads(Path(path).read_text())
+    if set(data)!={'sdkVersion','makepri','makeappx'} or not re.fullmatch(r'10\.0\.\d+\.0',data['sdkVersion']): raise ValueError('Explicit Windows SDK version/tools are required')
+    for name in ('makepri','makeappx'):
+        record=data[name]
+        if set(record)!={'path','sha256','bytes'}: raise ValueError('Tool path/hash/size required')
+        tool=Path(record['path'])
+        if not tool.is_absolute() or tool.name.lower()!=name+'.exe': raise ValueError('Absolute SDK executable path required')
+        with regular_stream(tool) as stream:
+            if digest_stream(stream)!={k:record[k] for k in ('sha256','bytes')}: raise ValueError('SDK tool hash/size mismatch')
+    return data
+
+def require_windows():
+    if sys.platform!='win32': raise ValueError('Actual MSIX packaging requires Windows; no platform emulation is used')
+
+def confirm_tools(path,frozen):
+    if load_tools(path)!=frozen: raise ValueError('SDK lock changed during packaging')
+
+def build(install,audit_path,identity_path,tools_path,output):
+    require_windows()
+    audit=json.loads(Path(audit_path).read_text());identity=load_identity(identity_path);sdk=load_tools(tools_path)
+    output=Path(output).absolute()
+    if os.path.lexists(output): raise ValueError('Existing output is never replaced')
+    output.parent.mkdir(parents=True,exist_ok=True)
+    temporary=Path(tempfile.mkdtemp(prefix='.brushquay-msix-',dir=output.parent))
     try:
-        os.mkdir(shellex)
-    except:
-        warnings.warn("ERROR mkdir shellex failed")
-        sys.exit(1)
-    try:
-        shutil.copy(fr"{environ['KRITA_SHELLEX']}\krita.ico", shellex)
-    except:
-        warnings.warn("ERROR copying krita.ico failed")
-        sys.exit(1)
-    try:
-        shutil.copy(fr"{environ['KRITA_SHELLEX']}\kritafile.ico", shellex)
-    except:
-        warnings.warn("ERROR copying kritafile.ico failed")
-        sys.exit(1)
-    try:
-        shutil.copy(fr"{environ['KRITA_SHELLEX']}\kritashellex32.dll", shellex)
-    except:
-        warnings.warn("ERROR copying kritashellex32.dll failed")
-        sys.exit(1)
-    try:
-        shutil.copy(fr"{environ['KRITA_SHELLEX']}\kritashellex64.dll", shellex)
-    except:
-        warnings.warn("ERROR copying kritashellex64.dll failed")
-        sys.exit(1)
-    # Optional files:
-    try:
-        shutil.copy(fr"{environ['KRITA_SHELLEX']}\kritashellex32.pdb", shellex)
-    except:
-        pass
-    try:
-        shutil.copy(fr"{environ['KRITA_SHELLEX']}\kritashellex64.pdb", shellex)
-    except:
-        pass
+        payload=temporary/'payload';expected=stage_payload(install,audit,payload,identity)
+        commands=[[sdk['makepri']['path'],'new','/pr',str(payload),'/mn',str(payload/'AppxManifest.xml'),'/cf',str(HERE/'priconfig.xml'),'/of',str(payload/'resources.pri')],
+                  [sdk['makeappx']['path'],'pack','/d',str(payload),'/p',str(temporary/'BrushQuay.msix'),'/no','/v','/h','SHA256'],
+                  [sdk['makeappx']['path'],'unpack','/p',str(temporary/'BrushQuay.msix'),'/d',str(temporary/'unpacked'),'/no','/v']]
+        for number,command in enumerate(commands):
+            confirm_tools(tools_path,sdk) # Recheck against the original immutable tool snapshot.
+            with (temporary/f'sdk-{number+1}.log').open('xb') as log:
+                subprocess.run(command,check=True,stdout=log,stderr=subprocess.STDOUT,timeout=600,shell=False)
+            if number==0:
+                with regular_stream(payload/'resources.pri') as stream: expected['resources.pri']=digest_stream(stream)
+                if expected['resources.pri']['bytes']==0: raise ValueError('Empty resources.pri')
+            verify_payload(payload,expected)
+        container=verify_msix(temporary/'BrushQuay.msix',expected)
+        # SDK-unpacked content must also agree; only container metadata may be extra.
+        unpacked=inventory(temporary/'unpacked')
+        for extra in ('[Content_Types].xml','AppxBlockMap.xml'): unpacked.pop(extra,None)
+        if unpacked!=expected: raise ValueError('SDK-unpacked bytes differ from audited payload')
+        verify_payload(install,validate_audit(audit));confirm_tools(tools_path,sdk)
+        record={'schema':1,'identity':identity,'audit':audit,'sdk':sdk,'payload':expected,'verification':container,'signed':False}
+        write_new(temporary/'package-record.json',canonical(record))
+        publish_directory_no_replace(temporary,output)
+        return output
+    except Exception as error:
+        raise ValueError(f'Packaging failed; inputs were not modified. Recovery/evidence retained at {temporary}: {error}') from error
 
-    print("=== Step 0 done. ===")
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    for name in ('install','audit','identity','sdk-tools','output'): parser.add_argument('--'+name,required=True,type=Path)
+    args=parser.parse_args()
+    try: print(build(args.install,args.audit,args.identity,args.sdk_tools,args.output))
+    except (ValueError,OSError) as error: parser.exit(1,str(error)+'\n')
 
-# Sanity checks:
-if not os.path.isfile(fr"{environ['KRITA_DIR']}\bin\krita.exe"):
-    warnings.warn(fr'ERROR: KRITA_DIR is set to "{environ["KRITA_DIR"]}" but {environ["KRITA_DIR"]}\bin\krita.exe" does not exist!')
-    sys.exit(1)
-if not os.path.isfile(fr"{environ['KRITA_DIR']}\shellex\kritashellex64.dll"):
-    warnings.warn(fr'ERROR: "{environ["KRITA_DIR"]}\shellex\kritashellex64.dll" does not exist!')
-    sys.exit(1)
-if os.path.isfile(fr"{environ['KRITA_DIR']}\bin\.debug"):
-    warnings.warn("ERROR: Package dir seems to contain debug symbols [gcc/mingw].")
-    sys.exit(1)
-if os.path.isfile(fr"{environ['KRITA_DIR']}\bin\*.pdb"):
-    warnings.warn("ERROR: Package dir seems to contain debug symbols [msvc].")
-    sys.exit(1)
-if os.path.isdir(fr"{environ['KRITA_DIR']}\$PLUGINSDIR"):
-    warnings.warn("")
-    sys.exit(1)
-if os.path.isfile(fr"{environ['KRITA_DIR']}\uninstall.exe.nsis"):
-    warnings.warn('ERROR: You did not remove "uninstall.exe.nsis."')
-    sys.exit(1)
-if os.path.isfile(fr"{environ['KRITA_DIR']}\uninstall.exe*"):
-    warnings.warn('ERROR: You did not remove "uninstall.exe*".')
-    sys.exit(1)
-
-
-print("\n=== Step 1: Generate resources.pri ===")
-
-commandToRun = fr'"{environ["MAKEPRI"]}" new /pr "{scriptDir}\pkg" /mn "{scriptDir}\manifest.xml" /cf "{scriptDir}\priconfig.xml" /o /of "{environ["OUTPUT_DIR"]}\resources.pri"'
-try:
-    subprocess.check_call(commandToRun)
-except subprocess.CalledProcessError:
-    warnings.warn("ERROR running makepri")
-    sys.exit(1)
-
-print("=== Step 1 done. ===")
-
-
-print("\n=== Step 2: Generate file mapping list ===")
-
-environ['ASSETS_DIR'] = fr"{scriptDir}\pkg\Assets"
-environ['MAPPING_OUT'] = fr"{environ['OUTPUT_DIR']}\mapping.txt"
-
-OUT_TEMP_NAME = ""
-with tempfile.NamedTemporaryFile(mode='w', delete=False) as OUT_TEMP:
-    OUT_TEMP_NAME = OUT_TEMP.name
-    print(f"Writing list to temporary file {OUT_TEMP_NAME}")
-
-    print("[Files]", file=OUT_TEMP)
-    print(fr'"{scriptDir}\manifest.xml" "AppxManifest.xml"', file=OUT_TEMP)
-    print(fr'"{environ["OUTPUT_DIR"]}\resources.pri" "Resources.pri"', file=OUT_TEMP)
-
-    # Krita application files:
-    for root, dirs, files in os.walk(environ['KRITA_DIR']):
-        for file in files:
-            f = os.path.join(root, file)
-            print(fr'"{f}" "krita\{os.path.relpath(f, environ["KRITA_DIR"])}"', file=OUT_TEMP)
-
-    # Assets:
-    for root, dirs, files in os.walk(environ['ASSETS_DIR']):
-        for file in files:
-            f = os.path.join(root, file)
-            print(fr'"{f}" "Assets\{os.path.relpath(f, environ["ASSETS_DIR"])}"', file=OUT_TEMP)
-
-shutil.copy(OUT_TEMP_NAME, environ['MAPPING_OUT'])
-os.remove(OUT_TEMP_NAME)
-
-print(f'Written mapping file to "{environ["MAPPING_OUT"]}"')
-print("=== Step 2 done. ===")
-
-
-print("\n=== Step 3: Make MSIX with makeappx.exe ===")
-
-r"""
-(this is a comment block...)
-
-For reference, the MSIX Packaging tool uses the following command arguments:
-    pack /v /o /l /nv /nfv /f "%UserProfile%\AppData\Local\Packages\Microsoft.MsixPackagingTool_8wekyb3d8bbwe\LocalState\DiagOutputDir\Logs\wox1ifkc.h0i.txt" /p "D:\dev\krita\msix\Krita-testing_4.3.0.0_x64__svcxxs8w6n55m.msix"
-
-The arguments stands for:
-    pack: Creates a package.
-    /v: Enable verbose logging output to the console.
-    /o: Overwrites the output file if it exists. If you don't specify this option or the /no option, the user is asked whether they want to overwrite the file.
-    /l: Used for localized packages. The default validation trips on localized packages. This options disables only that specific validation, without requiring that all validation be disabled.
-    /nv: Skips semantic validation. If you don't specify this option, the tool performs a full validation of the package.
-    /nfv: ???
-    /f <mapping file>: Specifies the mapping file.
-    /p <output package name>: Specifies the app package or bundle.
-"""
-
-commandToRun = fr'"{environ["MAKEAPPX"]}" pack {"/v" if useVerbosePackagingLog else ""} /f "{environ["OUTPUT_DIR"]}\mapping.txt" /p "{environ["OUTPUT_DIR"]}\krita.msix" /o'
-try:
-    print(f"Running: {commandToRun}")
-    logPath = os.path.join(os.getcwd(), 'makeappx.log')
-    with open(logPath, 'wb') as logFile:
-        subprocess.run(commandToRun, stdout=logFile, stderr=subprocess.STDOUT, check=True)
-except subprocess.CalledProcessError:
-    warnings.warn(f"ERROR running makeappx, see {logPath}")
-    sys.exit(1)
-    
-print(f"\nMSIX generated as {environ['OUTPUT_DIR']}\\krita.msix")
-
-if environ.get('SIGNTOOL_SIGN_FLAGS'):
-    print("Signing MSIX...")
-    commandToRun = fr'"{environ["SIGNTOOL"]}" sign {environ["SIGNTOOL_SIGN_FLAGS"]} /fd sha256 "{environ["OUTPUT_DIR"]}\krita.msix"'
-    try:
-        print(f"Running: {commandToRun}")
-        subprocess.check_call(commandToRun)
-    except subprocess.CalledProcessError:
-        warnings.warn("ERROR running signtool\n" +
-                      "If you need to specify a PFX keyfile and its password, run:\n" +
-                       r'    set SIGNTOOL_SIGN_FLAGS=/f "absolute_path_to_keyfile.pfx" /p password')
-        sys.exit(1)
-
-print("=== Step 3 done. ===")
-
-print("*** Script completed ***")
+if __name__=='__main__': main()

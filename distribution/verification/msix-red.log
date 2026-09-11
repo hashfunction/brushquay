@@ -1,0 +1,23 @@
+test_brushquay_msix (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_brushquay_msix (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_brushquay_msix
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 15, in <module>
+    import build_msix as package
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/build_msix.py", line 15, in <module>
+    sys.exit(1)
+SystemExit: 1
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+ERROR: KRITA_DIR and KRITA_INSTALLER not specified, one of them must be set.

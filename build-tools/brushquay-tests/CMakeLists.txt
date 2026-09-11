@@ -12,3 +12,14 @@ add_executable(KisExportPresetStoreTest ${UI}/tests/KisExportPresetStoreTest.cpp
 target_include_directories(KisExportPresetStoreTest PRIVATE ${UI})
 target_link_libraries(KisExportPresetStoreTest PRIVATE Qt6::Core Qt6::Test Qt6::Xml)
 add_test(NAME KisExportPresetStoreTest COMMAND KisExportPresetStoreTest)
+add_executable(KisExportFileTransactionTest ${UI}/tests/KisExportFileTransactionTest.cpp
+    ${UI}/KisExportFileTransaction.cpp)
+target_include_directories(KisExportFileTransactionTest PRIVATE ${UI})
+target_link_libraries(KisExportFileTransactionTest PRIVATE Qt6::Core Qt6::Test)
+add_test(NAME KisExportFileTransactionTest COMMAND KisExportFileTransactionTest)
+add_executable(KisBrushQuayIdentityTest ${UI}/tests/KisBrushQuayIdentityTest.cpp
+    ../../krita/pics/branding/BrushQuay/branding.qrc)
+set_target_properties(KisBrushQuayIdentityTest PROPERTIES AUTORCC ON)
+target_include_directories(KisBrushQuayIdentityTest PRIVATE ../../libs/global)
+target_link_libraries(KisBrushQuayIdentityTest PRIVATE Qt6::Core Qt6::Test)
+add_test(NAME KisBrushQuayIdentityTest COMMAND KisBrushQuayIdentityTest)

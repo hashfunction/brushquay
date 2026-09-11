@@ -1,3 +1,18 @@
+kis_add_test(KisBrushQuayIdentityTest.cpp
+    TEST_NAME KisBrushQuayIdentityTest
+    LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Test)
+
+target_sources(KisBrushQuayIdentityTest PRIVATE ${CMAKE_SOURCE_DIR}/krita/pics/branding/BrushQuay/branding.qrc)
+set_target_properties(KisBrushQuayIdentityTest PROPERTIES AUTORCC ON)
+
+kis_add_test(KisExportPresetIntegrationTest.cpp
+    TEST_NAME KisExportPresetIntegrationTest
+    LINK_LIBRARIES kritaui kritaexportpresets kritatestsdk)
+
+kis_add_test(KisExportFileTransactionTest.cpp
+    TEST_NAME KisExportFileTransactionTest
+    LINK_LIBRARIES kritaexportpresets Qt${QT_MAJOR_VERSION}::Test)
+
 kis_add_test(KisExportPresetStoreTest.cpp
     TEST_NAME KisExportPresetStoreTest
     LINK_LIBRARIES kritaexportpresets Qt${QT_MAJOR_VERSION}::Test)

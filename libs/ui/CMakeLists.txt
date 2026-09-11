@@ -11,7 +11,7 @@ if (ANDROID)
 endif()
 
 # Export preset persistence has no document, GUI, plug-in or network dependency.
-kis_add_library(kritaexportpresets STATIC KisExportPreset.cpp KisExportPresetStore.cpp)
+kis_add_library(kritaexportpresets STATIC KisExportPreset.cpp KisExportPresetStore.cpp KisExportFileTransaction.cpp)
 target_link_libraries(kritaexportpresets PUBLIC Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Xml)
 target_include_directories(kritaexportpresets PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
@@ -23,6 +23,8 @@ if (APPLE)
 endif ()
 
 set(kritaui_LIB_SRCS
+    KisExportPresetCodec.cpp
+    KisExportPresetJob.cpp
     canvas/kis_canvas_widget_base.cpp
     canvas/kis_canvas2.cpp
     canvas/kis_canvas_updates_compressor.cpp
@@ -56,6 +58,7 @@ set(kritaui_LIB_SRCS
     canvas/KoCanvasControllerWidgetViewport_p.cpp
     canvas/KisCanvasState.cpp
 
+    dialogs/KisExportPresetDialog.cpp
     dialogs/kis_about_application.cpp
     dialogs/kis_dlg_adj_layer_props.cc
     dialogs/kis_dlg_adjustment_layer.cc

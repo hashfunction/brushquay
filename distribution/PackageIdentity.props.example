@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Not a Store identity. Replace every REQUIRED field with reviewed release inputs. -->
+<Project><PropertyGroup>
+  <PackageName>REQUIRED_FROM_PARTNER_CENTER</PackageName>
+  <Publisher>REQUIRED_FROM_PARTNER_CENTER</Publisher>
+  <Version>REQUIRED_FOUR_COMPONENT_PACKAGE_VERSION</Version>
+  <MinWindowsVersion>REQUIRED_SUPPORTED_WINDOWS_VERSION</MinWindowsVersion>
+  <MaxWindowsVersionTested>REQUIRED_ACTUAL_TESTED_WINDOWS_VERSION</MaxWindowsVersionTested>
+</PropertyGroup></Project>

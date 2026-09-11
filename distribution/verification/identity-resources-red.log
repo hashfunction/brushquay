@@ -1,0 +1,10 @@
+********* Start testing of KisBrushQuayIdentityTest *********
+Config: Using QtTest library 6.11.2, Qt 6.11.2 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 21.0.0 (clang-2100.1.1.101)), macos 26.6.2
+PASS   : KisBrushQuayIdentityTest::initTestCase()
+PASS   : KisBrushQuayIdentityTest::isolatedApplicationDataAndConfiguration()
+FAIL!  : KisBrushQuayIdentityTest::compiledOriginalArtworkResources() 'file.open(QIODevice::ReadOnly)' returned FALSE. (:/brushquay.svg)
+   Loc: [/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/libs/ui/tests/KisBrushQuayIdentityTest.cpp(26)]
+PASS   : KisBrushQuayIdentityTest::canonicalProductLinks()
+PASS   : KisBrushQuayIdentityTest::cleanupTestCase()
+Totals: 4 passed, 1 failed, 0 skipped, 0 blacklisted, 1ms
+********* Finished testing of KisBrushQuayIdentityTest *********

@@ -156,89 +156,14 @@ KisWelcomePageWidget::KisWelcomePageWidget(QWidget *parent)
     recentDocumentsListView->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(recentDocumentsListView, SIGNAL(customContextMenuRequested(QPoint)), SLOT(slotRecentDocContextMenuRequest(QPoint)));
 
-    // News widget...
-    QMenu *newsOptionsMenu = new QMenu(this);
-    newsOptionsMenu->setToolTipsVisible(true);
-    ShowNewsAction *showNewsAction = new ShowNewsAction(i18n("Enable news and check for new releases"), newsOptionsMenu);
-    newsOptionsMenu->addAction(showNewsAction);
-    showNewsAction->setToolTip(i18n("Show news about Krita: this needs internet to retrieve information from the krita.org website"));
-    showNewsAction->setCheckable(true);
-
-    newsOptionsMenu->addSection(i18n("Language"));
-    QAction *newsInfoAction = newsOptionsMenu->addAction(i18n("English news is always up to date."));
-    newsInfoAction->setEnabled(false);
-
-    setupNewsLangSelection(newsOptionsMenu);
-    btnNewsOptions->setMenu(newsOptionsMenu);
-
+    // BrushQuay starts offline. No upstream news, donation service, or update client.
+    m_networkIsAllowed=false;
+    newsWidget->hide(); btnNewsOptions->hide(); labelNoFeed->hide();
+    supporterBadge->hide(); wdgAndroidSupportBanner->hide();
+    versionNotificationLabel->hide(); updaterFrame->hide();
     labelSupportText->setFont(largerFont());
-
-    connect(showNewsAction, SIGNAL(toggled(bool)), newsWidget, SLOT(setVisible(bool)));
-    connect(showNewsAction, SIGNAL(toggled(bool)), labelNoFeed, SLOT(setHidden(bool)));
-    connect(showNewsAction, SIGNAL(toggled(bool)), newsWidget, SLOT(toggleNews(bool)));
-    connect(labelNoFeed, SIGNAL(linkActivated(QString)), showNewsAction, SLOT(enableFromLink(QString)));
-
-#ifdef ENABLE_UPDATERS
-    connect(showNewsAction, SIGNAL(toggled(bool)), this, SLOT(slotToggleUpdateChecks(bool)));
-#endif
-
-    supporterBadge->hide();
-    wdgAndroidSupportBanner->hide();
-#ifdef Q_OS_ANDROID
-    initDonations();
-#endif
-
-    // configure the News area
-    KisConfig cfg(true);
-    m_networkIsAllowed = cfg.readEntry<bool>("FetchNews", false);
-
-
-#ifdef ENABLE_UPDATERS
-#ifndef Q_OS_ANDROID
-    // Setup version updater, but do not check for them, unless the user explicitly
-    // wants to check for updates.
-    // * No updater is created for Linux/Steam, Windows/Steam and Windows/Store distributions,
-    // as those stores have their own updating mechanism.
-    // * STEAMAPPID(Windows)/SteamAppId(Linux) environment variable is set when Krita is run from Steam.
-    // The environment variables are not public API.
-    // * MS Store version runs as a package (though we cannot know if it was
-    // installed from the Store or manually with the .msix package)
-#if defined Q_OS_LINUX
-    if (!qEnvironmentVariableIsSet("SteamAppId")) { // do not create updater for linux/steam
-        if (qEnvironmentVariableIsSet("APPIMAGE")) {
-            m_versionUpdater.reset(new KisAppimageUpdater());
-        } else {
-            m_versionUpdater.reset(new KisManualUpdater());
-        }
-    }
-#elif defined Q_OS_WIN
-    if (!KisWindowsPackageUtils::isRunningInPackage() && !qEnvironmentVariableIsSet("STEAMAPPID")) {
- 		m_versionUpdater.reset(new KisManualUpdater());
-        KisUsageLogger::log("Non-store package - creating updater");
-    } else {
-        KisUsageLogger::log("detected appx or steam package - not creating the updater");
-    }
-#else
-	// always create updater for MacOS
-    m_versionUpdater.reset(new KisManualUpdater());
-#endif // Q_OS_*
-	if (!m_versionUpdater.isNull()) {
-		connect(bnVersionUpdate, SIGNAL(clicked()), this, SLOT(slotRunVersionUpdate()));
-		connect(bnErrorDetails, SIGNAL(clicked()), this, SLOT(slotShowUpdaterErrorDetails()));
-		connect(m_versionUpdater.data(), SIGNAL(sigUpdateCheckStateChange(KisUpdaterStatus)),
-				this, SLOT(slotSetUpdateStatus(const KisUpdaterStatus&)));
-
-        if (m_networkIsAllowed) { // only if the user wants them
-			m_versionUpdater->checkForUpdate();
-		}
-	}
-#endif // ifndef Q_OS_ANDROID
-#endif // ENABLE_UPDATERS
-
-
-    showNewsAction->setChecked(m_networkIsAllowed);
-    newsWidget->setVisible(m_networkIsAllowed);
-    versionNotificationLabel->setEnabled(m_networkIsAllowed);
+    labelSupportText->setText(i18n("BrushQuay by Trieflow LLC. An independent painting application based on Krita."));
+    newsFrame->hide();
 
     // Drop area..
     setAcceptDrops(true);
@@ -270,7 +195,7 @@ void KisWelcomePageWidget::setMainWindow(KisMainWindow* mainWin)
         slotUpdateThemeColors();
 
         // allows RSS news items to apply analytics tracking.
-        newsWidget->setAnalyticsTracking("?" + analyticsString);
+        newsWidget->setAnalyticsTracking(QString());
 
         KisRecentDocumentsModelWrapper *recentFilesModel = KisRecentDocumentsModelWrapper::instance();
         connect(recentFilesModel, SIGNAL(sigModelIsUpToDate()), this, SLOT(slotRecentFilesModelIsUpToDate()));
@@ -350,30 +275,18 @@ void KisWelcomePageWidget::slotUpdateThemeColors()
     sourceCodeIcon->setIcon(KisIconUtils::loadIcon(QStringLiteral("code")));
     kdeIcon->setIcon(KisIconUtils::loadIcon(QStringLiteral("kde")));
 
-    // HTML links seem to be a bit more stubborn with theme changes... setting inline styles to help with color change
-    userCommunityLink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://krita-artists.org\">")
-                               .append(i18n("User Community")).append("</a>"));
-
-    gettingStartedLink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://docs.krita.org/user_manual/getting_started.html\">")
-                                .append(i18n("Getting Started")).append("</a>"));
-
-    manualLink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://docs.krita.org\">")
-                        .append(i18n("User Manual")).append("</a>"));
-
-    supportKritaLink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://krita.org/support-us/donations?" + analyticsString + "donations" + "\">")
-                              .append(i18n("Support Krita")).append("</a>"));
-
-    kritaWebsiteLink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://www.krita.org?" + analyticsString + "marketing-site" + "\">")
-                              .append(i18n("Krita Website")).append("</a>"));
-
-    sourceCodeLink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://invent.kde.org/graphics/krita\">")
-                            .append(i18n("Source Code")).append("</a>"));
-
-    poweredByKDELink->setText(QString("<a style=\"color: " + blendedColor.name() + " \" href=\"https://userbase.kde.org/What_is_KDE\">")
-                              .append(i18n("Powered by KDE")).append("</a>"));
-
-    QString translationNoFeed = i18n("You can <a href=\"ignored\" style=\"color: COLOR_PLACEHOLDER; text-decoration: underline;\">enable news</a> from krita.org in various languages with the menu above");
-    labelNoFeed->setText(translationNoFeed.replace("COLOR_PLACEHOLDER", blendedColor.name()));
+    // Product links are explicit user actions; no background service is initialized.
+    const auto link=[&](const QString &url,const QString &label) {
+        return QString("<a style=\"color:%1\" href=\"%2\">%3</a>").arg(blendedColor.name(),url,label.toHtmlEscaped());
+    };
+    userCommunityLink->setText(link("https://brushquay.trieflow.com/support",i18n("Support")));
+    gettingStartedLink->setText(link("https://brushquay.trieflow.com/support",i18n("Getting Started")));
+    manualLink->setText(link("https://brushquay.trieflow.com/support",i18n("Help")));
+    supportKritaLink->setText(link("https://brushquay.trieflow.com/privacy",i18n("Privacy")));
+    kritaWebsiteLink->setText(link("https://brushquay.trieflow.com",i18n("BrushQuay Website")));
+    sourceCodeLink->setText(link("https://brushquay.trieflow.com/#source",i18n("Source and Licenses")));
+    poweredByKDELink->setText(i18n("Based on Krita and KDE Frameworks"));
+    labelNoFeed->clear();
 
     const QColor faintTextColor = KisPaintingTweaks::blendColors(textColor, backgroundColor, 0.4);
     const QString &faintTextStyle = "QWidget{color: " + faintTextColor.name() + "}";
@@ -470,6 +383,8 @@ void KisWelcomePageWidget::changeEvent(QEvent *event)
 {
     if (event->type() == QEvent::FontChange) {
         labelSupportText->setFont(largerFont());
+    labelSupportText->setText(i18n("BrushQuay by Trieflow LLC. An independent painting application based on Krita."));
+    newsFrame->hide();
     }
 }
 
@@ -597,8 +512,8 @@ void KisWelcomePageWidget::showDevVersionHighlight()
     if (isDevelopmentBuild()) {
         QString devBuildLabelText = QString("<a style=\"color: " +
                                            blendedColor.name() +
-                                           " \" href=\"https://docs.krita.org/en/untranslatable_pages/triaging_bugs.html?"
-                                           + analyticsString + "dev-build" + "\">")
+                                           " \" href=\"https://brushquay.trieflow.com/support#"
+                                           + QStringLiteral("diagnostics") + "\">")
                                   .append(i18n("DEV BUILD")).append("</a>");
 
         devBuildLabel->setText(devBuildLabelText);
@@ -757,7 +672,7 @@ void KisWelcomePageWidget::updateVersionUpdaterFrame()
             QString downloadLink = QString(" <a style=\"color: %1; text-decoration: underline\" href=\"%2?%3\">Download Krita %4</a>")
                     .arg(blendedColor.name())
                     .arg(m_updaterStatus.downloadLink())
-                    .arg(analyticsString + "version-update")
+                    .arg(QStringLiteral("manual-update"))
                     .arg(m_updaterStatus.availableVersion());
 
             versionLabelText.append(downloadLink);

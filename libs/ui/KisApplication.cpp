@@ -5,6 +5,7 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
+#include <QIcon>
 #include "KisApplication.h"
 
 #include <stdlib.h>
@@ -240,7 +241,7 @@ KisApplication::KisApplication(const QString &key, int &argc, char **argv)
     QCoreApplication::addLibraryPath(QCoreApplication::applicationDirPath());
 
 #ifndef Q_OS_MACOS
-    setWindowIcon(KisIconUtils::loadIcon("krita-branding"));
+    setWindowIcon(QIcon(QStringLiteral(":/brushquay.svg")));
 #endif
 
     if (qgetenv("KRITA_NO_STYLE_OVERRIDE").isEmpty()) {
@@ -1282,7 +1283,7 @@ void KisApplication::resetConfig()
     
     // find user settings file
     const QString configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation);
-    QString kritarcPath = configPath + QStringLiteral("/kritarc");
+    QString kritarcPath = configPath + QStringLiteral("/brushquayrc");
     
     QFile kritarcFile(kritarcPath);
     

@@ -28,6 +28,7 @@
 #include <QProcessEnvironment>
 #include <QSettings>
 #include <QStandardPaths>
+#include <KisBrushQuayIdentity.h>
 #include <QString>
 #include <QThread>
 #include <QTranslator>
@@ -120,8 +121,8 @@ void tryInitDrMingw()
         return;
     }
 
-    // Set the log file path to %LocalAppData%\kritacrash.log
-    const QString logFile = QDir(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)).absoluteFilePath("kritacrash.log");
+    // Set the log file path to %LocalAppData%\brushquaycrash.log
+    const QString logFile = QDir(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)).absoluteFilePath("brushquaycrash.log");
     const QByteArray logFilePath = QDir::toNativeSeparators(logFile).toLocal8Bit();
     myExcHndlSetLogFileNameA(logFilePath.data());
 }
@@ -174,7 +175,7 @@ Java_org_krita_android_JNIWrappers_saveState(JNIEnv* /*env*/,
     }
 
     const QString configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation);
-    QSettings kritarc(configPath + QStringLiteral("/kritadisplayrc"), QSettings::IniFormat);
+    QSettings kritarc(configPath + QStringLiteral("/brushquaydisplayrc"), QSettings::IniFormat);
     kritarc.setValue("canvasState", "OPENGL_SUCCESS");
 }
 
@@ -243,7 +244,7 @@ extern "C" MAIN_EXPORT int MAIN_FN(int argc, char **argv)
     qputenv("QT_BEARER_POLL_TIMEOUT", QByteArray::number(-1));
 
     // A per-user unique string, without /, because QLocalServer cannot use names with a / in it
-    QString key = "Krita5" + QStandardPaths::writableLocation(QStandardPaths::HomeLocation).replace("/", "_");
+    QString key = "BrushQuay1" + QStandardPaths::writableLocation(QStandardPaths::HomeLocation).replace("/", "_");
     key = key.replace(":", "_").replace("\\","_");
 
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts, true);
@@ -360,7 +361,7 @@ extern "C" MAIN_EXPORT int MAIN_FN(int argc, char **argv)
 #endif
 
     const QDir configPath(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation));
-    QSettings kritarc(configPath.absoluteFilePath("kritadisplayrc"), QSettings::IniFormat);
+    QSettings kritarc(configPath.absoluteFilePath("brushquaydisplayrc"), QSettings::IniFormat);
 
     // KFI18N is broken on Android. See kswitchlanguagedialog_p.cpp for details.
     // If/when removing this, also remove the matching logic from there!
@@ -478,7 +479,7 @@ if (!qEnvironmentVariableIsEmpty("KRITA_OPENGL_DEBUG")) {
      */
     if (!qEnvironmentVariableIsSet("QT_DISABLE_ACCESSIBILITY")) {
         if (kritarc.value("DisableAccessibilityInQt", false).toBool()) {
-            qInfo() << "INFO: activating QT_DISABLE_ACCESSIBILITY via kritadisplayrc...";
+            qInfo() << "INFO: activating QT_DISABLE_ACCESSIBILITY via brushquaydisplayrc...";
             qputenv("QT_DISABLE_ACCESSIBILITY", "1");
         }
     } else {
@@ -715,17 +716,21 @@ if (!qEnvironmentVariableIsEmpty("KRITA_OPENGL_DEBUG")) {
 
     /// Initialize application info, it will be used by both, Qt and
     /// DrKonqi of the host system
-    KAboutData aboutData("krita",
-                            "Krita",
-                            KritaVersionWrapper::versionString(true),
+    KAboutData aboutData(KisBrushQuayIdentity::ApplicationId,
+                            KisBrushQuayIdentity::DisplayName,
+                            KisBrushQuayIdentity::Version,
                             "", // TODO: "short description" needs new string exception
-                            KAboutLicense::GPL,
-                            i18nc("@info:credit", "© 1999–2026 The Krita Developers"));
-    aboutData.setHomepage(QStringLiteral("https://krita.org"));
-    aboutData.setOrganizationDomain("krita.org");
+                            KAboutLicense::GPL_V3,
+                            i18nc("@info:credit", "© 2026 Trieflow LLC. Based on Krita; © 1999–2026 The Krita Developers. GPL-3.0-or-later."));
+    aboutData.setLicense(KAboutLicense::GPL_V3, KAboutLicense::OrLaterVersions);
+    aboutData.setBugAddress("https://brushquay.trieflow.com/support");
+    aboutData.setHomepage(QString::fromLatin1(KisBrushQuayIdentity::ProductUrl));
+    aboutData.setOrganizationDomain("trieflow.com");
+    aboutData.setDesktopFileName("com.trieflow.brushquay");
 
     // this call sets corresponding fields of QApplication as well
     KAboutData::setApplicationData(aboutData);
+    KisBrushQuayIdentity::apply();
 
     // Note: Qt docs suggest we set organization name, but if we do, we get resource
     // paths of the form of krita/krita, which is weird.
@@ -802,7 +807,7 @@ if (!qEnvironmentVariableIsEmpty("KRITA_OPENGL_DEBUG")) {
     KisApplication::setAttribute(Qt::AA_DisableWindowContextHelpButton);
 #endif
     app.installEventFilter(KisQtWidgetsTweaker::instance());
-    app.setDesktopFileName(QStringLiteral("org.kde.krita"));
+    app.setDesktopFileName(QStringLiteral("com.trieflow.brushquay"));
 
     if (!args.noSplash()) {
         QWidget *splash = new KisSplashScreen();
@@ -874,7 +879,7 @@ if (!qEnvironmentVariableIsEmpty("KRITA_OPENGL_DEBUG")) {
     int state = KisApplication::exec();
 
     {
-        QSettings kritarc(configPath.absoluteFilePath("kritadisplayrc"), QSettings::IniFormat);
+        QSettings kritarc(configPath.absoluteFilePath("brushquaydisplayrc"), QSettings::IniFormat);
         kritarc.setValue("canvasState", "OPENGL_SUCCESS");
     }
 

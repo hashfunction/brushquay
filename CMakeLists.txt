@@ -341,7 +341,7 @@ add_feature_info("Limit long tests" LIMIT_LONG_TESTS "Run long running unittests
 option(BUILD_KRITA_QT_DESIGNER_PLUGINS "Build Qt Designer plugins for Krita widgets" OFF)
 add_feature_info("Build Qt Designer plugins" BUILD_KRITA_QT_DESIGNER_PLUGINS "Builds Qt Designer plugins for Krita widgets (use -DBUILD_KRITA_QT_DESIGNER_PLUGINS=ON to enable).")
 
-option(ENABLE_UPDATERS "Enable updaters/update notifications" ON)
+option(ENABLE_UPDATERS "Enable updaters/update notifications" OFF)
 configure_file(config-updaters.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-updaters.h)
 add_feature_info("Enable updaters" ENABLE_UPDATERS "Enable updaters/update notifications.")
 
@@ -380,25 +380,8 @@ if(BUILD_WITH_QT6 AND NOT "QT6" IN_LIST ALLOW_UNSTABLE)
     )
 endif()
 
-# Branding. Available options: default, Beta, Plus, Next. Can be set from command line
-if ("${BRANDING}" STREQUAL "")
-    if (DEFINED KRITA_STABLE)
-        set(BRANDING "default")
-    elseif (DEFINED KRITA_BETA OR DEFINED KRITA_RC)
-        set(BRANDING "Beta")
-    elseif (DEFINED KRITA_STABLE_BRANCH)
-        # Alpha/pre-alpha in stable branch
-        set(BRANDING "Plus")
-    else ()
-        # Alpha/pre-alpha in master branch or other experiments
-        set(BRANDING "Next")
-    endif ()
-endif()
-
-# Qt6 isn't stable, don't make it look like it is.
-if(BRANDING STREQUAL "default" AND BUILD_WITH_QT6)
-    set(BRANDING "Beta")
-endif()
+# The independent distribution always uses its original product artwork.
+set(BRANDING "BrushQuay")
 
 message(STATUS "Branding selected: ${BRANDING}")
 

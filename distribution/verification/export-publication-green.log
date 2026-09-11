@@ -1,0 +1,22 @@
+********* Start testing of KisExportFileTransactionTest *********
+Config: Using QtTest library 6.11.2, Qt 6.11.2 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 21.0.0 (clang-2100.1.1.101)), macos 26.6.2
+PASS   : KisExportFileTransactionTest::initTestCase()
+PASS   : KisExportFileTransactionTest::newUnicodeOutputPublishes()
+PASS   : KisExportFileTransactionTest::lateDestinationIsNeverOverwritten()
+PASS   : KisExportFileTransactionTest::confirmedReplacementRetainsOriginal()
+PASS   : KisExportFileTransactionTest::unconfirmedReplacementCannotStart()
+PASS   : KisExportFileTransactionTest::changedConfirmedContentIsRetained()
+PASS   : KisExportFileTransactionTest::sameBytesDifferentIdentityIsRetained()
+PASS   : KisExportFileTransactionTest::failedOrCancelledExportPreservesOriginal(failure)
+PASS   : KisExportFileTransactionTest::failedOrCancelledExportPreservesOriginal(cancel)
+PASS   : KisExportFileTransactionTest::cancellationAfterMovingOldRestoresIt()
+PASS   : KisExportFileTransactionTest::collisionAfterMovingOldRetainsEveryFile()
+PASS   : KisExportFileTransactionTest::targetChangedBetweenCheckAndMoveIsRestored()
+PASS   : KisExportFileTransactionTest::renamedParentCannotRedirectExport()
+PASS   : KisExportFileTransactionTest::sourceAndHardlinkCannotBeTargets()
+PASS   : KisExportFileTransactionTest::parentSymlinkAndSourceBasenameRemainProtected()
+PASS   : KisExportFileTransactionTest::protectedSourceChangePreventsPublication()
+PASS   : KisExportFileTransactionTest::emptyRenderAndSecondFinishAreRejected()
+PASS   : KisExportFileTransactionTest::cleanupTestCase()
+Totals: 18 passed, 0 failed, 0 skipped, 0 blacklisted, 19ms
+********* Finished testing of KisExportFileTransactionTest *********

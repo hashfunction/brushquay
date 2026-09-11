@@ -33,13 +33,13 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 //#define KRITA_IS_DLL
 //#define KRITA_IS_DEBUG
-#define KRITA_FILE_VERSION KRITA_STABLE_VERSION_MAJOR,KRITA_STABLE_VERSION_MINOR,KRITA_VERSION_RELEASE,KRITA_VERSION_REVISION
-#define KRITA_FILE_VERSION_STR KRITA_FULL_VERSION_STRING
+#define KRITA_FILE_VERSION 1,0,0,0
+#define KRITA_FILE_VERSION_STR "1.0.0"
 #define KRITA_PRODUCT_VERSION KRITA_FILE_VERSION
 #define KRITA_PRODUCT_VERSION_STR KRITA_FILE_VERSION_STR
 
-#define KRITA_DESCRIPTION_STR "Krita digital painting application"
-#define KRITA_FOUNDATION_STR "Krita Foundation"
+#define KRITA_DESCRIPTION_STR "BrushQuay painting and illustration"
+#define KRITA_FOUNDATION_STR "Trieflow LLC"
 
 
 VS_VERSION_INFO VERSIONINFO
@@ -66,10 +66,10 @@ BEGIN
             VALUE "CompanyName", KRITA_FOUNDATION_STR
             VALUE "FileDescription", KRITA_DESCRIPTION_STR
             VALUE "FileVersion", KRITA_FILE_VERSION_STR
-            VALUE "InternalName", "krita"
-            VALUE "LegalCopyright", KRITA_FOUNDATION_STR
-            VALUE "OriginalFilename", "krita.exe"
-            VALUE "ProductName", "Krita"
+            VALUE "InternalName", "brushquay"
+            VALUE "LegalCopyright", "Trieflow LLC; based on Krita, copyright The Krita Developers. GPL-3.0-or-later."
+            VALUE "OriginalFilename", "brushquay.exe"
+            VALUE "ProductName", "BrushQuay"
             VALUE "ProductVersion", KRITA_PRODUCT_VERSION_STR
         END
     END

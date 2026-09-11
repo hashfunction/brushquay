@@ -383,6 +383,7 @@ private Q_SLOTS:
      * This will call slotFileSaveAs().
      */
     void slotExportFile();
+    void slotExportWithPreset();
 
     void slotExportAdvance();
 

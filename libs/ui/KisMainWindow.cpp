@@ -27,6 +27,11 @@
 #include <QMdiSubWindow>
 #include <QMutex>
 #include <QMutexLocker>
+#include <QFutureWatcher>
+#include <QProgressDialog>
+#include <QtConcurrentRun>
+#include "KisExportPresetJob.h"
+#include "dialogs/KisExportPresetDialog.h"
 #include <QPointer>
 #include <KisSignalMapper.h>
 #include <QTabBar>
@@ -1881,6 +1886,73 @@ void KisMainWindow::slotExportFile()
         Q_EMIT documentSaved();
     }
 }
+void KisMainWindow::slotExportWithPreset()
+{
+    if (!d->activeView || !d->activeView->document()) return;
+    std::unique_lock<QMutex> lock(d->savingEntryMutex, std::try_to_lock);
+    if (!lock.owns_lock()) return;
+    QPointer<KisDocument> document=d->activeView->document();
+    KisDelayedSaveDialog busy(document->image(),KisDelayedSaveDialog::SaveDialog,0,this);
+    busy.blockIfImageIsBusy();
+    if (busy.result()!=KisDelayedSaveDialog::Accepted) return;
+    KisExportPresetDialog presets(document,this);
+    if (presets.exec()!=QDialog::Accepted || !presets.selectedPreset() || !document) return;
+    const auto preset=*presets.selectedPreset();
+    KoFileDialog picker(this,KoFileDialog::SaveFile,"BrushQuayPresetExport");
+    picker.setCaption(i18n("Export with Preset")); picker.setConfirmOverwrite(false);
+    picker.setMimeTypeFilters({preset.mimeType},preset.mimeType);
+    const auto name=document->path().isEmpty()?QString("illustration"):QFileInfo(document->path()).completeBaseName();
+    const auto directory=document->path().isEmpty()?QStandardPaths::writableLocation(QStandardPaths::PicturesLocation):QFileInfo(document->path()).absolutePath();
+    picker.setDefaultDir(QDir(directory).filePath(name+"."+preset.extension),true);
+    const auto path=picker.filename(); if (path.isEmpty()) return;
+    if (!KisMimeDatabase::suffixesForMimeType(preset.mimeType).contains(QFileInfo(path).suffix().toLower())) {
+        QMessageBox::warning(this,i18n("Export with Preset"),i18n("Choose a filename extension matching the preset format.")); return;
+    }
+    struct Capture { KisExportDestination destination; QString error; };
+    auto *progress=new QProgressDialog(i18n("Inspecting the selected destination…"),i18n("Cancel"),0,0,this);
+    progress->setWindowTitle(i18n("Export with Preset")); progress->setMinimumDuration(0); progress->setAutoClose(false);
+    auto *watcher=new QFutureWatcher<Capture>(this);
+    connect(watcher,&QFutureWatcher<Capture>::finished,this,[this,watcher,progress,document,preset] {
+        auto captured=watcher->result(); watcher->deleteLater();
+        const bool cancelled=progress->wasCanceled(); progress->close(); progress->deleteLater();
+        if (cancelled || !document) return;
+        if (!captured.error.isEmpty()) { QMessageBox::warning(this,i18n("Export with Preset"),captured.error); return; }
+        if (captured.destination.existing) {
+            QMessageBox consent(QMessageBox::Question,i18n("Replace Existing Export"),
+                i18n("Replace %1? The existing file will be retained in a recovery folder beside the export.",captured.destination.path),QMessageBox::Yes|QMessageBox::Cancel,this);
+            consent.setTextFormat(Qt::PlainText); consent.setDefaultButton(QMessageBox::Cancel);
+            if (consent.exec()!=QMessageBox::Yes) return;
+            captured.destination.overwriteConfirmed=true;
+        }
+        auto *job=new KisExportPresetJob(document,preset,captured.destination,this);
+        auto *running=new QProgressDialog(i18n("Preparing, exporting and checking the image…"),i18n("Cancel Publication"),0,0,this);
+        running->setWindowTitle(i18n("Export with Preset")); running->setMinimumDuration(0); running->setAutoClose(false);
+        connect(running,&QProgressDialog::canceled,job,&KisExportPresetJob::cancel);
+        connect(job,&KisExportPresetJob::finished,this,[this,job,running,preset](const KisExportFileOutcome &result) {
+            running->close(); running->deleteLater(); job->deleteLater();
+            QString message;
+            if (result.published && result.error.isEmpty()) {
+                message=i18n("Export created: %1",result.outputPath);
+                d->lastExportLocation=result.outputPath; d->lastExportedFormat=preset.mimeType.toLatin1();
+            } else if (result.published) message=i18n("An output was published but final verification failed: %1",result.outputPath);
+            else message=result.cancelled?i18n("Export cancelled. No new image was published."):i18n("No new image was published to %1.",result.outputPath);
+            if (!result.error.isEmpty()) message+="\n"+result.error;
+            if (!result.warning.isEmpty()) message+="\n"+result.warning;
+            if (!result.previousPath.isEmpty()) message+=i18n("\nPrevious file retained: %1",result.previousPath);
+            if (!result.stagedPath.isEmpty() && QFileInfo::exists(result.stagedPath)) message+=i18n("\nStaged image retained: %1",result.stagedPath);
+            QMessageBox outcome(result.error.isEmpty()?QMessageBox::Information:QMessageBox::Warning,i18n("Export Result"),message,QMessageBox::Ok,this);
+            outcome.setTextFormat(Qt::PlainText); outcome.exec();
+        });
+        job->start();
+    });
+    watcher->setFuture(QtConcurrent::run([path] {
+        Capture result;
+        try { result.destination=KisExportDestination::capture(path); }
+        catch (const std::exception &error) { result.error=QString::fromUtf8(error.what()); }
+        return result;
+    }));
+}
+
 void KisMainWindow::slotExportAdvance()
 {
     if (saveDocument(d->activeView->document(), true, true,true)) {
@@ -3096,6 +3168,9 @@ void KisMainWindow::createActions()
     d->exportFile  = actionManager->createAction("file_export_file");
     connect(d->exportFile, SIGNAL(triggered(bool)), this, SLOT(slotExportFile()));
 
+    auto *exportPreset=actionManager->createAction("file_export_with_preset");
+    connect(exportPreset,&QAction::triggered,this,&KisMainWindow::slotExportWithPreset);
+
     d->exportFileAdvance  = actionManager->createAction("file_export_advanced");
     connect(d->exportFileAdvance, SIGNAL(triggered(bool)), this, SLOT(slotExportAdvance()));
 
@@ -3265,7 +3340,7 @@ void KisMainWindow::initializeGeometry()
 
 void KisMainWindow::showManual()
 {
-    QDesktopServices::openUrl(QUrl("https://docs.krita.org"));
+    QDesktopServices::openUrl(QUrl("https://brushquay.trieflow.com/support"));
 }
 
 void KisMainWindow::showDockerTitleBars(bool show)

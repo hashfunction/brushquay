@@ -154,13 +154,9 @@ KisKBugReport::KisKBugReport(const KAboutData &aboutData, QWidget *_parent)
     // Point to the web form
 
     lay->addSpacing(10);
-    QString text = i18n("<qt>"
-                        "<p>Please read <b><a href=\"https://docs.krita.org/en/untranslatable_pages/reporting_bugs.html\">this guide</a></b> for reporting bugs first!</p>"
-                        "<p>To submit a bug report, click on the button below. This will open a web browser "
-                        "window on <a href=\"https://bugs.kde.org\">https://bugs.kde.org</a> where you will find "
-                        "a form to fill in. </p>"
-                        "<p><b>Please paste the following information into the bug report!</b></p>"
-                        "</qt>");
+    QString text = i18n("<qt><p>Open BrushQuay support for help or to report a problem.</p>"
+                        "<p>You can review and copy the diagnostic information below. "
+                        "Opening support does not automatically send it.</p></qt>");
     QLabel *label = new QLabel(text, this);
     label->setOpenExternalLinks(true);
     label->setTextInteractionFlags(Qt::LinksAccessibleByMouse | Qt::LinksAccessibleByKeyboard);
@@ -169,7 +165,7 @@ KisKBugReport::KisKBugReport(const KAboutData &aboutData, QWidget *_parent)
     lay->addSpacing(10);
 
     QByteArray additionalInformation;
-    QFile sysinfo(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/krita-sysinfo.log");
+    QFile sysinfo(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/brushquay-sysinfo.log");
     if (sysinfo.open(QFile::ReadOnly)) {
         additionalInformation += sysinfo.readAll();
         sysinfo.close();
@@ -177,7 +173,7 @@ KisKBugReport::KisKBugReport(const KAboutData &aboutData, QWidget *_parent)
 
     additionalInformation += "\n---------------------\n";
 
-    QFile log(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/krita.log");
+    QFile log(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/brushquay.log");
     if (log.open(QFile::ReadOnly)) {
         additionalInformation += log.readAll();
         log.close();
@@ -185,7 +181,7 @@ KisKBugReport::KisKBugReport(const KAboutData &aboutData, QWidget *_parent)
 
     additionalInformation += "\n---------------------\n";
 
-    QFile crashes(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kritacrash.log");
+    QFile crashes(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/brushquaycrash.log");
     if (crashes.open(QFile::ReadOnly)) {
         additionalInformation += crashes.readAll();
         crashes.close();
@@ -214,26 +210,7 @@ KisKBugReport::~KisKBugReport()
 
 void KisKBugReportPrivate::_k_updateUrl()
 {
-    url = QUrl(QStringLiteral("https://bugs.kde.org/enter_bug.cgi"));
-    QUrlQuery query;
-    query.addQueryItem(QStringLiteral("format"), QLatin1String("guided"));    // use the guided form
-
-    // the string format is product/component, where component is optional
-    QStringList list = QStringList() << appname;
-    query.addQueryItem(QStringLiteral("product"), list[0]);
-    if (list.size() == 2) {
-        query.addQueryItem(QStringLiteral("component"), list[1]);
-    }
-
-    query.addQueryItem(QStringLiteral("version"), m_strVersion);
-
-    // TODO: guess and fill OS(sys_os) and Platform(rep_platform) fields
-#ifdef Q_OS_WIN
-    query.addQueryItem(QStringLiteral("op_sys"), QStringLiteral("MS Windows"));
-    query.addQueryItem(QStringLiteral("rep_platform"), QStringLiteral("MS Windows"));
-#endif
-
-    url.setQuery(query);
+    url = QUrl(QStringLiteral("https://brushquay.trieflow.com/support"));
 }
 
 void KisKBugReport::accept()

@@ -1,0 +1,7 @@
+<!-- SPDX-FileCopyrightText: 2026 Trieflow LLC
+     SPDX-License-Identifier: CC0-1.0 -->
+<RCC><qresource prefix="/">
+<file alias="brushquay.svg">sc-apps-brushquay.svg</file>
+<file alias="brushquay-banner.svg">banner.svg</file>
+<file alias="brushquay-splash.png">splash.png</file>
+</qresource></RCC>

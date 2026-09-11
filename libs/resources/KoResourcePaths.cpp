@@ -700,8 +700,8 @@ QString KoResourcePaths::saveLocationInternal(const QString &type, const QString
 #ifndef Q_OS_ANDROID
     // on Android almost all config locations we save to are app specific,
     // and don't end with "krita".
-    if (!path.endsWith("krita") && useStandardLocation) {
-        path += "/krita";
+    if (!path.endsWith("brushquay") && useStandardLocation) {
+        path += "/brushquay";
     }
 #endif
 

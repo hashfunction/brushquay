@@ -4,6 +4,7 @@
  *
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
+#include <QIcon>
 #include "kis_splash_screen.h"
 
 #include <QApplication>
@@ -49,7 +50,7 @@ KisSplashScreen::KisSplashScreen(bool themed, QWidget *parent, Qt::WindowFlags f
 
     setupUi(this);
 #ifndef Q_OS_MACOS
-    setWindowIcon(KisIconUtils::loadIcon("krita-branding"));
+    setWindowIcon(QIcon(QStringLiteral(":/brushquay.svg")));
 #endif
 
     m_loadingTextLabel = new QLabel(lblSplash);
@@ -58,8 +59,8 @@ KisSplashScreen::KisSplashScreen(bool themed, QWidget *parent, Qt::WindowFlags f
     m_loadingTextLabel->setAlignment(Qt::AlignRight | Qt::AlignTop);
     addDropShadow(m_loadingTextLabel);
 
-    m_brandingSvg = new QSvgWidget(QStringLiteral(":/krita-branding.svgz"), lblSplash);
-    m_bannerSvg = new QSvgWidget(QStringLiteral(":/splash/banner.svg"), lblSplash);
+    m_brandingSvg = new QSvgWidget(QStringLiteral(":/brushquay.svg"), lblSplash);
+    m_bannerSvg = new QSvgWidget(QStringLiteral(":/brushquay-banner.svg"), lblSplash);
     addDropShadow(m_bannerSvg);
 
     m_artCreditsLabel = new QLabel(lblSplash);
@@ -207,26 +208,26 @@ void KisSplashScreen::displayLinks(bool show) {
         lblLinksText    << "<html>"
                         << "<head/>"
                         << "<body><table style=\"width:100%\" cellpadding=\"30\"><tr><td>"
-                        << i18n("<p><span style=\" color:%1;\"><b>Using Krita</b></span></p>",color);
+                        << i18n("<p><span style=\" color:%1;\"><b>Using BrushQuay</b></span></p>",color);
 
 #ifdef Q_OS_MACOS
         // macOS store version should not contain external links containing donation buttons or forms
         if (!KisMacosEntitlements().sandbox()) {
 #endif
 
-            lblLinksText    << i18n("<p><a href=\"https://krita.org/support-us/\"><span style=\" text-decoration: underline; color:%1;\">Support Krita's Development!</span></a></p>",color)
-                            << i18n("<p><a href=\"https://krita.org/\"><span style=\" text-decoration: underline; color:%1;\">Krita Website</span></a></p>",color);
+            lblLinksText    << i18n("<p><a href=\"https://brushquay.trieflow.com/support\"><span style=\" text-decoration: underline; color:%1;\">BrushQuay Support</span></a></p>",color)
+                            << i18n("<p><a href=\"https://brushquay.trieflow.com\"><span style=\" text-decoration: underline; color:%1;\">BrushQuay Website</span></a></p>",color);
 #ifdef Q_OS_MACOS
         }
 #endif
-        lblLinksText    << i18n("<p><a href=\"https://docs.krita.org/en/user_manual/getting_started.html\"><span style=\" text-decoration: underline; color:%1;\">Getting Started</span></a></p>",color)
-                        << i18n("<p><a href=\"https://docs.krita.org/\"><span style=\" text-decoration: underline; color:%1;\">Manual</span></a></p>",color)
+        lblLinksText    << i18n("<p><a href=\"https://brushquay.trieflow.com/support\"><span style=\" text-decoration: underline; color:%1;\">Getting Started</span></a></p>",color)
+                        << i18n("<p><a href=\"https://brushquay.trieflow.com/support\"><span style=\" text-decoration: underline; color:%1;\">Manual</span></a></p>",color)
                         << "</td><td>"
-                        << i18n("<p><span style=\" color:%1;\"><b>Coding Krita</b></span></p>",color)
-                        << i18n("<p><a href=\"https://krita-artists.org\"><span style=\" text-decoration: underline; color:%1;\">User Community</span></a></p>",color)
-                        << i18n("<p><a href=\"https://invent.kde.org/graphics/krita\"><span style=\" text-decoration: underline; color:%1;\">Source Code</span></a></p>",color)
+                        << i18n("<p><span style=\" color:%1;\"><b>Source and Licenses</b></span></p>",color)
+                        << i18n("<p><a href=\"https://brushquay.trieflow.com/support\"><span style=\" text-decoration: underline; color:%1;\">User Community</span></a></p>",color)
+                        << i18n("<p><a href=\"https://brushquay.trieflow.com/#source\"><span style=\" text-decoration: underline; color:%1;\">Source Code</span></a></p>",color)
                         << i18n("<p><a href=\"https://api.kde.org/krita/html/classKrita.html\"><span style=\" text-decoration: underline; color:%1;\">Scripting API</span></a></p>",color)
-                        << i18n("<p><a href=\"https://scripting.krita.org/lessons/introduction\"><span style=\" text-decoration: underline; color:%1;\">Scripting School</span></a></p>",color)
+                        << i18n("<p><a href=\"https://brushquay.trieflow.com/support\"><span style=\" text-decoration: underline; color:%1;\">Scripting School</span></a></p>",color)
                         << "</td></tr></table></body>"
                         << "</html>";
 
@@ -270,30 +271,8 @@ void KisSplashScreen::setLoadingText(QString text)
 
 KisSplashScreen::Source KisSplashScreen::getImageSource()
 {
-    QString artistCredit = i18nc("Normal splash artist name", "Tyson Tan");
-    // Loading the ginormous 4K PNG splash image increases the startup time on
-    // Android by several seconds and at the same time looks really bad when
-    // scaled down to a dinky size. Instead of overengineering this into an
-    // Enterprise Splash Screen Solution where we choose the image based on
-    // screen size or something, we'll just use a HD JPEG instead. It's fine.
-#ifdef Q_OS_ANDROID
-    QString resourcePath = QStringLiteral(":/splash/hd.jpg");
-#else
-    QString resourcePath = QStringLiteral(":/splash/0.png");
-    // TODO: Re-add the holiday splash...
-#if 0
-    QDate currentDate = QDate::currentDate();
-    if (currentDate > QDate(currentDate.year(), 12, 4) ||
-            currentDate < QDate(currentDate.year(), 1, 9)) {
-        resourcePath = QStringLiteral(":/splash/1.png");
-        artistCredit = QStringLiteral("???")};
-    }
-#endif
-#endif
-    if (!artistCredit.isEmpty()) {
-        artistCredit = i18nc("splash image credit", "Artwork by: %1", artistCredit);
-    }
-    return Source{resourcePath, artistCredit};
+    return Source{QStringLiteral(":/brushquay-splash.png"),
+                  i18nc("splash image credit", "Artwork by: %1", QStringLiteral("Trieflow LLC"))};
 }
 
 

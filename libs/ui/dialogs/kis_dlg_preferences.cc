@@ -368,7 +368,7 @@ GeneralTab::GeneralTab(QWidget *_parent, const char *_name)
     m_chkCanvasMessages->setChecked(cfg.showCanvasMessages());
 
     const QString configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation);
-    QSettings kritarc(configPath + QStringLiteral("/kritadisplayrc"), QSettings::IniFormat);
+    QSettings kritarc(configPath + QStringLiteral("/brushquaydisplayrc"), QSettings::IniFormat);
     m_chkHiDPI->setChecked(kritarc.value("EnableHiDPI", true).toBool());
 #if defined(Q_OS_WIN) && defined(HAVE_HIGH_DPI_SCALE_FACTOR_ROUNDING_POLICY)
     m_chkHiDPIFractionalScaling->setChecked(kritarc.value("EnableHiDPIFractionalScaling", false).toBool());
@@ -2507,7 +2507,7 @@ KisDlgPreferences::KisDlgPreferences(QWidget* parent, const char* name)
     : KPageDialog(parent)
 {
     Q_UNUSED(name);
-    setWindowTitle(i18n("Configure Krita"));
+    setWindowTitle(i18n("Configure BrushQuay"));
     setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::RestoreDefaults);
 
     setFaceType(KPageDialog::List);
@@ -2923,7 +2923,7 @@ bool KisDlgPreferences::editPreferences(std::optional<PageDesc>page)
         cfg.setPasteFormat(m_general->m_pasteFormatGroup.checkedId());
 
         const QString configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation);
-        QSettings kritarc(configPath + QStringLiteral("/kritadisplayrc"), QSettings::IniFormat);
+        QSettings kritarc(configPath + QStringLiteral("/brushquaydisplayrc"), QSettings::IniFormat);
         kritarc.setValue("EnableHiDPI", m_general->m_chkHiDPI->isChecked());
 #if defined(Q_OS_WIN) && defined(HAVE_HIGH_DPI_SCALE_FACTOR_ROUNDING_POLICY)
         kritarc.setValue("EnableHiDPIFractionalScaling", m_general->m_chkHiDPIFractionalScaling->isChecked());

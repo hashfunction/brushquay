@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<title>BrushQuay</title><desc>Original brush and quay emblem. Copyright 2026 Trieflow LLC. CC0-1.0.</desc>
+<defs><linearGradient id="background" x2="1" y2="1"><stop stop-color="#31235e"/><stop offset="1" stop-color="#7145c7"/></linearGradient><linearGradient id="bristle" y2="1" x2="0"><stop stop-color="#ffc875"/><stop offset="1" stop-color="#f58d59"/></linearGradient></defs>
+<rect x="16" y="16" width="480" height="480" rx="112" fill="url(#background)"/>
+<path d="M153 331c48 28 157 30 211 2M137 373c69 32 176 28 244-5" fill="none" stroke="#a9e3e3" stroke-width="24" stroke-linecap="round"/>
+<path d="M224 242 337 97c13-17 42-9 38 14L289 280Z" fill="#f7f0ff"/>
+<path d="m222 235 74 37-17 33-74-35Z" fill="#b9a0ef"/>
+<path d="M209 270c-44 9-14 49-69 63 54 19 110 3 133-29Z" fill="url(#bristle)"/>
+<path d="M167 323c24-7 25-22 42-31" fill="none" stroke="#fff0c9" stroke-width="9" stroke-linecap="round"/>
+</svg>
