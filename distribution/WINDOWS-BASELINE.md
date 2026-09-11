@@ -14,7 +14,7 @@ Primary references: [LLVM-MinGW 20251118](https://github.com/mstorsjo/llvm-mingw
 
 ## Windows prerequisites and commands
 
-Use Windows x64 with a committed, clean source checkout, Git and a working Python 3.9+ bootstrap with standard-library HTTPS trust. Root's initial runner uses Windows 2022 and Python 3.12.10. No VM provisioning, machine PATH changes, Windows Update changes, SDK installer or privileged setup script is required by these commands. The bootstrap downloads/verifies data; the native build uses the locked portable tools. Native build metadata records OS, bootstrap version/path and Git source HEAD/tree; the runner image itself is not an immutable image lock.
+Use Windows x64 with a committed, clean source checkout, Git, a host CMake for the small configuration-parser regression, and a working Python 3.9+ bootstrap with standard-library HTTPS trust. Root's initial runner uses Windows 2022 and Python 3.12.10. No VM provisioning, machine PATH changes, Windows Update changes, SDK installer or privileged setup script is required by these commands. The bootstrap downloads/verifies data; the native build uses the locked portable tools. Native build metadata records OS, bootstrap version/path and Git source HEAD/tree; the runner image itself is not an immutable image lock.
 
 From the source root:
 

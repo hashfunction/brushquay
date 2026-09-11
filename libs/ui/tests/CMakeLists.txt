@@ -1,3 +1,7 @@
+kis_add_test(KisExportPresetStoreTest.cpp
+    TEST_NAME KisExportPresetStoreTest
+    LINK_LIBRARIES kritaexportpresets Qt${QT_MAJOR_VERSION}::Test)
+
 kis_add_tests(
     kis_image_view_converter_test.cpp
     kis_shape_selection_test.cpp

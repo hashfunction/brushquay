@@ -10,6 +10,11 @@ if (ANDROID)
     endif()
 endif()
 
+# Export preset persistence has no document, GUI, plug-in or network dependency.
+kis_add_library(kritaexportpresets STATIC KisExportPreset.cpp KisExportPresetStore.cpp)
+target_link_libraries(kritaexportpresets PUBLIC Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Xml)
+target_include_directories(kritaexportpresets PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
 add_subdirectory( tests )
 
 if (APPLE)
@@ -705,6 +710,7 @@ target_sources(kritaui
 generate_export_header(kritaui BASE_NAME kritaui)
 
 target_link_libraries(kritaui
+    PRIVATE kritaexportpresets
     PUBLIC
         KF${KF_MAJOR}::CoreAddons
         KF${KF_MAJOR}::Completion

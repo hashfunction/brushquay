@@ -20,6 +20,8 @@ def configuration(stage, source, build, install, host):
     deps, tools = stage / 'deps', stage / 'tools'
     llvm, cmake, ninja = tools / 'llvm/bin', tools / 'cmake/bin', tools / 'ninja'
     python = tools / 'python-sdk/tools'
+    # Cache values are embedded into generated CMake code; backslashes are escapes there.
+    # Only CMake cache paths use forward slashes. Executables and environment stay native.
     command = [str(cmake / 'cmake.exe'), '-S', str(source), '-B', str(build), '-G', 'Ninja',
                '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DBUILD_TESTING=ON',
                '-DBUILD_WITH_QT6=ON', '-DALLOW_UNSTABLE=QT6',
@@ -31,20 +33,20 @@ def configuration(stage, source, build, install, host):
                '-DCMAKE_FIND_USE_CMAKE_SYSTEM_PATH=OFF',
                '-DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY', '-DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY',
                '-DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY', '-DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER',
-               '-DCMAKE_FIND_ROOT_PATH=' + ';'.join(map(str, (deps, python, tools / 'llvm/x86_64-w64-mingw32', tools / 'cmake', source))),
-               '-DCMAKE_PROGRAM_PATH=' + ';'.join(map(str, (cmake, ninja, llvm, deps / 'bin', python, python / 'Scripts'))),
-               '-DCMAKE_C_COMPILER=' + str(llvm / 'x86_64-w64-mingw32-clang.exe'),
-               '-DCMAKE_CXX_COMPILER=' + str(llvm / 'x86_64-w64-mingw32-clang++.exe'),
-               '-DCMAKE_RC_COMPILER=' + str(llvm / 'x86_64-w64-mingw32-windres.exe'),
-               '-DCMAKE_MAKE_PROGRAM=' + str(ninja / 'ninja.exe'),
-               '-DCMAKE_PREFIX_PATH=' + str(deps),
-               '-DCMAKE_INSTALL_PREFIX=' + str(install),
-               '-DPython_ROOT_DIR=' + str(python),
-               '-DPython_EXECUTABLE=' + str(python / 'python.exe'),
-               '-DPython_INCLUDE_DIR=' + str(python / 'include'),
-               '-DPython_LIBRARY=' + str(python / 'libs/python313.lib'),
+               '-DCMAKE_FIND_ROOT_PATH=' + ';'.join(p.as_posix() for p in (deps, python, tools / 'llvm/x86_64-w64-mingw32', tools / 'cmake', source)),
+               '-DCMAKE_PROGRAM_PATH=' + ';'.join(p.as_posix() for p in (cmake, ninja, llvm, deps / 'bin', python, python / 'Scripts')),
+               '-DCMAKE_C_COMPILER=' + (llvm / 'x86_64-w64-mingw32-clang.exe').as_posix(),
+               '-DCMAKE_CXX_COMPILER=' + (llvm / 'x86_64-w64-mingw32-clang++.exe').as_posix(),
+               '-DCMAKE_RC_COMPILER=' + (llvm / 'x86_64-w64-mingw32-windres.exe').as_posix(),
+               '-DCMAKE_MAKE_PROGRAM=' + (ninja / 'ninja.exe').as_posix(),
+               '-DCMAKE_PREFIX_PATH=' + (deps).as_posix(),
+               '-DCMAKE_INSTALL_PREFIX=' + (install).as_posix(),
+               '-DPython_ROOT_DIR=' + (python).as_posix(),
+               '-DPython_EXECUTABLE=' + (python / 'python.exe').as_posix(),
+               '-DPython_INCLUDE_DIR=' + (python / 'include').as_posix(),
+               '-DPython_LIBRARY=' + (python / 'libs/python313.lib').as_posix(),
                '-DPython_FIND_REGISTRY=NEVER', '-DPython_FIND_STRATEGY=LOCATION',
-               '-DPKG_CONFIG_EXECUTABLE=' + str(deps / 'bin/pkgconf.exe')]
+               '-DPKG_CONFIG_EXECUTABLE=' + (deps / 'bin/pkgconf.exe').as_posix()]
     # Deliberately do not inherit compiler flags, Python packages or a foreign compiler PATH.
     keep = ('SystemRoot', 'SYSTEMROOT', 'WINDIR', 'COMSPEC', 'TEMP', 'TMP', 'USERPROFILE',
             'NUMBER_OF_PROCESSORS', 'PROCESSOR_ARCHITECTURE', 'PATHEXT', 'LANG')
