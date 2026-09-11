@@ -1,0 +1,31 @@
+test_audit_file_directory_alias_rejected (test_brushquay_msix.PackageTests) ... ok
+test_audit_gates_and_unresolved_licenses_rejected (test_brushquay_msix.PackageTests) ... ok
+test_cli_rejects_duplicate_or_extended_manifest_identity (test_brushquay_msix.PackageTests) ... ok
+test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) ... ok
+test_container_changed_manifest_rejected (test_brushquay_msix.PackageTests) ... ok
+test_container_exact_hash_verification (test_brushquay_msix.PackageTests) ... ok
+test_container_extra_alias_or_escape_rejected (test_brushquay_msix.PackageTests) ... ok
+test_container_symlink_rejected (test_brushquay_msix.PackageTests) ... ok
+test_container_unknown_or_symlink_directory_rejected (test_brushquay_msix.PackageTests) ... ok
+test_directory_symlink_rejected (test_brushquay_msix.PackageTests) ... ok
+test_driver_late_output_owner_is_not_replaced (test_brushquay_msix.PackageTests) ... ok
+test_driver_retains_complete_verified_evidence (test_brushquay_msix.PackageTests) ... ok
+test_driver_sdk_failure_retains_recovery_without_publication (test_brushquay_msix.PackageTests) ... ok
+test_driver_tool_lock_change_cannot_authorize_new_bytes (test_brushquay_msix.PackageTests) ... ok
+test_existing_stage_refused (test_brushquay_msix.PackageTests) ... ok
+test_generation_rejects_template_identity_drift (test_brushquay_msix.PackageTests) ... ok
+test_invalid_windows_and_package_versions_rejected (test_brushquay_msix.PackageTests) ... ok
+test_missing_placeholder_or_upstream_identity_rejected (test_brushquay_msix.PackageTests) ... ok
+test_owned_manifest_has_only_explicit_fulltrust_capability (test_brushquay_msix.PackageTests) ... ok
+test_paths_case_alias_and_unaudited_file_rejected (test_brushquay_msix.PackageTests) ... ok
+test_payload_tamper_after_stage_detected (test_brushquay_msix.PackageTests) ... ok
+test_reordered_xml_metacharacters_round_trip_without_substitution (test_brushquay_msix.PackageTests) ... ok
+test_source_bytes_changed_and_symlink_rejected (test_brushquay_msix.PackageTests) ... ok
+test_stage_is_exact_copy_without_mutating_install (test_brushquay_msix.PackageTests) ... ok
+test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) ... ok
+test_unknown_identity_fields_and_entities_rejected (test_brushquay_msix.PackageTests) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.717s
+
+OK

@@ -10,6 +10,7 @@ import re
 import stat
 import unicodedata
 import zipfile
+from manifest_identity import MAX_MANIFEST_BYTES, validate_identity_values, verify_manifest_identity
 
 METADATA = {'[Content_Types].xml', 'AppxBlockMap.xml'}
 
@@ -41,11 +42,13 @@ def digest_stream(stream):
     while data:=stream.read(1024*1024): sha.update(data);size+=len(data)
     return {'sha256':sha.hexdigest(),'bytes':size}
 
-def verify_msix(path,expected):
+def verify_msix(path,expected,identity):
+    validate_identity_values(identity)
+    if 'AppxManifest.xml' not in expected: raise ValueError('Approved manifest is required')
     if not expected or any(name in METADATA for name in expected): raise ValueError('Invalid expected payload')
     expected_seen={}
     for name in expected: register_path(name,expected_seen)
-    seen={};actual={};metadata=set();directories=set()
+    seen={};actual={};metadata=set();directories=set();manifest_identity=None
     allowed_directories={str(parent) for name in expected for parent in PurePosixPath(name).parents if str(parent)!="."}
     with zipfile.ZipFile(path) as archive:
         for info in archive.infolist():
@@ -67,12 +70,18 @@ def verify_msix(path,expected):
             record=expected.get(info.filename)
             if not record or info.file_size!=record['bytes']:
                 raise ValueError('Unexpected package entry or size: '+info.filename)
-            with archive.open(info) as stream: measured=digest_stream(stream)
+            with archive.open(info) as stream:
+                if info.filename=='AppxManifest.xml':
+                    if info.file_size>MAX_MANIFEST_BYTES: raise ValueError('Oversized package manifest')
+                    data=stream.read(MAX_MANIFEST_BYTES+1)
+                    measured={'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data)}
+                    manifest_identity=verify_manifest_identity(data,identity)
+                else: measured=digest_stream(stream)
             if measured!=record: raise ValueError('Package payload hash mismatch: '+info.filename)
             actual[info.filename]=measured
     if set(actual)!=set(expected) or metadata!=METADATA: raise ValueError('Missing package payload or required metadata')
     with Path(path).open('rb') as stream: package=digest_stream(stream)
-    return {'verifiedPayloadFiles':len(actual),'package':package}
+    return {'verifiedPayloadFiles':len(actual),'package':package,'manifest':manifest_identity}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
@@ -80,6 +89,6 @@ def main():
     parser.add_argument('--record',required=True,type=Path)
     args=parser.parse_args()
     record=json.loads(args.record.read_text())
-    print(json.dumps(verify_msix(args.package,record['payload']),indent=2))
+    print(json.dumps(verify_msix(args.package,record['payload'],record['identity']),indent=2))
 
 if __name__=='__main__': main()

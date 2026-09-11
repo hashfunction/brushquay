@@ -1,0 +1,235 @@
+test_audit_file_directory_alias_rejected (test_brushquay_msix.PackageTests) ... ok
+test_audit_gates_and_unresolved_licenses_rejected (test_brushquay_msix.PackageTests) ... ok
+test_cli_rejects_duplicate_or_extended_manifest_identity (test_brushquay_msix.PackageTests) ... test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) ... test_container_changed_manifest_rejected (test_brushquay_msix.PackageTests) ... ok
+test_container_exact_hash_verification (test_brushquay_msix.PackageTests) ... ok
+test_container_extra_alias_or_escape_rejected (test_brushquay_msix.PackageTests) ... ok
+test_container_symlink_rejected (test_brushquay_msix.PackageTests) ... ok
+test_container_unknown_or_symlink_directory_rejected (test_brushquay_msix.PackageTests) ... ok
+test_directory_symlink_rejected (test_brushquay_msix.PackageTests) ... ok
+test_driver_late_output_owner_is_not_replaced (test_brushquay_msix.PackageTests) ... ok
+test_driver_retains_complete_verified_evidence (test_brushquay_msix.PackageTests) ... ok
+test_driver_sdk_failure_retains_recovery_without_publication (test_brushquay_msix.PackageTests) ... ok
+test_driver_tool_lock_change_cannot_authorize_new_bytes (test_brushquay_msix.PackageTests) ... ok
+test_existing_stage_refused (test_brushquay_msix.PackageTests) ... ok
+test_generation_rejects_template_identity_drift (test_brushquay_msix.PackageTests) ... test_invalid_windows_and_package_versions_rejected (test_brushquay_msix.PackageTests) ... ok
+test_missing_placeholder_or_upstream_identity_rejected (test_brushquay_msix.PackageTests) ... ok
+test_owned_manifest_has_only_explicit_fulltrust_capability (test_brushquay_msix.PackageTests) ... ok
+test_paths_case_alias_and_unaudited_file_rejected (test_brushquay_msix.PackageTests) ... ok
+test_payload_tamper_after_stage_detected (test_brushquay_msix.PackageTests) ... ok
+test_reordered_xml_metacharacters_round_trip_without_substitution (test_brushquay_msix.PackageTests) ... ok
+test_source_bytes_changed_and_symlink_rejected (test_brushquay_msix.PackageTests) ... ok
+test_stage_is_exact_copy_without_mutating_install (test_brushquay_msix.PackageTests) ... ok
+test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) ... test_unknown_identity_fields_and_entities_rejected (test_brushquay_msix.PackageTests) ... ok
+
+======================================================================
+FAIL: test_cli_rejects_duplicate_or_extended_manifest_identity (test_brushquay_msix.PackageTests) (duplicate='Identity')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 147, in test_cli_rejects_duplicate_or_extended_manifest_identity
+    self.assertNotEqual(result.returncode,0,'Verifier accepted duplicate '+duplicate)
+AssertionError: 0 == 0 : Verifier accepted duplicate Identity
+
+======================================================================
+FAIL: test_cli_rejects_duplicate_or_extended_manifest_identity (test_brushquay_msix.PackageTests) (duplicate='Capabilities')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 147, in test_cli_rejects_duplicate_or_extended_manifest_identity
+    self.assertNotEqual(result.returncode,0,'Verifier accepted duplicate '+duplicate)
+AssertionError: 0 == 0 : Verifier accepted duplicate Capabilities
+
+======================================================================
+FAIL: test_cli_rejects_duplicate_or_extended_manifest_identity (test_brushquay_msix.PackageTests) (duplicate='Dependencies')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 147, in test_cli_rejects_duplicate_or_extended_manifest_identity
+    self.assertNotEqual(result.returncode,0,'Verifier accepted duplicate '+duplicate)
+AssertionError: 0 == 0 : Verifier accepted duplicate Dependencies
+
+======================================================================
+FAIL: test_cli_rejects_duplicate_or_extended_manifest_identity (test_brushquay_msix.PackageTests) (duplicate='Applications')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 147, in test_cli_rejects_duplicate_or_extended_manifest_identity
+    self.assertNotEqual(result.returncode,0,'Verifier accepted duplicate '+duplicate)
+AssertionError: 0 == 0 : Verifier accepted duplicate Applications
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Identity', attribute='Name')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Identity/Name
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Identity', attribute='Publisher')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Identity/Publisher
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Identity', attribute='Version')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Identity/Version
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Identity', attribute='ProcessorArchitecture')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Identity/ProcessorArchitecture
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Applications/Application', attribute='Executable')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Applications/Application/Executable
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Applications/Application', attribute='Id')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Applications/Application/Id
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Applications/Application', attribute='EntryPoint')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Applications/Application/EntryPoint
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Dependencies/TargetDeviceFamily', attribute='Name')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Dependencies/TargetDeviceFamily/Name
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Dependencies/TargetDeviceFamily', attribute='MinVersion')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Dependencies/TargetDeviceFamily/MinVersion
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Dependencies/TargetDeviceFamily', attribute='MaxVersionTested')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Dependencies/TargetDeviceFamily/MaxVersionTested
+
+======================================================================
+FAIL: test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree (test_brushquay_msix.PackageTests) (path='Capabilities/Capability', attribute='Name')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 136, in test_cli_rejects_identity_mismatch_even_when_payload_hashes_agree
+    self.assertNotEqual(result.returncode,0,'Verifier accepted coherent hashes with unapproved manifest '+path+'/'+attribute)
+AssertionError: 0 == 0 : Verifier accepted coherent hashes with unapproved manifest Capabilities/Capability/Name
+
+======================================================================
+FAIL: test_generation_rejects_template_identity_drift (test_brushquay_msix.PackageTests) (attribute='Publisher="@Publisher@"')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 112, in test_generation_rejects_template_identity_drift
+    with self.assertRaises(ValueError): package.manifest_bytes(self.identity)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_generation_rejects_template_identity_drift (test_brushquay_msix.PackageTests) (attribute='ProcessorArchitecture="x64"')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 112, in test_generation_rejects_template_identity_drift
+    with self.assertRaises(ValueError): package.manifest_bytes(self.identity)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_generation_rejects_template_identity_drift (test_brushquay_msix.PackageTests) (attribute='Name="runFullTrust"')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 112, in test_generation_rejects_template_identity_drift
+    with self.assertRaises(ValueError): package.manifest_bytes(self.identity)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=True, field='Publisher', token='@PackageName@')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=True, field='Publisher', token='@UNKNOWN_123@')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=True, field='Publisher', token='@@')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=True, field='Publisher', token='@ spaced marker @')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=False, field='Publisher', token='@PackageName@')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=False, field='Publisher', token='@UNKNOWN_123@')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=False, field='Publisher', token='@@')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_template_markers_rejected_in_every_identity_field_and_order (test_brushquay_msix.PackageTests) (publisher_first=False, field='Publisher', token='@ spaced marker @')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/packaging/windows/msix/tests/test_brushquay_msix.py", line 90, in test_template_markers_rejected_in_every_identity_field_and_order
+    with self.assertRaises(ValueError): package.load_identity(self.props)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.631s
+
+FAILED (failures=26)

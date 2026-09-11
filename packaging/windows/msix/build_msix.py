@@ -20,21 +20,14 @@ import tempfile
 import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape
 from verify_brushquay_msix import checked_path, register_path, digest_stream, verify_msix
+from manifest_identity import IDENTITY_FIELDS as FIELDS, TEMPLATE_MARKER, MAX_MANIFEST_BYTES, validate_identity_values, verify_manifest_identity
 
 HERE=Path(__file__).resolve().parent
 SOURCE=HERE.parents[2]
 sys.path.insert(0,str(SOURCE/'build-tools/ci-scripts'))
 from locked_windows_deps import publish_directory_no_replace
-FIELDS={'PackageName','Publisher','Version','MinWindowsVersion','MaxWindowsVersionTested'}
 
 def canonical(value): return (json.dumps(value,sort_keys=True,indent=2)+'\n').encode()
-
-def version(value):
-    if not isinstance(value,str) or not re.fullmatch(r'(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)',value):
-        raise ValueError('Expected four-component Windows version')
-    numbers=tuple(map(int,value.split('.')))
-    if any(n>65535 for n in numbers): raise ValueError('Windows version component exceeds 65535')
-    return numbers
 
 def load_identity(path):
     raw=Path(path).read_bytes()
@@ -49,22 +42,22 @@ def load_identity(path):
     for node in root[0]:
         if node.tag not in FIELDS or node.tag in result or node.attrib or len(node): raise ValueError('Unknown/duplicate identity field')
         result[node.tag]=(node.text or '').strip()
-    if set(result)!=FIELDS or any(not v or 'REQUIRED' in v.upper() or 'KRITA' in v.upper() or
-        '03E730BB' in v.upper() or any(ord(c)<32 for c in v) for v in result.values()):
-        raise ValueError('Missing, placeholder or upstream identity')
-    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9.-]{1,48}[A-Za-z0-9]',result['PackageName']): raise ValueError('Invalid package name')
-    if not result['Publisher'].startswith('CN=') or len(result['Publisher'])>8192: raise ValueError('Invalid publisher distinguished name')
-    if version(result['Version'])[0]<1: raise ValueError('Package major version must be positive')
-    minimum=version(result['MinWindowsVersion']);tested=version(result['MaxWindowsVersionTested'])
-    if minimum<(10,0,17763,0) or tested<minimum: raise ValueError('Invalid Windows compatibility range')
+    validate_identity_values(result)
     return result
 
 def manifest_bytes(identity):
+    validate_identity_values(identity)
     text=(HERE/'manifest.xml.in').read_text()
-    for key,value in identity.items(): text=text.replace('@'+key+'@',escape(value,{'"':'&quot;',"'":'&apos;'}))
-    if re.search(r'@[A-Za-z]+@',text): raise ValueError('Unresolved manifest field')
-    ET.fromstring(text)
-    return text.encode('utf-8')
+    def replace(match):
+        key=match.group(1)
+        if key not in identity: raise ValueError('Unresolved manifest field: '+key)
+        return escape(identity[key],{'"':'&quot;',"'":'&apos;'})
+    # Replace original template tokens once; inserted values are never evaluated.
+    text=re.sub(r'@([A-Za-z][A-Za-z0-9_]*)@',replace,text)
+    if TEMPLATE_MARKER.search(text): raise ValueError('Unresolved manifest marker')
+    data=text.encode('utf-8')
+    verify_manifest_identity(data,identity)
+    return data
 
 def validate_audit(audit):
     if not isinstance(audit,dict) or set(audit)!={'schema','sourceCommit','licenseReviewComplete','correspondingSourceComplete','files'}:
@@ -193,13 +186,15 @@ def build(install,audit_path,identity_path,tools_path,output):
                 with regular_stream(payload/'resources.pri') as stream: expected['resources.pri']=digest_stream(stream)
                 if expected['resources.pri']['bytes']==0: raise ValueError('Empty resources.pri')
             verify_payload(payload,expected)
-        container=verify_msix(temporary/'BrushQuay.msix',expected)
+        container=verify_msix(temporary/'BrushQuay.msix',expected,identity)
+        with regular_stream(temporary/'unpacked/AppxManifest.xml') as stream:
+            unpacked_identity=verify_manifest_identity(stream.read(MAX_MANIFEST_BYTES+1),identity)
         # SDK-unpacked content must also agree; only container metadata may be extra.
         unpacked=inventory(temporary/'unpacked')
         for extra in ('[Content_Types].xml','AppxBlockMap.xml'): unpacked.pop(extra,None)
         if unpacked!=expected: raise ValueError('SDK-unpacked bytes differ from audited payload')
         verify_payload(install,validate_audit(audit));confirm_tools(tools_path,sdk)
-        record={'schema':1,'identity':identity,'audit':audit,'sdk':sdk,'payload':expected,'verification':container,'signed':False}
+        record={'schema':1,'identity':identity,'audit':audit,'sdk':sdk,'payload':expected,'verification':container,'unpackedManifest':unpacked_identity,'signed':False}
         write_new(temporary/'package-record.json',canonical(record))
         publish_directory_no_replace(temporary,output)
         return output
