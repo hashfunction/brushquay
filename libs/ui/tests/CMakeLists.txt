@@ -5,6 +5,7 @@ kis_add_test(KisBrushQuayWorkspaceTest.cpp
 kis_add_test(KisBrushQuayIdentityTest.cpp
     TEST_NAME KisBrushQuayIdentityTest
     LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Test)
+target_include_directories(KisBrushQuayIdentityTest PRIVATE ${CMAKE_SOURCE_DIR}/libs/global)
 
 target_sources(KisBrushQuayIdentityTest PRIVATE ${CMAKE_SOURCE_DIR}/krita/pics/branding/BrushQuay/branding.qrc)
 set_target_properties(KisBrushQuayIdentityTest PROPERTIES AUTORCC ON)

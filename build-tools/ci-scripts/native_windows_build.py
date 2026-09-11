@@ -136,6 +136,10 @@ def main():
         run(command, evidence / 'configure.log', environment, source)
         record['status'] = 'configured'
         if not args.configure_only:
+            # Compile the lightweight identity/artwork target first so its
+            # source-boundary errors surface before the large native build.
+            run([command[0], '--build', str(build), '--target', 'KisBrushQuayIdentityTest',
+                 '--parallel', str(args.jobs)], evidence / 'identity-build.log', environment, source)
             run([command[0], '--build', str(build), '--parallel', str(args.jobs)], evidence / 'build.log', environment, source)
             record['status'] = 'compiled'
             expected_tests = {'libs-ui-' + name for name in (
