@@ -11,6 +11,21 @@ import native_windows_build as build
 
 
 class NativeWindowsBuildTest(unittest.TestCase):
+    def test_focused_targets_build_before_the_complete_native_tree(self):
+        with patch.object(build, 'run') as native:
+            build.compile_targets('cmake', Path('/build'), 2, Path('/evidence'), {}, Path('/source'))
+        self.assertEqual(native.call_count, 2)
+        focused, complete = [call.args[0] for call in native.call_args_list]
+        self.assertEqual(focused[focused.index('--target') + 1:focused.index('--parallel')],
+                         ['KisBrushQuayIdentityTest', 'KisExportFileTransactionTest', 'KisExportPresetStoreTest'])
+        self.assertEqual(complete, ['cmake', '--build', str(Path('/build')), '--parallel', '2'])
+
+    def test_focused_failure_prevents_the_expensive_full_build(self):
+        with patch.object(build, 'run', side_effect=build.LockError('focused compile failed')) as native:
+            with self.assertRaisesRegex(build.LockError, 'focused compile failed'):
+                build.compile_targets('cmake', Path('/build'), 2, Path('/evidence'), {}, Path('/source'))
+        self.assertEqual(native.call_count, 1)
+
     def test_configuration_uses_exact_isolated_toolchain_and_offline_sources(self):
         stage = Path.cwd() / 'locked inputs 水彩'
         command, environment = build.configuration(stage, Path('/source'), Path('/build'), Path('/install'), {'SystemRoot': 'C:\\Windows', 'PATH': 'unverified-tools', 'PYTHONPATH': 'unverified-python'})

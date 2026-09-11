@@ -4,6 +4,8 @@ cmake_minimum_required(VERSION 3.22)
 project(BrushQuayDomainTests LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
+# Match production QStringBuilder compilation behavior in the focused targets.
+add_compile_definitions(QT_USE_QSTRINGBUILDER QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Test Xml)
 enable_testing()
 set(UI ../../libs/ui)

@@ -86,7 +86,7 @@ private Q_SLOTS:
     }
     void realPngLateOwnerIsPreservedAtCompletion()
     {
-        QTemporaryDir dir; auto path=QFileInfo(dir.path()).canonicalFilePath()+"/late.png";
+        QTemporaryDir dir; const QString path=QFileInfo(dir.path()).canonicalFilePath()+"/late.png";
         QScopedPointer<KisDocument> document(KisPart::instance()->createDocument()); document->setCurrentImage(image()); document->setFileBatchMode(true);
         QScopedPointer<KisImportExportFilter> filter(KisImportExportManager::filterForMimeType("image/png",KisImportExportManager::Export)); QVERIFY(filter);
         KisExportPreset preset; QVERIFY(KisExportPresetCodec::capture(QUuid::createUuid(),"PNG","image/png","png",filter->defaultConfiguration(),preset).ok());
@@ -101,7 +101,7 @@ private Q_SLOTS:
     }
     void closedSourceFinishesWithoutPublication()
     {
-        QTemporaryDir dir; auto path=QFileInfo(dir.path()).canonicalFilePath()+"/closed.png";
+        QTemporaryDir dir; const QString path=QFileInfo(dir.path()).canonicalFilePath()+"/closed.png";
         auto *document=KisPart::instance()->createDocument(); document->setCurrentImage(image()); document->setFileBatchMode(true);
         QScopedPointer<KisImportExportFilter> filter(KisImportExportManager::filterForMimeType("image/png",KisImportExportManager::Export)); QVERIFY(filter);
         KisExportPreset preset; QVERIFY(KisExportPresetCodec::capture(QUuid::createUuid(),"PNG","image/png","png",filter->defaultConfiguration(),preset).ok());
@@ -117,12 +117,12 @@ private Q_SLOTS:
     void generatedImageExportsWithoutChangingSource()
     {
         QFETCH(QString,mime); QTemporaryDir dir; auto root=QFileInfo(dir.path()).canonicalFilePath();
-        const auto source=root+"/source.kra"; QFile original(source); QVERIFY(original.open(QIODevice::WriteOnly)); original.write("original source bytes"); original.close();
+        const QString source=root+"/source.kra"; QFile original(source); QVERIFY(original.open(QIODevice::WriteOnly)); original.write("original source bytes"); original.close();
         QScopedPointer<KisDocument> document(KisPart::instance()->createDocument()); document->setCurrentImage(image());
         document->setFileBatchMode(true); document->setPath(source); document->setModified(true);
         QScopedPointer<KisImportExportFilter> filter(KisImportExportManager::filterForMimeType(mime,KisImportExportManager::Export)); QVERIFY(filter);
         KisExportPreset p; QVERIFY(KisExportPresetCodec::capture(QUuid::createUuid(),"Generated export",mime,mime=="image/png"?"png":"jpg",filter->defaultConfiguration(),p).ok());
-        auto output=root+QString::fromUtf8("/水彩.")+p.extension;
+        const QString output=root+QString::fromUtf8("/水彩.")+p.extension;
         KisExportPresetJob job(document.data(),p,KisExportDestination::capture(output)); QSignalSpy finished(&job,&KisExportPresetJob::finished);
         job.start(); QTRY_COMPARE_WITH_TIMEOUT(finished.size(),1,30000);
         const auto result=qvariant_cast<KisExportFileOutcome>(finished.at(0).at(0));

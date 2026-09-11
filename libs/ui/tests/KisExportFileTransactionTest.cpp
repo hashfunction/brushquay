@@ -14,7 +14,7 @@ class KisExportFileTransactionTest : public QObject {
 private Q_SLOTS:
     void newUnicodeOutputPublishes()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/水彩.png";
+        QTemporaryDir dir; const QString path=realDir(dir)+"/水彩.png";
         auto chosen=KisExportDestination::capture(path);
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "rendered PNG bytes");
         auto result=job.finish(true); QVERIFY(result.published); QVERIFY(result.error.isEmpty());
@@ -22,7 +22,7 @@ private Q_SLOTS:
     }
     void lateDestinationIsNeverOverwritten()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/new.png";
+        QTemporaryDir dir; const QString path=realDir(dir)+"/new.png";
         auto chosen=KisExportDestination::capture(path);
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "rendered"); write(path,"late owner");
         auto result=job.finish(true); QVERIFY(!result.published); QVERIFY(!result.error.isEmpty());
@@ -30,7 +30,7 @@ private Q_SLOTS:
     }
     void confirmedReplacementRetainsOriginal()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "new image");
         auto result=job.finish(true); QVERIFY(result.published); QCOMPARE(bytes(path), QByteArray("new image"));
@@ -38,21 +38,21 @@ private Q_SLOTS:
     }
     void unconfirmedReplacementCannotStart()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path);
         QVERIFY_THROWS_EXCEPTION(std::runtime_error, KisExportFileTransaction(chosen, {}));
         QCOMPARE(bytes(path), QByteArray("original"));
     }
     void changedConfirmedContentIsRetained()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "new image"); write(path,"modified");
         auto result=job.finish(true); QVERIFY(!result.published); QCOMPARE(bytes(path), QByteArray("modified"));
     }
     void sameBytesDifferentIdentityIsRetained()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "new image");
         QVERIFY(QFile::rename(path,path+".moved")); write(path,"original");
@@ -64,7 +64,7 @@ private Q_SLOTS:
     }
     void failedOrCancelledExportPreservesOriginal()
     {
-        QFETCH(bool,succeeded); QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QFETCH(bool,succeeded); QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "partial");
         auto result=job.finish(succeeded, [] { return true; }); QVERIFY(!result.published);
@@ -72,7 +72,7 @@ private Q_SLOTS:
     }
     void cancellationAfterMovingOldRestoresIt()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "new image");
         auto result=job.finish(true, [&] { return !QFile::exists(path); });
@@ -80,7 +80,7 @@ private Q_SLOTS:
     }
     void collisionAfterMovingOldRetainsEveryFile()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "new image");
         auto result=job.finish(true, [&] { if (!QFile::exists(path)) write(path,"late owner"); return false; });
@@ -89,7 +89,7 @@ private Q_SLOTS:
     }
     void targetChangedBetweenCheckAndMoveIsRestored()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/old.png"; write(path,"original");
+        QTemporaryDir dir; const QString path=realDir(dir)+"/old.png"; write(path,"original");
         auto chosen=KisExportDestination::capture(path); chosen.overwriteConfirmed=true;
         KisExportFileTransaction job(chosen, {}); write(job.stagedPath(), "new image");
         int calls=0;
@@ -111,10 +111,10 @@ private Q_SLOTS:
     }
     void sourceAndHardlinkCannotBeTargets()
     {
-        QTemporaryDir dir; auto source=realDir(dir)+"/source.kra"; write(source,"source");
+        QTemporaryDir dir; const QString source=realDir(dir)+"/source.kra"; write(source,"source");
         auto chosen=KisExportDestination::capture(source); chosen.overwriteConfirmed=true;
         QVERIFY_THROWS_EXCEPTION(std::runtime_error, KisExportFileTransaction(chosen, {source}));
-        auto target=realDir(dir)+"/alias.png";
+        const QString target=realDir(dir)+"/alias.png";
         std::filesystem::create_hard_link(std::filesystem::path(source.toStdString()),std::filesystem::path(target.toStdString()));
         chosen=KisExportDestination::capture(target); chosen.overwriteConfirmed=true;
         QVERIFY_THROWS_EXCEPTION(std::runtime_error, KisExportFileTransaction(chosen, {source}));
@@ -123,15 +123,16 @@ private Q_SLOTS:
     void parentSymlinkAndSourceBasenameRemainProtected()
     {
         QTemporaryDir dir; auto root=realDir(dir); QVERIFY(QDir().mkdir(root+"/real"));
-        auto source=root+"/real/source.png"; write(source,"source");
-        std::filesystem::create_directory_symlink(std::filesystem::path((root+"/real").toStdString()),std::filesystem::path((root+"/alias").toStdString()));
+        const QString source=root+"/real/source.png"; write(source,"source");
+        const QString real=root+"/real", alias=root+"/alias";
+        std::filesystem::create_directory_symlink(std::filesystem::path(real.toStdString()),std::filesystem::path(alias.toStdString()));
         auto chosen=KisExportDestination::capture(root+"/alias/source.png"); chosen.overwriteConfirmed=true;
         QVERIFY_THROWS_EXCEPTION(std::runtime_error, KisExportFileTransaction(chosen, {source}));
         QCOMPARE(bytes(source),QByteArray("source"));
     }
     void protectedSourceChangePreventsPublication()
     {
-        QTemporaryDir dir; auto root=realDir(dir); auto source=root+"/source.kra"; write(source,"source");
+        QTemporaryDir dir; auto root=realDir(dir); const QString source=root+"/source.kra"; write(source,"source");
         KisExportFileTransaction job(KisExportDestination::capture(root+"/new.png"), {source});
         write(job.stagedPath(), "new image"); write(source,"new source version");
         auto result=job.finish(true); QVERIFY(!result.published); QVERIFY(!QFile::exists(root+"/new.png"));
@@ -139,7 +140,7 @@ private Q_SLOTS:
     }
     void emptyRenderAndSecondFinishAreRejected()
     {
-        QTemporaryDir dir; auto path=realDir(dir)+"/new.png";
+        QTemporaryDir dir; const QString path=realDir(dir)+"/new.png";
         KisExportFileTransaction job(KisExportDestination::capture(path), {}); write(job.stagedPath(), "");
         QVERIFY(!job.finish(true).published); write(job.stagedPath(), "late bytes");
         QVERIFY(!job.finish(true).published); QVERIFY(!QFile::exists(path));

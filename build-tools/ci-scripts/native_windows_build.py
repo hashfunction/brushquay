@@ -80,6 +80,16 @@ def run(command, log, environment, cwd):
         raise LockError('Native command exited ' + str(code) + '; log: ' + str(log))
 
 
+def compile_targets(cmake, build, jobs, evidence, environment, source):
+    # These targets link only the small preset library and Qt Core/Test/Xml.
+    # Catch their source-boundary errors before compiling the entire product.
+    focused = ['KisBrushQuayIdentityTest', 'KisExportFileTransactionTest', 'KisExportPresetStoreTest']
+    run([cmake, '--build', str(build), '--target', *focused, '--parallel', str(jobs)],
+        evidence / 'focused-build.log', environment, source)
+    run([cmake, '--build', str(build), '--parallel', str(jobs)],
+        evidence / 'build.log', environment, source)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--lock', type=Path, default=Path(__file__).with_name('brushquay-dependency-lock.json'))
@@ -136,11 +146,7 @@ def main():
         run(command, evidence / 'configure.log', environment, source)
         record['status'] = 'configured'
         if not args.configure_only:
-            # Compile the lightweight identity/artwork target first so its
-            # source-boundary errors surface before the large native build.
-            run([command[0], '--build', str(build), '--target', 'KisBrushQuayIdentityTest',
-                 '--parallel', str(args.jobs)], evidence / 'identity-build.log', environment, source)
-            run([command[0], '--build', str(build), '--parallel', str(args.jobs)], evidence / 'build.log', environment, source)
+            compile_targets(command[0], build, args.jobs, evidence, environment, source)
             record['status'] = 'compiled'
             expected_tests = {'libs-ui-' + name for name in (
                 'KisBrushQuayIdentityTest', 'KisBrushQuayWorkspaceTest', 'KisExportPresetIntegrationTest',
