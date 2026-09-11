@@ -1,0 +1,15 @@
+test_configuration_uses_exact_isolated_toolchain_and_offline_sources (test_native_windows_build.NativeWindowsBuildTest) ... FAIL
+test_system_environment_cannot_override_compiler_flags (test_native_windows_build.NativeWindowsBuildTest) ... ok
+
+======================================================================
+FAIL: test_configuration_uses_exact_isolated_toolchain_and_offline_sources (test_native_windows_build.NativeWindowsBuildTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/build-tools/ci-scripts/tests/test_native_windows_build.py", line 21, in test_configuration_uses_exact_isolated_toolchain_and_offline_sources
+    self.assertIn('-DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY', command)
+AssertionError: '-DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY' not found in ['/locked/tools/cmake/bin/cmake.exe', '-S', '/source', '-B', '/build', '-G', 'Ninja', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DBUILD_TESTING=ON', '-DBUILD_WITH_QT6=ON', '-DALLOW_UNSTABLE=QT6', '-DENABLE_UPDATERS=OFF', '-DFOUNDATION_BUILD=OFF', '-DUSE_EXTERNAL_RAQM=OFF', '-DFETCHCONTENT_FULLY_DISCONNECTED=ON', '-DFETCHCONTENT_UPDATES_DISCONNECTED=ON', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON', '-DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF', '-DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF', '-DCMAKE_C_COMPILER=/locked/tools/llvm/bin/x86_64-w64-mingw32-clang.exe', '-DCMAKE_CXX_COMPILER=/locked/tools/llvm/bin/x86_64-w64-mingw32-clang++.exe', '-DCMAKE_RC_COMPILER=/locked/tools/llvm/bin/x86_64-w64-mingw32-windres.exe', '-DCMAKE_MAKE_PROGRAM=/locked/tools/ninja/ninja.exe', '-DCMAKE_PREFIX_PATH=/locked/deps', '-DCMAKE_INSTALL_PREFIX=/install', '-DPython_ROOT_DIR=/locked/tools/python-sdk/tools', '-DPython_EXECUTABLE=/locked/tools/python-sdk/tools/python.exe', '-DPython_INCLUDE_DIR=/locked/tools/python-sdk/tools/include', '-DPython_LIBRARY=/locked/tools/python-sdk/tools/libs/python313.lib', '-DPython_FIND_REGISTRY=NEVER', '-DPython_FIND_STRATEGY=LOCATION', '-DPKG_CONFIG_EXECUTABLE=/locked/deps/bin/pkgconf.exe']
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)

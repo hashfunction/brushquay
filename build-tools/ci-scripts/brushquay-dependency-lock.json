@@ -1,0 +1,2365 @@
+{
+  "schema": 1,
+  "status": "candidate_for_native_baseline_not_release_cleared",
+  "applicationSourceCommit": "e7e52a72ed37ecaf9ffaa2fab836b7c2f5539d1f",
+  "licenseAuditComplete": false,
+  "sourceDeliveryComplete": false,
+  "sourceRepositories": [
+    {
+      "name": "krita-deps-qt6",
+      "url": "https://invent.kde.org/packaging/krita-deps-management.git",
+      "commit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "tree": "c7c208f011a7123df1b99d6fe7f59276b5025e84",
+      "role": "active dependency recipes and patches"
+    },
+    {
+      "name": "krita-deps-management",
+      "url": "https://invent.kde.org/packaging/krita-deps-management.git",
+      "commit": "579b528d607b27402576ee7ab3451b12f7ffe172",
+      "tree": "099e93437437df4c47718952f60d6baea0b8f8e2",
+      "role": "earlier candidate, reference only"
+    },
+    {
+      "name": "krita-ci-utilities",
+      "url": "https://invent.kde.org/packaging/krita-ci-utilities.git",
+      "commit": "33511f2ac34d8e7b62e3ca38b36751725628b30d",
+      "tree": "39dfe36be7bc1a8ed9bed0af567e1b8688fcef11",
+      "role": "upstream CI reference only; not executed"
+    },
+    {
+      "name": "ci-notary-service",
+      "url": "https://invent.kde.org/sysadmin/ci-notary-service.git",
+      "commit": "968d3a30003696604039f7a952a7277918c0cc88",
+      "tree": "b7f3abac20d9a92f4a8d92f5f202524b4cca3115",
+      "role": "reference only; signing service is not used"
+    },
+    {
+      "name": "upstream-ci-utilities",
+      "url": "https://invent.kde.org/sysadmin/ci-utilities.git",
+      "commit": "b1468781862aeb9d4a072e2d63ff723c698497d1",
+      "tree": "138166ecf68bd79e7c8b195c28799ef61b641b89",
+      "role": "upstream CI reference only; not executed"
+    },
+    {
+      "name": "ci-images",
+      "url": "https://invent.kde.org/sysadmin/ci-images.git",
+      "commit": "fc159b0244cdd4001c4dd2fcc071f8d02cabc267",
+      "tree": "2a344a58c1dd91df8c8847ef45ed35143ffb45e5",
+      "role": "compiler reference only; VM provisioning is not used"
+    }
+  ],
+  "qtCandidate": {
+    "archive_sha256_verified": true,
+    "version": "6.11.0",
+    "compiler": "Clang21.1.6",
+    "runtime": "LLVM-MinGW UCRT x86_64",
+    "qt_source_repository": "https://github.com/dimula73/qt5.git",
+    "qt_source_commit": "571b5489c7d0987959b8cf81f62df674da79c418",
+    "note": "KDE patched Qt6.11.0 candidate; later Qt6.11 fixes and complete source closure must be assessed before release."
+  },
+  "resolutionEvidenceSha256": "73298df274e12329d520c160b751cfe0875a7d5804bdc80b3888b9eef478f3b3",
+  "packages": [
+    {
+      "name": "ext_boost",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_boost/transition.now-update-qt-to-6.11.0-1788894474/archive.tar",
+      "sha256": "d16f4dd4b6b61a72cf63ea725d0d1e416258ae7b2176b8fd08363a7feb9d4991",
+      "bytes": 177008640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894474",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_boost/transition.now-update-qt-to-6.11.0-1788894474/metadata.json",
+        "sha256": "27ea518d4efcee11bc9995a2fb495a0a2ddd3844d08273dd2c7298f185c58629"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_boost/CMakeLists.txt",
+        "sha256": "b2715358dc6d038af2caaaee7991d4c106bd175410e0673e9ae8de7ecc81ae2e"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_brotli",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_brotli/transition.now-update-qt-to-6.11.0-1788894510/archive.tar",
+      "sha256": "d6f13052e1ef7b179ebf0f204d60d6ae8e927a99ba939f7963bc737a8e53b184",
+      "bytes": 1720320,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894510",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_brotli/transition.now-update-qt-to-6.11.0-1788894510/metadata.json",
+        "sha256": "63b4d3ad7117884a350095f6e6e6f8a5d333c7d64dd38be69edebfc7e0235f45"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_brotli/CMakeLists.txt",
+        "sha256": "b65d717c05d8ef0345597d725080d85281a52d8a0e9df4ee59ead0bde35f52e2"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_dlfcn_win32",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_dlfcn_win32/transition.now-update-qt-to-6.11.0-1788893972/archive.tar",
+      "sha256": "e29b0ecd20ed2a27e0a1cf09ce95aa84a684a0da937e2178b44ca212d2246554",
+      "bytes": 102400,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893972",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_dlfcn_win32/transition.now-update-qt-to-6.11.0-1788893972/metadata.json",
+        "sha256": "1bb31e978b14e2d66608568209a67555b53d81902adb17dba91bb03a3e14a450"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_dlfcn_win32/CMakeLists.txt",
+        "sha256": "bb8cdae99e667d637a18a18c9f02c421bd3e489af23ec32cee07d49f53b79f67"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_drmingw",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_drmingw/transition.now-update-qt-to-6.11.0-1788893993/archive.tar",
+      "sha256": "3b8259758792b6ffa18724075da13d5e43b6533e3b0a091d72ff83ef09b6ba2f",
+      "bytes": 4157440,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893993",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_drmingw/transition.now-update-qt-to-6.11.0-1788893993/metadata.json",
+        "sha256": "0fc74d074d134a6c1bf37d4037dcd848b68e930b586d92621878843aae9c97e9"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_drmingw/CMakeLists.txt",
+        "sha256": "9ebf00aa2f3d2ac59d852277ee75fd79b0ac47dcbf009ce7a32af84a54dd5bd4"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_eigen3",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_eigen3/transition.now-update-qt-to-6.11.0-1788893522/archive.tar",
+      "sha256": "89213ae92ada6583157b89f2042c60eaa54e0aa7f47af85e5c114a79d351d763",
+      "bytes": 9768960,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893522",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_eigen3/transition.now-update-qt-to-6.11.0-1788893522/metadata.json",
+        "sha256": "86bd7562bd1e1121a9e4099b07ec419c9573e34cd18df74e1eb3cd5300e11015"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_eigen3/CMakeLists.txt",
+        "sha256": "d59360a77037b365c1666cbee35ef3c3198ee5e8f94c4e92e0d317c65748c8a6"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_exiv2",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_exiv2/transition.now-update-qt-to-6.11.0-1788894582/archive.tar",
+      "sha256": "10301590812e3fb45b3bf4ead4a0a69d34f20d7babd49034f15868d9d3959d12",
+      "bytes": 11796480,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894582",
+      "dependencies": [
+        "ext_expat",
+        "ext_iconv",
+        "ext_patch",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_exiv2/transition.now-update-qt-to-6.11.0-1788894582/metadata.json",
+        "sha256": "f027fda61088d857e0f553f4e914915b59c24b742fc4dc2910770d4e735db931"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_exiv2/CMakeLists.txt",
+        "sha256": "93ea98d260839d85b8eec5096b3aa712550493ad3f0928302aa44bbb93559678"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_expat",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_expat/transition.now-update-qt-to-6.11.0-1788893538/archive.tar",
+      "sha256": "0876cec1863500a62f0581e2b35c5f309c3d2a317ac7ec063782051653628946",
+      "bytes": 778240,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893538",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_expat/transition.now-update-qt-to-6.11.0-1788893538/metadata.json",
+        "sha256": "860db7293591c997db2b85ff96eb97c4c670a78fef1e635cf3860decf950cb8b"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_expat/CMakeLists.txt",
+        "sha256": "2ba086ecdc862cee274ab27a7c331668711cc5785aa237807f288b62300e6a80"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_extra_cmake_modules",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_extra_cmake_modules/transition.now-update-qt-to-6.11.0-1788894601/archive.tar",
+      "sha256": "1df96abe59c847572603ae1b7d491c23b8c9bdaac168f34590aaac8b73259e1b",
+      "bytes": 1003520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894601",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_extra_cmake_modules/transition.now-update-qt-to-6.11.0-1788894601/metadata.json",
+        "sha256": "e5b57aa8fb410d76aad7e1ee0784e7ec3184b1ad336310f2d85326a1783fa1fb"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_extra_cmake_modules/CMakeLists.txt",
+        "sha256": "0fe08186cfe6c359826ac702c4fca6c549761180bda625ac9ac5cc4b3d74b9c1"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_ffmpeg",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ffmpeg/transition.now-update-qt-to-6.11.0-1788899691/archive.tar",
+      "sha256": "1b275992dace0c159c72bc0ca9772d6a83d3b5c0a6b64dab6595092ec2381cdd",
+      "bytes": 149012480,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899691",
+      "dependencies": [
+        "ext_flac",
+        "ext_iconv",
+        "ext_jpeg",
+        "ext_lame",
+        "ext_libaom",
+        "ext_libtheora",
+        "ext_libvorbis",
+        "ext_lzma",
+        "ext_openh264",
+        "ext_opus",
+        "ext_patch",
+        "ext_pkgconfig",
+        "ext_png",
+        "ext_sdl2",
+        "ext_vpl",
+        "ext_vpx",
+        "ext_webp",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ffmpeg/transition.now-update-qt-to-6.11.0-1788899691/metadata.json",
+        "sha256": "a87d402939c18b91406c669a418fa82b8c76d0cc298d1ae6046e9dc4df76ea78"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_ffmpeg/CMakeLists.txt",
+        "sha256": "2dc330b7f12263b7b38bf89d0faee8124ed54978249042edcc6a1ca0a84ca88d"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_fftw3",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fftw3/transition.now-update-qt-to-6.11.0-1788894675/archive.tar",
+      "sha256": "8027ea9cbf2a5f5b516ec33dd36d88cb1af668cf402927f5cdfbdda929700eec",
+      "bytes": 3614720,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894675",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fftw3/transition.now-update-qt-to-6.11.0-1788894675/metadata.json",
+        "sha256": "8172e1c538cb4f9c629d731a38944e40979cb3e043f7c5072191c8cdb4db72b9"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_fftw3/CMakeLists.txt",
+        "sha256": "952229135f1e9c5e623de17d48b9d7aeab6e0f2b57687fbc83d4a5cbc7cf2f58"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_flac",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_flac/transition.now-update-qt-to-6.11.0-1788898353/archive.tar",
+      "sha256": "741ea83c2f2693293e9d8550b8e9bb48719d98ccb950479cab033981a9ccf91f",
+      "bytes": 1792000,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898353",
+      "dependencies": [
+        "ext_libogg",
+        "ext_pkgconfig"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_flac/transition.now-update-qt-to-6.11.0-1788898353/metadata.json",
+        "sha256": "6c886ca136344314fb59fb21e01ab772901cee2fec618d08dc90e6936afbdb8c"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_flac/CMakeLists.txt",
+        "sha256": "c30a5ee1e07668c49565183cf9cffb0538ad5b1455d8c287425417d16c7aff4c"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_fontconfig",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fontconfig/transition.now-update-qt-to-6.11.0-1788898901/archive.tar",
+      "sha256": "75d27764d35d356f1d5c8468d498095ff73645ddfd34bcbc7085e1d22a06561b",
+      "bytes": 4075520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898901",
+      "dependencies": [
+        "ext_expat",
+        "ext_freetype",
+        "ext_gettext",
+        "ext_gperf",
+        "ext_patch",
+        "ext_pkgconfig"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fontconfig/transition.now-update-qt-to-6.11.0-1788898901/metadata.json",
+        "sha256": "67d7733f74f8f4191726fb40113b48ed3a87a76231a84435574a4406abab43b1"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_fontconfig/CMakeLists.txt",
+        "sha256": "bb8128b9739349db9e455ed7491e30a15bbb67c9b6a4c50df808b5e88c999f7c"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_freetype",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_freetype/transition.now-update-qt-to-6.11.0-1788896237/archive.tar",
+      "sha256": "3461c4365d782a64944e45832bbe0ac479a60c36162296f27597741e44b910b6",
+      "bytes": 52561920,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788896237",
+      "dependencies": [
+        "ext_icu",
+        "ext_patch",
+        "ext_pkgconfig",
+        "ext_png"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_freetype/transition.now-update-qt-to-6.11.0-1788896237/metadata.json",
+        "sha256": "cbfa6519f0fe97e5feea95b9bb0e62eceb220c14846cee6a6f8271f58ae1111c"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_freetype/CMakeLists.txt",
+        "sha256": "57dadb1b480eea2548b1d7bed41dad73e4ca5acec217bdaafb63c507be1acc3e"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_fribidi",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fribidi/transition.now-update-qt-to-6.11.0-1788893551/archive.tar",
+      "sha256": "81b63c7841d5d5ee37e61239aad5ab0624eee018f617fca0dd4397f45d8d9462",
+      "bytes": 696320,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893551",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fribidi/transition.now-update-qt-to-6.11.0-1788893551/metadata.json",
+        "sha256": "4820616b565616fe80c8dd14d237d415792f87e68e34bb533af1083a6833abf0"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_fribidi/CMakeLists.txt",
+        "sha256": "a8289aaa31730e112ff6ea97d0899a116a85f4eb83fd7efa52a8500b83063c68"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_gettext",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gettext/transition.now-update-qt-to-6.11.0-1788894114/archive.tar",
+      "sha256": "9a2b1d4aa53cc04876ce33b004b69f05a7fdfc38bed4b40da1dd02b8ddd96baf",
+      "bytes": 42813440,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894114",
+      "dependencies": [
+        "ext_iconv",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gettext/transition.now-update-qt-to-6.11.0-1788894114/metadata.json",
+        "sha256": "38be832b1743389b24bb8a1157c8a37688b1aebae64185b3803211cb8adce620"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_gettext/CMakeLists.txt",
+        "sha256": "7b002905065d29e06f009660122090e975427c7c3eb1dfe0b366cdfd15c95113"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_giflib",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_giflib/transition.now-update-qt-to-6.11.0-1788894695/archive.tar",
+      "sha256": "e9450ec71d36903f23020bd0f932e96cd399e20d7a8b11b68649fc9d02a53b3d",
+      "bytes": 174080,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894695",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_giflib/transition.now-update-qt-to-6.11.0-1788894695/metadata.json",
+        "sha256": "7e8d1e3c59a9933919779aad82df88bc80609827554297d2bff112fcaa94e13a"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_giflib/CMakeLists.txt",
+        "sha256": "0ed70cd1a93d2735982e58c58e7cb75fd7b9408f0e8833be291354c316d1f9fc"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_googleangle",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_googleangle/transition.now-update-qt-to-6.11.0-1788896160/archive.tar",
+      "sha256": "15fde455b0733b971e43fb3a5014c03110c8526b6da086b7d6d4970c3e16e3cb",
+      "bytes": 78469120,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788896160",
+      "dependencies": [
+        "ext_patch",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_googleangle/transition.now-update-qt-to-6.11.0-1788896160/metadata.json",
+        "sha256": "b2a38a7f5c1246dd2f8820c4cac1e3f334862f42e37c87cf4386bcad0da9cec1"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_googleangle/CMakeLists.txt",
+        "sha256": "a04bb0c9858ee65ee5f080625f434e5d3d5bf5a1f68b392da9d4c7b305f7530a"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_gperf",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gperf/transition.now-update-qt-to-6.11.0-1788894015/archive.tar",
+      "sha256": "0da95193a64fdc2cdc5e83949c656dc23a8ecc2ba22417b042736f2651b8c779",
+      "bytes": 409600,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894015",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gperf/transition.now-update-qt-to-6.11.0-1788894015/metadata.json",
+        "sha256": "7eba1924c9e56f7d1c444c5e80161f49024582f2e1208e44b4bb311c41241698"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_gperf/CMakeLists.txt",
+        "sha256": "3b6dd1d91c187e60e6aee210779b816ce7535bf3fab9edffc96a7fe2874615e5"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_gsl",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gsl/transition.now-update-qt-to-6.11.0-1788894772/archive.tar",
+      "sha256": "fe927071c9db7030a0fe6b021d806eb169a5289cc817ec9e60d4d8ef74135f65",
+      "bytes": 10608640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894772",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gsl/transition.now-update-qt-to-6.11.0-1788894772/metadata.json",
+        "sha256": "f023ad4cd52a2b6455c6ae02142904cc7735554388a149244b65ddf0c997047c"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_gsl/CMakeLists.txt",
+        "sha256": "93b06edd887df9f60b1a594aacfa97ef6f1627b575a4e5fbc2d25b8187a35183"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_highway",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_highway/transition.now-update-qt-to-6.11.0-1788893645/archive.tar",
+      "sha256": "f8edfb888d576a7de72f960d5c0378f644d3bdaa30de98b4d0454e892bb19036",
+      "bytes": 46213120,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893645",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_highway/transition.now-update-qt-to-6.11.0-1788893645/metadata.json",
+        "sha256": "cb65eed745bc9af225bb411c568d231fcd555db8fa4d21f752ff991a6393c5a8"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_highway/CMakeLists.txt",
+        "sha256": "fb9972ada607550d2072a11c32c131e46d6f6d6e77d22f27ea1cde0022654e03"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_iconv",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_iconv/transition.now-update-qt-to-6.11.0-1788893915/archive.tar",
+      "sha256": "8419fe0b38cda38ec38168dda54bfe05373679fc62c8a93a20d858cc0c6787f6",
+      "bytes": 235520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893915",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_iconv/transition.now-update-qt-to-6.11.0-1788893915/metadata.json",
+        "sha256": "4e989cdfe49ae44d3e015e5aeeb7ad1791630471cc265dc05646e5ee17ae911e"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_iconv/CMakeLists.txt",
+        "sha256": "91880ed626454172e1d27c89e34214a51a8840ba6e748f7687c9255f3667a3d4"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_icoutils",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_icoutils/transition.now-update-qt-to-6.11.0-1788896173/archive.tar",
+      "sha256": "216a1a27c8ba61647f57845d08e7ddc84caca2b56dd49f258ab09d3f9d436a5c",
+      "bytes": 358400,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788896173",
+      "dependencies": [
+        "ext_patch",
+        "ext_png"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_icoutils/transition.now-update-qt-to-6.11.0-1788896173/metadata.json",
+        "sha256": "fa331eb95a22aad65eaf04be52219237f27c2f6376a84dd87c7e9c1d62a52640"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_icoutils/CMakeLists.txt",
+        "sha256": "a4301b28d5d2ac4c500ef6883510bc53e140355503bb4d116999fe902d69bd70"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_icu",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_icu/transition.now-update-qt-to-6.11.0-1788894899/archive.tar",
+      "sha256": "3eaa0a7e0d5967200392115afe1aebc9bbc41c2a3ea349a53ba46d836917580c",
+      "bytes": 81336320,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894899",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_icu/transition.now-update-qt-to-6.11.0-1788894899/metadata.json",
+        "sha256": "34b07be4c2f3d4618e3d68894b7d47aeea1654af0dc93784b4d486894158791e"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_icu/CMakeLists.txt",
+        "sha256": "218e41aa277587f7f570160f24120a1292a734b8bf669384ae96e5d5208e0c39"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_immer",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_immer/transition.now-update-qt-to-6.11.0-1788893670/archive.tar",
+      "sha256": "63d559e48bbd490ef1d3e20f90d29a89a2e4dce498a7ffd78f6263a9facde678",
+      "bytes": 665600,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893670",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_immer/transition.now-update-qt-to-6.11.0-1788893670/metadata.json",
+        "sha256": "f2a462e6226ec321812c127d5e644e26a17195fd68802b6dcefd193111c309ee"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_immer/CMakeLists.txt",
+        "sha256": "7a4468642dfb3aae3071c50fbaed556839074aed9d9b07b03cf9b0f27fe4e07f"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_jpeg",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_jpeg/transition.now-update-qt-to-6.11.0-1788893690/archive.tar",
+      "sha256": "0b21ff2f4101144c1beabec88d692f390ed2890f330d7531fe9d02044a19f73f",
+      "bytes": 5365760,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893690",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_jpeg/transition.now-update-qt-to-6.11.0-1788893690/metadata.json",
+        "sha256": "51ca02de5805b5d02a2c66ec4ca54519a0c15007d9f29a7a22c2d63c1daeffac"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_jpeg/CMakeLists.txt",
+        "sha256": "cde19c407718cd0253f93bc97892073150075da6573131bc78418046147b8147"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_jpegxl",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_jpegxl/transition.now-update-qt-to-6.11.0-1788896280/archive.tar",
+      "sha256": "c984b75db0ce2a71b32339ccec83f07eef1c8f3381d92f6874c485ce372b2e2d",
+      "bytes": 19066880,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788896280",
+      "dependencies": [
+        "ext_brotli",
+        "ext_highway",
+        "ext_jpeg",
+        "ext_lcms2",
+        "ext_png",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_jpegxl/transition.now-update-qt-to-6.11.0-1788896280/metadata.json",
+        "sha256": "5f2413a21045bedc1ddc460851a20df6e1b231f52973fdf472b9cb888d48efb0"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_jpegxl/CMakeLists.txt",
+        "sha256": "a954c5dabc31c2637722b19450666d76a5b2965219004417199ad0065be4a507"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_json_c",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_json_c/transition.now-update-qt-to-6.11.0-1788893718/archive.tar",
+      "sha256": "de40ffe57aa3f077b9d211740b60a90f1032e89fe7f9a4a8066a4099d98a8783",
+      "bytes": 819200,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893718",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_json_c/transition.now-update-qt-to-6.11.0-1788893718/metadata.json",
+        "sha256": "b2db318367e6414ce87959140174483e72bca8e66cf27cd501cbe0f341bd43ba"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_json_c/CMakeLists.txt",
+        "sha256": "b332896c93dff4c254d6c02e0fb0192f21928267099d46db744cc549db8f211e"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_karchive",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_karchive/transition.now-update-qt-to-6.11.0-1788898944/archive.tar",
+      "sha256": "a1f218ea3f2102eb0ee52a63da78e0859ec53977795a41ac2a13b88f313c3e02",
+      "bytes": 1679360,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898944",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_karchive/transition.now-update-qt-to-6.11.0-1788898944/metadata.json",
+        "sha256": "4fec917e71a73dbe714aee5f482171d1738ff50b3350c5af026744023ddd0ba7"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_karchive/CMakeLists.txt",
+        "sha256": "cd6aee92b52e8fc583cf1fe10f09b75f9c336ed80e2984667e2f12be792fec52"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kcodecs",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcodecs/transition.now-update-qt-to-6.11.0-1788898989/archive.tar",
+      "sha256": "d177a6a987f10354198912dfcb61885badc90d052ce24a1759b3f956d6c89186",
+      "bytes": 1740800,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898989",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_gperf",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcodecs/transition.now-update-qt-to-6.11.0-1788898989/metadata.json",
+        "sha256": "f048dbff3897c6059f02a0931f1d9e355e62cf25f95596d2fedddef8e208e1e9"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kcodecs/CMakeLists.txt",
+        "sha256": "5cb48f32b28c93e1e9425cb15027e8aacdcb84bec0cfb2301c050ceeaf4ab317"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kcolorscheme",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcolorscheme/transition.now-update-qt-to-6.11.0-1788899887/archive.tar",
+      "sha256": "703264c32d2910684b5b7dc3eafea4f4b0124867295344566beb5bb1b56ef908",
+      "bytes": 768000,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899887",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_kconfig",
+        "ext_kguiaddons",
+        "ext_ki18n",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcolorscheme/transition.now-update-qt-to-6.11.0-1788899887/metadata.json",
+        "sha256": "8330cfd553d6d1a566dfec63d627ac782f26ac34cb5aae103da243ee755a5a1f"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kcolorscheme/CMakeLists.txt",
+        "sha256": "4d7de70ae64b9e173c41d17f1d28a5731dbaa9e721c87f3985c8fa9038bd462f"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kcompletion",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcompletion/transition.now-update-qt-to-6.11.0-1788899939/archive.tar",
+      "sha256": "effe0f765b20c62e98afbd6c1737c1514496fff6e4ab49a3560d9c81c0a0586a",
+      "bytes": 2181120,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899939",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_kcodecs",
+        "ext_kconfig",
+        "ext_kwidgetsaddons",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcompletion/transition.now-update-qt-to-6.11.0-1788899939/metadata.json",
+        "sha256": "2534325f8f90a3a2cfa72fec1bdff9ce7df1678d0ed6c1c5baf6c4d8a94d1d21"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kcompletion/CMakeLists.txt",
+        "sha256": "3ea0cd196eef8fe873cff866b78e62d3edf6a88724d46adf359f57c6c8f18fc9"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kconfig",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kconfig/transition.now-update-qt-to-6.11.0-1788899046/archive.tar",
+      "sha256": "a59fbaa136139f0a811de8ae5e007f94aac684af0a09d90d5b5b742edf8f9321",
+      "bytes": 8048640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899046",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_patch",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kconfig/transition.now-update-qt-to-6.11.0-1788899046/metadata.json",
+        "sha256": "cb2f994a922d2bf83b3e66867d516072f5c449d3bc187a0954d32235e3f4a77e"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kconfig/CMakeLists.txt",
+        "sha256": "67859fad1dc772e8a26eb7cee410c27f94f20b9a300720a624b4da3a42420b2d"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kcoreaddons",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcoreaddons/transition.now-update-qt-to-6.11.0-1788899106/archive.tar",
+      "sha256": "998d8b34c29eb916bf562c1df03e0a663c9d055a8ff6a6701270b846fec500e7",
+      "bytes": 6512640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899106",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcoreaddons/transition.now-update-qt-to-6.11.0-1788899106/metadata.json",
+        "sha256": "c3a45f495086c117e107de05d43042c3a513a78db3cf7533cf45db307a34cfdf"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kcoreaddons/CMakeLists.txt",
+        "sha256": "ef44e03b644bd1dcc3f6987e0ee306610b2c44949bff5ae7332d5579e96bc86b"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kdcraw",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kdcraw/transition.now-update-qt-to-6.11.0-1788898465/archive.tar",
+      "sha256": "124591033ec096d6b95da8c920107dc3331b5c30b62f0f13a1ea6c7325022112",
+      "bytes": 399360,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898465",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_libraw",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kdcraw/transition.now-update-qt-to-6.11.0-1788898465/metadata.json",
+        "sha256": "382f49e505ffebe08cdd530176ee0e15ac2725eaf209e405ad91ecc963b42c39"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kdcraw/CMakeLists.txt",
+        "sha256": "3bcc5bd4957d014349fc5821350eb52b8b73b5a0b1e14f66bf0585219d6e4e01"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kguiaddons",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kguiaddons/transition.now-update-qt-to-6.11.0-1788899157/archive.tar",
+      "sha256": "50ba8393a8a771ac285ba4e9f5be076042fc214a43cdf47a1035cbb60f05aa8c",
+      "bytes": 1515520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899157",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_patch",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kguiaddons/transition.now-update-qt-to-6.11.0-1788899157/metadata.json",
+        "sha256": "44427bb05ed45fd94194f92df8e64d5286af74694d959ef0061d50b642aa90d8"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kguiaddons/CMakeLists.txt",
+        "sha256": "ec7d74e2a2766004482cad95a66329dc29df737f04fde1e56c22fd4476680996"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_ki18n",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ki18n/transition.now-update-qt-to-6.11.0-1788899232/archive.tar",
+      "sha256": "668f718c084e8deaeb90c169d09408e18149a483ed748a8d4f0ea88e097f8ce6",
+      "bytes": 22620160,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899232",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_gettext",
+        "ext_patch",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ki18n/transition.now-update-qt-to-6.11.0-1788899232/metadata.json",
+        "sha256": "bdedea433a09c0bd408b49840d643bb08afe3f205659a9cb347628127a686720"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_ki18n/CMakeLists.txt",
+        "sha256": "f2b6784eb41c71dc4ee223f29d23031fe6068c9a80d836df0f83f41632e33ae1"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kimageformats",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kimageformats/transition.now-update-qt-to-6.11.0-1788899284/archive.tar",
+      "sha256": "8bddbc086788cb1068d80445b995aefe8f4be87c29a807b42e00a337f1302a22",
+      "bytes": 8017920,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899284",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_karchive",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kimageformats/transition.now-update-qt-to-6.11.0-1788899284/metadata.json",
+        "sha256": "7329ea00b10b30cbfffe588b846e94848790b85e43fa0e9f61d0b3083f0c59c3"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kimageformats/CMakeLists.txt",
+        "sha256": "ef5da556be72106d436b48460ebd28de06954ee893738cbb55e10333a6520f8e"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kitemmodels",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kitemmodels/transition.now-update-qt-to-6.11.0-1788899331/archive.tar",
+      "sha256": "9dea45ef121e2e0a02d9502e2fff80178e19f941755503aadeb7a7a420dd2eb4",
+      "bytes": 2549760,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899331",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kitemmodels/transition.now-update-qt-to-6.11.0-1788899331/metadata.json",
+        "sha256": "91fdf29f6b3a300c60759a13125842980c6f3f4ef209a7bbc817e7120c07ea2f"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kitemmodels/CMakeLists.txt",
+        "sha256": "3adc7153c338336ecabd39c77e531c123f30fdc4b9128c3ec49a65fbeb5739e4"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kitemviews",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kitemviews/transition.now-update-qt-to-6.11.0-1788899379/archive.tar",
+      "sha256": "c11ff8f9d7654de70c0c9582961f16f7ed11d7d3c3ae75593c63220e42c35860",
+      "bytes": 2150400,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899379",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kitemviews/transition.now-update-qt-to-6.11.0-1788899379/metadata.json",
+        "sha256": "070d1c31a36aaddba1fe32fda0733967b4ad08234a2d38464729544f65aa681b"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kitemviews/CMakeLists.txt",
+        "sha256": "e5bfe491e50dd9e6c1a2972f9b31faeef415902df4c03a0a17cd23ba6a5982be"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kwidgetsaddons",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kwidgetsaddons/transition.now-update-qt-to-6.11.0-1788899451/archive.tar",
+      "sha256": "3f79a74bf4cdf654e9b06626a542241681220343c1a0136a52caebca6fa64a45",
+      "bytes": 15738880,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899451",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kwidgetsaddons/transition.now-update-qt-to-6.11.0-1788899451/metadata.json",
+        "sha256": "7aa36fe9d5939366386c2c537e37dfd6655e8ab59aac02e32e99845d965bec4c"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kwidgetsaddons/CMakeLists.txt",
+        "sha256": "3ba82ced827613faa818d96e7df060ceb43691ffe255d94d6ed071f4921af09d"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_kwindowsystem",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kwindowsystem/transition.now-update-qt-to-6.11.0-1788899499/archive.tar",
+      "sha256": "b648c62ad96414c4877c20963c383e9e96cf68b888b22fa050a3ed146862fbb9",
+      "bytes": 1116160,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899499",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kwindowsystem/transition.now-update-qt-to-6.11.0-1788899499/metadata.json",
+        "sha256": "c4a8024939d9574fd37b75f790d378da8eab6faba08b612d980f40de310f3d7c"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_kwindowsystem/CMakeLists.txt",
+        "sha256": "46bb6d33df6b9781dc227da5f8a9747abd7765eab9ffcf27ac78b432799349a0"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_lager",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lager/transition.now-update-qt-to-6.11.0-1788894921/archive.tar",
+      "sha256": "f5d76ea874e60a444443b0186da289032e3fd715f4f67ddfa9270be84aa23001",
+      "bytes": 419840,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894921",
+      "dependencies": [
+        "ext_immer",
+        "ext_patch",
+        "ext_zug"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lager/transition.now-update-qt-to-6.11.0-1788894921/metadata.json",
+        "sha256": "59531d2464aeaab9070a740ed68e288fd75059bc9ac1951e6a46fd1956a2b8a9"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_lager/CMakeLists.txt",
+        "sha256": "99c8c755e2ebe50071a920a7551ee0014e7609d26a31c36bba8174de65478b2e"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_lame",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lame/transition.now-update-qt-to-6.11.0-1788895228/archive.tar",
+      "sha256": "ba39be9af1294d5ba0e556ec230923dd2ef903337ea3b0c3666647f6455078bb",
+      "bytes": 1628160,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895228",
+      "dependencies": [
+        "ext_patch",
+        "ext_pkgconfig"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lame/transition.now-update-qt-to-6.11.0-1788895228/metadata.json",
+        "sha256": "de76a9cb8ceeb6ddc295bcf8d59be8ac7f6943749565b536c302a99c6f154c97"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_lame/CMakeLists.txt",
+        "sha256": "76b923d91468d5c99406bf61e0d66a94ca121afb0164009f1329c06faf2a7b2b"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_lcms2",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lcms2/transition.now-update-qt-to-6.11.0-1788894945/archive.tar",
+      "sha256": "1cc1fdd15b44b46b58b86aec1989cc1879d4733817da65b77d3a2a4e17a9fb7d",
+      "bytes": 1208320,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894945",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lcms2/transition.now-update-qt-to-6.11.0-1788894945/metadata.json",
+        "sha256": "09df3cba1d481a8e022f2b61fc189521360be75a456a51af764d430a5cc2c6c6"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_lcms2/CMakeLists.txt",
+        "sha256": "7f29640a3ac9e130b9ee55227db4918408952242c477d234e92c51464ee4a928"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libaom",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libaom/transition.now-update-qt-to-6.11.0-1788895547/archive.tar",
+      "sha256": "411ed9b9ef4b3d54d1c862ecc0b7025974efcf71e0fef06d44871e88363a23c4",
+      "bytes": 15759360,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895547",
+      "dependencies": [
+        "ext_nasm",
+        "ext_patch",
+        "ext_strawberryperl"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libaom/transition.now-update-qt-to-6.11.0-1788895547/metadata.json",
+        "sha256": "73c57dffea8476d1087d0f4f12eb41e64ced5f9e294504636ff432b4e9356bbe"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libaom/CMakeLists.txt",
+        "sha256": "aad7676b222bbdb45ffe740f2f2d919c2996e37d1a436314d75e07724d065fd2"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libde265",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libde265/transition.now-update-qt-to-6.11.0-1788895719/archive.tar",
+      "sha256": "1a345c3c65de92c532a23c97f5ffb37bbc63c4ed0cc569caa16a0d4e56131b72",
+      "bytes": 2775040,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895719",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libde265/transition.now-update-qt-to-6.11.0-1788895719/metadata.json",
+        "sha256": "a2006a37964ef156894c873ab23882b4a0c235719f6ed1bae334c72958057666"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libde265/CMakeLists.txt",
+        "sha256": "678c93cff1fefff7cf2114c68e35404106bf5e6ba3c4acc002b893332dce94c0"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libheif",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libheif/transition.now-update-qt-to-6.11.0-1788899736/archive.tar",
+      "sha256": "f78611280c41f196232861430abc46b2aa2c66df887d9be2396f6e3238db4a1b",
+      "bytes": 24483840,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899736",
+      "dependencies": [
+        "ext_libaom",
+        "ext_libde265",
+        "ext_libx265",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libheif/transition.now-update-qt-to-6.11.0-1788899736/metadata.json",
+        "sha256": "90802350b2507fac59c532f0c2fd2aeba7ee46fa63c91856d76fd20f5664fd92"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libheif/CMakeLists.txt",
+        "sha256": "32b43293b9d2e5788577e8134cca24624898e2c556c7d39baf2e8d983d5ff539"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libogg",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libogg/transition.now-update-qt-to-6.11.0-1788895252/archive.tar",
+      "sha256": "22af0dad30a0ac218d1365a89837874ac4e13d1b5e26b7c29b9fa39ed6afac46",
+      "bytes": 747520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895252",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libogg/transition.now-update-qt-to-6.11.0-1788895252/metadata.json",
+        "sha256": "7cdfb88307f54c5748a4b0cea1998ba908561be187fdc06acb195a158ddc78e1"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libogg/CMakeLists.txt",
+        "sha256": "5bfbf071e1cae10b19618416170e511b5d6825b6773af7247d397fc09c0913ea"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libraw",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libraw/transition.now-update-qt-to-6.11.0-1788895957/archive.tar",
+      "sha256": "b3fbc046e1e8e3196d88f8cf48fc84fc73afc1aae8b62bfeefb905a7212bb5f5",
+      "bytes": 5580800,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895957",
+      "dependencies": [
+        "ext_jpeg",
+        "ext_lcms2",
+        "ext_patch",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libraw/transition.now-update-qt-to-6.11.0-1788895957/metadata.json",
+        "sha256": "76aafccecbae2dd5abde38307ae707d361f0cef0e478f2b444b61b3fb8c56a7d"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libraw/CMakeLists.txt",
+        "sha256": "04a910431585a12d8ccf67e4fc4151088576fdae81b2925dc1e24e6857308b75"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libtheora",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libtheora/transition.now-update-qt-to-6.11.0-1788898375/archive.tar",
+      "sha256": "2312cde756f6e534ff8c91244fab076799ce934dcc461d5dfab225bc38d02786",
+      "bytes": 2508800,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898375",
+      "dependencies": [
+        "ext_libogg",
+        "ext_libvorbis",
+        "ext_patch",
+        "ext_pkgconfig",
+        "ext_png"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libtheora/transition.now-update-qt-to-6.11.0-1788898375/metadata.json",
+        "sha256": "ab5d5667c2482ed2d77ea0415fe9e0828e9290e25e2287de80dc4de091611e21"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libtheora/CMakeLists.txt",
+        "sha256": "3dcde4774b3d216898d047b1ed8feb1a5cc9a09d4030fd5106ac14ce48b4af2a"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libvorbis",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libvorbis/transition.now-update-qt-to-6.11.0-1788895269/archive.tar",
+      "sha256": "d42660644b772c66eb900f7206c70a5c72c40e451dce7af6eecbe9c8cda6185b",
+      "bytes": 2017280,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895269",
+      "dependencies": [
+        "ext_libogg",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libvorbis/transition.now-update-qt-to-6.11.0-1788895269/metadata.json",
+        "sha256": "09d40e9732539106b4a70906d8ef215c3f382151bf78517f3f4c8a69fca62477"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libvorbis/CMakeLists.txt",
+        "sha256": "2227aadb2ea249a72bb83d951199054e1c0c8583760e5d7ac5057cced7ac3cfa"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libx265",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265/transition.now-update-qt-to-6.11.0-1788898424/archive.tar",
+      "sha256": "c4ddf5cd5c3b3966edada7a36b54454102160432dd7da6505acb99f179a6dfd4",
+      "bytes": 60692480,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898424",
+      "dependencies": [
+        "ext_libx265_12bit",
+        "ext_nasm",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265/transition.now-update-qt-to-6.11.0-1788898424/metadata.json",
+        "sha256": "83dc37421aed6db00e08a6ca762192d7a8cb5ad4b203ebbbdbc248426f880f87"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libx265/CMakeLists.txt",
+        "sha256": "3cee684251d38033a541a5d9c55aa71e8885cd7a7cddbcaafad5fea1166e1fea"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libx265_10bit",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265_10bit/transition.now-update-qt-to-6.11.0-1788895825/archive.tar",
+      "sha256": "58d8d6b6a76d549f20a58bb43313a9ff56bc30e15949ad0950594edf1dc04e38",
+      "bytes": 10106880,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895825",
+      "dependencies": [
+        "ext_nasm",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265_10bit/transition.now-update-qt-to-6.11.0-1788895825/metadata.json",
+        "sha256": "96ebd4b16f0cd24b86b610d3360bac066e2e272a33c38c90890a2bc7002b68d6"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libx265_10bit/CMakeLists.txt",
+        "sha256": "72f23a182b12767bf6ea1311b4092cf3865b13d982953a6f4060185a5d02020b"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_libx265_12bit",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265_12bit/transition.now-update-qt-to-6.11.0-1788895930/archive.tar",
+      "sha256": "7ea16b4513e960c6b01d5fef21e8183cdd2aaca14a20563783e338a37323fbe2",
+      "bytes": 10004480,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895930",
+      "dependencies": [
+        "ext_libx265_10bit",
+        "ext_nasm",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265_12bit/transition.now-update-qt-to-6.11.0-1788895930/metadata.json",
+        "sha256": "d7b1f3780bdb809b864b3b0e27ec2d73611e493439eacf42bc52bd00877fb562"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_libx265_12bit/CMakeLists.txt",
+        "sha256": "bdee1805e772657a1b2535a39119867c0c11650b881a69f7479ebffe87e6821c"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_lzma",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lzma/transition.now-update-qt-to-6.11.0-1788893924/archive.tar",
+      "sha256": "d151441ae1c90cc51a685b9bfecf9e64c120512f60167b2a7868ac13a249f7d3",
+      "bytes": 604160,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893924",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lzma/transition.now-update-qt-to-6.11.0-1788893924/metadata.json",
+        "sha256": "0583edf53d85d734ab0e4cea5170c8221f38c0c0c0bee49bac9e4d1ab99154b2"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_lzma/CMakeLists.txt",
+        "sha256": "5d06811b9e5ed5ca6581311ce7dbc757e6d4950245a3d18bef7af42a291c1533"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_mlt",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_mlt/transition.now-update-qt-to-6.11.0-1788899977/archive.tar",
+      "sha256": "37480a8e7957ac31ffd5fa1f266ac527986a0c2c7035f9cefb9df4df7cb95ee6",
+      "bytes": 5642240,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899977",
+      "dependencies": [
+        "ext_dlfcn_win32",
+        "ext_ffmpeg",
+        "ext_fftw3",
+        "ext_fontconfig",
+        "ext_libvorbis",
+        "ext_patch",
+        "ext_sdl2"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_mlt/transition.now-update-qt-to-6.11.0-1788899977/metadata.json",
+        "sha256": "7e1783ecb7578ca6716cf37edeae6021e252f20ae709259f656f3f26959c5e2f"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_mlt/CMakeLists.txt",
+        "sha256": "7b36753100b5ceb153be3316cf5513eb0f3f098ca28331c27491c29cf006cf1b"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_mypaint",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_mypaint/transition.now-update-qt-to-6.11.0-1788894961/archive.tar",
+      "sha256": "a25b4013ea5ee174150a90bcc6a0b4f4dfd1518477daa5c3977ad1a00c768397",
+      "bytes": 460800,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894961",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_json_c"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_mypaint/transition.now-update-qt-to-6.11.0-1788894961/metadata.json",
+        "sha256": "dcde3b13e5a2a1996a6896377d5a1625e8e6f818043776784aa227ff05ed4880"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_mypaint/CMakeLists.txt",
+        "sha256": "5b799166a7f2fc8af358d5d9a360560cf6d6cc763a014784483b530ab99c59de"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_nasm",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_nasm/transition.now-update-qt-to-6.11.0-1788893724/archive.tar",
+      "sha256": "393187cd351651a13a6f0a1d6f8ab24bed8edb8367b59feb38c4eab49fac521a",
+      "bytes": 3358720,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893724",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_nasm/transition.now-update-qt-to-6.11.0-1788893724/metadata.json",
+        "sha256": "215c8eb3c6d2d0210bac05d17dedd1aab664ed427bead314fab14a9e3f58a8b3"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_nasm/CMakeLists.txt",
+        "sha256": "9f9fad4b1fe3af08f1953e24bdb57da3058ccc7becc065ed931c39618fd91b39"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_ocio",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ocio/transition.now-update-qt-to-6.11.0-1788895680/archive.tar",
+      "sha256": "91bf773e482128ae3013582ecc74347d7642d76a2e39fb635ef208be77ec65fb",
+      "bytes": 37877760,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895680",
+      "dependencies": [
+        "ext_openexr"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ocio/transition.now-update-qt-to-6.11.0-1788895680/metadata.json",
+        "sha256": "5429e62573c345c2ed4f0b0bda0bf1fd8ba57e6af3560f6f4a09a34c25bba305"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_ocio/CMakeLists.txt",
+        "sha256": "2dd5a5fc33ca001f8392c0f8ebec705e2f581f65c10106e3a27da6ec09e6acb9"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_openexr",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openexr/transition.now-update-qt-to-6.11.0-1788895034/archive.tar",
+      "sha256": "31d12809c830dd7ec35858d315c4217492c8ead8400386e16b0ff96fbc0e29fa",
+      "bytes": 17131520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895034",
+      "dependencies": [
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openexr/transition.now-update-qt-to-6.11.0-1788895034/metadata.json",
+        "sha256": "020d53260feea108e0efc3b1d2337d6e99c6f736931f447a83a0c47d75fd46bd"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_openexr/CMakeLists.txt",
+        "sha256": "3a372e8ce43a96faa55485fad33a44840783b6f0beb3db617244b3637ebe7d2a"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_openh264",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openh264/transition.now-update-qt-to-6.11.0-1788895311/archive.tar",
+      "sha256": "f8d088b680b2d1ce59fe461fa272c91bd7145b5222ac5ae97819d60ca25a3dfb",
+      "bytes": 4741120,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895311",
+      "dependencies": [
+        "ext_nasm",
+        "ext_patch",
+        "ext_pkgconfig"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openh264/transition.now-update-qt-to-6.11.0-1788895311/metadata.json",
+        "sha256": "f724391cf2fc33ab2c87b41c89edd712f76bc168ddbf50aeefd617d2c63d569b"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_openh264/CMakeLists.txt",
+        "sha256": "eafaa3728a06616861c24c015e528dd7f5621654761629e4a20146e41d044f9a"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_openjpeg",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openjpeg/transition.now-update-qt-to-6.11.0-1788895072/archive.tar",
+      "sha256": "d04a113aabb80ee5e8c1a3a6690dc5ea6d8656ac3c8a523c94ff3438a8dfca4e",
+      "bytes": 2580480,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895072",
+      "dependencies": [
+        "ext_lcms2",
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openjpeg/transition.now-update-qt-to-6.11.0-1788895072/metadata.json",
+        "sha256": "d992ed19c4f4ac30de09fd6dd629c5186caf35f2d4c3e7925d330478d1790177"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_openjpeg/CMakeLists.txt",
+        "sha256": "7f917eb0e363622d3fba253e6718a014c4ff03b834d1513c05ba06deec26ff83"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_openssl",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openssl/transition.now-update-qt-to-6.11.0-1788894122/archive.tar",
+      "sha256": "a90f9f7a37f27efc325e68ec611d1c2a510c3207ac648e05433e84655bb936ea",
+      "bytes": 8110080,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894122",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openssl/transition.now-update-qt-to-6.11.0-1788894122/metadata.json",
+        "sha256": "103d39e1d82a23d1a39dd17f55c84d33d652a93fcf9e8e686c65529a29118cae"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_openssl/CMakeLists.txt",
+        "sha256": "65fc6ca966f11576ec392a24b30c95e1a44fe128b781e0457b90ef4c5e84a76b"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_opus",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_opus/transition.now-update-qt-to-6.11.0-1788893773/archive.tar",
+      "sha256": "7be74709140ec346ff38354e7ff012d6d4b188c1062f3e9dceb18e018f684747",
+      "bytes": 1177600,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893773",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_opus/transition.now-update-qt-to-6.11.0-1788893773/metadata.json",
+        "sha256": "24f6670d35912e92d99d9cee6deb804878852feb4e20bfcb86e8398ae976b2db"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_opus/CMakeLists.txt",
+        "sha256": "7e8678b7b919b72270252d8ca39033c4c394ea3716534431d227e4dde4beab5e"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_patch",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_patch/transition.now-update-qt-to-6.11.0-1788894025/archive.tar",
+      "sha256": "8862e72536b4e0e5c04313c69485574524260b5c32a8b7157ce3c83c59c4fb94",
+      "bytes": 122880,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894025",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_patch/transition.now-update-qt-to-6.11.0-1788894025/metadata.json",
+        "sha256": "07cfdf2450ae358fd5270fdc30d45d0e736d84f793d456e5d416b26c7c8698b9"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_patch/CMakeLists.txt",
+        "sha256": "4c8df3c934d759a47c2ce8f765b72a2a2ecb1857a45a277946572614620dc2df"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_pkgconfig",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pkgconfig/transition.now-update-qt-to-6.11.0-1788894141/archive.tar",
+      "sha256": "868502959004d6438f58ce8ae361d16cc5ca60109533bc0693a8b74e2c159d7e",
+      "bytes": 624640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894141",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pkgconfig/transition.now-update-qt-to-6.11.0-1788894141/metadata.json",
+        "sha256": "3d0b4f8508ec6fd0591afa085acd184f899f7bca52b2622ab97f283ccb84188e"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_pkgconfig/CMakeLists.txt",
+        "sha256": "7b4955067d2f322e9e394d31d57e0cbc4d94b622a377db49392b38185d6b5d11"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_png",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_png/transition.now-update-qt-to-6.11.0-1788895094/archive.tar",
+      "sha256": "626a8ddf06a57cb516425c4b0f61d226cf4566089e706ee3a4c87cec26c790e3",
+      "bytes": 2734080,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895094",
+      "dependencies": [
+        "ext_patch",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_png/transition.now-update-qt-to-6.11.0-1788895094/metadata.json",
+        "sha256": "423cbca2189d902cb2eedce032559f34cde1bbbf6b2e587daf582179678a6292"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_png/CMakeLists.txt",
+        "sha256": "b07b7362528e527821a037480b02f21322d92cb6abf52a43e8944c593354012a"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_poppler",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_poppler/transition.now-update-qt-to-6.11.0-1788899840/archive.tar",
+      "sha256": "617aedfa2801aad8a6398d3158702400b6f4a19bb6462954462b9babab5b9be9",
+      "bytes": 60293120,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899840",
+      "dependencies": [
+        "ext_boost",
+        "ext_fontconfig",
+        "ext_freetype",
+        "ext_iconv",
+        "ext_jpeg",
+        "ext_lcms2",
+        "ext_patch",
+        "ext_png",
+        "ext_qt",
+        "ext_tiff"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_poppler/transition.now-update-qt-to-6.11.0-1788899840/metadata.json",
+        "sha256": "b2da169f066bb0b3c923a3ccda4a6fe6c07bf0926e67a278254c4ffb8e56e644"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_poppler/CMakeLists.txt",
+        "sha256": "78b86e16f47895cf7ebc590c4613f045a5d29c299e33dcb622961c0843cd9832"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_pyqt-builder",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt-builder/transition.now-update-qt-to-6.11.0-1788898504/archive.tar",
+      "sha256": "9b263cab464704c22a3b6e398431cfa059b87c8c6c3a2b7500fca3aad65fe8d4",
+      "bytes": 15052800,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898504",
+      "dependencies": [
+        "ext_patch",
+        "ext_python",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt-builder/transition.now-update-qt-to-6.11.0-1788898504/metadata.json",
+        "sha256": "3375575fd9398e899dae6dc5c98ac9b07eaba9affe2c77972f58082b4cc6092e"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_pyqt-builder/CMakeLists.txt",
+        "sha256": "a47a2a0dc23a2dd9f88bbe899a376763f89ae3081cc81fb81175de14128c0bd4"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_pyqt6",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt6/transition.now-update-qt-to-6.11.0-1788898830/archive.tar",
+      "sha256": "0aa19f9e473c0f7cbd399b153a84540174ee86a6ed9aa3a91adc65829acb4b26",
+      "bytes": 19845120,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898830",
+      "dependencies": [
+        "ext_patch",
+        "ext_pyqt-builder",
+        "ext_python",
+        "ext_qt",
+        "ext_sip"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt6/transition.now-update-qt-to-6.11.0-1788898830/metadata.json",
+        "sha256": "41dc272c3ea01fdbd6921606cc9b57bdeacc4a97b3b3551550496753c0f506bb"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_pyqt6/CMakeLists.txt",
+        "sha256": "0bc46531505231a2f9a41fcfe36fbd8dd5f8cf70b488f482b0b7750412894600"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_pyqt6-sip",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt6-sip/transition.now-update-qt-to-6.11.0-1788898877/archive.tar",
+      "sha256": "d373325d4ba7e66215a330ef8654237f9969a92be40ea4ddcce0df096f6a3cab",
+      "bytes": 143360,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898877",
+      "dependencies": [
+        "ext_patch",
+        "ext_pyqt6",
+        "ext_python",
+        "ext_qt",
+        "ext_sip"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt6-sip/transition.now-update-qt-to-6.11.0-1788898877/metadata.json",
+        "sha256": "8dc56597d9b71ec5bcc7c7e6819a0ba9546df4e68286ae93e8a16ceb12a41763"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_pyqt6-sip/CMakeLists.txt",
+        "sha256": "f4a11aeba87ccd239b6e8db6888061ac0502370e347308a3d9fa205e881c0ed7"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_python",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_python/transition.now-update-qt-to-6.11.0-1788893962/archive.tar",
+      "sha256": "3b71f039bcca3b18b0642cabeed3e836ea1cfb1da593c924da69a891e63e55e9",
+      "bytes": 27586560,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893962",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_python/transition.now-update-qt-to-6.11.0-1788893962/metadata.json",
+        "sha256": "22c5b49067f5ee97d0b3693ee4effa9994dad815bd24d6f1b5f33ea3240d5ae7"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_python/CMakeLists.txt",
+        "sha256": "251d2ea8155db00d052eb25a8ddb705691665f596fa2fde4e1e6276cb184cc11"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_qt",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_qt/transition.now-update-qt-to-6.11.0-1788898275/archive.tar",
+      "sha256": "766c8bef1577a76bba55f059bfb54afc352d1d38f47593365b1f544516974495",
+      "bytes": 787742720,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898275",
+      "dependencies": [
+        "ext_freetype",
+        "ext_googleangle",
+        "ext_icu",
+        "ext_jpeg",
+        "ext_openssl",
+        "ext_patch",
+        "ext_png",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_qt/transition.now-update-qt-to-6.11.0-1788898275/metadata.json",
+        "sha256": "26f5453f0c92cd8d0556f75aa77f1c24619bc2b62b8a8b2ac1ae790285cf9cbe"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_qt/CMakeLists.txt",
+        "sha256": "ab0d9c4ca4ecc22af4a49a5a567b8e0f061b368f0c4ce2d06ebae5c1cba3e025"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_quazip",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_quazip/transition.now-update-qt-to-6.11.0-1788898334/archive.tar",
+      "sha256": "59cef61a674f69efc6a64834c96d343fd6a8adb6ecf59d885e054a0b03cfa1b6",
+      "bytes": 1259520,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788898334",
+      "dependencies": [
+        "ext_patch",
+        "ext_qt",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_quazip/transition.now-update-qt-to-6.11.0-1788898334/metadata.json",
+        "sha256": "3141ee010c86275d25035c90d6c67974d263546209bc5604881fd1765f0d5775"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_quazip/CMakeLists.txt",
+        "sha256": "bf08770f74e80011216245bd01b7ac1d1074d04fdc34cbc870a056e03190baf1"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_sdl2",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_sdl2/transition.now-update-qt-to-6.11.0-1788893902/archive.tar",
+      "sha256": "bec90d4998902046b54f274a89ec814679f05793d960bd16f2e4e8aaec68c11b",
+      "bytes": 6737920,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893902",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_sdl2/transition.now-update-qt-to-6.11.0-1788893902/metadata.json",
+        "sha256": "ebe8f3c15ae80f1588d7db08b622c9972de77fdfa9b798926fd5c1ed7a7c594a"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_sdl2/CMakeLists.txt",
+        "sha256": "19cc343fce4ecefaf018270c2645d42fc495db7e79597509eddb43365217ccd1"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_seexpr",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_seexpr/transition.now-update-qt-to-6.11.0-1788899556/archive.tar",
+      "sha256": "9470cc0bba15a9488bfa410b3d7bc541e8e0a29cc8bc14702d5236e9b4c8554d",
+      "bytes": 7137280,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788899556",
+      "dependencies": [
+        "ext_extra_cmake_modules",
+        "ext_ki18n",
+        "ext_qt"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_seexpr/transition.now-update-qt-to-6.11.0-1788899556/metadata.json",
+        "sha256": "5492866374a7b38c4c3625519121148a6378818cf7481844570c0e4f8f7504ef"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_seexpr/CMakeLists.txt",
+        "sha256": "69743629b508399c3d6ddb2ab7d78941f2987493a05b1fa98f3652085b1ab1cf"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_sip",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_sip/transition.now-update-qt-to-6.11.0-1788895976/archive.tar",
+      "sha256": "34234c25e336b8a75ff57f19629ae72f6ba4fd4eada10e8b2d10e859eb43cad1",
+      "bytes": 15554560,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895976",
+      "dependencies": [
+        "ext_patch",
+        "ext_python"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_sip/transition.now-update-qt-to-6.11.0-1788895976/metadata.json",
+        "sha256": "86f0478a6012703a634f8cc12e5e733b6aafcbf16cb4f93712108b427f5b667c"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_sip/CMakeLists.txt",
+        "sha256": "98985e85c9b0d8242afe1b3c0c5996281bdfc5abba7a5f2a84493e0acf6d0d3f"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_strawberryperl",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_strawberryperl/transition.now-update-qt-to-6.11.0-1788894074/archive.tar",
+      "sha256": "9dd3edf955b8e0327e300a29be0ed5bdb614d2cafbef14989976b153032aee4b",
+      "bytes": 163225600,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894074",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_strawberryperl/transition.now-update-qt-to-6.11.0-1788894074/metadata.json",
+        "sha256": "8c394e051c470a522da07f5aa695a8b3a003965a845eb1d9a472be571bb8a55e"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_strawberryperl/CMakeLists.txt",
+        "sha256": "69242a3a3bdeca7897d01beb3f256080690e806f29ca45e07fc6283c900cf613"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_tiff",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_tiff/transition.now-update-qt-to-6.11.0-1788895135/archive.tar",
+      "sha256": "75b95c16c3d3cece964507ca57b2ac4d81c13e497d58c7ccd79d2020f8e4846e",
+      "bytes": 5468160,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895135",
+      "dependencies": [
+        "ext_jpeg",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_tiff/transition.now-update-qt-to-6.11.0-1788895135/metadata.json",
+        "sha256": "a92788525d28d02e1e7630149fbd441b0590df597452d4d5309cab3e206fd235"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_tiff/CMakeLists.txt",
+        "sha256": "3a83b6486712e740c498df4723eaba0867987857c0831c19c75b0a24e63a1f9b"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_unibreak",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_unibreak/transition.now-update-qt-to-6.11.0-1788895146/archive.tar",
+      "sha256": "2b349c23182339c88148165fd6f26aa17c7c5cf68052c60514129dc8d006c030",
+      "bytes": 215040,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895146",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_unibreak/transition.now-update-qt-to-6.11.0-1788895146/metadata.json",
+        "sha256": "7816461fe3a70d5ed22c6cf729dfd0384b6b32fea673540e44a896eaa1a03765"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_unibreak/CMakeLists.txt",
+        "sha256": "6ee7f558861605e0be3ab4095196177d684530c12bbb3eba7931702e71e7f960"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_vpl",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_vpl/transition.now-update-qt-to-6.11.0-1788893952/archive.tar",
+      "sha256": "a8f4335a3550464a71d6296aa20ae4b2095f3a7c60621f4be1f6b349a43963f9",
+      "bytes": 21913600,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893952",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_vpl/transition.now-update-qt-to-6.11.0-1788893952/metadata.json",
+        "sha256": "305452798d57fc5d90b5f0edd833dce50dfc13f028ea56a87d24353aa2f2b0db"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_vpl/CMakeLists.txt",
+        "sha256": "42d737505e3c04ef61cc3c7cc3c53cf812d7a3617fc1b09b414aa0c760b4c066"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_vpx",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_vpx/transition.now-update-qt-to-6.11.0-1788895379/archive.tar",
+      "sha256": "3c30018567245445a60b8bb23255f679bde515ab1afe93c0ed07898dda597b8b",
+      "bytes": 13731840,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895379",
+      "dependencies": [
+        "ext_nasm",
+        "ext_patch",
+        "ext_pkgconfig"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_vpx/transition.now-update-qt-to-6.11.0-1788895379/metadata.json",
+        "sha256": "25268878a64c8ae373f1a643af884619ab30c12df8980d18bb2c25bb54d32daa"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_vpx/CMakeLists.txt",
+        "sha256": "74085d0722436686dce74c3a09f4d8780194f3d3315f11c4f478b559fa53b511"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_webp",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_webp/transition.now-update-qt-to-6.11.0-1788895187/archive.tar",
+      "sha256": "d10df272b320bb41143dd83d9e22db7e4259a5a2e3c20fe0bf0b3179558aa0db",
+      "bytes": 3696640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895187",
+      "dependencies": [
+        "ext_giflib",
+        "ext_jpeg",
+        "ext_patch",
+        "ext_png",
+        "ext_tiff",
+        "ext_zlib"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_webp/transition.now-update-qt-to-6.11.0-1788895187/metadata.json",
+        "sha256": "22a7e54382e0da3ff7e7e6a0e326141bc84b3b30b6bd1e35fb4c6b4e5aab4931"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_webp/CMakeLists.txt",
+        "sha256": "4cd9e299fe1b8f57a87dfcec11402e6f71ffadb62589d807cd8289d82a9999bd"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_xsimd",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_xsimd/transition.now-update-qt-to-6.11.0-1788895199/archive.tar",
+      "sha256": "5a94ad6c34355fd30f3d0b7e27f6379e75aadb6d269c69262807838038a25dd7",
+      "bytes": 1638400,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788895199",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_xsimd/transition.now-update-qt-to-6.11.0-1788895199/metadata.json",
+        "sha256": "51b23ccc7f9ff7849df6c02a3a6cfb3750464800c659c2df32cc3de70d0e46ca"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_xsimd/CMakeLists.txt",
+        "sha256": "48ae4e1088418225c22902c7333108cb8e5bb588deeae8bd172f7a48f7f1d555"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_zlib",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_zlib/transition.now-update-qt-to-6.11.0-1788894095/archive.tar",
+      "sha256": "4f712600755d067cbbd85dd17ad68f02e298e5b12254e4e4bfa9bc7cd300fff4",
+      "bytes": 604160,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788894095",
+      "dependencies": [
+        "ext_patch"
+      ],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_zlib/transition.now-update-qt-to-6.11.0-1788894095/metadata.json",
+        "sha256": "75fdbd4c382c005bd4ae979beea89ab4a56f712542820ba36c36477e13117fd0"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_zlib/CMakeLists.txt",
+        "sha256": "e11ae4aa59f0298f984f34dc96aca741575486639e27a5dbe2e9418656749aee"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "ext_zug",
+      "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_zug/transition.now-update-qt-to-6.11.0-1788893735/archive.tar",
+      "sha256": "516c8d03e29fcb9d776cb25f5fdc46a45fa204ea8d8c5c5087001bb44a0355f8",
+      "bytes": 368640,
+      "archive": "tar",
+      "stagePrefix": "deps",
+      "stripPrefix": "",
+      "sourceCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+      "version": "transition.now-update-qt-to-6.11.0-1788893735",
+      "dependencies": [],
+      "metadata": {
+        "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_zug/transition.now-update-qt-to-6.11.0-1788893735/metadata.json",
+        "sha256": "8062a24bbdf0a60411f8222c21aee1d83126f21b8a8fabb857fd22e1f549fe8f"
+      },
+      "recipe": {
+        "repositoryCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+        "path": "ext_zug/CMakeLists.txt",
+        "sha256": "2779fbb08fc2a8882214323367b44d1fbb6722ab0cc7847afd7404d867753550"
+      },
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false
+    },
+    {
+      "name": "llvm-mingw",
+      "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20251118/llvm-mingw-20251118-ucrt-x86_64.zip",
+      "sha256": "d14a2022c095b83404b64a249406478d852821d31beaa32abe31c932832b3538",
+      "bytes": 181190072,
+      "archive": "zip",
+      "stagePrefix": "tools/llvm",
+      "stripPrefix": "llvm-mingw-20251118-ucrt-x86_64",
+      "sourceCommit": "259cd18db3419d4c68571f6edb87828f8dc77894",
+      "version": "20251118",
+      "dependencies": [],
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false,
+      "hashEvidence": "Official GitHub release asset digest; archive bytes still require verification"
+    },
+    {
+      "name": "cmake",
+      "url": "https://github.com/Kitware/CMake/releases/download/v3.31.8/cmake-3.31.8-windows-x86_64.zip",
+      "sha256": "81aa9964dbabd71fe02e7ec50472fd3ad56138c49944515ece9001efbff8d719",
+      "bytes": 46709267,
+      "archive": "zip",
+      "stagePrefix": "tools/cmake",
+      "stripPrefix": "cmake-3.31.8-windows-x86_64",
+      "sourceCommit": "dbe9d4593f4b7a2b1eb87826949f09af0268240a",
+      "version": "3.31.8",
+      "dependencies": [],
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false,
+      "hashEvidence": "Official GitHub release asset digest; archive bytes still require verification"
+    },
+    {
+      "name": "ninja",
+      "url": "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-win.zip",
+      "sha256": "07fc8261b42b20e71d1720b39068c2e14ffcee6396b76fb7a795fb460b78dc65",
+      "bytes": 291570,
+      "archive": "zip",
+      "stagePrefix": "tools/ninja",
+      "stripPrefix": "",
+      "sourceCommit": "3441b633c2fe2c494e958780ba0f4227b1327634",
+      "version": "1.13.2",
+      "dependencies": [],
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false,
+      "hashEvidence": "Official GitHub release asset digest; archive bytes still require verification"
+    },
+    {
+      "name": "python-sdk",
+      "version": "3.13.5",
+      "url": "https://api.nuget.org/v3-flatcontainer/python/3.13.5/python.3.13.5.nupkg",
+      "bytes": 14309042,
+      "sha256": "fc496ae8aa3f7318704e24c4885c0cc0e3e6060c6e8af28aaa266226c01d96a1",
+      "archive": "zip",
+      "stagePrefix": "tools/python-sdk",
+      "stripPrefix": "",
+      "sourceCommit": "6cb20a219a860eaf687b2d968b41c480c7461909",
+      "dependencies": [],
+      "licenseClearance": false,
+      "sourceDeliveryComplete": false,
+      "hashEvidence": "SHA-256 of exact official NuGet package retrieved over verified HTTPS; source tag resolved via official python/cpython repository.",
+      "usage": "Build-only headers/libraries/interpreter; matches locked CPython 3.13.5 embeddable ABI. Updates/security audit required before release."
+    }
+  ]
+}

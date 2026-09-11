@@ -1,0 +1,21 @@
+# BrushQuay candidate build. Original Krita CI remains available in upstream Git history.
+# Do not resolve live branches, create VMs, call signing services, or publish native archives.
+brushquay-native-windows-candidate:
+  stage: build
+  tags:
+    - Windows
+  rules:
+    - when: manual
+  variables:
+    PYTHONUTF8: '1'
+  script:
+    - python -m unittest discover -s build-tools/ci-scripts/tests -v
+    - powershell -File build-tools/ci-scripts/fetch-locked-windows-deps.ps1
+    - powershell -File build-tools/ci-scripts/build-locked-windows.ps1 -Jobs 2
+  artifacts:
+    when: always
+    paths:
+      - .brushquay/evidence/**/configure.log
+      - .brushquay/evidence/**/build.log
+      - .brushquay/evidence/**/install.log
+      - .brushquay/evidence/**/native-build.json

@@ -1,0 +1,2994 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "BrushQuay candidate native build inputs",
+  "documentNamespace": "https://brushquay.trieflow.com/spdx/build-inputs/d5e55c6a274120aafa905b28868ccc4e7285be86ab4af3ea0174321347f23265",
+  "creationInfo": {
+    "created": "2026-09-11T09:35:49Z",
+    "creators": [
+      "Organization: Trieflow LLC",
+      "Tool: BrushQuay locked input inventory 1"
+    ]
+  },
+  "documentComment": "Candidate inventory only. License conclusions and complete corresponding-source closure remain unverified. ext_* sourceCommit values identify dependency build recipes, not every upstream library source.",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-ext-boost",
+      "name": "ext_boost",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894474",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_boost/transition.now-update-qt-to-6.11.0-1788894474/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d16f4dd4b6b61a72cf63ea725d0d1e416258ae7b2176b8fd08363a7feb9d4991"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-brotli",
+      "name": "ext_brotli",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894510",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_brotli/transition.now-update-qt-to-6.11.0-1788894510/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d6f13052e1ef7b179ebf0f204d60d6ae8e927a99ba939f7963bc737a8e53b184"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-dlfcn-win32",
+      "name": "ext_dlfcn_win32",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893972",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_dlfcn_win32/transition.now-update-qt-to-6.11.0-1788893972/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e29b0ecd20ed2a27e0a1cf09ce95aa84a684a0da937e2178b44ca212d2246554"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-drmingw",
+      "name": "ext_drmingw",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893993",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_drmingw/transition.now-update-qt-to-6.11.0-1788893993/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b8259758792b6ffa18724075da13d5e43b6533e3b0a091d72ff83ef09b6ba2f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-eigen3",
+      "name": "ext_eigen3",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893522",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_eigen3/transition.now-update-qt-to-6.11.0-1788893522/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "89213ae92ada6583157b89f2042c60eaa54e0aa7f47af85e5c114a79d351d763"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-exiv2",
+      "name": "ext_exiv2",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894582",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_exiv2/transition.now-update-qt-to-6.11.0-1788894582/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10301590812e3fb45b3bf4ead4a0a69d34f20d7babd49034f15868d9d3959d12"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-expat",
+      "name": "ext_expat",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893538",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_expat/transition.now-update-qt-to-6.11.0-1788893538/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0876cec1863500a62f0581e2b35c5f309c3d2a317ac7ec063782051653628946"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-extra-cmake-modules",
+      "name": "ext_extra_cmake_modules",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894601",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_extra_cmake_modules/transition.now-update-qt-to-6.11.0-1788894601/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1df96abe59c847572603ae1b7d491c23b8c9bdaac168f34590aaac8b73259e1b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-ffmpeg",
+      "name": "ext_ffmpeg",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899691",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ffmpeg/transition.now-update-qt-to-6.11.0-1788899691/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1b275992dace0c159c72bc0ca9772d6a83d3b5c0a6b64dab6595092ec2381cdd"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-fftw3",
+      "name": "ext_fftw3",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894675",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fftw3/transition.now-update-qt-to-6.11.0-1788894675/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8027ea9cbf2a5f5b516ec33dd36d88cb1af668cf402927f5cdfbdda929700eec"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-flac",
+      "name": "ext_flac",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898353",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_flac/transition.now-update-qt-to-6.11.0-1788898353/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "741ea83c2f2693293e9d8550b8e9bb48719d98ccb950479cab033981a9ccf91f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-fontconfig",
+      "name": "ext_fontconfig",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898901",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fontconfig/transition.now-update-qt-to-6.11.0-1788898901/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75d27764d35d356f1d5c8468d498095ff73645ddfd34bcbc7085e1d22a06561b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-freetype",
+      "name": "ext_freetype",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788896237",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_freetype/transition.now-update-qt-to-6.11.0-1788896237/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3461c4365d782a64944e45832bbe0ac479a60c36162296f27597741e44b910b6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-fribidi",
+      "name": "ext_fribidi",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893551",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_fribidi/transition.now-update-qt-to-6.11.0-1788893551/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "81b63c7841d5d5ee37e61239aad5ab0624eee018f617fca0dd4397f45d8d9462"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-gettext",
+      "name": "ext_gettext",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894114",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gettext/transition.now-update-qt-to-6.11.0-1788894114/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9a2b1d4aa53cc04876ce33b004b69f05a7fdfc38bed4b40da1dd02b8ddd96baf"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-giflib",
+      "name": "ext_giflib",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894695",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_giflib/transition.now-update-qt-to-6.11.0-1788894695/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e9450ec71d36903f23020bd0f932e96cd399e20d7a8b11b68649fc9d02a53b3d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-googleangle",
+      "name": "ext_googleangle",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788896160",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_googleangle/transition.now-update-qt-to-6.11.0-1788896160/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15fde455b0733b971e43fb3a5014c03110c8526b6da086b7d6d4970c3e16e3cb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-gperf",
+      "name": "ext_gperf",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894015",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gperf/transition.now-update-qt-to-6.11.0-1788894015/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0da95193a64fdc2cdc5e83949c656dc23a8ecc2ba22417b042736f2651b8c779"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-gsl",
+      "name": "ext_gsl",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894772",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_gsl/transition.now-update-qt-to-6.11.0-1788894772/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fe927071c9db7030a0fe6b021d806eb169a5289cc817ec9e60d4d8ef74135f65"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-highway",
+      "name": "ext_highway",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893645",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_highway/transition.now-update-qt-to-6.11.0-1788893645/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f8edfb888d576a7de72f960d5c0378f644d3bdaa30de98b4d0454e892bb19036"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-iconv",
+      "name": "ext_iconv",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893915",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_iconv/transition.now-update-qt-to-6.11.0-1788893915/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8419fe0b38cda38ec38168dda54bfe05373679fc62c8a93a20d858cc0c6787f6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-icoutils",
+      "name": "ext_icoutils",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788896173",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_icoutils/transition.now-update-qt-to-6.11.0-1788896173/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "216a1a27c8ba61647f57845d08e7ddc84caca2b56dd49f258ab09d3f9d436a5c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-icu",
+      "name": "ext_icu",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894899",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_icu/transition.now-update-qt-to-6.11.0-1788894899/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3eaa0a7e0d5967200392115afe1aebc9bbc41c2a3ea349a53ba46d836917580c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-immer",
+      "name": "ext_immer",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893670",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_immer/transition.now-update-qt-to-6.11.0-1788893670/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "63d559e48bbd490ef1d3e20f90d29a89a2e4dce498a7ffd78f6263a9facde678"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-jpeg",
+      "name": "ext_jpeg",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893690",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_jpeg/transition.now-update-qt-to-6.11.0-1788893690/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0b21ff2f4101144c1beabec88d692f390ed2890f330d7531fe9d02044a19f73f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-jpegxl",
+      "name": "ext_jpegxl",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788896280",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_jpegxl/transition.now-update-qt-to-6.11.0-1788896280/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c984b75db0ce2a71b32339ccec83f07eef1c8f3381d92f6874c485ce372b2e2d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-json-c",
+      "name": "ext_json_c",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893718",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_json_c/transition.now-update-qt-to-6.11.0-1788893718/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "de40ffe57aa3f077b9d211740b60a90f1032e89fe7f9a4a8066a4099d98a8783"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-karchive",
+      "name": "ext_karchive",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898944",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_karchive/transition.now-update-qt-to-6.11.0-1788898944/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a1f218ea3f2102eb0ee52a63da78e0859ec53977795a41ac2a13b88f313c3e02"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kcodecs",
+      "name": "ext_kcodecs",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898989",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcodecs/transition.now-update-qt-to-6.11.0-1788898989/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d177a6a987f10354198912dfcb61885badc90d052ce24a1759b3f956d6c89186"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kcolorscheme",
+      "name": "ext_kcolorscheme",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899887",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcolorscheme/transition.now-update-qt-to-6.11.0-1788899887/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "703264c32d2910684b5b7dc3eafea4f4b0124867295344566beb5bb1b56ef908"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kcompletion",
+      "name": "ext_kcompletion",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899939",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcompletion/transition.now-update-qt-to-6.11.0-1788899939/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "effe0f765b20c62e98afbd6c1737c1514496fff6e4ab49a3560d9c81c0a0586a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kconfig",
+      "name": "ext_kconfig",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899046",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kconfig/transition.now-update-qt-to-6.11.0-1788899046/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a59fbaa136139f0a811de8ae5e007f94aac684af0a09d90d5b5b742edf8f9321"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kcoreaddons",
+      "name": "ext_kcoreaddons",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899106",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kcoreaddons/transition.now-update-qt-to-6.11.0-1788899106/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "998d8b34c29eb916bf562c1df03e0a663c9d055a8ff6a6701270b846fec500e7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kdcraw",
+      "name": "ext_kdcraw",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898465",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kdcraw/transition.now-update-qt-to-6.11.0-1788898465/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "124591033ec096d6b95da8c920107dc3331b5c30b62f0f13a1ea6c7325022112"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kguiaddons",
+      "name": "ext_kguiaddons",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899157",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kguiaddons/transition.now-update-qt-to-6.11.0-1788899157/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "50ba8393a8a771ac285ba4e9f5be076042fc214a43cdf47a1035cbb60f05aa8c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-ki18n",
+      "name": "ext_ki18n",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899232",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ki18n/transition.now-update-qt-to-6.11.0-1788899232/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "668f718c084e8deaeb90c169d09408e18149a483ed748a8d4f0ea88e097f8ce6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kimageformats",
+      "name": "ext_kimageformats",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899284",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kimageformats/transition.now-update-qt-to-6.11.0-1788899284/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8bddbc086788cb1068d80445b995aefe8f4be87c29a807b42e00a337f1302a22"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kitemmodels",
+      "name": "ext_kitemmodels",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899331",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kitemmodels/transition.now-update-qt-to-6.11.0-1788899331/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9dea45ef121e2e0a02d9502e2fff80178e19f941755503aadeb7a7a420dd2eb4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kitemviews",
+      "name": "ext_kitemviews",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899379",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kitemviews/transition.now-update-qt-to-6.11.0-1788899379/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c11ff8f9d7654de70c0c9582961f16f7ed11d7d3c3ae75593c63220e42c35860"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kwidgetsaddons",
+      "name": "ext_kwidgetsaddons",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899451",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kwidgetsaddons/transition.now-update-qt-to-6.11.0-1788899451/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3f79a74bf4cdf654e9b06626a542241681220343c1a0136a52caebca6fa64a45"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-kwindowsystem",
+      "name": "ext_kwindowsystem",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899499",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_kwindowsystem/transition.now-update-qt-to-6.11.0-1788899499/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b648c62ad96414c4877c20963c383e9e96cf68b888b22fa050a3ed146862fbb9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-lager",
+      "name": "ext_lager",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894921",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lager/transition.now-update-qt-to-6.11.0-1788894921/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f5d76ea874e60a444443b0186da289032e3fd715f4f67ddfa9270be84aa23001"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-lame",
+      "name": "ext_lame",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895228",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lame/transition.now-update-qt-to-6.11.0-1788895228/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ba39be9af1294d5ba0e556ec230923dd2ef903337ea3b0c3666647f6455078bb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-lcms2",
+      "name": "ext_lcms2",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894945",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lcms2/transition.now-update-qt-to-6.11.0-1788894945/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1cc1fdd15b44b46b58b86aec1989cc1879d4733817da65b77d3a2a4e17a9fb7d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libaom",
+      "name": "ext_libaom",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895547",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libaom/transition.now-update-qt-to-6.11.0-1788895547/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "411ed9b9ef4b3d54d1c862ecc0b7025974efcf71e0fef06d44871e88363a23c4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libde265",
+      "name": "ext_libde265",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895719",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libde265/transition.now-update-qt-to-6.11.0-1788895719/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a345c3c65de92c532a23c97f5ffb37bbc63c4ed0cc569caa16a0d4e56131b72"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libheif",
+      "name": "ext_libheif",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899736",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libheif/transition.now-update-qt-to-6.11.0-1788899736/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f78611280c41f196232861430abc46b2aa2c66df887d9be2396f6e3238db4a1b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libogg",
+      "name": "ext_libogg",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895252",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libogg/transition.now-update-qt-to-6.11.0-1788895252/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "22af0dad30a0ac218d1365a89837874ac4e13d1b5e26b7c29b9fa39ed6afac46"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libraw",
+      "name": "ext_libraw",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895957",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libraw/transition.now-update-qt-to-6.11.0-1788895957/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b3fbc046e1e8e3196d88f8cf48fc84fc73afc1aae8b62bfeefb905a7212bb5f5"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libtheora",
+      "name": "ext_libtheora",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898375",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libtheora/transition.now-update-qt-to-6.11.0-1788898375/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2312cde756f6e534ff8c91244fab076799ce934dcc461d5dfab225bc38d02786"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libvorbis",
+      "name": "ext_libvorbis",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895269",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libvorbis/transition.now-update-qt-to-6.11.0-1788895269/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d42660644b772c66eb900f7206c70a5c72c40e451dce7af6eecbe9c8cda6185b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libx265",
+      "name": "ext_libx265",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898424",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265/transition.now-update-qt-to-6.11.0-1788898424/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c4ddf5cd5c3b3966edada7a36b54454102160432dd7da6505acb99f179a6dfd4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libx265-10bit",
+      "name": "ext_libx265_10bit",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895825",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265_10bit/transition.now-update-qt-to-6.11.0-1788895825/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58d8d6b6a76d549f20a58bb43313a9ff56bc30e15949ad0950594edf1dc04e38"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-libx265-12bit",
+      "name": "ext_libx265_12bit",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895930",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_libx265_12bit/transition.now-update-qt-to-6.11.0-1788895930/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7ea16b4513e960c6b01d5fef21e8183cdd2aaca14a20563783e338a37323fbe2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-lzma",
+      "name": "ext_lzma",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893924",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_lzma/transition.now-update-qt-to-6.11.0-1788893924/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d151441ae1c90cc51a685b9bfecf9e64c120512f60167b2a7868ac13a249f7d3"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-mlt",
+      "name": "ext_mlt",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899977",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_mlt/transition.now-update-qt-to-6.11.0-1788899977/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37480a8e7957ac31ffd5fa1f266ac527986a0c2c7035f9cefb9df4df7cb95ee6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-mypaint",
+      "name": "ext_mypaint",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894961",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_mypaint/transition.now-update-qt-to-6.11.0-1788894961/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a25b4013ea5ee174150a90bcc6a0b4f4dfd1518477daa5c3977ad1a00c768397"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-nasm",
+      "name": "ext_nasm",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893724",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_nasm/transition.now-update-qt-to-6.11.0-1788893724/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "393187cd351651a13a6f0a1d6f8ab24bed8edb8367b59feb38c4eab49fac521a"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-ocio",
+      "name": "ext_ocio",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895680",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ocio/transition.now-update-qt-to-6.11.0-1788895680/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "91bf773e482128ae3013582ecc74347d7642d76a2e39fb635ef208be77ec65fb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-openexr",
+      "name": "ext_openexr",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895034",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openexr/transition.now-update-qt-to-6.11.0-1788895034/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "31d12809c830dd7ec35858d315c4217492c8ead8400386e16b0ff96fbc0e29fa"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-openh264",
+      "name": "ext_openh264",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895311",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openh264/transition.now-update-qt-to-6.11.0-1788895311/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f8d088b680b2d1ce59fe461fa272c91bd7145b5222ac5ae97819d60ca25a3dfb"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-openjpeg",
+      "name": "ext_openjpeg",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895072",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openjpeg/transition.now-update-qt-to-6.11.0-1788895072/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d04a113aabb80ee5e8c1a3a6690dc5ea6d8656ac3c8a523c94ff3438a8dfca4e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-openssl",
+      "name": "ext_openssl",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894122",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_openssl/transition.now-update-qt-to-6.11.0-1788894122/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a90f9f7a37f27efc325e68ec611d1c2a510c3207ac648e05433e84655bb936ea"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-opus",
+      "name": "ext_opus",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893773",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_opus/transition.now-update-qt-to-6.11.0-1788893773/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7be74709140ec346ff38354e7ff012d6d4b188c1062f3e9dceb18e018f684747"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-patch",
+      "name": "ext_patch",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894025",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_patch/transition.now-update-qt-to-6.11.0-1788894025/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8862e72536b4e0e5c04313c69485574524260b5c32a8b7157ce3c83c59c4fb94"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-pkgconfig",
+      "name": "ext_pkgconfig",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894141",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pkgconfig/transition.now-update-qt-to-6.11.0-1788894141/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "868502959004d6438f58ce8ae361d16cc5ca60109533bc0693a8b74e2c159d7e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-png",
+      "name": "ext_png",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895094",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_png/transition.now-update-qt-to-6.11.0-1788895094/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "626a8ddf06a57cb516425c4b0f61d226cf4566089e706ee3a4c87cec26c790e3"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-poppler",
+      "name": "ext_poppler",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899840",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_poppler/transition.now-update-qt-to-6.11.0-1788899840/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "617aedfa2801aad8a6398d3158702400b6f4a19bb6462954462b9babab5b9be9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-pyqt-builder",
+      "name": "ext_pyqt-builder",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898504",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt-builder/transition.now-update-qt-to-6.11.0-1788898504/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9b263cab464704c22a3b6e398431cfa059b87c8c6c3a2b7500fca3aad65fe8d4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-pyqt6",
+      "name": "ext_pyqt6",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898830",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt6/transition.now-update-qt-to-6.11.0-1788898830/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0aa19f9e473c0f7cbd399b153a84540174ee86a6ed9aa3a91adc65829acb4b26"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-pyqt6-sip",
+      "name": "ext_pyqt6-sip",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898877",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_pyqt6-sip/transition.now-update-qt-to-6.11.0-1788898877/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d373325d4ba7e66215a330ef8654237f9969a92be40ea4ddcce0df096f6a3cab"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-python",
+      "name": "ext_python",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893962",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_python/transition.now-update-qt-to-6.11.0-1788893962/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3b71f039bcca3b18b0642cabeed3e836ea1cfb1da593c924da69a891e63e55e9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-qt",
+      "name": "ext_qt",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898275",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_qt/transition.now-update-qt-to-6.11.0-1788898275/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "766c8bef1577a76bba55f059bfb54afc352d1d38f47593365b1f544516974495"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-quazip",
+      "name": "ext_quazip",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788898334",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_quazip/transition.now-update-qt-to-6.11.0-1788898334/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "59cef61a674f69efc6a64834c96d343fd6a8adb6ecf59d885e054a0b03cfa1b6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-sdl2",
+      "name": "ext_sdl2",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893902",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_sdl2/transition.now-update-qt-to-6.11.0-1788893902/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bec90d4998902046b54f274a89ec814679f05793d960bd16f2e4e8aaec68c11b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-seexpr",
+      "name": "ext_seexpr",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788899556",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_seexpr/transition.now-update-qt-to-6.11.0-1788899556/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9470cc0bba15a9488bfa410b3d7bc541e8e0a29cc8bc14702d5236e9b4c8554d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-sip",
+      "name": "ext_sip",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895976",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_sip/transition.now-update-qt-to-6.11.0-1788895976/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "34234c25e336b8a75ff57f19629ae72f6ba4fd4eada10e8b2d10e859eb43cad1"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-strawberryperl",
+      "name": "ext_strawberryperl",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894074",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_strawberryperl/transition.now-update-qt-to-6.11.0-1788894074/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9dd3edf955b8e0327e300a29be0ed5bdb614d2cafbef14989976b153032aee4b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-tiff",
+      "name": "ext_tiff",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895135",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_tiff/transition.now-update-qt-to-6.11.0-1788895135/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75b95c16c3d3cece964507ca57b2ac4d81c13e497d58c7ccd79d2020f8e4846e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-unibreak",
+      "name": "ext_unibreak",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895146",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_unibreak/transition.now-update-qt-to-6.11.0-1788895146/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2b349c23182339c88148165fd6f26aa17c7c5cf68052c60514129dc8d006c030"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-vpl",
+      "name": "ext_vpl",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893952",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_vpl/transition.now-update-qt-to-6.11.0-1788893952/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a8f4335a3550464a71d6296aa20ae4b2095f3a7c60621f4be1f6b349a43963f9"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-vpx",
+      "name": "ext_vpx",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895379",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_vpx/transition.now-update-qt-to-6.11.0-1788895379/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3c30018567245445a60b8bb23255f679bde515ab1afe93c0ed07898dda597b8b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-webp",
+      "name": "ext_webp",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895187",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_webp/transition.now-update-qt-to-6.11.0-1788895187/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d10df272b320bb41143dd83d9e22db7e4259a5a2e3c20fe0bf0b3179558aa0db"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-xsimd",
+      "name": "ext_xsimd",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788895199",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_xsimd/transition.now-update-qt-to-6.11.0-1788895199/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5a94ad6c34355fd30f3d0b7e27f6379e75aadb6d269c69262807838038a25dd7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-zlib",
+      "name": "ext_zlib",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788894095",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_zlib/transition.now-update-qt-to-6.11.0-1788894095/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4f712600755d067cbbd85dd17ad68f02e298e5b12254e4e4bfa9bc7cd300fff4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ext-zug",
+      "name": "ext_zug",
+      "versionInfo": "transition.now-update-qt-to-6.11.0-1788893735",
+      "downloadLocation": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_zug/transition.now-update-qt-to-6.11.0-1788893735/archive.tar",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "516c8d03e29fcb9d776cb25f5fdc46a45fa204ea8d8c5c5087001bb44a0355f8"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 993af62fdf291eaec05a1824d9b420782717fc44. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-llvm-mingw",
+      "name": "llvm-mingw",
+      "versionInfo": "20251118",
+      "downloadLocation": "https://github.com/mstorsjo/llvm-mingw/releases/download/20251118/llvm-mingw-20251118-ucrt-x86_64.zip",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d14a2022c095b83404b64a249406478d852821d31beaa32abe31c932832b3538"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 259cd18db3419d4c68571f6edb87828f8dc77894. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-cmake",
+      "name": "cmake",
+      "versionInfo": "3.31.8",
+      "downloadLocation": "https://github.com/Kitware/CMake/releases/download/v3.31.8/cmake-3.31.8-windows-x86_64.zip",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "81aa9964dbabd71fe02e7ec50472fd3ad56138c49944515ece9001efbff8d719"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: dbe9d4593f4b7a2b1eb87826949f09af0268240a. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ninja",
+      "name": "ninja",
+      "versionInfo": "1.13.2",
+      "downloadLocation": "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-win.zip",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "07fc8261b42b20e71d1720b39068c2e14ffcee6396b76fb7a795fb460b78dc65"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 3441b633c2fe2c494e958780ba0f4227b1327634. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-python-sdk",
+      "name": "python-sdk",
+      "versionInfo": "3.13.5",
+      "downloadLocation": "https://api.nuget.org/v3-flatcontainer/python/3.13.5/python.3.13.5.nupkg",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fc496ae8aa3f7318704e24c4885c0cc0e3e6060c6e8af28aaa266226c01d96a1"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "Candidate input. Recorded build/source revision: 6cb20a219a860eaf687b2d968b41c480c7461909. Complete upstream source inventory, patches, license/notice and redistribution decision are pending."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-boost"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-boost",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-brotli"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-brotli",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-dlfcn-win32"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-drmingw"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-eigen3"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-exiv2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-exiv2",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-expat"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-exiv2",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-iconv"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-exiv2",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-exiv2",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-expat"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-extra-cmake-modules",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-ffmpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-flac"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-iconv"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lame"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libaom"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libtheora"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libvorbis"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lzma"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openh264"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-opus"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-sdl2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-vpl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-vpx"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-webp"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ffmpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-fftw3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fftw3",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-flac"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-flac",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libogg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-flac",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-fontconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fontconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-expat"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fontconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-freetype"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fontconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gettext"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fontconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gperf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fontconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-fontconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-freetype"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-freetype",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-icu"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-freetype",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-freetype",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-freetype",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-fribidi"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gettext"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-gettext",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-iconv"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-gettext",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-giflib"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-giflib",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-googleangle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-googleangle",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-googleangle",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gperf"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gsl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-gsl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-highway"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-iconv"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-icoutils"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-icoutils",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-icoutils",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-icu"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-icu",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-immer"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpegxl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-jpegxl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-brotli"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-jpegxl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-highway"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-jpegxl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-jpegxl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lcms2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-jpegxl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-jpegxl",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-json-c"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-karchive"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-karchive",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-karchive",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kcodecs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcodecs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcodecs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gperf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcodecs",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kcolorscheme"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcolorscheme",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcolorscheme",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcolorscheme",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kguiaddons"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcolorscheme",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-ki18n"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcolorscheme",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kcompletion"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcompletion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcompletion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kcodecs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcompletion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcompletion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kwidgetsaddons"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcompletion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kconfig",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kcoreaddons"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcoreaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kcoreaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kdcraw"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kdcraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kdcraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libraw"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kdcraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kguiaddons"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kguiaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kguiaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kguiaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-ki18n"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ki18n",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ki18n",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-gettext"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ki18n",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ki18n",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kimageformats"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kimageformats",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kimageformats",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-karchive"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kimageformats",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kitemmodels"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kitemmodels",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kitemmodels",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kitemviews"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kitemviews",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kitemviews",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kwidgetsaddons"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kwidgetsaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kwidgetsaddons",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-kwindowsystem"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kwindowsystem",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-kwindowsystem",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lager"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-lager",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-immer"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-lager",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-lager",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zug"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lame"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-lame",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-lame",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lcms2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-lcms2",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libaom"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libaom",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libaom",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libaom",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-strawberryperl"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libde265"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libde265",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libheif"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libheif",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libaom"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libheif",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libde265"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libheif",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libx265"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libheif",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libogg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libogg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libraw"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lcms2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libraw",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libtheora"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libtheora",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libogg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libtheora",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libvorbis"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libtheora",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libtheora",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libtheora",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libvorbis"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libvorbis",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libogg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libvorbis",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libx265"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libx265-12bit"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libx265-10bit"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265-10bit",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265-10bit",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libx265-12bit"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265-12bit",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libx265-10bit"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265-12bit",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-libx265-12bit",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lzma"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-mlt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-dlfcn-win32"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-ffmpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-fftw3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-fontconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-libvorbis"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mlt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-sdl2"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-mypaint"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mypaint",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-mypaint",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-json-c"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-ocio"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-ocio",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openexr"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openexr"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-openexr",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openh264"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-openh264",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-openh264",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-openh264",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openjpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-openjpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lcms2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-openjpeg",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openssl"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-opus"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-png",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-png",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-poppler"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-boost"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-fontconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-freetype"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-iconv"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-lcms2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-poppler",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-tiff"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pyqt-builder"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt-builder",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt-builder",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt-builder",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pyqt6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pyqt-builder"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-sip"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pyqt6-sip"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pyqt6"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-pyqt6-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-sip"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-freetype"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-googleangle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-icu"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-openssl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-qt",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-quazip"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-quazip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-quazip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-quazip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-sdl2"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-seexpr"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-seexpr",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-extra-cmake-modules"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-seexpr",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-ki18n"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-seexpr",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-qt"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-sip"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-sip",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-python"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-strawberryperl"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-tiff"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-tiff",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-tiff",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-unibreak"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-unibreak",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-vpl"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-vpx"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-vpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-nasm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-vpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-vpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-pkgconfig"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-webp"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-webp",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-giflib"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-webp",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-jpeg"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-webp",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-webp",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-png"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-webp",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-tiff"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-webp",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-xsimd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-xsimd",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-ext-zlib",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ext-patch"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ext-zug"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-llvm-mingw"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-cmake"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-ninja"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-python-sdk"
+    }
+  ]
+}

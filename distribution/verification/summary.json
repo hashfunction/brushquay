@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "downloaded_staged_verified_not_windows_built",
+  "applicationBaselineCommit": "e7e52a72ed37ecaf9ffaa2fab836b7c2f5539d1f",
+  "lockSha256": "d5e55c6a274120aafa905b28868ccc4e7285be86ab4af3ea0174321347f23265",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "packages": 90,
+  "kdeBinaryPackages": 86,
+  "portableTools": 4,
+  "archiveBytes": 2397477231,
+  "verifiedInstalledFiles": 59134,
+  "stageManifestSha256": "08ac56a994d32c357202d9daf4a54c49bd8c14e7a6d584a951b01fdcf002b1f0",
+  "red": [
+    "Missing locked_windows_deps module before implementation",
+    "Missing native_windows_build module before implementation",
+    "Actual stage has pkgconf.exe, initial command incorrectly named pkg-config.exe",
+    "Native configuration initially allowed ambient CMake system discovery"
+  ],
+  "green": {
+    "tests": 21,
+    "failures": 0,
+    "stage": "All 59134 files rederived from exact archives and verified; 86 metadata documents verified",
+    "nativeWindowsExecutablesRunOnMac": 0
+  },
+  "commands": [
+    "python3 -m unittest discover -s build-tools/ci-scripts/tests -v",
+    "SSL_CERT_FILE=/etc/ssl/cert.pem python3 build-tools/ci-scripts/locked_windows_deps.py fetch",
+    "python3 build-tools/ci-scripts/locked_windows_deps.py stage",
+    "python3 build-tools/ci-scripts/locked_windows_deps.py verify",
+    "python3 distribution/generate-input-inventories.py"
+  ],
+  "gates": [
+    "Actual Windows configure/build/tests not executed in this implementation turn",
+    "Qt6.11.0 and CPython3.13.5 candidate security/update assessment pending",
+    "Full corresponding sources, submodules, licenses, resources and distribution decisions incomplete",
+    "BrushQuay product features/branding and native tablet/scaling/package acceptance pending"
+  ],
+  "licenseAuditComplete": false,
+  "sourceDeliveryComplete": false
+}

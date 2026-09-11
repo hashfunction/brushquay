@@ -1,0 +1,4 @@
+Configured executable: /Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/.brushquay/locked/deps/bin/pkg-config.exe
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+AssertionError: The locked archive does not provide the configured pkg-config.exe; it provides pkgconf.exe

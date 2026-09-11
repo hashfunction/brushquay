@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "downloaded_staged_verified_not_windows_built",
+  "dependencyLock": "../build-tools/ci-scripts/brushquay-dependency-lock.json",
+  "lockSha256": "d5e55c6a274120aafa905b28868ccc4e7285be86ab4af3ea0174321347f23265",
+  "compiler": {
+    "name": "LLVM-MinGW",
+    "release": "20251118",
+    "clang": "21.1.6",
+    "target": "x86_64-w64-mingw32",
+    "runtime": "UCRT / libc++",
+    "archiveSha256": "d14a2022c095b83404b64a249406478d852821d31beaa32abe31c932832b3538"
+  },
+  "qt": {
+    "archive_sha256_verified": true,
+    "version": "6.11.0",
+    "compiler": "Clang21.1.6",
+    "runtime": "LLVM-MinGW UCRT x86_64",
+    "qt_source_repository": "https://github.com/dimula73/qt5.git",
+    "qt_source_commit": "571b5489c7d0987959b8cf81f62df674da79c418",
+    "note": "KDE patched Qt6.11.0 candidate; later Qt6.11 fixes and complete source closure must be assessed before release."
+  },
+  "cmake": "3.31.8",
+  "ninja": "1.13.2",
+  "pythonSdk": "3.13.5",
+  "bootstrap": {
+    "minimumPython": "3.9",
+    "rootInitialCiPython": "3.12.10",
+    "purpose": "stdlib downloader/verification and build orchestration only; exact bootstrap executable hash is recorded per native run"
+  },
+  "windowsExecution": "pending root CI",
+  "signing": "not performed",
+  "redistribution": "not cleared"
+}

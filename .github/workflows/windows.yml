@@ -1,0 +1,38 @@
+name: BrushQuay Windows foundation qualification
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/brushquay]
+permissions:
+  contents: read
+jobs:
+  windows-x64:
+    runs-on: windows-2022
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.10'
+      - name: Test locked input handling
+        shell: pwsh
+        run: |
+          python -m unittest discover -s build-tools/ci-scripts/tests -v
+          if ($LASTEXITCODE -ne 0) { throw 'Locked dependency tests failed.' }
+      - name: Fetch and verify immutable dependencies
+        shell: pwsh
+        run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
+      - name: Compile the native Qt 6 foundation
+        shell: pwsh
+        run: ./build-tools/ci-scripts/build-locked-windows.ps1 -Python python -Jobs 2
+      - name: Preserve metadata only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: BrushQuay-Windows-foundation-qualification
+          path: |
+            .brushquay/evidence/**/*.json
+            .brushquay/evidence/**/*.log
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: warn

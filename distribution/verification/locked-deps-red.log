@@ -1,0 +1,20 @@
+test_locked_windows_deps (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_locked_windows_deps (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_locked_windows_deps
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/build-tools/ci-scripts/tests/test_locked_windows_deps.py", line 15, in <module>
+    import locked_windows_deps as deps
+ModuleNotFoundError: No module named 'locked_windows_deps'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
