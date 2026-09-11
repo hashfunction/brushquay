@@ -94,8 +94,9 @@ void KisExtendedModifiersMapper::setLocalMonitor(bool activate, KisShortcutMatch
 KisExtendedModifiersMapper::ExtendedModifiers
 KisExtendedModifiersMapper::queryExtendedModifiers()
 {
+    KisApplication *application = qobject_cast<KisApplication*>(qApp);
     KisExtendedModifiersMapperPluginInterface *plugin =
-        static_cast<KisApplication*>(qApp)->extendedModifiersPluginInterface();
+        application ? application->extendedModifiersPluginInterface() : nullptr;
 
     if (plugin) {
         return plugin->queryExtendedModifiers();

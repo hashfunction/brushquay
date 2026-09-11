@@ -5,6 +5,7 @@
 #include <QCryptographicHash>
 #include <QDomDocument>
 #include <QFile>
+#include <QFileInfo>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QTemporaryDir>
@@ -15,11 +16,28 @@
 #include <KisResourceModel.h>
 #include <kis_workspace_resource.h>
 #include <testui.h>
+#include <input/kis_extended_modifiers_mapper.h>
 #include "KisBrushQuayWorkspaceLayouts.h"
 
 class KisBrushQuayWorkspaceTest : public QObject {
     Q_OBJECT
 private Q_SLOTS:
+    void initTestCase()
+    {
+#ifdef Q_OS_WIN
+        const QString pluginPath=QCoreApplication::applicationDirPath();
+        for (const auto &plugin:QStringList{"kritalayerdocker.dll","kritapresetdocker.dll","kritacolorselectorng.dll","kritahistorydocker.dll","kritaoverviewdocker.dll"}) {
+            QVERIFY2(QFileInfo::exists(pluginPath+"/"+plugin),qPrintable(QStringLiteral("Missing built workspace plugin: ")+plugin));
+        }
+        qputenv("KRITA_PLUGIN_PATH",QFile::encodeName(pluginPath));
+#endif
+    }
+    void plainQApplicationUsesNativeModifierFallback()
+    {
+        QVERIFY(!qApp->inherits("KisApplication"));
+        KisExtendedModifiersMapper mapper;
+        QVERIFY(mapper.queryExtendedModifiers().size()<=256);
+    }
     void originalLayoutsSaveReloadAndRestore_data()
     {
         QTest::addColumn<int>("layout");

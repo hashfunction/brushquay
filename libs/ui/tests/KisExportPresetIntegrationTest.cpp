@@ -8,6 +8,7 @@
 #include "dialogs/KisExportPresetDialog.h"
 #include <QTemporaryDir>
 #include <QFile>
+#include <QFileInfo>
 #include <QScopedPointer>
 #include <KisDocument.h>
 #include <KisPart.h>
@@ -33,6 +34,16 @@ class KisExportPresetIntegrationTest : public QObject {
         result->addNode(layer,result->root()); result->waitForDone(); return result;
     }
 private Q_SLOTS:
+    void initTestCase()
+    {
+#ifdef Q_OS_WIN
+        const QString pluginPath=QCoreApplication::applicationDirPath();
+        for (const auto &plugin:QStringList{"kritapngexport.dll","kritajpegexport.dll"}) {
+            QVERIFY2(QFileInfo::exists(pluginPath+"/"+plugin),qPrintable(QStringLiteral("Missing built export plugin: ")+plugin));
+        }
+        qputenv("KRITA_PLUGIN_PATH",QFile::encodeName(pluginPath));
+#endif
+    }
     void nativeOptionsRoundTrip_data()
     {
         QTest::addColumn<QString>("mime"); QTest::newRow("PNG")<<"image/png"; QTest::newRow("JPEG")<<"image/jpeg";
