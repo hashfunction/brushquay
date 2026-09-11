@@ -1,3 +1,7 @@
+kis_add_test(KisBrushQuayWorkspaceTest.cpp
+    TEST_NAME KisBrushQuayWorkspaceTest
+    LINK_LIBRARIES kritaui kritatestsdk)
+
 kis_add_test(KisBrushQuayIdentityTest.cpp
     TEST_NAME KisBrushQuayIdentityTest
     LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Test)

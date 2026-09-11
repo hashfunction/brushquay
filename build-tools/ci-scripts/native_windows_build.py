@@ -139,13 +139,15 @@ def main():
             run([command[0], '--build', str(build), '--parallel', str(args.jobs)], evidence / 'build.log', environment, source)
             record['status'] = 'compiled'
             expected_tests = {'libs-ui-' + name for name in (
-                'KisBrushQuayIdentityTest', 'KisExportPresetIntegrationTest',
+                'KisBrushQuayIdentityTest', 'KisBrushQuayWorkspaceTest', 'KisExportPresetIntegrationTest',
                 'KisExportFileTransactionTest', 'KisExportPresetStoreTest')}
             test_pattern = '^(' + '|'.join(sorted(expected_tests)) + ')$'
             ctest = stage / 'tools/cmake/bin/ctest.exe'
             test_environment = dict(environment)
             test_environment['PATH'] = str(build / 'bin') + ';' + environment['PATH']
             test_environment['QT_QPA_PLATFORM'] = 'offscreen'
+            test_environment['BRUSHQUAY_WORKSPACE_OUTPUT'] = str(evidence / 'workspaces')
+            test_environment['BRUSHQUAY_WORKSPACE_SOURCE_COMMIT'] = record['sourceHead']
             discovery = subprocess.check_output([str(ctest), '--test-dir', str(build), '-N',
                 '--show-only=json-v1', '-R', test_pattern], env=test_environment, text=True, encoding='utf-8')
             (evidence / 'product-test-discovery.json').write_text(discovery, encoding='utf-8')

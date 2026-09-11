@@ -36,6 +36,7 @@ jobs:
             .brushquay/evidence/**/*.json
             .brushquay/evidence/**/*.log
             .brushquay/evidence/**/*.xml
+            .brushquay/evidence/**/*.kws
           include-hidden-files: true
           retention-days: 14
           if-no-files-found: warn

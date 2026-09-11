@@ -1,0 +1,8 @@
+[1/2] Building CXX object CMakeFiles/brushquay-workspace-layout-compile.dir/compile.cpp.o
+FAILED: [code=1] CMakeFiles/brushquay-workspace-layout-compile.dir/compile.cpp.o 
+/Applications/Xcode-26.6.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/build-tools/brushquay-workspaces/../../libs/ui -isystem /opt/homebrew/opt/qtbase/lib/QtCore.framework/Headers -iframework /opt/homebrew/opt/qtbase/lib -isystem /opt/homebrew/opt/qtbase/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/opt/qtbase/include -isystem /opt/homebrew/opt/qtbase/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/opt/qtbase/lib/QtGui.framework/Headers -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode-26.6.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -MD -MT CMakeFiles/brushquay-workspace-layout-compile.dir/compile.cpp.o -MF CMakeFiles/brushquay-workspace-layout-compile.dir/compile.cpp.o.d -o CMakeFiles/brushquay-workspace-layout-compile.dir/compile.cpp.o -c /Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/build-tools/brushquay-workspaces/compile.cpp
+/Users/hashfunction/workspace/project_app_factory/microsoft-store/apps/brushquay/source/build-tools/brushquay-workspaces/compile.cpp:3:10: fatal error: 'KisBrushQuayWorkspaceLayouts.h' file not found
+    3 | #include "KisBrushQuayWorkspaceLayouts.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
