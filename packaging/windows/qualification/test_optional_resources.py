@@ -1,7 +1,7 @@
 # Copyright 2026 Trieflow LLC. SPDX-License-Identifier: GPL-3.0-or-later
 import copy
 import hashlib
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 import subprocess
 import tempfile
 import unittest
@@ -67,20 +67,29 @@ class OptionalResourceTests(unittest.TestCase):
             if original is None: path.unlink()
             else: path.write_bytes(original)
 
-    def test_actual_bundle_cmake_install_preserves_only_other_original_bundles(self):
+    def check_bundle_install(self, cmake_source):
         source = prepare.ROOT / 'krita/data/bundles'
         project = self.root / 'project'
         project.mkdir()
-        (project / 'CMakeLists.txt').write_text('cmake_minimum_required(VERSION 3.16)\nproject(BundleInstall NONE)\nset(KDE_INSTALL_DATADIR share)\nadd_subdirectory("' + str(source) + '" bundles)\n')
+        (project / 'CMakeLists.txt').write_text('cmake_minimum_required(VERSION 3.16)\nproject(BundleInstall NONE)\nset(KDE_INSTALL_DATADIR share)\nadd_subdirectory("' + cmake_source.as_posix() + '" bundles)\n')
         build = self.root / 'build'
         output = self.root / 'installed'
-        subprocess.run(['cmake', '-S', str(project), '-B', str(build)], check=True, capture_output=True)
-        subprocess.run(['cmake', '--install', str(build), '--prefix', str(output)], check=True, capture_output=True)
+        for command in (['cmake', '-S', str(project), '-B', str(build)],
+                        ['cmake', '--install', str(build), '--prefix', str(output)]):
+            result = subprocess.run(command, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, f'{command!r}\n{result.stdout}\n{result.stderr}')
         names = {'README', 'Krita_3_Default_Resources.bundle', 'Krita_4_Default_Resources.bundle', 'RGBA_brushes.bundle'}
         observed = measure_tree(output)
         self.assertEqual(observed, {'share/krita/bundles/' + name: measure(source / name) for name in names})
         self.assertEqual(hashlib.sha256((source / 'Krita_Artists_SeExpr_examples.bundle').read_bytes()).hexdigest(),
                          '5e0a5a97fb31ab1b8840e3df03c64bb410d61166e5824d8b46d168bdc109a15c')
+
+    def test_actual_bundle_cmake_install_preserves_only_other_original_bundles(self):
+        self.check_bundle_install(prepare.ROOT / 'krita/data/bundles')
+
+    def test_actual_bundle_install_accepts_windows_source_path_spelling(self):
+        # On POSIX this also exercises Windows separators against real source bytes.
+        self.check_bundle_install(PureWindowsPath(str(prepare.ROOT / 'krita/data/bundles')))
 
 
 if __name__ == '__main__': unittest.main()
