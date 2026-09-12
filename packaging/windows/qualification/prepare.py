@@ -17,6 +17,7 @@ from build_msix import manifest_bytes, load_tools, confirm_tools, write_new
 from verify_brushquay_msix import verify_msix
 from manifest_identity import verify_manifest_identity
 from pe_imports import retain_imports
+from release_inputs import OPTIONAL_TLS, apply_exclusions, read_json
 
 IDENTITY={'PackageName':'Trieflow.Bristlune.Qualification','Publisher':'CN=Bristlune-CI-Qualification',
           'Version':'1.0.1.0','MinWindowsVersion':'10.0.19041.0','MaxWindowsVersionTested':'10.0.26100.0'}
@@ -24,6 +25,20 @@ PACKAGE='Bristlune.Qualification_1.0.1.0_x64.msix'
 EXPECTED_TESTS=sorted('libs-ui-'+name for name in ('KisBrushQuayIdentityTest','KisBrushQuayWorkspaceTest',
     'KisClipboardNullTest','KisExportFileTransactionTest','KisExportPresetIntegrationTest','KisExportPresetStoreTest'))
 QT_CONF=b'[Paths]\nPrefix=..\nPlugins=plugins\nLibraries=bin\nTranslations=translations\nQmlImports=qml\n'
+
+
+def omit_optional_tls(runtime,selected,graph,context):
+    """Remove only the reviewed independent TLS group from our measured copy."""
+    retained=apply_exclusions(selected,OPTIONAL_TLS,graph,context,True)
+    expected={name:{key:value[key] for key in ('bytes','sha256')} for name,value in selected.items()}
+    if measure_tree(runtime)!=expected:raise ValueError('Owned full runtime changed before optional TLS selection')
+    for name,digest in OPTIONAL_TLS.items():
+        target=Path(runtime)/name
+        if measure(target)!=digest:raise ValueError('Owned optional TLS file changed before removal: '+name)
+        target.unlink()
+    if measure_tree(runtime)!={name:expected[name] for name in retained}:
+        raise ValueError('Owned retained runtime differs after optional TLS selection')
+    return retained
 
 
 def native_evidence(source,commit,run,attempt,source_observation=None):
@@ -95,14 +110,17 @@ def prepare(source,output,evidence,tool_lock,commit,run,attempt):
             'sourceTree':native['sourceTree'],'nativeEvidence':native_digest,'lockSha256':native['lockSha256'],
             'identity':IDENTITY,'applicationId':'BrushQuay','executable':'Bristlune/bin/bristlune.exe',
             'licenseReviewComplete':False,'correspondingSourceComplete':False,'publicBinaryDistributionAuthorizedByThisReceipt':False,
-            'runtimeInputs':selected,'sdk':tools,'status':'preparing','signed':False}
+            'runtimeInputs':selected,'fullRuntimeInputs':selected,'sdk':tools,'status':'preparing','signed':False}
     try:
         payload=output/'payload';payload.mkdir()
         materialize(install,locked,selected,payload/'Bristlune')
         reader_name='tools/llvm/bin/llvm-readobj.exe'
+        context={k:record[k] for k in ('sourceCommit','sourceTree','workflowRunId','workflowRunAttempt','nativeEvidence','lockSha256')}
         record['peImportObservation']=retain_imports(evidence/'staged-pe-imports.json',payload/'Bristlune',selected,
             locked/reader_name,manifest['files'].get(reader_name,{}),
-            {k:record[k] for k in ('sourceCommit','sourceTree','workflowRunId','workflowRunAttempt','nativeEvidence','lockSha256')})
+            context)
+        selected=omit_optional_tls(payload/'Bristlune',selected,read_json(evidence/'staged-pe-imports.json'),context)
+        record.update(runtimeInputs=selected,excludedRuntime=OPTIONAL_TLS,optionalTlsRemovalReviewed=True)
         conf=payload/'Bristlune/bin/qt.conf';write_new(conf,QT_CONF)
         record['runtimeGeneratedFiles']={'Bristlune/bin/qt.conf':measure(conf)}
         asset_root=ROOT/'packaging/windows/msix';assets=json.loads((asset_root/'assets.lock.json').read_text())

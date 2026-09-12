@@ -4,10 +4,13 @@ import argparse
 import json
 from pathlib import Path
 from runtime_stage import measure_tree,measure
-from manifest_identity import verify_manifest_identity
+from manifest_identity import verify_manifest_identity,require_mode
 
 
 def verify(root,record):
+    if 'releaseCandidate' in record:
+        if record['releaseCandidate'] is not True:raise ValueError('Invalid release package flag')
+        require_mode(record.get('identity'),record.get('mode'))
     root=Path(root);actual=measure_tree(root);expected=record['payload']
     metadata={'AppxSignature.p7x','AppxBlockMap.xml','[Content_Types].xml','AppxMetadata/CodeIntegrity.cat'}
     if set(actual)-set(expected)-metadata:raise ValueError('Unexpected installed package files')

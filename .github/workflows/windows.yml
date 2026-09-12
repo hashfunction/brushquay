@@ -1,6 +1,12 @@
 name: Bristlune Windows product qualification
 on:
   workflow_dispatch:
+    inputs:
+      release:
+        description: 'Run reviewed dual installed release qualification and unsigned Store export'
+        type: boolean
+        required: false
+        default: false
   push:
     branches: [codex/brushquay]
 permissions:
@@ -29,6 +35,7 @@ jobs:
           ./packaging/windows/qualification/test_display_modes.ps1
           ./packaging/windows/qualification/test_qualify.ps1
           ./packaging/windows/qualification/test_operation_scope.ps1
+          ./packaging/windows/qualification/test_release_identity.ps1
       - name: Verify native Appx host before compiling
         shell: powershell
         run: |
@@ -39,6 +46,11 @@ jobs:
           ./packaging/windows/qualification/test_display_modes.ps1
           ./packaging/windows/qualification/test_qualify.ps1
           ./packaging/windows/qualification/test_operation_scope.ps1
+          ./packaging/windows/qualification/test_release_identity.ps1
+      - name: Refuse unreviewed release inputs before compiling
+        if: github.event_name == 'workflow_dispatch' && inputs.release == true
+        shell: powershell
+        run: ./packaging/windows/msix/release.ps1 -Python python -PreflightOnly
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
@@ -54,8 +66,24 @@ jobs:
         shell: pwsh
         run: ./build-tools/ci-scripts/build-locked-windows.ps1 -Python python -Jobs 2
       - name: Qualify disposable installed painting and export
+        if: github.event_name != 'workflow_dispatch' || inputs.release != true
         shell: powershell
         run: ./packaging/windows/qualification/qualify.ps1 -Python python
+      - name: Qualify both reviewed installed identities and export unsigned Store package
+        if: github.event_name == 'workflow_dispatch' && inputs.release == true
+        shell: powershell
+        run: ./packaging/windows/msix/release.ps1 -Python python
+      - name: Upload independently qualified unsigned Store submission
+        if: success() && github.event_name == 'workflow_dispatch' && inputs.release == true
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-Store-1.0.1.0-x64
+          path: |
+            .brushquay/store-output/Bristlune_1.0.1.0_x64.msix
+            .brushquay/store-output/store-export.json
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error
       - name: Preserve metadata only
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -67,6 +95,10 @@ jobs:
             .brushquay/evidence/**/*.xml
             .brushquay/evidence/**/*.kws
             .brushquay/evidence/**/*.png
+            .brushquay/qualification/**/sdk-*.log
+            .brushquay/qualification/**/sdk-tools.json
+            .brushquay/qualification/**/package-record.json
+            .brushquay/qualification/**/release-record.json
             .brushquay/build/product-test-reports/*.xml
             .brushquay/build/product-test-reports/*.log
           include-hidden-files: true

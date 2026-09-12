@@ -1,0 +1,3399 @@
+{
+  "schemaVersion": 1,
+  "verificationId": "1ca3d7348d35438d85a9e445e7cd81c5",
+  "repository": "hashfunction/brushquay",
+  "releaseId": 387653440,
+  "tag": "bristlune-source-inputs-20260912",
+  "releaseUrl": "https://github.com/hashfunction/brushquay/releases/tag/bristlune-source-inputs-20260912",
+  "startedAtUtc": "2026-09-12T17:56:50.870190+00:00",
+  "completedAtUtc": "2026-09-12T17:57:33.368255+00:00",
+  "expectedAssetCount": 119,
+  "expectedAssetBytes": 1026589309,
+  "archiveCount": 117,
+  "archiveBytes": 1026207310,
+  "localManifest": {
+    "bytes": 380998,
+    "sha256": "b392a2c27f0c4c14b65a3df76fc1fe168510be49e4a9660628a5dcb5cee66645"
+  },
+  "serverDigestReceipt": {
+    "bytes": 28456,
+    "sha256": "f76f8eaa1003831fa9c546871267f90920620467fd78e1cf51b5df5429006147"
+  },
+  "originalServerReceiptWasDraft": true,
+  "releaseMetadata": {
+    "url": "https://api.github.com/repos/hashfunction/brushquay/releases/387653440",
+    "httpStatus": 200,
+    "observedAtUtc": "2026-09-12T17:56:51.334284+00:00",
+    "draft": false,
+    "publishedAtUtc": "2026-09-12T17:53:57Z",
+    "assetCount": 119,
+    "responseBytes": 199943,
+    "responseSha256": "ea0ed989a753fc975bb365bb1b70024c52f9d519df6b6494a93c7a59e243e677",
+    "tlsCertificateVerified": true
+  },
+  "anonymous": true,
+  "authorizationHeadersSent": false,
+  "cookiesUsed": false,
+  "proxyUsed": false,
+  "tlsCertificateValidation": true,
+  "tlsHostnameValidation": true,
+  "caBundle": {
+    "bytes": 234354,
+    "sha256": "bbc7e9c01d7551bb8a159b5dedd989b8ee3ce105aff522b68eb1b01bf854cab0"
+  },
+  "maxConcurrentDownloads": 3,
+  "socketTimeoutSeconds": 30,
+  "perAssetDeadlineSeconds": 300,
+  "overallDeadlineSeconds": 1800,
+  "retries": 0,
+  "archiveBodiesSaved": false,
+  "applicationBinaryPublished": false,
+  "correspondingSourceComplete": false,
+  "finalPackageBindingVerified": false,
+  "licenseReviewComplete": false,
+  "allAssetsVerified": true,
+  "verifiedAssetCount": 119,
+  "verifiedAssetBytes": 1026589309,
+  "failedAssetCount": 0,
+  "remainingAssetCount": 0,
+  "observations": [
+    {
+      "stage": "initial release metadata probe",
+      "error": "Python default CA location lacked issuer roots; TLS verification refused before any response body. Verified certifi CA bundle used with certificate and hostname checking retained."
+    }
+  ],
+  "assets": [
+    {
+      "assetId": 559689825,
+      "name": "SOURCE-README.md",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/SOURCE-README.md",
+      "expected": {
+        "bytes": 1001,
+        "sha256": "65ee7ab696afdd3e1d3a06dd891116f7c423512c281461e19d37af1a5ead4bf1"
+      },
+      "startedAtUtc": "2026-09-12T17:57:32.617373+00:00",
+      "completedAtUtc": "2026-09-12T17:57:32.989947+00:00",
+      "httpStatus": 200,
+      "bytes": 1001,
+      "sha256": "65ee7ab696afdd3e1d3a06dd891116f7c423512c281461e19d37af1a5ead4bf1",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/b556c93b-b7f1-49dc-902d-303a8835e3b3"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/b556c93b-b7f1-49dc-902d-303a8835e3b3",
+      "contentLength": 1001,
+      "elapsedSeconds": 0.373
+    },
+    {
+      "assetId": 559685228,
+      "name": "clang-cindex-python3-254c7a91e3c6aa254e113197604dafb443f4d429.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/clang-cindex-python3-254c7a91e3c6aa254e113197604dafb443f4d429.tar.gz",
+      "expected": {
+        "bytes": 27788,
+        "sha256": "3db664ae4ce59a9f5bf50256dc488912de4bc5c63aafe734c79dd7cb01999eaf"
+      },
+      "startedAtUtc": "2026-09-12T17:56:51.336417+00:00",
+      "completedAtUtc": "2026-09-12T17:56:51.982359+00:00",
+      "httpStatus": 200,
+      "bytes": 27788,
+      "sha256": "3db664ae4ce59a9f5bf50256dc488912de4bc5c63aafe734c79dd7cb01999eaf",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c17ed24b-be23-40ed-ac82-520638ba3cb9"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c17ed24b-be23-40ed-ac82-520638ba3cb9",
+      "contentLength": 27788,
+      "elapsedSeconds": 0.646
+    },
+    {
+      "assetId": 559685341,
+      "name": "cmake-dbe9d4593f4b7a2b1eb87826949f09af0268240a.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/cmake-dbe9d4593f4b7a2b1eb87826949f09af0268240a.tar.gz",
+      "expected": {
+        "bytes": 11573889,
+        "sha256": "d2a2caef006cf330997be5695bfcd2f9202c3b980d19998dd9bf0369fdbe4c86"
+      },
+      "startedAtUtc": "2026-09-12T17:56:51.337226+00:00",
+      "completedAtUtc": "2026-09-12T17:56:52.617465+00:00",
+      "httpStatus": 200,
+      "bytes": 11573889,
+      "sha256": "d2a2caef006cf330997be5695bfcd2f9202c3b980d19998dd9bf0369fdbe4c86",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a39072d2-4c8f-47ae-bbaa-dae68955da35"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a39072d2-4c8f-47ae-bbaa-dae68955da35",
+      "contentLength": 11573889,
+      "elapsedSeconds": 1.28
+    },
+    {
+      "assetId": 559685430,
+      "name": "cpython-6cb20a219a860eaf687b2d968b41c480c7461909.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/cpython-6cb20a219a860eaf687b2d968b41c480c7461909.tar.gz",
+      "expected": {
+        "bytes": 29670987,
+        "sha256": "119c66e89872b33825f83f5902d6f980ae9a30463705744c04ef1b571e200d66"
+      },
+      "startedAtUtc": "2026-09-12T17:56:51.337771+00:00",
+      "completedAtUtc": "2026-09-12T17:56:54.176020+00:00",
+      "httpStatus": 200,
+      "bytes": 29670987,
+      "sha256": "119c66e89872b33825f83f5902d6f980ae9a30463705744c04ef1b571e200d66",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/86c37ec5-b019-453e-9e70-c94cc2a36f16"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/86c37ec5-b019-453e-9e70-c94cc2a36f16",
+      "contentLength": 29670987,
+      "elapsedSeconds": 2.838
+    },
+    {
+      "assetId": 559685227,
+      "name": "ext_ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad.tar.gz",
+      "expected": {
+        "bytes": 16028205,
+        "sha256": "73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db"
+      },
+      "startedAtUtc": "2026-09-12T17:56:51.982435+00:00",
+      "completedAtUtc": "2026-09-12T17:56:53.604134+00:00",
+      "httpStatus": 200,
+      "bytes": 16028205,
+      "sha256": "73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/cc2055b8-af68-42df-acc8-5eb31416b1e8"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/cc2055b8-af68-42df-acc8-5eb31416b1e8",
+      "contentLength": 16028205,
+      "elapsedSeconds": 1.623
+    },
+    {
+      "assetId": 559685231,
+      "name": "ext_flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17.tar.gz",
+      "expected": {
+        "bytes": 872525,
+        "sha256": "ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208"
+      },
+      "startedAtUtc": "2026-09-12T17:56:52.617543+00:00",
+      "completedAtUtc": "2026-09-12T17:56:53.874789+00:00",
+      "httpStatus": 200,
+      "bytes": 872525,
+      "sha256": "ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/6b0ff48b-d8ce-487e-97dc-dda96b072ef6"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/6b0ff48b-d8ce-487e-97dc-dda96b072ef6",
+      "contentLength": 872525,
+      "elapsedSeconds": 1.257
+    },
+    {
+      "assetId": 559685229,
+      "name": "ext_googleangle_zlib-a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_googleangle_zlib-a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0.tar.gz",
+      "expected": {
+        "bytes": 343338,
+        "sha256": "0486aafa306e2c3415266bf31d59a5873a188169bdbbc52c728759961efd537e"
+      },
+      "startedAtUtc": "2026-09-12T17:56:53.605568+00:00",
+      "completedAtUtc": "2026-09-12T17:56:54.146572+00:00",
+      "httpStatus": 200,
+      "bytes": 343338,
+      "sha256": "0486aafa306e2c3415266bf31d59a5873a188169bdbbc52c728759961efd537e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/e9b84502-5218-4b3a-b6e1-5c4d3a150c4a"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/e9b84502-5218-4b3a-b6e1-5c4d3a150c4a",
+      "contentLength": 343338,
+      "elapsedSeconds": 0.541
+    },
+    {
+      "assetId": 559685232,
+      "name": "ext_immer-42e6beafed53f2ecd971360270f421f9c2e36642.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_immer-42e6beafed53f2ecd971360270f421f9c2e36642.tar.gz",
+      "expected": {
+        "bytes": 798730,
+        "sha256": "af9c4284b6adf412e8859e8e40e9cc6e40fa25a2d6cc54121b5713e7ba4ad119"
+      },
+      "startedAtUtc": "2026-09-12T17:56:53.874852+00:00",
+      "completedAtUtc": "2026-09-12T17:56:54.448469+00:00",
+      "httpStatus": 200,
+      "bytes": 798730,
+      "sha256": "af9c4284b6adf412e8859e8e40e9cc6e40fa25a2d6cc54121b5713e7ba4ad119",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/85f066c7-b9eb-4c65-a1c2-cf8fcc90304c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/85f066c7-b9eb-4c65-a1c2-cf8fcc90304c",
+      "contentLength": 798730,
+      "elapsedSeconds": 0.574
+    },
+    {
+      "assetId": 559685247,
+      "name": "ext_lager-0b6ab3e0e880bc36be5da4984d768fde03b7cf19.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_lager-0b6ab3e0e880bc36be5da4984d768fde03b7cf19.tar.gz",
+      "expected": {
+        "bytes": 796604,
+        "sha256": "c02bc0a90e707a3b020386b6ef6e7fcce1e8520db32e582baa61cbb2aebbd4ea"
+      },
+      "startedAtUtc": "2026-09-12T17:56:54.146625+00:00",
+      "completedAtUtc": "2026-09-12T17:56:54.722497+00:00",
+      "httpStatus": 200,
+      "bytes": 796604,
+      "sha256": "c02bc0a90e707a3b020386b6ef6e7fcce1e8520db32e582baa61cbb2aebbd4ea",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/dbe080c9-bdd5-4a8c-a9de-9174ac9e446e"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/dbe080c9-bdd5-4a8c-a9de-9174ac9e446e",
+      "contentLength": 796604,
+      "elapsedSeconds": 0.576
+    },
+    {
+      "assetId": 559685255,
+      "name": "ext_libtheora-7180717276af1ebc7da15c83162d6c5d6203aabf.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_libtheora-7180717276af1ebc7da15c83162d6c5d6203aabf.tar.gz",
+      "expected": {
+        "bytes": 1205655,
+        "sha256": "8f7abefebc7f87784df903f3fca11f228baa725708d3e16a79797b1fd616b2b9"
+      },
+      "startedAtUtc": "2026-09-12T17:56:54.176064+00:00",
+      "completedAtUtc": "2026-09-12T17:56:54.696308+00:00",
+      "httpStatus": 200,
+      "bytes": 1205655,
+      "sha256": "8f7abefebc7f87784df903f3fca11f228baa725708d3e16a79797b1fd616b2b9",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/80da5701-fdde-4d59-89fc-9f1c712cb3b9"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/80da5701-fdde-4d59-89fc-9f1c712cb3b9",
+      "contentLength": 1205655,
+      "elapsedSeconds": 0.52
+    },
+    {
+      "assetId": 559685540,
+      "name": "ext_opus-ddbe48383984d56acd9e1ab6a090c54ca6b735a6.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_opus-ddbe48383984d56acd9e1ab6a090c54ca6b735a6.tar.gz",
+      "expected": {
+        "bytes": 4056240,
+        "sha256": "dab7ce4545ecdb851e85c5e6d10dbddd858522e69b76444b366ac3070e060679"
+      },
+      "startedAtUtc": "2026-09-12T17:56:54.448580+00:00",
+      "completedAtUtc": "2026-09-12T17:56:55.087832+00:00",
+      "httpStatus": 200,
+      "bytes": 4056240,
+      "sha256": "dab7ce4545ecdb851e85c5e6d10dbddd858522e69b76444b366ac3070e060679",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/0aaa6503-30b8-4414-bcfc-95d3eb2d6d47"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/0aaa6503-30b8-4414-bcfc-95d3eb2d6d47",
+      "contentLength": 4056240,
+      "elapsedSeconds": 0.639
+    },
+    {
+      "assetId": 559685588,
+      "name": "ext_pkgconfig-8754bdfe0984bc29e53ee856631a42f90f789eb4.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_pkgconfig-8754bdfe0984bc29e53ee856631a42f90f789eb4.tar.gz",
+      "expected": {
+        "bytes": 113677,
+        "sha256": "820b178c3a9285f30e4ca0372f7c8cc495a6a30c8445e8f442f1dfcb91b49bfa"
+      },
+      "startedAtUtc": "2026-09-12T17:56:54.696380+00:00",
+      "completedAtUtc": "2026-09-12T17:56:55.126988+00:00",
+      "httpStatus": 200,
+      "bytes": 113677,
+      "sha256": "820b178c3a9285f30e4ca0372f7c8cc495a6a30c8445e8f442f1dfcb91b49bfa",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/50fdc21c-06f7-447e-bf21-f5c80aa7d51d"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/50fdc21c-06f7-447e-bf21-f5c80aa7d51d",
+      "contentLength": 113677,
+      "elapsedSeconds": 0.431
+    },
+    {
+      "assetId": 559685596,
+      "name": "ext_qt-571b5489c7d0987959b8cf81f62df674da79c418.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_qt-571b5489c7d0987959b8cf81f62df674da79c418.tar.gz",
+      "expected": {
+        "bytes": 589921,
+        "sha256": "a7e9718f9caedb68ab3f83d2b9e76b1528e41173eeceefac35766641f0ebdaf1"
+      },
+      "startedAtUtc": "2026-09-12T17:56:54.722553+00:00",
+      "completedAtUtc": "2026-09-12T17:56:55.196409+00:00",
+      "httpStatus": 200,
+      "bytes": 589921,
+      "sha256": "a7e9718f9caedb68ab3f83d2b9e76b1528e41173eeceefac35766641f0ebdaf1",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/736574c4-019d-43ea-9612-c8cc94ca308b"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/736574c4-019d-43ea-9612-c8cc94ca308b",
+      "contentLength": 589921,
+      "elapsedSeconds": 0.474
+    },
+    {
+      "assetId": 559685257,
+      "name": "ext_seexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_seexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a.tar.gz",
+      "expected": {
+        "bytes": 999669,
+        "sha256": "859f24a4cb6554b3add9a1902e952698ed69052723d3f1a13e4d8891cbb54ed6"
+      },
+      "startedAtUtc": "2026-09-12T17:56:55.087882+00:00",
+      "completedAtUtc": "2026-09-12T17:56:55.552965+00:00",
+      "httpStatus": 200,
+      "bytes": 999669,
+      "sha256": "859f24a4cb6554b3add9a1902e952698ed69052723d3f1a13e4d8891cbb54ed6",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/888bfa3e-f596-4f0f-96d4-4f9e403b2bd4"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/888bfa3e-f596-4f0f-96d4-4f9e403b2bd4",
+      "contentLength": 999669,
+      "elapsedSeconds": 0.465
+    },
+    {
+      "assetId": 559685607,
+      "name": "ext_vpl-025d43d086a3e663184cb49febe86152bf05409f.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_vpl-025d43d086a3e663184cb49febe86152bf05409f.tar.gz",
+      "expected": {
+        "bytes": 12919741,
+        "sha256": "476adfabd3ef5b6f990011004c0caa4bb0c3549685d7cf520def76d26b22b74d"
+      },
+      "startedAtUtc": "2026-09-12T17:56:55.127069+00:00",
+      "completedAtUtc": "2026-09-12T17:56:55.943889+00:00",
+      "httpStatus": 200,
+      "bytes": 12919741,
+      "sha256": "476adfabd3ef5b6f990011004c0caa4bb0c3549685d7cf520def76d26b22b74d",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/ed7f6cfd-2ad0-4855-8bef-8583442037d5"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/ed7f6cfd-2ad0-4855-8bef-8583442037d5",
+      "contentLength": 12919741,
+      "elapsedSeconds": 0.817
+    },
+    {
+      "assetId": 559685258,
+      "name": "ext_zug-deb266f4c7c35d325de7eb3d033f06e0809495f2.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ext_zug-deb266f4c7c35d325de7eb3d033f06e0809495f2.tar.gz",
+      "expected": {
+        "bytes": 219528,
+        "sha256": "4b36442059899b8570336ff9e2901f62fd58b839c9e3ff5d35497454e2324625"
+      },
+      "startedAtUtc": "2026-09-12T17:56:55.196465+00:00",
+      "completedAtUtc": "2026-09-12T17:56:55.612898+00:00",
+      "httpStatus": 200,
+      "bytes": 219528,
+      "sha256": "4b36442059899b8570336ff9e2901f62fd58b839c9e3ff5d35497454e2324625",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/013d7e7c-9612-4e05-bc3e-c9703adf93cc"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/013d7e7c-9612-4e05-bc3e-c9703adf93cc",
+      "contentLength": 219528,
+      "elapsedSeconds": 0.416
+    },
+    {
+      "assetId": 559685270,
+      "name": "llvm-mingw-259cd18db3419d4c68571f6edb87828f8dc77894.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/llvm-mingw-259cd18db3419d4c68571f6edb87828f8dc77894.tar.gz",
+      "expected": {
+        "bytes": 68785,
+        "sha256": "9e5ef9adbbe94a3bd44225a8c61678ff93293f94d8f2639830b0ea7ee8c52eb6"
+      },
+      "startedAtUtc": "2026-09-12T17:56:55.553020+00:00",
+      "completedAtUtc": "2026-09-12T17:56:56.124401+00:00",
+      "httpStatus": 200,
+      "bytes": 68785,
+      "sha256": "9e5ef9adbbe94a3bd44225a8c61678ff93293f94d8f2639830b0ea7ee8c52eb6",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/7bd04372-a0ac-455a-a5bb-775d9dac99d1"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/7bd04372-a0ac-455a-a5bb-775d9dac99d1",
+      "contentLength": 68785,
+      "elapsedSeconds": 0.571
+    },
+    {
+      "assetId": 559685608,
+      "name": "llvm-project-a832a5222e489298337fbb5876f8dcaf072c5cca.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/llvm-project-a832a5222e489298337fbb5876f8dcaf072c5cca.tar.gz",
+      "expected": {
+        "bytes": 236487277,
+        "sha256": "b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df"
+      },
+      "startedAtUtc": "2026-09-12T17:56:55.612955+00:00",
+      "completedAtUtc": "2026-09-12T17:57:05.890310+00:00",
+      "httpStatus": 200,
+      "bytes": 236487277,
+      "sha256": "b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/81dc7e79-4611-41f0-9ddf-53ee1212e8aa"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/81dc7e79-4611-41f0-9ddf-53ee1212e8aa",
+      "contentLength": 236487277,
+      "elapsedSeconds": 10.277
+    },
+    {
+      "assetId": 559686290,
+      "name": "md5-40996bbaf7d1356d3c22e33a8b255b31.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/md5-40996bbaf7d1356d3c22e33a8b255b31.source",
+      "expected": {
+        "bytes": 9714352,
+        "sha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192"
+      },
+      "startedAtUtc": "2026-09-12T17:56:55.943990+00:00",
+      "completedAtUtc": "2026-09-12T17:56:57.382632+00:00",
+      "httpStatus": 200,
+      "bytes": 9714352,
+      "sha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/171b72f7-a5b2-4602-be29-fce1defde17d"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/171b72f7-a5b2-4602-be29-fce1defde17d",
+      "contentLength": 9714352,
+      "elapsedSeconds": 1.439
+    },
+    {
+      "assetId": 559686441,
+      "name": "md5-6f03aee4ebe54ac2cc1ab3e4b0a049e5.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/md5-6f03aee4ebe54ac2cc1ab3e4b0a049e5.source",
+      "expected": {
+        "bytes": 444187,
+        "sha256": "31da5562f44c5f15d63340a09a4fd62b48c45620cd302f77a6d9acf0077879bd"
+      },
+      "startedAtUtc": "2026-09-12T17:56:56.124472+00:00",
+      "completedAtUtc": "2026-09-12T17:56:57.719802+00:00",
+      "httpStatus": 200,
+      "bytes": 444187,
+      "sha256": "31da5562f44c5f15d63340a09a4fd62b48c45620cd302f77a6d9acf0077879bd",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/25767474-1ca7-4e8f-b820-a1cbd4387b6a"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/25767474-1ca7-4e8f-b820-a1cbd4387b6a",
+      "contentLength": 444187,
+      "elapsedSeconds": 1.595
+    },
+    {
+      "assetId": 559686466,
+      "name": "md5-e4574721c2d9667af32283175c828833.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/md5-e4574721c2d9667af32283175c828833.source",
+      "expected": {
+        "bytes": 21396,
+        "sha256": "23adea990a8303c6e69e32a64a30171efcb1b73824a1c2da1bbf576b0ae7c520"
+      },
+      "startedAtUtc": "2026-09-12T17:56:57.382721+00:00",
+      "completedAtUtc": "2026-09-12T17:56:57.982029+00:00",
+      "httpStatus": 200,
+      "bytes": 21396,
+      "sha256": "23adea990a8303c6e69e32a64a30171efcb1b73824a1c2da1bbf576b0ae7c520",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/550a4f32-0694-430c-b5e4-2af87f2baf5c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/550a4f32-0694-430c-b5e4-2af87f2baf5c",
+      "contentLength": 21396,
+      "elapsedSeconds": 0.599
+    },
+    {
+      "assetId": 559685271,
+      "name": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33.tar.gz",
+      "expected": {
+        "bytes": 15590259,
+        "sha256": "d2fa18ef6b1fc8afd80c065a524fc090a7514803a3c93f79ae29ef5ac4a1801e"
+      },
+      "startedAtUtc": "2026-09-12T17:56:57.719858+00:00",
+      "completedAtUtc": "2026-09-12T17:56:59.248811+00:00",
+      "httpStatus": 200,
+      "bytes": 15590259,
+      "sha256": "d2fa18ef6b1fc8afd80c065a524fc090a7514803a3c93f79ae29ef5ac4a1801e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/d86f3637-b936-4ac0-bb3f-8e5e4f2c3b61"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/d86f3637-b936-4ac0-bb3f-8e5e4f2c3b61",
+      "contentLength": 15590259,
+      "elapsedSeconds": 1.529
+    },
+    {
+      "assetId": 559685279,
+      "name": "ninja-3441b633c2fe2c494e958780ba0f4227b1327634.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ninja-3441b633c2fe2c494e958780ba0f4227b1327634.tar.gz",
+      "expected": {
+        "bytes": 292638,
+        "sha256": "bccc6197cd8c3ac2a439e26d6bf41506fe49c430cf3d593269a15379f24266ee"
+      },
+      "startedAtUtc": "2026-09-12T17:56:57.982372+00:00",
+      "completedAtUtc": "2026-09-12T17:56:58.674362+00:00",
+      "httpStatus": 200,
+      "bytes": 292638,
+      "sha256": "bccc6197cd8c3ac2a439e26d6bf41506fe49c430cf3d593269a15379f24266ee",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/65959480-fbda-4d97-9ea6-ae7a272bbad6"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/65959480-fbda-4d97-9ea6-ae7a272bbad6",
+      "contentLength": 292638,
+      "elapsedSeconds": 0.692
+    },
+    {
+      "assetId": 559685280,
+      "name": "ocio-expat-7643f96bd5b9f5d3b26ea112519e05e17ef91cfb.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ocio-expat-7643f96bd5b9f5d3b26ea112519e05e17ef91cfb.tar.gz",
+      "expected": {
+        "bytes": 8440127,
+        "sha256": "fe6bc4ba879d898345d80020a5c307a19456d5367c37c91cac6b777a7220970e"
+      },
+      "startedAtUtc": "2026-09-12T17:56:58.674423+00:00",
+      "completedAtUtc": "2026-09-12T17:57:00.092810+00:00",
+      "httpStatus": 200,
+      "bytes": 8440127,
+      "sha256": "fe6bc4ba879d898345d80020a5c307a19456d5367c37c91cac6b777a7220970e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/32f0e99b-944d-4047-9a3b-720da8db9d02"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/32f0e99b-944d-4047-9a3b-720da8db9d02",
+      "contentLength": 8440127,
+      "elapsedSeconds": 1.418
+    },
+    {
+      "assetId": 559685281,
+      "name": "ocio-imath-fbcfb9833fe78277299080e8700fcf749a468bb0.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ocio-imath-fbcfb9833fe78277299080e8700fcf749a468bb0.tar.gz",
+      "expected": {
+        "bytes": 689301,
+        "sha256": "a10f52d26b5e14c1e457c289fa0e5cb7cda93e1a6e5d286055dcc0ba28104eff"
+      },
+      "startedAtUtc": "2026-09-12T17:56:59.248886+00:00",
+      "completedAtUtc": "2026-09-12T17:57:00.081555+00:00",
+      "httpStatus": 200,
+      "bytes": 689301,
+      "sha256": "a10f52d26b5e14c1e457c289fa0e5cb7cda93e1a6e5d286055dcc0ba28104eff",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/50070cb0-64c9-4df1-872c-a696352bf460"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/50070cb0-64c9-4df1-872c-a696352bf460",
+      "contentLength": 689301,
+      "elapsedSeconds": 0.833
+    },
+    {
+      "assetId": 559685290,
+      "name": "ocio-minizip-f3ed731e27a97e30dffe076ed5e0537daae5c1bd.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ocio-minizip-f3ed731e27a97e30dffe076ed5e0537daae5c1bd.tar.gz",
+      "expected": {
+        "bytes": 773736,
+        "sha256": "ba85360985877b549cc6d672f5955601eac697a4a3489d8c7f9f413682d8f72c"
+      },
+      "startedAtUtc": "2026-09-12T17:57:00.081618+00:00",
+      "completedAtUtc": "2026-09-12T17:57:00.641027+00:00",
+      "httpStatus": 200,
+      "bytes": 773736,
+      "sha256": "ba85360985877b549cc6d672f5955601eac697a4a3489d8c7f9f413682d8f72c",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/102f7c9b-92ed-4699-a317-7894689ac5aa"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/102f7c9b-92ed-4699-a317-7894689ac5aa",
+      "contentLength": 773736,
+      "elapsedSeconds": 0.559
+    },
+    {
+      "assetId": 559685296,
+      "name": "ocio-pystring-7d16bc814ccb4cad03c300dcb77440034caa84f7.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ocio-pystring-7d16bc814ccb4cad03c300dcb77440034caa84f7.tar.gz",
+      "expected": {
+        "bytes": 19209,
+        "sha256": "4f38af53aebc35924699aa41482a44a31aa52e4c6f921acee37a52ebea7333d4"
+      },
+      "startedAtUtc": "2026-09-12T17:57:00.092866+00:00",
+      "completedAtUtc": "2026-09-12T17:57:00.513219+00:00",
+      "httpStatus": 200,
+      "bytes": 19209,
+      "sha256": "4f38af53aebc35924699aa41482a44a31aa52e4c6f921acee37a52ebea7333d4",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/b7e806e7-3d4e-4ff9-8f66-edf43880ecdd"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/b7e806e7-3d4e-4ff9-8f66-edf43880ecdd",
+      "contentLength": 19209,
+      "elapsedSeconds": 0.42
+    },
+    {
+      "assetId": 559685303,
+      "name": "ocio-yaml-cpp-f7320141120f720aecc4c32be25586e7da9eb978.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/ocio-yaml-cpp-f7320141120f720aecc4c32be25586e7da9eb978.tar.gz",
+      "expected": {
+        "bytes": 1018426,
+        "sha256": "2fd3bf695ccc056835a70dd6d3046312cc1004e8338b8b5c91646918a27b7ef6"
+      },
+      "startedAtUtc": "2026-09-12T17:57:00.513278+00:00",
+      "completedAtUtc": "2026-09-12T17:57:01.070576+00:00",
+      "httpStatus": 200,
+      "bytes": 1018426,
+      "sha256": "2fd3bf695ccc056835a70dd6d3046312cc1004e8338b8b5c91646918a27b7ef6",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/602157a0-b857-4d92-ada8-87bba7bb2b7f"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/602157a0-b857-4d92-ada8-87bba7bb2b7f",
+      "contentLength": 1018426,
+      "elapsedSeconds": 0.557
+    },
+    {
+      "assetId": 559685307,
+      "name": "pybind11-1eaacd19f6de9a053570c21de6d173efc2304bc2.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/pybind11-1eaacd19f6de9a053570c21de6d173efc2304bc2.tar.gz",
+      "expected": {
+        "bytes": 412577,
+        "sha256": "7f9ccf75f8ac6e67c7698df733e1216b6ef0117372d5f89043a9c220b239fbc6"
+      },
+      "startedAtUtc": "2026-09-12T17:57:00.641108+00:00",
+      "completedAtUtc": "2026-09-12T17:57:01.148994+00:00",
+      "httpStatus": 200,
+      "bytes": 412577,
+      "sha256": "7f9ccf75f8ac6e67c7698df733e1216b6ef0117372d5f89043a9c220b239fbc6",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c8b6a981-dcfb-41fb-ab15-70a98a35789c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c8b6a981-dcfb-41fb-ab15-70a98a35789c",
+      "contentLength": 412577,
+      "elapsedSeconds": 0.508
+    },
+    {
+      "assetId": 559685659,
+      "name": "qt5compat-2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qt5compat-2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9.tar.gz",
+      "expected": {
+        "bytes": 17499180,
+        "sha256": "f71362e77db1239194789440b72164276d1db48a5ea4795f68d6335c0ff68f5d"
+      },
+      "startedAtUtc": "2026-09-12T17:57:01.070644+00:00",
+      "completedAtUtc": "2026-09-12T17:57:02.198481+00:00",
+      "httpStatus": 200,
+      "bytes": 17499180,
+      "sha256": "f71362e77db1239194789440b72164276d1db48a5ea4795f68d6335c0ff68f5d",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/641368a3-d97a-40f6-85ec-e76ab12919d7"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/641368a3-d97a-40f6-85ec-e76ab12919d7",
+      "contentLength": 17499180,
+      "elapsedSeconds": 1.128
+    },
+    {
+      "assetId": 559685798,
+      "name": "qtbase-8bd38fff262805f06b753ea04dd79633315eae7a.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qtbase-8bd38fff262805f06b753ea04dd79633315eae7a.tar.gz",
+      "expected": {
+        "bytes": 66765092,
+        "sha256": "ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02"
+      },
+      "startedAtUtc": "2026-09-12T17:57:01.149064+00:00",
+      "completedAtUtc": "2026-09-12T17:57:10.681209+00:00",
+      "httpStatus": 200,
+      "bytes": 66765092,
+      "sha256": "ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/3f916d35-0e5f-45be-9dd2-8b919618853c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/3f916d35-0e5f-45be-9dd2-8b919618853c",
+      "contentLength": 66765092,
+      "elapsedSeconds": 9.532
+    },
+    {
+      "assetId": 559685929,
+      "name": "qtdeclarative-82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qtdeclarative-82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1.tar.gz",
+      "expected": {
+        "bytes": 42876840,
+        "sha256": "722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49"
+      },
+      "startedAtUtc": "2026-09-12T17:57:02.198563+00:00",
+      "completedAtUtc": "2026-09-12T17:57:04.396363+00:00",
+      "httpStatus": 200,
+      "bytes": 42876840,
+      "sha256": "722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/85175066-7f05-45ee-86f9-c9ce617a2b80"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/85175066-7f05-45ee-86f9-c9ce617a2b80",
+      "contentLength": 42876840,
+      "elapsedSeconds": 2.198
+    },
+    {
+      "assetId": 559685987,
+      "name": "qtimageformats-ade536558e868143d615512a6873daabb8e9195b.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qtimageformats-ade536558e868143d615512a6873daabb8e9195b.tar.gz",
+      "expected": {
+        "bytes": 2612101,
+        "sha256": "774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8"
+      },
+      "startedAtUtc": "2026-09-12T17:57:04.396472+00:00",
+      "completedAtUtc": "2026-09-12T17:57:05.058496+00:00",
+      "httpStatus": 200,
+      "bytes": 2612101,
+      "sha256": "774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/ffaf01a4-8d16-4691-9a5c-b45b8586b0f9"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/ffaf01a4-8d16-4691-9a5c-b45b8586b0f9",
+      "contentLength": 2612101,
+      "elapsedSeconds": 0.662
+    },
+    {
+      "assetId": 559686121,
+      "name": "qtshadertools-1c7a78fd7480f11a49eb8135b44d138edb0f0df8.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qtshadertools-1c7a78fd7480f11a49eb8135b44d138edb0f0df8.tar.gz",
+      "expected": {
+        "bytes": 1825820,
+        "sha256": "5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a"
+      },
+      "startedAtUtc": "2026-09-12T17:57:05.058576+00:00",
+      "completedAtUtc": "2026-09-12T17:57:05.627806+00:00",
+      "httpStatus": 200,
+      "bytes": 1825820,
+      "sha256": "5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/4a0f5cf1-fb15-456b-aee5-fd483ad00d2f"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/4a0f5cf1-fb15-456b-aee5-fd483ad00d2f",
+      "contentLength": 1825820,
+      "elapsedSeconds": 0.569
+    },
+    {
+      "assetId": 559686159,
+      "name": "qtsvg-4126867385dc0b7a9404dcd69726c28ed0d5e10a.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qtsvg-4126867385dc0b7a9404dcd69726c28ed0d5e10a.tar.gz",
+      "expected": {
+        "bytes": 2604190,
+        "sha256": "f22206eae4dc7093df63d7a1d7d0d5cf5e0b6e6a1d7091807e0a41442bbaf12a"
+      },
+      "startedAtUtc": "2026-09-12T17:57:05.627867+00:00",
+      "completedAtUtc": "2026-09-12T17:57:06.123143+00:00",
+      "httpStatus": 200,
+      "bytes": 2604190,
+      "sha256": "f22206eae4dc7093df63d7a1d7d0d5cf5e0b6e6a1d7091807e0a41442bbaf12a",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/fe371cdd-0204-48e3-9e10-188387bba522"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/fe371cdd-0204-48e3-9e10-188387bba522",
+      "contentLength": 2604190,
+      "elapsedSeconds": 0.495
+    },
+    {
+      "assetId": 559686213,
+      "name": "qttools-92c3a8c84ff17c5d2ae263dffb97645fb1a76081.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qttools-92c3a8c84ff17c5d2ae263dffb97645fb1a76081.tar.gz",
+      "expected": {
+        "bytes": 12009266,
+        "sha256": "9ecb367fffb9c19413572092af7fd750e4d78b92c6ee5409100c30d6df7b61e9"
+      },
+      "startedAtUtc": "2026-09-12T17:57:05.890366+00:00",
+      "completedAtUtc": "2026-09-12T17:57:06.717551+00:00",
+      "httpStatus": 200,
+      "bytes": 12009266,
+      "sha256": "9ecb367fffb9c19413572092af7fd750e4d78b92c6ee5409100c30d6df7b61e9",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/93dea880-fb5c-454d-956d-420adfc0c50a"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/93dea880-fb5c-454d-956d-420adfc0c50a",
+      "contentLength": 12009266,
+      "elapsedSeconds": 0.827
+    },
+    {
+      "assetId": 559686223,
+      "name": "qttranslations-08c7440f513309715ba00db5e0e519a4a59e62ea.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/qttranslations-08c7440f513309715ba00db5e0e519a4a59e62ea.tar.gz",
+      "expected": {
+        "bytes": 3051907,
+        "sha256": "4d508f7ee0708994c35ac8133e0849d951417dc31d0fedcc9383a88102e436fe"
+      },
+      "startedAtUtc": "2026-09-12T17:57:06.123195+00:00",
+      "completedAtUtc": "2026-09-12T17:57:06.834067+00:00",
+      "httpStatus": 200,
+      "bytes": 3051907,
+      "sha256": "4d508f7ee0708994c35ac8133e0849d951417dc31d0fedcc9383a88102e436fe",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a6483f1e-ae2b-44e7-bb51-8d074c17a090"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a6483f1e-ae2b-44e7-bb51-8d074c17a090",
+      "contentLength": 3051907,
+      "elapsedSeconds": 0.711
+    },
+    {
+      "assetId": 559686478,
+      "name": "sha256-05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01.source",
+      "expected": {
+        "bytes": 27539369,
+        "sha256": "05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01"
+      },
+      "startedAtUtc": "2026-09-12T17:57:06.717611+00:00",
+      "completedAtUtc": "2026-09-12T17:57:08.107284+00:00",
+      "httpStatus": 200,
+      "bytes": 27539369,
+      "sha256": "05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/80df160a-672c-44fc-adac-43b99f8f7c10"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/80df160a-672c-44fc-adac-43b99f8f7c10",
+      "contentLength": 27539369,
+      "elapsedSeconds": 1.39
+    },
+    {
+      "assetId": 559686493,
+      "name": "sha256-0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1.source",
+      "expected": {
+        "bytes": 9834044,
+        "sha256": "0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1"
+      },
+      "startedAtUtc": "2026-09-12T17:57:06.834202+00:00",
+      "completedAtUtc": "2026-09-12T17:57:08.782419+00:00",
+      "httpStatus": 200,
+      "bytes": 9834044,
+      "sha256": "0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/da5e3f66-7e9e-4b7c-bc4e-2f5826e6e392"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/da5e3f66-7e9e-4b7c-bc4e-2f5826e6e392",
+      "contentLength": 9834044,
+      "elapsedSeconds": 1.948
+    },
+    {
+      "assetId": 559686902,
+      "name": "sha256-0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664.source",
+      "expected": {
+        "bytes": 593071,
+        "sha256": "0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664"
+      },
+      "startedAtUtc": "2026-09-12T17:57:08.107363+00:00",
+      "completedAtUtc": "2026-09-12T17:57:08.555554+00:00",
+      "httpStatus": 200,
+      "bytes": 593071,
+      "sha256": "0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/8f77e3f1-46c9-4250-8d0e-d6bd6fca16a4"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/8f77e3f1-46c9-4250-8d0e-d6bd6fca16a4",
+      "contentLength": 593071,
+      "elapsedSeconds": 0.448
+    },
+    {
+      "assetId": 559686935,
+      "name": "sha256-123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15.source",
+      "expected": {
+        "bytes": 1150344,
+        "sha256": "123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15"
+      },
+      "startedAtUtc": "2026-09-12T17:57:08.555727+00:00",
+      "completedAtUtc": "2026-09-12T17:57:09.032259+00:00",
+      "httpStatus": 200,
+      "bytes": 1150344,
+      "sha256": "123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/e8721c37-3060-4a8c-a844-a9e827769f59"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/e8721c37-3060-4a8c-a844-a9e827769f59",
+      "contentLength": 1150344,
+      "elapsedSeconds": 0.477
+    },
+    {
+      "assetId": 559686973,
+      "name": "sha256-124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2.source",
+      "expected": {
+        "bytes": 9589436,
+        "sha256": "124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:08.782480+00:00",
+      "completedAtUtc": "2026-09-12T17:57:09.499087+00:00",
+      "httpStatus": 200,
+      "bytes": 9589436,
+      "sha256": "124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/68b7c48a-f9aa-4b8f-bb44-b84f0bb55b9b"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/68b7c48a-f9aa-4b8f-bb44-b84f0bb55b9b",
+      "contentLength": 9589436,
+      "elapsedSeconds": 0.717
+    },
+    {
+      "assetId": 559687029,
+      "name": "sha256-1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9.source",
+      "expected": {
+        "bytes": 1876134,
+        "sha256": "1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9"
+      },
+      "startedAtUtc": "2026-09-12T17:57:09.032347+00:00",
+      "completedAtUtc": "2026-09-12T17:57:09.622780+00:00",
+      "httpStatus": 200,
+      "bytes": 1876134,
+      "sha256": "1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/2e36051b-dda0-436d-81f2-12046e9c2819"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/2e36051b-dda0-436d-81f2-12046e9c2819",
+      "contentLength": 1876134,
+      "elapsedSeconds": 0.59
+    },
+    {
+      "assetId": 559687072,
+      "name": "sha256-17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79.source",
+      "expected": {
+        "bytes": 764617,
+        "sha256": "17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79"
+      },
+      "startedAtUtc": "2026-09-12T17:57:09.499159+00:00",
+      "completedAtUtc": "2026-09-12T17:57:10.034860+00:00",
+      "httpStatus": 200,
+      "bytes": 764617,
+      "sha256": "17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/47f45361-a708-4e79-b97a-ce1936a2dc7d"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/47f45361-a708-4e79-b97a-ce1936a2dc7d",
+      "contentLength": 764617,
+      "elapsedSeconds": 0.536
+    },
+    {
+      "assetId": 559687093,
+      "name": "sha256-17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0.source",
+      "expected": {
+        "bytes": 609286,
+        "sha256": "17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0"
+      },
+      "startedAtUtc": "2026-09-12T17:57:09.622963+00:00",
+      "completedAtUtc": "2026-09-12T17:57:10.125280+00:00",
+      "httpStatus": 200,
+      "bytes": 609286,
+      "sha256": "17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/d46b48ce-918c-4c22-86a9-1501bbaf7669"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/d46b48ce-918c-4c22-86a9-1501bbaf7669",
+      "contentLength": 609286,
+      "elapsedSeconds": 0.502
+    },
+    {
+      "assetId": 559687131,
+      "name": "sha256-19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d.source",
+      "expected": {
+        "bytes": 6253958,
+        "sha256": "19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d"
+      },
+      "startedAtUtc": "2026-09-12T17:57:10.034916+00:00",
+      "completedAtUtc": "2026-09-12T17:57:10.655507+00:00",
+      "httpStatus": 200,
+      "bytes": 6253958,
+      "sha256": "19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a64d766c-6868-4487-a9d2-841debdf7a80"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a64d766c-6868-4487-a9d2-841debdf7a80",
+      "contentLength": 6253958,
+      "elapsedSeconds": 0.621
+    },
+    {
+      "assetId": 559687181,
+      "name": "sha256-210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826.source",
+      "expected": {
+        "bytes": 11858,
+        "sha256": "210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826"
+      },
+      "startedAtUtc": "2026-09-12T17:57:10.125342+00:00",
+      "completedAtUtc": "2026-09-12T17:57:10.543065+00:00",
+      "httpStatus": 200,
+      "bytes": 11858,
+      "sha256": "210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/10690c2d-745d-44ea-bef7-4f6fa3c90ef0"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/10690c2d-745d-44ea-bef7-4f6fa3c90ef0",
+      "contentLength": 11858,
+      "elapsedSeconds": 0.418
+    },
+    {
+      "assetId": 559687192,
+      "name": "sha256-28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740.source",
+      "expected": {
+        "bytes": 7406694,
+        "sha256": "28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740"
+      },
+      "startedAtUtc": "2026-09-12T17:57:10.543145+00:00",
+      "completedAtUtc": "2026-09-12T17:57:11.358188+00:00",
+      "httpStatus": 200,
+      "bytes": 7406694,
+      "sha256": "28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/6de543c3-0c5f-4487-84c2-f3669c965795"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/6de543c3-0c5f-4487-84c2-f3669c965795",
+      "contentLength": 7406694,
+      "elapsedSeconds": 0.815
+    },
+    {
+      "assetId": 559687241,
+      "name": "sha256-2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4.source",
+      "expected": {
+        "bytes": 4162949,
+        "sha256": "2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4"
+      },
+      "startedAtUtc": "2026-09-12T17:57:10.655570+00:00",
+      "completedAtUtc": "2026-09-12T17:57:11.364560+00:00",
+      "httpStatus": 200,
+      "bytes": 4162949,
+      "sha256": "2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a1d2f9a7-f39c-4e2d-b4c4-3f30889270d7"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a1d2f9a7-f39c-4e2d-b4c4-3f30889270d7",
+      "contentLength": 4162949,
+      "elapsedSeconds": 0.709
+    },
+    {
+      "assetId": 559687268,
+      "name": "sha256-30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d.source",
+      "expected": {
+        "bytes": 1077004,
+        "sha256": "30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d"
+      },
+      "startedAtUtc": "2026-09-12T17:57:10.681267+00:00",
+      "completedAtUtc": "2026-09-12T17:57:11.678528+00:00",
+      "httpStatus": 200,
+      "bytes": 1077004,
+      "sha256": "30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a63ad017-c7a4-4308-9cd5-5e51080666d3"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a63ad017-c7a4-4308-9cd5-5e51080666d3",
+      "contentLength": 1077004,
+      "elapsedSeconds": 0.997
+    },
+    {
+      "assetId": 559687301,
+      "name": "sha256-338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca.source",
+      "expected": {
+        "bytes": 319629,
+        "sha256": "338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca"
+      },
+      "startedAtUtc": "2026-09-12T17:57:11.358249+00:00",
+      "completedAtUtc": "2026-09-12T17:57:11.784020+00:00",
+      "httpStatus": 200,
+      "bytes": 319629,
+      "sha256": "338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/2d759b30-ea01-4efd-9ead-477fd5774987"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/2d759b30-ea01-4efd-9ead-477fd5774987",
+      "contentLength": 319629,
+      "elapsedSeconds": 0.426
+    },
+    {
+      "assetId": 559687316,
+      "name": "sha256-354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9.source",
+      "expected": {
+        "bytes": 2162124,
+        "sha256": "354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9"
+      },
+      "startedAtUtc": "2026-09-12T17:57:11.364601+00:00",
+      "completedAtUtc": "2026-09-12T17:57:11.974718+00:00",
+      "httpStatus": 200,
+      "bytes": 2162124,
+      "sha256": "354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/11bd59de-f43f-4c31-b883-85e553629160"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/11bd59de-f43f-4c31-b883-85e553629160",
+      "contentLength": 2162124,
+      "elapsedSeconds": 0.61
+    },
+    {
+      "assetId": 559687327,
+      "name": "sha256-35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2.source",
+      "expected": {
+        "bytes": 32720608,
+        "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:11.678605+00:00",
+      "completedAtUtc": "2026-09-12T17:57:13.587367+00:00",
+      "httpStatus": 200,
+      "bytes": 32720608,
+      "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/1d7024ed-626e-40b8-b808-b15624c0827b"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/1d7024ed-626e-40b8-b808-b15624c0827b",
+      "contentLength": 32720608,
+      "elapsedSeconds": 1.909
+    },
+    {
+      "assetId": 559687335,
+      "name": "sha256-38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b.source",
+      "expected": {
+        "bytes": 95984,
+        "sha256": "38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b"
+      },
+      "startedAtUtc": "2026-09-12T17:57:11.784191+00:00",
+      "completedAtUtc": "2026-09-12T17:57:12.230363+00:00",
+      "httpStatus": 200,
+      "bytes": 95984,
+      "sha256": "38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/288fbcd2-2972-4428-89b3-efa3479ab204"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/288fbcd2-2972-4428-89b3-efa3479ab204",
+      "contentLength": 95984,
+      "elapsedSeconds": 0.446
+    },
+    {
+      "assetId": 559687352,
+      "name": "sha256-405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582.source",
+      "expected": {
+        "bytes": 171006,
+        "sha256": "405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582"
+      },
+      "startedAtUtc": "2026-09-12T17:57:11.974837+00:00",
+      "completedAtUtc": "2026-09-12T17:57:12.655280+00:00",
+      "httpStatus": 200,
+      "bytes": 171006,
+      "sha256": "405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/f3405dee-99ca-4445-acf1-b5ff9c4f7398"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/f3405dee-99ca-4445-acf1-b5ff9c4f7398",
+      "contentLength": 171006,
+      "elapsedSeconds": 0.68
+    },
+    {
+      "assetId": 559687357,
+      "name": "sha256-453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32.source",
+      "expected": {
+        "bytes": 60290897,
+        "sha256": "453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32"
+      },
+      "startedAtUtc": "2026-09-12T17:57:12.230415+00:00",
+      "completedAtUtc": "2026-09-12T17:57:14.944596+00:00",
+      "httpStatus": 200,
+      "bytes": 60290897,
+      "sha256": "453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/b2d684ac-5da0-46b6-8d22-a4b7809279f3"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/b2d684ac-5da0-46b6-8d22-a4b7809279f3",
+      "contentLength": 60290897,
+      "elapsedSeconds": 2.714
+    },
+    {
+      "assetId": 559687362,
+      "name": "sha256-45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889.source",
+      "expected": {
+        "bytes": 1087430,
+        "sha256": "45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889"
+      },
+      "startedAtUtc": "2026-09-12T17:57:12.655338+00:00",
+      "completedAtUtc": "2026-09-12T17:57:14.876130+00:00",
+      "httpStatus": 200,
+      "bytes": 1087430,
+      "sha256": "45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/1a4217eb-3957-463e-992a-f2b50950e909"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/1a4217eb-3957-463e-992a-f2b50950e909",
+      "contentLength": 1087430,
+      "elapsedSeconds": 2.221
+    },
+    {
+      "assetId": 559687366,
+      "name": "sha256-4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f.source",
+      "expected": {
+        "bytes": 2471916,
+        "sha256": "4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f"
+      },
+      "startedAtUtc": "2026-09-12T17:57:13.587438+00:00",
+      "completedAtUtc": "2026-09-12T17:57:14.385344+00:00",
+      "httpStatus": 200,
+      "bytes": 2471916,
+      "sha256": "4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c54da635-1156-4bf3-9ba3-500a94d39e39"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c54da635-1156-4bf3-9ba3-500a94d39e39",
+      "contentLength": 2471916,
+      "elapsedSeconds": 0.798
+    },
+    {
+      "assetId": 559687411,
+      "name": "sha256-49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b.source",
+      "expected": {
+        "bytes": 14131392,
+        "sha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b"
+      },
+      "startedAtUtc": "2026-09-12T17:57:14.385453+00:00",
+      "completedAtUtc": "2026-09-12T17:57:15.782724+00:00",
+      "httpStatus": 200,
+      "bytes": 14131392,
+      "sha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/1c9fcf1d-2e6d-4112-ae36-7386713cb66a"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/1c9fcf1d-2e6d-4112-ae36-7386713cb66a",
+      "contentLength": 14131392,
+      "elapsedSeconds": 1.397
+    },
+    {
+      "assetId": 559687439,
+      "name": "sha256-4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d.source",
+      "expected": {
+        "bytes": 17874260,
+        "sha256": "4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d"
+      },
+      "startedAtUtc": "2026-09-12T17:57:14.876212+00:00",
+      "completedAtUtc": "2026-09-12T17:57:15.939919+00:00",
+      "httpStatus": 200,
+      "bytes": 17874260,
+      "sha256": "4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/6304468c-f808-488b-aae5-3fa1154794b2"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/6304468c-f808-488b-aae5-3fa1154794b2",
+      "contentLength": 17874260,
+      "elapsedSeconds": 1.064
+    },
+    {
+      "assetId": 559687686,
+      "name": "sha256-4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55.source",
+      "expected": {
+        "bytes": 34428,
+        "sha256": "4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55"
+      },
+      "startedAtUtc": "2026-09-12T17:57:14.944683+00:00",
+      "completedAtUtc": "2026-09-12T17:57:15.371704+00:00",
+      "httpStatus": 200,
+      "bytes": 34428,
+      "sha256": "4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c9eabbd5-c940-4e75-b5ff-d72e3fd78c49"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c9eabbd5-c940-4e75-b5ff-d72e3fd78c49",
+      "contentLength": 34428,
+      "elapsedSeconds": 0.427
+    },
+    {
+      "assetId": 559687701,
+      "name": "sha256-5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5.source",
+      "expected": {
+        "bytes": 2476652,
+        "sha256": "5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5"
+      },
+      "startedAtUtc": "2026-09-12T17:57:15.371768+00:00",
+      "completedAtUtc": "2026-09-12T17:57:16.057208+00:00",
+      "httpStatus": 200,
+      "bytes": 2476652,
+      "sha256": "5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/8ec58fd6-0ec6-4af9-9e2b-e43962813c1c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/8ec58fd6-0ec6-4af9-9e2b-e43962813c1c",
+      "contentLength": 2476652,
+      "elapsedSeconds": 0.685
+    },
+    {
+      "assetId": 559687757,
+      "name": "sha256-53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e.source",
+      "expected": {
+        "bytes": 534928,
+        "sha256": "53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e"
+      },
+      "startedAtUtc": "2026-09-12T17:57:15.782800+00:00",
+      "completedAtUtc": "2026-09-12T17:57:16.297629+00:00",
+      "httpStatus": 200,
+      "bytes": 534928,
+      "sha256": "53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/42a9d770-6eb8-4f25-af6b-45cc536f7b15"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/42a9d770-6eb8-4f25-af6b-45cc536f7b15",
+      "contentLength": 534928,
+      "elapsedSeconds": 0.515
+    },
+    {
+      "assetId": 559687773,
+      "name": "sha256-56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467.source",
+      "expected": {
+        "bytes": 4144100,
+        "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467"
+      },
+      "startedAtUtc": "2026-09-12T17:57:15.940006+00:00",
+      "completedAtUtc": "2026-09-12T17:57:16.498645+00:00",
+      "httpStatus": 200,
+      "bytes": 4144100,
+      "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a4d4dd87-24c5-4fcd-8684-deb2062586cc"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a4d4dd87-24c5-4fcd-8684-deb2062586cc",
+      "contentLength": 4144100,
+      "elapsedSeconds": 0.559
+    },
+    {
+      "assetId": 559687784,
+      "name": "sha256-58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158.source",
+      "expected": {
+        "bytes": 664105,
+        "sha256": "58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158"
+      },
+      "startedAtUtc": "2026-09-12T17:57:16.057267+00:00",
+      "completedAtUtc": "2026-09-12T17:57:16.550559+00:00",
+      "httpStatus": 200,
+      "bytes": 664105,
+      "sha256": "58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/4aecd5c0-128f-40cb-9050-beb85b2dbbd1"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/4aecd5c0-128f-40cb-9050-beb85b2dbbd1",
+      "contentLength": 664105,
+      "elapsedSeconds": 0.493
+    },
+    {
+      "assetId": 559687815,
+      "name": "sha256-60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83.source",
+      "expected": {
+        "bytes": 14566,
+        "sha256": "60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83"
+      },
+      "startedAtUtc": "2026-09-12T17:57:16.297786+00:00",
+      "completedAtUtc": "2026-09-12T17:57:16.744355+00:00",
+      "httpStatus": 200,
+      "bytes": 14566,
+      "sha256": "60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/fa61d665-c23e-4990-8ac9-a1bfb0638c2e"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/fa61d665-c23e-4990-8ac9-a1bfb0638c2e",
+      "contentLength": 14566,
+      "elapsedSeconds": 0.447
+    },
+    {
+      "assetId": 559687829,
+      "name": "sha256-6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8.source",
+      "expected": {
+        "bytes": 5247679,
+        "sha256": "6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8"
+      },
+      "startedAtUtc": "2026-09-12T17:57:16.498723+00:00",
+      "completedAtUtc": "2026-09-12T17:57:17.407404+00:00",
+      "httpStatus": 200,
+      "bytes": 5247679,
+      "sha256": "6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/ca74b92f-6f10-4513-b0f1-e716db76ec58"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/ca74b92f-6f10-4513-b0f1-e716db76ec58",
+      "contentLength": 5247679,
+      "elapsedSeconds": 0.909
+    },
+    {
+      "assetId": 559687857,
+      "name": "sha256-6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2.source",
+      "expected": {
+        "bytes": 15487961,
+        "sha256": "6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:16.550732+00:00",
+      "completedAtUtc": "2026-09-12T17:57:17.839346+00:00",
+      "httpStatus": 200,
+      "bytes": 15487961,
+      "sha256": "6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/94d7f760-4458-42ac-b3ca-b9d3df07dbc1"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/94d7f760-4458-42ac-b3ca-b9d3df07dbc1",
+      "contentLength": 15487961,
+      "elapsedSeconds": 1.289
+    },
+    {
+      "assetId": 559687936,
+      "name": "sha256-71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa.source",
+      "expected": {
+        "bytes": 118797750,
+        "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa"
+      },
+      "startedAtUtc": "2026-09-12T17:57:16.744606+00:00",
+      "completedAtUtc": "2026-09-12T17:57:32.617309+00:00",
+      "httpStatus": 200,
+      "bytes": 118797750,
+      "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/4d606bbb-00fb-497e-b57b-e35f96b5bbc0"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/4d606bbb-00fb-497e-b57b-e35f96b5bbc0",
+      "contentLength": 118797750,
+      "elapsedSeconds": 15.873
+    },
+    {
+      "assetId": 559687947,
+      "name": "sha256-741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f.source",
+      "expected": {
+        "bytes": 519464,
+        "sha256": "741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f"
+      },
+      "startedAtUtc": "2026-09-12T17:57:17.407461+00:00",
+      "completedAtUtc": "2026-09-12T17:57:18.068409+00:00",
+      "httpStatus": 200,
+      "bytes": 519464,
+      "sha256": "741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/acec0645-be7a-4b25-afee-b2f2fdb957f7"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/acec0645-be7a-4b25-afee-b2f2fdb957f7",
+      "contentLength": 519464,
+      "elapsedSeconds": 0.661
+    },
+    {
+      "assetId": 559687964,
+      "name": "sha256-75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42.source",
+      "expected": {
+        "bytes": 1859435,
+        "sha256": "75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42"
+      },
+      "startedAtUtc": "2026-09-12T17:57:17.839545+00:00",
+      "completedAtUtc": "2026-09-12T17:57:18.435726+00:00",
+      "httpStatus": 200,
+      "bytes": 1859435,
+      "sha256": "75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/a66c59d4-fb85-4c29-84db-d9abd023d0ae"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/a66c59d4-fb85-4c29-84db-d9abd023d0ae",
+      "contentLength": 1859435,
+      "elapsedSeconds": 0.596
+    },
+    {
+      "assetId": 559688015,
+      "name": "sha256-7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de.source",
+      "expected": {
+        "bytes": 3048584,
+        "sha256": "7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de"
+      },
+      "startedAtUtc": "2026-09-12T17:57:18.068473+00:00",
+      "completedAtUtc": "2026-09-12T17:57:18.700878+00:00",
+      "httpStatus": 200,
+      "bytes": 3048584,
+      "sha256": "7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/9fe93767-a69d-46ea-8191-edde137a06e0"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/9fe93767-a69d-46ea-8191-edde137a06e0",
+      "contentLength": 3048584,
+      "elapsedSeconds": 0.632
+    },
+    {
+      "assetId": 559688105,
+      "name": "sha256-8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295.source",
+      "expected": {
+        "bytes": 8085459,
+        "sha256": "8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295"
+      },
+      "startedAtUtc": "2026-09-12T17:57:18.435810+00:00",
+      "completedAtUtc": "2026-09-12T17:57:19.285239+00:00",
+      "httpStatus": 200,
+      "bytes": 8085459,
+      "sha256": "8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/613f7969-11ae-4a8d-9090-f14908b4350e"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/613f7969-11ae-4a8d-9090-f14908b4350e",
+      "contentLength": 8085459,
+      "elapsedSeconds": 0.849
+    },
+    {
+      "assetId": 559688209,
+      "name": "sha256-8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72.source",
+      "expected": {
+        "bytes": 2705005,
+        "sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72"
+      },
+      "startedAtUtc": "2026-09-12T17:57:18.700947+00:00",
+      "completedAtUtc": "2026-09-12T17:57:19.443657+00:00",
+      "httpStatus": 200,
+      "bytes": 2705005,
+      "sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/f7107860-f9e9-4e88-8845-e2293f526eb4"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/f7107860-f9e9-4e88-8845-e2293f526eb4",
+      "contentLength": 2705005,
+      "elapsedSeconds": 0.743
+    },
+    {
+      "assetId": 559688310,
+      "name": "sha256-869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be.source",
+      "expected": {
+        "bytes": 92574,
+        "sha256": "869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be"
+      },
+      "startedAtUtc": "2026-09-12T17:57:19.285397+00:00",
+      "completedAtUtc": "2026-09-12T17:57:19.738533+00:00",
+      "httpStatus": 200,
+      "bytes": 92574,
+      "sha256": "869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/bf32b156-ea57-4bbb-ae1c-f669c840b79c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/bf32b156-ea57-4bbb-ae1c-f669c840b79c",
+      "contentLength": 92574,
+      "elapsedSeconds": 0.453
+    },
+    {
+      "assetId": 559688321,
+      "name": "sha256-88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4.source",
+      "expected": {
+        "bytes": 265436,
+        "sha256": "88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4"
+      },
+      "startedAtUtc": "2026-09-12T17:57:19.443764+00:00",
+      "completedAtUtc": "2026-09-12T17:57:19.967674+00:00",
+      "httpStatus": 200,
+      "bytes": 265436,
+      "sha256": "88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/79c3d4bc-a3c8-4b04-9bf6-5f81350f9518"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/79c3d4bc-a3c8-4b04-9bf6-5f81350f9518",
+      "contentLength": 265436,
+      "elapsedSeconds": 0.524
+    },
+    {
+      "assetId": 559688344,
+      "name": "sha256-8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938.source",
+      "expected": {
+        "bytes": 4217068,
+        "sha256": "8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938"
+      },
+      "startedAtUtc": "2026-09-12T17:57:19.738585+00:00",
+      "completedAtUtc": "2026-09-12T17:57:20.364491+00:00",
+      "httpStatus": 200,
+      "bytes": 4217068,
+      "sha256": "8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/5ad5ee78-04b2-425e-a62a-83502142922f"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/5ad5ee78-04b2-425e-a62a-83502142922f",
+      "contentLength": 4217068,
+      "elapsedSeconds": 0.626
+    },
+    {
+      "assetId": 559688346,
+      "name": "sha256-8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c.source",
+      "expected": {
+        "bytes": 380352,
+        "sha256": "8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c"
+      },
+      "startedAtUtc": "2026-09-12T17:57:19.967715+00:00",
+      "completedAtUtc": "2026-09-12T17:57:20.411592+00:00",
+      "httpStatus": 200,
+      "bytes": 380352,
+      "sha256": "8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/6dc3e44c-6471-4af7-8a8e-0e20c76aecd4"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/6dc3e44c-6471-4af7-8a8e-0e20c76aecd4",
+      "contentLength": 380352,
+      "elapsedSeconds": 0.444
+    },
+    {
+      "assetId": 559688364,
+      "name": "sha256-917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed.source",
+      "expected": {
+        "bytes": 2841082,
+        "sha256": "917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed"
+      },
+      "startedAtUtc": "2026-09-12T17:57:20.364549+00:00",
+      "completedAtUtc": "2026-09-12T17:57:20.939552+00:00",
+      "httpStatus": 200,
+      "bytes": 2841082,
+      "sha256": "917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/309529d3-0cb3-418c-a0e4-fa69ae76a2e7"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/309529d3-0cb3-418c-a0e4-fa69ae76a2e7",
+      "contentLength": 2841082,
+      "elapsedSeconds": 0.575
+    },
+    {
+      "assetId": 559688461,
+      "name": "sha256-95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5.source",
+      "expected": {
+        "bytes": 51640,
+        "sha256": "95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5"
+      },
+      "startedAtUtc": "2026-09-12T17:57:20.411651+00:00",
+      "completedAtUtc": "2026-09-12T17:57:20.806652+00:00",
+      "httpStatus": 200,
+      "bytes": 51640,
+      "sha256": "95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/41fe9217-b4f0-4527-b782-a80ae776c0cf"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/41fe9217-b4f0-4527-b782-a80ae776c0cf",
+      "contentLength": 51640,
+      "elapsedSeconds": 0.395
+    },
+    {
+      "assetId": 559688490,
+      "name": "sha256-998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532.source",
+      "expected": {
+        "bytes": 3512638,
+        "sha256": "998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532"
+      },
+      "startedAtUtc": "2026-09-12T17:57:20.806703+00:00",
+      "completedAtUtc": "2026-09-12T17:57:21.359501+00:00",
+      "httpStatus": 200,
+      "bytes": 3512638,
+      "sha256": "998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/47267840-440b-4a85-84eb-8233dc1609bd"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/47267840-440b-4a85-84eb-8233dc1609bd",
+      "contentLength": 3512638,
+      "elapsedSeconds": 0.553
+    },
+    {
+      "assetId": 559688500,
+      "name": "sha256-9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23.source",
+      "expected": {
+        "bytes": 1512791,
+        "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"
+      },
+      "startedAtUtc": "2026-09-12T17:57:20.939612+00:00",
+      "completedAtUtc": "2026-09-12T17:57:21.458227+00:00",
+      "httpStatus": 200,
+      "bytes": 1512791,
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/bf669b28-f059-4247-8c12-104ad0e036ac"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/bf669b28-f059-4247-8c12-104ad0e036ac",
+      "contentLength": 1512791,
+      "elapsedSeconds": 0.519
+    },
+    {
+      "assetId": 559688552,
+      "name": "sha256-9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049.source",
+      "expected": {
+        "bytes": 9521355,
+        "sha256": "9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049"
+      },
+      "startedAtUtc": "2026-09-12T17:57:21.359671+00:00",
+      "completedAtUtc": "2026-09-12T17:57:22.174476+00:00",
+      "httpStatus": 200,
+      "bytes": 9521355,
+      "sha256": "9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/04905ff4-ecf6-4943-90ce-97e658be0f53"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/04905ff4-ecf6-4943-90ce-97e658be0f53",
+      "contentLength": 9521355,
+      "elapsedSeconds": 0.815
+    },
+    {
+      "assetId": 559688599,
+      "name": "sha256-9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda.source",
+      "expected": {
+        "bytes": 1375889,
+        "sha256": "9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda"
+      },
+      "startedAtUtc": "2026-09-12T17:57:21.458291+00:00",
+      "completedAtUtc": "2026-09-12T17:57:21.953822+00:00",
+      "httpStatus": 200,
+      "bytes": 1375889,
+      "sha256": "9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/6bd194e3-b5a7-4942-87d1-0a3788ad3327"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/6bd194e3-b5a7-4942-87d1-0a3788ad3327",
+      "contentLength": 1375889,
+      "elapsedSeconds": 0.496
+    },
+    {
+      "assetId": 559688648,
+      "name": "sha256-9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f.source",
+      "expected": {
+        "bytes": 2584021,
+        "sha256": "9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f"
+      },
+      "startedAtUtc": "2026-09-12T17:57:21.953878+00:00",
+      "completedAtUtc": "2026-09-12T17:57:22.568252+00:00",
+      "httpStatus": 200,
+      "bytes": 2584021,
+      "sha256": "9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/5b998fad-bc31-4a71-a3ed-5082be9c3378"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/5b998fad-bc31-4a71-a3ed-5082be9c3378",
+      "contentLength": 2584021,
+      "elapsedSeconds": 0.614
+    },
+    {
+      "assetId": 559688663,
+      "name": "sha256-a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2.source",
+      "expected": {
+        "bytes": 1060772,
+        "sha256": "a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:22.174567+00:00",
+      "completedAtUtc": "2026-09-12T17:57:22.690898+00:00",
+      "httpStatus": 200,
+      "bytes": 1060772,
+      "sha256": "a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/63e32ef5-b067-44f9-a1c3-1fe5732a00ed"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/63e32ef5-b067-44f9-a1c3-1fe5732a00ed",
+      "contentLength": 1060772,
+      "elapsedSeconds": 0.516
+    },
+    {
+      "assetId": 559688719,
+      "name": "sha256-a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2.source",
+      "expected": {
+        "bytes": 1806557,
+        "sha256": "a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:22.568331+00:00",
+      "completedAtUtc": "2026-09-12T17:57:23.040264+00:00",
+      "httpStatus": 200,
+      "bytes": 1806557,
+      "sha256": "a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c01d278f-9b66-4df2-9ce4-f3696d2897f5"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c01d278f-9b66-4df2-9ce4-f3696d2897f5",
+      "contentLength": 1806557,
+      "elapsedSeconds": 0.472
+    },
+    {
+      "assetId": 559688726,
+      "name": "sha256-a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282.source",
+      "expected": {
+        "bytes": 1744796,
+        "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282"
+      },
+      "startedAtUtc": "2026-09-12T17:57:22.690965+00:00",
+      "completedAtUtc": "2026-09-12T17:57:23.201688+00:00",
+      "httpStatus": 200,
+      "bytes": 1744796,
+      "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/370c8de2-eea8-45df-855c-8924b197433e"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/370c8de2-eea8-45df-855c-8924b197433e",
+      "contentLength": 1744796,
+      "elapsedSeconds": 0.511
+    },
+    {
+      "assetId": 559688804,
+      "name": "sha256-a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0.source",
+      "expected": {
+        "bytes": 2069602,
+        "sha256": "a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0"
+      },
+      "startedAtUtc": "2026-09-12T17:57:23.040339+00:00",
+      "completedAtUtc": "2026-09-12T17:57:23.565221+00:00",
+      "httpStatus": 200,
+      "bytes": 2069602,
+      "sha256": "a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/d6ff79b3-d05b-416a-be70-8f46478ad10c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/d6ff79b3-d05b-416a-be70-8f46478ad10c",
+      "contentLength": 2069602,
+      "elapsedSeconds": 0.525
+    },
+    {
+      "assetId": 559688811,
+      "name": "sha256-a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68.source",
+      "expected": {
+        "bytes": 26303933,
+        "sha256": "a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68"
+      },
+      "startedAtUtc": "2026-09-12T17:57:23.201797+00:00",
+      "completedAtUtc": "2026-09-12T17:57:24.566856+00:00",
+      "httpStatus": 200,
+      "bytes": 26303933,
+      "sha256": "a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/d34bdf03-5074-47e9-a97b-e8662d5c0ba2"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/d34bdf03-5074-47e9-a97b-e8662d5c0ba2",
+      "contentLength": 26303933,
+      "elapsedSeconds": 1.365
+    },
+    {
+      "assetId": 559688818,
+      "name": "sha256-a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a.source",
+      "expected": {
+        "bytes": 2157028,
+        "sha256": "a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a"
+      },
+      "startedAtUtc": "2026-09-12T17:57:23.565395+00:00",
+      "completedAtUtc": "2026-09-12T17:57:24.394960+00:00",
+      "httpStatus": 200,
+      "bytes": 2157028,
+      "sha256": "a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/3d300b9d-daaf-49f9-ba39-3f2920f28750"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/3d300b9d-daaf-49f9-ba39-3f2920f28750",
+      "contentLength": 2157028,
+      "elapsedSeconds": 0.83
+    },
+    {
+      "assetId": 559688883,
+      "name": "sha256-ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca.source",
+      "expected": {
+        "bytes": 394144,
+        "sha256": "ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca"
+      },
+      "startedAtUtc": "2026-09-12T17:57:24.395032+00:00",
+      "completedAtUtc": "2026-09-12T17:57:24.897763+00:00",
+      "httpStatus": 200,
+      "bytes": 394144,
+      "sha256": "ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/18fd720f-580a-4629-81db-3e8a90b874fa"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/18fd720f-580a-4629-81db-3e8a90b874fa",
+      "contentLength": 394144,
+      "elapsedSeconds": 0.503
+    },
+    {
+      "assetId": 559688892,
+      "name": "sha256-ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2.source",
+      "expected": {
+        "bytes": 818771,
+        "sha256": "ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:24.566945+00:00",
+      "completedAtUtc": "2026-09-12T17:57:25.056897+00:00",
+      "httpStatus": 200,
+      "bytes": 818771,
+      "sha256": "ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/11fa866f-f91f-4a71-8540-34ab78bff981"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/11fa866f-f91f-4a71-8540-34ab78bff981",
+      "contentLength": 818771,
+      "elapsedSeconds": 0.49
+    },
+    {
+      "assetId": 559688914,
+      "name": "sha256-b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b.source",
+      "expected": {
+        "bytes": 1203792,
+        "sha256": "b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b"
+      },
+      "startedAtUtc": "2026-09-12T17:57:24.897840+00:00",
+      "completedAtUtc": "2026-09-12T17:57:25.372831+00:00",
+      "httpStatus": 200,
+      "bytes": 1203792,
+      "sha256": "b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/fefafc1f-5e92-43e3-9be2-5c07290b6f12"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/fefafc1f-5e92-43e3-9be2-5c07290b6f12",
+      "contentLength": 1203792,
+      "elapsedSeconds": 0.475
+    },
+    {
+      "assetId": 559688923,
+      "name": "sha256-b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434.source",
+      "expected": {
+        "bytes": 2321044,
+        "sha256": "b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434"
+      },
+      "startedAtUtc": "2026-09-12T17:57:25.057071+00:00",
+      "completedAtUtc": "2026-09-12T17:57:25.594265+00:00",
+      "httpStatus": 200,
+      "bytes": 2321044,
+      "sha256": "b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/b09814ec-0fbf-43ea-be32-4b5a1cbfb656"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/b09814ec-0fbf-43ea-be32-4b5a1cbfb656",
+      "contentLength": 2321044,
+      "elapsedSeconds": 0.537
+    },
+    {
+      "assetId": 559688958,
+      "name": "sha256-b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d.source",
+      "expected": {
+        "bytes": 2185204,
+        "sha256": "b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d"
+      },
+      "startedAtUtc": "2026-09-12T17:57:25.372893+00:00",
+      "completedAtUtc": "2026-09-12T17:57:25.898890+00:00",
+      "httpStatus": 200,
+      "bytes": 2185204,
+      "sha256": "b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/8d9058b5-c7f5-4c6c-beaa-0299041b21ff"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/8d9058b5-c7f5-4c6c-beaa-0299041b21ff",
+      "contentLength": 2185204,
+      "elapsedSeconds": 0.526
+    },
+    {
+      "assetId": 559689108,
+      "name": "sha256-b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434.source",
+      "expected": {
+        "bytes": 2133974,
+        "sha256": "b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434"
+      },
+      "startedAtUtc": "2026-09-12T17:57:25.594454+00:00",
+      "completedAtUtc": "2026-09-12T17:57:26.117514+00:00",
+      "httpStatus": 200,
+      "bytes": 2133974,
+      "sha256": "b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/6d28945c-63c3-4b8b-abb0-7b94ea9a0d89"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/6d28945c-63c3-4b8b-abb0-7b94ea9a0d89",
+      "contentLength": 2133974,
+      "elapsedSeconds": 0.523
+    },
+    {
+      "assetId": 559689134,
+      "name": "sha256-b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7.source",
+      "expected": {
+        "bytes": 835657,
+        "sha256": "b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7"
+      },
+      "startedAtUtc": "2026-09-12T17:57:25.898978+00:00",
+      "completedAtUtc": "2026-09-12T17:57:26.369973+00:00",
+      "httpStatus": 200,
+      "bytes": 835657,
+      "sha256": "b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/fec6180a-ae2a-47ac-a055-948061b7df05"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/fec6180a-ae2a-47ac-a055-948061b7df05",
+      "contentLength": 835657,
+      "elapsedSeconds": 0.471
+    },
+    {
+      "assetId": 559689193,
+      "name": "sha256-bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438.source",
+      "expected": {
+        "bytes": 2590400,
+        "sha256": "bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438"
+      },
+      "startedAtUtc": "2026-09-12T17:57:26.117615+00:00",
+      "completedAtUtc": "2026-09-12T17:57:26.665001+00:00",
+      "httpStatus": 200,
+      "bytes": 2590400,
+      "sha256": "bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/fc8cb2e0-cce9-4070-be4c-d943348fdf43"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/fc8cb2e0-cce9-4070-be4c-d943348fdf43",
+      "contentLength": 2590400,
+      "elapsedSeconds": 0.547
+    },
+    {
+      "assetId": 559689209,
+      "name": "sha256-bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1.source",
+      "expected": {
+        "bytes": 1713069,
+        "sha256": "bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1"
+      },
+      "startedAtUtc": "2026-09-12T17:57:26.370029+00:00",
+      "completedAtUtc": "2026-09-12T17:57:26.869849+00:00",
+      "httpStatus": 200,
+      "bytes": 1713069,
+      "sha256": "bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/13a786cc-5fe6-4454-be3b-87d15a872692"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/13a786cc-5fe6-4454-be3b-87d15a872692",
+      "contentLength": 1713069,
+      "elapsedSeconds": 0.5
+    },
+    {
+      "assetId": 559689274,
+      "name": "sha256-bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e.source",
+      "expected": {
+        "bytes": 8890,
+        "sha256": "bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e"
+      },
+      "startedAtUtc": "2026-09-12T17:57:26.665095+00:00",
+      "completedAtUtc": "2026-09-12T17:57:27.031665+00:00",
+      "httpStatus": 200,
+      "bytes": 8890,
+      "sha256": "bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/5fc0573c-bfa3-4cb5-94fd-e3f0e92f9cfe"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/5fc0573c-bfa3-4cb5-94fd-e3f0e92f9cfe",
+      "contentLength": 8890,
+      "elapsedSeconds": 0.367
+    },
+    {
+      "assetId": 559689289,
+      "name": "sha256-c76f268f5054024e962f2515a0e522baf85313064f6740d80375afc850787a38.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-c76f268f5054024e962f2515a0e522baf85313064f6740d80375afc850787a38.source",
+      "expected": {
+        "bytes": 17494,
+        "sha256": "c76f268f5054024e962f2515a0e522baf85313064f6740d80375afc850787a38"
+      },
+      "startedAtUtc": "2026-09-12T17:57:26.870077+00:00",
+      "completedAtUtc": "2026-09-12T17:57:27.224437+00:00",
+      "httpStatus": 200,
+      "bytes": 17494,
+      "sha256": "c76f268f5054024e962f2515a0e522baf85313064f6740d80375afc850787a38",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/5fea26f8-8ba3-4cb9-90a3-edb610b57519"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/5fea26f8-8ba3-4cb9-90a3-edb610b57519",
+      "contentLength": 17494,
+      "elapsedSeconds": 0.354
+    },
+    {
+      "assetId": 559689294,
+      "name": "sha256-d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b.source",
+      "expected": {
+        "bytes": 2261822,
+        "sha256": "d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b"
+      },
+      "startedAtUtc": "2026-09-12T17:57:27.031733+00:00",
+      "completedAtUtc": "2026-09-12T17:57:27.573743+00:00",
+      "httpStatus": 200,
+      "bytes": 2261822,
+      "sha256": "d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/ece80b49-a5bf-45be-b003-17b6755f1706"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/ece80b49-a5bf-45be-b003-17b6755f1706",
+      "contentLength": 2261822,
+      "elapsedSeconds": 0.542
+    },
+    {
+      "assetId": 559689320,
+      "name": "sha256-dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6.source",
+      "expected": {
+        "bytes": 1432141,
+        "sha256": "dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6"
+      },
+      "startedAtUtc": "2026-09-12T17:57:27.224504+00:00",
+      "completedAtUtc": "2026-09-12T17:57:27.732024+00:00",
+      "httpStatus": 200,
+      "bytes": 1432141,
+      "sha256": "dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/068ff426-d9bf-4adc-a088-ac228220f061"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/068ff426-d9bf-4adc-a088-ac228220f061",
+      "contentLength": 1432141,
+      "elapsedSeconds": 0.508
+    },
+    {
+      "assetId": 559689366,
+      "name": "sha256-dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77.source",
+      "expected": {
+        "bytes": 2025588,
+        "sha256": "dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77"
+      },
+      "startedAtUtc": "2026-09-12T17:57:27.573814+00:00",
+      "completedAtUtc": "2026-09-12T17:57:28.111874+00:00",
+      "httpStatus": 200,
+      "bytes": 2025588,
+      "sha256": "dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c70452dc-6c43-493a-9cb9-8958e98597d1"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c70452dc-6c43-493a-9cb9-8958e98597d1",
+      "contentLength": 2025588,
+      "elapsedSeconds": 0.538
+    },
+    {
+      "assetId": 559689370,
+      "name": "sha256-ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e.source",
+      "expected": {
+        "bytes": 1524133,
+        "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e"
+      },
+      "startedAtUtc": "2026-09-12T17:57:27.732143+00:00",
+      "completedAtUtc": "2026-09-12T17:57:28.303093+00:00",
+      "httpStatus": 200,
+      "bytes": 1524133,
+      "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c2dde0c4-8ecc-4e18-86ae-49d2ebbb67d3"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c2dde0c4-8ecc-4e18-86ae-49d2ebbb67d3",
+      "contentLength": 1524133,
+      "elapsedSeconds": 0.571
+    },
+    {
+      "assetId": 559689432,
+      "name": "sha256-dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b.source",
+      "expected": {
+        "bytes": 32024340,
+        "sha256": "dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b"
+      },
+      "startedAtUtc": "2026-09-12T17:57:28.112015+00:00",
+      "completedAtUtc": "2026-09-12T17:57:29.572126+00:00",
+      "httpStatus": 200,
+      "bytes": 32024340,
+      "sha256": "dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/66cbd204-6bf7-4bcc-9855-89e46bfc12cc"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/66cbd204-6bf7-4bcc-9855-89e46bfc12cc",
+      "contentLength": 32024340,
+      "elapsedSeconds": 1.46
+    },
+    {
+      "assetId": 559689441,
+      "name": "sha256-e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927.source",
+      "expected": {
+        "bytes": 12550723,
+        "sha256": "e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927"
+      },
+      "startedAtUtc": "2026-09-12T17:57:28.303150+00:00",
+      "completedAtUtc": "2026-09-12T17:57:29.961637+00:00",
+      "httpStatus": 200,
+      "bytes": 12550723,
+      "sha256": "e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/c3e5771a-e2de-4698-8f52-7a0de1f9a35c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/c3e5771a-e2de-4698-8f52-7a0de1f9a35c",
+      "contentLength": 12550723,
+      "elapsedSeconds": 1.658
+    },
+    {
+      "assetId": 559689594,
+      "name": "sha256-e335aeb44fa36cde60ecbb6a9f8be6f5d449d645ce9b0199ee53a7e6728d19d2.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-e335aeb44fa36cde60ecbb6a9f8be6f5d449d645ce9b0199ee53a7e6728d19d2.source",
+      "expected": {
+        "bytes": 2825549,
+        "sha256": "e335aeb44fa36cde60ecbb6a9f8be6f5d449d645ce9b0199ee53a7e6728d19d2"
+      },
+      "startedAtUtc": "2026-09-12T17:57:29.572180+00:00",
+      "completedAtUtc": "2026-09-12T17:57:30.126469+00:00",
+      "httpStatus": 200,
+      "bytes": 2825549,
+      "sha256": "e335aeb44fa36cde60ecbb6a9f8be6f5d449d645ce9b0199ee53a7e6728d19d2",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/4c391f19-fd84-490c-b2ee-a26def7ba938"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/4c391f19-fd84-490c-b2ee-a26def7ba938",
+      "contentLength": 2825549,
+      "elapsedSeconds": 0.554
+    },
+    {
+      "assetId": 559689663,
+      "name": "sha256-e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638.source",
+      "expected": {
+        "bytes": 1570732,
+        "sha256": "e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638"
+      },
+      "startedAtUtc": "2026-09-12T17:57:29.961696+00:00",
+      "completedAtUtc": "2026-09-12T17:57:30.489272+00:00",
+      "httpStatus": 200,
+      "bytes": 1570732,
+      "sha256": "e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/52e1deb6-f95b-405b-839e-d0b59b5daa00"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/52e1deb6-f95b-405b-839e-d0b59b5daa00",
+      "contentLength": 1570732,
+      "elapsedSeconds": 0.528
+    },
+    {
+      "assetId": 559689710,
+      "name": "sha256-e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238.source",
+      "expected": {
+        "bytes": 2256800,
+        "sha256": "e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238"
+      },
+      "startedAtUtc": "2026-09-12T17:57:30.126543+00:00",
+      "completedAtUtc": "2026-09-12T17:57:31.406309+00:00",
+      "httpStatus": 200,
+      "bytes": 2256800,
+      "sha256": "e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/5f0a4a75-e27b-4053-8d5b-928bf92e015c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/5f0a4a75-e27b-4053-8d5b-928bf92e015c",
+      "contentLength": 2256800,
+      "elapsedSeconds": 1.28
+    },
+    {
+      "assetId": 559689718,
+      "name": "sha256-e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff.source",
+      "expected": {
+        "bytes": 511969,
+        "sha256": "e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff"
+      },
+      "startedAtUtc": "2026-09-12T17:57:30.489336+00:00",
+      "completedAtUtc": "2026-09-12T17:57:30.945726+00:00",
+      "httpStatus": 200,
+      "bytes": 511969,
+      "sha256": "e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/25914434-b3a3-4cb4-87b1-f83d32910978"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/25914434-b3a3-4cb4-87b1-f83d32910978",
+      "contentLength": 511969,
+      "elapsedSeconds": 0.456
+    },
+    {
+      "assetId": 559689746,
+      "name": "sha256-e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e.source",
+      "expected": {
+        "bytes": 2514244,
+        "sha256": "e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e"
+      },
+      "startedAtUtc": "2026-09-12T17:57:30.945805+00:00",
+      "completedAtUtc": "2026-09-12T17:57:31.515526+00:00",
+      "httpStatus": 200,
+      "bytes": 2514244,
+      "sha256": "e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/345c4167-57d8-4db7-b83e-0d1947b4ec99"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/345c4167-57d8-4db7-b83e-0d1947b4ec99",
+      "contentLength": 2514244,
+      "elapsedSeconds": 0.57
+    },
+    {
+      "assetId": 559689775,
+      "name": "sha256-eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce.source",
+      "expected": {
+        "bytes": 544534,
+        "sha256": "eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce"
+      },
+      "startedAtUtc": "2026-09-12T17:57:31.406387+00:00",
+      "completedAtUtc": "2026-09-12T17:57:32.096462+00:00",
+      "httpStatus": 200,
+      "bytes": 544534,
+      "sha256": "eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/8628234e-28d5-4773-9f3d-2402e504c6d6"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/8628234e-28d5-4773-9f3d-2402e504c6d6",
+      "contentLength": 544534,
+      "elapsedSeconds": 0.69
+    },
+    {
+      "assetId": 559689792,
+      "name": "sha256-ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96.source",
+      "expected": {
+        "bytes": 37320,
+        "sha256": "ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96"
+      },
+      "startedAtUtc": "2026-09-12T17:57:31.515612+00:00",
+      "completedAtUtc": "2026-09-12T17:57:31.939944+00:00",
+      "httpStatus": 200,
+      "bytes": 37320,
+      "sha256": "ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/3d2d6ecb-9c8a-4eb7-a7d8-10cbac516f93"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/3d2d6ecb-9c8a-4eb7-a7d8-10cbac516f93",
+      "contentLength": 37320,
+      "elapsedSeconds": 0.424
+    },
+    {
+      "assetId": 559689809,
+      "name": "sha256-f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25.source",
+      "expected": {
+        "bytes": 454428,
+        "sha256": "f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25"
+      },
+      "startedAtUtc": "2026-09-12T17:57:31.940027+00:00",
+      "completedAtUtc": "2026-09-12T17:57:32.441626+00:00",
+      "httpStatus": 200,
+      "bytes": 454428,
+      "sha256": "f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/48176713-eae1-4950-992b-cd5274261ade"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/48176713-eae1-4950-992b-cd5274261ade",
+      "contentLength": 454428,
+      "elapsedSeconds": 0.502
+    },
+    {
+      "assetId": 559689810,
+      "name": "sha256-ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348.source",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sha256-ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348.source",
+      "expected": {
+        "bytes": 337968,
+        "sha256": "ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348"
+      },
+      "startedAtUtc": "2026-09-12T17:57:32.096531+00:00",
+      "completedAtUtc": "2026-09-12T17:57:32.563978+00:00",
+      "httpStatus": 200,
+      "bytes": 337968,
+      "sha256": "ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/baebf95d-fb5c-47cb-8c65-fed9812b180d"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/baebf95d-fb5c-47cb-8c65-fed9812b180d",
+      "contentLength": 337968,
+      "elapsedSeconds": 0.467
+    },
+    {
+      "assetId": 559685322,
+      "name": "sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c.tar.gz",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c.tar.gz",
+      "expected": {
+        "bytes": 18367757,
+        "sha256": "ebfde8b795e430dd1fc36a8e5c4778322796e48c27d581033e6eae029fc5c39b"
+      },
+      "startedAtUtc": "2026-09-12T17:57:32.441681+00:00",
+      "completedAtUtc": "2026-09-12T17:57:33.367950+00:00",
+      "httpStatus": 200,
+      "bytes": 18367757,
+      "sha256": "ebfde8b795e430dd1fc36a8e5c4778322796e48c27d581033e6eae029fc5c39b",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/e098c390-78b2-4da9-ab4d-f3d1177aba0c"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/e098c390-78b2-4da9-ab4d-f3d1177aba0c",
+      "contentLength": 18367757,
+      "elapsedSeconds": 0.926
+    },
+    {
+      "assetId": 559689820,
+      "name": "source-inputs.json",
+      "url": "https://github.com/hashfunction/brushquay/releases/download/bristlune-source-inputs-20260912/source-inputs.json",
+      "expected": {
+        "bytes": 380998,
+        "sha256": "b392a2c27f0c4c14b65a3df76fc1fe168510be49e4a9660628a5dcb5cee66645"
+      },
+      "startedAtUtc": "2026-09-12T17:57:32.564026+00:00",
+      "completedAtUtc": "2026-09-12T17:57:33.174707+00:00",
+      "httpStatus": 200,
+      "bytes": 380998,
+      "sha256": "b392a2c27f0c4c14b65a3df76fc1fe168510be49e4a9660628a5dcb5cee66645",
+      "status": "verified",
+      "tlsCertificateVerified": true,
+      "redirects": [
+        {
+          "status": 302,
+          "host": "release-assets.githubusercontent.com",
+          "path": "/github-production-release-asset/1365775431/f497f0e5-bfa8-499e-a946-3a256c58661a"
+        }
+      ],
+      "error": null,
+      "finalHost": "release-assets.githubusercontent.com",
+      "finalPath": "/github-production-release-asset/1365775431/f497f0e5-bfa8-499e-a946-3a256c58661a",
+      "contentLength": 380998,
+      "elapsedSeconds": 0.611
+    }
+  ]
+}

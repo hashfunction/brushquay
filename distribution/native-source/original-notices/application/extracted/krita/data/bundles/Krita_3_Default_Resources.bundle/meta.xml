@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta:meta>
+ <meta:generator>Krita (4.0.0-beta1 (git 4394a31))</meta:generator>
+ <meta:bundle-version>1</meta:bundle-version>
+ <dc:author>Timothée Giet, Ramon Miranda, David Revoy, and others.</dc:author>
+ <dc:description>This is the Resource Bundle containing all the standard brushes and resource of 2.4 to 3.3. Its initial incarnation has been put together by Timothée Giet, Ramon Miranda and David Revoy, and has been extended and modified by many others over the years.</dc:description>
+ <meta:initial-creator>Timothée Giet, Ramon Miranda, David Revoy, and others.</meta:initial-creator>
+ <dc:creator>Timothée Giet, Ramon Miranda, David Revoy, and others.</dc:creator>
+ <meta:creation-date>08/01/2018</meta:creation-date>
+ <meta:dc-date>08/01/2018</meta:dc-date>
+ <meta:meta-userdefined meta:name="email" meta:value="foundation@krita.org"/>
+ <meta:meta-userdefined meta:name="license" meta:value="CC-0"/>
+ <meta:meta-userdefined meta:name="website" meta:value="http://krita.org"/>
+</meta:meta>

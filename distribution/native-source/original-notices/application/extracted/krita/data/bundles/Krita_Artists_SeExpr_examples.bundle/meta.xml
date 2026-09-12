@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta:meta>
+ <meta:generator>Krita (4.3.1-alpha (git a767998))</meta:generator>
+ <meta:bundle-version>1</meta:bundle-version>
+ <dc:author>Wolthera van Hövell, David Revoy</dc:author>
+ <dc:description>A bundle of community-contributed SeExpr scripts.</dc:description>
+ <meta:initial-creator>Wolthera van Hövell, David Revoy</meta:initial-creator>
+ <dc:creator>Wolthera van Hövell, David Revoy</dc:creator>
+ <meta:creation-date>2020-08-07T13:07:51Z</meta:creation-date>
+ <meta:dc-date>2020-08-07T13:07:51Z</meta:dc-date>
+ <meta:meta-userdefined meta:name="email" meta:value=""/>
+ <meta:meta-userdefined meta:name="license" meta:value="CC-BY-SA"/>
+ <meta:meta-userdefined meta:name="website" meta:value="https://krita-artists.org/t/procedural-texture-generator-example-and-wishes/7638"/>
+</meta:meta>

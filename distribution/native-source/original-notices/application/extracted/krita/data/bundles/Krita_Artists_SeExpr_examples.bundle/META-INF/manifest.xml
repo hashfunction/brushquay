@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" manifest:version="1.2">
+ <manifest:file-entry manifest:media-type="application/x-krita-resourcebundle" manifest:full-path="/"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/David_Revoy's_Electric_Arcs.kse" manifest:md5sum="6ee7dec7951fb31ae914c51156af4e94"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/David_Revoy's_Example.kse" manifest:md5sum="d33b4f78f553f10b26f55e92f77dc771"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Black_Clouds.kse" manifest:md5sum="55286001ba83d446000fae28b738a63b"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Cellnoise.kse" manifest:md5sum="d9afcbd3e4c3eaf9427a02f57322d3cc"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Circles_with_Voronoi.kse" manifest:md5sum="137c079d04319aa45aafd188041f7bb5"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Classic_Truchet.kse" manifest:md5sum="ce39ff20cfdbb93c48c6025fd8a9b2d3"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Color_Cellnoise.kse" manifest:md5sum="746de07366ff235645928d9477d32d57"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Color_Perlin_Noise_1983.kse" manifest:md5sum="885ee24a676eca36fb889102c9adc571"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Color_Turbulence.kse" manifest:md5sum="20078bcc1e83f471a1cd52f4cbe2f2cc"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Color_Voronoi.kse" manifest:md5sum="a3ea38366075b56d7b461820f8a1b441"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Color_fractal_Brownian_Motion.kse" manifest:md5sum="2165cd54da69675ca61693c820af6a9c"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Conical_Gradient.kse" manifest:md5sum="29619a3175ae8a975c26c62c6b870dbf"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Dendrite_Clouds.kse" manifest:md5sum="88a8ae5e72a1ee2b91c9a221b9eecb4d"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Dirty_Screentone.kse" manifest:md5sum="7d8d31db9dfa1ab3771c6433914c9189"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Dirty_Squares-Lines.kse" manifest:md5sum="18c89f2b64bd0403c18e987d9bdac746"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Dotted_Field.kse" manifest:md5sum="180bc68d0a1e4c088c7b457160edf5e4"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Grey_Clouds.kse" manifest:md5sum="032604a68c5964dabf5515bc01c9a3bc"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Halfround_Truchet.kse" manifest:md5sum="60376801515abcf00ecb7e7b81216a8b"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Linear_Gradient.kse" manifest:md5sum="96fb541629b91491d105b4a26fb36d7e"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Malachite.kse" manifest:md5sum="75e3d8569f7f0fdf5c4690a21657bdae"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Maze_Truchet.kse" manifest:md5sum="1731c080801c30300fd1cb099b726a8a"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Mercurial.kse" manifest:md5sum="dcd5be43bf5af67c51e71762f5c1a925"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Moiré_Pattern.kse" manifest:md5sum="624fa5af3b6dd052a84eb9833739fdeb"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Perlin_Noise_1983.kse" manifest:md5sum="6661ca0eae86384aa900cdcdb49d6119"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Petri_Dish.kse" manifest:md5sum="d691d6c7ab3dd880e5471ced57df8eb0"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Radial_Lines.kse" manifest:md5sum="c3c2e9a501c02f36d658489735228559"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Random_Rotated_Hatches.kse" manifest:md5sum="dce95ac7d64ebf6abfa77c720af27766"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Screentones.kse" manifest:md5sum="a206436daa70b62914c109bf13e9da0a"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Tiled_Dots.kse" manifest:md5sum="b66d10af20f815282e32e0bbbbb0fc52"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Tiled_Squares.kse" manifest:md5sum="ca095a5cb3baa4e2d879ede7619b3243"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Turbulence.kse" manifest:md5sum="0e3ff7b296400d72dd678236fca893eb"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Voronoi_cells.kse" manifest:md5sum="83f618a58168269f37af0c1701ddede2"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_Weird_Rectangle_Pattern.kse" manifest:md5sum="5378509b859cfc67aebec49820d60305"/>
+ <manifest:file-entry manifest:media-type="seexpr_scripts" manifest:full-path="seexpr_scripts/Wolthera's_fractional_Brownian_Motion.kse" manifest:md5sum="89bec43f393a04d154bf0ed1ae443c8d"/>
+</manifest:manifest>

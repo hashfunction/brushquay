@@ -85,3 +85,23 @@ def verify_manifest_identity(data,identity):
         raise ValueError('Unexpected child in manifest identity fields')
     return {'package':dict(package.attrib),'application':dict(application.attrib),
             'capabilities':['runFullTrust'],'targetDeviceFamily':dict(target.attrib)}
+
+
+def identity_for_mode(mode):
+    """Only these two identities are accepted by the release workflow."""
+    pairs={'qualification':('Trieflow.Bristlune.Qualification','CN=Bristlune-CI-Qualification'),
+           'store':('1659hashfunction.BrushQuay','CN=B6A2631A-FD32-45CC-AE12-82466975F528')}
+    if not isinstance(mode,str) or mode not in pairs:raise ValueError('Unknown fixed package identity mode')
+    name,publisher=pairs[mode]
+    return dict(PackageName=name,Publisher=publisher,Version='1.0.1.0',
+                MinWindowsVersion='10.0.19041.0',MaxWindowsVersionTested='10.0.26100.0')
+
+
+def require_mode(identity,mode):
+    if identity!=identity_for_mode(mode):raise ValueError('Package identity differs from selected fixed mode')
+    return identity
+
+
+def family_for_mode(mode):
+    identity=identity_for_mode(mode)
+    return identity['PackageName']+('_kheb0ettnemtj' if mode=='qualification' else '_r3hxytd7jt6c4')

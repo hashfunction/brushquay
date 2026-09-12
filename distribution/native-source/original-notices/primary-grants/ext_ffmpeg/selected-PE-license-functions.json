@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "observedAtUtc": "2026-09-12T18:22:32.233373+00:00",
+  "scope": "Read-only exact PE exported function bodies; no DLL code executed. Runtime selection remains unchanged.",
+  "archive": {
+    "url": "https://invent.kde.org/api/v4/projects/16406/packages/generic/ext_ffmpeg/transition.now-update-qt-to-6.11.0-1788899691/archive.tar",
+    "bytes": 149012480,
+    "sha256": "1b275992dace0c159c72bc0ca9772d6a83d3b5c0a6b64dab6595092ec2381cdd"
+  },
+  "files": [
+    {
+      "member": "bin/libavcodec-61.dll",
+      "bytes": 92224000,
+      "sha256": "a3151602e32fed9e25d644744d30a8acfae6409d4ccba139689433becc704810",
+      "imageBase": 5368709120,
+      "exports": {
+        "avcodec_configuration": {
+          "functionRva": 10635616,
+          "functionFileOffset": 10632544,
+          "instructionBytes": "488d05c85e9400c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 20359215,
+          "returnedStringFileOffset": 20353583,
+          "value": "-Dbuildtype=debugoptimized -Dno_uninit_ub=true -Denable-ssp=enabled -Denable-cfguard=disabled -Ddefault_library=shared -Dprograms=enabled -Dtests=disabled -Dffmpeg=enabled -Dffprobe=enabled -Dffplay=disabled -Davdevice=disabled -Davcodec=enabled -Davformat=enabled -Davutil=enabled -Dswresample=enabled -Dswscale=enabled -Dpostproc=disabled -Dsdl2=enabled -Dlibaom=enabled -Dzlib=enabled -Dimage2_demuxer=enabled -Dimage2_alias_pix_demuxer=enabled -Dimage2_brender_pix_demuxer=enabled -Dwebm_muxer=enabled -Dmatroska_muxer=enabled -Dogg_muxer=enabled -Dapng_muxer=enabled -Dlibwebp=enabled -Dpng_encoder=enabled -Dpng_decoder=enabled -Dapng_encoder=enabled -Dapng_decoder=enabled -Dlibaom_av1_encoder=enabled -Dlibvpl=auto -Dlibvpx=enabled -Dlibvpx_vp9_encoder=enabled -Dlibvpx_vp8_encoder=enabled -Dlibopenh264=enabled -Dlibtheora=enabled -Dflac_encoder=enabled -Daac_encoder=enabled -Dlibmp3lame=enabled -Dlibopus=enabled -Dlibvorbis=enabled -Dpkgconfig.relocatable=true -Dprefix=C:/_/ext_ffmpeg/_install -Dlibdir=lib --native-file=C:/_/ext_ffmpeg/_build/meson-compiler.ini"
+        },
+        "avcodec_license": {
+          "functionRva": 10635632,
+          "functionFileOffset": 10632560,
+          "instructionBytes": "488d0500639400c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 20360311,
+          "returnedStringFileOffset": 20354679,
+          "value": "LGPL version 2.1 or later"
+        }
+      }
+    },
+    {
+      "member": "bin/libavfilter-10.dll",
+      "bytes": 20639232,
+      "sha256": "bdf9a8eacbb2b4e90919c098ded82ee88bc37f3915e3b913f48ab4e4ff21267b",
+      "imageBase": 5368709120,
+      "exports": {
+        "avfilter_configuration": {
+          "functionRva": 216448,
+          "functionFileOffset": 213376,
+          "instructionBytes": "488d0528252f00c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 3306159,
+          "returnedStringFileOffset": 3301039,
+          "value": "-Dbuildtype=debugoptimized -Dno_uninit_ub=true -Denable-ssp=enabled -Denable-cfguard=disabled -Ddefault_library=shared -Dprograms=enabled -Dtests=disabled -Dffmpeg=enabled -Dffprobe=enabled -Dffplay=disabled -Davdevice=disabled -Davcodec=enabled -Davformat=enabled -Davutil=enabled -Dswresample=enabled -Dswscale=enabled -Dpostproc=disabled -Dsdl2=enabled -Dlibaom=enabled -Dzlib=enabled -Dimage2_demuxer=enabled -Dimage2_alias_pix_demuxer=enabled -Dimage2_brender_pix_demuxer=enabled -Dwebm_muxer=enabled -Dmatroska_muxer=enabled -Dogg_muxer=enabled -Dapng_muxer=enabled -Dlibwebp=enabled -Dpng_encoder=enabled -Dpng_decoder=enabled -Dapng_encoder=enabled -Dapng_decoder=enabled -Dlibaom_av1_encoder=enabled -Dlibvpl=auto -Dlibvpx=enabled -Dlibvpx_vp9_encoder=enabled -Dlibvpx_vp8_encoder=enabled -Dlibopenh264=enabled -Dlibtheora=enabled -Dflac_encoder=enabled -Daac_encoder=enabled -Dlibmp3lame=enabled -Dlibopus=enabled -Dlibvorbis=enabled -Dpkgconfig.relocatable=true -Dprefix=C:/_/ext_ffmpeg/_install -Dlibdir=lib --native-file=C:/_/ext_ffmpeg/_build/meson-compiler.ini"
+        },
+        "avfilter_license": {
+          "functionRva": 216464,
+          "functionFileOffset": 213392,
+          "instructionBytes": "488d0561292f00c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 3307256,
+          "returnedStringFileOffset": 3302136,
+          "value": "LGPL version 2.1 or later"
+        }
+      }
+    },
+    {
+      "member": "bin/libavformat-61.dll",
+      "bytes": 24652288,
+      "sha256": "ac4f54d669c2e396769cf76a0a1e0c7ad34f4d51f9d6bc70116bbe3b2574cdcd",
+      "imageBase": 5368709120,
+      "exports": {
+        "avformat_configuration": {
+          "functionRva": 138528,
+          "functionFileOffset": 135456,
+          "instructionBytes": "488d05e8d51800c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 1766159,
+          "returnedStringFileOffset": 1761551,
+          "value": "-Dbuildtype=debugoptimized -Dno_uninit_ub=true -Denable-ssp=enabled -Denable-cfguard=disabled -Ddefault_library=shared -Dprograms=enabled -Dtests=disabled -Dffmpeg=enabled -Dffprobe=enabled -Dffplay=disabled -Davdevice=disabled -Davcodec=enabled -Davformat=enabled -Davutil=enabled -Dswresample=enabled -Dswscale=enabled -Dpostproc=disabled -Dsdl2=enabled -Dlibaom=enabled -Dzlib=enabled -Dimage2_demuxer=enabled -Dimage2_alias_pix_demuxer=enabled -Dimage2_brender_pix_demuxer=enabled -Dwebm_muxer=enabled -Dmatroska_muxer=enabled -Dogg_muxer=enabled -Dapng_muxer=enabled -Dlibwebp=enabled -Dpng_encoder=enabled -Dpng_decoder=enabled -Dapng_encoder=enabled -Dapng_decoder=enabled -Dlibaom_av1_encoder=enabled -Dlibvpl=auto -Dlibvpx=enabled -Dlibvpx_vp9_encoder=enabled -Dlibvpx_vp8_encoder=enabled -Dlibopenh264=enabled -Dlibtheora=enabled -Dflac_encoder=enabled -Daac_encoder=enabled -Dlibmp3lame=enabled -Dlibopus=enabled -Dlibvorbis=enabled -Dpkgconfig.relocatable=true -Dprefix=C:/_/ext_ffmpeg/_install -Dlibdir=lib --native-file=C:/_/ext_ffmpeg/_build/meson-compiler.ini"
+        },
+        "avformat_license": {
+          "functionRva": 138544,
+          "functionFileOffset": 135472,
+          "instructionBytes": "488d0521da1800c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 1767256,
+          "returnedStringFileOffset": 1762648,
+          "value": "LGPL version 2.1 or later"
+        }
+      }
+    },
+    {
+      "member": "bin/libavutil-59.dll",
+      "bytes": 3015680,
+      "sha256": "503d43fb8c8c9c1ce2782d7cb026dd5d0ff3c16f305b9ccec83f2cd4909fa3f7",
+      "imageBase": 5368709120,
+      "exports": {
+        "avutil_configuration": {
+          "functionRva": 600128,
+          "functionFileOffset": 597056,
+          "instructionBytes": "488d05e82b0300c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 807983,
+          "returnedStringFileOffset": 802351,
+          "value": "-Dbuildtype=debugoptimized -Dno_uninit_ub=true -Denable-ssp=enabled -Denable-cfguard=disabled -Ddefault_library=shared -Dprograms=enabled -Dtests=disabled -Dffmpeg=enabled -Dffprobe=enabled -Dffplay=disabled -Davdevice=disabled -Davcodec=enabled -Davformat=enabled -Davutil=enabled -Dswresample=enabled -Dswscale=enabled -Dpostproc=disabled -Dsdl2=enabled -Dlibaom=enabled -Dzlib=enabled -Dimage2_demuxer=enabled -Dimage2_alias_pix_demuxer=enabled -Dimage2_brender_pix_demuxer=enabled -Dwebm_muxer=enabled -Dmatroska_muxer=enabled -Dogg_muxer=enabled -Dapng_muxer=enabled -Dlibwebp=enabled -Dpng_encoder=enabled -Dpng_decoder=enabled -Dapng_encoder=enabled -Dapng_decoder=enabled -Dlibaom_av1_encoder=enabled -Dlibvpl=auto -Dlibvpx=enabled -Dlibvpx_vp9_encoder=enabled -Dlibvpx_vp8_encoder=enabled -Dlibopenh264=enabled -Dlibtheora=enabled -Dflac_encoder=enabled -Daac_encoder=enabled -Dlibmp3lame=enabled -Dlibopus=enabled -Dlibvorbis=enabled -Dpkgconfig.relocatable=true -Dprefix=C:/_/ext_ffmpeg/_install -Dlibdir=lib --native-file=C:/_/ext_ffmpeg/_build/meson-compiler.ini"
+        },
+        "avutil_license": {
+          "functionRva": 600144,
+          "functionFileOffset": 597072,
+          "instructionBytes": "488d051f300300c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 809078,
+          "returnedStringFileOffset": 803446,
+          "value": "LGPL version 2.1 or later"
+        }
+      }
+    },
+    {
+      "member": "bin/libswresample-5.dll",
+      "bytes": 469504,
+      "sha256": "d26ffd0cd1111414bc5a7e497642652af98d456292a606a71ca2f399d441c401",
+      "imageBase": 5368709120,
+      "exports": {
+        "swresample_configuration": {
+          "functionRva": 105024,
+          "functionFileOffset": 101952,
+          "instructionBytes": "488d05b8600000c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 129791,
+          "returnedStringFileOffset": 125183,
+          "value": "-Dbuildtype=debugoptimized -Dno_uninit_ub=true -Denable-ssp=enabled -Denable-cfguard=disabled -Ddefault_library=shared -Dprograms=enabled -Dtests=disabled -Dffmpeg=enabled -Dffprobe=enabled -Dffplay=disabled -Davdevice=disabled -Davcodec=enabled -Davformat=enabled -Davutil=enabled -Dswresample=enabled -Dswscale=enabled -Dpostproc=disabled -Dsdl2=enabled -Dlibaom=enabled -Dzlib=enabled -Dimage2_demuxer=enabled -Dimage2_alias_pix_demuxer=enabled -Dimage2_brender_pix_demuxer=enabled -Dwebm_muxer=enabled -Dmatroska_muxer=enabled -Dogg_muxer=enabled -Dapng_muxer=enabled -Dlibwebp=enabled -Dpng_encoder=enabled -Dpng_decoder=enabled -Dapng_encoder=enabled -Dapng_decoder=enabled -Dlibaom_av1_encoder=enabled -Dlibvpl=auto -Dlibvpx=enabled -Dlibvpx_vp9_encoder=enabled -Dlibvpx_vp8_encoder=enabled -Dlibopenh264=enabled -Dlibtheora=enabled -Dflac_encoder=enabled -Daac_encoder=enabled -Dlibmp3lame=enabled -Dlibopus=enabled -Dlibvorbis=enabled -Dpkgconfig.relocatable=true -Dprefix=C:/_/ext_ffmpeg/_install -Dlibdir=lib --native-file=C:/_/ext_ffmpeg/_build/meson-compiler.ini"
+        },
+        "swresample_license": {
+          "functionRva": 105040,
+          "functionFileOffset": 101968,
+          "instructionBytes": "488d05f3640000c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 130890,
+          "returnedStringFileOffset": 126282,
+          "value": "LGPL version 2.1 or later"
+        }
+      }
+    },
+    {
+      "member": "bin/libswscale-8.dll",
+      "bytes": 3257344,
+      "sha256": "6608f1a216b116b31e0753654c4344c1f3cfcd6076525a37b3d76cb1f2805b8e",
+      "imageBase": 5368709120,
+      "exports": {
+        "swscale_configuration": {
+          "functionRva": 879440,
+          "functionFileOffset": 876368,
+          "instructionBytes": "488d05c1f30200c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 1072920,
+          "returnedStringFileOffset": 1069848,
+          "value": "-Dbuildtype=debugoptimized -Dno_uninit_ub=true -Denable-ssp=enabled -Denable-cfguard=disabled -Ddefault_library=shared -Dprograms=enabled -Dtests=disabled -Dffmpeg=enabled -Dffprobe=enabled -Dffplay=disabled -Davdevice=disabled -Davcodec=enabled -Davformat=enabled -Davutil=enabled -Dswresample=enabled -Dswscale=enabled -Dpostproc=disabled -Dsdl2=enabled -Dlibaom=enabled -Dzlib=enabled -Dimage2_demuxer=enabled -Dimage2_alias_pix_demuxer=enabled -Dimage2_brender_pix_demuxer=enabled -Dwebm_muxer=enabled -Dmatroska_muxer=enabled -Dogg_muxer=enabled -Dapng_muxer=enabled -Dlibwebp=enabled -Dpng_encoder=enabled -Dpng_decoder=enabled -Dapng_encoder=enabled -Dapng_decoder=enabled -Dlibaom_av1_encoder=enabled -Dlibvpl=auto -Dlibvpx=enabled -Dlibvpx_vp9_encoder=enabled -Dlibvpx_vp8_encoder=enabled -Dlibopenh264=enabled -Dlibtheora=enabled -Dflac_encoder=enabled -Daac_encoder=enabled -Dlibmp3lame=enabled -Dlibopus=enabled -Dlibvorbis=enabled -Dpkgconfig.relocatable=true -Dprefix=C:/_/ext_ffmpeg/_install -Dlibdir=lib --native-file=C:/_/ext_ffmpeg/_build/meson-compiler.ini"
+        },
+        "swscale_license": {
+          "functionRva": 879456,
+          "functionFileOffset": 876384,
+          "instructionBytes": "488d05f9f70200c3",
+          "instructionMeaning": "lea rax,[rip+signed_disp32]; ret",
+          "returnedStringRva": 1074016,
+          "returnedStringFileOffset": 1070944,
+          "value": "LGPL version 2.1 or later"
+        }
+      }
+    }
+  ]
+}

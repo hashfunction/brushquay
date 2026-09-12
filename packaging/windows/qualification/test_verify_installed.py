@@ -14,6 +14,9 @@ class InstalledReadbackTests(unittest.TestCase):
  def test_exact_installed_bytes_allow_only_os_footprint_metadata(self):
   (self.root/'AppxSignature.p7x').write_bytes(b'signature')
   self.assertEqual(verify(self.root,self.record)['verifiedPayloadFiles'],2)
+ def test_release_mode_is_independent_of_supplied_manifest_and_record(self):
+  self.record.update(releaseCandidate=True,mode='store')
+  with self.assertRaises(ValueError):verify(self.root,self.record)
  def test_changed_missing_and_extra_runtime_files_are_refused(self):
   path=self.root/'Bristlune/app.dll';path.write_bytes(b'foreign')
   with self.assertRaises(ValueError):verify(self.root,self.record)

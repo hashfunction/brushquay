@@ -1,0 +1,124 @@
+BRISTLUNE — LICENSE AND THIRD-PARTY TERMS
+
+Copyright 2026 Trieflow LLC and the original contributors identified in the
+application and its accompanying notices.
+
+1. APPLICATION, SOURCE CODE AND CREATIVE RESOURCES
+
+Bristlune includes software distributed under the GNU General Public License
+version 3 and other component licenses. Original source-file grants, notices,
+copyrights and applicable exceptions remain in force. You may use, study,
+copy, modify and redistribute the open-source portions under their respective
+licenses. These terms add no restriction to those open-source rights.
+
+Brushes, patterns, color profiles and other creative resources retain their
+own grants and attribution. These include CC0, Creative Commons Attribution
+and Attribution-ShareAlike resources, and the W3C-licensed Adobe PQ profile.
+The program's GPL license does not replace those resource-specific terms or
+Microsoft's separate terms below. Your original artwork remains yours; this
+license does not claim rights in it.
+
+Complete original notices and the exact source references accompany the app
+under Bristlune/licenses/Bristlune/. The source-references.json and catalog.json
+files identify the source archives, owners, component notices and their scope.
+Application source is available at https://github.com/hashfunction/brushquay .
+Published dependency materials are available at
+https://github.com/hashfunction/brushquay/releases/tag/bristlune-source-inputs-20260912 .
+The libvpx 1.13.1 notice/reference is expressly identified as an upstream
+version reference; the original meson-2 producer revision is not claimed.
+
+2. MICROSOFT OBJECT CODE: LIMITED SCOPE
+
+The Windows distribution also contains separately licensed Microsoft object
+code: dbgcore.dll, dbghelp.dll and symsrv.dll from Windows SDK 10.0.18362.1,
+and vcruntime140.dll and vcruntime140_1.dll accompanying the Windows Python
+distribution. The Python Windows build's original Additional Conditions also
+apply to Microsoft Distributable Code embedded in that build's binaries.
+Microsoft Corporation and its suppliers retain their rights in that code.
+
+Sections 2–4 apply only to this Microsoft code. They do not restrict Python
+itself, Bristlune's open-source code, independently licensed third-party code,
+creative resources, your scripts or your artwork. Installing or using the
+Microsoft code constitutes agreement to the applicable terms in these
+sections and the original Microsoft terms identified below. If you do not
+agree, do not install or use those Microsoft components.
+
+You may use the supplied Microsoft code as part of Bristlune on Microsoft
+Windows. It is licensed, not sold. Rights not expressly granted are reserved.
+Except where applicable law or a component's applicable third-party license
+requires otherwise, you must not work around its technical limitations,
+reverse engineer, decompile, disassemble or derive its source code. You must
+not remove, obscure or alter Microsoft or supplier copyright, trademark or
+patent notices; misuse Microsoft trademarks to suggest Microsoft origin or
+endorsement; or use the Microsoft code unlawfully. No Microsoft trademark
+license is granted.
+
+The Microsoft code is supplied as object code under its own grants. It is not
+relicensed under the GPL or any other source-disclosure license. No right to
+license Microsoft code in source form or require its disclosure/modification
+is granted by Bristlune's open-source licenses.
+
+3. FURTHER DISTRIBUTION OF MICROSOFT CODE
+
+Further distribution of Microsoft code requires compliance with the original
+Microsoft redistribution grants and the Python Windows Additional Conditions,
+as applicable. The Visual C++ Runtime end-user terms alone are not a separate
+redistribution grant. Where redistribution is permitted, distributors must:
+
+- Include it only as part of an application with significant primary
+  functionality; do not offer the Microsoft code as a standalone product.
+- Require their distributors and external end users to agree to terms that
+  protect the Microsoft code at least as much as the applicable original
+  Microsoft agreement, including these component-specific protections.
+- Preserve original notices and display a valid copyright notice for their
+  application. Do not suggest Microsoft origin or endorsement.
+- Distribute it for Microsoft operating systems/platforms as permitted by its
+  grant, and never in malicious, deceptive or unlawful programs.
+- Do not distribute components marked Preview, Pre-release or Beta, or modify
+  or distribute Microsoft source so that it becomes subject to a license
+  requiring source disclosure or rights to modify that Microsoft code.
+- Follow any applicable object-code, linked-library and unmodified-setup
+  restrictions in the original grant. No SDK utilities or other files outside
+  the applicable redistributable list are granted by this notice.
+- For Windows SDK Distributable Code, indemnify, defend and hold Microsoft
+  harmless from claims, including attorneys' fees, relating to distribution
+  or use of their application, as required by the SDK redistribution terms.
+- Comply with applicable export laws and restrictions on destinations,
+  end users and end uses.
+
+These requirements apply to redistribution of Microsoft code only. A recipient
+may exercise independent open-source rights without redistributing Microsoft
+components. No Microsoft condition is imposed on separately licensed source.
+
+4. ORIGINAL TERMS, WARRANTY AND STATUTORY RIGHTS
+
+The applicable original Microsoft texts are supplied unchanged in
+Bristlune/licenses/Bristlune/supplements/microsoft/:
+
+- sdk18362/license.rtf, sdk18362/third-party-notices.rtf and
+  sdk18362/redist.html;
+- Python-3.13.5-Windows-LICENSE.txt and
+  Python-3.13.5-Additional-Conditions-original.txt;
+- Visual-C-Runtime-2015-2022-License-1.docx and its text transcription;
+- Visual-Studio-2022-Community-License-EN.docx and its text transcription,
+  together with Visual-Studio-2022-redistribution.html.
+
+Those originals preserve the complete grants, conditions and notices. Their
+applicable Microsoft-component terms control if this notice is inconsistent;
+including the documents does not imply that the full SDK or Visual Studio is
+installed or licensed with Bristlune.
+
+Microsoft code is provided as-is. To the extent permitted by applicable law,
+Microsoft and its suppliers give no express warranties and exclude implied
+warranties of merchantability, fitness for a particular purpose and
+non-infringement. Under the applicable original Microsoft terms, recovery
+from Microsoft and its suppliers is limited to direct damages up to US$5,
+and consequential, lost-profit, special, indirect and incidental damages are
+excluded. The original local-law exceptions and consumer protections remain.
+
+Open-source components have the warranty and liability terms in their own
+licenses, including the GPL's warranty disclaimer. Nothing in this document
+removes non-waivable consumer rights or statutory guarantees. Support for
+Bristlune is provided by Trieflow, not by Microsoft or the upstream projects.
+
+Product and support: https://bristlune.trieflow.com

@@ -1,0 +1,86 @@
+{
+  "licenseText": {
+    "bytes": 7138,
+    "path": "packaging/windows/msix/release-data/Bristlune-Store-license.txt",
+    "sha256": "a2d9b8c7da10c8c4e2de69976f25c0607ea53a904b14368b0819e2323926b281"
+  },
+  "originalNotices": {
+    "supplements/microsoft/Python-3.13.5-Additional-Conditions-original.txt": {
+      "bytes": 1776,
+      "sha256": "4b00a99b2bd30dc8ad2f46fc8c51c5fcaff0a0021ba9f03f34db1a206c3b7f9e"
+    },
+    "supplements/microsoft/Python-3.13.5-Windows-LICENSE.txt": {
+      "bytes": 33861,
+      "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120"
+    },
+    "supplements/microsoft/Visual-C-Runtime-2015-2022-License-1.docx": {
+      "bytes": 39644,
+      "sha256": "f1e3d56ceb2ad68aae0711b910375009e651ac5530fa0760f0dea6e81e54fae1"
+    },
+    "supplements/microsoft/Visual-C-Runtime-2015-2022-License-1.txt": {
+      "bytes": 6590,
+      "sha256": "ed875263593823eb4b685cd543eda0ab075a6f57a76f7718908f2237466c442f"
+    },
+    "supplements/microsoft/Visual-Studio-2022-Community-License-EN.docx": {
+      "bytes": 62859,
+      "sha256": "41a207b10c8ab91d0d2f10a854715f73dca54509581692d2fe179aa3ffcb8540"
+    },
+    "supplements/microsoft/Visual-Studio-2022-Community-License-EN.txt": {
+      "bytes": 18964,
+      "sha256": "24b187690944c166a8337208454cbc775e1a39406d6f2a986e9a34d8f1a1f259"
+    },
+    "supplements/microsoft/Visual-Studio-2022-redistribution.html": {
+      "bytes": 62589,
+      "sha256": "f0d1dc4adfeb026433b63461bc74009fb5f17fc5eed8e2e6e707e129da0ce6a4"
+    },
+    "supplements/microsoft/sdk18362/license.rtf": {
+      "bytes": 248576,
+      "sha256": "863a7b97ebd8fc2ba102fd7f12183cc75e281c5637f9a6ccb341cd0a2cfed297"
+    },
+    "supplements/microsoft/sdk18362/redist.html": {
+      "bytes": 38264,
+      "sha256": "48fbfc4e8fc4f42a341d8930dc5dcc9b9694f43e4c870e299dc89b919f79012a"
+    },
+    "supplements/microsoft/sdk18362/third-party-notices.rtf": {
+      "bytes": 22279,
+      "sha256": "ebb6640a8246b39b70322c5cec9aad7a71e86ea7b86c9c604d3a7f3ff1b30e89"
+    }
+  },
+  "packagedNotice": "application/distribution/Bristlune-Store-license.txt",
+  "schema": 1,
+  "scope": "Only identified Microsoft standalone DLLs plus Microsoft code embedded in the Windows Python build, under the original Additional Conditions. No blanket open-source relicense.",
+  "sourceGrantScope": {
+    "SDK": "Original SDK18362 license and REDIST exact file proof; distributable object code only.",
+    "VisualC": "Original Python Windows Additional Conditions and VS2022 downstream distribution conditions; VC runtime end-user license alone is not a redistribution grant."
+  },
+  "standaloneMicrosoftFiles": {
+    "bin/dbgcore.dll": {
+      "bytes": 166576,
+      "sha256": "db947c07167069d3de9e8a637baf01298984355d775ec49801115d7e5f2e47a3"
+    },
+    "bin/dbghelp.dll": {
+      "bytes": 1938072,
+      "sha256": "3d92df0984662298a09d988aff0bb7c3081a46bf48177b7af02d3552641f77e9"
+    },
+    "bin/symsrv.dll": {
+      "bytes": 250008,
+      "sha256": "29a56215afc5aecfc4ca1663302905bdfe7957cde65c0766e6130e28d7d0c0a1"
+    },
+    "bin/vcruntime140.dll": {
+      "bytes": 120400,
+      "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+    },
+    "bin/vcruntime140_1.dll": {
+      "bytes": 49776,
+      "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+    },
+    "python/vcruntime140.dll": {
+      "bytes": 120400,
+      "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+    },
+    "python/vcruntime140_1.dll": {
+      "bytes": 49776,
+      "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+    }
+  }
+}

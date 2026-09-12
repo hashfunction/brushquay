@@ -1,7 +1,7 @@
 # Copyright 2026 Trieflow LLC. SPDX-License-Identifier: GPL-3.0-or-later
 # Disposable GitHub Windows desktop only. Public source/license approval is separate.
 [CmdletBinding()]
-param([string]$Python='python',[switch]$LibraryOnly)
+param([string]$Python='python',[ValidateSet('','qualification','store')][string]$ReleaseMode='',[switch]$LibraryOnly)
 $ErrorActionPreference='Stop';Set-StrictMode -Version Latest
 . (Join-Path $PSScriptRoot 'display-modes.ps1')
 
@@ -52,8 +52,16 @@ function Assert-NoExistingProfile {
         if(@(Get-ChildItem -LiteralPath $base -Force|Where-Object {$_.Name -like 'brushquay*'}).Count){throw "Existing BrushQuay profile/config/log files are preserved; fresh disposable profile required: $base"}
     }
 }
+function Get-QualificationIdentity([string]$Mode){
+    switch -CaseSensitive ($Mode){
+        'qualification' {return @{name='Trieflow.Bristlune.Qualification';publisher='CN=Bristlune-CI-Qualification';family='Trieflow.Bristlune.Qualification_kheb0ettnemtj';version='1.0.1.0';applicationId='BrushQuay'}}
+        'store' {return @{name='1659hashfunction.BrushQuay';publisher='CN=B6A2631A-FD32-45CC-AE12-82466975F528';family='1659hashfunction.BrushQuay_r3hxytd7jt6c4';version='1.0.1.0';applicationId='BrushQuay'}}
+        default {throw 'Unknown fixed installed identity mode'}
+    }
+}
 function Get-ExactRegistration($State){
-    $found=@(Get-AppxPackage -Name 'Trieflow.Bristlune.Qualification')
+    $name=if($State.ContainsKey('identity')){$State.identity.name}else{'Trieflow.Bristlune.Qualification'}
+    $found=@(Get-AppxPackage -Name $name)
     if($found.Count -ne 1 -or $found[0].PackageFullName -cne $State.packageFullName -or $found[0].InstallLocation -ine $State.installLocation -or $found[0].PackageFamilyName -cne $State.family){throw 'Exact owned package registration changed'}
     return $found[0]
 }
@@ -76,7 +84,7 @@ function Invoke-OwnedUninstall($State,[string]$Python){
     Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'check','--sealed',$sealed,'--proof',$proof)
     Assert-NoExistingProfile
     Remove-AppxPackage -Package $State.packageFullName -ErrorAction Stop
-    if(@(Get-AppxPackage -Name 'Trieflow.Bristlune.Qualification').Count){throw 'Owned package registration remains after uninstall'}
+    if(@(Get-AppxPackage -Name $State.identity.name).Count){throw 'Owned package registration remains after uninstall'}
     $State.uninstalled=$true
 }
 function Assert-InstallerHost {
@@ -93,18 +101,19 @@ function Assert-InstallerHost {
         if($command.ModuleName -cne 'Appx'){throw ('Original Appx cmdlet required: '+$name)}
     }
 }
-function Invoke-InstalledQualification([string]$Python){
+function Invoke-InstalledQualification([string]$Python,[string]$ReleaseMode=''){
     Assert-InstallerHost
     if($env:GITHUB_ACTIONS -cne 'true' -or $env:RUNNER_OS -cne 'Windows'){throw 'Only the disposable native GitHub Windows runner is supported'}
     $source=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))
     $run=$env:GITHUB_RUN_ID;$attempt=$env:GITHUB_RUN_ATTEMPT
     if($run -notmatch '^[1-9][0-9]*$' -or $attempt -notmatch '^[1-9][0-9]*$'){throw 'Exact GitHub run and attempt are required'}
+    $mode=if($ReleaseMode){$ReleaseMode}else{'qualification'};$identity=Get-QualificationIdentity $mode
     $tag='installed-'+$run+'-'+$attempt+'-'+[guid]::NewGuid().ToString('N')
     $workParent=Join-Path $source '.brushquay/qualification';[IO.Directory]::CreateDirectory($workParent)|Out-Null
     Assert-NoLinks $workParent;$work=Join-Path $workParent $tag;New-Item -ItemType Directory -Path $work -ErrorAction Stop|Out-Null
     $evidence=Join-Path $source ('.brushquay/evidence/'+$tag);New-Item -ItemType Directory -Path $evidence -ErrorAction Stop|Out-Null
     $gui=Join-Path $evidence 'gui';New-Item -ItemType Directory -Path $gui|Out-Null
-    $state=@{work=$work;gui=$gui;evidence=$evidence;family='Trieflow.Bristlune.Qualification_kheb0ettnemtj';packageFullName=$null;installLocation=$null;
+    $state=@{work=$work;gui=$gui;evidence=$evidence;identity=$identity;family=$identity.family;packageFullName=$null;installLocation=$null;
         ownedRegistration=$false;installAttempted=$false;activationAttempted=$false;uninstalled=$false;observer=$null;
         fixtureLease=$null;profileLease=$null;certificate=$null;certificateHash=$null;trusted=$false;signedCopy=$null;signedHash=$null;unsigned=$null;unsignedHash=$null;
         displayOriginalMode=$null;displayDevice=$null;displayRestoreRequired=$false;displayEvidence=$null;displayRestoreError=$null;sdk=$null}
@@ -141,10 +150,17 @@ function Invoke-InstalledQualification([string]$Python){
     }
     $ops.PreparePackage={
         $state.stage=Join-Path $work 'package'
-        Invoke-Native $Python @((Join-Path $PSScriptRoot 'prepare.py'),'--source',$source,'--output',$state.stage,'--evidence',(Join-Path $evidence 'package'),'--sdk-tools',$state.sdkLock,'--commit',$state.commit,'--run',$run,'--attempt',$attempt)
-        $state.packageRecord=Join-Path $state.stage 'package-record.json';$state.record=Get-Content -LiteralPath $state.packageRecord -Raw|ConvertFrom-Json
-        if($state.record.qualificationOnly -ne $true -or $state.record.identity.PackageName -cne 'Trieflow.Bristlune.Qualification' -or $state.record.identity.Publisher -cne 'CN=Bristlune-CI-Qualification' -or $state.record.identity.Version -cne '1.0.1.0'){throw 'Disposable package identity differs'}
-        $state.unsigned=Join-Path $state.stage 'Bristlune.Qualification_1.0.1.0_x64.msix';$state.unsignedHash=$state.record.package;Assert-File $state.unsigned $state.unsignedHash
+        if($ReleaseMode){
+            Invoke-Native $Python @((Join-Path $PSScriptRoot '../msix/release_build.py'),'--source',$source,'--output',$state.stage,'--evidence',(Join-Path $evidence 'package'),'--sdk-tools',$state.sdkLock,'--commit',$state.commit,'--run',$run,'--attempt',$attempt,'--mode',$mode)
+            $state.packageRecord=Join-Path $state.stage 'release-record.json';$packageName='Bristlune.msix'
+        }else{
+            Invoke-Native $Python @((Join-Path $PSScriptRoot 'prepare.py'),'--source',$source,'--output',$state.stage,'--evidence',(Join-Path $evidence 'package'),'--sdk-tools',$state.sdkLock,'--commit',$state.commit,'--run',$run,'--attempt',$attempt)
+            $state.packageRecord=Join-Path $state.stage 'package-record.json';$packageName='Bristlune.Qualification_1.0.1.0_x64.msix'
+        }
+        $state.record=Get-Content -LiteralPath $state.packageRecord -Raw|ConvertFrom-Json
+        if($state.record.qualificationOnly -isnot [bool] -or $state.record.qualificationOnly -ne ($mode -ceq 'qualification') -or $state.record.identity.PackageName -cne $identity.name -or $state.record.identity.Publisher -cne $identity.publisher -or $state.record.identity.Version -cne $identity.version){throw 'Selected fixed package identity differs'}
+        if($ReleaseMode -and ($state.record.releaseCandidate -isnot [bool] -or -not $state.record.releaseCandidate -or $state.record.mode -cne $mode -or $state.record.signed -isnot [bool] -or $state.record.signed)){throw 'Prepared release package mode differs'}
+        $state.unsigned=Join-Path $state.stage $packageName;$state.unsignedHash=$state.record.package;Assert-File $state.unsigned $state.unsignedHash
     }
     $ops.OwnFixtureProfile={
         Assert-NoExistingProfile
@@ -155,7 +171,7 @@ function Invoke-InstalledQualification([string]$Python){
     }
     $ops.SignAndInstall={
         $state.signedCopy=Join-Path $work 'Bristlune.Qualification.signed.msix';[IO.File]::Copy($state.unsigned,$state.signedCopy,$false)
-        $state.certificate=New-SelfSignedCertificate -Type Custom -KeyUsage DigitalSignature -KeyExportPolicy NonExportable -KeySpec Signature -CertStoreLocation 'Cert:\CurrentUser\My' -TextExtension @('2.5.29.37={text}1.3.6.1.5.5.7.3.3','2.5.29.19={text}') -Subject 'CN=Bristlune-CI-Qualification' -FriendlyName ('Bristlune disposable '+$tag) -NotAfter (Get-Date).AddHours(12)
+        $state.certificate=New-SelfSignedCertificate -Type Custom -KeyUsage DigitalSignature -KeyExportPolicy NonExportable -KeySpec Signature -CertStoreLocation 'Cert:\CurrentUser\My' -TextExtension @('2.5.29.37={text}1.3.6.1.5.5.7.3.3','2.5.29.19={text}') -Subject $identity.publisher -FriendlyName ('Bristlune disposable '+$tag) -NotAfter (Get-Date).AddHours(12)
         $state.certificateHash=[Convert]::ToBase64String($state.certificate.RawData)
         $state.cer=Join-Path $work 'ephemeral-public.cer';Export-Certificate -Cert $state.certificate -FilePath $state.cer|Out-Null;$state.cerHash=Measure-File $state.cer
         $trustPath='Cert:\LocalMachine\TrustedPeople\'+$state.certificate.Thumbprint
@@ -168,10 +184,10 @@ function Invoke-InstalledQualification([string]$Python){
         $state.signedHash=Measure-File $state.signedCopy;Assert-File $state.unsigned $state.unsignedHash
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'verify','--lease',$state.profileLease)
         Assert-NoExistingProfile
-        if(@(Get-AppxPackage -Name 'Trieflow.Bristlune.Qualification').Count){throw 'Package appeared before owned installation'}
+        if(@(Get-AppxPackage -Name $identity.name).Count){throw 'Package appeared before owned installation'}
         $state.installAttempted=$true;Add-AppxPackage -Path $state.signedCopy -ErrorAction Stop
-        $registered=@(Get-AppxPackage -Name 'Trieflow.Bristlune.Qualification')
-        if($registered.Count -ne 1 -or $registered[0].PackageFamilyName -cne $state.family -or $registered[0].Publisher -cne 'CN=Bristlune-CI-Qualification' -or $registered[0].Version.ToString() -cne '1.0.1.0' -or $registered[0].Architecture.ToString() -ine 'X64'){throw 'Installed identity does not match the disposable package'}
+        $registered=@(Get-AppxPackage -Name $identity.name)
+        if($registered.Count -ne 1 -or $registered[0].PackageFamilyName -cne $state.family -or $registered[0].Publisher -cne $identity.publisher -or $registered[0].Version.ToString() -cne $identity.version -or $registered[0].Architecture.ToString() -ine 'X64'){throw 'Installed identity does not match the selected fixed package'}
         $state.packageFullName=$registered[0].PackageFullName;$state.installLocation=$registered[0].InstallLocation;$state.ownedRegistration=$true
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'verify_installed.py'),'--root',$state.installLocation,'--record',$state.packageRecord,'--output',(Join-Path $evidence 'installed-files.json'))
     }
@@ -182,7 +198,7 @@ function Invoke-InstalledQualification([string]$Python){
         $exe=Join-Path $state.installLocation 'Bristlune/bin/bristlune.exe';$expected=$state.record.payload.'Bristlune/bin/bristlune.exe';Assert-File $exe $expected
         Write-NewJson (Join-Path $gui 'probe-input.json') @{payload=$state.record.payload;sourceCommit=$state.commit;sourceTree=$state.record.sourceTree;run=$run;attempt=$attempt;nativeEvidence=$state.record.nativeEvidence;unsignedPackage=$state.record.package}
         Assert-File $state.probe $state.probeHash
-        $start=New-BristluneObserverStartInfo $state.probe @($gui,$state.fixture,$exe,$state.packageFullName,$expected.sha256,($state.family+'!BrushQuay'))
+        $start=New-BristluneObserverStartInfo $state.probe @($gui,$state.fixture,$exe,$state.packageFullName,$expected.sha256,($state.family+'!'+$identity.applicationId))
         $state.activationAttempted=$true;$state.observer=[Diagnostics.Process]::Start($start);$null=$state.observer.Handle
         if(-not $state.observer.WaitForExit(600000)){throw 'Standalone installed UI observer exceeded ten minutes'}
         $proofPath=Read-StopProof $state;$proof=Get-Content -LiteralPath $proofPath -Raw|ConvertFrom-Json
@@ -242,12 +258,36 @@ function Invoke-InstalledQualification([string]$Python){
     }
     $result=Invoke-QualificationCore $ops
     $result.sourceCommit=if($state.ContainsKey('commit')){$state.commit}else{$null};$result.workflowRunId=$run;$result.workflowRunAttempt=$attempt
-    $result.qualificationOnly=$true;$result.licenseReviewComplete=$false;$result.correspondingSourceComplete=$false
+    $result.qualificationOnly=($mode -ceq 'qualification');$result.mode=$mode;$result.releaseCandidate=[bool]$ReleaseMode
+    # Installation itself never supplies the separate source/license review.
+    $result.licenseReviewComplete=$false;$result.correspondingSourceComplete=$false
     $result.packageFullName=$state.packageFullName;$result.uninstalled=$state.uninstalled;$result.display=$state.displayEvidence
     $result.fixtureRemoved=if($state.ContainsKey('fixture')){-not (Test-Path -LiteralPath $state.fixture)}else{$null}
     $result.profileRemoved=if($state.ContainsKey('profile')){-not (Test-Path -LiteralPath $state.profile)}else{$null}
     $result.unsignedPackage=$state.unsignedHash;$result.signedPackage=$state.signedHash;$result.sdk=$state.sdk;$result.sdkAuthenticode=if($state.ContainsKey('sdkAuthenticode')){$state.sdkAuthenticode}else{$null}
+    if($ReleaseMode){
+      try{
+        $result.packageFamilyName=$state.family;$result.installLocation=$state.installLocation;$result.windowsRoot=$env:WINDIR
+        $result.sourceTree=if($state.ContainsKey('record')){$state.record.sourceTree}else{$null}
+        $result.packageRecord=if($state.ContainsKey('packageRecord')){Measure-File $state.packageRecord}else{$null}
+        $result.packageDirectory=if($state.ContainsKey('stage')){$state.stage}else{$null}
+        $result.probe=if($state.ContainsKey('probeHash')){$state.probeHash}else{$null}
+        $result.signTool=if($state.ContainsKey('signTool')){$state.signTool}else{$null}
+        $result.certificateRemoved=if($state.certificate){-not ((Test-Path -LiteralPath ('Cert:\CurrentUser\My\'+$state.certificate.Thumbprint)) -or (Test-Path -LiteralPath ('Cert:\LocalMachine\TrustedPeople\'+$state.certificate.Thumbprint)))}else{$false}
+        $result.publicCertificateRemoved=if($state.ContainsKey('cer')){-not (Test-Path -LiteralPath $state.cer)}else{$false}
+        $result.signedCopyRemoved=if($state.signedCopy){-not (Test-Path -LiteralPath $state.signedCopy)}else{$false}
+        $result.originalEvidence=[ordered]@{}
+        foreach($name in @('installed-files.json','installed-files-after-close.json','artwork-verification.json')){
+            $path=Join-Path $evidence $name;if(Test-Path -LiteralPath $path){$result.originalEvidence[$name]=Measure-File $path}
+        }
+        foreach($path in @(Get-ChildItem -LiteralPath $gui -File)){
+            if($path.Extension -cin @('.json','.png')){$result.originalEvidence['gui/'+$path.Name]=Measure-File $path.FullName}
+        }
+      }catch{
+        $result.passed=$false;$result.cleanupErrors+=('Release evidence retention: '+$_.Exception.Message)
+      }
+    }
     Write-NewJson (Join-Path $evidence 'installation-result.json') $result
     if(-not $result.passed){throw ('Bristlune installed qualification failed: '+$result.primaryError+'; '+($result.cleanupErrors -join '; '))}
 }
-if(-not $LibraryOnly){Invoke-InstalledQualification $Python}
+if(-not $LibraryOnly){Invoke-InstalledQualification $Python $ReleaseMode}

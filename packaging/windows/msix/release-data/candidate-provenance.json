@@ -1,0 +1,2357 @@
+{
+  "applicationCandidate": {
+    "bytes": 190812,
+    "sha256": "6fe312e8db6553c489e5c9ee1a82f560f18c2c6452cbd0e6609ddc1d7e34ac5f"
+  },
+  "applicationLicenseScope": {
+    "LicenseRef-LittleCMS-Profile-Redistribution": "Exact original scRGB free use/redistribution and krita25 no-copyright/use-freely tag text, alongside unchanged historical GPL statements in profiles/licenses.txt.",
+    "principal": "GPL-3.0-or-later application source; original source versions remain unmodified.",
+    "resourceTerms": "CC0 default/RGBA bundles and own branding; CC-BY-3.0 original brush/palette scope; CC-BY-SA-3.0 Elle ICC; CC-BY-SA-4.0 YCbCr/DITH/original artwork scope; W3C-20150513 exact Adobe PQ ICC; MIT vendored Raqm/simplex originals. Existing upstream workspaces/resources use original application/source terms, not the own CC0 workspace provenance.",
+    "reviewStatus": "Proposed aggregate selected-application scope for root review; no automatic license inference from copied license filenames."
+  },
+  "dependencyCandidate": {
+    "bytes": 711193,
+    "sha256": "e5df5fa2654aebf93f0e01a1e89e79e1c380bd7d32983bb3e7bb4457b49c678a"
+  },
+  "excludedRuntime": {
+    "bin/libcrypto-1_1-x64.dll": {
+      "bytes": 2819656,
+      "sha256": "bd3cf8a3342bd22a06234fd54eb93f6f4c98596f72f1df314505f325f9773e99"
+    },
+    "bin/libssl-1_1-x64.dll": {
+      "bytes": 550984,
+      "sha256": "98d9bb9eccc5d2846fe2cd51d4f91f7b368bbe755ab307f2b49c232a5fb59f8b"
+    },
+    "plugins/tls/qopensslbackend.dll": {
+      "bytes": 1545216,
+      "sha256": "bbcdd80bd27c8eec236f7f9410bf4edbed7155ffd1a8e9a5bbafc7c9e7845bac"
+    }
+  },
+  "licenseDecisions": {
+    "bytes": 109979,
+    "sha256": "5f2eea57f7fa4adba1fbd852652703d7b9fae9e6f1f4f91310b9e6b260115713"
+  },
+  "licenseReferences": {
+    "LicenseRef-BSD-3-Clause-with-PCRE2-Binary-Like-Packages-Exception": {
+      "association": "qt-pcre2",
+      "meaning": "Exact original Qt attribution LicenseFile text for this named component."
+    },
+    "LicenseRef-Fontconfig-Public-Domain": {
+      "meaning": "Exact public-domain MD5 and FreeType-glue sections in root COPYING.",
+      "owner": "ext_fontconfig"
+    },
+    "LicenseRef-Fontconfig-Unicode-CaseFolding": {
+      "meaning": "Exact Unicode CaseFolding copyright and terms-of-use reference in original root COPYING; cross-reference the retained Unicode texts without inventing its original version.",
+      "owner": "ext_fontconfig"
+    },
+    "LicenseRef-HarfBuzz-Old-MIT": {
+      "files": [
+        "texts/4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d/0002-COPYING"
+      ],
+      "meaning": "Exact HarfBuzz Old MIT permission, no guessed MIT variant identifier."
+    },
+    "LicenseRef-ICC-License": {
+      "association": "qt-icc-srgb-color-profile",
+      "meaning": "Exact original Qt attribution LicenseFile text for this named component."
+    },
+    "LicenseRef-Lcs-Telegraphics": {
+      "association": "qt-wintab",
+      "meaning": "Exact original Qt attribution LicenseFile text for this named component."
+    },
+    "LicenseRef-Libiberty-Compiled-Link-Permission": {
+      "association": "drmingw-scope-3",
+      "meaning": "Original cp-demangle.c/cp-demangle.h/demangle.h grants including unlimited compiled-link permission; GPL/LibraryGPL conditions remain where exception does not apply."
+    },
+    "LicenseRef-MIT-Khronos-old": {
+      "association": "qt-spirvcross",
+      "meaning": "Exact original Qt attribution LicenseFile text for this named component."
+    },
+    "LicenseRef-Microsoft-VC-Python-Conditions": {
+      "associations": [
+        "python-windows-conditions",
+        "microsoft-vc-runtime",
+        "microsoft-vc-distribution"
+      ],
+      "meaning": "Original Python Windows Additional Conditions plus exact VC runtime and downstream original Microsoft terms; limited to Microsoft runtime files."
+    },
+    "LicenseRef-Microsoft-Windows-SDK-18362": {
+      "association": "microsoft-sdk18362",
+      "meaning": "Original SDK18362 license and REDIST for exact original-matched dbgcore/dbghelp/symsrv; downstream requirements remain applicable."
+    },
+    "LicenseRef-MurmurHash-Public-Domain": {
+      "meaning": "Original src/common/third_party/smhasher/LICENSE says all MurmurHash source files are public domain; other SMHasher code is MIT.",
+      "owner": "ext_googleangle"
+    },
+    "LicenseRef-Public-Domain-SQLite": {
+      "meaning": "Original Python SQLite public-domain notice and exact SQLite source references.",
+      "owner": "ext_python"
+    },
+    "LicenseRef-Public-Domain-liblzma": {
+      "meaning": "Original liblzma public-domain component scope; not the xz tools.",
+      "owner": "ext_lzma"
+    },
+    "LicenseRef-Public-Domain-win-iconv": {
+      "meaning": "Original win-iconv public-domain statement.",
+      "owner": "ext_iconv"
+    },
+    "LicenseRef-Python-Historical-Notices": {
+      "files": [
+        "supplements/microsoft/Python-3.13.5-Windows-LICENSE.txt"
+      ],
+      "meaning": "Full BeOpen/CNRI/CWI historical notices retained alongside PSF2; not replaced with PSF2 alone."
+    },
+    "LicenseRef-QuaZip-Static-Link-Exception": {
+      "meaning": "Exact exception in original QuaZip COPYING, without paraphrasing it into a standard unrelated exception.",
+      "owner": "ext_quazip"
+    },
+    "LicenseRef-SHA1-Public-Domain": {
+      "association": "qt-sha1",
+      "meaning": "Exact original Qt attribution LicenseFile text for this named component."
+    },
+    "LicenseRef-XZ-Windows-MinGW-Notices": {
+      "association": "drmingw-scope-4",
+      "meaning": "Complete original COPYING-Windows with its specific MinGW/getopt/gdtoa conditions."
+    }
+  },
+  "nativeContext": {
+    "lockSha256": "d5e55c6a274120aafa905b28868ccc4e7285be86ab4af3ea0174321347f23265",
+    "nativeEvidence": {
+      "bytes": 142209,
+      "sha256": "9146852654211f88dd654b61d86a0eb5dc3246d5231abcda12ad1c3a3da05052"
+    },
+    "sourceCommit": "ef50a51eeacf4c9b857b99da34a0ddb60d0318ec",
+    "sourceTree": "b89a6c344ecabe66f9c0b5fb4e0cdf624d6aa1a6",
+    "workflowRunAttempt": "1",
+    "workflowRunId": "34708230966"
+  },
+  "omittedSourceInstalledBundle": {
+    "bytes": 2211603,
+    "path": "share/krita/bundles/Krita_Artists_SeExpr_examples.bundle",
+    "sha256": "5e0a5a97fb31ab1b8840e3df03c64bb410d61166e5824d8b46d168bdc109a15c"
+  },
+  "originalCatalog": {
+    "bytes": 3487845,
+    "path": "distribution/native-source/original-notices/catalog.json",
+    "sha256": "3c36364555f9c4025cc56e2424a88fde78c772f45e7539a97fce02c16235105c"
+  },
+  "originalPeFiles": 537,
+  "originalPeGraph": {
+    "bytes": 9174223,
+    "sha256": "4f784e8320f085b51cb7feffb935df99102d7f3c7af9407f1ef2453eeff844be"
+  },
+  "originalRuntimeRecord": {
+    "bytes": 1312275,
+    "sha256": "829f9f13ebe9fac3bc5cd289196608f2a262f7709c0f3862c5ab5480ba0546e3"
+  },
+  "originalSelectedFiles": 5106,
+  "ownerScope": {
+    "ext_boost": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa/0001-LICENSE_1_0.txt"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSL-1.0",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected Boost runtime; root Boost Software License. Unrelated test/example licenses are excluded."
+    },
+    "ext_brotli": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 3,
+      "scope": "Selected Brotli common, encoder and decoder libraries."
+    },
+    "ext_dlfcn_win32": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55/0001-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected dlfcn Windows compatibility library."
+    },
+    "ext_drmingw": {
+      "catalogAssociations": [
+        "drmingw-scope-0",
+        "drmingw-scope-1",
+        "drmingw-scope-2",
+        "drmingw-scope-3",
+        "microsoft-sdk18362"
+      ],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532/0001-LICENSE.txt",
+            "supplements/drmingw/originals/drmingw-source/drmingw-0.9.7.1-patched/README.md"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-only AND BSD-2-Clause AND MIT AND Zlib AND LicenseRef-Libiberty-Compiled-Link-Permission AND LicenseRef-Microsoft-Windows-SDK-18362",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 6,
+      "scope": "exchndl/mgwhelp LGPL; exact statically selected common/libdwarf/zlib/libiberty sources retain file-specific grants. Microsoft terms apply only to the original-matched dbgcore/dbghelp/symsrv files. Do not apply LGPL to Microsoft DLLs or GPL tool terms to all DrMinGW."
+    },
+    "ext_exiv2": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-2.0-or-later AND BSD-3-Clause",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/src/utilsvideo.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/fuzz/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/xmpsdk/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/unitTests/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/po/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/include/exiv2/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/include/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/samples/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/src/CMakeLists.txt",
+        "decision-context/ext_exiv2/35a58618ab236a90/exiv2-0.27.5-Source/CMakeLists.txt"
+      ],
+      "runtimeFileCount": 1,
+      "scope": "Exiv2 core GPL2+; default enabled internal Adobe XMPSDK carries its original BSD3 notice. Test/data copyright is excluded."
+    },
+    "ext_expat": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected Expat library under root COPYING."
+    },
+    "ext_ffmpeg": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0005-LICENSE.md",
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0003-COPYING.LGPLv2.1",
+            "primary-grants/ext_ffmpeg/73894055a2f5a174/ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/meson_options.txt",
+            "primary-grants/ext_ffmpeg/73894055a2f5a174/ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/meson.build",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/CMakeLists.txt",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/cmake/krita_initialize_meson.cmake",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/cmake/meson-compiler.ini.in",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/cmake/meson-host.ini.in",
+            "primary-grants/ext_ffmpeg/selected-PE-license-functions.json",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0001-Add-an-option-to-disable-UB-in-av_uninit.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0002-Add-options-for-SSP-and-CFGuard.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0003-Be-more-forceful-when-setting-PIC-on-x86_32.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0005-Fix-detection-of-autodetected-libs-when-explicitly-p.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0006-Change-defauls-iconv-option-to-auto.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0007-Declare-other-auto-detected-lifraries-as-auto-fieatu.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0008-Fix-building-when-iconv-feature-is-explicitly-disabl.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0009-Add-link_language-option-to-all-the-link-targets.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0010-Fix-building-with-libvpl-present.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0011-Switch-deps-of-QSV-codecs-to-libvpl-instead-of-libmf.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0012-Fix-include-paths-for-libavcodec-s-codecs.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0013-Fix-VP9-hw-accelerated-encoder-with-libvpl.patch",
+            "primary-grants/ext_ffmpeg/0bb43c0db73c428f/recipes/ext_ffmpeg/0014-Fix-version-file-generation-in-version.py.patch"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "All six exact selected DLLs report LGPL version 2.1 or later in their named exported license functions, established by bounded read-only decoding of their actual x64 return-string bodies. This agrees with the pinned Meson producer configuration: gpl/version3/nonfree disabled. Full original licenses and supplemental per-file notices remain included."
+        },
+        {
+          "files": [
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0001-COPYING.GPLv2",
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0002-COPYING.GPLv3",
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0003-COPYING.LGPLv2.1",
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0004-COPYING.LGPLv3",
+            "texts/73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db/0005-LICENSE.md"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "source-grants/ext_ffmpeg/73894055a2f5a174/ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/libavutil/avutil.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 6,
+      "scope": "All six selected DLLs have exact statically decoded named license/configuration exports, matching disabled GPL/version3/nonfree features; source Meson flags agree. No DLL was executed."
+    },
+    "ext_fftw3": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467/0002-COPYING",
+            "texts/56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467/0003-COPYRIGHT"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-2.0-or-later",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected FFTW3 library; original project grant, not merely a GPL license template."
+    },
+    "ext_flac": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208/0002-COPYING.FDL",
+            "texts/ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208/0003-COPYING.GPL",
+            "texts/ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208/0004-COPYING.LGPL",
+            "texts/ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208/0005-COPYING.Xiph"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_flac/ebf9ba23a2c00531/flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17/src/flac/analyze.c"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 2,
+      "scope": "Only libFLAC and libFLAC++ are selected. GPL command-line tools and FDL documentation are not included in this expression."
+    },
+    "ext_fontconfig": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "HPND-sell-variant AND MIT AND LicenseRef-HarfBuzz-Old-MIT AND LicenseRef-Fontconfig-Public-Domain AND LicenseRef-Fontconfig-Unicode-CaseFolding",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 24,
+      "scope": "Original root COPYING explicitly separates main grant, HarfBuzz atomics/mutex, MIT foundry code, public-domain MD5/FreeType glue and Unicode CaseFolding attribution. The Unicode text references original terms; no guessed SPDX version is substituted."
+    },
+    "ext_freetype": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f/0001-LICENSE.TXT",
+            "texts/4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d/0002-COPYING",
+            "source-grants/ext_freetype/4766f20157cc4cf0/freetype-2.12.1/LICENSE.TXT"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "FTL AND LicenseRef-HarfBuzz-Old-MIT",
+      "originalGrantReferences": [
+        {
+          "expression": "FTL OR GPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_freetype/4766f20157cc4cf0/freetype-2.12.1/LICENSE.TXT"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 4,
+      "scope": "Choose the original offered FTL option for FreeType. This owner also supplies three HarfBuzz DLLs under the exact Old MIT text. Test fonts are excluded."
+    },
+    "ext_fribidi": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "source-grants/ext_fribidi/30f93e9c63ee627d/fribidi-1.0.11/lib/fribidi-char-sets-iso8859-6.c"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected FriBidi library, original lib source grant."
+    },
+    "ext_gettext": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "primary-grants/ext_gettext/d20fcbb537e02dcf/gettext-0.21/gettext-runtime/intl/dcigettext.c",
+            "texts/d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192/0005-COPYING.LIB"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "Selected gettext-runtime intl.dll library, proven by its implementation grant and own COPYING.LIB. GPL gettext-tools licenses do not replace the intl library LGPL grant."
+        },
+        {
+          "files": [
+            "texts/d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-or-later AND GPL-3.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-3.0-or-later",
+          "files": [
+            "source-grants/ext_gettext/d20fcbb537e02dcf/gettext-0.21/gnulib-local/lib/xalloc.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_gettext/d20fcbb537e02dcf/gettext-0.21/gettext-tools/po/en@quot.po"
+      ],
+      "runtimeFileCount": 39,
+      "scope": "intl.dll is LGPL2.1+. Selected gettext-tools message catalogs are distributed under the gettext-tools package GPL3+ terms. No GPL tools executable is inferred and the intl DLL is not relabeled GPL."
+    },
+    "ext_giflib": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/31da5562f44c5f15d63340a09a4fd62b48c45620cd302f77a6d9acf0077879bd/0001-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected GIF library, original root COPYING."
+    },
+    "ext_googleangle": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/0486aafa306e2c3415266bf31d59a5873a188169bdbbc52c728759961efd537e/0001-LICENSE",
+            "texts/9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049/0002-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause AND BSD-2-Clause AND MIT AND Zlib AND LicenseRef-MurmurHash-Public-Domain",
+      "originalGrantReferences": [],
+      "privateSourceContext": [
+        "decision-context/ext_googleangle/9d3ff60560b953da/angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/include/KHR/khrplatform.h",
+        "decision-context/ext_googleangle/9d3ff60560b953da/angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/common/third_party/smhasher/LICENSE",
+        "decision-context/ext_googleangle/9d3ff60560b953da/angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/common/third_party/xxhash/xxhash.h",
+        "decision-context/ext_googleangle/producer/recipes/ext_googleangle/CMakeLists.txt",
+        "decision-context/ext_googleangle/producer/recipes/ext_googleangle/02-patches_krita/0013-Add-CMake-build-file.patch"
+      ],
+      "runtimeFileCount": 2,
+      "scope": "ANGLE principal BSD3; exact applied CMake source globs select BSD2 xxhash, public-domain MurmurHash/MIT SMHasher helper material and Khronos MIT headers; exact producer copies pinned Google zlib into the compression target. Android/Java/build/test dependencies are excluded."
+    },
+    "ext_iconv": {
+      "catalogAssociations": [
+        "win-iconv"
+      ],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "supplements/win-iconv/readme.txt"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LicenseRef-Public-Domain-win-iconv",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Actual selected producer is win-iconv; its original root notice declares public domain. GNU gettext/tool licenses do not relicense this DLL."
+    },
+    "ext_icu": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "Unicode-DFS-2016 AND ICU",
+          "files": [
+            "texts/a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68/0001-LICENSE",
+            "primary-grants/ext_icu/a2d2d38217092a7e/icu/source/common/unicode/utypes.h"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "ICU 72 main software/data grant is the original Unicode Data Files and Software license, with the older ICU grant retained for incorporated ICU 1.8.1\u201357.1 code. Full original ICU LICENSE also contains required dictionary/data and other third-party notices; the two principal expressions do not subsume those additional terms. LICENSE.build MIT belongs to the separate build overlay."
+        },
+        {
+          "files": [
+            "texts/60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83/0001-LICENSE.build",
+            "texts/a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68/0001-LICENSE",
+            "texts/a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68/0002-license.html"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "Unicode-DFS-2016 AND ICU",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 4,
+      "scope": "Original ICU72 principal Unicode/ICU terms with complete original third-party data notices retained. Generic MIT alone is not the ICU principal grant."
+    },
+    "ext_jpeg": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "IJG AND BSD-3-Clause AND Zlib",
+          "files": [
+            "texts/d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b/0001-LICENSE.md",
+            "primary-grants/ext_jpeg/d3ed26a1131a1368/libjpeg-turbo-2.1.4/README.ijg",
+            "primary-grants/ext_jpeg/d3ed26a1131a1368/libjpeg-turbo-2.1.4/simd/nasm/jsimdext.inc"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "Exact libjpeg-turbo 2.1.4 root LICENSE.md maps IJG to the libjpeg API/inherited code, BSD-3-Clause to the TurboJPEG API/build system, and Zlib to the SIMD extensions. Both selected API DLLs are retained. This software is based in part on the work of the Independent JPEG Group."
+        },
+        {
+          "files": [
+            "texts/d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b/0001-LICENSE.md",
+            "primary-grants/ext_jpeg/d3ed26a1131a1368/libjpeg-turbo-2.1.4/README.ijg"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "IJG AND BSD-3-Clause AND Zlib",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 2,
+      "scope": "Original IJG portions, libjpeg-turbo additions and SIMD Zlib terms apply to selected jpeg/turbojpeg libraries; exact notices preserved."
+    },
+    "ext_jpegxl": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9/0002-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 3,
+      "scope": "Selected libjxl libraries. Producer explicitly disables examples/tools/JPEGLI/SJPEG/SKCMS; their unrelated terms are not added. Original BSD notices are retained for library sources."
+    },
+    "ext_json_c": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected json-c runtime library."
+    },
+    "ext_karchive": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_karchive/123a268352ab63d5/karchive-6.25.0/src/k7zip.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 44,
+      "scope": "Selected KArchive library and translations, principal library declaration."
+    },
+    "ext_kcodecs": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND MIT",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kcodecs/5051fe783803d944/kcodecs-6.25.0/src/kcharsets.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kcodecs/5051fe783803d944/kcodecs-6.25.0/src/CMakeLists.txt",
+        "decision-context/ext_kcodecs/5051fe783803d944/kcodecs-6.25.0/src/kcodecs.cpp",
+        "decision-context/ext_kcodecs/5051fe783803d944/kcodecs-6.25.0/src/probers/CharDistribution.cpp",
+        "decision-context/ext_kcodecs/5051fe783803d944/kcodecs-6.25.0/src/probers/nsSBCSGroupProber.cpp"
+      ],
+      "runtimeFileCount": 103,
+      "scope": "Selected codec library includes LGPL2-only kcodecs, LGPL2+ main classes, MIT probers, and tri-licensed probers using their offered LGPL2.1+ option."
+    },
+    "ext_kcolorscheme": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kcolorscheme/95a8a37817765f91/kcolorscheme-6.25.0/src/kcolorscheme.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 45,
+      "scope": "Selected color-scheme library and translations."
+    },
+    "ext_kcompletion": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later AND LGPL-2.1-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "source-grants/ext_kcompletion/e4138d525eb9e27a/kcompletion-6.25.0/src/kcombobox.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 104,
+      "scope": "Actual common library sources include both LGPL2+ and LGPL2.1+ declarations."
+    },
+    "ext_kconfig": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-3.0-only AND BSD-2-Clause",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/core/dbussanitizer_p.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/core/CMakeLists.txt",
+        "decision-context/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/core/kemailsettings.cpp",
+        "decision-context/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/gui/CMakeLists.txt",
+        "decision-context/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/gui/kconfiggui.cpp",
+        "decision-context/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/gui/kstandardactions.cpp",
+        "decision-context/ext_kconfig/8c675c9d35a866fb/kconfig-6.25.0/src/gui/kstandardshortcutwatcher.cpp"
+      ],
+      "runtimeFileCount": 102,
+      "scope": "Selected Core/Gui/Qml libraries: core LGPL2+ and BSD2 kemailsettings, GUI LGPL2-only and offered LGPL3 option. Unselected kreadconfig GPL executable sources are excluded."
+    },
+    "ext_kcoreaddons": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND (LGPL-2.1-only WITH Qt-LGPL-exception-1.1)",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-only",
+          "files": [
+            "source-grants/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/caching/ksdclock.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/CMakeLists.txt",
+        "decision-context/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/caching/kshareddatacache_win.cpp",
+        "decision-context/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/io/kfilesystemtype.cpp",
+        "decision-context/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/text/kemoticonsparser.cpp",
+        "decision-context/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/util/kprocesslist.cpp",
+        "decision-context/ext_kcoreaddons/e7f0825576dc44af/kcoreaddons-6.25.0/src/lib/util/kprocesslist_win.cpp"
+      ],
+      "runtimeFileCount": 116,
+      "scope": "Actual Windows caching and common runtime sources; kprocesslist Windows code retains the original Qt LGPL exception. The previously sampled non-Windows ksdclock and macOS posix_fallocate do not establish Windows selection."
+    },
+    "ext_kdcraw": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-2.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kdcraw/ef05c88669201701/libkdcraw-24.12.2/src/rawdecodingsettings.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected KDCraw library and original library source grant."
+    },
+    "ext_kguiaddons": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later AND LGPL-3.0-only",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL",
+          "files": [
+            "source-grants/ext_kguiaddons/38850963cb91978d/kguiaddons-6.25.0/src/colors/kcolorcollection.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kguiaddons/38850963cb91978d/kguiaddons-6.25.0/src/colors/kcolormimedata.cpp",
+        "decision-context/ext_kguiaddons/38850963cb91978d/kguiaddons-6.25.0/src/util/kjobwindows.cpp"
+      ],
+      "runtimeFileCount": 5,
+      "scope": "Common colors/utilities and Windows job helper; choose expressly offered LGPL3 option. Wayland-only helper license does not establish Windows scope."
+    },
+    "ext_ki18n": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later AND LGPL-3.0-only AND ODbL-1.0 AND CC0-1.0",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/i18n-qml/klocalizedqmlcontext.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/i18n-qml/localizedcontext.cpp",
+        "decision-context/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/localedata/CMakeLists.txt",
+        "decision-context/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/localedata/data/country_timezone_map.cpp",
+        "decision-context/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/localedata/data/spatial_index_parameters_p.h",
+        "decision-context/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/localedata/spatial_index.cpp",
+        "decision-context/ext_ki18n/7fbac8bc88f5cb1a/ki18n-6.25.0/src/localedata/timezonedata.cpp"
+      ],
+      "runtimeFileCount": 141,
+      "scope": "Selected I18n/Qml/LocaleData libraries; normal code LGPL2+ and offered LGPL3. LocaleData source explicitly includes ODbL database arrays and CC0 index parameters. This is database attribution, not a GPL relicense of the database."
+    },
+    "ext_kimageformats": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only AND BSD-3-Clause",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kimageformats/dfa0e9b16a288a8f/kimageformats-6.25.0/src/imageformats/ani.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kimageformats/dfa0e9b16a288a8f/kimageformats-6.25.0/src/imageformats/CMakeLists.txt",
+        "decision-context/ext_kimageformats/dfa0e9b16a288a8f/kimageformats-6.25.0/src/imageformats/avif.cpp",
+        "decision-context/ext_kimageformats/dfa0e9b16a288a8f/kimageformats-6.25.0/src/imageformats/dds.cpp",
+        "decision-context/ext_kimageformats/dfa0e9b16a288a8f/kimageformats-6.25.0/src/imageformats/fastmath_p.h",
+        "decision-context/ext_kimageformats/dfa0e9b16a288a8f/kimageformats-6.25.0/src/imageformats/gimp_p.h"
+      ],
+      "runtimeFileCount": 18,
+      "scope": "Selected image plugins include BSD fastmath and LGPL DDS/GIMP/common codecs; choose DDS offered LGPL3 option. AVIF is absent from the actual selected18plugins, so its BSD2 declaration is retained only as excluded source context."
+    },
+    "ext_kitemmodels": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kitemmodels/ab78119a00b84eac/kitemmodels-6.25.0/src/core/kbihash_p.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 5,
+      "scope": "Selected model library/Qml plugins, principal runtime source grant."
+    },
+    "ext_kitemviews": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kitemviews/b57f38d6fd184a4b/kitemviews-6.25.0/src/kcategorizedsortfilterproxymodel.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 104,
+      "scope": "Selected item-view library and translations."
+    },
+    "ext_kwidgetsaddons": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-only",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_kwidgetsaddons/8a9f9cde4427ffec/kwidgetsaddons-6.25.0/src/common_helpers.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kwidgetsaddons/8a9f9cde4427ffec/kwidgetsaddons-6.25.0/src/kactionmenu.cpp",
+        "decision-context/ext_kwidgetsaddons/8a9f9cde4427ffec/kwidgetsaddons-6.25.0/src/kadjustingscrollarea.cpp",
+        "decision-context/ext_kwidgetsaddons/8a9f9cde4427ffec/kwidgetsaddons-6.25.0/src/kbusyindicatorwidget.cpp",
+        "decision-context/ext_kwidgetsaddons/8a9f9cde4427ffec/kwidgetsaddons-6.25.0/src/kjobwidgets.cpp"
+      ],
+      "runtimeFileCount": 104,
+      "scope": "Selected shared widget code has these explicit grants; choose LGPL3 for the version-choice declarations."
+    },
+    "ext_kwindowsystem": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-or-later AND LGPL-3.0-only",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "source-grants/ext_kwindowsystem/b51448a7669efa18/kwindowsystem-6.25.0/src/cptr_p.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_kwindowsystem/b51448a7669efa18/kwindowsystem-6.25.0/src/CMakeLists.txt",
+        "decision-context/ext_kwindowsystem/b51448a7669efa18/kwindowsystem-6.25.0/src/kwindoweffects.cpp",
+        "decision-context/ext_kwindowsystem/b51448a7669efa18/kwindowsystem-6.25.0/src/kwindowsystem.cpp"
+      ],
+      "runtimeFileCount": 107,
+      "scope": "Selected common/Windows/Qml code and offered LGPL3 option. MIT X11 kstartupinfo and XCB-only sources are excluded by the Windows target conditions."
+    },
+    "ext_lame": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "LGPL-2.0-or-later",
+          "files": [
+            "primary-grants/ext_lame/ddfe36cab8737940/lame-3.100/include/lame.h",
+            "texts/ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e/0002-LICENSE",
+            "texts/ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e/0001-COPYING"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "LAME encoding library. The MIT LICENSE.build covers the separate Meson build overlay, not libmp3lame."
+        },
+        {
+          "files": [
+            "texts/bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e/0001-LICENSE.build",
+            "texts/ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e/0001-COPYING",
+            "texts/ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e/0002-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.0-or-later",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Principal selected LAME library; MIT subsidiary text is not a replacement for this grant."
+    },
+    "ext_lcms2": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT AND GPL-3.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-3.0-or-later",
+          "files": [
+            "source-grants/ext_lcms2/28474ea6f6591c4d/lcms2-2.14/plugins/threaded/src/threaded_main.c"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_lcms2/28474ea6f6591c4d/lcms2-2.14/plugins/fast_float/include/lcms2_fast_float.h",
+        "decision-context/ext_lcms2/28474ea6f6591c4d/lcms2-2.14/plugins/fast_float/src/Makefile.am",
+        "decision-context/ext_lcms2/28474ea6f6591c4d/lcms2-2.14/plugins/fast_float/src/fast_float_15bits.c"
+      ],
+      "runtimeFileCount": 2,
+      "scope": "liblcms2.dll is MIT; separately selected liblcms2_fast_float.dll is GPL3+. Exact fast_float header/source and library target are retained; threaded-only source is not used to establish this conclusion."
+    },
+    "ext_libde265": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "LGPL-3.0-or-later",
+          "files": [
+            "primary-grants/ext_libde265/b92beb6b53c346db/libde265-1.0.16/libde265/de265.h",
+            "texts/b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7/0002-COPYING",
+            "texts/b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7/0005-COPYING"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "libde265 decoder library. MIT notices belong to the separately licensed example applications."
+        },
+        {
+          "files": [
+            "texts/b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-3.0-or-later",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Principal libde265 library, exact public header; examples MIT do not replace it."
+    },
+    "ext_libheif": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42/0001-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-3.0-or-later",
+      "originalGrantReferences": [],
+      "privateSourceContext": [
+        "decision-context/ext_libheif/75f530b7154bc93e/libheif-1.21.2/libheif/api/libheif/heif.h"
+      ],
+      "runtimeFileCount": 1,
+      "scope": "Principal library public header explicitly says LGPL version3 or later. MIT sample/wrapper terms are excluded from the principal expression."
+    },
+    "ext_libogg": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected Ogg library."
+    },
+    "ext_libraw": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6/0001-COPYRIGHT",
+            "texts/dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6/0002-LICENSE.CDDL",
+            "texts/dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6/0003-LICENSE.LGPL"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-only AND BSD-3-Clause AND MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 2,
+      "scope": "Choose offered LGPL2.1 for LibRaw; root COPYRIGHT explicitly identifies BSD DCB/FBDD/X3F and MIT Adobe DNG portions. Restricted dcraw code is explicitly not used."
+    },
+    "ext_libtheora": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/8f7abefebc7f87784df903f3fca11f228baa725708d3e16a79797b1fd616b2b9/0002-COPYING",
+            "texts/8f7abefebc7f87784df903f3fca11f228baa725708d3e16a79797b1fd616b2b9/0003-LICENSE",
+            "texts/210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826/0001-LICENSE.build"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 3,
+      "scope": "Selected Theora libraries; original On2 patent notice remains included separately. MIT Meson overlay/build scripts do not replace the library grant."
+    },
+    "ext_libvorbis": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 3,
+      "scope": "Selected Vorbis libraries."
+    },
+    "ext_libx265": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "GPL-2.0-or-later",
+          "files": [
+            "primary-grants/ext_libx265/a0882bb90826da62/x265-snapshot-20260216-13309/source/x265.h",
+            "texts/a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2/0001-COPYING"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "x265 public library API identifies GPL version 2 or later. The header also offers a separate commercial license; no commercial-license entitlement is claimed. MIT json11/dynamic-HDR notices do not replace the library GPL grant."
+        },
+        {
+          "files": [
+            "texts/a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2/0001-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-2.0-or-later",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Principal x265 library, exact x265.h; MIT subsidiary portions do not replace GPL."
+    },
+    "ext_lzma": {
+      "catalogAssociations": [
+        "drmingw-scope-4"
+      ],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0/0002-COPYING",
+            "texts/a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0/0003-COPYING.GPLv2",
+            "texts/a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0/0004-COPYING.GPLv3",
+            "texts/a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0/0005-COPYING.LGPLv2.1",
+            "supplements/drmingw/originals/xz-windows/doc/COPYING-Windows.txt",
+            "supplements/drmingw/originals/xz-windows/doc/COPYING.txt",
+            "supplements/drmingw/originals/xz-windows/doc/README-Windows.txt",
+            "supplements/drmingw/originals/xz-source/xz-5.2.6/README"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LicenseRef-Public-Domain-liblzma AND LicenseRef-XZ-Windows-MinGW-Notices",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Only liblzma runtime, with full exact COPYING-Windows retained for the original Windows build. GPL xz utilities and LGPL getopt tool components are not assigned to the public-domain core."
+    },
+    "ext_mlt": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-2.1-or-later AND GPL-2.0-or-later AND MIT",
+      "originalGrantReferences": [
+        {
+          "expression": "LGPL-2.1-or-later",
+          "files": [
+            "source-grants/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/framework/mlt.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/modules/decklink/CMakeLists.txt",
+        "decision-context/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/modules/decklink/win/DeckLinkAPI_h.h",
+        "decision-context/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/modules/jackrack/factory.c",
+        "decision-context/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/modules/normalize/factory.c",
+        "decision-context/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/modules/plusgpl/factory.c",
+        "decision-context/ext_mlt/bc425bf9602213f5/mlt-7.28.0/src/modules/xine/factory.c"
+      ],
+      "runtimeFileCount": 326,
+      "scope": "Core and normal plugins LGPL2.1+; selected jackrack/normalize/plusgpl/xine DLL factory sources GPL2+; embedded ebur128/RtAudio MIT. Unselected plugins and other-platform DeckLink headers do not expand this expression."
+    },
+    "ext_mypaint": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f/0001-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "ISC",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected libmypaint library."
+    },
+    "ext_ocio": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/fe6bc4ba879d898345d80020a5c307a19456d5367c37c91cac6b777a7220970e/0001-COPYING",
+            "texts/a10f52d26b5e14c1e457c289fa0e5cb7cda93e1a6e5d286055dcc0ba28104eff/0001-LICENSE.md",
+            "texts/ba85360985877b549cc6d672f5955601eac697a4a3489d8c7f9f413682d8f72c/0001-LICENSE",
+            "texts/4f38af53aebc35924699aa41482a44a31aa52e4c6f921acee37a52ebea7333d4/0001-LICENSE",
+            "texts/2fd3bf695ccc056835a70dd6d3046312cc1004e8338b8b5c91646918a27b7ef6/0001-LICENSE",
+            "texts/49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause AND MIT AND Zlib",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "OpenColorIO2.5.1 BSD3, selected bundled dependency source grants for Imath/pystring BSD3, yaml-cpp/Expat MIT, minizip Zlib. Disabled Python/apps/tests/docs do not add their licenses."
+    },
+    "ext_openexr": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01/0002-LICENSE.md"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 7,
+      "scope": "Exact OpenEXR2.5.9 package owns all seven Half/Iex/IexMath/IlmImf/IlmImfUtil/IlmThread/Imath libraries."
+    },
+    "ext_openh264": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-2-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected OpenH264 code under original BSD2 notice; original patent context retained, no blanket patent clearance."
+    },
+    "ext_openjpeg": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a/0002-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-2-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected OpenJPEG library; MIT tests/build materials excluded."
+    },
+    "ext_opus": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/dab7ce4545ecdb851e85c5e6d10dbddd858522e69b76444b366ac3070e060679/0002-COPYING",
+            "texts/dab7ce4545ecdb851e85c5e6d10dbddd858522e69b76444b366ac3070e060679/0003-LICENSE_PLEASE_READ.txt"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected Opus library; original patent license statements remain retained, without blanket patent clearance."
+    },
+    "ext_pkgconfig": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/820b178c3a9285f30e4ca0372f7c8cc495a6a30c8445e8f442f1dfcb91b49bfa/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "ISC",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Actual selected file is libpkgconf-4.dll, not a pkg-config executable; original pkgconf ISC grant."
+    },
+    "ext_png": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "libpng-2.0",
+          "files": [
+            "primary-grants/ext_png/a050a892d3b4a7bb/libpng-1.6.51/png.h",
+            "texts/a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2/0002-LICENSE"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "PNG Reference Library License version 2 applies to libpng 1.6.51. The complete original LICENSE and png.h also retain historical version-1 notices (libpng 0.5 through 1.6.35). MIT CI/contrib files are not the principal library grant."
+        },
+        {
+          "files": [
+            "texts/a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2/0002-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "libpng-2.0",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Current principal libpng2.0 grant with historical original libpng notices retained; unrelated MIT scripts excluded."
+    },
+    "ext_poppler": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-2.0-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-2.0-or-later",
+          "files": [
+            "source-grants/ext_poppler/dded8621f7b2f695/poppler-26.02.0/qt5/src/poppler-annotation-helper.h"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 3,
+      "scope": "Selected Poppler core/cpp/qt6 libraries. BSD cmake/modules/COPYING-CMAKE-SCRIPTS is build-only and is not a binary principal grant."
+    },
+    "ext_pyqt6": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-3.0-only",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-3.0-only",
+          "files": [
+            "source-grants/ext_pyqt6/45dd60aa69976de1/pyqt6-6.11.0/PKG-INFO"
+          ]
+        }
+      ],
+      "privateSourceContext": [],
+      "runtimeFileCount": 598,
+      "scope": "Exact PyQt6 6.11.0 PKG-INFO GPL3 grant; no commercial entitlement assumed for selected bindings/uic modules."
+    },
+    "ext_pyqt6-sip": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-2-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 9,
+      "scope": "Exact selected PyQt6-SIP original two-clause license."
+    },
+    "ext_python": {
+      "catalogAssociations": [
+        "microsoft-vc-runtime",
+        "microsoft-vc-distribution",
+        "python-windows-conditions"
+      ],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "PSF-2.0",
+          "files": [
+            "texts/119c66e89872b33825f83f5902d6f980ae9a30463705744c04ef1b571e200d66/0003-LICENSE",
+            "supplements/microsoft/Python-3.13.5-Windows-LICENSE.txt"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "CPython principal PSF License Version 2, with all original BeOpen/CNRI/CWI historical notices retained in the same complete license. This primary grant does not replace the separately included extension-library, Microsoft VC, or Windows binary additional conditions."
+        },
+        {
+          "files": [
+            "texts/119c66e89872b33825f83f5902d6f980ae9a30463705744c04ef1b571e200d66/0003-LICENSE",
+            "texts/17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79/0002-COPYING",
+            "texts/338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca/0001-COPYRIGHT.txt",
+            "texts/53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e/0001-COPYING",
+            "texts/6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2/0002-LICENSE.txt",
+            "texts/9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda/0001-LICENSE",
+            "texts/9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda/0002-LICENSE-BUILDTOOLS",
+            "texts/9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f/0001-LICENSE.txt",
+            "texts/a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282/0002-COPYING",
+            "texts/a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282/0003-COPYING.GPLv2",
+            "texts/a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282/0004-COPYING.GPLv3",
+            "texts/a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282/0005-COPYING.LGPLv2.1",
+            "texts/ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2/0001-LICENSE",
+            "texts/e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927/0001-LICENSE",
+            "texts/e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "PSF-2.0 AND LicenseRef-Python-Historical-Notices AND Apache-2.0 AND MIT AND BSD-2-Clause AND BSD-3-Clause AND Zlib AND bzip2-1.0.6 AND LicenseRef-Public-Domain-liblzma AND LicenseRef-Public-Domain-SQLite AND LicenseRef-Microsoft-VC-Python-Conditions",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 36,
+      "scope": "Original Windows Python3.13.5 LICENSE directly covers Python plus extension-library notices and VC Additional Conditions. LGPL/GPL templates from XZ tools and BSL test files are excluded. VC conditions apply only to selected runtime DLLs; Apache2 applies to Python OpenSSL3, not ext_openssl1.1."
+    },
+    "ext_qt": {
+      "catalogAssociations": [
+        "qt-qbig5codecs",
+        "qt-qeucjpcodec",
+        "qt-qeuckrcodec",
+        "qt-qjiscodec",
+        "qt-qsjiscodec",
+        "qt-qtsciicodec",
+        "qt-qbkcodec",
+        "qt-extra-cmake-modules",
+        "qt-kwin",
+        "qt-d3d12memoryallocator",
+        "qt-vulkanmemoryallocator",
+        "qt-android-native-style",
+        "qt-blake2",
+        "qt-doubleconversion",
+        "qt-easing",
+        "qt-emoji-segmenter",
+        "qt-forkfd",
+        "qt-freetype",
+        "qt-freetype-zlib",
+        "qt-freetype-bdf",
+        "qt-freetype-pcf",
+        "qt-android-gradle-wrapper",
+        "qt-harfbuzz-ng",
+        "qt-icc-srgb-color-profile",
+        "qt-libjpeg",
+        "qt-libpng",
+        "qt-psl-data",
+        "qt-libpsl",
+        "qt-md4",
+        "qt-md4c",
+        "qt-md5",
+        "qt-pcre2",
+        "qt-pcre2-sljit",
+        "qt-pixman",
+        "qt-rfc6234",
+        "qt-sha1",
+        "qt-sha3_endian",
+        "qt-sha3_keccak",
+        "qt-siphash",
+        "qt-sqlite",
+        "qt-tinycbor",
+        "qt-dejayvu",
+        "qt-appmenu",
+        "qt-wayland-color-management-protocol",
+        "qt-fractional-scale-v1",
+        "qt-wayland-fullscreen-protocol",
+        "qt-wayland-linux-dmabuf-unstable-v1",
+        "qt-wayland-pointer-gestures-protocol",
+        "qt-wayland-pointer-warp-protocol",
+        "qt-presentation-time.xml",
+        "qt-wayland-scaler-protocol",
+        "qt-wayland-session-management-protocol",
+        "qt-wayland-tablet-protocol",
+        "qt-wayland-text-input-unstable-v1",
+        "qt-wayland-text-input-unstable-v2",
+        "qt-wayland-text-input-unstable-v3",
+        "qt-wayland-viewporter-protocol",
+        "qt-wayland-protocol",
+        "qt-wayland-eglstream-controller",
+        "qt-wlr-data-control-unstable-v1-protocol",
+        "qt-wayland-primary-selection-protocol",
+        "qt-wayland-xdg-activation",
+        "qt-wayland-xdg-decoration-protocol",
+        "qt-xdg-dialog-v1",
+        "qt-xdg-foreign-unstable-v2",
+        "qt-wayland-xdg-output-protocol",
+        "qt-wayland-xdg-shell-protocol",
+        "qt-wayland-xdg-system-bell-protocol",
+        "qt-wayland-xdg-toplevel-icon-protocol",
+        "qt-wintab",
+        "qt-xcb-xinput",
+        "qt-zlib",
+        "qt-tlexpected",
+        "qt-qeventdispatcher_cf",
+        "qt-tika-mimetypes",
+        "qt-unicode-character-database",
+        "qt-unicode-cldr",
+        "qt-libdbus-1-headers",
+        "qt-opengl-headers",
+        "qt-opengl-es2-headers",
+        "qt-grayraster",
+        "qt-smooth-scaling-algorithm",
+        "qt-xserverhelper",
+        "qt-rhi-miniengine-d3d12-mipmap",
+        "qt-aglfn",
+        "qt-vulkan-xml-spec",
+        "qt-cocoa-platform-plugin",
+        "qt-cmake-runcmake-test-modules",
+        "qt-catch2",
+        "qt-cycle",
+        "qt-linuxperf",
+        "qt-valgrind",
+        "qt-webgradients",
+        "qt-georama-font",
+        "qt-weather-icons",
+        "qt-map-of-europe",
+        "qt-work-sans-font",
+        "qt-gear-icon",
+        "qt-masm",
+        "qt-yoga",
+        "qt-shadow_angular_material",
+        "qt-libtiff",
+        "qt-libwebp",
+        "qt-spirvcross",
+        "qt-glslang",
+        "qt-xsvg",
+        "qt-catch2-qdoc",
+        "qt-llvm_clang_typename_namespace-qdoc"
+      ],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "LGPL-3.0-only AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND Apache-2.0 AND (Apache-2.0 AND LicenseRef-MIT-Khronos-old) AND BSD-2-Clause AND (BSD-2-Clause AND Imlib2) AND BSD-3-Clause AND (BSD-3-Clause AND LicenseRef-MIT-Khronos-old AND Apache-2.0 AND GPL-3.0-or-later WITH Bison-exception-2.2 AND AML-glslang) AND BSL-1.0 AND CC0-1.0 AND FTL AND HPND-sell-variant AND LicenseRef-BSD-3-Clause-with-PCRE2-Binary-Like-Packages-Exception AND LicenseRef-ICC-License AND LicenseRef-Lcs-Telegraphics AND LicenseRef-SHA1-Public-Domain AND MIT AND MPL-2.0 AND Unicode-3.0 AND (X11 AND HPND) AND blessing AND libtiff",
+      "originalGrantReferences": [
+        {
+          "expression": "LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+          "files": [
+            "source-grants/ext_qt/ec6527d901bd850d/source/src/corelib/global/qglobal.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_qt/722acf0b31bc45e5/source/src/qmlcompiler/qqmljscompiler.cpp",
+        "decision-context/ext_qt/f71362e77db12391/source/src/core5/codecs/qtextcodec.cpp",
+        "decision-context/ext_qt/ec6527d901bd850d/source/src/corelib/global/qglobal.cpp",
+        "decision-context/ext_qt/722acf0b31bc45e5/source/src/qml/qml/qqmlengine.cpp",
+        "decision-context/ext_qt/774143082082b4cf/source/src/plugins/imageformats/tiff/qtiffhandler.cpp",
+        "decision-context/ext_qt/5e90bccf270845a6/source/src/shadertools/qshaderbaker.cpp",
+        "decision-context/ext_qt/f22206eae4dc7093/source/src/svg/qsvgrenderer.cpp",
+        "decision-context/ext_qt/9ecb367fffb9c194/source/src/uitools/quiloader.cpp"
+      ],
+      "runtimeFileCount": 2084,
+      "scope": "Choose offered LGPL3 for ordinary selected Qt modules; selected Qt6QmlCompiler carries GPL3 with Qt exception. Selected/conditional third-party terms are appended explicitly below. No commercial license assumed. Conditional implementation notices are conservatively retained for the selected containing Windows modules; exact feature status is not claimed. Other platforms, examples, build tools and separately owned system dependencies are excluded.",
+      "thirdPartyScopes": [
+        {
+          "basis": "Exact Core5Compat includes qtsciicodec for textcodec independently of ICU; keep TSCII copyright/terms.",
+          "expression": "BSD-2-Clause",
+          "files": [
+            "texts/f71362e77db1239194789440b72164276d1db48a5ea4795f68d6335c0ff68f5d/0001-BSD-2-Clause.txt",
+            "texts/f71362e77db1239194789440b72164276d1db48a5ea4795f68d6335c0ff68f5d/0015-LICENSE.QTSCIICODEC.txt",
+            "texts/f71362e77db1239194789440b72164276d1db48a5ea4795f68d6335c0ff68f5d/0016-qt_attribution.json"
+          ],
+          "id": "qt-qtsciicodec",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0043-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0044-qt_attribution.json"
+          ],
+          "id": "qt-d3d12memoryallocator",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0045-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0046-qt_attribution.json"
+          ],
+          "id": "qt-vulkanmemoryallocator",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "CC0-1.0 OR Apache-2.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0002-Apache-2.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0008-CC0-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0049-COPYING",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0050-qt_attribution.json"
+          ],
+          "id": "qt-blake2",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "BSD-3-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0004-BSD-3-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0051-LICENSE",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0052-qt_attribution.json"
+          ],
+          "id": "qt-doubleconversion",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-3-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0004-BSD-3-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0053-LICENSE",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0054-qt_attribution.json"
+          ],
+          "id": "qt-easing",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "Apache-2.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0002-Apache-2.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0055-qt_attribution.json"
+          ],
+          "id": "qt-emoji-segmenter",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "LicenseRef-ICC-License",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0022-LicenseRef-ICC-License.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0070-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0071-qt_attribution.json"
+          ],
+          "id": "qt-icc-srgb-color-profile",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "MPL-2.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0030-MPL-2.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0077-PSL-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0078-qt_attribution.json"
+          ],
+          "id": "qt-psl-data",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "BSD-3-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0004-BSD-3-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0078-qt_attribution.json",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0079-LICENSE.chromium"
+          ],
+          "id": "qt-libpsl",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "CC0-1.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0008-CC0-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0080-qt_attribution.json"
+          ],
+          "id": "qt-md4",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0081-LICENSE.md",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0082-qt_attribution.json"
+          ],
+          "id": "qt-md4c",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "CC0-1.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0008-CC0-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0083-qt_attribution.json"
+          ],
+          "id": "qt-md5",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "LicenseRef-BSD-3-Clause-with-PCRE2-Binary-Like-Packages-Exception",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0021-LicenseRef-BSD-3-Clause-with-PCRE2-Binary-Like-Packages-Exception.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0085-LICENCE.md",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0087-qt_attribution.json"
+          ],
+          "id": "qt-pcre2",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-2-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0003-BSD-2-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0086-LICENSE-SLJIT",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0087-qt_attribution.json"
+          ],
+          "id": "qt-pcre2-sljit",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-3-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0004-BSD-3-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0090-LICENSE",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0091-qt_attribution.json"
+          ],
+          "id": "qt-rfc6234",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "LicenseRef-SHA1-Public-Domain",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0025-LicenseRef-SHA1-Public-Domain.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0092-qt_attribution.json"
+          ],
+          "id": "qt-sha1",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-2-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0003-BSD-2-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0093-BRG_ENDIAN_LICENSE",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0095-qt_attribution.json"
+          ],
+          "id": "qt-sha3_endian",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "CC0-1.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0008-CC0-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0094-CC0_LICENSE",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0095-qt_attribution.json"
+          ],
+          "id": "qt-sha3_keccak",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "CC0-1.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0008-CC0-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0096-qt_attribution.json"
+          ],
+          "id": "qt-siphash",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "blessing",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0037-blessing.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0097-qt_attribution.json"
+          ],
+          "id": "qt-sqlite",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0098-LICENSE",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0099-qt_attribution.json"
+          ],
+          "id": "qt-tinycbor",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "LicenseRef-Lcs-Telegraphics",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0023-LicenseRef-Lcs-Telegraphics.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0132-qt_attribution.json"
+          ],
+          "id": "qt-wintab",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "CC0-1.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0008-CC0-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0137-qt_attribution.json"
+          ],
+          "id": "qt-tlexpected",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "Unicode-3.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0033-Unicode-3.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0141-qt_attribution.json"
+          ],
+          "id": "qt-unicode-character-database",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "Unicode-3.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0033-Unicode-3.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0141-qt_attribution.json"
+          ],
+          "id": "qt-unicode-cldr",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0144-LICENSE.KHRONOS.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0145-qt_attribution.json"
+          ],
+          "id": "qt-opengl-headers",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0144-LICENSE.KHRONOS.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0145-qt_attribution.json"
+          ],
+          "id": "qt-opengl-es2-headers",
+          "selection": "selected"
+        },
+        {
+          "basis": "Exact Gui main SOURCES includes painting/qgrayraster.c even with -system-freetype; keep this separate FreeType-derived raster notice.",
+          "expression": "FTL OR GPL-2.0-only",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0009-FTL.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0011-GPL-2.0-only.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0059-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0148-qt_attribution.json"
+          ],
+          "id": "qt-grayraster",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-2-Clause AND Imlib2",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0003-BSD-2-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0017-Imlib2.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0146-LICENSE.QIMAGETRANSFORM.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0148-qt_attribution.json"
+          ],
+          "id": "qt-smooth-scaling-algorithm",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "X11 AND HPND",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0014-HPND.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0034-X11.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0147-LICENSE.XCONSORTIUM.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0148-qt_attribution.json"
+          ],
+          "id": "qt-xserverhelper",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0149-LICENSE.MiniEngine.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0150-qt_attribution.json"
+          ],
+          "id": "qt-rhi-miniengine-d3d12-mipmap",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-3-Clause",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0004-BSD-3-Clause.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0151-LICENSE.AGLFN.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0152-qt_attribution.json"
+          ],
+          "id": "qt-aglfn",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "Apache-2.0 OR MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0002-Apache-2.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0153-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0154-qt_attribution.json"
+          ],
+          "id": "qt-vulkan-xml-spec",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Exact Test target includes catch/cycle headers and ATTRIBUTION_FILE_DIR_PATHS; Qt6Test.dll is selected. Preserve original notices without claiming all header code linked.",
+          "expression": "BSL-1.0",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0006-BSL-1.0.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0159-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0160-qt_attribution.json"
+          ],
+          "id": "qt-catch2",
+          "selection": "selected"
+        },
+        {
+          "basis": "Exact Test target includes catch/cycle headers and ATTRIBUTION_FILE_DIR_PATHS; Qt6Test.dll is selected. Preserve original notices without claiming all header code linked.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0161-LICENSE.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0162-qt_attribution.json"
+          ],
+          "id": "qt-cycle",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "MIT",
+          "files": [
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0029-MIT.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0170-LICENSE.WEBGRADIENTS.txt",
+            "texts/ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02/0171-qt_attribution.json"
+          ],
+          "id": "qt-webgradients",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-2-Clause",
+          "files": [
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0002-BSD-2-Clause.txt",
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0017-LICENSE",
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0018-qt_attribution.json"
+          ],
+          "id": "qt-masm",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "MIT",
+          "files": [
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0011-MIT.txt",
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0019-LICENSE",
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0020-qt_attribution.json"
+          ],
+          "id": "qt-yoga",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "MIT",
+          "files": [
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0011-MIT.txt",
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0021-LICENSE.ANGULARJS.txt",
+            "texts/722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49/0022-qt_attribution.json"
+          ],
+          "id": "qt-shadow_angular_material",
+          "selection": "selected"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "libtiff",
+          "files": [
+            "texts/774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8/0007-libtiff.txt",
+            "texts/774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8/0008-COPYRIGHT",
+            "texts/774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8/0009-qt_attribution.json"
+          ],
+          "id": "qt-libtiff",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Selected containing DLL/plugin exists; preserve original notice pending exact feature/cache or native import evidence for optional bundled implementation.",
+          "expression": "BSD-3-Clause",
+          "files": [
+            "texts/774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8/0001-BSD-3-Clause.txt",
+            "texts/774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8/0011-COPYING",
+            "texts/774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8/0012-qt_attribution.json"
+          ],
+          "id": "qt-libwebp",
+          "selection": "conditional"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "Apache-2.0 AND LicenseRef-MIT-Khronos-old",
+          "files": [
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0002-Apache-2.0.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0010-LicenseRef-MIT-Khronos-old.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0014-COPYRIGHT.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0016-qt_attribution.json"
+          ],
+          "id": "qt-spirvcross",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "BSD-3-Clause AND LicenseRef-MIT-Khronos-old AND Apache-2.0 AND GPL-3.0-or-later WITH Bison-exception-2.2 AND AML-glslang",
+          "files": [
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0001-AML-glslang.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0002-Apache-2.0.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0003-BSD-3-Clause.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0004-Bison-exception-2.2.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0008-GPL-3.0-or-later.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0010-LicenseRef-MIT-Khronos-old.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0017-COPYRIGHT.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0018-LICENSE.txt",
+            "texts/5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a/0019-qt_attribution.json"
+          ],
+          "id": "qt-glslang",
+          "selection": "selected"
+        },
+        {
+          "basis": "Original attribution identifies selected containing module, with source target evidence where inspected.",
+          "expression": "HPND-sell-variant",
+          "files": [
+            "texts/f22206eae4dc7093df63d7a1d7d0d5cf5e0b6e6a1d7091807e0a41442bbaf12a/0005-HPND-sell-variant.txt",
+            "texts/f22206eae4dc7093df63d7a1d7d0d5cf5e0b6e6a1d7091807e0a41442bbaf12a/0008-LICENSE.XSVG.txt",
+            "texts/f22206eae4dc7093df63d7a1d7d0d5cf5e0b6e6a1d7091807e0a41442bbaf12a/0009-qt_attribution.json"
+          ],
+          "id": "qt-xsvg",
+          "selection": "selected"
+        }
+      ]
+    },
+    "ext_quazip": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582/0001-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "(LGPL-2.1-only WITH LicenseRef-QuaZip-Static-Link-Exception) AND Zlib",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Definitive original COPYING governs QuaZip; retain exact static-link exception and MiniZip Zlib terms. Do not invent an or-later option."
+    },
+    "ext_sdl2": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "Zlib",
+          "files": [
+            "primary-grants/ext_sdl2/8000d7169febce93/SDL2-2.26.0/include/SDL.h",
+            "texts/8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295/0001-LICENSE.txt"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "SDL2 core library Zlib grant. HIDAPI and other subsystem notices remain additional file-scoped notices."
+        },
+        {
+          "files": [
+            "texts/8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295/0001-LICENSE.txt"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "Zlib",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Principal SDL2 library grant and complete included subsidiary notices; unrelated examples BSD are not the principal library license."
+    },
+    "ext_seexpr": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/859f24a4cb6554b3add9a1902e952698ed69052723d3f1a13e4d8891cbb54ed6/0001-LICENSE.txt"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "GPL-3.0-or-later AND LGPL-3.0-only AND GFDL-1.3-or-later",
+      "originalGrantReferences": [
+        {
+          "expression": "GPL-3.0-or-later",
+          "files": [
+            "source-grants/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/src/KSeExpr/Context.cpp"
+          ]
+        },
+        {
+          "expression": "LicenseRef-Apache-2.0",
+          "files": [
+            "source-grants/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/src/KSeExpr/Context.cpp"
+          ]
+        }
+      ],
+      "privateSourceContext": [
+        "decision-context/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/poqm/ca/seexpr2_qt.po",
+        "decision-context/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/poqm/ca@valencia/seexpr2_qt.po",
+        "decision-context/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/poqm/eo/seexpr2_qt.po",
+        "decision-context/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/poqm/pt/seexpr2_qt.po",
+        "decision-context/ext_seexpr/859f24a4cb6554b3/kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/poqm/uk/seexpr2_qt.po"
+      ],
+      "runtimeFileCount": 28,
+      "scope": "Only 28 seexpr2_qt.qm translations are selected, no SeExpr DLL. Three exact source locales ca/ca@valencia/uk offer LGPL2.1 or3 (choose3); pt explicitly GFDL1.3+ and names Krita Manual; other locales default to project terms. Preserve this unusual original header without inventing a correction."
+    },
+    "ext_tiff": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed/0001-COPYRIGHT"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "libtiff",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 2,
+      "scope": "Selected TIFF libraries, exact Sam Leffler/SGI original permission."
+    },
+    "ext_vpl": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/476adfabd3ef5b6f990011004c0caa4bb0c3549685d7cf520def76d26b22b74d/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "MIT",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Selected dispatcher library principal MIT; BSD sample licenses are excluded."
+    },
+    "ext_vpx": {
+      "catalogAssociations": [
+        "libvpx-reference"
+      ],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Original upstream libvpx1.13.1 LICENSE/PATENTS are reference-qualified only. Moving meson-2 producer revision remains unknown and no libvpx source entry exists in the117 published archives. This is not a GPL corresponding-source requirement."
+    },
+    "ext_webp": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "files": [
+            "texts/2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4/0002-COPYING"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 5,
+      "scope": "Selected webp/sharpyuv/decoder/demux/mux libraries under original BSD3 notice."
+    },
+    "ext_zlib": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "Zlib",
+          "files": [
+            "primary-grants/ext_zlib/9a93b2b7dfdac77c/zlib-1.3.1/zlib.h",
+            "texts/9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23/0001-LICENSE"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "zlib 1.3.1 library. BSL-1.0 is the contrib/dotzlib subsidiary license, not the selected native compression DLL license."
+        },
+        {
+          "files": [
+            "texts/9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23/0001-LICENSE"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "Zlib",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 1,
+      "scope": "Principal zlib header grant. BSL contrib/test materials do not replace it."
+    },
+    "llvm-mingw": {
+      "catalogAssociations": [],
+      "decisionStatus": "proposed-for-owner-review",
+      "evidence": [
+        {
+          "expression": "Apache-2.0 WITH LLVM-exception",
+          "files": [
+            "texts/b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df/0014-LICENSE.TXT",
+            "texts/b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df/0027-LICENSE.TXT",
+            "texts/b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df/0016-LICENSE.TXT"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "LLVM libc++, OpenMP and libunwind runtime libraries, each with its full original Apache license AND LLVM exceptions (including object-code embedding and the stated GPLv2 exception). Other original notices, including OpenMP ittnotify BSD terms and MinGW startup/runtime notices, retain their separate file scope."
+        },
+        {
+          "expression": "MIT AND BSD-3-Clause",
+          "files": [
+            "texts/d2fa18ef6b1fc8afd80c065a524fc090a7514803a3c93f79ae29ef5ac4a1801e/0008-COPYING"
+          ],
+          "kind": "catalog-primary-runtime-grant",
+          "scope": "MinGW-w64 winpthreads: original COPYING contains the mingw-w64 MIT grant and the derived Lockless Inc. BSD-3-Clause grant. Not the LLVM exception license."
+        },
+        {
+          "files": [
+            "texts/9e5ef9adbbe94a3bd44225a8c61678ff93293f94d8f2639830b0ea7ee8c52eb6/0001-LICENSE.txt",
+            "texts/d2fa18ef6b1fc8afd80c065a524fc090a7514803a3c93f79ae29ef5ac4a1801e/0002-COPYING",
+            "texts/b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df/0001-LICENSE.TXT"
+          ],
+          "kind": "catalog-original-root-notices"
+        }
+      ],
+      "license": "(Apache-2.0 WITH LLVM-exception) AND MIT AND BSD-3-Clause",
+      "originalGrantReferences": [],
+      "privateSourceContext": [],
+      "runtimeFileCount": 4,
+      "scope": "Three selected libc++/unwind DLLs carry exact LLVM exception; winpthreads original MinGW-w64 MIT/BSD terms are separately retained."
+    }
+  },
+  "projectedApplicationFiles": 870,
+  "projectedDependencyFiles": 4232,
+  "projectedRetainedFiles": 5102,
+  "purpose": "Review-candidate material checks only; no release approval or new native acceptance.",
+  "resourceGrantResolution": {
+    "bytes": 40739,
+    "sha256": "a92cda03c12cdbc31f86d373304eba7adfb1bf75087efcab8c450d23fc2d4869"
+  },
+  "schema": 1
+}

@@ -58,7 +58,7 @@ class NativeEvidenceTests(unittest.TestCase):
  def test_ambiguous_native_receipts_refused(self):
   other=self.path.parent.with_name('other');other.mkdir();(other/'native-build.json').write_bytes(self.path.read_bytes())
   with self.assertRaises(ValueError):self.read()
- def test_incomplete_import_observation_preserves_original_package_failure_and_inputs(self):
+ def test_incomplete_import_observation_refuses_tls_selection_before_sdk_and_preserves_inputs(self):
   install=self.root/'.brushquay/install';(install/'bin').mkdir(parents=True);(install/'plugins/platforms').mkdir(parents=True)
   for name in ('bin/bristlune.exe','bin/bristlune.dll','plugins/platforms/qwindows.dll','bin/Qt6Core.dll','bin/libc++.dll','bin/libunwind.dll','bin/libwinpthread-1.dll'):
    (install/name).write_bytes(b'original native fixture')
@@ -67,11 +67,12 @@ class NativeEvidenceTests(unittest.TestCase):
   staged={'deps/plugins/platforms/qwindows.dll':dict(**measure(plugin),owners=['qt'])};original=measure_tree(install)
   self.record.update(installedTree=original,lockSha256=sha(canonical({})));self.write()
   output=self.root/'.brushquay/package';evidence=self.root/'.brushquay/observations'
-  with patch('prepare.sys.platform','win32'),patch('prepare.load_tools',return_value={'sdkVersion':'10.0.26100.0'}),patch('prepare.load_lock',return_value={}),patch('prepare.verify_stage',return_value={'files':staged}),patch('prepare.pack',side_effect=RuntimeError('original SDK packaging failure')):
-   with self.assertRaisesRegex(RuntimeError,'^original SDK packaging failure$'):
+  with patch('prepare.sys.platform','win32'),patch('prepare.load_tools',return_value={'sdkVersion':'10.0.26100.0'}),patch('prepare.load_lock',return_value={}),patch('prepare.verify_stage',return_value={'files':staged}),patch('prepare.pack') as sdk:
+   with self.assertRaisesRegex(ValueError,'^Complete current PE graph required$'):
     prepare(self.root,output,evidence,None,self.head,'42','1')
+   sdk.assert_not_called()
   record=json.loads((evidence/'qualification-package.json').read_bytes());observed=json.loads((evidence/'staged-pe-imports.json').read_bytes())
-  self.assertEqual(record['error'],'original SDK packaging failure');self.assertEqual(record['peImportObservation']['status'],'incomplete')
+  self.assertEqual(record['error'],'Complete current PE graph required');self.assertEqual(record['peImportObservation']['status'],'incomplete')
   self.assertIn('exact locked LLVM owner',observed['errors'][0]['error']);self.assertFalse(observed['releaseReady']);self.assertFalse(record['licenseReviewComplete'])
   self.assertEqual(record['peImportObservation']['file'],measure(evidence/'staged-pe-imports.json'));self.assertEqual(measure_tree(install),original)
  def test_sdk_input_mutation_cannot_be_packaged(self):

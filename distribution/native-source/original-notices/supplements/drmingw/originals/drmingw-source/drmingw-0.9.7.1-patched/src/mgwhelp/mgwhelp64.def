@@ -1,0 +1,106 @@
+EXPORTS
+	SymInitialize = MgwSymInitialize
+	SymInitializeW = MgwSymInitializeW
+	SymCleanup = MgwSymCleanup
+	SymSetOptions = MgwSymSetOptions
+	SymFromAddr = MgwSymFromAddr
+	SymFromAddrW = MgwSymFromAddrW
+	SymGetLineFromAddr64 = MgwSymGetLineFromAddr64
+	SymGetLineFromAddrW64 = MgwSymGetLineFromAddrW64
+        SymLoadModuleEx = MgwSymLoadModuleEx
+        SymLoadModuleExW = MgwSymLoadModuleExW
+        UnDecorateSymbolName = MgwUnDecorateSymbolName
+
+	EnumDirTree
+	EnumDirTreeW
+	EnumerateLoadedModules
+	EnumerateLoadedModules64
+	EnumerateLoadedModulesW64
+	ExtensionApiVersion
+	FindDebugInfoFile
+	FindDebugInfoFileEx
+	FindExecutableImage
+	FindExecutableImageEx
+	FindExecutableImageExW
+	GetTimestampForLoadedLibrary
+	ImageDirectoryEntryToData
+	ImageDirectoryEntryToDataEx
+	ImageNtHeader
+	ImageRvaToSection
+	ImageRvaToVa
+	ImagehlpApiVersion
+	ImagehlpApiVersionEx
+	MakeSureDirectoryPathExists
+	MiniDumpReadDumpStream
+	MiniDumpWriteDump
+	SearchTreeForFile
+	SearchTreeForFileW
+	StackWalk
+	StackWalk64
+	SymAddSymbol
+	SymAddSymbolW
+	SymEnumLines
+	SymEnumSourceFiles
+	SymEnumSymbols
+	SymEnumSymbolsW
+	SymEnumTypes
+	SymEnumTypesW
+	SymEnumerateModules
+	SymEnumerateModules64
+	SymEnumerateModulesW64
+	SymEnumerateSymbols
+	SymEnumerateSymbols64
+	SymFindFileInPath
+	SymFindFileInPathW
+	SymFromName
+	SymFunctionTableAccess
+	SymFunctionTableAccess64
+	SymGetLineFromAddr
+	SymGetLineNext
+	SymGetLineNext64
+	SymGetLinePrev
+	SymGetLinePrev64
+	SymGetModuleBase
+	SymGetModuleBase64
+	SymGetModuleInfo
+	SymGetModuleInfo64
+	SymGetModuleInfoW
+	SymGetModuleInfoW64
+	SymGetOptions
+	SymGetSearchPath
+	SymGetSearchPathW
+	SymGetSourceFileToken
+	SymGetSourceFileTokenW
+	SymGetSymFromAddr
+	SymGetSymFromAddr64
+	SymGetSymFromName
+	SymGetSymFromName64
+	SymGetSymNext
+	SymGetSymNext64
+	SymGetSymPrev
+	SymGetSymPrev64
+	SymGetTypeFromName
+	SymGetTypeInfo
+	SymLoadModule
+	SymLoadModule64
+	SymMatchFileName
+	SymMatchFileNameW
+	SymMatchString
+	SymRefreshModuleList
+	SymRegisterCallback
+	SymRegisterCallback64
+	SymRegisterCallbackW64
+	SymRegisterFunctionEntryCallback
+	SymRegisterFunctionEntryCallback64
+	SymSearch
+	SymSearchW
+	SymSetContext
+	SymSetParentWindow
+	SymSetScopeFromAddr
+	SymSetSearchPath
+	SymSetSearchPathW
+	SymUnDName
+	SymUnDName64
+	SymUnloadModule
+	SymUnloadModule64
+	WinDbgExtensionDllInit

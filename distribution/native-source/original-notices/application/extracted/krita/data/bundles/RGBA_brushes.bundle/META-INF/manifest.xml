@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" manifest:version="1.2">
+ <manifest:file-entry manifest:media-type="application/x-krita-resourcebundle" manifest:full-path="/"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/Craig_02.png" manifest:md5sum="8af21e0e4094b14a1c5bded301d63f5c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/DA_RGBA bluegreen_small.png" manifest:md5sum="8341d03c14238741b9e6d96ebfe43c49"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/DA_RGBA bluegreen_small1.png" manifest:md5sum="7eeaa1b474c2c481b7f4f29290ec6ee3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/DA_Triangle grain.png" manifest:md5sum="8b80f65fa55906cf8dbfd1830d5fa3b7"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/Mountain_Brush_01.png" manifest:md5sum="c71b3d0e3fa5d380d061c5acf62f9705"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/RGBA anim 01.gih" manifest:md5sum="c0a7dce24fee7064ce5b26bcc0fc2845"/>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/m)_RGBA_01_Thick-dry.kpp" manifest:md5sum="e238c77683c6b213a6e36b675aff5d6f">
+  <manifest:tags>
+   <manifest:tag>RGBA</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/m)_RGBA_02_Thickpaint.kpp" manifest:md5sum="7685dd3c1cbd097b250048be5b4b0770">
+  <manifest:tags>
+   <manifest:tag>RGBA</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/m)_RGBA_03_Rake.kpp" manifest:md5sum="e0d6d85df6e1deba4e586e9850f698c3">
+  <manifest:tags>
+   <manifest:tag>RGBA</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/m)_RGBA_04_Impasto.kpp" manifest:md5sum="4ebd0d6a953ef959b63c76df0d2b6fdb">
+  <manifest:tags>
+   <manifest:tag>RGBA</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/m)_RGBA_05_Impasto-details.kpp" manifest:md5sum="8581d97ab3a75a101a3324710105bb18">
+  <manifest:tags>
+   <manifest:tag>RGBA</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/m)_RGBA_06_Rock.kpp" manifest:md5sum="8f1e87ff57ec2aafab037761b6354e1c">
+  <manifest:tags>
+   <manifest:tag>RGBA</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+</manifest:manifest>

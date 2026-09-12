@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" manifest:version="1.2">
+ <manifest:file-entry manifest:media-type="application/x-krita-resourcebundle" manifest:full-path="/"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/abominable_snowman.png" manifest:md5sum="c605fb1974497a2974efa42352a88abe"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bamboo_leaves_random.gih" manifest:md5sum="cd186642232fa99aa5bd3e7c47f76db4"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bokey_circle.gbr" manifest:md5sum="44410ba6468d1f7632f3bc7bfde365b1"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/brick.gih" manifest:md5sum="7498c8f361120d8a1b97f491c4cd5dad"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristle.png" manifest:md5sum="757b0f5ad827856e519e5a89fb4c56eb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_chisel_dense.png" manifest:md5sum="202928db8d6f16e1dcae086d19664094"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_dense.png" manifest:md5sum="2077c6167d084a057a8b486317faee70"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_medium.png" manifest:md5sum="1c0f289e766a9e0408a3d85ad2ea6d71"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_random.gih" manifest:md5sum="0971b64d6072e836e06efdc1b97641f3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_sparse.png" manifest:md5sum="0130983aee2a978a17840d2c70f6bed3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_variable.svg" manifest:md5sum="271521c99fe83268faf2097e98b3b7af"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_grouped.gbr" manifest:md5sum="409722c8889a41bec2e358cce31e2ca3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk.png" manifest:md5sum="0FF46E2283E042D178EB38EA48567C7E"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_chisel.gih" manifest:md5sum="7f3863bfd3cab3f752b14cc1de9431ae"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_chisel_random.gih" manifest:md5sum="0973f11ba0e89a75d61bc12eda1034d1"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_chisel_random_small.gih" manifest:md5sum="a97713f98ef4610596fa466ea1ad54ea"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_round_hard.png" manifest:md5sum="cafac5b3c23f0b2e22d032f921d23a79"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_sparse.png" manifest:md5sum="9048ebc4d8b12733148eaf070818a2f8"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_bent_rough.gih" manifest:md5sum="577addf439bdffc7c836e97df6fa833d"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_dense_smear.png" manifest:md5sum="cc381b8d9ca83870fadfefb59aac7f4e"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_eroded.png" manifest:md5sum="19ffe4a88b2e74d59a893b1016792a6e"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_knife.gbr" manifest:md5sum="df976d4d02b8e2075adeb5e990683d2f"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_soft.png" manifest:md5sum="8a9ee1f3d3a32604e0956f96d24b1568"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_streaks.png" manifest:md5sum="6fc823504c38d90e64990e97db08d500"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/circle_hard_eroded.gih" manifest:md5sum="ee6339b8cd6e3ecf9fec985b4c5fca77"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/crackles.gbr" manifest:md5sum="d1c346051e22843b7078782ec6c3c348"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/fairy-dust.gih" manifest:md5sum="7487dc2985b7206c83323d5d12f9e58a"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/floor.gih" manifest:md5sum="7c099703e293b096ecc6a3e7d3f127aa"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/freckles.png" manifest:md5sum="6f59df30f0fd8d3f3585a588149e36b0"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/gradient.png" manifest:md5sum="6bf914cec7c603a805dd4a3632d33777"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/graphite_grain.gih" manifest:md5sum="5ddd122e0a9c09dc6efc3686c2b90bfb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/grass.gih" manifest:md5sum="c2d8d103cf4fbc6d8fe9a210e23197c0"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/grass_patch.gih" manifest:md5sum="68c6197c2437791b97a7d29502799c91"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/hair.png" manifest:md5sum="0e1062ad97901cbf3ff2127c7bbcced7"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/hearts.gih" manifest:md5sum="a2cb3dc42e3138c0154ca205985fb62c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/impressionism_brush.gih" manifest:md5sum="d6340e322a20309c31f02898dc1740bc"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/leaves-scattered.svg" manifest:md5sum="3965d89365f0888808a8edee32ab4e91"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/leaves.png" manifest:md5sum="495a97a38ef7174aae0fa7d7b8d06c40"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/mountains_distant.gih" manifest:md5sum="5d65a65c9fb7e5a9a8439ea483abdf00"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/noise.gih" manifest:md5sum="e5c4072a5f5cd90e059515d606aecb0b"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/oil_bristle.png" manifest:md5sum="efc1164df48fb9d9109909e263621dde"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/oil_knife.png" manifest:md5sum="d4690ecae37da5df8fdb7a89def2f4bb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/paint_splats.gih" manifest:md5sum="2878a1b976a93ea39fb81a1de919f9ab"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_dense.png" manifest:md5sum="b997f7bb9f05b652c09c66f3ee698055"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_dotted.png" manifest:md5sum="46fff7b75c21a72b9403cbae49ce254a"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_flat.png" manifest:md5sum="b5da35d4a28c3592b3b32ba122152abd"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_sparse.png" manifest:md5sum="15d34cd43f66e990d1576dbbcaab0925"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/random-debris.gbr" manifest:md5sum="255b53cddff03bffd3e6b998258b31a6"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/random-vegetal.gih" manifest:md5sum="756b439af225b588214374db3f0550c3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/random_particles.png" manifest:md5sum="3941c99fc29d65c6e3a87977a2dc1773"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rock.png" manifest:md5sum="4abc2ca5cf4b82b39e895f94242c374e"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rock_light.gih" manifest:md5sum="c1c1103ff01c4a4d81868272d5d5c376"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rock_pitted.gih" manifest:md5sum="e673b84510ab50f00aed5c88472c7488"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rock_scraped.gih" manifest:md5sum="61f99b634511a0c65e837d0e49ab23c3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/scales.png" manifest:md5sum="5c729dd25103ea3b727949146cfe5f45"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/scratches_rough.gih" manifest:md5sum="7405e631326870efaff0c4e93ddba485"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/scribbles.png" manifest:md5sum="bfc9ef905a033fa653c7db17b38a3487"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/shapes_mech_random.gih" manifest:md5sum="dfc0ad5f65ededb79bd961bd1ea25f6a"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/shapes_round_random.gih" manifest:md5sum="a410b0b0b4becc9cd5d0eaa67ce4cd68"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/shapes_spiked_random.gih" manifest:md5sum="9502e5c4fad5b0b722de41954b2d9061"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/smear_paint.png" manifest:md5sum="53c99fbaf77962937bb64307a9f54f55"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/smoke.png" manifest:md5sum="22000c5d8b3960d782ff8de8c212258d"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/snow.gih" manifest:md5sum="dfb4f1f7569da33bcfe4f576fb0d8105"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/sparkle.png" manifest:md5sum="d1db40b427437870ae5ca436c04ce6c9"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/spike_blob.png" manifest:md5sum="9054c79b5c72f1b8167f811565cc23a6"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/spike_eroded.png" manifest:md5sum="41c276d69cd897968c4cee273b49bc21"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/spines.png" manifest:md5sum="3af0ab5a11b704e562c04612389f9ec9"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/splat_dots.png" manifest:md5sum="EB1D3EB7AF790A7BD83CA6481E9D6850"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/splats_large.gih" manifest:md5sum="ee65dd9910dc474f85bb5ce26353f40c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/square_eroded.png" manifest:md5sum="d0c61f7db346b848c4685310e6342c74"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/square_rough.png" manifest:md5sum="cf1bc7415af3103afcd82f58a2e6fe18"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/square_rough_lightgrey.png" manifest:md5sum="91f6656cf18f86fa409a7d98f6176b0e"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/starfield.png" manifest:md5sum="8f97a0f8114457670d871d9c57ccf607"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/triangle.svg" manifest:md5sum="886452fc26cc1f23689131039e3c74c4"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/vegetal.gbr" manifest:md5sum="03b2dc08a715634b2316c53eb5a0555c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/vegetal_stylised.gih" manifest:md5sum="521026eca32df462c676d3c58bdf4ca6"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/water_still.gih" manifest:md5sum="7ef84e25befa21c063610e3454da1fad"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/watercolor.gih" manifest:md5sum="ab0f2533f70f76314711899bec6b34cb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/abominable_snowman.png" manifest:md5sum="c605fb1974497a2974efa42352a88abe"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bokey_circle.gbr" manifest:md5sum="44410ba6468d1f7632f3bc7bfde365b1"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristle.png" manifest:md5sum="757b0f5ad827856e519e5a89fb4c56eb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_dense.png" manifest:md5sum="2077c6167d084a057a8b486317faee70"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_circle_random.gih" manifest:md5sum="0971b64d6072e836e06efdc1b97641f3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/bristles_grouped.gbr" manifest:md5sum="409722c8889a41bec2e358cce31e2ca3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_chisel_random.gih" manifest:md5sum="0973f11ba0e89a75d61bc12eda1034d1"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_chisel_random_small.gih" manifest:md5sum="a97713f98ef4610596fa466ea1ad54ea"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chalk_round_hard.png" manifest:md5sum="cafac5b3c23f0b2e22d032f921d23a79"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_knife.gbr" manifest:md5sum="df976d4d02b8e2075adeb5e990683d2f"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/chisel_streaks.png" manifest:md5sum="6fc823504c38d90e64990e97db08d500"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/circle_hard_eroded.gih" manifest:md5sum="ee6339b8cd6e3ecf9fec985b4c5fca77"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/crackles.gbr" manifest:md5sum="d1c346051e22843b7078782ec6c3c348"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/fairy-dust.gih" manifest:md5sum="7487dc2985b7206c83323d5d12f9e58a"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/floor.gih" manifest:md5sum="7c099703e293b096ecc6a3e7d3f127aa"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/freckles.png" manifest:md5sum="6f59df30f0fd8d3f3585a588149e36b0"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/gradient.png" manifest:md5sum="6bf914cec7c603a805dd4a3632d33777"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/graphite_grain.gih" manifest:md5sum="5ddd122e0a9c09dc6efc3686c2b90bfb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/grass.gih" manifest:md5sum="c2d8d103cf4fbc6d8fe9a210e23197c0"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/grass_patch.gih" manifest:md5sum="68c6197c2437791b97a7d29502799c91"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/hair.png" manifest:md5sum="0e1062ad97901cbf3ff2127c7bbcced7"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/hearts.gih" manifest:md5sum="a2cb3dc42e3138c0154ca205985fb62c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/impressionism_brush.gih" manifest:md5sum="d6340e322a20309c31f02898dc1740bc"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/leaves-scattered.svg" manifest:md5sum="3965d89365f0888808a8edee32ab4e91"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/mountains_distant.gih" manifest:md5sum="5d65a65c9fb7e5a9a8439ea483abdf00"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/noise.gih" manifest:md5sum="e5c4072a5f5cd90e059515d606aecb0b"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/oil_bristle.png" manifest:md5sum="efc1164df48fb9d9109909e263621dde"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/oil_knife.png" manifest:md5sum="d4690ecae37da5df8fdb7a89def2f4bb"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/plain_rake.png" manifest:md5sum="8a9ee1f3d3a32604e0956f96d24b1568"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_dense.png" manifest:md5sum="b997f7bb9f05b652c09c66f3ee698055"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_dotted.png" manifest:md5sum="46fff7b75c21a72b9403cbae49ce254a"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rake_flat.png" manifest:md5sum="b5da35d4a28c3592b3b32ba122152abd"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/random-debris.gbr" manifest:md5sum="255b53cddff03bffd3e6b998258b31a6"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/random-vegetal.gih" manifest:md5sum="756b439af225b588214374db3f0550c3"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/random_particles.png" manifest:md5sum="3941c99fc29d65c6e3a87977a2dc1773"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rock.png" manifest:md5sum="4abc2ca5cf4b82b39e895f94242c374e"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/rock_pitted.gih" manifest:md5sum="e673b84510ab50f00aed5c88472c7488"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/scratches_rough.gih" manifest:md5sum="7405e631326870efaff0c4e93ddba485"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/scribbles.png" manifest:md5sum="bfc9ef905a033fa653c7db17b38a3487"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/shapes_mech_random.gih" manifest:md5sum="dfc0ad5f65ededb79bd961bd1ea25f6a"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/shapes_round_random.gih" manifest:md5sum="a410b0b0b4becc9cd5d0eaa67ce4cd68"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/shapes_spiked_random.gih" manifest:md5sum="9502e5c4fad5b0b722de41954b2d9061"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/snow.gih" manifest:md5sum="dfb4f1f7569da33bcfe4f576fb0d8105"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/spines.png" manifest:md5sum="3af0ab5a11b704e562c04612389f9ec9"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/splat_dots.png" manifest:md5sum="EB1D3EB7AF790A7BD83CA6481E9D6850"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/splats_large.gih" manifest:md5sum="ee65dd9910dc474f85bb5ce26353f40c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/square_eroded.png" manifest:md5sum="d0c61f7db346b848c4685310e6342c74"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/square_rough.png" manifest:md5sum="cf1bc7415af3103afcd82f58a2e6fe18"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/square_rough_lightgrey.png" manifest:md5sum="91f6656cf18f86fa409a7d98f6176b0e"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/vegetal.gbr" manifest:md5sum="03b2dc08a715634b2316c53eb5a0555c"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/vegetal_stylised.gih" manifest:md5sum="521026eca32df462c676d3c58bdf4ca6"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/water_still.gih" manifest:md5sum="7ef84e25befa21c063610e3454da1fad"/>
+ <manifest:file-entry manifest:media-type="brushes" manifest:full-path="brushes/watercolor.gih" manifest:md5sum="ab0f2533f70f76314711899bec6b34cb"/>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/a)_Eraser_Circle.kpp" manifest:md5sum="9a216aa4e8aec450a3974172ea12d2e1">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Erasers</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/a)_Eraser_Small.kpp" manifest:md5sum="27cbbdbc26d30d288aa385339fca82f6">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Erasers</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/a)_Eraser_Soft.kpp" manifest:md5sum="58402263d24e6a36586fa11e4d275eca">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Erasers</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Airbrush_Soft.kpp" manifest:md5sum="19013b99bc354d53263bbda966197d9b">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-1.kpp" manifest:md5sum="35e1b7d4c28252b813b976fbfe5242ef">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-2_Opacity.kpp" manifest:md5sum="de5356197a10784b095c0221bd0131ed">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-3_Flow.kpp" manifest:md5sum="ab8720ccbed642129a61811e8112b423">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-4_Flow_Opacity.kpp" manifest:md5sum="0454fc62a268adaa7c45dbc08bbea1db">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-5_Size_Opacity.kpp" manifest:md5sum="721cdd50ef488fd72a19c3442db8ad80">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-5_Size_default.kpp" manifest:md5sum="9a3acfed6edc51407b6d6b521e6c6e7a">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/b)_Basic-6_Details.kpp" manifest:md5sum="e8065be011532f7894a7db7c4dc5c955">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/c)_Pencil-1_Hard.kpp" manifest:md5sum="60af826741b4b7294385974aef6d6b56">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/c)_Pencil-2.kpp" manifest:md5sum="76ac427825552b9a091ad2f853e0675c">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/c)_Pencil-3_Large_4B.kpp" manifest:md5sum="830e3f72974277f015a91d949c652bcd">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/c)_Pencil-4_Soft.kpp" manifest:md5sum="335d68c8194c61a2db0f5891630c7b83">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/c)_Pencil-5_Tilted.kpp" manifest:md5sum="3a41d02cd08bfe9ae687bc3bcb8fa990">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/c)_Pencil-6_Quick_Shade.kpp" manifest:md5sum="30dea48bf65acef3fa1b0d3ebcbb5052">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/d)_Ink-1_Precision.kpp" manifest:md5sum="73a7c86c56965af1e9eecf96c2afad15">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/d)_Ink-2_Fineliner.kpp" manifest:md5sum="41336b7952f9ad9ccb9306196d5c2c5c">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/d)_Ink-3_Gpen.kpp" manifest:md5sum="5bac4fba78a7923542a85fbd8aff3443">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/d)_Ink-4_Pen_Rough.kpp" manifest:md5sum="06f2cc7c01f917442cd5fcf392327b90">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/d)_Ink-7_Brush_Rough.kpp" manifest:md5sum="6351a6360119c5b5041f11d3d3d900ad">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/d)_Ink-8_Sumi-e.kpp" manifest:md5sum="53657f656ad99a643a6a7919753f78c0">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/e)_Marker_Chisel_Smooth.kpp" manifest:md5sum="32e18b96b920dea508564430e7e1099b">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/e)_Marker_Details.kpp" manifest:md5sum="c649b5842d368de6fefd1a0ace2fb54d">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/e)_Marker_Dry.kpp" manifest:md5sum="c40ea3cd25d672c98f0e933644641163">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Bristles-1_Details.kpp" manifest:md5sum="08d6ab3ceb7665ad07dd854a97c9baec">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Bristles-2_Flat_Rough.kpp" manifest:md5sum="63a458c99225a0109079869a35e3d432">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Bristles-3_Large_Smooth.kpp" manifest:md5sum="95601479fdbe7437b80c2544347d159e">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Bristles-4_Glaze.kpp" manifest:md5sum="fec359167ec2e92124892228c04e201d">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Bristles-5_Flat.kpp" manifest:md5sum="010d9846471c4ff875a7f082b148ecae">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Charcoal_Rock_Soft.kpp" manifest:md5sum="94b39f93d07b51c9b244ecdf1cfd43f3">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/f)_Dry_Roller.kpp" manifest:md5sum="34c1e6649ef0429dc3a7071d71ac5bda">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/g)_Dry_Bristles.kpp" manifest:md5sum="365751fc379265546dc6a6f19d9ed983">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/g)_Dry_Bristles_Eroded.kpp" manifest:md5sum="baa21650e949349d1778e008c9fd01fd">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/g)_Dry_Brushing.kpp" manifest:md5sum="d02799ad41a6369da7ab89e1462b2506">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/g)_Dry_Textured_Creases.kpp" manifest:md5sum="ef7c8cb83e71dbd6a269aa9fbba69f57">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/h)_Chalk_Details.kpp" manifest:md5sum="b0449b7fd60e2e61c75f8db79d3ceac7">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/h)_Chalk_Grainy.kpp" manifest:md5sum="37bb25f1bad81a131f9db22a2e8ce7cb">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/h)_Chalk_Soft.kpp" manifest:md5sum="5381dce8d1bfcabcb113c9c7ab08fbee">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/h)_Charcoal_Pencil_Medium.kpp" manifest:md5sum="aea61b0611d9eb78fa7e30044bcff099">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/h)_Charcoal_Pencil_Thin.kpp" manifest:md5sum="7247c8e5371bdb2f5bf8f5089c812875">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/h)_Charcoal_pencil_large.kpp" manifest:md5sum="af3cddbb62022bc2b15175c20ef4cc8e">
+  <manifest:tags>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Bristles.kpp" manifest:md5sum="16ba89499a36bc70418e20aac3ab3a5c">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Bristles_Rough.kpp" manifest:md5sum="e20edb7652acb15c10fe98153fde79e1">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Circle.kpp" manifest:md5sum="c2683861aff1520e512c27e1029d94c6"/>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Knife.kpp" manifest:md5sum="c95fa312725b163aabeff314cc372484">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Paint.kpp" manifest:md5sum="a66147d2768faeb1cc9acdaa4b0d300d">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Paint_Details.kpp" manifest:md5sum="c8e67450edc28cd4c9767c76de3b51a8">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Smear.kpp" manifest:md5sum="2d980d89a9cf9742bf51806e005a9265"/>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/i)_Wet_Textured_Soft.kpp" manifest:md5sum="5f96848a8e6af289732556b3054c0a25">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/j)_Watercolor_Fringe.kpp" manifest:md5sum="b5dec5186d3f0e6abbee655f05f604d3">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/j)_Watercolor_Texture.kpp" manifest:md5sum="8db4a4ef6593ce0af1a1d8791414fccd">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/j)_Waterpaint_Hard_Edges.kpp" manifest:md5sum="fd7e9b29b49c23fdc8a6c210cb57b649">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/j)_Waterpaint_Soft_Edges.kpp" manifest:md5sum="737155e8189d6349218dece52dd10afe">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Basic.kpp" manifest:md5sum="06c08910b326f152d5cdc8e86af92f9d">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Blur.kpp" manifest:md5sum="9e7b29ec5117acb9a2f692b035ac409f">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Knife_Edge.kpp" manifest:md5sum="5a162dd94d53b39baabc20a4bf0336e5">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Pixelize.kpp" manifest:md5sum="3ba15d489af0ce86d5c5e3e68b764989">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Rake.kpp" manifest:md5sum="5b2a60f54c0dfa1149f79fa2c3f28e6a">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Smear.kpp" manifest:md5sum="90f1d8210ce44ff408141f50f7e669ac">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/k)_Blender_Textured_Soft.kpp" manifest:md5sum="2ce2cdb4781ef27ebe83bea27859ec42">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/l)_Adjust_Color.kpp" manifest:md5sum="ed9cdd0bd8bec9a35af18b000aff5c75">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/l)_Adjust_Dodge.kpp" manifest:md5sum="d15c11409a60719022ffa87cc4582ebd">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/l)_Adjust_Lighten.kpp" manifest:md5sum="b6cdf4e1b912efcda799b4295609e154">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/l)_Adjust_Multiply.kpp" manifest:md5sum="8a43356e7eb12c2a3e2093f5c0b574ff">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/l)_Adjust_Overlay_Burn.kpp" manifest:md5sum="0203428ce6b3da5d91762dce958e8495">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/t)_Shapes_Fill.kpp" manifest:md5sum="6dc6be61d1bea90df629d7929fba70f5">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/t)_Shapes_Mecha.kpp" manifest:md5sum="e847936100b80b094c4f9eb1befbf015">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/t)_Shapes_Rounded.kpp" manifest:md5sum="404854983d13fe988297cf2ea2c60d8f">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/t)_Shapes_Spikes.kpp" manifest:md5sum="ed6434787a882df0cbb7678ff79a6461">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/t)_Shapes_Square.kpp" manifest:md5sum="d842bb62c92d4e6668a179c2f57c9d97">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/u)_Pixel_Art.kpp" manifest:md5sum="a18b6e7ea215288a30cd15376947c2fe">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Pixel Art</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/u)_Pixel_Art_Dithering.kpp" manifest:md5sum="b72eab306972d1ccac734f52e09b90e0">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Pixel Art</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/u)_Pixel_Art_Fill.kpp" manifest:md5sum="0f27975ee9fe873bd76de755718bea52">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Pixel Art</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Clone_Tool.kpp" manifest:md5sum="1267cb3d4ef1c2a410d4429e275acd00">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Distort_Grow.kpp" manifest:md5sum="9f2954e7e52717490176f5ce5e6cb97d">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Distort_Move.kpp" manifest:md5sum="c31790dbd5a7bbccb63e5a7858a18aae">
+  <manifest:tags>
+   <manifest:tag>★ My Favorites</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Distort_Shrink.kpp" manifest:md5sum="7f64ae9255785ef56101491e0c1fe36e">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Experimental_Webs.kpp" manifest:md5sum="a8dfaf04bfd27908386a8ab16bd35580">
+  <manifest:tags>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Sketching-1_Chrome_Thin.kpp" manifest:md5sum="43aff9e1349a8be13e79e3ccea8edc31">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Sketching-2_Chrome_Large.kpp" manifest:md5sum="c696b43f9da0d48754fb6a9a908f3ac9">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+   <manifest:tag>Sketch</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Sketching-3_Leaky.kpp" manifest:md5sum="3fdd5f608c958b1aff0b930215c00e5f">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Digital</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Texture_Impressionism.kpp" manifest:md5sum="e0b030a27feff0799fd0691c233e449f">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/v)_Texture_Pointillism.kpp" manifest:md5sum="9e643ca332024608101adc0863c20463">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/w)_Texture_Normal_Map.kpp" manifest:md5sum="65d7bf0e583aa3731ea9c8839ecfb97a"/>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/x)_Filter_Blur.kpp" manifest:md5sum="074a5ffbf1f1998acf12f7a5cd382ac4">
+  <manifest:tags>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/x)_Filter_Sharpen.kpp" manifest:md5sum="c57d3eaecd70827e974ecf8f7126423d">
+  <manifest:tags>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Screentone_Moire.kpp" manifest:md5sum="def13eebcd3f3965c22c26504fdbe96c">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Screentone_Pressure.kpp" manifest:md5sum="81f0192552f82f01d5803d8a7c6e9315">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Screentones_Regular.kpp" manifest:md5sum="cea8a92112c42ceb19ddcd13907d5db8">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Big.kpp" manifest:md5sum="31497992f95bc25bdeb44476bfd1b215">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Crackles.kpp" manifest:md5sum="de9bc6338584c8a4ef54e83e86840e8e">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Hair.kpp" manifest:md5sum="a53db278b91e090bb7254c867140c98e">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Large_Splat.kpp" manifest:md5sum="316d32e5f505993ac2d0660a0e159652">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Noise.kpp" manifest:md5sum="0945778a0b1872b62393f2c1888442d3">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Random_Particles.kpp" manifest:md5sum="83c799219aa81803ab9e5cb6e4dc1a4c">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Reptile.kpp" manifest:md5sum="02cde954787bef2cc9194e37538f2162">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Snow_Pile.kpp" manifest:md5sum="1aca7c270d61feff49373a12c3af6348">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Spines.kpp" manifest:md5sum="35a527c371113fa5820f0d9bbd1b66fa">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Splat.kpp" manifest:md5sum="f65fc8409a527c3f064c47339e1a4198">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Paint</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Spray.kpp" manifest:md5sum="86351381314777bc1968434a14e1b3f6">
+  <manifest:tags>
+   <manifest:tag>Paint</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Starfield.kpp" manifest:md5sum="48a82eed4d68fa81a269cc011084a04b">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/y)_Texture_Wood_Fiber.kpp" manifest:md5sum="99d80028db4cb5bd1b752ea179a64681">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Bokeh.kpp" manifest:md5sum="171467c56ce9239057329de5ba1eb77d">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Floor.kpp" manifest:md5sum="c94a1a2bd0bf28f25076a138e31a5023">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Grass.kpp" manifest:md5sum="2da6b4d3b0414a1e9c84b45083e5c1e6">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Grass_Patch.kpp" manifest:md5sum="aa60a191eaf95312cc8d82a3bb8922ea">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Hearts.kpp" manifest:md5sum="6575a4fb7505255b5b1f43674d3c5e8d">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Herbals.kpp" manifest:md5sum="5c2cfb51f2d48a1d7d3867df48d4f912">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Leaves.kpp" manifest:md5sum="8554ca2019ff00f4dbbfe65da4f6158a">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Mountains_Distant.kpp" manifest:md5sum="8affc60cb2a1d82f35295ae46ffc4781">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Shoujo_Bubbles.kpp" manifest:md5sum="535036aae7cc2e0f49a9e28285a01a42">
+  <manifest:tags>
+   <manifest:tag>Ink</manifest:tag>
+   <manifest:tag>Textures</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Sparkles.kpp" manifest:md5sum="06d270c4155acb09249366aeedfb0e66">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+   <manifest:tag>FX</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Stylised_Tree.kpp" manifest:md5sum="943fbd69e78809a9802e8cd633ecfe76">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Vegetal.kpp" manifest:md5sum="9adcf3ea5cc237fae3984953e6575902">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="paintoppresets" manifest:full-path="paintoppresets/z)_Stamp_Water.kpp" manifest:md5sum="18ad81c0625c11d3a97f1f7160e66e96">
+  <manifest:tags>
+   <manifest:tag>Textures</manifest:tag>
+  </manifest:tags>
+ </manifest:file-entry>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/01_canvas.png" manifest:md5sum="df2464ed4fcdc081d1731a53fb6f1bc4"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/02_rough-canvas.png" manifest:md5sum="b769aec21669f5baceb6441d83f70798"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/02b_WoofTissue.png" manifest:md5sum="797dcafabd33553b7d40b988c05475c9"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/03_default-paper.png" manifest:md5sum="37122e722b76eb57797def364c28ae33"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/04_paper-C-grain.png" manifest:md5sum="c2b932456a0225a77289475f7d916700"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/05_paper-torchon.png" manifest:md5sum="6fbb2ae6ed910855e5556a217fe6e92b"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/06_hard-grain.png" manifest:md5sum="4753ffe8b46e5dfbeea9c203e6cfe4fb"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/08_bump-relief.png" manifest:md5sum="fe6138ab35057408579f7b0a83c71e43"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/09_drawed_crosshatched.png" manifest:md5sum="7dac32bcf0b241fc52ea55dd0c81c109"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/09b_drawed-CrossedLines.png" manifest:md5sum="38a4638aabcb5ff763d83a82e2d32223"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/10_drawed_dotted.png" manifest:md5sum="29f8d8d3be0c6ae0daca12d7cc3378b8"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/11_drawed_furry.png" manifest:md5sum="0174b5af913bf6481abfcd698af2f610"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/12_drawed_vertical.png" manifest:md5sum="272c734429c665825345487b2d2b1ab5"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/13_drawed_swirl.png" manifest:md5sum="54b23b98748b03a5a0b3882f2dcad873"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/14_texture-rock.png" manifest:md5sum="e0ddd97ecfb3ddc927e0097685c4bc38"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/15_texture-rockB.png" manifest:md5sum="934d77b36fb9a400c989d0c2fc2b909e"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/16_texture-woody.png" manifest:md5sum="04d6399dd065fad85c144aebb24855f1"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/17_texture-melt.png" manifest:md5sum="c1ea14a42e099abb134d8dee396194e4"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/18_texture-bark.png" manifest:md5sum="6e24608a0446e90fe1c75c0dc24cad01"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/18b_WaveFlex.png" manifest:md5sum="2625360047d41caf1540c38730444a3f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/19_texture-crackle.png" manifest:md5sum="7f5f93bf533bd368cbbdc46bb8507f5e"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/20_texture-vegetal.png" manifest:md5sum="ae9902ad953e6867235706931ca3d742"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/21_texture-chainmail.png" manifest:md5sum="bf090807b86e5d184bb95c70272c7ad8"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/22_texture-reptile.png" manifest:md5sum="8ea8c59946a4e691f09da11100efc4d6"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/23-dynamic-screentone-A.png" manifest:md5sum="f3e07b53941297d4d0763c5d09a63883"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/24-dynamic-screentone-B.png" manifest:md5sum="198aa711d9074f3d804b67cd2c9335f9"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/25-dynamic-screentone-C.png" manifest:md5sum="14c4bdd9c5e4b74126241286d6508a03"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/26_brush-marks.png" manifest:md5sum="95e6055c191d70a720f972f5769f7912"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Abstract_lines.png" manifest:md5sum="ce3ed276a54dc209cfffbe4220506b1f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross01.pat" manifest:md5sum="60cdf06f5fa87ee182d77a058a37e62d"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross02.pat" manifest:md5sum="03f24c589bfaaac0c1492ff2c5351d35"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross03.pat" manifest:md5sum="68321ba4d8e0c53fcba1548341220527"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross04.pat" manifest:md5sum="e2d254ac8e1a6a99ad0ee0abfba5c7eb"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross05.pat" manifest:md5sum="19ffe25f814e17d75b520e41c3db564f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross06.pat" manifest:md5sum="75e18c3eb58cac7134a3c7c9bf9d52f8"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Cross07.pat" manifest:md5sum="71a71439dae47141e472d59959ba193b"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Crumpled_Paper.pat" manifest:md5sum="230d330d2671b0c0babb253c3651a3ed"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Grid01.pat" manifest:md5sum="b73c65d825ba1b10b6741798e061bc49"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Grid02.pat" manifest:md5sum="92840e93e34cb71f38cbf92186e3f3a2"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Grid03.pat" manifest:md5sum="5a361a9059f9987b170441f24fc27546"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Grid04.pat" manifest:md5sum="1d32570cf32095d3914672f8384f4ab1"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Grid05.pat" manifest:md5sum="11a36795974bc38da8185e4ce07a8f6f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/HR_PastelPaper_02.pat" manifest:md5sum="08f663a18d0e6299e3907311ab3615a1"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/HR_Wall_Paper.pat" manifest:md5sum="54f6b89f7401b7056485f22c7baa848f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Maze_lines.png" manifest:md5sum="f792a7b6e1dee57318474149caffff57"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Pattern01.pat" manifest:md5sum="6c521fc70ba96c569129a63204b4e6c6"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Pattern02.pat" manifest:md5sum="575813a5d19f3099bc8384db19164e73"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Pattern03.pat" manifest:md5sum="c5adb405e2b3e7a292e10a479c185c5e"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Pattern04.pat" manifest:md5sum="1be6dd4bb6c217b893fd2ca3023bdde9"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Pattern05.pat" manifest:md5sum="4ed444c0d47ff230bcd02e3329f9c30f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Pattern06.pat" manifest:md5sum="f8bb69228a9700864fd040bd0351589c"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Rough_Paper.png" manifest:md5sum="67c2b5d58d0d3e03f7f4eaf85ac0fc54"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Rough_Wall_With_Impasto.png" manifest:md5sum="c31ef8cb5d4a0352af51223864add32f"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Sand_fine.png" manifest:md5sum="d15b10533b17a96bf75dc6ae82a2d543"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares01.pat" manifest:md5sum="198dadad9bfa28f5bceff0a1c1b1aa20"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares02.pat" manifest:md5sum="e7715570212d3ac8ee64b8c3ce4a67fb"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares03.pat" manifest:md5sum="6a69f85a57b4170bfbfcdaeaee4e5b17"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares04.pat" manifest:md5sum="1ad973c5dd04dce610c199cd9f3248f3"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares05.pat" manifest:md5sum="d7f8cc0256e6588f811f91fc699846c0"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares06.pat" manifest:md5sum="e48ec8c06898d44366e07657e5bec1af"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares07.pat" manifest:md5sum="e747203a8a795db30d92875ea25675b5"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares08.pat" manifest:md5sum="df3862431c4561cd34e5faf0ab03e118"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares09.pat" manifest:md5sum="9d9884943a7ee5aeb55ac606daebcaa7"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Squares10.pat" manifest:md5sum="8cf3358ba4a61054ca6c97e7f21d8bdb"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stars_Sized.png" manifest:md5sum="31a25cd25b7bda7dab7d13986cea637a"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes02.pat" manifest:md5sum="5cef7f29193ff012ce8d22dc37a2a35d"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes03.pat" manifest:md5sum="e49fb0998890518c52fcf76c4775b524"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes04.pat" manifest:md5sum="77e76c3f2c5142658818c3e08b743ef1"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes05.pat" manifest:md5sum="9b62982adcb8e263c9704dc2cad27a89"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes06.pat" manifest:md5sum="9e3dc7aaa6bc3265f647c9d36c868790"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes07.pat" manifest:md5sum="61bcff0edaea130f324aeabd39a533a3"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes08.pat" manifest:md5sum="b32648f48e3a992b584664818cafe234"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Stripes09.pat" manifest:md5sum="403a8787485cd663956acc0234db2431"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Zigzag01.pat" manifest:md5sum="c9b512b3ec791ca5e65fb78c68c6c77a"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Zigzag02.pat" manifest:md5sum="72d8f10461b7e49aaf72671fd593a0a0"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Zigzag03.pat" manifest:md5sum="18dc80c533eee457556a145756d35619"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/Zigzag04.pat" manifest:md5sum="0a0ec4ef51cc2796236600177e5b2f8c"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/fractal_pattern.pat" manifest:md5sum="fcae0f59e53f27847696f1731c9fd8c5"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/generic_paper1.pat" manifest:md5sum="955292dd8086f39799a9921f5c11e198"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/generic_paper2.pat" manifest:md5sum="d9aa028fb60352eae15d45f8d66a44a2"/>
+ <manifest:file-entry manifest:media-type="patterns" manifest:full-path="patterns/hexacolBW__2.pat" manifest:md5sum="653b5046ecb816fb3d4985ac32fb9a40"/>
+</manifest:manifest>
