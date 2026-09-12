@@ -28,6 +28,13 @@ class NativeEvidenceTests(unittest.TestCase):
   with self.assertRaises(ValueError):self.read()
   self.git('checkout','--','source')
   with self.assertRaises(ValueError):native_evidence(self.root,'a'*40,'42','1')
+ def test_dirty_package_boundary_retains_original_paths_and_bytes(self):
+  path=self.root/'source';path.write_bytes(b'changed\r\n');output=self.path.parent/'source-before-package.json'
+  with self.assertRaisesRegex(ValueError,'source'):
+   native_evidence(self.root,self.head,'42','1',output)
+  observed=json.loads(output.read_bytes());self.assertFalse(observed['clean']);self.assertEqual(observed['phase'],'before-package')
+  row=observed['paths'][0];self.assertEqual(row['path'],'source');self.assertEqual(row['working']['crlf'],1)
+  self.assertNotEqual(row['committed']['sha256'],row['working']['sha256']);self.assertEqual(path.read_bytes(),b'changed\r\n')
  def test_other_run_attempt_or_tree_cannot_qualify(self):
   for key,value in [('workflowRunId','43'),('workflowRunAttempt','2'),('sourceTree','a'*40),('inputStageUnchanged',False)]:
    with self.subTest(key=key):

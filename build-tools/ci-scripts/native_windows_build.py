@@ -15,6 +15,7 @@ import uuid
 from locked_windows_deps import LockError, canonical, load_lock, sha, verify_stage
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'packaging/windows/qualification'))
 from runtime_stage import measure, measure_tree
+from source_state import require_clean_source
 
 
 def configuration(stage, source, build, install, host):
@@ -82,14 +83,16 @@ def run(command, log, environment, cwd):
         raise LockError('Native command exited ' + str(code) + '; log: ' + str(log))
 
 
-def compile_targets(cmake, build, jobs, evidence, environment, source):
+def compile_targets(cmake, build, jobs, evidence, environment, source, observe_source=None):
     # These targets link only the small preset library and Qt Core/Test/Xml.
     # Catch their source-boundary errors before compiling the entire product.
     focused = ['KisBrushQuayIdentityTest', 'KisExportFileTransactionTest', 'KisExportPresetStoreTest']
     run([cmake, '--build', str(build), '--target', *focused, '--parallel', str(jobs)],
         evidence / 'focused-build.log', environment, source)
+    if observe_source:observe_source('after-focused-compile')
     run([cmake, '--build', str(build), '--parallel', str(jobs)],
         evidence / 'build.log', environment, source)
+    if observe_source:observe_source('after-compile')
 
 
 def main():
@@ -118,15 +121,18 @@ def main():
               'licenseAuditComplete': False, 'windows': platform.platform(),
               'bootstrapPython': sys.version, 'bootstrapExecutable': sys.executable,
               'bootstrapExecutableSha256': hashlib.sha256(Path(sys.executable).read_bytes()).hexdigest(),
-              'sourceBaselineCommit': lock['applicationSourceCommit']}
+              'sourceBaselineCommit': lock['applicationSourceCommit'], 'sourceObservations': {}}
+    def observe_source(phase):
+        output=evidence/('source-'+phase+'.json')
+        try:return require_clean_source(source,record['sourceHead'],output,phase)
+        finally:
+            if output.is_file():record['sourceObservations'][phase]={'file':output.name,**measure(output)}
     try:
         manifest = verify_stage(lock, cache, stage)
         record['verifiedInputFiles'] = len(manifest['files'])
         record['sourceHead'] = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
         record['sourceTree'] = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD^{tree}'], text=True).strip()
-        dirty = subprocess.check_output(['git', '-C', str(source), 'status', '--porcelain', '--untracked-files=all'], text=True)
-        if dirty:
-            raise LockError('Source checkout is dirty; commit the reviewed inputs before native qualification')
+        observe_source('before-configure')
         command, environment = configuration(stage, source, build, install, os.environ)
         record['configuration'] = command
         build.mkdir(parents=True, exist_ok=True)
@@ -149,8 +155,9 @@ def main():
                                       'sha256': hashlib.sha256(executable.read_bytes()).hexdigest()}
         run(command, evidence / 'configure.log', environment, source)
         record['status'] = 'configured'
+        observe_source('after-configure')
         if not args.configure_only:
-            compile_targets(command[0], build, args.jobs, evidence, environment, source)
+            compile_targets(command[0], build, args.jobs, evidence, environment, source, observe_source)
             record['status'] = 'compiled'
             expected_tests = {'libs-ui-' + name for name in (
                 'KisBrushQuayIdentityTest', 'KisBrushQuayWorkspaceTest', 'KisExportPresetIntegrationTest',
@@ -174,7 +181,9 @@ def main():
             record['productTests'] = sorted(expected_tests)
             record['productTestReport'] = measure(evidence / 'product-tests.xml')
             record['status'] = 'compiled_and_product_tests_passed'
+            observe_source('after-tests')
             run([command[0], '--install', str(build)], evidence / 'install.log', environment, source)
+            observe_source('after-install')
             record['installedApplicationFiles'] = []
             for relative in ('bin/bristlune.exe', 'bin/bristlune.com', 'bin/bristlune.dll'):
                 installed_file = install / relative
@@ -190,6 +199,11 @@ def main():
         record['error'] = str(error)
         raise
     finally:
+        # A failed native command keeps its primary error. Preserve a separate
+        # final read even when it could not reach the next successful phase.
+        if 'error' in record and 'sourceHead' in record:
+            try:observe_source('failure-final')
+            except Exception as error:record['finalSourceObservationError']=str(error)
         (evidence / 'native-build.json').write_bytes(canonical(record) + b'\n')
         print('Metadata/log evidence:', evidence, flush=True)
 

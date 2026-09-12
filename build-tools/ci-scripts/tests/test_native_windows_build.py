@@ -26,6 +26,14 @@ class NativeWindowsBuildTest(unittest.TestCase):
                 build.compile_targets('cmake', Path('/build'), 2, Path('/evidence'), {}, Path('/source'))
         self.assertEqual(native.call_count, 1)
 
+    def test_source_violation_after_focused_compile_stops_full_build(self):
+        phases=[]
+        def refuse(phase):phases.append(phase);raise ValueError('Original source violation')
+        with patch.object(build,'run') as native:
+            with self.assertRaisesRegex(ValueError,'Original source violation'):
+                build.compile_targets('cmake',Path('/build'),2,Path('/evidence'),{},Path('/source'),refuse)
+        self.assertEqual(native.call_count,1);self.assertEqual(phases,['after-focused-compile'])
+
     def test_configuration_uses_exact_isolated_toolchain_and_offline_sources(self):
         stage = Path.cwd() / 'locked inputs 水彩'
         command, environment = build.configuration(stage, Path('/source'), Path('/build'), Path('/install'), {'SystemRoot': 'C:\\Windows', 'PATH': 'unverified-tools', 'PYTHONPATH': 'unverified-python'})

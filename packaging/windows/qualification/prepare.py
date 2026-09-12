@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 from runtime_stage import ROOT, measure, measure_tree, no_links, select_runtime, materialize
 sys.path.insert(0,str(ROOT/'build-tools/ci-scripts'))
 from locked_windows_deps import canonical, load_lock, sha, verify_stage
+from source_state import require_clean_source
 from build_msix import manifest_bytes, load_tools, confirm_tools, write_new
 from verify_brushquay_msix import verify_msix
 from manifest_identity import verify_manifest_identity
@@ -24,12 +25,11 @@ EXPECTED_TESTS=sorted('libs-ui-'+name for name in ('KisBrushQuayIdentityTest','K
 QT_CONF=b'[Paths]\nPrefix=..\nPlugins=plugins\nLibraries=bin\nTranslations=translations\nQmlImports=qml\n'
 
 
-def native_evidence(source,commit,run,attempt):
+def native_evidence(source,commit,run,attempt,source_observation=None):
     if not re.fullmatch('[0-9a-f]{40}',commit or '') or not all(re.fullmatch('[1-9][0-9]*',v or '') for v in (run,attempt)):
         raise ValueError('Exact source/run/attempt required')
     def git(*args):return subprocess.check_output(['git','-C',str(source),*args],text=True).strip()
-    if git('rev-parse','HEAD')!=commit or git('status','--porcelain','--untracked-files=all'):
-        raise ValueError('Qualification requires the exact clean committed source')
+    require_clean_source(source,commit,source_observation,'before-package')
     found=[]
     for path in (source/'.brushquay/evidence').glob('*/native-build.json'):
         if path.stat().st_size>16*1024*1024:raise ValueError('Native evidence exceeds bound')
@@ -77,7 +77,7 @@ def prepare(source,output,evidence,tool_lock,commit,run,attempt):
     source=Path(source).absolute();output=Path(output).absolute();evidence=Path(evidence).absolute()
     no_links(source);no_links(output.parent);no_links(evidence.parent)
     if os.path.lexists(output) or os.path.lexists(evidence):raise ValueError('Qualification output already exists')
-    path,native=native_evidence(source,commit,run,attempt);native_digest=measure(path)
+    path,native=native_evidence(source,commit,run,attempt,evidence.parent/'source-before-package.json');native_digest=measure(path)
     tools=load_tools(tool_lock)
     if tools['sdkVersion']!='10.0.26100.0':raise ValueError('Only the reviewed SDK version is accepted')
     lock=load_lock(source/'build-tools/ci-scripts/brushquay-dependency-lock.json')
