@@ -83,6 +83,12 @@ def run(command, log, environment, cwd):
         raise LockError('Native command exited ' + str(code) + '; log: ' + str(log))
 
 
+def configure_native(command, log, environment, build):
+    # CheckLibTIFFPSDSupport executes a probe that writes relative test.tif.
+    # CMake and its probe must inherit the output directory, never source.
+    run(command, log, environment, build)
+
+
 def compile_targets(cmake, build, jobs, evidence, environment, source, observe_source=None):
     # These targets link only the small preset library and Qt Core/Test/Xml.
     # Catch their source-boundary errors before compiling the entire product.
@@ -153,7 +159,7 @@ def main():
                 raise LockError('Unexpected locked tool version: ' + name + ': ' + result)
             record['tools'][name] = {'versionOutput': result.strip(), 'path': str(executable),
                                       'sha256': hashlib.sha256(executable.read_bytes()).hexdigest()}
-        run(command, evidence / 'configure.log', environment, source)
+        configure_native(command, evidence / 'configure.log', environment, build)
         record['status'] = 'configured'
         observe_source('after-configure')
         if not args.configure_only:

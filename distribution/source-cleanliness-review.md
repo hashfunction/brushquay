@@ -67,3 +67,38 @@ The next Windows run must identify the first non-clean phase and exact paths.
 Any subsequent repair should address only the proven producer, with a regression
 for its output location or byte mutation. No new Windows result or successful
 installed lifecycle is claimed by these local tests.
+
+## First observed producer and repair
+
+Run `34704767479`, public source `33d0e89a5545917ed0d3057408cbd2a0891435e1`,
+stopped immediately after successful configuration. The original 552-byte
+before-configure record was clean (SHA-256
+`3da682005e2bedc745700c22ca719049179604ff62009de247296b0241460058`).
+The 950-byte after-configure record (SHA-256
+`ad431d0e7e64fae89926a49db92a2fa7a211b2252c59e19cf0c81f5cbd432154`)
+identified exactly one untracked output: `test.tif`, 50 bytes, SHA-256
+`c421e871ac8abe5483fd31b3da1d784d2e6d532e68c6216f6381c870e5ce2e18`.
+The commit remained unchanged. No full compile was started in this run.
+
+`cmake/modules/CheckLibTIFFPSDSupport.cmake` runs a native TIFF write probe
+whose `TIFFOpen` uses relative `test.tif`. The builder launched configuration
+with the source directory as its working directory. Configuration now runs
+from its already-created build directory, with the same absolute source,
+build, dependency and install arguments. The probe output stays with generated
+build files. No source file is removed, overwritten, ignored or reset; the
+per-phase source checks remain intact.
+
+The original, unchanged TIFF module was separately executed through actual
+CMake and host libtiff 4.7.2. The former source working directory produced the
+same 50-byte TIFF and exact SHA-256 as Windows. The corrected production
+configuration helper produced that same file under the build directory and
+preserved the original source TIFF and CMake project bytes. This is a native
+host reproduction of the output location, not a new Windows build claim.
+The private original logs and verification are retained under
+`/private/tmp/bristlune-real-tiff-probe-34704767479`.
+
+The permanent regression runs a real CMake child through that production
+helper, proves its output location, and protects an existing source file of
+the same name. The build-tool suite now passes 35 tests; all 33 packaging
+qualification tests still pass. Fresh Windows compilation, installed painting
+and export, complete source delivery and final Store packaging remain pending.
