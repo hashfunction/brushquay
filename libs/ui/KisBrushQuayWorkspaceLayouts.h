@@ -59,6 +59,14 @@ inline bool arrange(QMainWindow &window,Kind kind,QString &error)
     }
     window.resizeDocks({toolbox},{48},Qt::Horizontal);
     window.resizeDocks({layers},{280},Qt::Horizontal);
+    // Removed dockers are absent from QMainWindow's saved state. Restore then
+    // reintroduces them with the destination window's old visibility. Keep
+    // inactive dockers attached so the workspace records their hidden state.
+    for (auto *dock:all) {
+        if (window.dockWidgetArea(dock)==Qt::NoDockWidgetArea) {
+            window.addDockWidget(Qt::RightDockWidgetArea,dock);dock->hide();
+        }
+    }
     if (window.layout()) window.layout()->activate();
     QCoreApplication::sendPostedEvents(nullptr,QEvent::LayoutRequest);
     error.clear();return true;

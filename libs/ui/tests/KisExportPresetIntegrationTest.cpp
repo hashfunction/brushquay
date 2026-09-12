@@ -16,6 +16,7 @@
 #include <KoColorSpaceRegistry.h>
 #include <KoColorProfile.h>
 #include <KoJsonTrader.h>
+#include <KisMimeDatabase.h>
 #include <kis_image.h>
 #include <kis_paint_layer.h>
 #include <kis_paint_device.h>
@@ -26,9 +27,11 @@
 
 namespace {
 QString pluginPathAtApplicationStartup;
+bool mimeDatabasePresentAtApplicationStartup=false;
 void recordPluginPathAtApplicationStartup()
 {
     pluginPathAtApplicationStartup=qEnvironmentVariable("KRITA_PLUGIN_PATH");
+    mimeDatabasePresentAtApplicationStartup=QFile::exists(":/qt-project.org/qmime/packages/freedesktop.org.xml");
 }
 }
 Q_COREAPP_STARTUP_FUNCTION(recordPluginPathAtApplicationStartup)
@@ -46,6 +49,9 @@ class KisExportPresetIntegrationTest : public QObject {
 private Q_SLOTS:
     void initTestCase()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
+        QVERIFY2(mimeDatabasePresentAtApplicationStartup,"The test executable omitted the application's MIME resource at startup.");
+#endif
 #ifdef Q_OS_WIN
         const QString pluginPath=QCoreApplication::applicationDirPath();
         QCOMPARE(pluginPathAtApplicationStartup,pluginPath);
@@ -61,6 +67,10 @@ private Q_SLOTS:
         for (const auto &mime:QStringList{"image/png","image/jpeg"}) {
             QScopedPointer<KisImportExportFilter> filter(KisImportExportManager::filterForMimeType(mime,KisImportExportManager::Export));
             QVERIFY2(filter,qPrintable(QStringLiteral("Native export filter did not load: ")+mime));
+            QVERIFY2(KisImportExportManager::supportedMimeTypes(KisImportExportManager::Export).contains(mime),qPrintable("Discovered filter absent from supported MIME list: "+mime));
+            const QString extension=mime=="image/png"?"png":"jpg";
+            const auto suffixes=KisMimeDatabase::suffixesForMimeType(mime);
+            QVERIFY2(suffixes.contains(extension),qPrintable("MIME database lacks native export suffix for "+mime+"; found: "+suffixes.join(", ")));
         }
 #endif
     }

@@ -22,6 +22,11 @@ kis_add_test(KisExportPresetIntegrationTest.cpp
         -o "${CMAKE_BINARY_DIR}/product-test-reports/KisExportPresetIntegrationTest.log,txt"
     LINK_LIBRARIES kritaui kritaplugin kritaexportpresets kritatestsdk)
 
+include(KritaTestMimeResources)
+foreach(native_test KisBrushQuayWorkspaceTest KisExportPresetIntegrationTest)
+    kis_test_add_mime_database(${native_test})
+endforeach()
+
 if(WIN32)
     # These integration tests run before installation. KISTEST_MAIN consumes this
     # path before QApplication/registerResources can initialize KoJsonTrader's cache.

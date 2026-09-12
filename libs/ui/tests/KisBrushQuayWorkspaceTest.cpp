@@ -23,9 +23,11 @@
 
 namespace {
 QString pluginPathAtApplicationStartup;
+bool mimeDatabasePresentAtApplicationStartup=false;
 void recordPluginPathAtApplicationStartup()
 {
     pluginPathAtApplicationStartup=qEnvironmentVariable("KRITA_PLUGIN_PATH");
+    mimeDatabasePresentAtApplicationStartup=QFile::exists(":/qt-project.org/qmime/packages/freedesktop.org.xml");
 }
 }
 Q_COREAPP_STARTUP_FUNCTION(recordPluginPathAtApplicationStartup)
@@ -35,6 +37,9 @@ class KisBrushQuayWorkspaceTest : public QObject {
 private Q_SLOTS:
     void initTestCase()
     {
+#if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
+        QVERIFY2(mimeDatabasePresentAtApplicationStartup,"The test executable omitted the application's MIME resource at startup.");
+#endif
 #ifdef Q_OS_WIN
         const QString pluginPath=QCoreApplication::applicationDirPath();
         QCOMPARE(pluginPathAtApplicationStartup,pluginPath);
@@ -88,6 +93,12 @@ private Q_SLOTS:
         QCOMPARE(window->dockWidgetArea(layers),Qt::RightDockWidgetArea);
         auto *color=window->findChild<QDockWidget *>("ColorSelectorNg");QVERIFY(color);
         QCOMPARE(color->isHidden(),layout==1);
+        const QStringList inactive=layout==0?QStringList{"sharedtooldocker"}:
+            QStringList{"ColorSelectorNg","History","OverviewDocker"};
+        for (const auto &id:inactive) {
+            auto *dock=window->findChild<QDockWidget *>(id);QVERIFY(dock);
+            QVERIFY2(dock->isHidden(),qPrintable("Workspace restored an inactive docker as visible: "+id));
+        }
         // Use the real resource model, refusing any same-name file replacement.
         KisResourceModel model(ResourceType::Workspaces);
         QBuffer importedBytes(&data);QVERIFY(importedBytes.open(QIODevice::ReadOnly));
