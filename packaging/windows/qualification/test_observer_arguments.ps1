@@ -36,7 +36,10 @@ class ArgumentReader { static void Main(string[] args) {
     if(-not $start.Arguments -or $start.Arguments[0] -ne '"'){throw 'Compatible Arguments string was not constructed'}
     $process=[Diagnostics.Process]::Start($start)
     try {if(-not $process.WaitForExit(15000) -or $process.ExitCode -ne 0){throw 'Actual argument reader child failed'}}finally{if(-not $process.HasExited){$process.Kill();$process.WaitForExit()};$process.Dispose()}
-    $actual=@(Get-Content -LiteralPath $resultPath -Raw|ConvertFrom-Json)
+    # Windows PowerShell 5.1 emits the JSON array as one pipeline object.
+    # Assign its parsed value directly; @(...pipeline...) would wrap it again.
+    $actual=Get-Content -LiteralPath $resultPath -Raw|ConvertFrom-Json
+    if($actual -isnot [array]){throw 'Actual child argument result must be a JSON array'}
     if($actual.Count -ne $values.Count){throw "Argument count differs: $($actual.Count) versus $($values.Count)"}
     for($i=0;$i -lt $values.Count;$i++){if($actual[$i] -cne $values[$i]){throw "Native argument $i did not round-trip"}}
     $before=(Get-FileHash -LiteralPath $resultPath).Hash
