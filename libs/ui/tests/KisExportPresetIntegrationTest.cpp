@@ -15,6 +15,7 @@
 #include <KisImportExportManager.h>
 #include <KoColorSpaceRegistry.h>
 #include <KoColorProfile.h>
+#include <KoJsonTrader.h>
 #include <kis_image.h>
 #include <kis_paint_layer.h>
 #include <kis_paint_device.h>
@@ -22,6 +23,15 @@
 #include <testui.h>
 #include "KisExportPresetCodec.h"
 #include "KisExportPresetJob.h"
+
+namespace {
+QString pluginPathAtApplicationStartup;
+void recordPluginPathAtApplicationStartup()
+{
+    pluginPathAtApplicationStartup=qEnvironmentVariable("KRITA_PLUGIN_PATH");
+}
+}
+Q_COREAPP_STARTUP_FUNCTION(recordPluginPathAtApplicationStartup)
 
 class KisExportPresetIntegrationTest : public QObject {
     Q_OBJECT
@@ -38,10 +48,20 @@ private Q_SLOTS:
     {
 #ifdef Q_OS_WIN
         const QString pluginPath=QCoreApplication::applicationDirPath();
+        QCOMPARE(pluginPathAtApplicationStartup,pluginPath);
+        QCOMPARE(qEnvironmentVariable("KRITA_PLUGIN_PATH"),pluginPath);
+        QStringList discovered;
+        for (const auto &plugin:KoJsonTrader::instance()->query("Krita/FileFilter",QString())) {
+            discovered << QFileInfo(plugin.fileName()).fileName();
+        }
         for (const auto &plugin:QStringList{"kritapngexport.dll","kritajpegexport.dll"}) {
             QVERIFY2(QFileInfo::exists(pluginPath+"/"+plugin),qPrintable(QStringLiteral("Missing built export plugin: ")+plugin));
+            QVERIFY2(discovered.contains(plugin),qPrintable(QStringLiteral("Export plugin absent from startup cache: ")+plugin+"; discovered: "+discovered.join(", ")));
         }
-        qputenv("KRITA_PLUGIN_PATH",QFile::encodeName(pluginPath));
+        for (const auto &mime:QStringList{"image/png","image/jpeg"}) {
+            QScopedPointer<KisImportExportFilter> filter(KisImportExportManager::filterForMimeType(mime,KisImportExportManager::Export));
+            QVERIFY2(filter,qPrintable(QStringLiteral("Native export filter did not load: ")+mime));
+        }
 #endif
     }
     void nativeOptionsRoundTrip_data()

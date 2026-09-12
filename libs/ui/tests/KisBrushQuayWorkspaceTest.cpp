@@ -14,10 +14,21 @@
 #include <KisMainWindow.h>
 #include <KisPart.h>
 #include <KisResourceModel.h>
+#include <KoDockRegistry.h>
+#include <KoJsonTrader.h>
 #include <kis_workspace_resource.h>
 #include <testui.h>
 #include <input/kis_extended_modifiers_mapper.h>
 #include "KisBrushQuayWorkspaceLayouts.h"
+
+namespace {
+QString pluginPathAtApplicationStartup;
+void recordPluginPathAtApplicationStartup()
+{
+    pluginPathAtApplicationStartup=qEnvironmentVariable("KRITA_PLUGIN_PATH");
+}
+}
+Q_COREAPP_STARTUP_FUNCTION(recordPluginPathAtApplicationStartup)
 
 class KisBrushQuayWorkspaceTest : public QObject {
     Q_OBJECT
@@ -26,10 +37,19 @@ private Q_SLOTS:
     {
 #ifdef Q_OS_WIN
         const QString pluginPath=QCoreApplication::applicationDirPath();
+        QCOMPARE(pluginPathAtApplicationStartup,pluginPath);
+        QCOMPARE(qEnvironmentVariable("KRITA_PLUGIN_PATH"),pluginPath);
+        QStringList discovered;
+        for (const auto &plugin:KoJsonTrader::instance()->query("Krita/Dock",QString())) {
+            discovered << QFileInfo(plugin.fileName()).fileName();
+        }
         for (const auto &plugin:QStringList{"kritalayerdocker.dll","kritapresetdocker.dll","kritacolorselectorng.dll","kritahistorydocker.dll","kritaoverviewdocker.dll"}) {
             QVERIFY2(QFileInfo::exists(pluginPath+"/"+plugin),qPrintable(QStringLiteral("Missing built workspace plugin: ")+plugin));
+            QVERIFY2(discovered.contains(plugin),qPrintable(QStringLiteral("Workspace plugin absent from startup cache: ")+plugin+"; discovered: "+discovered.join(", ")));
         }
-        qputenv("KRITA_PLUGIN_PATH",QFile::encodeName(pluginPath));
+        for (const auto &docker:QStringList{"KisLayerBox","PresetDocker","ColorSelectorNg","History","OverviewDocker"}) {
+            QVERIFY2(KoDockRegistry::instance()->get(docker),qPrintable(QStringLiteral("Native docker factory did not load: ")+docker));
+        }
 #endif
     }
     void plainQApplicationUsesNativeModifierFallback()
