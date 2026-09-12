@@ -1,0 +1,718 @@
+{
+  "schema": 1,
+  "scope": "Allowlisted source events only; full upstream log is not part of this source collection.",
+  "upstreamJob": {
+    "project": 16417,
+    "pipeline": 1342225,
+    "job": 4983784,
+    "url": "https://invent.kde.org/packaging/krita-deps-management/-/jobs/4983784",
+    "archiveUrl": "https://invent.kde.org/api/v4/projects/16417/jobs/4983784/artifacts",
+    "archiveSha256": "383135c01490f13e21e40d139cb4e6fd969e33cdfd60e6005615024ccaeaecb1",
+    "archiveBytes": 1167764,
+    "member": "seed-packages-win64.log",
+    "memberSha256": "449d924aa2586199d62ae600791b01c6a501e39861fdc110383b8cc087d4aae0",
+    "memberBytes": 18045589
+  },
+  "records": [
+    {
+      "package": "ext_eigen3",
+      "line": 319,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_eigen3'"
+    },
+    {
+      "package": "ext_expat",
+      "line": 1396,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_expat'"
+    },
+    {
+      "package": "ext_fribidi",
+      "line": 2049,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_fribidi'"
+    },
+    {
+      "package": "ext_highway",
+      "line": 2636,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_highway'"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3147,
+      "text": "[2/6] Performing download step (git clone) for 'ext_immer'"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3149,
+      "text": "HEAD is now at 42e6bea Merge pull request #197 from bollu/master"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3154,
+      "text": "Submodule path 'extra/python/lib/pybind11': checked out '1eaacd19f6de9a053570c21de6d173efc2304bc2'"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3157,
+      "text": "Submodule path 'extra/python/lib/pybind11/tools/clang': checked out '254c7a91e3c6aa254e113197604dafb443f4d429'"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3158,
+      "text": "Submodule path 'tools/sinusoidal-sphinx-theme': checked out 'b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c'"
+    },
+    {
+      "package": "ext_jpeg",
+      "line": 3642,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_jpeg'"
+    },
+    {
+      "package": "ext_json_c",
+      "line": 4397,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_json_c'"
+    },
+    {
+      "package": "ext_nasm",
+      "line": 4948,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_nasm'"
+    },
+    {
+      "package": "ext_zug",
+      "line": 5305,
+      "text": "[2/6] Performing download step (git clone) for 'ext_zug'"
+    },
+    {
+      "package": "ext_zug",
+      "line": 5307,
+      "text": "HEAD is now at deb266f Merge pull request #30 from BlueSolei/make-zug-independent-of-boost"
+    },
+    {
+      "package": "ext_zug",
+      "line": 5310,
+      "text": "Submodule path 'tools/sinusoidal-sphinx-theme': checked out 'b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c'"
+    },
+    {
+      "package": "ext_opus",
+      "line": 5767,
+      "text": "[2/6] Performing download step (git clone) for 'ext_opus'"
+    },
+    {
+      "package": "ext_opus",
+      "line": 5769,
+      "text": "HEAD is now at ddbe4838 Update DRED REDME.md"
+    },
+    {
+      "package": "ext_sdl2",
+      "line": 6411,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_sdl2'"
+    },
+    {
+      "package": "ext_iconv",
+      "line": 7685,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_iconv'"
+    },
+    {
+      "package": "ext_lzma",
+      "line": 8078,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_lzma'"
+    },
+    {
+      "package": "ext_vpl",
+      "line": 8442,
+      "text": "[2/6] Performing download step (git clone) for 'ext_vpl'"
+    },
+    {
+      "package": "ext_vpl",
+      "line": 8444,
+      "text": "HEAD is now at 025d43d Fix test result summary logic"
+    },
+    {
+      "package": "ext_python",
+      "line": 9070,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_python'"
+    },
+    {
+      "package": "ext_dlfcn_win32",
+      "line": 9457,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_dlfcn_win32'"
+    },
+    {
+      "package": "ext_drmingw",
+      "line": 9840,
+      "text": "[2/14] Performing download step (download, verify and extract) for 'ext_drmingw_deps'"
+    },
+    {
+      "package": "ext_drmingw",
+      "line": 9861,
+      "text": "[10/14] Performing download step (download, verify and extract) for 'ext_drmingw'"
+    },
+    {
+      "package": "ext_gperf",
+      "line": 10847,
+      "text": "[2/6] Performing download step (git clone) for 'ext_gperf'"
+    },
+    {
+      "package": "ext_gperf",
+      "line": 10849,
+      "text": "Already on 'meson'"
+    },
+    {
+      "package": "ext_patch",
+      "line": 11441,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_patch'"
+    },
+    {
+      "package": "ext_strawberryperl",
+      "line": 11789,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_strawberryperl'"
+    },
+    {
+      "package": "ext_zlib",
+      "line": 26835,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_zlib'"
+    },
+    {
+      "package": "ext_gettext",
+      "line": 27289,
+      "text": "[3/12] Performing download step (download, verify and extract) for 'ext_gettext_bin'"
+    },
+    {
+      "package": "ext_gettext",
+      "line": 27308,
+      "text": "[8/12] Performing download step (download, verify and extract) for 'ext_gettext_lib'"
+    },
+    {
+      "package": "ext_openssl",
+      "line": 28093,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_openssl'"
+    },
+    {
+      "package": "ext_pkgconfig",
+      "line": 28575,
+      "text": "[2/6] Performing download step (git clone) for 'ext_pkgconfig'"
+    },
+    {
+      "package": "ext_pkgconfig",
+      "line": 28577,
+      "text": "HEAD is now at 8754bdf pkgconf 1.9.3."
+    },
+    {
+      "package": "ext_boost",
+      "line": 29025,
+      "text": "[2/8] Performing download step (download, verify and extract) for 'ext_boost'"
+    },
+    {
+      "package": "ext_brotli",
+      "line": 29591,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_brotli'"
+    },
+    {
+      "package": "ext_exiv2",
+      "line": 30065,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_exiv2'"
+    },
+    {
+      "package": "ext_extra_cmake_modules",
+      "line": 104984,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_extra_cmake_modules'"
+    },
+    {
+      "package": "ext_fftw3",
+      "line": 105544,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_fftw3'"
+    },
+    {
+      "package": "ext_giflib",
+      "line": 106697,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_giflib'"
+    },
+    {
+      "package": "ext_gsl",
+      "line": 107128,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_gsl'"
+    },
+    {
+      "package": "ext_icu",
+      "line": 119453,
+      "text": "[2/14] Performing download step (download, verify and extract) for 'ext_icu_meson'"
+    },
+    {
+      "package": "ext_icu",
+      "line": 119474,
+      "text": "[10/14] Performing download step (download, verify and extract) for 'ext_icu'"
+    },
+    {
+      "package": "ext_lager",
+      "line": 120858,
+      "text": "[2/6] Performing download step (git clone) for 'ext_lager'"
+    },
+    {
+      "package": "ext_lager",
+      "line": 120860,
+      "text": "HEAD is now at 0b6ab3e Fix compilation of lenses/unbox.hpp"
+    },
+    {
+      "package": "ext_lager",
+      "line": 120863,
+      "text": "Submodule path 'tools/sinusoidal-sphinx-theme': checked out 'b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c'"
+    },
+    {
+      "package": "ext_lcms2",
+      "line": 121331,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_lcms2'"
+    },
+    {
+      "package": "ext_mypaint",
+      "line": 121805,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_mypaint'"
+    },
+    {
+      "package": "ext_openexr",
+      "line": 122269,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_openexr'"
+    },
+    {
+      "package": "ext_openjpeg",
+      "line": 128511,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_openjpeg'"
+    },
+    {
+      "package": "ext_openjpeg",
+      "line": 128584,
+      "text": "-- Found LCMS2: C:/_/ext_openjpeg/_install/lib/liblcms2.dll.a"
+    },
+    {
+      "package": "ext_png",
+      "line": 129011,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_png'"
+    },
+    {
+      "package": "ext_tiff",
+      "line": 129490,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_tiff'"
+    },
+    {
+      "package": "ext_unibreak",
+      "line": 130393,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_unibreak'"
+    },
+    {
+      "package": "ext_webp",
+      "line": 130838,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_webp'"
+    },
+    {
+      "package": "ext_xsimd",
+      "line": 131520,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_xsimd'"
+    },
+    {
+      "package": "ext_lame",
+      "line": 132043,
+      "text": "[2/14] Performing download step (download, verify and extract) for 'ext_lame_meson'"
+    },
+    {
+      "package": "ext_lame",
+      "line": 132064,
+      "text": "[10/14] Performing download step (download, verify and extract) for 'ext_lame'"
+    },
+    {
+      "package": "ext_libogg",
+      "line": 132762,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libogg'"
+    },
+    {
+      "package": "ext_libvorbis",
+      "line": 133291,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libvorbis'"
+    },
+    {
+      "package": "ext_openh264",
+      "line": 133776,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_openh264'"
+    },
+    {
+      "package": "ext_vpx",
+      "line": 134585,
+      "text": "[2/6] Performing download step (git clone) for 'ext_vpx'"
+    },
+    {
+      "package": "ext_vpx",
+      "line": 134587,
+      "text": "Switched to a new branch 'meson-2'"
+    },
+    {
+      "package": "ext_libaom",
+      "line": 135612,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libaom'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136633,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_ocio'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136701,
+      "text": "-- Could NOT find expat (minimum version: \"2.6.0\", recommended version: \"2.7.2\")"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136703,
+      "text": "-- Could NOT find yaml-cpp (minimum version: \"0.8.0\", recommended version: \"0.8.0\")"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136705,
+      "text": "-- Could NOT find pystring (minimum version: \"1.1.3\", recommended version: \"1.1.4\")"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136707,
+      "text": "-- Could NOT find Imath (minimum version: \"3.1.1\", recommended version: \"3.2.1\")"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136710,
+      "text": "-- Could NOT find minizip-ng (minimum version: \"4.0.0\", recommended version: \"4.0.10\")"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136731,
+      "text": "[6/236] Performing download step (git clone) for 'pystring_install'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136733,
+      "text": "HEAD is now at 7d16bc8 Merge pull request #34 from jayvdb/readme-shield"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136737,
+      "text": "[9/236] Performing download step (git clone) for 'minizip-ng_install'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136739,
+      "text": "HEAD is now at f3ed731 Version 4.0.10."
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136740,
+      "text": "[10/236] Performing download step (git clone) for 'imath_install'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136742,
+      "text": "HEAD is now at fbcfb98 bump version to v3.2.1"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136749,
+      "text": "[15/236] Performing download step (git clone) for 'yaml-cpp_install'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136751,
+      "text": "HEAD is now at f732014 Bump version to 0.8.0."
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136755,
+      "text": "[18/236] Performing download step (git clone) for 'expat_install'"
+    },
+    {
+      "package": "ext_ocio",
+      "line": 136757,
+      "text": "HEAD is now at 7643f96 Merge pull request #1038 from libexpat/prepare-release"
+    },
+    {
+      "package": "ext_libde265",
+      "line": 137754,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libde265'"
+    },
+    {
+      "package": "ext_libx265_10bit",
+      "line": 138611,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libx265_10bit'"
+    },
+    {
+      "package": "ext_libx265_12bit",
+      "line": 139591,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libx265_12bit'"
+    },
+    {
+      "package": "ext_libraw",
+      "line": 140589,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libraw'"
+    },
+    {
+      "package": "ext_sip",
+      "line": 141077,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_sip'"
+    },
+    {
+      "package": "ext_googleangle",
+      "line": 143289,
+      "text": "[2/8] Performing download step (git clone) for 'ext_googleangle_zlib'"
+    },
+    {
+      "package": "ext_googleangle",
+      "line": 143291,
+      "text": "HEAD is now at a6d209a [zlib] Re-sync with zlib 1.2.12, patch 10 of N"
+    },
+    {
+      "package": "ext_googleangle",
+      "line": 143293,
+      "text": "[4/8] Performing download step (download, verify and extract) for 'ext_googleangle'"
+    },
+    {
+      "package": "ext_icoutils",
+      "line": 144430,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_icoutils'"
+    },
+    {
+      "package": "ext_freetype",
+      "line": 144933,
+      "text": "[2/24] Performing download step (download, verify and extract) for 'ext_freetype_bootstrap'"
+    },
+    {
+      "package": "ext_freetype",
+      "line": 145096,
+      "text": "[10/24] Performing download step (download, verify and extract) for 'ext_harfbuzz'"
+    },
+    {
+      "package": "ext_freetype",
+      "line": 153564,
+      "text": "[18/24] Performing download step (download, verify and extract) for 'ext_freetype'"
+    },
+    {
+      "package": "ext_jpegxl",
+      "line": 154241,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_jpegxl'"
+    },
+    {
+      "package": "ext_jpegxl",
+      "line": 154292,
+      "text": "-- Found HWY: C:/_/ext_jpegxl/_install/lib/libhwy.a (found suitable version \"1.1.0\", minimum required is \"1.0.7\")"
+    },
+    {
+      "package": "ext_jpegxl",
+      "line": 154293,
+      "text": "-- Found Brotli: C:/_/ext_jpegxl/_install/include"
+    },
+    {
+      "package": "ext_jpegxl",
+      "line": 154294,
+      "text": "-- Found LCMS2: C:/_/ext_jpegxl/_install/lib/liblcms2.dll.a (found suitable version \"2.14\", minimum required is \"2.12\")"
+    },
+    {
+      "package": "ext_qt",
+      "line": 154898,
+      "text": "[ 33%] Performing download step (git clone) for 'ext_qt'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155121,
+      "text": "HEAD is now at 571b5489 [wayland] Fix delivery of native Enter/Leave events for tablet devices"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155138,
+      "text": "Submodule path 'qt5compat': checked out '2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155139,
+      "text": "Submodule path 'qtbase': checked out '8bd38fff262805f06b753ea04dd79633315eae7a'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155140,
+      "text": "Submodule path 'qtdeclarative': checked out '82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155141,
+      "text": "Submodule path 'qtimageformats': checked out 'ade536558e868143d615512a6873daabb8e9195b'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155142,
+      "text": "Submodule path 'qtshadertools': checked out '1c7a78fd7480f11a49eb8135b44d138edb0f0df8'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155143,
+      "text": "Submodule path 'qtsvg': checked out '4126867385dc0b7a9404dcd69726c28ed0d5e10a'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155144,
+      "text": "Submodule path 'qttools': checked out '92c3a8c84ff17c5d2ae263dffb97645fb1a76081'"
+    },
+    {
+      "package": "ext_qt",
+      "line": 155145,
+      "text": "Submodule path 'qttranslations': checked out '08c7440f513309715ba00db5e0e519a4a59e62ea'"
+    },
+    {
+      "package": "ext_quazip",
+      "line": 172408,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_quazip'"
+    },
+    {
+      "package": "ext_flac",
+      "line": 172872,
+      "text": "[2/6] Performing download step (git clone) for 'ext_flac'"
+    },
+    {
+      "package": "ext_flac",
+      "line": 172874,
+      "text": "HEAD is now at b32e5cbf Release FLAC 1.4.2"
+    },
+    {
+      "package": "ext_libtheora",
+      "line": 173459,
+      "text": "[2/14] Performing download step (download, verify and extract) for 'ext_libtheora_meson'"
+    },
+    {
+      "package": "ext_libtheora",
+      "line": 173480,
+      "text": "[10/14] Performing download step (git clone) for 'ext_libtheora'"
+    },
+    {
+      "package": "ext_libtheora",
+      "line": 173482,
+      "text": "HEAD is now at 7180717 gitlab-ci: Add scons build."
+    },
+    {
+      "package": "ext_libx265",
+      "line": 174076,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libx265'"
+    },
+    {
+      "package": "ext_kdcraw",
+      "line": 175312,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kdcraw'"
+    },
+    {
+      "package": "ext_pyqt-builder",
+      "line": 175858,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_pyqt-builder'"
+    },
+    {
+      "package": "ext_pyqt6",
+      "line": 176762,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_pyqt6'"
+    },
+    {
+      "package": "ext_pyqt6-sip",
+      "line": 181108,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_pyqt6-sip'"
+    },
+    {
+      "package": "ext_fontconfig",
+      "line": 181698,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_fontconfig'"
+    },
+    {
+      "package": "ext_karchive",
+      "line": 182410,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_karchive'"
+    },
+    {
+      "package": "ext_kcodecs",
+      "line": 183090,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kcodecs'"
+    },
+    {
+      "package": "ext_kconfig",
+      "line": 183900,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kconfig'"
+    },
+    {
+      "package": "ext_kcoreaddons",
+      "line": 184760,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kcoreaddons'"
+    },
+    {
+      "package": "ext_kguiaddons",
+      "line": 185864,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kguiaddons'"
+    },
+    {
+      "package": "ext_ki18n",
+      "line": 186507,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_ki18n'"
+    },
+    {
+      "package": "ext_kimageformats",
+      "line": 187628,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kimageformats'"
+    },
+    {
+      "package": "ext_kitemmodels",
+      "line": 188486,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kitemmodels'"
+    },
+    {
+      "package": "ext_kitemviews",
+      "line": 189082,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kitemviews'"
+    },
+    {
+      "package": "ext_kwidgetsaddons",
+      "line": 189885,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kwidgetsaddons'"
+    },
+    {
+      "package": "ext_kwindowsystem",
+      "line": 191023,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kwindowsystem'"
+    },
+    {
+      "package": "ext_seexpr",
+      "line": 191881,
+      "text": "[2/6] Performing download step (git clone) for 'ext_seexpr'"
+    },
+    {
+      "package": "ext_seexpr",
+      "line": 191883,
+      "text": "HEAD is now at 9333c7f Port CI to Qt6"
+    },
+    {
+      "package": "ext_ffmpeg",
+      "line": 192716,
+      "text": "[2/6] Performing download step (git clone) for 'ext_ffmpeg'"
+    },
+    {
+      "package": "ext_ffmpeg",
+      "line": 192718,
+      "text": "HEAD is now at 7601055639 meson: Override dependencies and programs"
+    },
+    {
+      "package": "ext_libheif",
+      "line": 196408,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_libheif'"
+    },
+    {
+      "package": "ext_poppler",
+      "line": 197215,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_poppler'"
+    },
+    {
+      "package": "ext_kcolorscheme",
+      "line": 203052,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kcolorscheme'"
+    },
+    {
+      "package": "ext_kcompletion",
+      "line": 203755,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_kcompletion'"
+    },
+    {
+      "package": "ext_mlt",
+      "line": 204763,
+      "text": "[2/6] Performing download step (download, verify and extract) for 'ext_mlt'"
+    }
+  ]
+}

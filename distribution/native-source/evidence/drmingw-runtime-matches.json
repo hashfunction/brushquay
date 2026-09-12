@@ -1,0 +1,26 @@
+[
+  {
+    "member": "drmingw-0.9.7-win64/bin/dbghelp.dll",
+    "sha256": "3d92df0984662298a09d988aff0bb7c3081a46bf48177b7af02d3552641f77e9",
+    "bytes": 1938072,
+    "lockedRuntimeMatch": true
+  },
+  {
+    "member": "drmingw-0.9.7-win64/bin/dbgcore.dll",
+    "sha256": "db947c07167069d3de9e8a637baf01298984355d775ec49801115d7e5f2e47a3",
+    "bytes": 166576,
+    "lockedRuntimeMatch": true
+  },
+  {
+    "member": "drmingw-0.9.7-win64/bin/symsrv.dll",
+    "sha256": "29a56215afc5aecfc4ca1663302905bdfe7957cde65c0766e6130e28d7d0c0a1",
+    "bytes": 250008,
+    "lockedRuntimeMatch": true
+  },
+  {
+    "member": "drmingw-0.9.7-win64/bin/symsrv.yes",
+    "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+    "bytes": 1,
+    "lockedRuntimeMatch": true
+  }
+]

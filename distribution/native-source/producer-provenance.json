@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "scope": "Binary inputs inspected for producer provenance, not source collection/publication",
+  "results": [
+    {
+      "bytes": 1133042,
+      "sha256": "ff1a62ebc9e0662c7ba7f30141efa047e6ee43a5f1a613f671b0971ba772d597",
+      "file": "sha256-ff1a62ebc9e0662c7ba7f30141efa047e6ee43a5f1a613f671b0971ba772d597.source",
+      "url": "https://github.com/jrfonseca/drmingw/releases/download/0.9.7/drmingw-0.9.7-win64.7z",
+      "transportUrl": "https://github.com/jrfonseca/drmingw/releases/download/0.9.7/drmingw-0.9.7-win64.7z",
+      "owners": [
+        "ext_drmingw"
+      ],
+      "recipeHashAlgorithm": "sha256",
+      "recipeHash": "ff1a62ebc9e0662c7ba7f30141efa047e6ee43a5f1a613f671b0971ba772d597",
+      "strongOriginalSourceHash": true,
+      "correspondingSourceComplete": false,
+      "inspectedMembers": [],
+      "kind": "producer-binary-provenance-only"
+    },
+    {
+      "bytes": 21583983,
+      "sha256": "721395c2e057eeed321f0c793311732e57cb4fa30d5708672a13902a69a77d43",
+      "file": "sha256-721395c2e057eeed321f0c793311732e57cb4fa30d5708672a13902a69a77d43.source",
+      "url": "https://github.com/mlocati/gettext-iconv-windows/releases/download/v0.21-v1.16/gettext0.21-iconv1.16-static-64.zip",
+      "transportUrl": "https://github.com/mlocati/gettext-iconv-windows/releases/download/v0.21-v1.16/gettext0.21-iconv1.16-static-64.zip",
+      "owners": [
+        "ext_gettext"
+      ],
+      "recipeHashAlgorithm": "sha256",
+      "recipeHash": "721395c2e057eeed321f0c793311732e57cb4fa30d5708672a13902a69a77d43",
+      "strongOriginalSourceHash": true,
+      "correspondingSourceComplete": false,
+      "inspectedMembers": [
+        {
+          "name": "cldr-license.txt",
+          "bytes": 2321
+        },
+        {
+          "name": "gettext-license.txt",
+          "bytes": 35825
+        },
+        {
+          "name": "iconv-license.txt",
+          "bytes": 35821
+        },
+        {
+          "name": "share/gettext/its/gtkbuilder.its",
+          "bytes": 1519
+        }
+      ],
+      "kind": "producer-binary-provenance-only"
+    },
+    {
+      "bytes": 1502638,
+      "sha256": "6fd6dad79e5b0d3b24a43bc3f79472b62a48d210f1aaa02fb06e5dfad89a4ebc",
+      "file": "sha256-6fd6dad79e5b0d3b24a43bc3f79472b62a48d210f1aaa02fb06e5dfad89a4ebc.source",
+      "url": "https://tukaani.org/xz/xz-5.2.6-windows.zip",
+      "transportUrl": "https://tukaani.org/xz/xz-5.2.6-windows.zip",
+      "owners": [
+        "ext_lzma"
+      ],
+      "recipeHashAlgorithm": "sha256",
+      "recipeHash": "6fd6dad79e5b0d3b24a43bc3f79472b62a48d210f1aaa02fb06e5dfad89a4ebc",
+      "strongOriginalSourceHash": true,
+      "correspondingSourceComplete": false,
+      "inspectedMembers": [
+        {
+          "name": "doc/COPYING-Windows.txt",
+          "bytes": 8943
+        },
+        {
+          "name": "doc/COPYING.txt",
+          "bytes": 2840
+        },
+        {
+          "name": "doc/examples/00_README.txt",
+          "bytes": 1068
+        },
+        {
+          "name": "doc/README-Windows.txt",
+          "bytes": 4842
+        },
+        {
+          "name": "doc/README.txt",
+          "bytes": 10172
+        },
+        {
+          "name": "include/lzma/index_hash.h",
+          "bytes": 4021
+        },
+        {
+          "binary": "bin_i686-sse2/liblzma.dll",
+          "matchesLockedStaged": false,
+          "sha256": "88616b5d9308d63fc54693cbd6ac5796d5af02f61eb577dff88b24c15f4db2a0"
+        },
+        {
+          "binary": "bin_i686/liblzma.dll",
+          "matchesLockedStaged": false,
+          "sha256": "f6a045c03d6b6e5423dbfd2edb3edd6d36455001f6d0b24e87d99b511d0e08f4"
+        },
+        {
+          "binary": "bin_x86-64/liblzma.dll",
+          "matchesLockedStaged": true,
+          "sha256": "9a008e0a3525d990800fb51aa6241b486863c6313d38d7cb9afc14eec05cac82"
+        }
+      ],
+      "kind": "producer-binary-provenance-only"
+    },
+    {
+      "bytes": 4544386,
+      "sha256": "6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a",
+      "file": "sha256-6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a.source",
+      "url": "https://files.kde.org/krita/build/dependencies/openssl-1.1.1l_4-win64-mingw.zip",
+      "transportUrl": "https://files.kde.org/krita/build/dependencies/openssl-1.1.1l_4-win64-mingw.zip",
+      "owners": [
+        "ext_openssl"
+      ],
+      "recipeHashAlgorithm": "sha256",
+      "recipeHash": "6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a",
+      "strongOriginalSourceHash": true,
+      "correspondingSourceComplete": false,
+      "inspectedMembers": [
+        {
+          "name": "openssl-1.1.1l-win64-mingw/BUILD-HOMEPAGE.url",
+          "bytes": 62
+        },
+        {
+          "name": "openssl-1.1.1l-win64-mingw/BUILD-README.txt",
+          "bytes": 123
+        },
+        {
+          "name": "openssl-1.1.1l-win64-mingw/LICENSE.txt",
+          "bytes": 6246
+        },
+        {
+          "name": "openssl-1.1.1l-win64-mingw/README.txt",
+          "bytes": 3251
+        },
+        {
+          "name": "openssl-1.1.1l-win64-mingw/include/openssl/lhash.h",
+          "bytes": 9271
+        },
+        {
+          "binary": "openssl-1.1.1l-win64-mingw/libssl-1_1-x64.dll",
+          "matchesLockedStaged": true,
+          "sha256": "98d9bb9eccc5d2846fe2cd51d4f91f7b368bbe755ab307f2b49c232a5fb59f8b"
+        },
+        {
+          "binary": "openssl-1.1.1l-win64-mingw/libcrypto-1_1-x64.dll",
+          "matchesLockedStaged": true,
+          "sha256": "bd3cf8a3342bd22a06234fd54eb93f6f4c98596f72f1df314505f325f9773e99"
+        }
+      ],
+      "kind": "producer-binary-provenance-only"
+    },
+    {
+      "bytes": 10903542,
+      "sha256": "7d2650fd9d1b9d002d4a315d5f354247fd6a44f30517c7ef577b08f57a0fb6d9",
+      "file": "md5-370a345dbea8bbc1830a2385f24632d2.source",
+      "url": "https://www.python.org/ftp/python/3.13.5/python-3.13.5-embed-amd64.zip",
+      "transportUrl": "https://www.python.org/ftp/python/3.13.5/python-3.13.5-embed-amd64.zip",
+      "owners": [
+        "ext_python"
+      ],
+      "recipeHashAlgorithm": "md5",
+      "recipeHash": "370a345dbea8bbc1830a2385f24632d2",
+      "strongOriginalSourceHash": false,
+      "correspondingSourceComplete": false,
+      "inspectedMembers": [
+        {
+          "name": "LICENSE.txt",
+          "bytes": 33861
+        },
+        {
+          "name": "_hashlib.pyd",
+          "bytes": 69976
+        },
+        {
+          "binary": "python313.dll",
+          "matchesLockedStaged": true,
+          "sha256": "0565965617d94274d7f2c2958d0bef33392cd9d2f346f99d8e1bedbdf264ee85"
+        },
+        {
+          "binary": "vcruntime140.dll",
+          "matchesLockedStaged": true,
+          "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+        },
+        {
+          "binary": "vcruntime140_1.dll",
+          "matchesLockedStaged": true,
+          "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+        }
+      ],
+      "kind": "producer-binary-provenance-only"
+    }
+  ],
+  "noticeFiles": [
+    {
+      "file": "ext_openssl-BUILD-HOMEPAGE.url",
+      "owners": [
+        "ext_openssl"
+      ],
+      "bytes": 62,
+      "sha256": "95e00d67d239c10169e7110091659daf50f3d4ae8dce30ac5eac529b09177800",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_openssl-BUILD-README.txt",
+      "owners": [
+        "ext_openssl"
+      ],
+      "bytes": 123,
+      "sha256": "5daf88759559c7f0d5ea8198ae84c16059e7b5c828781ae8b87e750bec893e1e",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_openssl-LICENSE.txt",
+      "owners": [
+        "ext_openssl"
+      ],
+      "bytes": 6246,
+      "sha256": "15b8e85f410b23610e424681c010e1b2833c9805f977131713ad6f7decf3fe90",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_openssl-README.txt",
+      "owners": [
+        "ext_openssl"
+      ],
+      "bytes": 3251,
+      "sha256": "6a4091ff6b3166670c4860312a5d6cb9418c9e6356e03587b909766685c171e0",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_lzma-README-Windows.txt",
+      "owners": [
+        "ext_lzma"
+      ],
+      "bytes": 4842,
+      "sha256": "7057fb93b83a4ded2563c70b58e17dbc07083fdf56e3bdf81ba7c5348d845e84",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_lzma-COPYING-Windows.txt",
+      "owners": [
+        "ext_lzma"
+      ],
+      "bytes": 8943,
+      "sha256": "4e5972960da252b24393d4c30192f512d58950d58e5c559a26cb3e54fc4c1f15",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_lzma-COPYING.txt",
+      "owners": [
+        "ext_lzma"
+      ],
+      "bytes": 2840,
+      "sha256": "ac024c350183a8253934be0145ae0fa1c567ab5b7d5a8e45bd644978e3651ea8",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_python-LICENSE.txt",
+      "owners": [
+        "ext_python"
+      ],
+      "bytes": 33861,
+      "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_drmingw-LICENSE.txt",
+      "owners": [
+        "ext_drmingw"
+      ],
+      "bytes": 27032,
+      "sha256": "1e7e6bae5a5bde32f1ae5a7c37a082d1ab03cf89354f7f936ac40be9e39a6531",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_drmingw-LICENSE-libdwarf.txt",
+      "owners": [
+        "ext_drmingw"
+      ],
+      "bytes": 1614,
+      "sha256": "cb9d8086a7bcc28588fa5821e409b613494c6eea77b7b1d27c56560c12e7abff",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_drmingw-LICENSE-zlib.txt",
+      "owners": [
+        "ext_drmingw"
+      ],
+      "bytes": 5302,
+      "sha256": "2a0913c27e51a4bd3c7fb6ac3fd39584c9f4bf2449f69852f5bc71c03a181d85",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_drmingw-README.md",
+      "owners": [
+        "ext_drmingw"
+      ],
+      "bytes": 11644,
+      "sha256": "3fed40b783413a6bcf36bf9170880b4434372e4442b8a2132529d792c3ea5aaa",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_gettext-cldr-license.txt",
+      "owners": [
+        "ext_gettext"
+      ],
+      "bytes": 2321,
+      "sha256": "3dd938e75cf2e43960a6cd43ddbd4f880512ddcd5614bfaea38529892bd95ac7",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_gettext-gettext-license.txt",
+      "owners": [
+        "ext_gettext"
+      ],
+      "bytes": 35825,
+      "sha256": "9bfb4c071a7b3b8053c882664eb8b8270bcaa08856eb19905cdca7bd6e80abe0",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    },
+    {
+      "file": "ext_gettext-iconv-license.txt",
+      "owners": [
+        "ext_gettext"
+      ],
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+      "kind": "unmodified original producer text; applicability still needs final file/license review"
+    }
+  ],
+  "drmingwRuntimeMatches": [
+    {
+      "member": "drmingw-0.9.7-win64/bin/dbghelp.dll",
+      "sha256": "3d92df0984662298a09d988aff0bb7c3081a46bf48177b7af02d3552641f77e9",
+      "bytes": 1938072,
+      "lockedRuntimeMatch": true
+    },
+    {
+      "member": "drmingw-0.9.7-win64/bin/dbgcore.dll",
+      "sha256": "db947c07167069d3de9e8a637baf01298984355d775ec49801115d7e5f2e47a3",
+      "bytes": 166576,
+      "lockedRuntimeMatch": true
+    },
+    {
+      "member": "drmingw-0.9.7-win64/bin/symsrv.dll",
+      "sha256": "29a56215afc5aecfc4ca1663302905bdfe7957cde65c0766e6130e28d7d0c0a1",
+      "bytes": 250008,
+      "lockedRuntimeMatch": true
+    },
+    {
+      "member": "drmingw-0.9.7-win64/bin/symsrv.yes",
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "bytes": 1,
+      "lockedRuntimeMatch": true
+    }
+  ],
+  "pythonEmbeddedSbom": {
+    "url": "https://www.python.org/ftp/python/3.13.5/python-3.13.5-embed-amd64.zip.spdx.json",
+    "bytes": 15334,
+    "sha256": "0fc26ce547dc881a7b2ecb35f9ecd680845236d352ef47c313c6f0865a47b38d"
+  },
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false,
+  "embeddedPythonMembers": {
+    "archiveSha256": "7d2650fd9d1b9d002d4a315d5f354247fd6a44f30517c7ef577b08f57a0fb6d9",
+    "members": [
+      "python.exe",
+      "pythonw.exe",
+      "python313.dll",
+      "python3.dll",
+      "vcruntime140.dll",
+      "vcruntime140_1.dll",
+      "LICENSE.txt",
+      "pyexpat.pyd",
+      "select.pyd",
+      "unicodedata.pyd",
+      "winsound.pyd",
+      "_asyncio.pyd",
+      "_bz2.pyd",
+      "_ctypes.pyd",
+      "_decimal.pyd",
+      "_elementtree.pyd",
+      "_hashlib.pyd",
+      "_lzma.pyd",
+      "_multiprocessing.pyd",
+      "_overlapped.pyd",
+      "_queue.pyd",
+      "_socket.pyd",
+      "_sqlite3.pyd",
+      "_ssl.pyd",
+      "_uuid.pyd",
+      "_wmi.pyd",
+      "_zoneinfo.pyd",
+      "libcrypto-3.dll",
+      "libffi-8.dll",
+      "libssl-3.dll",
+      "sqlite3.dll",
+      "python313.zip",
+      "python313._pth",
+      "python.cat"
+    ],
+    "nestedLibraryMemberCount": 540,
+    "tclTkOrTkinterMembers": []
+  }
+}

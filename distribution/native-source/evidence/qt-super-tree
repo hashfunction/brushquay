@@ -1,0 +1,518 @@
+{
+  "sha": "571b5489c7d0987959b8cf81f62df674da79c418",
+  "url": "https://api.github.com/repos/dimula73/qt5/git/trees/571b5489c7d0987959b8cf81f62df674da79c418",
+  "tree": [
+    {
+      "path": ".commit-template",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a3091028c1ad2f0b76eedb36a6790031c64d907",
+      "size": 1577,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/3a3091028c1ad2f0b76eedb36a6790031c64d907"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11a643c0a7fdc858fefc667d19f70785701cca06",
+      "size": 234,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/11a643c0a7fdc858fefc667d19f70785701cca06"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f2c1c6f34ba3055fe5f2c5c601de77810fa381f",
+      "url": "https://api.github.com/repos/dimula73/qt5/git/trees/3f2c1c6f34ba3055fe5f2c5c601de77810fa381f"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0f1959d0844263825ce11aeb6c8546f0da8a9e3",
+      "size": 179,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/a0f1959d0844263825ce11aeb6c8546f0da8a9e3"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d875fa556af9d58a947a3c764ffa499777bdba88",
+      "size": 8367,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/d875fa556af9d58a947a3c764ffa499777bdba88"
+    },
+    {
+      "path": ".gitreview",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69388ea438a3e1d991e93cee72cca644c178d3a2",
+      "size": 73,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/69388ea438a3e1d991e93cee72cca644c178d3a2"
+    },
+    {
+      "path": ".tag",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6828f88dcb0e88b8cd738ad6044ce74d7a9a13c8",
+      "size": 12,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/6828f88dcb0e88b8cd738ad6044ce74d7a9a13c8"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0247f67e41826266978c9befd0f94ffd74d7e7be",
+      "size": 4410,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/0247f67e41826266978c9befd0f94ffd74d7e7be"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a0c3bd4b53525d7114f77a644b37c9f12be09ff",
+      "size": 353,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/3a0c3bd4b53525d7114f77a644b37c9f12be09ff"
+    },
+    {
+      "path": "LICENSES",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64e0c35683d96ab54f1e4b5ebd3840c43ccb1ce5",
+      "url": "https://api.github.com/repos/dimula73/qt5/git/trees/64e0c35683d96ab54f1e4b5ebd3840c43ccb1ce5"
+    },
+    {
+      "path": "README.git",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bed88d91a472ee474b008210ff6a2fb29369f89",
+      "size": 1783,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/3bed88d91a472ee474b008210ff6a2fb29369f89"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37f54aff81e27d3a0b1fbefba4c9034781717bf9",
+      "size": 2740,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/37f54aff81e27d3a0b1fbefba4c9034781717bf9"
+    },
+    {
+      "path": "README.md.template",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b7578774c3abde92ece0aea7e3cf71079d646a5",
+      "size": 1604,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/0b7578774c3abde92ece0aea7e3cf71079d646a5"
+    },
+    {
+      "path": "REUSE.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa22c7467079492a39c0aa8a49de6261b3f51b04",
+      "size": 1459,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/aa22c7467079492a39c0aa8a49de6261b3f51b04"
+    },
+    {
+      "path": "_clang-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc36c73857e5a29cbcdc528028226d97240d95e1",
+      "size": 3826,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/cc36c73857e5a29cbcdc528028226d97240d95e1"
+    },
+    {
+      "path": "cmake",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6dc91bd920ce6827162d7cd4e0a3c1045221157",
+      "url": "https://api.github.com/repos/dimula73/qt5/git/trees/a6dc91bd920ce6827162d7cd4e0a3c1045221157"
+    },
+    {
+      "path": "coin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65eaef278f22137ffa4085324953afcb06e467e7",
+      "url": "https://api.github.com/repos/dimula73/qt5/git/trees/65eaef278f22137ffa4085324953afcb06e467e7"
+    },
+    {
+      "path": "configure",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "11b10a0accdd4640dc836b626b997b7c3ddfd215",
+      "size": 790,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/11b10a0accdd4640dc836b626b997b7c3ddfd215"
+    },
+    {
+      "path": "configure.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c0e0e620e820e1d79bfa2a83bf005c9328d75e2",
+      "size": 1067,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/9c0e0e620e820e1d79bfa2a83bf005c9328d75e2"
+    },
+    {
+      "path": "configure.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f437252f093cf4ebf73bab8aef0085855ad65d21",
+      "size": 94,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/f437252f093cf4ebf73bab8aef0085855ad65d21"
+    },
+    {
+      "path": "init-repository",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e1d54c8c388dc3d91722de91a76e7249548861dc",
+      "size": 966,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/e1d54c8c388dc3d91722de91a76e7249548861dc"
+    },
+    {
+      "path": "init-repository.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9daca2a0c8235e4e40b5f3f7b6a48dd003dc937",
+      "size": 1047,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/b9daca2a0c8235e4e40b5f3f7b6a48dd003dc937"
+    },
+    {
+      "path": "init-repository.pl",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3a5f26f660adf2a424154de6c00995c8ab549d75",
+      "size": 21404,
+      "url": "https://api.github.com/repos/dimula73/qt5/git/blobs/3a5f26f660adf2a424154de6c00995c8ab549d75"
+    },
+    {
+      "path": "qt3d",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "31dbc46cecb6c96fde5efd43cb70812c0d84b328"
+    },
+    {
+      "path": "qt5compat",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9"
+    },
+    {
+      "path": "qtactiveqt",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "b0950feff6b5898a4a59b8c6d58c582ed5575175"
+    },
+    {
+      "path": "qtbase",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "8bd38fff262805f06b753ea04dd79633315eae7a"
+    },
+    {
+      "path": "qtcanvas3d",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "1319e0965f6008f44f9216a7bb76e106a1710767"
+    },
+    {
+      "path": "qtcanvaspainter",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "14db4664bc8e08590db612591f63159c719b1576"
+    },
+    {
+      "path": "qtcharts",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "9b4c661ab4c712d2c4d9e8e254c2458a169720f5"
+    },
+    {
+      "path": "qtcoap",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "405576150381f824168e1d266245d9b9855c367e"
+    },
+    {
+      "path": "qtconnectivity",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "102a73c48c97b503d33add4a95b0cdf8d1363740"
+    },
+    {
+      "path": "qtdatavis3d",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "4dc290029cd46f602e2e84e12ebc7ecf5d3dbf25"
+    },
+    {
+      "path": "qtdeclarative",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1"
+    },
+    {
+      "path": "qtdoc",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "7c98216e33fa52c8137a439a2b2a4201640c3b2e"
+    },
+    {
+      "path": "qtfeedback",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "9ac8d8c272fc93416016e094fc6b97226a400082"
+    },
+    {
+      "path": "qtgamepad",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "5fe6fd206f4aef1cb1ee9c328ee27e25e6b44f4a"
+    },
+    {
+      "path": "qtgraphs",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "b117ffd7227d0419a3389fc5cfe70f9c7e8de30f"
+    },
+    {
+      "path": "qtgrpc",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "df9a19f58bbf65415947b65390f6ae306dafc2a4"
+    },
+    {
+      "path": "qthttpserver",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "89db72a6f6e8173a977865d1c7e089ede96ac243"
+    },
+    {
+      "path": "qtimageformats",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "ade536558e868143d615512a6873daabb8e9195b"
+    },
+    {
+      "path": "qtlanguageserver",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "fa86fa006217f26d742127a6ef96677c87315b5e"
+    },
+    {
+      "path": "qtlocation",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "23d209b7498f181d68b3b1cae6063bb446c5c8d2"
+    },
+    {
+      "path": "qtlottie",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "cb51162b42be1134961706a32942772a8cec61cf"
+    },
+    {
+      "path": "qtmqtt",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "d1e3491e306bf46ab397270ac018a2d058155d41"
+    },
+    {
+      "path": "qtmultimedia",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "8ffcce57ebc4a557fb07727c60b8511e39c6b28b"
+    },
+    {
+      "path": "qtnetworkauth",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "4af2f29b09c0e6e80bb99fb2360a8c9395ee3a1d"
+    },
+    {
+      "path": "qtopcua",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "610f8166c34cfbaad510ed98a9cf64553d83b07f"
+    },
+    {
+      "path": "qtopenapi",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "c93475abf89a8353f9c6d1c2fccecfecc2f19959"
+    },
+    {
+      "path": "qtpim",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "02efef5ee63bf2407526f81fd6b68f5a59ac1de3"
+    },
+    {
+      "path": "qtpositioning",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "1007e149184402b24e06842febbc3e7da83cd64f"
+    },
+    {
+      "path": "qtqa",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "aa06149adc72a957780e4bf3819df4335ed525da"
+    },
+    {
+      "path": "qtquick3d",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "fefd81716eaf4d7cd274b9a6c8770f2ae40d3dda"
+    },
+    {
+      "path": "qtquick3dphysics",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "a5861cdf1fab3a577157edfddc61ccbf3352b5f4"
+    },
+    {
+      "path": "qtquickeffectmaker",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "d07cefb9899d1f4088d4b9a2acf83e0335bd4e55"
+    },
+    {
+      "path": "qtquicktimeline",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "364dc7f2d66e2f4950531e8ca2838035c4ea532a"
+    },
+    {
+      "path": "qtremoteobjects",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "ebd598549acb5399f57003d538c73974f5a92343"
+    },
+    {
+      "path": "qtrepotools",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "e4b51b8e74a9e4e4215fffcdcf82608c4d297261"
+    },
+    {
+      "path": "qtscxml",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "66f5602d9cc967b0fbadbd4293d3ecb45331f7eb"
+    },
+    {
+      "path": "qtsensors",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "92ed021507d4f8c38e0e9548db97c8dd039829d9"
+    },
+    {
+      "path": "qtserialbus",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "50f98ed65b1f38a8db4c1fc889bf53ab28643a54"
+    },
+    {
+      "path": "qtserialport",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "14ab9f3aa49077b5ddd2f38b45c05753b89ad851"
+    },
+    {
+      "path": "qtshadertools",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "1c7a78fd7480f11a49eb8135b44d138edb0f0df8"
+    },
+    {
+      "path": "qtspeech",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "bad8290b995a8990e64605dd60dcf4a5b898e29e"
+    },
+    {
+      "path": "qtsvg",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "4126867385dc0b7a9404dcd69726c28ed0d5e10a"
+    },
+    {
+      "path": "qtsystems",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "434af789f0d56ca7a521ca2d9ec8cf3b1057fd37"
+    },
+    {
+      "path": "qttasktree",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "4d594e7f05f3f917843eb13971e6dcfa7e1d37fb"
+    },
+    {
+      "path": "qttools",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "92c3a8c84ff17c5d2ae263dffb97645fb1a76081"
+    },
+    {
+      "path": "qttranslations",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "08c7440f513309715ba00db5e0e519a4a59e62ea"
+    },
+    {
+      "path": "qtvirtualkeyboard",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "68656816297a54c3b9639f4bd182294ca6314242"
+    },
+    {
+      "path": "qtwayland",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "fc88dcfed73c0578d3bb562d9ff65c3aeff54c40"
+    },
+    {
+      "path": "qtwebchannel",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "71609dbea86e08e4e93ea711c567184d8b0da54e"
+    },
+    {
+      "path": "qtwebengine",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "60e3a868616b7122c0f6faa605e3d1a56474b2f9"
+    },
+    {
+      "path": "qtwebglplugin",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "531fb30d539f09003946ab768873ef87e6117fa6"
+    },
+    {
+      "path": "qtwebsockets",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "882f182c8bb5d249ecd97601557ab0e671bdf520"
+    },
+    {
+      "path": "qtwebview",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "52f80cdc2e15ffcef359790a67952aeef8187155"
+    },
+    {
+      "path": "qtxmlpatterns",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "05ab44484453673ee813bcac287fc9052ec9164f"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "731bebd6f7735d2e47309528212a97deb3cf529b",
+      "url": "https://api.github.com/repos/dimula73/qt5/git/trees/731bebd6f7735d2e47309528212a97deb3cf529b"
+    }
+  ],
+  "truncated": false
+}

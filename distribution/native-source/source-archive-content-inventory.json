@@ -1,0 +1,5049 @@
+{
+  "schema": 1,
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false,
+  "archives": [
+    {
+      "archive": "upstream-archives/sha256-0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664.source",
+      "sha256": "0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664",
+      "owners": [
+        "ext_libogg"
+      ],
+      "members": 134,
+      "noticeCandidates": [
+        {
+          "path": "libogg-1.3.5/COPYING",
+          "bytes": 1466,
+          "sha256": "d2ab5758336489da61c12cc5bb757da5339c4ae9001f9bb0562b4370249af814",
+          "kind": "file"
+        },
+        {
+          "path": "libogg-1.3.5/AUTHORS",
+          "bytes": 198,
+          "sha256": "6fcb33d0cdd60b5054e7df820916388b590427514288c2bab01c626bb8ae9506",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b.source",
+      "sha256": "b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b",
+      "owners": [
+        "ext_libvorbis"
+      ],
+      "members": 428,
+      "noticeCandidates": [
+        {
+          "path": "libvorbis-1.3.7/COPYING",
+          "bytes": 1470,
+          "sha256": "ec1815db59fcd302846df949d7424876cb2e2dc5ed1606c5fb0b36787b1cf43a",
+          "kind": "file"
+        },
+        {
+          "path": "libvorbis-1.3.7/AUTHORS",
+          "bytes": 65,
+          "sha256": "f5cab9f16035f770f50299f85cf2938c06dc3a9a30425961067788102ec896d3",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa.source",
+      "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa",
+      "owners": [
+        "ext_boost"
+      ],
+      "members": 74085,
+      "noticeCandidates": [
+        {
+          "path": "boost_1_81_0/libs/multiprecision/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/nowide/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/contract/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/geometry/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/geometry/doc/copyright_note_policy.txt",
+          "bytes": 1762,
+          "sha256": "521a8764f0025b076bc492805d4b2bb3d8f9eceb0bc781b61611c18c8c77af09",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/geometry/doc/src/copyright_block.qbk",
+          "bytes": 578,
+          "sha256": "e91652ee33d62e6afbafd86ab29c2407ea1ae0a557809f0be84fd66f135f1787",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/geometry/doc/src/docutils/tools/doxygen_xml2qbk/contrib/rapidxml-1.13/license.txt",
+          "bytes": 2752,
+          "sha256": "6094a09542ee0835df4c212203ae0a19c93b47a24d78ccf4951b0282268570ae",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/url/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/variant2/doc/variant2/copyright.adoc",
+          "bytes": 399,
+          "sha256": "bc83b50aad002dac1754419d136cfc4f33b4db6df72088a9c76b29f1f0283816",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/container/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/pfr/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/yap/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/yap/example/autodiff_library/LICENSE",
+          "bytes": 1074,
+          "sha256": "bd1684bf806817f26f02585bc992fe5f5ea8788896398234b8a8187328af550b",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/logic/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/signals2/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/beast/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/beast/test/bench/parser/nodejs-parser/AUTHORS",
+          "bytes": 2502,
+          "sha256": "d1a15fcf0453796ee31e900dd5edff35ae86fb6ae4375c2afda8bde0f6fd2f03",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/beast/test/bench/parser/nodejs-parser/LICENSE-MIT",
+          "bytes": 1251,
+          "sha256": "2996a1c43ee757f9c997a829d82bdd584052323e73cf02ff8126c6fbd95c2d87",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/beast/test/extern/zlib-1.2.12/contrib/dotzlib/LICENSE_1_0.txt",
+          "bytes": 1337,
+          "sha256": "8d8291caf1cee26d23acf3eb67c9f9a2d58f1c681b16a4fbe8cbfb9e3c0b5a9b",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/move/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/mpl/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/ptr_container/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/system/doc/system/copyright.adoc",
+          "bytes": 435,
+          "sha256": "a6098e0922d7c4ac349241109cd1d39baa80ffcd2883660d77c33e45186fdcce",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/date_time/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/date_time/xmldoc/license.xml",
+          "bytes": 1467,
+          "sha256": "477ea844df37c895dbf0aa39f935631965b0bc963024d6ca36215294cf0ed7ee",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/tokenizer/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/outcome/doc/src/themes/boostdoc/LICENSE",
+          "bytes": 2597,
+          "sha256": "2ab1c8959787745969d6245ac256253efc1202eb0dfa060c18857de45c15adfe",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/outcome/doc/src/themes/boostdoc/layouts/shortcodes/notice.html",
+          "bytes": 335,
+          "sha256": "45e98f4e4f0b1e7a602dff1950ef7b08652fe9f6962cbb5b2d7fd8244165d84b",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/algorithm/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/gil/LICENSE.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/numeric/interval/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/describe/doc/describe/copyright.adoc",
+          "bytes": 343,
+          "sha256": "7f24a51417f22cdda73a8508d613326288dbbbfb941778da5716748c234286bc",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/safe_numerics/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/unordered/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/unordered/doc/unordered/copyright.adoc",
+          "bytes": 446,
+          "sha256": "97d46617dc5135019a30a199d25b7543832e3dcad3851477a495c54c502a9d35",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/qvm/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/exception/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/pool/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/property_map/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/format/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/uuid/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/rational/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/locale/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/histogram/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/leaf/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/stl_interfaces/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/assign/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/container_hash/doc/hash/copyright.adoc",
+          "bytes": 442,
+          "sha256": "50890f4e59e428a71bfb2ad20ec3c67a68183eeb63cbc6550623563eff00c82c",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hof/LICENSE.md",
+          "bytes": 1373,
+          "sha256": "859bddbbef21decf692e6bd16bd8a6c96cde1b989fa88ddd63bd2bde98b58b2e",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hof/doc/src/license.md",
+          "bytes": 1476,
+          "sha256": "bebd6881aed727d47ba90806b67624093a829badd5b49644e00314564324f10c",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hof/doc/html/LICENSE.html",
+          "bytes": 3931,
+          "sha256": "1e8ab38c844c2331da8c86794e142f844895206a59d69a287b953a088e84afda",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hof/doc/html/_sources/LICENSE.md.txt",
+          "bytes": 1373,
+          "sha256": "859bddbbef21decf692e6bd16bd8a6c96cde1b989fa88ddd63bd2bde98b58b2e",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hof/doc/html/_sources/doc/src/license.md.txt",
+          "bytes": 1476,
+          "sha256": "bebd6881aed727d47ba90806b67624093a829badd5b49644e00314564324f10c",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hof/doc/html/doc/src/license.html",
+          "bytes": 4318,
+          "sha256": "71a8512cd809aad19ce3958563a5a16f8f7556a7a21da97d9fb95af705d36848",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/static_string/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/callable_traits/LICENSE.md",
+          "bytes": 1373,
+          "sha256": "754f0d4ecb5f254feaa1b0d3e4180696a8af2abcc2969e5abf590834a63610e5",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/test/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/lambda2/doc/lambda2/copyright.adoc",
+          "bytes": 343,
+          "sha256": "7f24a51417f22cdda73a8508d613326288dbbbfb941778da5716748c234286bc",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/json/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/math/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/math/doc/sf/license.qbk",
+          "bytes": 218,
+          "sha256": "cd1fa4b1126b015d9705f52d2f71b0824a7844410cdc57fadf26699e6b386017",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/iostreams/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/dynamic_bitset/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/hana/LICENSE.md",
+          "bytes": 1372,
+          "sha256": "367ef0a8422dcd9cf3285610f6eb2a499de12e8b1c7af6154009addf088c903d",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/compute/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/python/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/libs/concept_check/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/bcp/licence_info.cpp",
+          "bytes": 44212,
+          "sha256": "4b74d6e2e6f849d22f51033f1acb3b01b1592aea0df9c8ab63f62e1cdaca0000",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/bcp/licence_info.hpp",
+          "bytes": 1120,
+          "sha256": "ea35f89f0810bf38316bf6f6615ddade662d0b9ca1b7a6d5ef8630045e61ca16",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/boost_install/test/iostreams/bzip2-1.0.8/LICENSE",
+          "bytes": 1896,
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/boost_install/test/iostreams/zlib-1.2.11/contrib/dotzlib/LICENSE_1_0.txt",
+          "bytes": 1337,
+          "sha256": "8d8291caf1cee26d23acf3eb67c9f9a2d58f1c681b16a4fbe8cbfb9e3c0b5a9b",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/boostbook/xsl/caramel/LICENSE",
+          "bytes": 3090,
+          "sha256": "2f59ce71dd2b1538db0976cf0886685de2cead1dbf1ddebabd90c7df21e469e7",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/build/LICENSE.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/build/src/engine/debian/copyright",
+          "bytes": 769,
+          "sha256": "227d89d4beb2fadf7fab508921a610455a13a4a864d1546f117734d61d25fd66",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/docca/LICENSE_1_0.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/inspect/copyright_check.cpp",
+          "bytes": 1000,
+          "sha256": "c31b259287510e3c04f78bb7b36796d45834dc1d86f528eff59381d2a3746e0f",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/inspect/copyright_check.hpp",
+          "bytes": 1037,
+          "sha256": "5f5945fabdc65a3444bd858fc5088d9042ceaafa062ef2883acc61d6e676483b",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/inspect/license_check.cpp",
+          "bytes": 1398,
+          "sha256": "9ff54c34e5db5121c98ec80b3cb9dd9539090589a4bd201ac45e88cf62423fbc",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/inspect/license_check.hpp",
+          "bytes": 1113,
+          "sha256": "f1598455d2cb69634f6db48596e010fcf49db8f25a5d21ed3fcb2a402f0a485f",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/quickbook/test/doc-info/copyright-fail1.quickbook",
+          "bytes": 86,
+          "sha256": "bd89d709133ae673668ff52ce725d364062124527af052223710294a464f2de4",
+          "kind": "file"
+        },
+        {
+          "path": "boost_1_81_0/tools/quickbook/test/doc-info/copyright-fail2.quickbook",
+          "bytes": 89,
+          "sha256": "3fc858792098fb0172da4a237ac1f48a03bc4d80249b218db5702e3149c593b2",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "boost_1_81_0/libs/leaf/subprojects/lua.wrap",
+        "boost_1_81_0/libs/leaf/subprojects/tl_expected.wrap"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348.source",
+      "sha256": "ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348",
+      "owners": [
+        "ext_extra_cmake_modules"
+      ],
+      "members": 625,
+      "noticeCandidates": [
+        {
+          "path": "extra-cmake-modules-6.25.0/COPYING-CMAKE-SCRIPTS",
+          "bytes": 1327,
+          "sha256": "46cde7dc11e64c78d650b4851b88f6704b4665ff60f22a1caf68ceb15e217e5b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15.source",
+      "sha256": "123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15",
+      "owners": [
+        "ext_karchive"
+      ],
+      "members": 216,
+      "noticeCandidates": [
+        {
+          "path": "karchive-6.25.0/AUTHORS",
+          "bytes": 235,
+          "sha256": "249b0df27652d4ef1164c02250af3bc8a7c2e540e942ee9456a78d49ffcc4ecb",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5.source",
+      "sha256": "5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5",
+      "owners": [
+        "ext_kcodecs"
+      ],
+      "members": 258,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5.source",
+      "sha256": "95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5",
+      "owners": [
+        "ext_kcolorscheme"
+      ],
+      "members": 80,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238.source",
+      "sha256": "e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238",
+      "owners": [
+        "ext_kcompletion"
+      ],
+      "members": 164,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c.source",
+      "sha256": "8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c",
+      "owners": [
+        "ext_kconfig"
+      ],
+      "members": 466,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e.source",
+      "sha256": "e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e",
+      "owners": [
+        "ext_kcoreaddons"
+      ],
+      "members": 376,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b.source",
+      "sha256": "38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b",
+      "owners": [
+        "ext_kguiaddons"
+      ],
+      "members": 155,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de.source",
+      "sha256": "7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de",
+      "owners": [
+        "ext_ki18n"
+      ],
+      "members": 258,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b.source",
+      "sha256": "dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b",
+      "owners": [
+        "ext_kimageformats"
+      ],
+      "members": 1333,
+      "noticeCandidates": [
+        {
+          "path": "kimageformats-6.25.0/src/imageformats/AUTHORS",
+          "bytes": 983,
+          "sha256": "16057fbbdd8b59bdef3f0e73d68a6daba47f2cf01938d431f43cc104a7694731",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca.source",
+      "sha256": "ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca",
+      "owners": [
+        "ext_kitemmodels"
+      ],
+      "members": 169,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d.source",
+      "sha256": "b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d",
+      "owners": [
+        "ext_kitemviews"
+      ],
+      "members": 147,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938.source",
+      "sha256": "8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938",
+      "owners": [
+        "ext_kwidgetsaddons"
+      ],
+      "members": 482,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434.source",
+      "sha256": "b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434",
+      "owners": [
+        "ext_kwindowsystem"
+      ],
+      "members": 238,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96.source",
+      "sha256": "ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96",
+      "owners": [
+        "ext_kdcraw"
+      ],
+      "members": 28,
+      "noticeCandidates": [
+        {
+          "path": "libkdcraw-24.12.2/AUTHORS",
+          "bytes": 467,
+          "sha256": "2e8dc1800fdbe400ba3cbee398ba36ff38c7d4f3659b44249c812ae13d080877",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed.source",
+      "sha256": "917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed",
+      "owners": [
+        "ext_tiff"
+      ],
+      "members": 595,
+      "noticeCandidates": [
+        {
+          "path": "tiff-4.4.0/COPYRIGHT",
+          "bytes": 1146,
+          "sha256": "fbd6fed7938541d2c809c0826225fc85e551fdbfa8732b10f0c87e0847acafd7",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f.source",
+      "sha256": "4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f",
+      "owners": [
+        "ext_freetype"
+      ],
+      "members": 825,
+      "noticeCandidates": [
+        {
+          "path": "freetype-2.12.1/LICENSE.TXT",
+          "bytes": 1870,
+          "sha256": "c85e842b7ff04d95dab7d68e812773de0f8b67940e5449d35b42c66eb0f619fe",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b.source",
+      "sha256": "d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b",
+      "owners": [
+        "ext_jpeg"
+      ],
+      "members": 514,
+      "noticeCandidates": [
+        {
+          "path": "libjpeg-turbo-2.1.4/LICENSE.md",
+          "bytes": 5213,
+          "sha256": "ee1eaf194d5924b6360af8a6ba6a4e1554037091f7505943300cdeec65f1aebb",
+          "kind": "file"
+        },
+        {
+          "path": "libjpeg-turbo-2.1.4/release/License.rtf",
+          "bytes": 2178,
+          "sha256": "d26120ab237f87dea10aa4fa7fd4243cadffd26e54eb2f3903d5fb0f8ed336b2",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2.source",
+      "sha256": "a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2",
+      "owners": [
+        "ext_png"
+      ],
+      "members": 600,
+      "noticeCandidates": [
+        {
+          "path": "libpng-1.6.51/AUTHORS",
+          "bytes": 1565,
+          "sha256": "43711041a40e642089dd5047646a6d25a161dbdfd1a459c000ce5cfcb438fbda",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/LICENSE",
+          "bytes": 5345,
+          "sha256": "16d9daaafbf63a31a5bdc91d4600972548fef5aaa1244202393288dbd079c49a",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/ci/LICENSE_MIT.txt",
+          "bytes": 1036,
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/contrib/gregbook/COPYING",
+          "bytes": 18097,
+          "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/contrib/gregbook/LICENSE",
+          "bytes": 2373,
+          "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/contrib/pngexif/LICENSE_MIT.txt",
+          "bytes": 1036,
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/contrib/pngminus/LICENSE.txt",
+          "bytes": 1164,
+          "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+          "kind": "file"
+        },
+        {
+          "path": "libpng-1.6.51/scripts/cmake/AUTHORS.md",
+          "bytes": 842,
+          "sha256": "4691b0d26afaaac9681957a307c0c79d1e834380ca1ea483320ddcf003eb4637",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467.source",
+      "sha256": "56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+      "owners": [
+        "ext_fftw3"
+      ],
+      "members": 3500,
+      "noticeCandidates": [
+        {
+          "path": "fftw-3.3.10/AUTHORS",
+          "bytes": 585,
+          "sha256": "14e1b1c6a7d84613c85a4c457b4167fb4927ce239ec45123e85ba5eefca4e7bb",
+          "kind": "file"
+        },
+        {
+          "path": "fftw-3.3.10/COPYING",
+          "bytes": 18002,
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+          "kind": "file"
+        },
+        {
+          "path": "fftw-3.3.10/COPYRIGHT",
+          "bytes": 844,
+          "sha256": "8a74b35d541d93fdf58a22a3d3baa48ae3edbf6d715edfeb6457c21968ae43ac",
+          "kind": "file"
+        },
+        {
+          "path": "fftw-3.3.10/doc/license.texi",
+          "bytes": 1842,
+          "sha256": "68f733830a3b4dbf66815ca54b5637015517848c5f32f38f1ea2057782161a77",
+          "kind": "file"
+        },
+        {
+          "path": "fftw-3.3.10/doc/html/License-and-Copyright.html",
+          "bytes": 5246,
+          "sha256": "661a682f438fffc64a6d6bdcf4dc120d5c7461c4f7c4672a59c1228593f97603",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/md5-40996bbaf7d1356d3c22e33a8b255b31.source",
+      "sha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "owners": [
+        "ext_gettext"
+      ],
+      "members": 6212,
+      "noticeCandidates": [
+        {
+          "path": "gettext-0.21/gnulib-local/lib/libxml/COPYING",
+          "bytes": 1289,
+          "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/AUTHORS",
+          "bytes": 1462,
+          "sha256": "b5a0860df3e21b2bfdef52893bfcdd5ca3a81f3714d5591682c845a1cbf46359",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-runtime/libasprintf/COPYING.LIB",
+          "bytes": 26545,
+          "sha256": "3fe5361f24b7c49ba12911c08f5a33f9cb18871d95d9fb881f5b8a4793e04288",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-runtime/libasprintf/AUTHORS",
+          "bytes": 33,
+          "sha256": "590f1c4aa72c2c14dd52b0e230bf652e2109d00099fc7bb272e4594b800913d0",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-runtime/libasprintf/COPYING",
+          "bytes": 65,
+          "sha256": "03133addae5b99a6148c538300e6d97074453089be1423b741bd081f18e2b298",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-runtime/intl/COPYING.LIB",
+          "bytes": 26545,
+          "sha256": "3fe5361f24b7c49ba12911c08f5a33f9cb18871d95d9fb881f5b8a4793e04288",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-runtime/AUTHORS",
+          "bytes": 109,
+          "sha256": "d013195954f932a5234c357ef74c4e872d0a067c8b60aa1f57ce8e68f8026f4c",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-runtime/COPYING",
+          "bytes": 495,
+          "sha256": "7ef2cdfe58e0c0460657b6598b49af29d4e03c1e41cbaf0e1da1eb8ad74b95d0",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/libtextstyle/AUTHORS",
+          "bytes": 271,
+          "sha256": "71c0580cb05d28848b341e5a4da2761d4a8eb482592358d646dab104648a8303",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/libtextstyle/lib/libxml/COPYING",
+          "bytes": 1289,
+          "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/libtextstyle/COPYING",
+          "bytes": 35151,
+          "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-tools/gnulib-lib/libxml/COPYING",
+          "bytes": 1289,
+          "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-tools/AUTHORS",
+          "bytes": 60,
+          "sha256": "4027705b723299dd8e6153939ab73395e22685503994cc8de92fa2ebaa432a49",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/gettext-tools/COPYING",
+          "bytes": 78,
+          "sha256": "5d4cff30d5038f82a0edc79798456049b61e1752fdb7e9ab1f4bfb9fae3a7303",
+          "kind": "file"
+        },
+        {
+          "path": "gettext-0.21/COPYING",
+          "bytes": 35151,
+          "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0.source",
+      "sha256": "17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0",
+      "owners": [
+        "ext_icoutils"
+      ],
+      "members": 307,
+      "noticeCandidates": [
+        {
+          "path": "icoutils-0.32.3/AUTHORS",
+          "bytes": 1075,
+          "sha256": "de7089a365a3138f1d1b1e8740e5cfc858317c68ed73740404d81b3636e52b29",
+          "kind": "file"
+        },
+        {
+          "path": "icoutils-0.32.3/COPYING",
+          "bytes": 35068,
+          "sha256": "fc82ca8b6fdb18d4e3e85cfd8ab58d1bcd3f1b29abe782895abd91d64763f8e7",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438.source",
+      "sha256": "bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438",
+      "owners": [
+        "ext_sip"
+      ],
+      "members": 590,
+      "noticeCandidates": [
+        {
+          "path": "sip-6.15.3/LICENSE",
+          "bytes": 1300,
+          "sha256": "84fc1e53af2832382178e0bbc46c256f10b02cb89508b19e3ff8a3c002f8ecea",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/10/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/10/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/10/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/11/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/11/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/11/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/12/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/12/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/12/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/13/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/13/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/13/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/14/LICENSE",
+          "bytes": 1300,
+          "sha256": "3859cfca971e429d6b79bdfeb1dc9e43aa9592f7295bf28fdd62824097909383",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/15/LICENSE",
+          "bytes": 1300,
+          "sha256": "3859cfca971e429d6b79bdfeb1dc9e43aa9592f7295bf28fdd62824097909383",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/16/LICENSE",
+          "bytes": 1300,
+          "sha256": "3859cfca971e429d6b79bdfeb1dc9e43aa9592f7295bf28fdd62824097909383",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/17/LICENSE",
+          "bytes": 1304,
+          "sha256": "3e6f5b427c36f94ecf86bc01698af7030a1ed6eb3748110d5dbb8d142d804611",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/18/LICENSE",
+          "bytes": 1304,
+          "sha256": "3e6f5b427c36f94ecf86bc01698af7030a1ed6eb3748110d5dbb8d142d804611",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/9/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/9/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/12/9/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/1/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/1/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/1/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/10/LICENSE",
+          "bytes": 1304,
+          "sha256": "3e6f5b427c36f94ecf86bc01698af7030a1ed6eb3748110d5dbb8d142d804611",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/11/LICENSE",
+          "bytes": 1304,
+          "sha256": "3e6f5b427c36f94ecf86bc01698af7030a1ed6eb3748110d5dbb8d142d804611",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/2/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/2/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/2/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/3/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/3/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/3/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/4/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/4/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/4/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/5/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/5/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/5/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/6/LICENSE",
+          "bytes": 2766,
+          "sha256": "2c93b5d4af4cfdfe8d7551b2bfe971e39deb37a8ae2d40765f3fd63846418c63",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/6/LICENSE-GPL2",
+          "bytes": 18161,
+          "sha256": "7ebb61006e46b9e9340dd135d5f4afbbcb1d1d6c6709f74473b35929007b9aeb",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/6/LICENSE-GPL3",
+          "bytes": 35297,
+          "sha256": "63cb5f5c1ea39b732c495f354f971e40f6db84c567ca5573a68bb65af07741f8",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/7/LICENSE",
+          "bytes": 1300,
+          "sha256": "3859cfca971e429d6b79bdfeb1dc9e43aa9592f7295bf28fdd62824097909383",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/8/LICENSE",
+          "bytes": 1300,
+          "sha256": "3859cfca971e429d6b79bdfeb1dc9e43aa9592f7295bf28fdd62824097909383",
+          "kind": "file"
+        },
+        {
+          "path": "sip-6.15.3/sipbuild/module/source/13/9/LICENSE",
+          "bytes": 1300,
+          "sha256": "3859cfca971e429d6b79bdfeb1dc9e43aa9592f7295bf28fdd62824097909383",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8.source",
+      "sha256": "6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8",
+      "owners": [
+        "ext_pyqt-builder"
+      ],
+      "members": 81,
+      "noticeCandidates": [
+        {
+          "path": "pyqt_builder-1.19.1/LICENSE",
+          "bytes": 1300,
+          "sha256": "84fc1e53af2832382178e0bbc46c256f10b02cb89508b19e3ff8a3c002f8ecea",
+          "kind": "file"
+        },
+        {
+          "path": "pyqt_builder-1.19.1/pyqtbuild/bundle/qt_wheel_distinfo/LICENSE.gpl3",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "pyqt_builder-1.19.1/pyqtbuild/bundle/qt_wheel_distinfo/LICENSE.lgpl3",
+          "bytes": 7687,
+          "sha256": "6c671e2912ec69c0832f32066c0313cee5fdc3bbcbce237822e89f3da58edd4e",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889.source",
+      "sha256": "45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889",
+      "owners": [
+        "ext_pyqt6"
+      ],
+      "members": 1090,
+      "noticeCandidates": [
+        {
+          "path": "pyqt6-6.11.0/LICENSE",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be.source",
+      "sha256": "869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be",
+      "owners": [
+        "ext_pyqt6-sip"
+      ],
+      "members": 23,
+      "noticeCandidates": [
+        {
+          "path": "pyqt6_sip-13.11.1/LICENSE",
+          "bytes": 1304,
+          "sha256": "3e6f5b427c36f94ecf86bc01698af7030a1ed6eb3748110d5dbb8d142d804611",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b.source",
+      "sha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "owners": [
+        "ext_ocio"
+      ],
+      "members": 1734,
+      "noticeCandidates": [
+        {
+          "path": "OpenColorIO-2.5.1/LICENSE",
+          "bytes": 1485,
+          "sha256": "82a40c52065ee968aa62015735e84378ac11425db7a233e6a2dcd2c83fc24276",
+          "kind": "file"
+        },
+        {
+          "path": "OpenColorIO-2.5.1/docs/aswf/license.rst",
+          "bytes": 448,
+          "sha256": "a5b30db79a9f518916fd74e0faeda39fbaa93e2829c066786ebaa351b2bdae66",
+          "kind": "file"
+        },
+        {
+          "path": "OpenColorIO-2.5.1/docs/site/LICENSE",
+          "bytes": 594,
+          "sha256": "bfdfe12481e744f740b08d2df89d9229963c3f1b9d6d96b3cea87dcb27c5199d",
+          "kind": "file"
+        },
+        {
+          "path": "OpenColorIO-2.5.1/tests/data/LICENSE.md",
+          "bytes": 124,
+          "sha256": "2d9b807f962facff42bc33f108ccbea6bedf0b56cd67345cf4fbc97d838c709c",
+          "kind": "file"
+        },
+        {
+          "path": "OpenColorIO-2.5.1/vendor/openfx/Support/LICENSE",
+          "bytes": 1646,
+          "sha256": "1e52150d77eb6c335db92ea82cbd7dc8a837a1fd2f08f192b108d89251a8f147",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01.source",
+      "sha256": "05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01",
+      "owners": [
+        "ext_openexr"
+      ],
+      "members": 1007,
+      "noticeCandidates": [
+        {
+          "path": "openexr-2.5.9/Contrib/DtexToExr/AUTHORS",
+          "bytes": 67,
+          "sha256": "001ea4855801e70deef7213ca2f3c5fa8b709b31b36873d19a69e2f4a334a89b",
+          "kind": "file"
+        },
+        {
+          "path": "openexr-2.5.9/LICENSE.md",
+          "bytes": 1497,
+          "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2.source",
+      "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2",
+      "owners": [
+        "ext_exiv2"
+      ],
+      "members": 1441,
+      "noticeCandidates": [
+        {
+          "path": "exiv2-0.27.5-Source/test/data/COPYRIGHT",
+          "bytes": 3956,
+          "sha256": "15fe219a0e6bd7d9fdb1eaddb21d2f49e63b78d249fcee82c75be878e76bf714",
+          "kind": "file"
+        },
+        {
+          "path": "exiv2-0.27.5-Source/doc/COPYING-XMPSDK",
+          "bytes": 1515,
+          "sha256": "e85172c383c48af915f85d30da66037f5e35b62000019a295989b8a1a561eaa5",
+          "kind": "file"
+        },
+        {
+          "path": "exiv2-0.27.5-Source/COPYING",
+          "bytes": 17986,
+          "sha256": "a7ba75cb966aca374711e2af49e5f3aea6a4443a803440f5d93e73a5a1222f66",
+          "kind": "file"
+        },
+        {
+          "path": "exiv2-0.27.5-Source/AUTHORS",
+          "bytes": 71,
+          "sha256": "143ea87e187a54091633df0dbbd0e07fbd37b7b40f8059f2e826b522839d96cc",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2.source",
+      "sha256": "a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2",
+      "owners": [
+        "ext_libx265",
+        "ext_libx265_10bit",
+        "ext_libx265_12bit"
+      ],
+      "members": 406,
+      "noticeCandidates": [
+        {
+          "path": "x265-snapshot-20260216-13309/COPYING",
+          "bytes": 18120,
+          "sha256": "d8afb1bcc7a2cfc603683b168d6987ef0a48e59e0da3693bf55c5d33b67e2b49",
+          "kind": "file"
+        },
+        {
+          "path": "x265-snapshot-20260216-13309/source/dynamicHDR10/LICENSE.txt",
+          "bytes": 849,
+          "sha256": "47f15d63e82eb8a4de6e46471d5f96cf6d052fd5355944a002c3157880248b69",
+          "kind": "file"
+        },
+        {
+          "path": "x265-snapshot-20260216-13309/source/dynamicHDR10/json11/LICENSE.txt",
+          "bytes": 1057,
+          "sha256": "950e288a2548cb33f6a90d23958806b0803f510ab17c600d661619a73ae3a6c8",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158.source",
+      "sha256": "58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158",
+      "owners": [
+        "ext_unibreak"
+      ],
+      "members": 389,
+      "noticeCandidates": [
+        {
+          "path": "libunibreak-5.0/AUTHORS",
+          "bytes": 646,
+          "sha256": "e035f09b150c9f6d3f8005baa80faba31578854832ef27e089e64184370c783a",
+          "kind": "file"
+        },
+        {
+          "path": "libunibreak-5.0/LICENCE",
+          "bytes": 1045,
+          "sha256": "0c57e2ec42ece17791a75d2f9b2f8e0663181be008667a507f765b3ef22522db",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2.source",
+      "sha256": "124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2",
+      "owners": [
+        "ext_gsl"
+      ],
+      "members": 2291,
+      "noticeCandidates": [
+        {
+          "path": "gsl-8eac3b0b5cffb90004a729f0675011e718f41379/AUTHORS",
+          "bytes": 1921,
+          "sha256": "e8b31240a6185bbb2542148c1d3ea4a7bea494e59aabd194527b1ca491cdd498",
+          "kind": "file"
+        },
+        {
+          "path": "gsl-8eac3b0b5cffb90004a729f0675011e718f41379/COPYING",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "gsl-8eac3b0b5cffb90004a729f0675011e718f41379/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532.source",
+      "sha256": "998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532",
+      "owners": [
+        "ext_drmingw"
+      ],
+      "members": 890,
+      "noticeCandidates": [
+        {
+          "path": "drmingw-0.9.7.1-patched/LICENSE.txt",
+          "bytes": 26530,
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libdwarf/AUTHORS",
+          "bytes": 51,
+          "sha256": "518aaf3254c84d4f1092b1e96b1c49b2609b85c0a9310172bcb11ed98bad96c9",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libdwarf/COPYING",
+          "bytes": 571,
+          "sha256": "5a16018c5913f48267a9c1f6583c35531c65559447f59cb4a12fb93882bd1f59",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libdwarf/src/bin/dwarfdump/COPYING",
+          "bytes": 1077,
+          "sha256": "ba05f152707ecb97737991284aadbc72fb07e79eeaff584824b197a89977f761",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libdwarf/src/bin/dwarfgen/COPYING",
+          "bytes": 1810,
+          "sha256": "300218d145f037db97e7b2b82b7ba0a04658d6b45ae17839dd4de1e0a02ffeb0",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libdwarf/src/lib/libdwarf/COPYING",
+          "bytes": 1170,
+          "sha256": "222baa7e66bd5dea27e60c8c1da6e270ec7d9bad54899b6fc57c0085505431d0",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libdwarf/src/lib/libdwarfp/COPYING",
+          "bytes": 1170,
+          "sha256": "222baa7e66bd5dea27e60c8c1da6e270ec7d9bad54899b6fc57c0085505431d0",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/libiberty/COPYING.LIB",
+          "bytes": 26440,
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b",
+          "kind": "file"
+        },
+        {
+          "path": "drmingw-0.9.7.1-patched/thirdparty/zlib/contrib/dotzlib/LICENSE_1_0.txt",
+          "bytes": 1359,
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "drmingw-0.9.7.1-patched/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32.source",
+      "sha256": "453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32",
+      "owners": [
+        "ext_openh264"
+      ],
+      "members": 722,
+      "noticeCandidates": [
+        {
+          "path": "openh264-2.3.1/LICENSE",
+          "bytes": 1295,
+          "sha256": "dd5c1c9668512530fa5a96e4c29ac4033d70a7eeb0eed7a42fddb6dd794ebdbb",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "openh264-2.3.1/subprojects/gtest.wrap"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55.source",
+      "sha256": "4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55",
+      "owners": [
+        "ext_dlfcn_win32"
+      ],
+      "members": 21,
+      "noticeCandidates": [
+        {
+          "path": "dlfcn-win32-1.3.1/COPYING",
+          "bytes": 1040,
+          "sha256": "4cc7ac997b9293db5919baf630100cc09b3508efdfe6a6611c95511fb863b3c7",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d.source",
+      "sha256": "30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d",
+      "owners": [
+        "ext_fribidi"
+      ],
+      "members": 187,
+      "noticeCandidates": [
+        {
+          "path": "fribidi-1.0.11/COPYING",
+          "bytes": 26440,
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b",
+          "kind": "file"
+        },
+        {
+          "path": "fribidi-1.0.11/AUTHORS",
+          "bytes": 1640,
+          "sha256": "cb173f55c9514c8f38f4647ac3fedd5f8611358d331e65ab955da931e826861c",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049.source",
+      "sha256": "9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049",
+      "owners": [
+        "ext_googleangle"
+      ],
+      "members": 3305,
+      "noticeCandidates": [
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/AUTHORS",
+          "bytes": 1428,
+          "sha256": "998d109f0bb54b5508f71a7c47b653a31e8a19563039967f66b23bf40ac8153b",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/LICENSE",
+          "bytes": 1643,
+          "sha256": "bf4da21bd20bcfb5b60b7ecc67fa864a79be049e21d6178076887f178dd6c71a",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/common/third_party/smhasher/LICENSE",
+          "bytes": 1176,
+          "sha256": "3f6f1b520bc53e878ccbb698ad0bacef3752a5f4e4b50a26552bd70f60b40748",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/common/third_party/xxhash/LICENSE",
+          "bytes": 1314,
+          "sha256": "86ec6953794503942b70fcd4f35b565d44f63f703b7037ce44dad965c4aaae91",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/libANGLE/renderer/vulkan/shaders/src/third_party/ffx_spd/LICENSE",
+          "bytes": 1093,
+          "sha256": "09a7c3fbc0b4ae6a9ccc4ffdcbfa511c14b8647a24f24783838862cf6c226d4e",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/tests/test_utils/third_party/LICENSE",
+          "bytes": 10341,
+          "sha256": "0e64c1e9cd62f47682caeb545d2943fb4c38a9b2e5d9fd7e3b456973bb430d1b",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/third_party/ceval/LICENSE",
+          "bytes": 1060,
+          "sha256": "0dd71b8a6d6db0db4dc38a983749e1b2f4bb57aba30141a168042042c4a7b6f8",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/third_party/libXNVCtrl/LICENSE",
+          "bytes": 1158,
+          "sha256": "31346421254a3e6e12687cf17f19f6357ee73a617fa7b3d3ccefdcbabe49bdd3",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/src/third_party/volk/LICENSE.md",
+          "bytes": 1066,
+          "sha256": "336f505f8d5aa73ea40b4d798dde86953e9c1f6525757f1d7f18120fea09bb1d",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/third_party/android_system_sdk/LICENSE",
+          "bytes": 19332,
+          "sha256": "8f1bd8841582bdee098eeae9eeb3862d9e7af011e94e54c14aef0568e816be19",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/third_party/bazel/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/third_party/colorama/LICENSE",
+          "bytes": 1492,
+          "sha256": "15137d6c822e3ab097093a33c3a39a9df699f373f6438867ad534ff60762a947",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/third_party/proguard/LICENSE",
+          "bytes": 18107,
+          "sha256": "294f58267c6f473c4ce7270bf5c8d34b2003cb43804552459654c36553431276",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/third_party/r8/LICENSE",
+          "bytes": 1491,
+          "sha256": "68834f116f8ff545f05d14753357b620748156d60ee36b26beab4cb3f317efe4",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/third_party/turbine/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/tools/flex-bison/third_party/m4sugar/LICENSE",
+          "bytes": 17987,
+          "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/tools/flex-bison/third_party/skeletons/LICENSE",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a/util/windows/third_party/StackWalker/LICENSE",
+          "bytes": 1522,
+          "sha256": "bfec18debedcb337f8af53f143ccf0b1575d0b7c30deaee137f10397eca0d353",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff.source",
+      "sha256": "e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff",
+      "owners": [
+        "ext_brotli"
+      ],
+      "members": 135,
+      "noticeCandidates": [
+        {
+          "path": "brotli-1.1.0/LICENSE",
+          "bytes": 1084,
+          "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9.source",
+      "sha256": "354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9",
+      "owners": [
+        "ext_highway"
+      ],
+      "members": 214,
+      "noticeCandidates": [
+        {
+          "path": "highway-1.1.0/LICENSE",
+          "bytes": 11356,
+          "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+          "kind": "file"
+        },
+        {
+          "path": "highway-1.1.0/LICENSE-BSD3",
+          "bytes": 1515,
+          "sha256": "d25e82e26acd42ca3ccc9993622631163425b869b9e16284226d534cff6470f2",
+          "kind": "file"
+        },
+        {
+          "path": "highway-1.1.0/debian/copyright",
+          "bytes": 825,
+          "sha256": "6e4ecf1cae052b678ea3178dd4b3652d581ee66a82d58db8800dd7d80dd6de76",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d.source",
+      "sha256": "4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d",
+      "owners": [
+        "ext_freetype"
+      ],
+      "members": 3369,
+      "noticeCandidates": [
+        {
+          "path": "harfbuzz-5.3.1/AUTHORS",
+          "bytes": 201,
+          "sha256": "19bfe8f5ed100636cd24ab0c90a3f71c21d8b02d9ba00719447a0faab364d49f",
+          "kind": "file"
+        },
+        {
+          "path": "harfbuzz-5.3.1/COPYING",
+          "bytes": 1829,
+          "sha256": "4345e1735f8bc6d812fed5180cabb5a5e88a4109d332652f2a45c13cfa5ee692",
+          "kind": "file"
+        },
+        {
+          "path": "harfbuzz-5.3.1/test/shape/data/in-house/COPYING",
+          "bytes": 4370,
+          "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7",
+          "kind": "file"
+        },
+        {
+          "path": "harfbuzz-5.3.1/test/shape/data/text-rendering-tests/COPYING",
+          "bytes": 584,
+          "sha256": "d24039e4d22c9bc72096f6174374539d92a3d6e1163938546ec59179fe095e6f",
+          "kind": "file"
+        },
+        {
+          "path": "harfbuzz-5.3.1/test/shape/data/aots/COPYING",
+          "bytes": 593,
+          "sha256": "f55f74bf740db07bb032a90aa74af4307adea3d489c1ccba12453cf0c0a764cb",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "harfbuzz-5.3.1/subprojects/cairo.wrap",
+        "harfbuzz-5.3.1/subprojects/freetype2.wrap",
+        "harfbuzz-5.3.1/subprojects/glib.wrap",
+        "harfbuzz-5.3.1/subprojects/google-benchmark.wrap",
+        "harfbuzz-5.3.1/subprojects/ragel.wrap"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce.source",
+      "sha256": "eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce",
+      "owners": [
+        "ext_json_c"
+      ],
+      "members": 261,
+      "noticeCandidates": [
+        {
+          "path": "json-c-json-c-0.18-20240915/AUTHORS",
+          "bytes": 3027,
+          "sha256": "a50a95414a2dcc0111398080fcbde4dfa282457d60e618a036a680ddb4eee405",
+          "kind": "file"
+        },
+        {
+          "path": "json-c-json-c-0.18-20240915/COPYING",
+          "bytes": 2205,
+          "sha256": "74c1e6ca5eba76b54d0ad00d4815c8315c1b3bc45ff99de61d103dc92486284c",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25.source",
+      "sha256": "f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25",
+      "owners": [
+        "ext_expat"
+      ],
+      "members": 131,
+      "noticeCandidates": [
+        {
+          "path": "expat-2.4.8/COPYING",
+          "bytes": 1144,
+          "sha256": "8c6b5b6de8fae20b317f4992729abc0e520bfba4c7606cd1e9eeb87418eebdec",
+          "kind": "file"
+        },
+        {
+          "path": "expat-2.4.8/AUTHORS",
+          "bytes": 142,
+          "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9.source",
+      "sha256": "1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9",
+      "owners": [
+        "ext_jpegxl"
+      ],
+      "members": 953,
+      "noticeCandidates": [
+        {
+          "path": "libjxl-0.11.1/AUTHORS",
+          "bytes": 3381,
+          "sha256": "00be88a8e3275f8f52a147ecede84c11900fd3180f88478d7cc9f55acabf3a35",
+          "kind": "file"
+        },
+        {
+          "path": "libjxl-0.11.1/LICENSE",
+          "bytes": 1508,
+          "sha256": "8405932022a556380c2d8c272eff154a923feb197233f348ce5f7334fb0a5ede",
+          "kind": "file"
+        },
+        {
+          "path": "libjxl-0.11.1/debian/copyright",
+          "bytes": 10405,
+          "sha256": "ec6f5bc1043fba8ffa648157b5beee8915865a54f25c5f3201b0e910cd09ebde",
+          "kind": "file"
+        },
+        {
+          "path": "libjxl-0.11.1/lib/extras/LICENSE.apngdis",
+          "bytes": 1017,
+          "sha256": "4319c422c3bf10168877a83cd9ff848684b9e53dce9a68de0a3f454a825933f6",
+          "kind": "file"
+        },
+        {
+          "path": "libjxl-0.11.1/third_party/HEVCSoftware/cfg/LICENSE",
+          "bytes": 1744,
+          "sha256": "44a2c5f2ce34d00a30554a44d3e51377852f84bc183dc1b9fb2b48ece976ebef",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "libjxl-0.11.1/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295.source",
+      "sha256": "8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295",
+      "owners": [
+        "ext_sdl2"
+      ],
+      "members": 1599,
+      "noticeCandidates": [
+        {
+          "path": "SDL2-2.26.0/LICENSE.txt",
+          "bytes": 884,
+          "sha256": "fcb07e07ac6bc8b2fcf047b50431ef4ebe5b619d7ca7c82212018309a9067426",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/src/hidapi/LICENSE-orig.txt",
+          "bytes": 264,
+          "sha256": "fb5436aa63d1b71a8dfbf74ecaf1a5b4e1ec4df7f80074d11fec99284f69ca5f",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/src/hidapi/LICENSE-gpl3.txt",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/src/hidapi/LICENSE.txt",
+          "bytes": 530,
+          "sha256": "7d3b087c34f35d4d538e3bcddd1ff8f66e92f9ef336881999482800ddf840913",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/src/hidapi/AUTHORS.txt",
+          "bytes": 355,
+          "sha256": "b327a7b3a4597e5902556ec3e8407cbdd1e288abd4623b7b4b56d14d49e84ecb",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/src/hidapi/LICENSE-bsd.txt",
+          "bytes": 1534,
+          "sha256": "30eb1bef29b46f8ba7ab8b416035dbd93cb034a45481dd97815b944284582cd2",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/src/video/yuv2rgb/LICENSE",
+          "bytes": 1480,
+          "sha256": "f7d74004cc75778cae46c5f0139f244d67c07ef64cf51937e8272352197dcb18",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/Xcode-iOS/Demos/data/bitmapfont/license.txt",
+          "bytes": 13091,
+          "sha256": "5059bc9c2f37b7e7a557685ae9330ecfd798537bdfde94de63a9c721c92a8856",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/test/COPYING",
+          "bytes": 210,
+          "sha256": "d5a549e4a7b88cb696d0db15b21830061131ed361257ab399a33ca08ce0b33d5",
+          "kind": "file"
+        },
+        {
+          "path": "SDL2-2.26.0/Xcode/SDL/pkg-support/resources/License.txt",
+          "bytes": 909,
+          "sha256": "218e120812f1fd02025335087d3c3f3011a86a1e13cecb7231ea137f0592b833",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23.source",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "owners": [
+        "ext_zlib"
+      ],
+      "members": 253,
+      "noticeCandidates": [
+        {
+          "path": "zlib-1.3.1/LICENSE",
+          "bytes": 1002,
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "kind": "file"
+        },
+        {
+          "path": "zlib-1.3.1/contrib/dotzlib/LICENSE_1_0.txt",
+          "bytes": 1359,
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1.source",
+      "sha256": "bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1",
+      "owners": [
+        "ext_mlt"
+      ],
+      "members": 1335,
+      "noticeCandidates": [
+        {
+          "path": "mlt-7.28.0/AUTHORS",
+          "bytes": 503,
+          "sha256": "64533797c4669625aeb801368ce36815f275ebe5f4666bb10e2c27f261dd6b98",
+          "kind": "file"
+        },
+        {
+          "path": "mlt-7.28.0/COPYING",
+          "bytes": 26521,
+          "sha256": "592987e8510228d546540b84a22444bde98e48d03078d3b2eefcd889bec5ce8c",
+          "kind": "file"
+        },
+        {
+          "path": "mlt-7.28.0/src/modules/plus/ebur128/COPYING",
+          "bytes": 1059,
+          "sha256": "d6b4754bb67bdd08b97d5d11b2d7434997a371585a78fe77007149df3af8d09c",
+          "kind": "file"
+        },
+        {
+          "path": "mlt-7.28.0/src/modules/rtaudio/LICENSE",
+          "bytes": 1360,
+          "sha256": "73eb32613a621c134b33fbe3c661562dcf5f81f0558af13d483fc241eb21be7b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "mlt-7.28.0/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740.source",
+      "sha256": "28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740",
+      "owners": [
+        "ext_lcms2"
+      ],
+      "members": 301,
+      "noticeCandidates": [
+        {
+          "path": "lcms2-2.14/COPYING",
+          "bytes": 1083,
+          "sha256": "46d4e05af3bce75332a12d01f19bcce7e32b6bac544be28a64043d0231291e31",
+          "kind": "file"
+        },
+        {
+          "path": "lcms2-2.14/utils/jpgicc/LICENSE_iccjpeg",
+          "bytes": 3234,
+          "sha256": "8baac37d14eed89b82ffcb041677dd701164eb5cc0f26e165fe47eb11afa0dca",
+          "kind": "file"
+        },
+        {
+          "path": "lcms2-2.14/plugins/threaded/COPYING.GPL3",
+          "bytes": 35146,
+          "sha256": "c53a65c2fd561c87eaabf1072ef5dcab8653042bc15308465f52413585eb6271",
+          "kind": "file"
+        },
+        {
+          "path": "lcms2-2.14/plugins/fast_float/COPYING.GPL3",
+          "bytes": 35146,
+          "sha256": "c53a65c2fd561c87eaabf1072ef5dcab8653042bc15308465f52413585eb6271",
+          "kind": "file"
+        },
+        {
+          "path": "lcms2-2.14/AUTHORS",
+          "bytes": 831,
+          "sha256": "fa522cb75dc76ae83b752a979c4d2a15c01e0fb3f820302acc8a5a30cc533e88",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f.source",
+      "sha256": "741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f",
+      "owners": [
+        "ext_mypaint"
+      ],
+      "members": 200,
+      "noticeCandidates": [
+        {
+          "path": "libmypaint-1.6.1/COPYING",
+          "bytes": 792,
+          "sha256": "1246cef097bd4b57ad0fb1127cf131af7aeb06e0c00a6aff5dd5b7603303b149",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582.source",
+      "sha256": "405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582",
+      "owners": [
+        "ext_quazip"
+      ],
+      "members": 89,
+      "noticeCandidates": [
+        {
+          "path": "quazip-1.5/COPYING",
+          "bytes": 26013,
+          "sha256": "b455b21b0d31d6e51993f1fb7e0694c75fa0eb0519a9ea62e4815fcf48b140b0",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7.source",
+      "sha256": "b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7",
+      "owners": [
+        "ext_libde265"
+      ],
+      "members": 220,
+      "noticeCandidates": [
+        {
+          "path": "libde265-1.0.16/COPYING",
+          "bytes": 44339,
+          "sha256": "02cc1585a20677992e0ba578fa692635dc193735f2691dc81de924b51c4e8020",
+          "kind": "file"
+        },
+        {
+          "path": "libde265-1.0.16/dec265/COPYING",
+          "bytes": 1094,
+          "sha256": "687871f725037b40b35ad0b8f5c79263616dfe7b48f72619cec3d84f2d02409a",
+          "kind": "file"
+        },
+        {
+          "path": "libde265-1.0.16/sherlock265/COPYING",
+          "bytes": 1094,
+          "sha256": "687871f725037b40b35ad0b8f5c79263616dfe7b48f72619cec3d84f2d02409a",
+          "kind": "file"
+        },
+        {
+          "path": "libde265-1.0.16/libde265/COPYING",
+          "bytes": 7651,
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+          "kind": "file"
+        },
+        {
+          "path": "libde265-1.0.16/AUTHORS",
+          "bytes": 213,
+          "sha256": "0cc86790616c939cbf1d422790160fde068205b9771e687bd8572afe417a0c8f",
+          "kind": "file"
+        },
+        {
+          "path": "libde265-1.0.16/enc265/COPYING",
+          "bytes": 1094,
+          "sha256": "687871f725037b40b35ad0b8f5c79263616dfe7b48f72619cec3d84f2d02409a",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42.source",
+      "sha256": "75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42",
+      "owners": [
+        "ext_libheif"
+      ],
+      "members": 625,
+      "noticeCandidates": [
+        {
+          "path": "libheif-1.21.2/COPYING",
+          "bytes": 44366,
+          "sha256": "fa81ce652315b013359d6e8e4744335f31a50c7c192907176d3632f78a3b4596",
+          "kind": "file"
+        },
+        {
+          "path": "libheif-1.21.2/examples/COPYING",
+          "bytes": 1066,
+          "sha256": "278ee9bbb13ecb080a131c68927bd589a6a56fd5449ce25e8e594c858864830d",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a.source",
+      "sha256": "a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a",
+      "owners": [
+        "ext_openjpeg"
+      ],
+      "members": 466,
+      "noticeCandidates": [
+        {
+          "path": "openjpeg-2.5.4/AUTHORS.md",
+          "bytes": 712,
+          "sha256": "cf22e984f9fbb9be7550e9a94120595ba8c4a7de0d63f47d3725f4b2e28a4387",
+          "kind": "file"
+        },
+        {
+          "path": "openjpeg-2.5.4/LICENSE",
+          "bytes": 2112,
+          "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6",
+          "kind": "file"
+        },
+        {
+          "path": "openjpeg-2.5.4/src/bin/wx/OPJViewer/source/license.txt",
+          "bytes": 1683,
+          "sha256": "8081c33f6953950dcf424aa844714658b73ada0fcaea16e4487f5fa07ef0960d",
+          "kind": "file"
+        },
+        {
+          "path": "openjpeg-2.5.4/thirdparty/astyle/LICENSE.md",
+          "bytes": 1094,
+          "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb",
+          "kind": "file"
+        },
+        {
+          "path": "openjpeg-2.5.4/thirdparty/liblcms2/COPYING",
+          "bytes": 1078,
+          "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a",
+          "kind": "file"
+        },
+        {
+          "path": "openjpeg-2.5.4/thirdparty/libpng/LICENSE",
+          "bytes": 5345,
+          "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68.source",
+      "sha256": "a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68",
+      "owners": [
+        "ext_icu"
+      ],
+      "members": 2492,
+      "noticeCandidates": [
+        {
+          "path": "icu/LICENSE",
+          "bytes": 25505,
+          "sha256": "af3e84c401f1a35e8d32d6eb1a33fe587c3981aa5cd206033d9527c1855b57a2",
+          "kind": "file"
+        },
+        {
+          "path": "icu/license.html",
+          "bytes": 622,
+          "sha256": "c62d7697c03979f5056d28b338fafc7a1152820f7b379adf4a9d88cd37160f96",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/md5-e4574721c2d9667af32283175c828833.source",
+      "sha256": "23adea990a8303c6e69e32a64a30171efcb1b73824a1c2da1bbf576b0ae7c520",
+      "owners": [
+        "ext_iconv"
+      ],
+      "members": 11,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4.source",
+      "sha256": "88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4",
+      "owners": [
+        "ext_xsimd"
+      ],
+      "members": 232,
+      "noticeCandidates": [
+        {
+          "path": "xsimd-13.1.0/LICENSE",
+          "bytes": 1606,
+          "sha256": "501352acba62cc54e8e3d293754d606f919c9b425b962193c211f9fa29cd9940",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72.source",
+      "sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+      "owners": [
+        "ext_eigen3"
+      ],
+      "members": 1784,
+      "noticeCandidates": [
+        {
+          "path": "eigen-3.4.0/COPYING.APACHE",
+          "bytes": 11362,
+          "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/COPYING.BSD",
+          "bytes": 1517,
+          "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/COPYING.GPL",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/COPYING.LGPL",
+          "bytes": 26530,
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/COPYING.MINPACK",
+          "bytes": 2193,
+          "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/COPYING.MPL2",
+          "bytes": 16726,
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/COPYING.README",
+          "bytes": 779,
+          "sha256": "c83230b770f17ef1386ea1fd3681271dd98aa93646bdbfb5bff3a1b7050fff9d",
+          "kind": "file"
+        },
+        {
+          "path": "eigen-3.4.0/bench/btl/COPYING",
+          "bytes": 18109,
+          "sha256": "b8d0e2bcbf36f6af3cdbf94055ad2ea675d5a19fc623eb0ec82febb2b08e719b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77.source",
+      "sha256": "dded8621f7b2f695c91063aab1558691c8418374cd583501e89ed39487e7ab77",
+      "owners": [
+        "ext_poppler"
+      ],
+      "members": 852,
+      "noticeCandidates": [
+        {
+          "path": "poppler-26.02.0/AUTHORS",
+          "bytes": 145,
+          "sha256": "9bb2a2d73128adae6044ccbaa6a477640c4ce86e30771b0efad67ec7385588a4",
+          "kind": "file"
+        },
+        {
+          "path": "poppler-26.02.0/COPYING",
+          "bytes": 17987,
+          "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6",
+          "kind": "file"
+        },
+        {
+          "path": "poppler-26.02.0/cmake/modules/COPYING-CMAKE-SCRIPTS",
+          "bytes": 1327,
+          "sha256": "46cde7dc11e64c78d650b4851b88f6704b4665ff60f22a1caf68ceb15e217e5b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/md5-6f03aee4ebe54ac2cc1ab3e4b0a049e5.source",
+      "sha256": "31da5562f44c5f15d63340a09a4fd62b48c45620cd302f77a6d9acf0077879bd",
+      "owners": [
+        "ext_giflib"
+      ],
+      "members": 164,
+      "noticeCandidates": [
+        {
+          "path": "giflib-5.2.1/COPYING",
+          "bytes": 1088,
+          "sha256": "0c9b7990ecdca88b676db232c226548ac408b279f550d424d996f0d83591dd8e",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e.source",
+      "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "owners": [
+        "ext_lame"
+      ],
+      "members": 326,
+      "noticeCandidates": [
+        {
+          "path": "lame-3.100/COPYING",
+          "bytes": 25284,
+          "sha256": "bfe4a52dc4645385f356a8e83cc54216a293e3b6f1cb4f79f5fc0277abf937fd",
+          "kind": "file"
+        },
+        {
+          "path": "lame-3.100/LICENSE",
+          "bytes": 487,
+          "sha256": "7a40cbd8818c57e5285e83c772a459a996d1662c824a879836b97b473c07cae4",
+          "kind": "file"
+        },
+        {
+          "path": "lame-3.100/mpglib/AUTHORS",
+          "bytes": 604,
+          "sha256": "d8ecf9556aafa8c653796d6be3dc43deea374257680e21c30109a5c3c4484263",
+          "kind": "file"
+        },
+        {
+          "path": "lame-3.100/debian/copyright",
+          "bytes": 2303,
+          "sha256": "1f27f9f698183275bd615c1140b7bf6e498750e9280597c6eb39790e54ae809b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d.source",
+      "sha256": "19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d",
+      "owners": [
+        "ext_libaom"
+      ],
+      "members": 1425,
+      "noticeCandidates": [
+        {
+          "path": "libaom-3.13.1/AUTHORS",
+          "bytes": 12703,
+          "sha256": "b4465acdd5d0a0a359cac6886135e422d1222c7bb162509ca5d0b523564d8f4a",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/LICENSE",
+          "bytes": 1316,
+          "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/SVT-AV1/LICENSE.md",
+          "bytes": 1709,
+          "sha256": "0acc2fcb27472bdc9aaf8b71f37055bbdac4f54671b7d922f241bd7fcd0dd3e6",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/fastfeat/LICENSE",
+          "bytes": 1506,
+          "sha256": "043dcfd059386f9facd376351b2bd79325778744aa442177390cdfcca54babed",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/googletest/src/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/highway/LICENSE-BSD3",
+          "bytes": 1515,
+          "sha256": "d25e82e26acd42ca3ccc9993622631163425b869b9e16284226d534cff6470f2",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/libwebm/AUTHORS.TXT",
+          "bytes": 137,
+          "sha256": "3edb5f5496bfff3d6d4a62fa75fe996b814920d0d6e348c2e65c589e7ac5d177",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/libwebm/LICENSE.TXT",
+          "bytes": 1496,
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/libyuv/LICENSE",
+          "bytes": 1506,
+          "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/vector/LICENSE",
+          "bytes": 1084,
+          "sha256": "ff6c857ce2708e87701323078aef115c1872a1f80a9649f86dc899b48083bc60",
+          "kind": "file"
+        },
+        {
+          "path": "libaom-3.13.1/third_party/x86inc/LICENSE",
+          "bytes": 936,
+          "sha256": "719d8fa235f2068e0ae6d6a7dceb0a7720d7840f0f0ebed29957989e6ded3cd8",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4.source",
+      "sha256": "2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4",
+      "owners": [
+        "ext_webp"
+      ],
+      "members": 353,
+      "noticeCandidates": [
+        {
+          "path": "libwebp-1.3.2/AUTHORS",
+          "bytes": 2734,
+          "sha256": "9f43aafb76998315d1eac1e441fbd8e1edc28107a7d28ae26223d258f577e84a",
+          "kind": "file"
+        },
+        {
+          "path": "libwebp-1.3.2/COPYING",
+          "bytes": 1496,
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83.source",
+      "sha256": "60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83",
+      "owners": [
+        "ext_icu"
+      ],
+      "members": 20,
+      "noticeCandidates": [
+        {
+          "path": "icu/LICENSE.build",
+          "bytes": 1070,
+          "sha256": "7939f4c45423cec4a18236ad0a88570e33508dd7462e07b1038001f90ece65fb",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e.source",
+      "sha256": "bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e",
+      "owners": [
+        "ext_lame"
+      ],
+      "members": 9,
+      "noticeCandidates": [
+        {
+          "path": "lame-3.100/LICENSE.build",
+          "bytes": 1070,
+          "sha256": "7939f4c45423cec4a18236ad0a88570e33508dd7462e07b1038001f90ece65fb",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826.source",
+      "sha256": "210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826",
+      "owners": [
+        "ext_libtheora"
+      ],
+      "members": 15,
+      "noticeCandidates": [
+        {
+          "path": "libtheora-1.1.1/LICENSE.build",
+          "bytes": 1070,
+          "sha256": "7939f4c45423cec4a18236ad0a88570e33508dd7462e07b1038001f90ece65fb",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434.source",
+      "sha256": "b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434",
+      "owners": [
+        "ext_fontconfig"
+      ],
+      "members": 1024,
+      "noticeCandidates": [
+        {
+          "path": "fontconfig-2.14.0/COPYING",
+          "bytes": 8616,
+          "sha256": "51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067",
+          "kind": "file"
+        },
+        {
+          "path": "fontconfig-2.14.0/AUTHORS",
+          "bytes": 62,
+          "sha256": "db6d73a160bb2de10268f88ef60aae91771fefdeee4992b791c76ce6592a4a4b",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "fontconfig-2.14.0/subprojects/zlib.wrap",
+        "fontconfig-2.14.0/subprojects/libpng.wrap",
+        "fontconfig-2.14.0/subprojects/gperf.wrap",
+        "fontconfig-2.14.0/subprojects/freetype2.wrap",
+        "fontconfig-2.14.0/subprojects/expat.wrap"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6.source",
+      "sha256": "dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6",
+      "owners": [
+        "ext_libraw"
+      ],
+      "members": 224,
+      "noticeCandidates": [
+        {
+          "path": "LibRaw-0.20.2/LICENSE.LGPL",
+          "bytes": 24389,
+          "sha256": "eea173a556abac0370461e57e12aab266894ea6be3874c2be05fd87871f75449",
+          "kind": "file"
+        },
+        {
+          "path": "LibRaw-0.20.2/LICENSE.CDDL",
+          "bytes": 16906,
+          "sha256": "0e3098d2d54a12434715f6679ea408d57da5e8d613c385c58ecc6fe5d30cc81f",
+          "kind": "file"
+        },
+        {
+          "path": "LibRaw-0.20.2/COPYRIGHT",
+          "bytes": 1153,
+          "sha256": "5d402c9d20d9cfd79d3dbc8e6e50de41cb61f37adbe0d7e0ff5e8a9853b845df",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0.source",
+      "sha256": "a2105abee17bcd2ebd15ced31b4f5eda6e17efd6b10f921a01cda4a44c91b3a0",
+      "owners": [
+        "ext_lzma"
+      ],
+      "members": 525,
+      "noticeCandidates": [
+        {
+          "path": "xz-5.2.6/COPYING.LGPLv2.1",
+          "bytes": 26530,
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+          "kind": "file"
+        },
+        {
+          "path": "xz-5.2.6/COPYING.GPLv3",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "xz-5.2.6/COPYING.GPLv2",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "kind": "file"
+        },
+        {
+          "path": "xz-5.2.6/COPYING",
+          "bytes": 2775,
+          "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+          "kind": "file"
+        },
+        {
+          "path": "xz-5.2.6/AUTHORS",
+          "bytes": 1076,
+          "sha256": "c07ea89b85db044f5e4a28fcc18a1dd900541737fb5ef8a69df1e1eb603f5966",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1.source",
+      "sha256": "0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1",
+      "owners": [
+        "ext_openssl"
+      ],
+      "members": 3087,
+      "noticeCandidates": [
+        {
+          "path": "openssl-1.1.1l/AUTHORS",
+          "bytes": 854,
+          "sha256": "698c66ee18f50ee7daf36e9a4566f9fecbaea4a5c6de94a42f66eb489adc83d8",
+          "kind": "file"
+        },
+        {
+          "path": "openssl-1.1.1l/LICENSE",
+          "bytes": 6121,
+          "sha256": "c32913b33252e71190af2066f08115c69bc9fddadf3bf29296e20c835389841c",
+          "kind": "file"
+        },
+        {
+          "path": "openssl-1.1.1l/external/perl/Text-Template-1.46/COPYING",
+          "bytes": 18043,
+          "sha256": "4d23c8c814e5baf007d854f01d8502e77dc56a41144934e003fb32c4e052d20f",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2.source",
+      "sha256": "ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 56,
+      "noticeCandidates": [
+        {
+          "path": "cpython-source-deps-bzip2-1.0.8/LICENSE",
+          "bytes": 1896,
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79.source",
+      "sha256": "17aa6cfc5c4c219c09287abfc10bc13f0c06f30bb654b28bfe6f567ca646eb79",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 164,
+      "noticeCandidates": [
+        {
+          "path": "expat-2.6.3/COPYING",
+          "bytes": 1144,
+          "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534",
+          "kind": "file"
+        },
+        {
+          "path": "expat-2.6.3/AUTHORS",
+          "bytes": 142,
+          "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927.source",
+      "sha256": "e31e4ca10da91c585793c0eaf1b98aee3cb43e3a58d3d8d478593e5a6bd82927",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 3554,
+      "noticeCandidates": [
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/LICENSE",
+          "bytes": 11356,
+          "sha256": "c5accbbd8546e94c34aed24afe689a617627d18eed5a6c48277e48db57c23851",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/bignum/AUTHORS.md",
+          "bytes": 134,
+          "sha256": "974869f92340d38e1214a139a4c8cc1028e64ffc7cae8d1a8d85fcc3a2d3fd92",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/blake2/AUTHORS.md",
+          "bytes": 96,
+          "sha256": "a7bd9bdccc5ef08e868188e5ad7fd5baf5dc56980eb95fdfee3b17a6886af945",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/chacha20/AUTHORS.md",
+          "bytes": 162,
+          "sha256": "a46d1384da0c2b7d48effbd726314b36ea6df151e9639d4f2bb0e413ea0e1bfc",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/chacha20poly1305/AUTHORS.md",
+          "bytes": 187,
+          "sha256": "34ba9686dd7dc13a430f5a58370a3cc9bd6e1f8ff54767f165bf5674f1546221",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/curve25519/AUTHORS.md",
+          "bytes": 278,
+          "sha256": "e90b20603b16b44dae61d12b9170df34829ca8f5dd7507c126e0530f83269233",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/drbg/AUTHORS.md",
+          "bytes": 67,
+          "sha256": "b86ca50addfa59a07dfb7437a1c2d8bd4203e936e4b71fe86a666a32e7650ee6",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/ed25519/AUTHORS.md",
+          "bytes": 155,
+          "sha256": "c47a62831f857c351c39054362454fcfe214be0d0df71eb14f35204676711456",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/fallback/AUTHORS.md",
+          "bytes": 44,
+          "sha256": "28efb44701d16781d21405518cc9c968ea3959baf7985d149d89390f7a011252",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/ffdhe/AUTHORS.md",
+          "bytes": 61,
+          "sha256": "b6372ada4ff3058bc03c7a2fefd84153939c2d74d8fc824b9bb3c9c3fa772e5c",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/frodo/AUTHORS.md",
+          "bytes": 98,
+          "sha256": "2ec48535efafc656878ef07d0a0eee7e571d7b65d8b11cad6fc6e48800824f38",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/hash/AUTHORS.md",
+          "bytes": 252,
+          "sha256": "95fa7bd5155798273d29086e7807a2976bfb69a19bc76ae73261a0f65eb1762a",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/hkdf/AUTHORS.md",
+          "bytes": 151,
+          "sha256": "8fa9b5b4f957e3fa440de417178f32433b7d973d2309127c4bec9bece89069d1",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/hmac/AUTHORS.md",
+          "bytes": 144,
+          "sha256": "b45ce24a682b15666729d0f40f666bf5a3b8e78e76148ed93a397e5a060d15d8",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/k256/AUTHORS.md",
+          "bytes": 68,
+          "sha256": "dc6af7b189f3b1f0be25eb2cc83985db6603dcef7915ac6414719cf870e7d65c",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/meta/AUTHORS.md",
+          "bytes": 52,
+          "sha256": "21cf70006d3be8910a5abd1e3d43bd535e13b71ee7460c7a23f461c2f36933b0",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/nacl-box/AUTHORS.md",
+          "bytes": 128,
+          "sha256": "937fe93853c61aa4698f2a1e962154c49a9c20e97c2b3b91a01dcd6d19c377e4",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/poly1305/AUTHORS.md",
+          "bytes": 161,
+          "sha256": "07e5d90f426322ef1c331b9898a5254457c7304c3e323f6609e0c7d7a90d4698",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/rsapss/AUTHORS.md",
+          "bytes": 61,
+          "sha256": "b6372ada4ff3058bc03c7a2fefd84153939c2d74d8fc824b9bb3c9c3fa772e5c",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/salsa20/AUTHORS.md",
+          "bytes": 132,
+          "sha256": "ab3a2740cac28dd7f5f89ed6611dc5e8db77ca082917f3c8cf0802f48cf1a52b",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/sha3/AUTHORS.md",
+          "bytes": 98,
+          "sha256": "2ec48535efafc656878ef07d0a0eee7e571d7b65d8b11cad6fc6e48800824f38",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/code/streaming/AUTHORS.md",
+          "bytes": 96,
+          "sha256": "0509057859bb054115ecdecf6a7ad7a782ae8b600276b00b929187f4438cb948",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/dist/LICENSE.txt",
+          "bytes": 1207,
+          "sha256": "998ce04fb8ad9dedb0bc1b44938f8c3dcf1089780fa105ce1c8c30fb5554d78c",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/specs/frodo/AUTHORS.md",
+          "bytes": 98,
+          "sha256": "2ec48535efafc656878ef07d0a0eee7e571d7b65d8b11cad6fc6e48800824f38",
+          "kind": "file"
+        },
+        {
+          "path": "hacl-star-bb3d0dc8d9d15a5cd51094d5b69e70aa09005ff0/vale/LICENSE",
+          "bytes": 10243,
+          "sha256": "16da3774fb256d8d5434437ddabd063f7a7e23ac82515705a07fdab4bab39222",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e.source",
+      "sha256": "53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 48,
+      "noticeCandidates": [
+        {
+          "path": "libb2-0.98.1/COPYING",
+          "bytes": 6556,
+          "sha256": "6a1ee543e5282cd9061881edf462e6fdab181f328da71fc2c9a6950a80e94d01",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda.source",
+      "sha256": "9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 433,
+      "noticeCandidates": [
+        {
+          "path": "cpython-source-deps-libffi-3.4.4/LICENSE",
+          "bytes": 1132,
+          "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-libffi-3.4.4/LICENSE-BUILDTOOLS",
+          "bytes": 18698,
+          "sha256": "e67978cd18816c0cb7d29aaaacde7b7447402c2fb321a051698890a8eaedda94",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-c76f268f5054024e962f2515a0e522baf85313064f6740d80375afc850787a38.source",
+      "sha256": "c76f268f5054024e962f2515a0e522baf85313064f6740d80375afc850787a38",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 20,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca.source",
+      "sha256": "338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 142,
+      "noticeCandidates": [
+        {
+          "path": "cpython-source-deps-mpdecimal-4.0.0/COPYRIGHT.txt",
+          "bytes": 1285,
+          "sha256": "2713324211652ce4a60e6e21e54f9dc3004299e591b0933a352f1a89c5fb53c2",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-mpdecimal-4.0.0/doc/COPYRIGHT.txt",
+          "bytes": 2943,
+          "sha256": "25329ef0e2a8823b88786a39f168304a65a3138f720ab39ffc1e9fbee67b74a9",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f.source",
+      "sha256": "9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 192,
+      "noticeCandidates": [
+        {
+          "path": "mpdecimal-2.5.1/doc/LICENSE.txt",
+          "bytes": 2251,
+          "sha256": "e8ed10a9fd887734377a936f3530e5637263848196a2726f6c085b0c1b5ab945",
+          "kind": "file"
+        },
+        {
+          "path": "mpdecimal-2.5.1/LICENSE.txt",
+          "bytes": 1359,
+          "sha256": "b07528d8b1dbf1e2d2741052996f0876e23342ce2d30d0effa39c5457716c25a",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2.source",
+      "sha256": "6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 4650,
+      "noticeCandidates": [
+        {
+          "path": "cpython-source-deps-openssl-3.0.16/AUTHORS.md",
+          "bytes": 990,
+          "sha256": "5076ca441daef7fb35e904c2ac070880c7b3d58300a5a6aecac41e8f525f4412",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-openssl-3.0.16/LICENSE.txt",
+          "bytes": 10175,
+          "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-openssl-3.0.16/external/perl/Text-Template-1.56/LICENSE",
+          "bytes": 18412,
+          "sha256": "9837f05336ef3cbacb6a96e1672a0426d81ad01191f214b8d48e22ca62338181",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-openssl-3.0.16/util/perl/OpenSSL/copyright.pm",
+          "bytes": 1145,
+          "sha256": "04213b69dbebc8ba0dd8a6216af1d9422f9b63619c1cf2f1d8aa107b83bbb608",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-e335aeb44fa36cde60ecbb6a9f8be6f5d449d645ce9b0199ee53a7e6728d19d2.source",
+      "sha256": "e335aeb44fa36cde60ecbb6a9f8be6f5d449d645ce9b0199ee53a7e6728d19d2",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 5,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282.source",
+      "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 480,
+      "noticeCandidates": [
+        {
+          "path": "cpython-source-deps-xz-5.2.5/AUTHORS",
+          "bytes": 1043,
+          "sha256": "72d7a7ee8a4eaca5d0b53f20609eff95d5e6f9e155ecce98127414b8215b0b15",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-xz-5.2.5/COPYING",
+          "bytes": 2775,
+          "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-xz-5.2.5/COPYING.GPLv2",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-xz-5.2.5/COPYING.GPLv3",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-xz-5.2.5/COPYING.LGPLv2.1",
+          "bytes": 26530,
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "upstream-archives/sha256-e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638.source",
+      "sha256": "e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638",
+      "owners": [
+        "ext_python"
+      ],
+      "members": 253,
+      "noticeCandidates": [
+        {
+          "path": "cpython-source-deps-zlib-1.3.1/LICENSE",
+          "bytes": 1002,
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "kind": "file"
+        },
+        {
+          "path": "cpython-source-deps-zlib-1.3.1/contrib/dotzlib/LICENSE_1_0.txt",
+          "bytes": 1359,
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad.tar.gz",
+      "sha256": "73894055a2f5a17448f182b330798f557acc76857de0eaf95f3d106636f1f5db",
+      "owners": [
+        "ext_ffmpeg"
+      ],
+      "members": 8621,
+      "noticeCandidates": [
+        {
+          "path": "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/COPYING.GPLv2",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "kind": "file"
+        },
+        {
+          "path": "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/COPYING.GPLv3",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/COPYING.LGPLv2.1",
+          "bytes": 26526,
+          "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe",
+          "kind": "file"
+        },
+        {
+          "path": "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/COPYING.LGPLv3",
+          "bytes": 7651,
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+          "kind": "file"
+        },
+        {
+          "path": "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/LICENSE.md",
+          "bytes": 4376,
+          "sha256": "cb48bf09a11f5fb576cddb0431c8f5ed0a60157a9ec942adffc13907cbe083f2",
+          "kind": "file"
+        },
+        {
+          "path": "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/doc/authors.texi",
+          "bytes": 403,
+          "sha256": "fb5fac6dd8f7474033e933814491a8297d8723c52be4dcbcc82eef9c4f008dd2",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad/subprojects/nasm.wrap"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17.tar.gz",
+      "sha256": "ebf9ba23a2c00531d34d8f66bbf91f8bf4b24a5e44bbeac51f017aa643b1d208",
+      "owners": [
+        "ext_flac"
+      ],
+      "members": 521,
+      "noticeCandidates": [
+        {
+          "path": "flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17/AUTHORS",
+          "bytes": 2459,
+          "sha256": "195407de2759edfd405b0f855711b63f3c8911bf3034c55ec3175bb3a2c6e589",
+          "kind": "file"
+        },
+        {
+          "path": "flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17/COPYING.FDL",
+          "bytes": 20403,
+          "sha256": "f45cc81b400a048b56c9edbd4c3317f7a8958463dfd55aa96f268ecfd6baa12c",
+          "kind": "file"
+        },
+        {
+          "path": "flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17/COPYING.GPL",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "kind": "file"
+        },
+        {
+          "path": "flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17/COPYING.LGPL",
+          "bytes": 26436,
+          "sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a",
+          "kind": "file"
+        },
+        {
+          "path": "flac-b32e5cbf9818ca23dd22aaa75522042c16ea7d17/COPYING.Xiph",
+          "bytes": 1509,
+          "sha256": "6e58d3036f05e2a0d58af854c12a505ddbe75011d71a598a2170987f3b15408d",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_googleangle_zlib-a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0.tar.gz",
+      "sha256": "0486aafa306e2c3415266bf31d59a5873a188169bdbbc52c728759961efd537e",
+      "owners": [
+        "ext_googleangle"
+      ],
+      "members": 133,
+      "noticeCandidates": [
+        {
+          "path": "google-zlib-a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0/LICENSE",
+          "bytes": 912,
+          "sha256": "942755efa272dbfbcd7afea7a38556801e36c16dcad002d572378367094a2593",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_immer-42e6beafed53f2ecd971360270f421f9c2e36642.tar.gz",
+      "sha256": "af9c4284b6adf412e8859e8e40e9cc6e40fa25a2d6cc54121b5713e7ba4ad119",
+      "owners": [
+        "ext_immer"
+      ],
+      "members": 356,
+      "noticeCandidates": [
+        {
+          "path": "immer-42e6beafed53f2ecd971360270f421f9c2e36642/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "immer-42e6beafed53f2ecd971360270f421f9c2e36642/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_lager-0b6ab3e0e880bc36be5da4984d768fde03b7cf19.tar.gz",
+      "sha256": "c02bc0a90e707a3b020386b6ef6e7fcce1e8520db32e582baa61cbb2aebbd4ea",
+      "owners": [
+        "ext_lager"
+      ],
+      "members": 211,
+      "noticeCandidates": [
+        {
+          "path": "lager-0b6ab3e0e880bc36be5da4984d768fde03b7cf19/LICENSE",
+          "bytes": 1091,
+          "sha256": "781f0edd9b429583142862b5a3aefca7c292272763a7c826654ac57b11fc30d6",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "lager-0b6ab3e0e880bc36be5da4984d768fde03b7cf19/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_libtheora-7180717276af1ebc7da15c83162d6c5d6203aabf.tar.gz",
+      "sha256": "8f7abefebc7f87784df903f3fca11f228baa725708d3e16a79797b1fd616b2b9",
+      "owners": [
+        "ext_libtheora"
+      ],
+      "members": 272,
+      "noticeCandidates": [
+        {
+          "path": "theora-7180717276af1ebc7da15c83162d6c5d6203aabf/AUTHORS",
+          "bytes": 791,
+          "sha256": "296e8400c42dd0f4ff545d34876fd02d98f4612f1ae9f77b550cf1d1c2ad7d42",
+          "kind": "file"
+        },
+        {
+          "path": "theora-7180717276af1ebc7da15c83162d6c5d6203aabf/COPYING",
+          "bytes": 1470,
+          "sha256": "8417fad7da775735564e209484a2e011e0fa201e94f01fdbee6e4977e478e6fc",
+          "kind": "file"
+        },
+        {
+          "path": "theora-7180717276af1ebc7da15c83162d6c5d6203aabf/LICENSE",
+          "bytes": 960,
+          "sha256": "2c902950c73a63cd285dc0c36573de9c5fefe66d49312949c51d941f33e92932",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/ext_opus-ddbe48383984d56acd9e1ab6a090c54ca6b735a6.tar.gz",
+      "sha256": "dab7ce4545ecdb851e85c5e6d10dbddd858522e69b76444b366ac3070e060679",
+      "owners": [
+        "ext_opus"
+      ],
+      "members": 715,
+      "noticeCandidates": [
+        {
+          "path": "source/AUTHORS",
+          "bytes": 239,
+          "sha256": "f9fd849e652219ce98e008303370b352d37663d0ffb27b8dc514ad93c9c7438b",
+          "kind": "file"
+        },
+        {
+          "path": "source/COPYING",
+          "bytes": 1945,
+          "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551",
+          "kind": "file"
+        },
+        {
+          "path": "source/LICENSE_PLEASE_READ.txt",
+          "bytes": 703,
+          "sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/ext_pkgconfig-8754bdfe0984bc29e53ee856631a42f90f789eb4.tar.gz",
+      "sha256": "820b178c3a9285f30e4ca0372f7c8cc495a6a30c8445e8f442f1dfcb91b49bfa",
+      "owners": [
+        "ext_pkgconfig"
+      ],
+      "members": 166,
+      "noticeCandidates": [
+        {
+          "path": "source/AUTHORS",
+          "bytes": 1498,
+          "sha256": "1579e0bd23bd6e3e24aab6bc6bf7efa3bca6c25f83bb2a1f56c5bdbdbfb1d40f",
+          "kind": "file"
+        },
+        {
+          "path": "source/COPYING",
+          "bytes": 509,
+          "sha256": "07ee94b50a41ee3fc4e13a9b9c60b26fc28488494c465639f7e5f07a3952ec04",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/ext_qt-571b5489c7d0987959b8cf81f62df674da79c418.tar.gz",
+      "sha256": "a7e9718f9caedb68ab3f83d2b9e76b1528e41173eeceefac35766641f0ebdaf1",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 3221,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [
+        "source/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_seexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a.tar.gz",
+      "sha256": "859f24a4cb6554b3add9a1902e952698ed69052723d3f1a13e4d8891cbb54ed6",
+      "owners": [
+        "ext_seexpr"
+      ],
+      "members": 248,
+      "noticeCandidates": [
+        {
+          "path": "kseexpr-9333c7f690c0ed9e5117ea583110ebce64e9ab7a/LICENSE.txt",
+          "bytes": 35149,
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/ext_vpl-025d43d086a3e663184cb49febe86152bf05409f.tar.gz",
+      "sha256": "476adfabd3ef5b6f990011004c0caa4bb0c3549685d7cf520def76d26b22b74d",
+      "owners": [
+        "ext_vpl"
+      ],
+      "members": 677,
+      "noticeCandidates": [
+        {
+          "path": "source/LICENSE",
+          "bytes": 1074,
+          "sha256": "bf1cfac2e2792b6e1e995ce103d70796aecaf2ec7e4c5fe5474f7acec7b4a677",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api1x_core/legacy-decode/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api1x_core/legacy-encode/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api1x_core/legacy-vpp/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-decode/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-decvpp/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-encode-jpeg/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-encode/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-sharing-dx11/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-sharing-ocl/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-sharing-vaapi/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-transcode/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/api2x/hello-vpp/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/interop/vpl-infer/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/examples/tutorials/01_transition/License.txt",
+          "bytes": 1052,
+          "sha256": "2e35006c345787f7205bdaa86920c8fac86abd19b95d7b4c1ba5531853ea3938",
+          "kind": "file"
+        },
+        {
+          "path": "source/libvpl/test/ext/googletest/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ext_zug-deb266f4c7c35d325de7eb3d033f06e0809495f2.tar.gz",
+      "sha256": "4b36442059899b8570336ff9e2901f62fd58b839c9e3ff5d35497454e2324625",
+      "owners": [
+        "ext_zug"
+      ],
+      "members": 181,
+      "noticeCandidates": [
+        {
+          "path": "zug-deb266f4c7c35d325de7eb3d033f06e0809495f2/LICENSE",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "zug-deb266f4c7c35d325de7eb3d033f06e0809495f2/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qtbase-8bd38fff262805f06b753ea04dd79633315eae7a.tar.gz",
+      "sha256": "ec6527d901bd850dd2ad87ebad010b439152b3ef376869c8c47880e81a93df02",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 23226,
+      "noticeCandidates": [
+        {
+          "path": "source/cmake/3rdparty/extra-cmake-modules/COPYING-CMAKE-SCRIPTS",
+          "bytes": 1327,
+          "sha256": "46cde7dc11e64c78d650b4851b88f6704b4665ff60f22a1caf68ceb15e217e5b",
+          "kind": "file"
+        },
+        {
+          "path": "source/cmake/3rdparty/kwin/COPYING-CMAKE-SCRIPTS",
+          "bytes": 1327,
+          "sha256": "46cde7dc11e64c78d650b4851b88f6704b4665ff60f22a1caf68ceb15e217e5b",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/D3D12MemoryAllocator/LICENSE.txt",
+          "bytes": 1099,
+          "sha256": "1b3941c52b26d42c510afbdf205a8b96a6d64f5a7b8ebff0287979fd91dfd52f",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/VulkanMemoryAllocator/LICENSE.txt",
+          "bytes": 1099,
+          "sha256": "846d97c8b74ccaa92b9ad031140a04363b3b3985f318094552f297b8bda1c68e",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/android/LICENSE",
+          "bytes": 525,
+          "sha256": "4a51cf7f724f51bedb5fa4f9583a2762f1db8d05e43a577e2487c7aab2fdce18",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/blake2/COPYING",
+          "bytes": 17914,
+          "sha256": "4103f471877ed0bae500752c5fcd7ecca409d4a4a8dc2ad40437daba60f1a2bc",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/double-conversion/LICENSE",
+          "bytes": 1527,
+          "sha256": "4af93c12062c58058378de2397dc1c92bbff9ddfb1d583a01c84127557ce97ca",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/easing/LICENSE",
+          "bytes": 1505,
+          "sha256": "92fac99458f1754b73edf50f9c9983e0efaa06ad96e2afd5e538c79f45b4b191",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/forkfd/LICENSE",
+          "bytes": 1148,
+          "sha256": "d0d683ae18e78fbef90eb41168fb781920da2d12bf80704490f0882915c18ae0",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/freetype/LICENSE.txt",
+          "bytes": 26234,
+          "sha256": "bf543cdda11864477b8d2ca2aa9afc2aaa8f9133461b4d962ed6ec73646256a1",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/gradle/LICENSE",
+          "bytes": 23645,
+          "sha256": "cf234c4188d773406f640bf89be680d9288f40ff96901c70d643fcea96ad46df",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/harfbuzz-ng/AUTHORS",
+          "bytes": 201,
+          "sha256": "19bfe8f5ed100636cd24ab0c90a3f71c21d8b02d9ba00719447a0faab364d49f",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/harfbuzz-ng/COPYING",
+          "bytes": 1971,
+          "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/icc/LICENSE.txt",
+          "bytes": 463,
+          "sha256": "9e34ff47b3a44814e183342e7e198d127a6740e29d20e8381fba7688dafc79dd",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/libjpeg/COPYRIGHT.txt",
+          "bytes": 580,
+          "sha256": "f26a2c0b6c1ab7e40444de31cc5b112a534cc589d6fd9b93620054e9692b81c6",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/libjpeg/LICENSE",
+          "bytes": 5620,
+          "sha256": "2189dc45a8fe96204069f8124caa53a148dfdc193f50f584c6ca7849a6072872",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/libpng/LICENSE",
+          "bytes": 5345,
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/libpsl/src/LICENSE.chromium",
+          "bytes": 1664,
+          "sha256": "1d7f52747a9169751cdf2641a8299c0098e9ecdf9429296ffd55bdb14c9ed5b3",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/md4c/LICENSE.md",
+          "bytes": 1096,
+          "sha256": "d30937367d5413e7eaa218b1640b8946ff76fd34d97152f6979fd96169d5d0fc",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/pcre2/AUTHORS.md",
+          "bytes": 4013,
+          "sha256": "66d9adef4d4bcb7c2dd99a499a89a52033375785edaa8a35ada0f2db7d05a1a4",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/pcre2/LICENCE.md",
+          "bytes": 4011,
+          "sha256": "197d8a73ffee0d6b09adba2f9c677b5f5aede24edf89258a68e48248d010d811",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/pcre2/LICENSE-SLJIT",
+          "bytes": 1444,
+          "sha256": "5f216505c0f6ea3273caec89e766eef93cdeb7bbb0c429f9360116d7c938feeb",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/pixman/LICENSE",
+          "bytes": 1092,
+          "sha256": "942c4f2a80394d3f53599b8382e9f27349b95c45d92b69b84f26d404f4dd74a5",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/rfc6234/LICENSE",
+          "bytes": 1568,
+          "sha256": "7ccebd514aaabc86192f957d773cebf06577c12fe9f25ecd419c6cac5da7a14c",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/tinycbor/LICENSE",
+          "bytes": 1074,
+          "sha256": "3c6ba0b5bfa7830505301ffb336a17b0748e0d61c4d34216e9dc98f10e40395e",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/xcb/LICENSE",
+          "bytes": 1246,
+          "sha256": "82775191bc05f85b40404d77bb69b1edeaeb4033f48387e9e5eab4dd67f5d6f1",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/zlib/LICENSE",
+          "bytes": 1465,
+          "sha256": "d7e3139972874dc8abdbbfce27ec1e6f942b28279dd7d27453630a8b4610e080",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/corelib/kernel/LICENSE.QEVENTDISPATCHER_CF.txt",
+          "bytes": 1501,
+          "sha256": "e9e5b9f66d21c0e88a4179525ab39cd8d7eac9af78a8404f322c32b0874783d5",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/dbus/LICENSE.LIBDBUS-1.txt",
+          "bytes": 27248,
+          "sha256": "ad90aa08bb1a9b7056aa51e2e215b36630855457cde5dffd36aa0faa7b169f24",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/gui/opengl/LICENSE.KHRONOS.txt",
+          "bytes": 1084,
+          "sha256": "2e484f3c26ff5008c704a3ca9dd809d43f24a004a1abb6c202660fbff0d19715",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/gui/painting/LICENSE.QIMAGETRANSFORM.txt",
+          "bytes": 3004,
+          "sha256": "46b3cbfa2f2946b93291506351e9be1dd0a28d2a53260f5aa488abd36fbeca9d",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/gui/painting/LICENSE.XCONSORTIUM.txt",
+          "bytes": 2294,
+          "sha256": "a216b01291eb38fc1af93cfccf1fc67b48d9923612e517c2a695e95b3f03c22c",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/gui/rhi/LICENSE.MiniEngine.txt",
+          "bytes": 1077,
+          "sha256": "cf248820bf1178370bb4f1670a59f8748d46bc96d0f64080cd631511c6046409",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/gui/text/LICENSE.AGLFN.txt",
+          "bytes": 1425,
+          "sha256": "40818155548ff41c67d3a40edf355e9658992b292c227f4c1147425cedc746c6",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/gui/vulkan/LICENSE.txt",
+          "bytes": 11473,
+          "sha256": "5f618873b0cdd1e84c611c5529212c2524bfc887bdfd7d1f3b568bad3c649612",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/plugins/platforms/cocoa/LICENSE.COCOA.txt",
+          "bytes": 1501,
+          "sha256": "e9e5b9f66d21c0e88a4179525ab39cd8d7eac9af78a8404f322c32b0874783d5",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/testinternal/3rdparty/cmake/Copyright.txt",
+          "bytes": 5477,
+          "sha256": "0676e30827684487aa0ea8f72f01e9460a6320fa34a2888df0ad1dd3e8a06eb8",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/testlib/3rdparty/catch2/LICENSE.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/testlib/3rdparty/cycle/LICENSE.txt",
+          "bytes": 1023,
+          "sha256": "cb5aedb296c5246d1f22e9099f925a65146f9f0d6b4eebba97fd27a6cdbbab2d",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/testlib/3rdparty/linux/LICENSE.txt",
+          "bytes": 18458,
+          "sha256": "ed71cfca021790f74094e9810f42e31288e7f43cf00c8d9ac8d6f904124bd815",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/testlib/3rdparty/valgrind/LICENSE.txt",
+          "bytes": 1667,
+          "sha256": "ec72eebd6326165156787da828caaa18386489387aefaa073c9bd40b8b2a400e",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/auto/corelib/serialization/qxmlstream/LICENSE.XML-Test-Suite.txt",
+          "bytes": 2813,
+          "sha256": "b2ace830c68a486d548834b9a93806d064a3eb041f603ec6368034d060fdf46a",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/manual/rhi/shared/imgui/fonts/LICENSE.txt",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/manual/rhi/shared/imgui/imgui/LICENSE.txt",
+          "bytes": 1083,
+          "sha256": "1b64b23b817e547982a86984685f5e9337695caa542753fb6f08d502d5208e38",
+          "kind": "file"
+        },
+        {
+          "path": "source/util/gradientgen/LICENSE.WEBGRADIENTS.txt",
+          "bytes": 1062,
+          "sha256": "9be732e45b638c74f9c0e5248541dd54dc7e8e9a5545df96b5c4b7c9ac0c68ba",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/cmake/3rdparty/extra-cmake-modules/qt_attribution.json",
+        "source/cmake/3rdparty/kwin/qt_attribution.json",
+        "source/src/3rdparty/D3D12MemoryAllocator/qt_attribution.json",
+        "source/src/3rdparty/VulkanMemoryAllocator/qt_attribution.json",
+        "source/src/3rdparty/android/qt_attribution.json",
+        "source/src/3rdparty/blake2/qt_attribution.json",
+        "source/src/3rdparty/double-conversion/qt_attribution.json",
+        "source/src/3rdparty/easing/qt_attribution.json",
+        "source/src/3rdparty/emoji-segmenter/qt_attribution.json",
+        "source/src/3rdparty/forkfd/qt_attribution.json",
+        "source/src/3rdparty/freetype/qt_attribution.json",
+        "source/src/3rdparty/gradle/qt_attribution.json",
+        "source/src/3rdparty/harfbuzz-ng/qt_attribution.json",
+        "source/src/3rdparty/icc/qt_attribution.json",
+        "source/src/3rdparty/libjpeg/qt_attribution.json",
+        "source/src/3rdparty/libpng/qt_attribution.json",
+        "source/src/3rdparty/libpsl/qt_attribution.json",
+        "source/src/3rdparty/md4/qt_attribution.json",
+        "source/src/3rdparty/md4c/qt_attribution.json",
+        "source/src/3rdparty/md5/qt_attribution.json",
+        "source/src/3rdparty/pcre2/qt_attribution.json",
+        "source/src/3rdparty/pixman/qt_attribution.json",
+        "source/src/3rdparty/rfc6234/qt_attribution.json",
+        "source/src/3rdparty/sha1/qt_attribution.json",
+        "source/src/3rdparty/sha3/qt_attribution.json",
+        "source/src/3rdparty/siphash/qt_attribution.json",
+        "source/src/3rdparty/sqlite/qt_attribution.json",
+        "source/src/3rdparty/tinycbor/qt_attribution.json",
+        "source/src/3rdparty/wasm/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/appmenu/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/color-management/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/fractional-scale/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/fullscreen-shell/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/linux-dmabuf/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/pointer-gestures/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/pointer-warp/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/presentation-time/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/scaler/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/session-management/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/tablet/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/text-input/v1/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/text-input/v2/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/text-input/v3/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/viewporter/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/wayland/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/wl-eglstream/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/wlr-data-control/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/wp-primary-selection/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-activation/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-decoration/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-dialog/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-foreign/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-output/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-shell/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-system-bell/qt_attribution.json",
+        "source/src/3rdparty/wayland/protocols/xdg-toplevel-icon/qt_attribution.json",
+        "source/src/3rdparty/wintab/qt_attribution.json",
+        "source/src/3rdparty/xcb/qt_attribution.json",
+        "source/src/3rdparty/zlib/qt_attribution.json",
+        "source/src/corelib/global/qt_attribution.json",
+        "source/src/corelib/kernel/qt_attribution.json",
+        "source/src/corelib/mimetypes/3rdparty/qt_attribution.json",
+        "source/src/corelib/text/qt_attribution.json",
+        "source/src/dbus/qt_attribution.json",
+        "source/src/gui/opengl/qt_attribution.json",
+        "source/src/gui/painting/qt_attribution.json",
+        "source/src/gui/rhi/qt_attribution.json",
+        "source/src/gui/text/qt_attribution.json",
+        "source/src/gui/vulkan/qt_attribution.json",
+        "source/src/plugins/platforms/cocoa/qt_attribution.json",
+        "source/src/testinternal/3rdparty/cmake/qt_attribution.json",
+        "source/src/testlib/3rdparty/catch2/qt_attribution.json",
+        "source/src/testlib/3rdparty/cycle/qt_attribution.json",
+        "source/src/testlib/3rdparty/linux/qt_attribution.json",
+        "source/src/testlib/3rdparty/valgrind/qt_attribution.json",
+        "source/util/gradientgen/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qtdeclarative-82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1.tar.gz",
+      "sha256": "722acf0b31bc45e52b1c291e6eb1bdfde888614773414fa5af588b4481d00c49",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 22823,
+      "noticeCandidates": [
+        {
+          "path": "source/src/3rdparty/masm/LICENSE",
+          "bytes": 1260,
+          "sha256": "9ba0c20a2972274f27e975d79ed3582e322d6891338266a52e2d3a9417fc0a72",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/yoga/LICENSE",
+          "bytes": 1086,
+          "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/quickcontrols/material/LICENSE.ANGULARJS.txt",
+          "bytes": 1082,
+          "sha256": "a1c1daa9eec4db907907c0ccc42a4843bb996410f888b972a39fe152e829bc3d",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/manual/painterpathquickshape/LICENSE.OFL.txt",
+          "bytes": 4376,
+          "sha256": "2d70f3c8e67111788366fa85b4c0bf42de29ea6653198ba65f4fe0fd22f5dcad",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/manual/quickcontrols/swipetoremove/fonts/LICENSE.txt",
+          "bytes": 206,
+          "sha256": "92a70e3777d010b863fb4519a7d474a9b29383de58e7898d7b77c1e3295acb7c",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/manual/quickcontrols/testbench/fonts/LICENSE.txt",
+          "bytes": 180,
+          "sha256": "e882ddf66dd8808b5dc6b8e4eebd80696b3f7064ff2edeae2ea7db2fedffeb7f",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/.gitmodules",
+        "source/examples/quick/advancedtext/qt_attribution.json",
+        "source/examples/quick/quickshapes/weatherforecast/qt_attribution.json",
+        "source/src/3rdparty/masm/qt_attribution.json",
+        "source/src/3rdparty/yoga/qt_attribution.json",
+        "source/src/quickcontrols/material/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qtimageformats-ade536558e868143d615512a6873daabb8e9195b.tar.gz",
+      "sha256": "774143082082b4cf84b08090ba89e46a01a83ec0ff5ac6ce0bd220a20f0119e8",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 565,
+      "noticeCandidates": [
+        {
+          "path": "source/src/3rdparty/libtiff/COPYRIGHT",
+          "bytes": 1146,
+          "sha256": "fbd6fed7938541d2c809c0826225fc85e551fdbfa8732b10f0c87e0847acafd7",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/libwebp/AUTHORS",
+          "bytes": 3279,
+          "sha256": "f251be89fd442bd9d701360730aea163cc8e2076ff03528f59267dc2c4f8b60a",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/libwebp/COPYING",
+          "bytes": 1496,
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/src/3rdparty/libtiff/qt_attribution.json",
+        "source/src/3rdparty/libwebp/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qttools-92c3a8c84ff17c5d2ae263dffb97645fb1a76081.tar.gz",
+      "sha256": "9ecb367fffb9c19413572092af7fd750e4d78b92c6ee5409100c30d6df7b61e9",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 4456,
+      "noticeCandidates": [
+        {
+          "path": "source/src/qdoc/catch/LICENSE.CATCH.txt",
+          "bytes": 1338,
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/qdoc/qdoc/src/qdoc/clang/AST/LICENSE.LLVM.txt",
+          "bytes": 15141,
+          "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/auto/qtattributionsscanner/testdata/good/local_license/LICENSE.Id1.txt",
+          "bytes": 8,
+          "sha256": "3827f47858e3fca4ef1326e509513918fa46a9526eb72a5d697f9b0bf9c0fcdc",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/auto/qtattributionsscanner/testdata/good/local_license/LICENSE.Id2.txt",
+          "bytes": 8,
+          "sha256": "3522b9b81a52287f015f0d35573b3f4cdf926ef1febeb0d93ba8d639a252edd2",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/auto/qtattributionsscanner/testdata/good/variants/COPYRIGHT.txt",
+          "bytes": 10,
+          "sha256": "ff23a4aa54d3eb5d95cced9d96199baff7449dd4198699a08d5690b82300e0e0",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/auto/qtattributionsscanner/testdata/good/variants/LICENSE.1.txt",
+          "bytes": 8,
+          "sha256": "3827f47858e3fca4ef1326e509513918fa46a9526eb72a5d697f9b0bf9c0fcdc",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/auto/qtattributionsscanner/testdata/good/variants/LICENSE.2.txt",
+          "bytes": 8,
+          "sha256": "3522b9b81a52287f015f0d35573b3f4cdf926ef1febeb0d93ba8d639a252edd2",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/manual/qtattributionsscanner/data/LICENSE",
+          "bytes": 35645,
+          "sha256": "3417a56f1be5140321a9ba5885434f92417d671e65e28966974947163e5cff0e",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/.gitmodules",
+        "source/src/qdoc/catch/qt_attribution.json",
+        "source/src/qdoc/qdoc/src/qdoc/clang/AST/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qtsvg-4126867385dc0b7a9404dcd69726c28ed0d5e10a.tar.gz",
+      "sha256": "f22206eae4dc7093df63d7a1d7d0d5cf5e0b6e6a1d7091807e0a41442bbaf12a",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 643,
+      "noticeCandidates": [
+        {
+          "path": "source/src/svg/LICENSE.XSVG.txt",
+          "bytes": 1185,
+          "sha256": "3a946598a9f674d44df764279ca0b85b5d6faba08f3bc75d8e0fcf6cd729a9bd",
+          "kind": "file"
+        },
+        {
+          "path": "source/tests/baseline/data/svg_12_testsuite/LICENSE.txt",
+          "bytes": 948,
+          "sha256": "635f33fbb460f1731dad45d79dbf2301255f63296d77a064c000f92e2cc79173",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/src/svg/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qttranslations-08c7440f513309715ba00db5e0e519a4a59e62ea.tar.gz",
+      "sha256": "4d508f7ee0708994c35ac8133e0849d951417dc31d0fedcc9383a88102e436fe",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 311,
+      "noticeCandidates": [],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qt5compat-2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9.tar.gz",
+      "sha256": "f71362e77db1239194789440b72164276d1db48a5ea4795f68d6335c0ff68f5d",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 1443,
+      "noticeCandidates": [
+        {
+          "path": "source/src/core5/codecs/LICENSE.QBIG5CODEC.txt",
+          "bytes": 1424,
+          "sha256": "425475b78739a2985e61c619ba833af364bba405c69e9cf2eb027e5790cc00c8",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/core5/codecs/LICENSE.QBKCODEC.txt",
+          "bytes": 1438,
+          "sha256": "a2cc13f96cc199017b0e41c4a44faef0cce9a024fac0710e39d8fc499d738bff",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/core5/codecs/LICENSE.QEUCJPCODEC.txt",
+          "bytes": 1286,
+          "sha256": "a2a58c25c18cc5c203b2ebf7a706f6baeb93d43fc443bc095acded6d259842ea",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/core5/codecs/LICENSE.QEUCKRCODEC.txt",
+          "bytes": 1291,
+          "sha256": "1c1a8f5823b81498368ba5ff489f1c05fb61a71dcbe4ebd8138bde86837ade2c",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/core5/codecs/LICENSE.QJISCODEC.txt",
+          "bytes": 1286,
+          "sha256": "a2a58c25c18cc5c203b2ebf7a706f6baeb93d43fc443bc095acded6d259842ea",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/core5/codecs/LICENSE.QSJISCODEC.txt",
+          "bytes": 1286,
+          "sha256": "a2a58c25c18cc5c203b2ebf7a706f6baeb93d43fc443bc095acded6d259842ea",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/core5/codecs/LICENSE.QTSCIICODEC.txt",
+          "bytes": 1287,
+          "sha256": "e749770c43d1287fa0c0855b2fefea4efa34e6cfa806cf3dc1efa5351a7774bc",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/src/core5/codecs/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/qtshadertools-1c7a78fd7480f11a49eb8135b44d138edb0f0df8.tar.gz",
+      "sha256": "5e90bccf270845a60c08e1f81c23eebcb57639937850e954846a7828a8ba085a",
+      "owners": [
+        "ext_qt"
+      ],
+      "members": 326,
+      "noticeCandidates": [
+        {
+          "path": "source/src/3rdparty/SPIRV-Cross/COPYRIGHT.txt",
+          "bytes": 243,
+          "sha256": "afe3458e2431963def8b2c1520d342566725a07b46344aa34c5d327531bf2873",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/SPIRV-Cross/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/glslang/COPYRIGHT.txt",
+          "bytes": 314,
+          "sha256": "7a0986b241205c038dcea76b343dd9b7030a424b644a7d59585200824831dae8",
+          "kind": "file"
+        },
+        {
+          "path": "source/src/3rdparty/glslang/LICENSE.txt",
+          "bytes": 54705,
+          "sha256": "adb783e734e906d1f46db5df29991dbde84bdb0ceab502ac2febb44fe3c2b5f4",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/src/3rdparty/SPIRV-Cross/qt_attribution.json",
+        "source/src/3rdparty/glslang/qt_attribution.json"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ocio-pystring-7d16bc814ccb4cad03c300dcb77440034caa84f7.tar.gz",
+      "sha256": "4f38af53aebc35924699aa41482a44a31aa52e4c6f921acee37a52ebea7333d4",
+      "owners": [
+        "ext_ocio"
+      ],
+      "members": 10,
+      "noticeCandidates": [
+        {
+          "path": "pystring-7d16bc814ccb4cad03c300dcb77440034caa84f7/LICENSE",
+          "bytes": 1530,
+          "sha256": "f7f060301402ea0b5c507b865b1a9de037d4d7b24f37422a93b70fe9c7a9b78a",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ocio-minizip-f3ed731e27a97e30dffe076ed5e0537daae5c1bd.tar.gz",
+      "sha256": "ba85360985877b549cc6d672f5955601eac697a4a3489d8c7f9f413682d8f72c",
+      "owners": [
+        "ext_ocio"
+      ],
+      "members": 128,
+      "noticeCandidates": [
+        {
+          "path": "minizip-ng-f3ed731e27a97e30dffe076ed5e0537daae5c1bd/LICENSE",
+          "bytes": 877,
+          "sha256": "675181c03fc1302a1c8554c00f7be9bb420c5dbc9dcc2013433cec144413de03",
+          "kind": "file"
+        },
+        {
+          "path": "minizip-ng-f3ed731e27a97e30dffe076ed5e0537daae5c1bd/test/fuzz/unzip_fuzzer_seed_corpus/license_zstd.zip",
+          "bytes": 734,
+          "sha256": "b55bbd300e031bb60717c6481d7c2fa1bd45f334be5b94345997832942f3d7c1",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ocio-imath-fbcfb9833fe78277299080e8700fcf749a468bb0.tar.gz",
+      "sha256": "a10f52d26b5e14c1e457c289fa0e5cb7cda93e1a6e5d286055dcc0ba28104eff",
+      "owners": [
+        "ext_ocio"
+      ],
+      "members": 396,
+      "noticeCandidates": [
+        {
+          "path": "Imath-fbcfb9833fe78277299080e8700fcf749a468bb0/LICENSE.md",
+          "bytes": 1497,
+          "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601",
+          "kind": "file"
+        },
+        {
+          "path": "Imath-fbcfb9833fe78277299080e8700fcf749a468bb0/website/license.rst",
+          "bytes": 1953,
+          "sha256": "21bd6d29519338c582dfd570a3ce9120277f24c1eff2ffb97d903b7ea93294d8",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ocio-yaml-cpp-f7320141120f720aecc4c32be25586e7da9eb978.tar.gz",
+      "sha256": "2fd3bf695ccc056835a70dd6d3046312cc1004e8338b8b5c91646918a27b7ef6",
+      "owners": [
+        "ext_ocio"
+      ],
+      "members": 397,
+      "noticeCandidates": [
+        {
+          "path": "yaml-cpp-f7320141120f720aecc4c32be25586e7da9eb978/LICENSE",
+          "bytes": 1061,
+          "sha256": "aa6fcc27be034e41e21dd832f9175bfe694a48491d9e14ff0fa278e19ad14f1b",
+          "kind": "file"
+        },
+        {
+          "path": "yaml-cpp-f7320141120f720aecc4c32be25586e7da9eb978/test/gtest-1.11.0/LICENSE",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+          "kind": "file"
+        },
+        {
+          "path": "yaml-cpp-f7320141120f720aecc4c32be25586e7da9eb978/test/gtest-1.11.0/googlemock/scripts/generator/LICENSE",
+          "bytes": 11386,
+          "sha256": "5e0df8c845c742e76f2f64d2d9ce1b7e74a2422fddbc577ae6a56319083de0bf",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ocio-expat-7643f96bd5b9f5d3b26ea112519e05e17ef91cfb.tar.gz",
+      "sha256": "fe6bc4ba879d898345d80020a5c307a19456d5367c37c91cac6b777a7220970e",
+      "owners": [
+        "ext_ocio"
+      ],
+      "members": 211,
+      "noticeCandidates": [
+        {
+          "path": "libexpat-7643f96bd5b9f5d3b26ea112519e05e17ef91cfb/COPYING",
+          "bytes": 1144,
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "kind": "file"
+        },
+        {
+          "path": "libexpat-7643f96bd5b9f5d3b26ea112519e05e17ef91cfb/expat/AUTHORS",
+          "bytes": 142,
+          "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877",
+          "kind": "file"
+        },
+        {
+          "path": "libexpat-7643f96bd5b9f5d3b26ea112519e05e17ef91cfb/expat/COPYING",
+          "bytes": 1144,
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/llvm-project-a832a5222e489298337fbb5876f8dcaf072c5cca.tar.gz",
+      "sha256": "b173dc3301a5759d7ab81a979040c8f44251622ba2a05ce6f76bd5572f0999df",
+      "owners": [
+        "llvm-mingw"
+      ],
+      "members": 160120,
+      "noticeCandidates": [
+        {
+          "path": "source/LICENSE.TXT",
+          "bytes": 15141,
+          "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+          "kind": "file"
+        },
+        {
+          "path": "source/bolt/LICENSE.TXT",
+          "bytes": 15141,
+          "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+          "kind": "file"
+        },
+        {
+          "path": "source/clang-tools-extra/LICENSE.TXT",
+          "bytes": 15140,
+          "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+          "kind": "file"
+        },
+        {
+          "path": "source/clang-tools-extra/clang-tidy/cert/LICENSE.TXT",
+          "bytes": 1136,
+          "sha256": "d8e09a37202601346ed9f3962c843cf60d985570111602399a9b845c44a654ba",
+          "kind": "file"
+        },
+        {
+          "path": "source/clang-tools-extra/clang-tidy/hicpp/LICENSE.TXT",
+          "bytes": 541,
+          "sha256": "271b9c47cbf07475b8012f708fe08a348821261d66795daefed400e9238db379",
+          "kind": "file"
+        },
+        {
+          "path": "source/clang/LICENSE.TXT",
+          "bytes": 15140,
+          "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+          "kind": "file"
+        },
+        {
+          "path": "source/compiler-rt/LICENSE.TXT",
+          "bytes": 16708,
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+          "kind": "file"
+        },
+        {
+          "path": "source/cross-project-tests/debuginfo-tests/dexter/LICENSE.txt",
+          "bytes": 15141,
+          "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+          "kind": "file"
+        },
+        {
+          "path": "source/flang-rt/LICENSE.TXT",
+          "bytes": 13151,
+          "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374",
+          "kind": "file"
+        },
+        {
+          "path": "source/flang/LICENSE.TXT",
+          "bytes": 13151,
+          "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374",
+          "kind": "file"
+        },
+        {
+          "path": "source/flang/test/Semantics/OpenMP/copying.f90",
+          "bytes": 1475,
+          "sha256": "ab009d0bbf673740d49b1325b7368aba2131c9a3d83c1f3ce426d83434860bd1",
+          "kind": "file"
+        },
+        {
+          "path": "source/libc/LICENSE.TXT",
+          "bytes": 15140,
+          "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+          "kind": "file"
+        },
+        {
+          "path": "source/libclc/LICENSE.TXT",
+          "bytes": 16469,
+          "sha256": "3c536c052db9afd997809e38785c9f2a9e54e2892330fa7c5b438e18a7413479",
+          "kind": "file"
+        },
+        {
+          "path": "source/libcxx/LICENSE.TXT",
+          "bytes": 16703,
+          "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+          "kind": "file"
+        },
+        {
+          "path": "source/libcxxabi/LICENSE.TXT",
+          "bytes": 16706,
+          "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+          "kind": "file"
+        },
+        {
+          "path": "source/libunwind/LICENSE.TXT",
+          "bytes": 16706,
+          "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d",
+          "kind": "file"
+        },
+        {
+          "path": "source/lld/LICENSE.TXT",
+          "bytes": 15138,
+          "sha256": "f7891568956e34643eb6a0db1462db30820d40d7266e2a78063f2fe233ece5a0",
+          "kind": "file"
+        },
+        {
+          "path": "source/lldb/LICENSE.TXT",
+          "bytes": 15032,
+          "sha256": "76be4deddeef87f6fa9940f4992a9506c7bb222af60eb3b2a47cf65719528bbe",
+          "kind": "file"
+        },
+        {
+          "path": "source/lldb/tools/lldb-dap/LICENSE.TXT",
+          "bytes": 13151,
+          "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374",
+          "kind": "file"
+        },
+        {
+          "path": "source/llvm/LICENSE.TXT",
+          "bytes": 15141,
+          "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+          "kind": "file"
+        },
+        {
+          "path": "source/llvm/include/llvm/Support/LICENSE.TXT",
+          "bytes": 303,
+          "sha256": "54cbc326a78b9400065bfc5830a57fdcdaf808286d4ac35d8a9e324aa77b7241",
+          "kind": "file"
+        },
+        {
+          "path": "source/llvm/lib/Support/BLAKE3/LICENSE",
+          "bytes": 18691,
+          "sha256": "6a94bedb8b707ed97f6e310d0d015ab14e0683ffa0a612b02958581b9cc9fc0e",
+          "kind": "file"
+        },
+        {
+          "path": "source/llvm/lib/Support/COPYRIGHT.regex",
+          "bytes": 2718,
+          "sha256": "0424e57d4303164dc59a8509c20dae0518b853692e5c2b0e98b11816fdbc97c7",
+          "kind": "file"
+        },
+        {
+          "path": "source/llvm/test/YAMLParser/LICENSE.txt",
+          "bytes": 1058,
+          "sha256": "d0d8b09800a45cd982e9568fc7669d9c1a4c330e275a821bbe24d54366d16fe9",
+          "kind": "file"
+        },
+        {
+          "path": "source/llvm/utils/lit/LICENSE.TXT",
+          "bytes": 15141,
+          "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+          "kind": "file"
+        },
+        {
+          "path": "source/mlir/LICENSE.TXT",
+          "bytes": 13151,
+          "sha256": "94b301bb652ae351f5941655bf533f1a136300ad1396be7452c8a04ff2c91374",
+          "kind": "file"
+        },
+        {
+          "path": "source/openmp/LICENSE.TXT",
+          "bytes": 19741,
+          "sha256": "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4",
+          "kind": "file"
+        },
+        {
+          "path": "source/openmp/runtime/src/thirdparty/ittnotify/LICENSE.txt",
+          "bytes": 1485,
+          "sha256": "cf48cdd9ed87c2031b68fb1b9f4cfb55d00dcf815b21a30bf8304aa1e5e6f76a",
+          "kind": "file"
+        },
+        {
+          "path": "source/polly/LICENSE.TXT",
+          "bytes": 15009,
+          "sha256": "eef85b40250d830eb76577fb44933cc5d81a8650f3848e5f3d89229e6995ffd3",
+          "kind": "file"
+        },
+        {
+          "path": "source/polly/lib/External/isl/AUTHORS",
+          "bytes": 1479,
+          "sha256": "b32faff016b6e7ed7a8887672cdb2ec5607964193a5e03590db4cea48c1d3ca8",
+          "kind": "file"
+        },
+        {
+          "path": "source/polly/lib/External/isl/LICENSE",
+          "bytes": 1042,
+          "sha256": "3a2c398103f6bca0f50a9a9465deca9230b370b0212af5fdf31ed88a36215c30",
+          "kind": "file"
+        },
+        {
+          "path": "source/polly/lib/External/isl/imath/LICENSE",
+          "bytes": 1136,
+          "sha256": "4556b2d9e53920d10c972b2a4a78fbbb3aedb510686f2a1cd8d41e6a8adf24e5",
+          "kind": "file"
+        },
+        {
+          "path": "source/third-party/benchmark/AUTHORS",
+          "bytes": 2676,
+          "sha256": "01381fc0a41026d63b697593dcdef93ed6fe4402f02f6378e9c3b739aca592ed",
+          "kind": "file"
+        },
+        {
+          "path": "source/third-party/benchmark/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "source/third-party/unittest/googlemock/LICENSE.txt",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+          "kind": "file"
+        },
+        {
+          "path": "source/third-party/unittest/googletest/LICENSE.TXT",
+          "bytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "source/polly/lib/External/isl/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33.tar.gz",
+      "sha256": "d2fa18ef6b1fc8afd80c065a524fc090a7514803a3c93f79ae29ef5ac4a1801e",
+      "owners": [
+        "llvm-mingw"
+      ],
+      "members": 6808,
+      "noticeCandidates": [
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/AUTHORS",
+          "bytes": 2398,
+          "sha256": "8f308316e7a94b8410f871868bd3948f126526dc1775aeee97a0e365f9a0fd9f",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/COPYING",
+          "bytes": 2326,
+          "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/COPYING.MinGW-w64-runtime/COPYING.MinGW-w64-runtime.txt",
+          "bytes": 12155,
+          "sha256": "1db8da07b436c68833c0673ffee3d9fcb2526047f3820b81661865dfedc79a1f",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/COPYING.MinGW-w64/COPYING.MinGW-w64.txt",
+          "bytes": 5905,
+          "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-crt/profile/COPYING",
+          "bytes": 18007,
+          "sha256": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-libraries/libmangle/COPYING",
+          "bytes": 1109,
+          "sha256": "ae7a4090983e6ea0780c60c454016fd5e93b414b0de26ad041608ec66fbb54bb",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-libraries/pseh/COPYING",
+          "bytes": 1062,
+          "sha256": "5ece225da0c7f0dba84dc64d773b5231075e8fee61cbeceb9f774e939918e638",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-libraries/winpthreads/COPYING",
+          "bytes": 2883,
+          "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-libraries/winstorecompat/COPYING",
+          "bytes": 1099,
+          "sha256": "fa7368d1f93d890c173177475d8ec7aff265a7d08f1f364d66f74d138978ce36",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-tools/gendef/COPYING",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-tools/genidl/COPYING",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        },
+        {
+          "path": "mingw-w64-f6a7b25bc70e9c3f5d0a8535ad112b08de564b33/mingw-w64-tools/genpeimg/COPYING",
+          "bytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/llvm-mingw-259cd18db3419d4c68571f6edb87828f8dc77894.tar.gz",
+      "sha256": "9e5ef9adbbe94a3bd44225a8c61678ff93293f94d8f2639830b0ea7ee8c52eb6",
+      "owners": [
+        "llvm-mingw"
+      ],
+      "members": 90,
+      "noticeCandidates": [
+        {
+          "path": "llvm-mingw-259cd18db3419d4c68571f6edb87828f8dc77894/LICENSE.txt",
+          "bytes": 1092,
+          "sha256": "8e5db0129069005be2a07be3297e198888fd72fad62a13a611504660c6b7e3c7",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/cmake-dbe9d4593f4b7a2b1eb87826949f09af0268240a.tar.gz",
+      "sha256": "d2a2caef006cf330997be5695bfcd2f9202c3b980d19998dd9bf0369fdbe4c86",
+      "owners": [
+        "cmake"
+      ],
+      "members": 26612,
+      "noticeCandidates": [
+        {
+          "path": "source/Copyright.txt",
+          "bytes": 5477,
+          "sha256": "0676e30827684487aa0ea8f72f01e9460a6320fa34a2888df0ad1dd3e8a06eb8",
+          "kind": "file"
+        },
+        {
+          "path": "source/Help/guide/tutorial/Complete/License.txt",
+          "bytes": 79,
+          "sha256": "50b826423257910702176720fb8b548712b06510668ec6e65c506fe58d835316",
+          "kind": "file"
+        },
+        {
+          "path": "source/Help/guide/tutorial/Step10/License.txt",
+          "bytes": 79,
+          "sha256": "50b826423257910702176720fb8b548712b06510668ec6e65c506fe58d835316",
+          "kind": "file"
+        },
+        {
+          "path": "source/Help/guide/tutorial/Step11/License.txt",
+          "bytes": 79,
+          "sha256": "50b826423257910702176720fb8b548712b06510668ec6e65c506fe58d835316",
+          "kind": "file"
+        },
+        {
+          "path": "source/Help/guide/tutorial/Step12/License.txt",
+          "bytes": 79,
+          "sha256": "50b826423257910702176720fb8b548712b06510668ec6e65c506fe58d835316",
+          "kind": "file"
+        },
+        {
+          "path": "source/Help/guide/tutorial/Step9/License.txt",
+          "bytes": 79,
+          "sha256": "50b826423257910702176720fb8b548712b06510668ec6e65c506fe58d835316",
+          "kind": "file"
+        },
+        {
+          "path": "source/Source/kwsys/Copyright.txt",
+          "bytes": 1813,
+          "sha256": "7aa92ae0b86f73f81947d177639556fe7f8ea42a74762ecdf563e3daf7106a40",
+          "kind": "file"
+        },
+        {
+          "path": "source/Tests/CPackComponentsDEB/license.txt",
+          "bytes": 99,
+          "sha256": "72a884b53b228952cd80893b6a6ed5c5f3007d5666c3760a12233158a0ca3542",
+          "kind": "file"
+        },
+        {
+          "path": "source/Tests/CPackComponentsForAll/license.txt",
+          "bytes": 99,
+          "sha256": "72a884b53b228952cd80893b6a6ed5c5f3007d5666c3760a12233158a0ca3542",
+          "kind": "file"
+        },
+        {
+          "path": "source/Tests/RunCMake/RunCPack/AppWiX/license.txt",
+          "bytes": 163,
+          "sha256": "30b7a02f31f9ca513dac468f80f4853f95433f1d0336a6fc5cefdc2389a17e99",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/KWIML/Copyright.txt",
+          "bytes": 1518,
+          "sha256": "2c1b4faf0e1f1a23a56c657959eb138add74e175b8c8949275f9f54d3a376365",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmbzip2/LICENSE",
+          "bytes": 1896,
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmcppdap/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmcppdap/NOTICE",
+          "bytes": 173,
+          "sha256": "3103ac74433b12f1728cc0e09babe67620c5e3ab15d79d222b49d5d226681a6c",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmcurl/COPYING",
+          "bytes": 1088,
+          "sha256": "adb1fc06547fd136244179809f7b7c2d2ae6c4534f160aa513af9b6a12866a32",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmexpat/COPYING",
+          "bytes": 1144,
+          "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmjsoncpp/LICENSE",
+          "bytes": 2714,
+          "sha256": "cec0db5f6d7ed6b3a72647bd50aed02e13c3377fd44382b96dc2915534c042ad",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmlibarchive/COPYING",
+          "bytes": 3086,
+          "sha256": "b2cdf763345de2de34cebf54394df3c61a105c3b71288603c251f2fa638200ba",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmliblzma/COPYING",
+          "bytes": 2775,
+          "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmlibrhash/COPYING",
+          "bytes": 736,
+          "sha256": "953e55838353335148c90b5a38a4894292680b1d4c37228ffddddbf18ce54bf5",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmlibuv/LICENSE",
+          "bytes": 2943,
+          "sha256": "95b8b163c60d17cfce3cef61a2d8a9cf70137502c8fb5f3d93cd2fc529fa98c8",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmnghttp2/COPYING",
+          "bytes": 1156,
+          "sha256": "6b94f3abc1aabd0c72a7c7d92a77f79dda7c8a0cb3df839a97890b4116a2de2a",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmzlib/Copyright.txt",
+          "bytes": 1040,
+          "sha256": "0fced0a729ffc65a60e9d3a7f6bbc7f8273016322d9c4037e7d34b3f9417e531",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/cmzstd/LICENSE",
+          "bytes": 1549,
+          "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/GitSetup/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "kind": "file"
+        },
+        {
+          "path": "source/Utilities/GitSetup/NOTICE",
+          "bytes": 152,
+          "sha256": "3d1944f434c8439e9bd2d424172daddc734fd33325b682403c3e62939c46636d",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/ninja-3441b633c2fe2c494e958780ba0f4227b1327634.tar.gz",
+      "sha256": "bccc6197cd8c3ac2a439e26d6bf41506fe49c430cf3d593269a15379f24266ee",
+      "owners": [
+        "ninja"
+      ],
+      "members": 185,
+      "noticeCandidates": [
+        {
+          "path": "ninja-3441b633c2fe2c494e958780ba0f4227b1327634/COPYING",
+          "bytes": 11358,
+          "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-raw-archives/cpython-6cb20a219a860eaf687b2d968b41c480c7461909.tar.gz",
+      "sha256": "119c66e89872b33825f83f5902d6f980ae9a30463705744c04ef1b571e200d66",
+      "owners": [
+        "ext_python",
+        "python-sdk"
+      ],
+      "members": 4980,
+      "noticeCandidates": [
+        {
+          "path": "source/Doc/copyright.rst",
+          "bytes": 451,
+          "sha256": "2f455e3bd119869bf01369ab852d87d11c9e67e5351a7ebc64ab2c0af344aff6",
+          "kind": "file"
+        },
+        {
+          "path": "source/Doc/license.rst",
+          "bytes": 55737,
+          "sha256": "62f2c9c2c75d511170eb464ad5f83b78cc1f37eb2eb49c2846c9aa6c4557ee99",
+          "kind": "file"
+        },
+        {
+          "path": "source/LICENSE",
+          "bytes": 13809,
+          "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+          "kind": "file"
+        },
+        {
+          "path": "source/Mac/BuildScript/resources/License.rtf",
+          "bytes": 15068,
+          "sha256": "ab6df6040a4e24babad38f98454eb3263722fa6a1c441bfaa271798efbe55f27",
+          "kind": "file"
+        },
+        {
+          "path": "source/Modules/expat/COPYING",
+          "bytes": 1144,
+          "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534",
+          "kind": "file"
+        },
+        {
+          "path": "source/Tools/msi/bundle/bootstrap/LICENSE.txt",
+          "bytes": 3273,
+          "sha256": "cb95daf98edda8e08a242e1060691b6941f0911692bf468a3f9c5e4b58c09b8f",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/pybind11-1eaacd19f6de9a053570c21de6d173efc2304bc2.tar.gz",
+      "sha256": "7f9ccf75f8ac6e67c7698df733e1216b6ef0117372d5f89043a9c220b239fbc6",
+      "owners": [
+        "ext_immer"
+      ],
+      "members": 151,
+      "noticeCandidates": [
+        {
+          "path": "pybind11-1eaacd19f6de9a053570c21de6d173efc2304bc2/LICENSE",
+          "bytes": 2190,
+          "sha256": "5d5e58a97b7adf3e8db17ed5fb1333d578633c86fa9065660a5bc88aaee852ac",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [
+        "pybind11-1eaacd19f6de9a053570c21de6d173efc2304bc2/.gitmodules"
+      ],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c.tar.gz",
+      "sha256": "ebfde8b795e430dd1fc36a8e5c4778322796e48c27d581033e6eae029fc5c39b",
+      "owners": [
+        "ext_immer",
+        "ext_lager",
+        "ext_zug"
+      ],
+      "members": 240,
+      "noticeCandidates": [
+        {
+          "path": "sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c/LICENSE",
+          "bytes": 1081,
+          "sha256": "eaeddba35284db62c2f5361fbe9077baad0f9c0a65d752398481465206c43380",
+          "kind": "file"
+        },
+        {
+          "path": "sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c/sinusoidal_sphinx_theme/sinusoidal_sphinx_theme/static/fonts/linux-libertine/LICENCE.txt",
+          "bytes": 1180,
+          "sha256": "73e4f0243fc4fd7a1bafaf13439e708c7194ac154942f52c86f30339c5395470",
+          "kind": "file"
+        },
+        {
+          "path": "sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c/sinusoidal_sphinx_theme/sinusoidal_sphinx_theme/static/fonts/source-sans-pro/LICENSE.txt",
+          "bytes": 4628,
+          "sha256": "653aaf9819e33cf1e2b3523c5d4d6c3dae925d770cb4563030f96655321ca2e9",
+          "kind": "file"
+        },
+        {
+          "path": "sinusoidal-sphinx-theme-b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c/sinusoidal_sphinx_theme/sinusoidal_sphinx_theme/static/fonts/source-serif-pro/LICENSE.txt",
+          "bytes": 4616,
+          "sha256": "caa697668c3cf3e622753fb202c6c2e29648b94a3499dc7b869a14192e38c553",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    },
+    {
+      "archive": "git-archives/clang-cindex-python3-254c7a91e3c6aa254e113197604dafb443f4d429.tar.gz",
+      "sha256": "3db664ae4ce59a9f5bf50256dc488912de4bc5c63aafe734c79dd7cb01999eaf",
+      "owners": [
+        "ext_immer"
+      ],
+      "members": 6,
+      "noticeCandidates": [
+        {
+          "path": "clang-cindex-python3-254c7a91e3c6aa254e113197604dafb443f4d429/LICENSE.TXT",
+          "bytes": 2749,
+          "sha256": "23c817ddf55e9a8ea332a376e6c23469c31a6c833516385cf0662767ba863276",
+          "kind": "file"
+        }
+      ],
+      "nestedSourceDescriptors": [],
+      "noticeReviewComplete": false
+    }
+  ]
+}

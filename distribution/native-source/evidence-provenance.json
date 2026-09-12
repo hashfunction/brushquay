@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "evidence/InstallImath.cmake",
+      "bytes": 5557,
+      "sha256": "ad68e193c7488d6ed1742e5e89d5c38c8ea2df17c67c4c036afccf545c511714",
+      "sourceArchiveUrl": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+      "sourceArchiveSha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "archiveMember": "OpenColorIO-2.5.1/share/cmake/modules/install/InstallImath.cmake"
+    },
+    {
+      "path": "evidence/Installexpat.cmake",
+      "bytes": 6135,
+      "sha256": "d873827541ad4099a806bc28a63980fe8633667aade07eb19b48a39e5c9061b3",
+      "sourceArchiveUrl": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+      "sourceArchiveSha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "archiveMember": "OpenColorIO-2.5.1/share/cmake/modules/install/Installexpat.cmake"
+    },
+    {
+      "path": "evidence/Installminizip-ng.cmake",
+      "bytes": 5735,
+      "sha256": "013bb34d227652b74ee9eda9df83dd82265f6034eee36d54b53c5f86d07192ac",
+      "sourceArchiveUrl": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+      "sourceArchiveSha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "archiveMember": "OpenColorIO-2.5.1/share/cmake/modules/install/Installminizip-ng.cmake"
+    },
+    {
+      "path": "evidence/Installpystring.cmake",
+      "bytes": 4997,
+      "sha256": "2d3c5d71ed0788a8ee49ffbbc72eec4df39e7457a026989703281a6ab80b581e",
+      "sourceArchiveUrl": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+      "sourceArchiveSha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "archiveMember": "OpenColorIO-2.5.1/share/cmake/modules/install/Installpystring.cmake"
+    },
+    {
+      "path": "evidence/Installyaml-cpp.cmake",
+      "bytes": 5997,
+      "sha256": "526ee0dc6b377a0a6ad8a0ff533eb4a3afe79a519af8f18d63cce2717d94903c",
+      "sourceArchiveUrl": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+      "sourceArchiveSha256": "49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+      "archiveMember": "OpenColorIO-2.5.1/share/cmake/modules/install/Installyaml-cpp.cmake"
+    },
+    {
+      "path": "evidence/llvm-build-llvm",
+      "bytes": 14887,
+      "sha256": "467f164ad569a9cfdee405edcaa0ba6340ebffe55665372422a09f929024bdf5",
+      "url": "https://raw.githubusercontent.com/mstorsjo/llvm-mingw/259cd18db3419d4c68571f6edb87828f8dc77894/build-llvm.sh"
+    },
+    {
+      "path": "evidence/llvm-build-mingw-w64",
+      "bytes": 4407,
+      "sha256": "39a13cf4e5f006823990bf1258d6bd8f973decc03d61c83c0a3973719f5d9cb9",
+      "url": "https://raw.githubusercontent.com/mstorsjo/llvm-mingw/259cd18db3419d4c68571f6edb87828f8dc77894/build-mingw-w64.sh"
+    },
+    {
+      "path": "evidence/original-windows-source-events.json",
+      "bytes": 22796,
+      "sha256": "3c2db4f81c92212c79f0e696d6795593723e4e67ae034d58821346d94a791521",
+      "provenance": "Original upstream artifact/member and line numbers are embedded in this allowlisted source-event document."
+    },
+    {
+      "path": "evidence/qt-gitmodules",
+      "bytes": 8367,
+      "sha256": "ef7613e946a8004cd83761a302d853a53938e4cbb6eca63527c00a4308efd608",
+      "url": "https://raw.githubusercontent.com/dimula73/qt5/571b5489c7d0987959b8cf81f62df674da79c418/.gitmodules"
+    },
+    {
+      "path": "evidence/qt-super-tree",
+      "bytes": 14496,
+      "sha256": "5228bb69329cd5b3509d9e705864a90ea9d8e2dcd114fd0118a90ac6debae0d7",
+      "url": "https://api.github.com/repos/dimula73/qt5/git/trees/571b5489c7d0987959b8cf81f62df674da79c418"
+    },
+    {
+      "path": "evidence/historical-native-build-34675482940.json",
+      "bytes": 5463,
+      "sha256": "79b2942c4cdc2a18d3fa90811a8017d1d4717006d64bd2fa561907fa14179025",
+      "url": "https://github.com/hashfunction/brushquay/actions/runs/34675482940",
+      "artifactPath": "evidence/20260912-052956-5cf0b911f1cf4c5eacb8b389c3eaa616/native-build.json",
+      "scope": "Historical pre-rename native build only. Same dependency lock; not a Bristlune installed-workflow result."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false,
+  "discovery": [
+    {
+      "localEvidence": "gperf-current-history.json",
+      "url": "https://gitlab.freedesktop.org/api/v4/projects/tpm%2Fgperf/repository/commits?ref_name=meson&per_page=3",
+      "bytes": 2138,
+      "sha256": "14a03254330e1cde3fc411221e6da3d536dd295efe193dcab23c9a6a62bb1fc4",
+      "meaning": "Read-only historical discovery; current ref/history is not proof of the actual dependency producer checkout"
+    },
+    {
+      "localEvidence": "curl-version-history.json",
+      "url": "https://api.github.com/repos/curl/curl-for-win/commits?path=_versions.sh&until=2021-12-31T23:59:59Z&since=2021-08-24T00:00:00Z&per_page=100",
+      "bytes": 69048,
+      "sha256": "e77478c9ac4286430b4bd70265e537d6ad798c4a75136009df44412dc1a7c622",
+      "meaning": "Read-only historical discovery; current ref/history is not proof of the actual dependency producer checkout"
+    },
+    {
+      "localEvidence": "curl-download-history.json",
+      "url": "https://api.github.com/repos/curl/curl-for-win/commits?path=_dl.sh&until=2021-09-21T23:59:59Z&since=2021-08-20T00:00:00Z&per_page=100",
+      "bytes": 125678,
+      "sha256": "1be0a6dc6c0d493555d809af01d9b7d0f6c63b08a33646faf39e4cb65074a53f",
+      "meaning": "Read-only historical discovery; current ref/history is not proof of the actual dependency producer checkout"
+    }
+  ],
+  "movingBranches": [
+    {
+      "package": "ext_vpx",
+      "repository": "https://github.com/dimula73/libvpx.git",
+      "requestedRef": "meson-2",
+      "currentObservedCommit": "8cad1044d14fe78649a276918bd4dd524a352676",
+      "actualProducerCommit": null,
+      "reason": "Original producer log identifies branch and version 1.13.1 only. Current history predates build but there is no immutable original ref-resolution receipt."
+    },
+    {
+      "package": "ext_gperf",
+      "repository": "https://gitlab.freedesktop.org/tpm/gperf.git",
+      "requestedRef": "meson",
+      "currentObservedCommit": "c24359b4eab86d71c655c3b3fc969f13aac879ce",
+      "actualProducerCommit": null,
+      "reason": "Original producer log identifies branch and version 3.1 only. Current history is not the producer checkout record."
+    }
+  ],
+  "openssl": {
+    "actualProducerCommit": null,
+    "compatibleHistoricalBuilder": "2fb8b5ba0980996bb04d5a779457e45390abe6bc",
+    "repository": "https://github.com/curl/curl-for-win.git",
+    "evidence": "_dl.sh declares _REV=4, OPENSSL_VER_=1.1.1l and strong original source hash; openssl.sh includes Configure prefix patch and options. Exact ZIP README names curl-for-win but no commit. No archived checksum/build receipt binds this builder commit to the ZIP. GitHub release tag 1.1.1l_4 and 7.78.0_4 plus curl.se/windows/dl-7.78.0_4 ZIP returned 404. No inference of producer commit."
+  },
+  "microsoftDebug": {
+    "sourceRequirement": "Microsoft debug redistributables are not treated as LGPL DrMinGW source. Applicable SDK/redistribution terms and exact original producer version remain to be retained if shipped.",
+    "officialReferences": [
+      "https://learn.microsoft.com/en-us/windows/win32/debug/dbghelp-versions",
+      "https://learn.microsoft.com/en-us/windows/win32/debug/calling-the-dbghelp-library"
+    ],
+    "alternative": "Optional whole DrMinGW six-file runtime exclusion has source fallback/import-graph support; requires actual app PE review and installed qualification; no package change in this task."
+  }
+}

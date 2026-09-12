@@ -1,0 +1,444 @@
+{
+  "schema": 1,
+  "licenseReviewComplete": false,
+  "correspondingSourceComplete": false,
+  "scope": "Exact source revisions inferred from immutable recipes and original build source events; source archives/notices remain to be materialized unless a receipt explicitly says otherwise.",
+  "gitInputs": [
+    {
+      "package": "ext_ffmpeg",
+      "target": "ext_ffmpeg",
+      "repository": "https://gitlab.freedesktop.org/gstreamer/meson-ports/ffmpeg.git",
+      "recipeRef": "7601055639e789cdeeff793c48eaaf3186a70aad",
+      "fullCommit": "7601055639e789cdeeff793c48eaaf3186a70aad",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    },
+    {
+      "package": "ext_flac",
+      "target": "ext_flac",
+      "repository": "https://github.com/xiph/flac.git",
+      "recipeRef": "1.4.2",
+      "fullCommit": "b32e5cbf9818ca23dd22aaa75522042c16ea7d17",
+      "sourceArchiveMaterialized": false,
+      "binding": "Original build abbreviated HEAD resolved in the producer repository",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 172874,
+        "text": "HEAD is now at b32e5cbf Release FLAC 1.4.2"
+      },
+      "commitApi": "https://api.github.com/repos/xiph/flac/commits/b32e5cbf",
+      "commitResponseSha256": "99be108efb5ddb70c2d2d3b54074dcd512aeb597189d510b47b3e95dbdacac5c"
+    },
+    {
+      "package": "ext_googleangle",
+      "target": "ext_googleangle_zlib",
+      "repository": "https://github.com/dimula73/google-zlib.git",
+      "recipeRef": "a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0",
+      "fullCommit": "a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    },
+    {
+      "package": "ext_gperf",
+      "target": "ext_gperf",
+      "repository": "https://gitlab.freedesktop.org/tpm/gperf.git",
+      "recipeRef": "meson",
+      "fullCommit": null,
+      "sourceArchiveMaterialized": false,
+      "binding": "UNRESOLVED: original build checks out a moving branch without printing the commit; current branch HEAD is not proof."
+    },
+    {
+      "package": "ext_immer",
+      "target": "ext_immer",
+      "repository": "https://github.com/arximboldi/immer.git",
+      "recipeRef": "42e6beafed53f2ecd971360270f421f9c2e36642",
+      "fullCommit": "42e6beafed53f2ecd971360270f421f9c2e36642",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    },
+    {
+      "package": "ext_lager",
+      "target": "ext_lager",
+      "repository": "https://github.com/dimula73/lager.git",
+      "recipeRef": "0b6ab3e0e880bc36be5da4984d768fde03b7cf19",
+      "fullCommit": "0b6ab3e0e880bc36be5da4984d768fde03b7cf19",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    },
+    {
+      "package": "ext_libtheora",
+      "target": "ext_libtheora",
+      "repository": "https://gitlab.xiph.org/xiph/theora.git",
+      "recipeRef": "7180717276af1ebc7da15c83162d6c5d6203aabf",
+      "fullCommit": "7180717276af1ebc7da15c83162d6c5d6203aabf",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    },
+    {
+      "package": "ext_opus",
+      "target": "ext_opus",
+      "repository": "https://gitlab.xiph.org/xiph/opus.git",
+      "recipeRef": "v1.5.2",
+      "fullCommit": "ddbe48383984d56acd9e1ab6a090c54ca6b735a6",
+      "sourceArchiveMaterialized": false,
+      "binding": "Original build abbreviated HEAD resolved in the producer repository",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 5769,
+        "text": "HEAD is now at ddbe4838 Update DRED REDME.md"
+      },
+      "commitApi": "https://api.github.com/repos/xiph/opus/commits/ddbe4838",
+      "commitResponseSha256": "5f480a8c64cc590b1318a80d0cbea66f48d5198ee353e2e12f983a2936231656"
+    },
+    {
+      "package": "ext_pkgconfig",
+      "target": "ext_pkgconfig",
+      "repository": "https://github.com/pkgconf/pkgconf.git",
+      "recipeRef": "pkgconf-1.9.3",
+      "fullCommit": "8754bdfe0984bc29e53ee856631a42f90f789eb4",
+      "sourceArchiveMaterialized": false,
+      "binding": "Original build abbreviated HEAD resolved in the producer repository",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 28577,
+        "text": "HEAD is now at 8754bdf pkgconf 1.9.3."
+      },
+      "commitApi": "https://api.github.com/repos/pkgconf/pkgconf/commits/8754bdf",
+      "commitResponseSha256": "e15b9f631c55206babec730318056fc6cf94b167e964bbdc91cfcd34a8dfce1d"
+    },
+    {
+      "package": "ext_qt",
+      "target": "ext_qt",
+      "repository": "https://github.com/dimula73/qt5.git",
+      "recipeRef": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "fullCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    },
+    {
+      "package": "ext_seexpr",
+      "target": "ext_seexpr",
+      "repository": "https://invent.kde.org/graphics/kseexpr.git",
+      "recipeRef": "v6.0.0.0",
+      "fullCommit": "9333c7f690c0ed9e5117ea583110ebce64e9ab7a",
+      "sourceArchiveMaterialized": false,
+      "binding": "Original build abbreviated HEAD resolved in the producer repository",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 191883,
+        "text": "HEAD is now at 9333c7f Port CI to Qt6"
+      },
+      "commitApi": "https://invent.kde.org/api/v4/projects/graphics%2Fkseexpr/repository/commits/9333c7f",
+      "commitResponseSha256": "80607c2fb02cd53c6f69e92009e7b052a0e1b444d97b5cf104bb6f07bd55c72a"
+    },
+    {
+      "package": "ext_vpl",
+      "target": "ext_vpl",
+      "repository": "https://github.com/intel/libvpl.git",
+      "recipeRef": "v2.14.0",
+      "fullCommit": "025d43d086a3e663184cb49febe86152bf05409f",
+      "sourceArchiveMaterialized": false,
+      "binding": "Original build abbreviated HEAD resolved in the producer repository",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 8444,
+        "text": "HEAD is now at 025d43d Fix test result summary logic"
+      },
+      "commitApi": "https://api.github.com/repos/intel/libvpl/commits/025d43d",
+      "commitResponseSha256": "1637fcaafa895ec5a42ec2900e74203cd7a06ebacc6129673ac171f768063048"
+    },
+    {
+      "package": "ext_vpx",
+      "target": "ext_vpx",
+      "repository": "https://github.com/dimula73/libvpx.git",
+      "recipeRef": "meson-2",
+      "fullCommit": null,
+      "sourceArchiveMaterialized": false,
+      "binding": "UNRESOLVED: original build checks out a moving branch without printing the commit; current branch HEAD is not proof."
+    },
+    {
+      "package": "ext_zug",
+      "target": "ext_zug",
+      "repository": "https://github.com/arximboldi/zug.git",
+      "recipeRef": "deb266f4c7c35d325de7eb3d033f06e0809495f2",
+      "fullCommit": "deb266f4c7c35d325de7eb3d033f06e0809495f2",
+      "sourceArchiveMaterialized": false,
+      "binding": "full commit in immutable recipe"
+    }
+  ],
+  "qtSubmodules": [
+    {
+      "path": "qtbase",
+      "repository": "https://github.com/dimula73/qtbase.git",
+      "commit": "8bd38fff262805f06b753ea04dd79633315eae7a",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155139,
+        "text": "Submodule path 'qtbase': checked out '8bd38fff262805f06b753ea04dd79633315eae7a'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qtdeclarative",
+      "repository": "https://github.com/dimula73/qtdeclarative.git",
+      "commit": "82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155140,
+        "text": "Submodule path 'qtdeclarative': checked out '82da47b0d46cca3ac8b6ecf6fe0fd1ea21a7fce1'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qtimageformats",
+      "repository": "https://github.com/qt/qtimageformats.git",
+      "commit": "ade536558e868143d615512a6873daabb8e9195b",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155141,
+        "text": "Submodule path 'qtimageformats': checked out 'ade536558e868143d615512a6873daabb8e9195b'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qttools",
+      "repository": "https://github.com/dimula73/qttools.git",
+      "commit": "92c3a8c84ff17c5d2ae263dffb97645fb1a76081",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155144,
+        "text": "Submodule path 'qttools': checked out '92c3a8c84ff17c5d2ae263dffb97645fb1a76081'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qtsvg",
+      "repository": "https://github.com/qt/qtsvg.git",
+      "commit": "4126867385dc0b7a9404dcd69726c28ed0d5e10a",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155143,
+        "text": "Submodule path 'qtsvg': checked out '4126867385dc0b7a9404dcd69726c28ed0d5e10a'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qttranslations",
+      "repository": "https://github.com/qt/qttranslations.git",
+      "commit": "08c7440f513309715ba00db5e0e519a4a59e62ea",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155145,
+        "text": "Submodule path 'qttranslations': checked out '08c7440f513309715ba00db5e0e519a4a59e62ea'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qt5compat",
+      "repository": "https://github.com/dimula73/qt5compat.git",
+      "commit": "2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155138,
+        "text": "Submodule path 'qt5compat': checked out '2ba6eb59f9a1a26ffdbdf9571d5b7b6172062fb9'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "path": "qtshadertools",
+      "repository": "https://github.com/qt/qtshadertools.git",
+      "commit": "1c7a78fd7480f11a49eb8135b44d138edb0f0df8",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 155142,
+        "text": "Submodule path 'qtshadertools': checked out '1c7a78fd7480f11a49eb8135b44d138edb0f0df8'"
+      },
+      "superprojectCommit": "571b5489c7d0987959b8cf81f62df674da79c418",
+      "sourceArchiveMaterialized": false
+    }
+  ],
+  "openColorIOEmbeddedInputs": [
+    {
+      "name": "pystring",
+      "version": "1.1.4",
+      "repository": "https://github.com/imageworks/pystring.git",
+      "commit": "7d16bc814ccb4cad03c300dcb77440034caa84f7",
+      "tree": "45560599e455c95aa1cdf2753b469c6d6f5cfbc3",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 136733,
+        "text": "HEAD is now at 7d16bc8 Merge pull request #34 from jayvdb/readme-shield"
+      },
+      "commitApi": "https://api.github.com/repos/imageworks/pystring/commits/7d16bc8",
+      "commitResponseSha256": "19ae1c62d5321dbe8575b1ec94d8cc1444817f2dfb2f3cf16c14a2cf66770e14",
+      "buildRecipe": {
+        "path": "OpenColorIO-2.5.1/share/cmake/modules/install/Installpystring.cmake",
+        "sha256": "2d3c5d71ed0788a8ee49ffbbc72eec4df39e7457a026989703281a6ab80b581e"
+      },
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "name": "minizip",
+      "version": "4.0.10",
+      "repository": "https://github.com/zlib-ng/minizip-ng.git",
+      "commit": "f3ed731e27a97e30dffe076ed5e0537daae5c1bd",
+      "tree": "6a3321ff30cb81743c520e73fbe284183fe2fa6c",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 136739,
+        "text": "HEAD is now at f3ed731 Version 4.0.10."
+      },
+      "commitApi": "https://api.github.com/repos/zlib-ng/minizip-ng/commits/f3ed731",
+      "commitResponseSha256": "e4a033c3a7f366b72aea0e0cc228a270229302f917a1cbc018734f900d264fde",
+      "buildRecipe": {
+        "path": "OpenColorIO-2.5.1/share/cmake/modules/install/Installminizip-ng.cmake",
+        "sha256": "013bb34d227652b74ee9eda9df83dd82265f6034eee36d54b53c5f86d07192ac"
+      },
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "name": "imath",
+      "version": "3.2.1",
+      "repository": "https://github.com/AcademySoftwareFoundation/Imath.git",
+      "commit": "fbcfb9833fe78277299080e8700fcf749a468bb0",
+      "tree": "b30d7a6017adbb26fb75f6ba75e822522d9559e5",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 136742,
+        "text": "HEAD is now at fbcfb98 bump version to v3.2.1"
+      },
+      "commitApi": "https://api.github.com/repos/AcademySoftwareFoundation/Imath/commits/fbcfb98",
+      "commitResponseSha256": "436976cc17018b3386b623421233aed41d22e50b4f1883463b4d29d214dbecb8",
+      "buildRecipe": {
+        "path": "OpenColorIO-2.5.1/share/cmake/modules/install/InstallImath.cmake",
+        "sha256": "ad68e193c7488d6ed1742e5e89d5c38c8ea2df17c67c4c036afccf545c511714"
+      },
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "name": "yaml-cpp",
+      "version": "0.8.0",
+      "repository": "https://github.com/jbeder/yaml-cpp.git",
+      "commit": "f7320141120f720aecc4c32be25586e7da9eb978",
+      "tree": "1c4757f20f8dd4f5a9d86969bf17bf8cf3a41e99",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 136751,
+        "text": "HEAD is now at f732014 Bump version to 0.8.0."
+      },
+      "commitApi": "https://api.github.com/repos/jbeder/yaml-cpp/commits/f732014",
+      "commitResponseSha256": "460b0551cca687fb15c1583341f25e0dc1d24b1537783f6e26dd983ddb23e554",
+      "buildRecipe": {
+        "path": "OpenColorIO-2.5.1/share/cmake/modules/install/Installyaml-cpp.cmake",
+        "sha256": "526ee0dc6b377a0a6ad8a0ff533eb4a3afe79a519af8f18d63cce2717d94903c"
+      },
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "name": "expat",
+      "version": "2.7.2",
+      "repository": "https://github.com/libexpat/libexpat.git",
+      "commit": "7643f96bd5b9f5d3b26ea112519e05e17ef91cfb",
+      "tree": "4f3ebeaba449579026557e9c68ddf77dc6787ce0",
+      "buildEvent": {
+        "sourceEvents": "evidence/original-windows-source-events.json",
+        "line": 136757,
+        "text": "HEAD is now at 7643f96 Merge pull request #1038 from libexpat/prepare-release"
+      },
+      "commitApi": "https://api.github.com/repos/libexpat/libexpat/commits/7643f96",
+      "commitResponseSha256": "b5f52c5d9de28015058882489c403bcdf0d8c9468e933582982c2d5fb8cd6df6",
+      "buildRecipe": {
+        "path": "OpenColorIO-2.5.1/share/cmake/modules/install/Installexpat.cmake",
+        "sha256": "d873827541ad4099a806bc28a63980fe8633667aade07eb19b48a39e5c9061b3"
+      },
+      "sourceArchiveMaterialized": false
+    }
+  ],
+  "compilerRuntimeInputs": [
+    {
+      "component": "LLVM/libc++/compiler-rt/libunwind/OpenMP",
+      "repository": "https://github.com/llvm/llvm-project.git",
+      "commit": "a832a5222e489298337fbb5876f8dcaf072c5cca",
+      "binding": "Actual original Windows dependency build compiler version output and actual prior application native-build.json compiler output; llvm-mingw 20251118 build-llvm.sh defaults to llvmorg-21.1.6.",
+      "sourceArchiveMaterialized": false
+    },
+    {
+      "component": "mingw-w64/winpthreads/runtime",
+      "repository": "https://github.com/mingw-w64/mingw-w64.git",
+      "commit": "f6a7b25bc70e9c3f5d0a8535ad112b08de564b33",
+      "binding": "Default in build-mingw-w64.sh at locked llvm-mingw build-recipe commit259cd18db3419d4c68571f6edb87828f8dc77894; original LLVM-MinGW release build override evidence not yet reviewed.",
+      "sourceArchiveMaterialized": false
+    }
+  ],
+  "upstreamBuildSubmodules": [
+    {
+      "package": "ext_immer",
+      "line": 3154,
+      "text": "Submodule path 'extra/python/lib/pybind11': checked out '1eaacd19f6de9a053570c21de6d173efc2304bc2'"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3157,
+      "text": "Submodule path 'extra/python/lib/pybind11/tools/clang': checked out '254c7a91e3c6aa254e113197604dafb443f4d429'"
+    },
+    {
+      "package": "ext_immer",
+      "line": 3158,
+      "text": "Submodule path 'tools/sinusoidal-sphinx-theme': checked out 'b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c'"
+    },
+    {
+      "package": "ext_zug",
+      "line": 5310,
+      "text": "Submodule path 'tools/sinusoidal-sphinx-theme': checked out 'b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c'"
+    },
+    {
+      "package": "ext_lager",
+      "line": 120863,
+      "text": "Submodule path 'tools/sinusoidal-sphinx-theme': checked out 'b5adfa2a6def8aa55d95dedc4e1bfde214a5e36c'"
+    }
+  ],
+  "remainingInputs": [
+    {
+      "id": "moving-git",
+      "packages": [
+        "ext_vpx",
+        "ext_gperf"
+      ],
+      "needed": "Original resolved source revision/source cache or independently source-matched producer receipt. Current branch heads cannot close this gap."
+    },
+    {
+      "id": "opaque-prebuilt",
+      "packages": [
+        "ext_openssl",
+        "ext_lzma",
+        "ext_drmingw",
+        "ext_python",
+        "ext_gettext"
+      ],
+      "needed": "OpenSSL1.1.1l_4 curl-for-win source and build patches; XZ5.2.6 Windows source/build notices; DrMinGW0.9.7.1 patched source with libdwarf/zlib and Microsoft debug-runtime redistribution notices; CPython3.13.5 plus PCbuild external source versions and VC runtime notices; gettext0.21/iconv1.16 binary content actually selected (including translations/CLDR)."
+    },
+    {
+      "id": "source-materialization",
+      "needed": "Fetch all selected source tarballs/overlays, preserve recipe hash validation and add SHA256+bytes to source collection plans; materialize every exact Git input and Qt8submodules; include nested OpenColorIO5sources and its pystring build patch plus ANGLE Google-zlib and all vendored third-party source/notices."
+    },
+    {
+      "id": "notices-and-resources",
+      "needed": "Review exact source license notices, Qt bundled third-party attributions, all application resource/archive/font licenses and actual source-file SPDX exceptions; map them to the final installed runtime. The180filename candidates are not complete or reviewed notices."
+    },
+    {
+      "id": "application-and-build",
+      "needed": "Exact final reviewed Bristlune public source archive, full installed-tree metadata from renamed Windows build, build scripts/configuration and installation/rebuild instructions; recipe CI utility commit used in original dependency build must be resolved (current reference checkout is not proof). Normal system build tools need identification, not an invented blanket bit-for-bit reproduction requirement."
+    },
+    {
+      "id": "publication",
+      "needed": "Public immutable source/notice archive delivery with unauthenticated download+hash verification, then release-owner per-runtime-file license/source review. This audit performs neither binary nor source publication."
+    }
+  ]
+}

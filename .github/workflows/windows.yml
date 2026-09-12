@@ -26,6 +26,7 @@ jobs:
           ./packaging/windows/qualification/test_input_guard.ps1
           ./packaging/windows/qualification/test_display_modes.ps1
           ./packaging/windows/qualification/test_qualify.ps1
+          ./packaging/windows/qualification/test_operation_scope.ps1
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python

@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "scope": "All selected dependency PE files; current application native binaries are not local and are not asserted scanned",
+  "runtimeInventory": {
+    "bytes": 1111541,
+    "sha256": "b2608e9351db95f91e99d8d0e2e084bd6ca15394ed8b68ff04d96ded6d9e2b98"
+  },
+  "reader": "/usr/bin/objdump -p, LLVM Mach-O host tool parses COFF; DLL Name tables retained",
+  "sourceFiles": {
+    "krita/main.cc": {
+      "bytes": 42009,
+      "sha256": "e4e10f7288e6400098856be4cf9f3767396f27cf42d6a84894cd451df41f02c6"
+    },
+    "CMakeLists.txt": {
+      "bytes": 64761,
+      "sha256": "c2580d31a1cd3ffd8aa4bad19394c4b213078c2de3041ad99db0e971b15a3cb7"
+    },
+    "packaging/windows/qualification/runtime_stage.py": {
+      "bytes": 6415,
+      "sha256": "8e1013893d9c02d442d764b64ba6ad3074fc86adf426dd4b2a5bde00e250439d"
+    }
+  },
+  "scannedFiles": 341,
+  "fullReceipt": {
+    "bytes": 208494,
+    "sha256": "1bc46be263faf5b5a99f7769e00cda8c277a4a5a7f3a41fa2d7d9a290ba044ab"
+  },
+  "targetImporters": [
+    {
+      "path": "bin/exchndl.dll",
+      "bytes": 136192,
+      "sha256": "b78840faf4ea98118ab2d50ae556ff06ce5958c6597cbda24572c452cb482ad1",
+      "imports": [
+        "KERNEL32.dll",
+        "SHELL32.dll",
+        "VERSION.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "libc++.dll",
+        "mgwhelp.dll"
+      ],
+      "targetImports": [
+        "mgwhelp.dll"
+      ]
+    },
+    {
+      "path": "bin/mgwhelp.dll",
+      "bytes": 958976,
+      "sha256": "50351cf39803eaf0ca6c8ecf78abd1179ede0467bc9069cdaeeaf01776d9ad6d",
+      "imports": [
+        "KERNEL32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "dbghelp.dll",
+        "libc++.dll"
+      ],
+      "targetImports": [
+        "dbghelp.dll"
+      ]
+    }
+  ],
+  "targetFiles": [
+    {
+      "path": "bin/dbgcore.dll",
+      "bytes": 166576,
+      "sha256": "db947c07167069d3de9e8a637baf01298984355d775ec49801115d7e5f2e47a3",
+      "imports": [
+        "api-ms-win-core-debug-l1-1-0.dll",
+        "api-ms-win-core-errorhandling-l1-1-0.dll",
+        "api-ms-win-core-file-l1-1-0.dll",
+        "api-ms-win-core-handle-l1-1-0.dll",
+        "api-ms-win-core-heap-l1-1-0.dll",
+        "api-ms-win-core-interlocked-l1-1-0.dll",
+        "api-ms-win-core-libraryloader-l1-1-0.dll",
+        "api-ms-win-core-localregistry-l1-1-0.dll",
+        "api-ms-win-core-memory-l1-1-0.dll",
+        "api-ms-win-core-misc-l1-1-0.dll",
+        "api-ms-win-core-processthreads-l1-1-0.dll",
+        "api-ms-win-core-profile-l1-1-0.dll",
+        "api-ms-win-core-string-l1-1-0.dll",
+        "api-ms-win-core-synch-l1-1-0.dll",
+        "api-ms-win-core-sysinfo-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "ntdll.dll"
+      ],
+      "targetImports": []
+    },
+    {
+      "path": "bin/dbghelp.dll",
+      "bytes": 1938072,
+      "sha256": "3d92df0984662298a09d988aff0bb7c3081a46bf48177b7af02d3552641f77e9",
+      "imports": [
+        "api-ms-win-core-debug-l1-1-0.dll",
+        "api-ms-win-core-errorhandling-l1-1-0.dll",
+        "api-ms-win-core-file-l1-1-0.dll",
+        "api-ms-win-core-handle-l1-1-0.dll",
+        "api-ms-win-core-heap-l1-1-0.dll",
+        "api-ms-win-core-interlocked-l1-1-0.dll",
+        "api-ms-win-core-io-l1-1-0.dll",
+        "api-ms-win-core-libraryloader-l1-1-0.dll",
+        "api-ms-win-core-localization-l1-1-0.dll",
+        "api-ms-win-core-localregistry-l1-1-0.dll",
+        "api-ms-win-core-memory-l1-1-0.dll",
+        "api-ms-win-core-misc-l1-1-0.dll",
+        "api-ms-win-core-processenvironment-l1-1-0.dll",
+        "api-ms-win-core-processthreads-l1-1-0.dll",
+        "api-ms-win-core-profile-l1-1-0.dll",
+        "api-ms-win-core-rtlsupport-l1-1-0.dll",
+        "api-ms-win-core-string-l1-1-0.dll",
+        "api-ms-win-core-synch-l1-1-0.dll",
+        "api-ms-win-core-synch-l1-2-0.dll",
+        "api-ms-win-core-sysinfo-l1-1-0.dll",
+        "api-ms-win-core-util-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-security-base-l1-1-0.dll",
+        "ntdll.dll"
+      ],
+      "targetImports": []
+    },
+    {
+      "path": "bin/exchndl.dll",
+      "bytes": 136192,
+      "sha256": "b78840faf4ea98118ab2d50ae556ff06ce5958c6597cbda24572c452cb482ad1",
+      "imports": [
+        "KERNEL32.dll",
+        "SHELL32.dll",
+        "VERSION.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "libc++.dll",
+        "mgwhelp.dll"
+      ],
+      "targetImports": [
+        "mgwhelp.dll"
+      ]
+    },
+    {
+      "path": "bin/mgwhelp.dll",
+      "bytes": 958976,
+      "sha256": "50351cf39803eaf0ca6c8ecf78abd1179ede0467bc9069cdaeeaf01776d9ad6d",
+      "imports": [
+        "KERNEL32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "dbghelp.dll",
+        "libc++.dll"
+      ],
+      "targetImports": [
+        "dbghelp.dll"
+      ]
+    },
+    {
+      "path": "bin/symsrv.dll",
+      "bytes": 250008,
+      "sha256": "29a56215afc5aecfc4ca1663302905bdfe7957cde65c0766e6130e28d7d0c0a1",
+      "imports": [
+        "ADVAPI32.dll",
+        "CRYPT32.dll",
+        "KERNEL32.dll",
+        "RPCRT4.dll",
+        "SHLWAPI.dll",
+        "WS2_32.dll",
+        "api-ms-win-core-debug-l1-1-0.dll",
+        "api-ms-win-core-errorhandling-l1-1-0.dll",
+        "api-ms-win-core-file-l1-1-0.dll",
+        "api-ms-win-core-handle-l1-1-0.dll",
+        "api-ms-win-core-heap-l1-1-0.dll",
+        "api-ms-win-core-libraryloader-l1-1-0.dll",
+        "api-ms-win-core-localregistry-l1-1-0.dll",
+        "api-ms-win-core-memory-l1-1-0.dll",
+        "api-ms-win-core-misc-l1-1-0.dll",
+        "api-ms-win-core-processenvironment-l1-1-0.dll",
+        "api-ms-win-core-processthreads-l1-1-0.dll",
+        "api-ms-win-core-profile-l1-1-0.dll",
+        "api-ms-win-core-rtlsupport-l1-1-0.dll",
+        "api-ms-win-core-string-l1-1-0.dll",
+        "api-ms-win-core-synch-l1-1-0.dll",
+        "api-ms-win-core-sysinfo-l1-1-0.dll",
+        "api-ms-win-security-base-l1-1-0.dll",
+        "bcrypt.dll",
+        "msvcrt.dll",
+        "ntdll.dll"
+      ],
+      "targetImports": []
+    }
+  ]
+}

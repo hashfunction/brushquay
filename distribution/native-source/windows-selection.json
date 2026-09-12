@@ -1,0 +1,643 @@
+{
+  "schema": 1,
+  "lockSha256": "d5e55c6a274120aafa905b28868ccc4e7285be86ab4af3ea0174321347f23265",
+  "recipeCommit": "993af62fdf291eaec05a1824d9b420782717fc44",
+  "recipeTree": "c7c208f011a7123df1b99d6fe7f59276b5025e84",
+  "scope": "Reviewed static Windows x86_64 MinGW/Clang source-call selection. Call indices are zero-based; all recipe files and all patches are collected, not merely these declarations. This is not an executed dependency rebuild.",
+  "packages": {
+    "ext_boost": {
+      "fileSha256": "b2715358dc6d038af2caaaee7991d4c106bd175410e0673e9ae8de7ecc81ae2e",
+      "callCount": 4,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_brotli": {
+      "fileSha256": "b65d717c05d8ef0345597d725080d85281a52d8a0e9df4ee59ead0bde35f52e2",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_dlfcn_win32": {
+      "fileSha256": "bb8cdae99e667d637a18a18c9f02c421bd3e489af23ec32cee07d49f53b79f67",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_drmingw": {
+      "fileSha256": "9ebf00aa2f3d2ac59d852277ee75fd79b0ac47dcbf009ce7a32af84a54dd5bd4",
+      "callCount": 3,
+      "windowsCalls": [
+        0,
+        1
+      ],
+      "prebuiltCalls": {
+        "0": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_eigen3": {
+      "fileSha256": "d59360a77037b365c1666cbee35ef3c3198ee5e8f94c4e92e0d317c65748c8a6",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_exiv2": {
+      "fileSha256": "93ea98d260839d85b8eec5096b3aa712550493ad3f0928302aa44bbb93559678",
+      "callCount": 3,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_expat": {
+      "fileSha256": "2ba086ecdc862cee274ab27a7c331668711cc5785aa237807f288b62300e6a80",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_extra_cmake_modules": {
+      "fileSha256": "0fe08186cfe6c359826ac702c4fca6c549761180bda625ac9ac5cc4b3d74b9c1",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_ffmpeg": {
+      "fileSha256": "2dc330b7f12263b7b38bf89d0faee8124ed54978249042edcc6a1ca0a84ca88d",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_fftw3": {
+      "fileSha256": "952229135f1e9c5e623de17d48b9d7aeab6e0f2b57687fbc83d4a5cbc7cf2f58",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_flac": {
+      "fileSha256": "c30a5ee1e07668c49565183cf9cffb0538ad5b1455d8c287425417d16c7aff4c",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_fontconfig": {
+      "fileSha256": "bb8128b9739349db9e455ed7491e30a15bbb67c9b6a4c50df808b5e88c999f7c",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_freetype": {
+      "fileSha256": "57dadb1b480eea2548b1d7bed41dad73e4ca5acec217bdaafb63c507be1acc3e",
+      "callCount": 3,
+      "windowsCalls": [
+        0,
+        1,
+        2
+      ]
+    },
+    "ext_fribidi": {
+      "fileSha256": "a8289aaa31730e112ff6ea97d0899a116a85f4eb83fd7efa52a8500b83063c68",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_gettext": {
+      "fileSha256": "7b002905065d29e06f009660122090e975427c7c3eb1dfe0b366cdfd15c95113",
+      "callCount": 3,
+      "windowsCalls": [
+        0,
+        1
+      ],
+      "prebuiltCalls": {
+        "0": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_giflib": {
+      "fileSha256": "0ed70cd1a93d2735982e58c58e7cb75fd7b9408f0e8833be291354c316d1f9fc",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_googleangle": {
+      "fileSha256": "a04bb0c9858ee65ee5f080625f434e5d3d5bf5a1f68b392da9d4c7b305f7530a",
+      "callCount": 2,
+      "windowsCalls": [
+        0,
+        1
+      ]
+    },
+    "ext_gperf": {
+      "fileSha256": "3b6dd1d91c187e60e6aee210779b816ce7535bf3fab9edffc96a7fe2874615e5",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_gsl": {
+      "fileSha256": "93b06edd887df9f60b1a594aacfa97ef6f1627b575a4e5fbc2d25b8187a35183",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_highway": {
+      "fileSha256": "fb9972ada607550d2072a11c32c131e46d6f6d6e77d22f27ea1cde0022654e03",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_iconv": {
+      "fileSha256": "91880ed626454172e1d27c89e34214a51a8840ba6e748f7687c9255f3667a3d4",
+      "callCount": 2,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_icoutils": {
+      "fileSha256": "a4301b28d5d2ac4c500ef6883510bc53e140355503bb4d116999fe902d69bd70",
+      "callCount": 2,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_icu": {
+      "fileSha256": "218e41aa277587f7f570160f24120a1292a734b8bf669384ae96e5d5208e0c39",
+      "callCount": 2,
+      "windowsCalls": [
+        0,
+        1
+      ]
+    },
+    "ext_immer": {
+      "fileSha256": "7a4468642dfb3aae3071c50fbaed556839074aed9d9b07b03cf9b0f27fe4e07f",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_jpeg": {
+      "fileSha256": "cde19c407718cd0253f93bc97892073150075da6573131bc78418046147b8147",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_jpegxl": {
+      "fileSha256": "a954c5dabc31c2637722b19450666d76a5b2965219004417199ad0065be4a507",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_json_c": {
+      "fileSha256": "b332896c93dff4c254d6c02e0fb0192f21928267099d46db744cc549db8f211e",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_karchive": {
+      "fileSha256": "cd6aee92b52e8fc583cf1fe10f09b75f9c336ed80e2984667e2f12be792fec52",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kcodecs": {
+      "fileSha256": "5cb48f32b28c93e1e9425cb15027e8aacdcb84bec0cfb2301c050ceeaf4ab317",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kcolorscheme": {
+      "fileSha256": "4d7de70ae64b9e173c41d17f1d28a5731dbaa9e721c87f3985c8fa9038bd462f",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kcompletion": {
+      "fileSha256": "3ea0cd196eef8fe873cff866b78e62d3edf6a88724d46adf359f57c6c8f18fc9",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kconfig": {
+      "fileSha256": "67859fad1dc772e8a26eb7cee410c27f94f20b9a300720a624b4da3a42420b2d",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kcoreaddons": {
+      "fileSha256": "ef44e03b644bd1dcc3f6987e0ee306610b2c44949bff5ae7332d5579e96bc86b",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kdcraw": {
+      "fileSha256": "3bcc5bd4957d014349fc5821350eb52b8b73b5a0b1e14f66bf0585219d6e4e01",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kguiaddons": {
+      "fileSha256": "ec7d74e2a2766004482cad95a66329dc29df737f04fde1e56c22fd4476680996",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_ki18n": {
+      "fileSha256": "f2b6784eb41c71dc4ee223f29d23031fe6068c9a80d836df0f83f41632e33ae1",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kimageformats": {
+      "fileSha256": "ef5da556be72106d436b48460ebd28de06954ee893738cbb55e10333a6520f8e",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kitemmodels": {
+      "fileSha256": "3adc7153c338336ecabd39c77e531c123f30fdc4b9128c3ec49a65fbeb5739e4",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kitemviews": {
+      "fileSha256": "e5bfe491e50dd9e6c1a2972f9b31faeef415902df4c03a0a17cd23ba6a5982be",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kwidgetsaddons": {
+      "fileSha256": "3ba82ced827613faa818d96e7df060ceb43691ffe255d94d6ed071f4921af09d",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_kwindowsystem": {
+      "fileSha256": "46bb6d33df6b9781dc227da5f8a9747abd7765eab9ffcf27ac78b432799349a0",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_lager": {
+      "fileSha256": "99c8c755e2ebe50071a920a7551ee0014e7609d26a31c36bba8174de65478b2e",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_lame": {
+      "fileSha256": "76b923d91468d5c99406bf61e0d66a94ca121afb0164009f1329c06faf2a7b2b",
+      "callCount": 2,
+      "windowsCalls": [
+        0,
+        1
+      ]
+    },
+    "ext_lcms2": {
+      "fileSha256": "7f29640a3ac9e130b9ee55227db4918408952242c477d234e92c51464ee4a928",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libaom": {
+      "fileSha256": "aad7676b222bbdb45ffe740f2f2d919c2996e37d1a436314d75e07724d065fd2",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libde265": {
+      "fileSha256": "678c93cff1fefff7cf2114c68e35404106bf5e6ba3c4acc002b893332dce94c0",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libheif": {
+      "fileSha256": "32b43293b9d2e5788577e8134cca24624898e2c556c7d39baf2e8d983d5ff539",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libogg": {
+      "fileSha256": "5bfbf071e1cae10b19618416170e511b5d6825b6773af7247d397fc09c0913ea",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libraw": {
+      "fileSha256": "04a910431585a12d8ccf67e4fc4151088576fdae81b2925dc1e24e6857308b75",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libtheora": {
+      "fileSha256": "3dcde4774b3d216898d047b1ed8feb1a5cc9a09d4030fd5106ac14ce48b4af2a",
+      "callCount": 2,
+      "windowsCalls": [
+        0,
+        1
+      ]
+    },
+    "ext_libvorbis": {
+      "fileSha256": "2227aadb2ea249a72bb83d951199054e1c0c8583760e5d7ac5057cced7ac3cfa",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libx265": {
+      "fileSha256": "3cee684251d38033a541a5d9c55aa71e8885cd7a7cddbcaafad5fea1166e1fea",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libx265_10bit": {
+      "fileSha256": "72f23a182b12767bf6ea1311b4092cf3865b13d982953a6f4060185a5d02020b",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_libx265_12bit": {
+      "fileSha256": "bdee1805e772657a1b2535a39119867c0c11650b881a69f7479ebffe87e6821c",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_lzma": {
+      "fileSha256": "5d06811b9e5ed5ca6581311ce7dbc757e6d4950245a3d18bef7af42a291c1533",
+      "callCount": 2,
+      "windowsCalls": [
+        0
+      ],
+      "prebuiltCalls": {
+        "0": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_mlt": {
+      "fileSha256": "7b36753100b5ceb153be3316cf5513eb0f3f098ca28331c27491c29cf006cf1b",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_mypaint": {
+      "fileSha256": "5b799166a7f2fc8af358d5d9a360560cf6d6cc763a014784483b530ab99c59de",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_nasm": {
+      "fileSha256": "9f9fad4b1fe3af08f1953e24bdb57da3058ccc7becc065ed931c39618fd91b39",
+      "callCount": 2,
+      "windowsCalls": [
+        0
+      ],
+      "prebuiltCalls": {
+        "0": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_ocio": {
+      "fileSha256": "2dd5a5fc33ca001f8392c0f8ebec705e2f581f65c10106e3a27da6ec09e6acb9",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_openexr": {
+      "fileSha256": "3a372e8ce43a96faa55485fad33a44840783b6f0beb3db617244b3637ebe7d2a",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_openh264": {
+      "fileSha256": "eafaa3728a06616861c24c015e528dd7f5621654761629e4a20146e41d044f9a",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_openjpeg": {
+      "fileSha256": "7f917eb0e363622d3fba253e6718a014c4ff03b834d1513c05ba06deec26ff83",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_openssl": {
+      "fileSha256": "65fc6ca966f11576ec392a24b30c95e1a44fe128b781e0457b90ef4c5e84a76b",
+      "callCount": 4,
+      "windowsCalls": [
+        1
+      ],
+      "prebuiltCalls": {
+        "1": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_opus": {
+      "fileSha256": "7e8678b7b919b72270252d8ca39033c4c394ea3716534431d227e4dde4beab5e",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_patch": {
+      "fileSha256": "4c8df3c934d759a47c2ce8f765b72a2a2ecb1857a45a277946572614620dc2df",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ],
+      "prebuiltCalls": {
+        "0": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_pkgconfig": {
+      "fileSha256": "7b4955067d2f322e9e394d31d57e0cbc4d94b622a377db49392b38185d6b5d11",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_png": {
+      "fileSha256": "b07b7362528e527821a037480b02f21322d92cb6abf52a43e8944c593354012a",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_poppler": {
+      "fileSha256": "78b86e16f47895cf7ebc590c4613f045a5d29c299e33dcb622961c0843cd9832",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_pyqt-builder": {
+      "fileSha256": "a47a2a0dc23a2dd9f88bbe899a376763f89ae3081cc81fb81175de14128c0bd4",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_pyqt6": {
+      "fileSha256": "0bc46531505231a2f9a41fcfe36fbd8dd5f8cf70b488f482b0b7750412894600",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_pyqt6-sip": {
+      "fileSha256": "f4a11aeba87ccd239b6e8db6888061ac0502370e347308a3d9fa205e881c0ed7",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_python": {
+      "fileSha256": "251d2ea8155db00d052eb25a8ddb705691665f596fa2fde4e1e6276cb184cc11",
+      "callCount": 3,
+      "windowsCalls": [
+        2
+      ],
+      "prebuiltCalls": {
+        "2": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_qt": {
+      "fileSha256": "ab0d9c4ca4ecc22af4a49a5a567b8e0f061b368f0c4ce2d06ebae5c1cba3e025",
+      "callCount": 4,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_quazip": {
+      "fileSha256": "bf08770f74e80011216245bd01b7ac1d1074d04fdc34cbc870a056e03190baf1",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_sdl2": {
+      "fileSha256": "19cc343fce4ecefaf018270c2645d42fc495db7e79597509eddb43365217ccd1",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_seexpr": {
+      "fileSha256": "69743629b508399c3d6ddb2ab7d78941f2987493a05b1fa98f3652085b1ab1cf",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_sip": {
+      "fileSha256": "98985e85c9b0d8242afe1b3c0c5996281bdfc5abba7a5f2a84493e0acf6d0d3f",
+      "callCount": 2,
+      "windowsCalls": [
+        1
+      ]
+    },
+    "ext_strawberryperl": {
+      "fileSha256": "69242a3a3bdeca7897d01beb3f256080690e806f29ca45e07fc6283c900cf613",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ],
+      "prebuiltCalls": {
+        "0": "prebuilt-input-not-corresponding-source"
+      }
+    },
+    "ext_tiff": {
+      "fileSha256": "3a83b6486712e740c498df4723eaba0867987857c0831c19c75b0a24e63a1f9b",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_unibreak": {
+      "fileSha256": "6ee7f558861605e0be3ab4095196177d684530c12bbb3eba7931702e71e7f960",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_vpl": {
+      "fileSha256": "42d737505e3c04ef61cc3c7cc3c53cf812d7a3617fc1b09b414aa0c760b4c066",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_vpx": {
+      "fileSha256": "74085d0722436686dce74c3a09f4d8780194f3d3315f11c4f478b559fa53b511",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_webp": {
+      "fileSha256": "4cd9e299fe1b8f57a87dfcec11402e6f71ffadb62589d807cd8289d82a9999bd",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_xsimd": {
+      "fileSha256": "48ae4e1088418225c22902c7333108cb8e5bb588deeae8bd172f7a48f7f1d555",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_zlib": {
+      "fileSha256": "e11ae4aa59f0298f984f34dc96aca741575486639e27a5dbe2e9418656749aee",
+      "callCount": 2,
+      "windowsCalls": [
+        0
+      ]
+    },
+    "ext_zug": {
+      "fileSha256": "2779fbb08fc2a8882214323367b44d1fbb6722ab0cc7847afd7404d867753550",
+      "callCount": 1,
+      "windowsCalls": [
+        0
+      ]
+    }
+  }
+}

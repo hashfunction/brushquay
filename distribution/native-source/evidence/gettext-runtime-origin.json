@@ -1,0 +1,848 @@
+[
+  {
+    "runtimePath": "bin/intl.dll",
+    "bytes": 378368,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/bin/intl.dll",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "ad57d7bb7ff7933b81b01839801a73006c622d6adadab72ad68c6636efdb5da1",
+    "originalPrebuiltMember": null,
+    "prebuiltMatch": false
+  },
+  {
+    "runtimePath": "bin/locale/be/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 25636,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/be/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "4b65bd0f70f18ca3a01c9b194435b421a85af77ecbd1750d47fd1f458ddb349e",
+    "originalPrebuiltMember": "share/locale/be/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/be.po",
+      "bytes": 199449,
+      "sha256": "da65a0dca7684688b03a83d5f7aaef1d5ade702ddba2ca1dddc3c083e2c7bbbd"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/bg/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 145971,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/bg/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "a034afe48147035fbe8d9d91163e468d5a5beddea7cb59eb4a3278aa093b77d8",
+    "originalPrebuiltMember": "share/locale/bg/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/bg.po",
+      "bytes": 202933,
+      "sha256": "4c70ad828114e2d6feac02e38da17b737f3573116218a6c976a9cb0f25e9d162"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/ca/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 119953,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/ca/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "3b50903185b28af189528f336e9d55b70326e913376fbbeb008a4458338524fb",
+    "originalPrebuiltMember": "share/locale/ca/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/ca.po",
+      "bytes": 192993,
+      "sha256": "aec89ca305136f719e35d277586252a06596f9c10bb5fac2e99988a188f2f36c"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/cs/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 6377,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/cs/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "ed7d2bc6269eb185d68aa6cd215ca50a12523a24d3d8f380a2f1bcd63b7775f5",
+    "originalPrebuiltMember": "share/locale/cs/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/cs.po",
+      "bytes": 162789,
+      "sha256": "f322c6c4f9bff7b28cefcf199635c99eed465248efcc856e0e82bab584ed4989"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/da/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 87105,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/da/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "7aa387622f5d7f7a88edf7a60a76e8596a571a72bce0f23ff5c753897cbef021",
+    "originalPrebuiltMember": "share/locale/da/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/da.po",
+      "bytes": 176533,
+      "sha256": "4861fda7395cfb82e2621e2629c96ea0aa8f526b0d52ddf5efc8c48d1829cf99"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/de/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 121783,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/de/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "ee47380eb8ebe33b6befac5290f1d65ac6560dedfdc303efb2ea2a6a9468333b",
+    "originalPrebuiltMember": "share/locale/de/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/de.po",
+      "bytes": 182612,
+      "sha256": "f55c2234047f4f19d5ed8bd1497bca283039a7274bebfbff7048ba1ea31e9d6b"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/el/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 3898,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/el/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "b1a6a12e5a4c4c46fd2699e6094a9ec0553acf8573b839db6d260314cbc06f80",
+    "originalPrebuiltMember": "share/locale/el/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/el.po",
+      "bytes": 142849,
+      "sha256": "75ea18665a1b54475201daf27e8a42c560fb9e1a040fe3fd02d96cabd659f1d7"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/en@boldquot/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 121615,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/en@boldquot/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "44809a641d21344ba950e48373f32619cc92606c188a26ac6680bccd7fcbc410",
+    "originalPrebuiltMember": "share/locale/en@boldquot/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/en@boldquot.po",
+      "bytes": 169274,
+      "sha256": "3895910f4cf0c253d9242b76587a21a254e38719add82d0f6d9b07db151f7a19"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/en@quot/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 119691,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/en@quot/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "e83260c2308ea6bd9b83595b5b0bd9102e692b40bfbc450f006e86351a387c04",
+    "originalPrebuiltMember": "share/locale/en@quot/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/en@quot.po",
+      "bytes": 167072,
+      "sha256": "40821343012eaee49b241e68b6d96e6e726b4be2861a9a70760ce3f515de8206"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/es/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 123220,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/es/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "1f81e923489c3f8d0ff45f9c3b54746192fc58cd310657183a8b15ebedcad2f5",
+    "originalPrebuiltMember": "share/locale/es/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/es.po",
+      "bytes": 190771,
+      "sha256": "abae1fb748a430661782092778db8b8437e5adcc40e8d850592083bf4b0fda11"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/et/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 6194,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/et/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "3d4193efbf029364c3d571c214199cafed8f808d7af89065caaf57cb294c2f0e",
+    "originalPrebuiltMember": "share/locale/et/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/et.po",
+      "bytes": 135631,
+      "sha256": "148a02a21e9b545a7bf7a62c2870aa9d0b011f47ba5bd08c79a227e13c6c3fc6"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/eu/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 51844,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/eu/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "8c7d64cd93c059802a96982f0338327013be00ba47f08fb4b10d29b64d9608dc",
+    "originalPrebuiltMember": "share/locale/eu/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/eu.po",
+      "bytes": 158158,
+      "sha256": "6983894b12e91160858047097e2d7c9801db13fbb135595b1c8073c116c9df6f"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/fi/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 108667,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/fi/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "5a0ebcaef4d62d597f0227a7811999ef4b09a44a8714e05d0104400a4a12be63",
+    "originalPrebuiltMember": "share/locale/fi/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/fi.po",
+      "bytes": 194124,
+      "sha256": "d33955933da9164320c406f5490275e31140258b6825310155b19cd2699d658c"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/fr/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 124508,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/fr/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "ce14c56766e8f0c2278b4856ce64ac39b59dab10abec9a5761980d0d35c39323",
+    "originalPrebuiltMember": "share/locale/fr/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/fr.po",
+      "bytes": 181440,
+      "sha256": "efb509f04e0fd6d30800d2e9fc3107a4fa1ab41e70be7c768a0d28df63536ad2"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/gl/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 22354,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/gl/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "952432b62dedf2c832fedfba90c0a7cfffb5363d083797c2bc19fc5f5b656145",
+    "originalPrebuiltMember": "share/locale/gl/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/gl.po",
+      "bytes": 154230,
+      "sha256": "d8b3828d07c76fabb4db69eb10f57fa62bfc8b0a9eba0bc0fb1cf37f4da98867"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/id/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 89326,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/id/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "31dcb0bff509c4d5b6733c5c14fb1897e730558f4af47bf592d61e80a88338bc",
+    "originalPrebuiltMember": "share/locale/id/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/id.po",
+      "bytes": 200412,
+      "sha256": "cc8ccd8426e9a82e3d2cb494be57fdc8d4ec11594ed82bc8c62c19ae13d1f1ad"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/it/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 105947,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/it/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "f60430bb4dede9f6b5ddfca0e0acbbc7997ae4f72705c8afa86353a3fe4004c2",
+    "originalPrebuiltMember": "share/locale/it/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/it.po",
+      "bytes": 177651,
+      "sha256": "a3f9e716265bb7068bed44ed105539d3467ca6c0d53d098eb8e31d563cce78f6"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/ja/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 109793,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/ja/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "9b6a81bc68888754a901b910ee8a338fc8d6d8fbdb0c27d140b9342975a80784",
+    "originalPrebuiltMember": "share/locale/ja/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/ja.po",
+      "bytes": 164979,
+      "sha256": "2d33c7b74bf67d31b338b1b382447c2434dddcf9e31bbc98a3c132d34e9bb87f"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/ko/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 122891,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/ko/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "475ae09e2bfed1420d891e0a3594a98b37de4daffee5c27535ac483e2f769047",
+    "originalPrebuiltMember": "share/locale/ko/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/ko.po",
+      "bytes": 178897,
+      "sha256": "f2260b72641ab0dbacdde69ed2550dcaec27f0ca076e3fd56d6bdd93b15c96d8"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/locale.alias",
+    "bytes": 3101,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/locale.alias",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "ba78ca39646c8e4cae1918c66cb97f2098a4030984cf81368dfbd4e79d18e815",
+    "originalPrebuiltMember": "share/locale/locale.alias",
+    "prebuiltMatch": true
+  },
+  {
+    "runtimePath": "bin/locale/nb/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 18007,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/nb/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "281ca4d1abbda990d5bd44a72b479a45497cab752adac6384097e83a842cf8da",
+    "originalPrebuiltMember": "share/locale/nb/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/nb.po",
+      "bytes": 146920,
+      "sha256": "29e00122ec36cd00c2f2b1476ba6b566c1a4a15232dc04c670cad05588f01d0d"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/nl/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 51683,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/nl/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "5e847926fa83d60791d0a46d4d1537d3eb57f637383ee81612cecc6704d0baa4",
+    "originalPrebuiltMember": "share/locale/nl/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/nl.po",
+      "bytes": 141832,
+      "sha256": "f27ec4ff473a2384acc3f378a9aba0ae641bdac53f4109852043c42cbb5f5550"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/nn/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 12582,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/nn/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "8e1c1992b39e52d4e380f1327e3e4d755704d87c3c967d607463eb3864c5b2d6",
+    "originalPrebuiltMember": "share/locale/nn/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/nn.po",
+      "bytes": 149018,
+      "sha256": "76ddd72bd5baa6c3afb1a943f2f166ae88fd8992c361cf027e0712cdf4e95cb4"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/pa/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 27756,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/pa/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "f951f78f760f21dec736000e81f3a8376141c665ac759b2eb9a184ef117f66c7",
+    "originalPrebuiltMember": "share/locale/pa/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/pa.po",
+      "bytes": 140586,
+      "sha256": "cd613fa03cf0d739f0563271a35614e387a5cdf858ef6c880d5c92c94da12631"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/pl/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 118211,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/pl/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "45e5f0286b522cf4bd43fa88c20b4b1649f0a3fba4ae447b6f360830cc6c34f9",
+    "originalPrebuiltMember": "share/locale/pl/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/pl.po",
+      "bytes": 174539,
+      "sha256": "f2dce6be77b16d78f9d0406564c852753b9e92b58adeb1c90946d99c27955424"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/pt/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 117662,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/pt/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "130196f261278a058fb696d53daf2105119457e29ceaa2483abe9606176ec754",
+    "originalPrebuiltMember": "share/locale/pt/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/pt.po",
+      "bytes": 196397,
+      "sha256": "4d49f422a73e7723dbe2693e0ad511f1794f8c7c84637af22b6cff5d8da9c453"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/pt_BR/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 121234,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/pt_BR/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "2235aad8ca2d418973613527d39166f20679feccbfc574ffdb9ecdf2182dc94a",
+    "originalPrebuiltMember": "share/locale/pt_BR/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/pt_BR.po",
+      "bytes": 193174,
+      "sha256": "f2ab8433ee53ae8edee1fd1418aac8bcb8c1aa351df60e6d74e92652539e88d6"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/ro/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 65753,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/ro/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "42a0a55f765af6e5fde3ff8d0169294f05f902e88b7699cf8c533c4d7952acb5",
+    "originalPrebuiltMember": "share/locale/ro/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/ro.po",
+      "bytes": 187848,
+      "sha256": "1a80ad4ebfda95bf48b475bde9ec1a7d644ff3f2d377322e487b778ece39e026"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/ru/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 152383,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/ru/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "afd2dcb2b69a3f046a2e7215eca03738f4eb29f5a277d6e6e731ed1f6e77bc9d",
+    "originalPrebuiltMember": "share/locale/ru/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/ru.po",
+      "bytes": 212451,
+      "sha256": "983d98481e8cf9be324942b8c99aceae81d073aa59a5237823754bb5d84f0b5c"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/sk/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 119249,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/sk/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "07c89acaec259d55f1b23878e36e91a82c50996402540cf27d70af02b5bbab19",
+    "originalPrebuiltMember": "share/locale/sk/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/sk.po",
+      "bytes": 175138,
+      "sha256": "e1d92f2dc0212504130f551f37b97c4739bf06a277d96b458a35f6ffaaa10e09"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/sl/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 111455,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/sl/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "806234377d8790dd76398737d5623432de43c646b361a93e4bf86337e308eb2f",
+    "originalPrebuiltMember": "share/locale/sl/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/sl.po",
+      "bytes": 234214,
+      "sha256": "2a335f319c5f569be62cb1a69078a34f1f0a2302be81a3adb89b94d143e15b42"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/sr/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 146729,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/sr/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "0ab5b1aa885d438ab6b3da9a5e7cbd6b45e8ebeb5bb42ad8db4340e96d0f4f9a",
+    "originalPrebuiltMember": "share/locale/sr/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/sr.po",
+      "bytes": 205126,
+      "sha256": "96e19959ba4075429c2e7ad01f4adfd68bbd762de321482e402e8f6e0c749e68"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/sv/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 112412,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/sv/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "081ade4353c8869d41c2633906aaa84bfbbfb586c0cb4fa38012f3f7381a9eb8",
+    "originalPrebuiltMember": "share/locale/sv/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/sv.po",
+      "bytes": 168438,
+      "sha256": "96c63fc42cace437bae841442b3593dc7c85e4e0cb0ce512c05126de41d37265"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/tr/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 82919,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/tr/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "aac3e5febb33577e8ac82ea0bcb9461263d3547368fbcfdec00b7e444eb16a63",
+    "originalPrebuiltMember": "share/locale/tr/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/tr.po",
+      "bytes": 183337,
+      "sha256": "a0d1bb510626f7c847aa91f14e8a496f854554104ac29ae1dc2007836eed5c7c"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/uk/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 147537,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/uk/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "8b058d606c426dd0b30585c64900aa7702325160c7b9a9c1fd80e8a5c391c82b",
+    "originalPrebuiltMember": "share/locale/uk/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/uk.po",
+      "bytes": 204672,
+      "sha256": "3609e4eceb834bfa6165bcfe555e1bf416647385658c684aeeede7045c54c2de"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/vi/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 127119,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/vi/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "e9e44c643e15490656695e51819ede4e916fbb96e005579941bd6d039aa84f51",
+    "originalPrebuiltMember": "share/locale/vi/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/vi.po",
+      "bytes": 193268,
+      "sha256": "e6ec8e14058b8ef909e9f5ba72dd7d90982d7ac4c499837b703405b4e360fe93"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/zh_CN/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 110744,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/zh_CN/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "cd8d30613f7947f575ddbb734d6fab5bd683294ef824f3eba37db50457d3e80b",
+    "originalPrebuiltMember": "share/locale/zh_CN/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/zh_CN.po",
+      "bytes": 167181,
+      "sha256": "7e73325393d2f03048da6554df809bc460e89cab9af330d524037ee75cf22099"
+    }
+  },
+  {
+    "runtimePath": "bin/locale/zh_TW/LC_MESSAGES/gettext-tools.mo",
+    "bytes": 112311,
+    "inputs": [
+      {
+        "owners": [
+          "ext_gettext"
+        ],
+        "path": "deps/share/locale/zh_TW/LC_MESSAGES/gettext-tools.mo",
+        "tree": "locked"
+      }
+    ],
+    "sha256": "97eac11851e301ee4436f2d92c071d78f1a8a75e0c6fa36e442b2b94540097a2",
+    "originalPrebuiltMember": "share/locale/zh_TW/LC_MESSAGES/gettext-tools.mo",
+    "prebuiltMatch": true,
+    "correspondingTranslationSource": {
+      "archiveSha256": "d20fcbb537e02dcf1383197ba05bd0734ef7bf5db06bdb241eb69b7d16b73192",
+      "path": "gettext-0.21/gettext-tools/po/zh_TW.po",
+      "bytes": 170674,
+      "sha256": "6d2e880247dd1aabbf4aae76e86ee2a0e7b74974302ac25ad0964457bcf6322d"
+    }
+  }
+]

@@ -74,6 +74,8 @@ function Invoke-InstalledQualification([string]$Python){
         fixtureLease=$null;profileLease=$null;certificate=$null;certificateHash=$null;trusted=$false;signedCopy=$null;signedHash=$null;unsigned=$null;unsignedHash=$null;
         displayOriginalMode=$null;displayDevice=$null;displayRestoreRequired=$false;displayEvidence=$null;displayRestoreError=$null;sdk=$null}
     $state.noActivationProof=Join-Path $work 'no-activation.json';Write-NewJson $state.noActivationProof @{ownedProcessesStopped=$true;activationAttempted=$false}
+    # Callbacks run synchronously before this scope returns. Keep script-local
+    # helpers visible; GetNewClosure creates a dynamic module that loses them.
     $ops=[ordered]@{}
     $ops.Preflight={
         Assert-NoExistingProfile
@@ -101,21 +103,21 @@ function Invoke-InstalledQualification([string]$Python){
         foreach($name in @('GuiProbe.cs','InputGuard.cs','OwnedJob.cs')){$arguments+=(Join-Path $PSScriptRoot $name)}
         Invoke-Native $csc $arguments
         $state.probeHash=Measure-File $state.probe
-    }.GetNewClosure()
+    }
     $ops.PreparePackage={
         $state.stage=Join-Path $work 'package'
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'prepare.py'),'--source',$source,'--output',$state.stage,'--evidence',(Join-Path $evidence 'package'),'--sdk-tools',$state.sdkLock,'--commit',$state.commit,'--run',$run,'--attempt',$attempt)
         $state.packageRecord=Join-Path $state.stage 'package-record.json';$state.record=Get-Content -LiteralPath $state.packageRecord -Raw|ConvertFrom-Json
         if($state.record.qualificationOnly -ne $true -or $state.record.identity.PackageName -cne 'Trieflow.Bristlune.Qualification' -or $state.record.identity.Publisher -cne 'CN=Bristlune-CI-Qualification' -or $state.record.identity.Version -cne '1.0.1.0'){throw 'Disposable package identity differs'}
         $state.unsigned=Join-Path $state.stage 'Bristlune.Qualification_1.0.1.0_x64.msix';$state.unsignedHash=$state.record.package;Assert-File $state.unsigned $state.unsignedHash
-    }.GetNewClosure()
+    }
     $ops.OwnFixtureProfile={
         Assert-NoExistingProfile
         $state.fixture=Join-Path $env:RUNNER_TEMP ('.bristlune-artwork-'+[guid]::NewGuid().ToString('N'));$state.fixtureLease=Join-Path $work 'fixture-lease.json'
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'begin','--root',$state.fixture,'--kind','fixture','--output',$state.fixtureLease)
         $state.profileLease=Join-Path $work 'profile-lease.json'
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'begin','--root',$state.profile,'--kind','profile','--output',$state.profileLease)
-    }.GetNewClosure()
+    }
     $ops.SignAndInstall={
         $state.signedCopy=Join-Path $work 'Bristlune.Qualification.signed.msix';[IO.File]::Copy($state.unsigned,$state.signedCopy,$false)
         $state.certificate=New-SelfSignedCertificate -Type Custom -KeyUsage DigitalSignature -KeyExportPolicy NonExportable -KeySpec Signature -CertStoreLocation 'Cert:\CurrentUser\My' -TextExtension @('2.5.29.37={text}1.3.6.1.5.5.7.3.3','2.5.29.19={text}') -Subject 'CN=Bristlune-CI-Qualification' -FriendlyName ('Bristlune disposable '+$tag) -NotAfter (Get-Date).AddHours(12)
@@ -137,7 +139,7 @@ function Invoke-InstalledQualification([string]$Python){
         if($registered.Count -ne 1 -or $registered[0].PackageFamilyName -cne $state.family -or $registered[0].Publisher -cne 'CN=Bristlune-CI-Qualification' -or $registered[0].Version.ToString() -cne '1.0.1.0' -or $registered[0].Architecture.ToString() -ine 'X64'){throw 'Installed identity does not match the disposable package'}
         $state.packageFullName=$registered[0].PackageFullName;$state.installLocation=$registered[0].InstallLocation;$state.ownedRegistration=$true
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'verify_installed.py'),'--root',$state.installLocation,'--record',$state.packageRecord,'--output',(Join-Path $evidence 'installed-files.json'))
-    }.GetNewClosure()
+    }
     $ops.ConsumerWorkflow={
         Get-ExactRegistration $state|Out-Null;Assert-NoExistingProfile
         foreach($lease in @($state.fixtureLease,$state.profileLease)){Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'verify','--lease',$lease)}
@@ -151,27 +153,27 @@ function Invoke-InstalledQualification([string]$Python){
         if(-not $state.observer.WaitForExit(600000)){throw 'Standalone installed UI observer exceeded ten minutes'}
         $proofPath=Read-StopProof $state;$proof=Get-Content -LiteralPath $proofPath -Raw|ConvertFrom-Json
         if($state.observer.ExitCode -ne 0 -or $proof.passed -ne $true -or $proof.normalClosePassed -ne $true -or $proof.normalExitCode -ne 0){throw 'Actual installed creation/painting/export/reopen/normal-close workflow failed; see gui-observations.json'}
-    }.GetNewClosure()
+    }
     $ops.VerifyFiles={
         Read-StopProof $state|Out-Null;Assert-NoExistingProfile
         $lease=Get-Content -LiteralPath $state.fixtureLease -Raw|ConvertFrom-Json;$protected=Join-Path $work 'protected.json';Write-NewJson $protected $lease.protected
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'workflow_files.py'),'--root',$state.fixture,'--protected',$protected,'--output',(Join-Path $evidence 'artwork-verification.json'))
         Assert-File $state.unsigned $state.unsignedHash;Assert-File $state.signedCopy $state.signedHash
         Invoke-Native $Python @((Join-Path $PSScriptRoot 'verify_installed.py'),'--root',$state.installLocation,'--record',$state.packageRecord,'--output',(Join-Path $evidence 'installed-files-after-close.json'))
-    }.GetNewClosure()
-    $ops.Uninstall={Invoke-OwnedUninstall $state $Python}.GetNewClosure()
+    }
+    $ops.Uninstall={Invoke-OwnedUninstall $state $Python}
     $ops.StopObserver={
         if($state.observer){if(-not $state.observer.HasExited){$state.observer.Kill();if(-not $state.observer.WaitForExit(15000)){throw 'Retained observer did not stop'}};$state.observer.Dispose();$state.observer=$null}
-    }.GetNewClosure()
-    $ops.UninstallIfNeeded={Invoke-OwnedUninstall $state $Python}.GetNewClosure()
-    $ops.RestoreDisplay={Restore-GuiDisplay $state}.GetNewClosure()
+    }
+    $ops.UninstallIfNeeded={Invoke-OwnedUninstall $state $Python}
+    $ops.RestoreDisplay={Restore-GuiDisplay $state}
     $ops.RemoveFixture={
         if($state.fixtureLease -and (Test-Path -LiteralPath $state.fixtureLease)){
             $proof=Read-StopProof $state;$sealed=Join-Path $work 'fixture-sealed.json'
             Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'seal','--lease',$state.fixtureLease,'--proof',$proof,'--output',$sealed)
             Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'clean','--sealed',$sealed,'--proof',$proof)
         }
-    }.GetNewClosure()
+    }
     $ops.RemoveProfile={
         if($state.profileLease -and (Test-Path -LiteralPath $state.profileLease)){
             $proof=Read-StopProof $state
@@ -185,7 +187,7 @@ function Invoke-InstalledQualification([string]$Python){
             }
             if(Test-Path -LiteralPath $state.profile){throw 'Owned private package profile remains'}
         }
-    }.GetNewClosure()
+    }
     $ops.RemoveCertificates={
         if($state.certificate){
             foreach($store in @('Cert:\LocalMachine\TrustedPeople\','Cert:\CurrentUser\My\')){
@@ -196,14 +198,14 @@ function Invoke-InstalledQualification([string]$Python){
             }
             if($state.ContainsKey('cerHash') -and (Test-Path -LiteralPath $state.cer)){Assert-File $state.cer $state.cerHash;[IO.File]::Delete($state.cer)}
         }
-    }.GetNewClosure()
+    }
     $ops.RemoveSignedCopy={
         if($state.unsigned){Assert-File $state.unsigned $state.unsignedHash}
         if($state.signedCopy -and (Test-Path -LiteralPath $state.signedCopy)){
             if(-not $state.signedHash){throw 'Signing did not establish final signed bytes; retain temporary copy for recovery'}
             Assert-File $state.signedCopy $state.signedHash;[IO.File]::Delete($state.signedCopy)
         }
-    }.GetNewClosure()
+    }
     $result=Invoke-QualificationCore $ops
     $result.sourceCommit=if($state.ContainsKey('commit')){$state.commit}else{$null};$result.workflowRunId=$run;$result.workflowRunAttempt=$attempt
     $result.qualificationOnly=$true;$result.licenseReviewComplete=$false;$result.correspondingSourceComplete=$false

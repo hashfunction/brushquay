@@ -1,0 +1,2504 @@
+{
+  "correspondingSourceComplete": false,
+  "dependencyRuntime": {
+    "bytes": 1092903138,
+    "fileCount": 4235,
+    "inventorySha256": "b2608e9351db95f91e99d8d0e2e084bd6ca15394ed8b68ff04d96ded6d9e2b98",
+    "scope": "Dependency selection only; final application/native installed tree is separate.",
+    "selectorSha256": "8e1013893d9c02d442d764b64ba6ad3074fc86adf426dd4b2a5bde00e250439d"
+  },
+  "kind": "bristlune-native-source-trace",
+  "licenseReviewComplete": false,
+  "lockSha256": "d5e55c6a274120aafa905b28868ccc4e7285be86ab4af3ea0174321347f23265",
+  "lockedFileCount": 59134,
+  "noticeDiscovery": {
+    "candidateCount": 180,
+    "inventorySha256": "6b9199577840a9c843a34b731e5edf0dc41b94f30004e41bb9acb31aa9fef14f",
+    "scope": "Filename candidates only; missing notices and nested licenses remain open."
+  },
+  "packageCount": 90,
+  "packages": [
+    {
+      "binarySha256": "d16f4dd4b6b61a72cf63ea725d0d1e416258ae7b2176b8fd08363a7feb9d4991",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894474",
+      "name": "ext_boost",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 8426,
+        "mode": 420,
+        "path": "recipes/ext_boost/CMakeLists.txt",
+        "sha256": "b2715358dc6d038af2caaaee7991d4c106bd175410e0673e9ae8de7ecc81ae2e"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://archives.boost.io/release/1.81.0/source/boost_1_81_0.tar.bz2",
+          "URL_HASH": "SHA256=71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa",
+          "callIndex": 0,
+          "declarationSha256": "33f9e9934f683fe12f4dfbcef31aff01b59c2b473ecbc80a149fe3c83da9f0c2",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 32,
+          "target": "ext_boost"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d6f13052e1ef7b179ebf0f204d60d6ae8e927a99ba939f7963bc737a8e53b184",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894510",
+      "name": "ext_brotli",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1084,
+        "mode": 420,
+        "path": "recipes/ext_brotli/CMakeLists.txt",
+        "sha256": "b65d717c05d8ef0345597d725080d85281a52d8a0e9df4ee59ead0bde35f52e2"
+      },
+      "runtimeSelectedFileCount": 3,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "brotli-v1.1.0.tar.gz",
+          "URL": "https://github.com/google/brotli/archive/v1.1.0.tar.gz",
+          "URL_HASH": "SHA256=e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff",
+          "callIndex": 0,
+          "declarationSha256": "07f98076b031b7e2d80020356abc5034af0d2d25b717c6958615b2a3ffd325cf",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 20,
+          "target": "ext_brotli"
+        }
+      ]
+    },
+    {
+      "binarySha256": "e29b0ecd20ed2a27e0a1cf09ce95aa84a684a0da937e2178b44ca212d2246554",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893972",
+      "name": "ext_dlfcn_win32",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 657,
+        "mode": 420,
+        "path": "recipes/ext_dlfcn_win32/CMakeLists.txt",
+        "sha256": "bb8cdae99e667d637a18a18c9f02c421bd3e489af23ec32cee07d49f53b79f67"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "dlfcn_win32-v1.3.1.zip",
+          "URL": "https://github.com/dlfcn-win32/dlfcn-win32/archive/refs/tags/v1.3.1.zip",
+          "URL_HASH": "SHA256=4f611c4372eef7f0179a33f76f84d54857c4fe676b60b654c6c5d91a6d4dad55",
+          "callIndex": 0,
+          "declarationSha256": "f7fca7e8793c1ae70e0777de7484b2da9d4b7e7caa1e48be1bd5be43cf7b082a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 10,
+          "target": "ext_dlfcn_win32"
+        }
+      ]
+    },
+    {
+      "binarySha256": "3b8259758792b6ffa18724075da13d5e43b6533e3b0a091d72ff83ef09b6ba2f",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893993",
+      "name": "ext_drmingw",
+      "noticeCandidates": [
+        "deps/doc/LICENSE-libdwarf.txt",
+        "deps/doc/LICENSE-zlib.txt",
+        "deps/doc/LICENSE.txt"
+      ],
+      "recipeFile": {
+        "bytes": 3393,
+        "mode": 420,
+        "path": "recipes/ext_drmingw/CMakeLists.txt",
+        "sha256": "9ebf00aa2f3d2ac59d852277ee75fd79b0ac47dcbf009ce7a32af84a54dd5bd4"
+      },
+      "runtimeSelectedFileCount": 6,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/jrfonseca/drmingw/releases/download/0.9.7/drmingw-0.9.7-win64.7z",
+          "URL_HASH": "SHA256=ff1a62ebc9e0662c7ba7f30141efa047e6ee43a5f1a613f671b0971ba772d597",
+          "callIndex": 0,
+          "declarationSha256": "826b79dd791b418214522a95274079805f198e92554e4a3b21be03719fe60c0d",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 13,
+          "target": "ext_drmingw_deps"
+        },
+        {
+          "URL": "https://github.com/amyspark/drmingw/releases/download/0.9.7.1/drmingw-0.9.7.1-patched.tar.gz",
+          "URL_HASH": "SHA256=998848da2f490bfea455f804ccc3f08bc5d5d0fee7813b406c658451ce6da532",
+          "callIndex": 1,
+          "declarationSha256": "59bedb5418c8d92b59cd0973703e8e7edf158ebd4a6dc03e6499771d35888039",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 26,
+          "target": "ext_drmingw"
+        }
+      ]
+    },
+    {
+      "binarySha256": "89213ae92ada6583157b89f2042c60eaa54e0aa7f47af85e5c114a79d351d763",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893522",
+      "name": "ext_eigen3",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 658,
+        "mode": 420,
+        "path": "recipes/ext_eigen3/CMakeLists.txt",
+        "sha256": "d59360a77037b365c1666cbee35ef3c3198ee5e8f94c4e92e0d317c65748c8a6"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+          "URL_HASH": "SHA256=8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+          "callIndex": 0,
+          "declarationSha256": "862a03631bdd62835c2fb5a2e5bb2fcfa6251f9dd2a46331f898b6db7cd15cb9",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_eigen3"
+        }
+      ]
+    },
+    {
+      "binarySha256": "10301590812e3fb45b3bf4ead4a0a69d34f20d7babd49034f15868d9d3959d12",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894582",
+      "name": "ext_exiv2",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 2839,
+        "mode": 420,
+        "path": "recipes/ext_exiv2/CMakeLists.txt",
+        "sha256": "93ea98d260839d85b8eec5096b3aa712550493ad3f0928302aa44bbb93559678"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/Exiv2/exiv2/releases/download/v0.27.5/exiv2-0.27.5-Source.tar.gz",
+          "URL_HASH": "SHA256=35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2",
+          "callIndex": 1,
+          "declarationSha256": "aa92c731c6371493d388c0bb03bb016a1bcd372fe607a9a8dfb02194a4d3a43a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 36,
+          "target": "ext_exiv2"
+        }
+      ]
+    },
+    {
+      "binarySha256": "0876cec1863500a62f0581e2b35c5f309c3d2a317ac7ec063782051653628946",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893538",
+      "name": "ext_expat",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 723,
+        "mode": 420,
+        "path": "recipes/ext_expat/CMakeLists.txt",
+        "sha256": "2ba086ecdc862cee274ab27a7c331668711cc5785aa237807f288b62300e6a80"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/libexpat/libexpat/releases/download/R_2_4_8/expat-2.4.8.tar.xz",
+          "URL_HASH": "SHA256=f79b8f904b749e3e0d20afeadecf8249c55b2e32d4ebb089ae378df479dcaf25",
+          "callIndex": 0,
+          "declarationSha256": "319ba183f89226816546da01483c1ab6b1449a999386c90817d501dedd0e62b4",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_expat"
+        }
+      ]
+    },
+    {
+      "binarySha256": "1df96abe59c847572603ae1b7d491c23b8c9bdaac168f34590aaac8b73259e1b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894601",
+      "name": "ext_extra_cmake_modules",
+      "noticeCandidates": [
+        "deps/share/ECM/kde-modules/kde-git-commit-hooks/combined.schema.json.in.license",
+        "deps/share/ECM/modules/ECMGeneratePythonBindings.toml.in.license",
+        "deps/share/ECM/modules/ECMQmlModule.cpp.in.license",
+        "deps/share/ECM/modules/ECMQmlModule.h.in.license",
+        "deps/share/ECM/toolchain/deployment-file-qt6.json.in.license"
+      ],
+      "recipeFile": {
+        "bytes": 1370,
+        "mode": 420,
+        "path": "recipes/ext_extra_cmake_modules/CMakeLists.txt",
+        "sha256": "0fe08186cfe6c359826ac702c4fca6c549761180bda625ac9ac5cc4b3d74b9c1"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/extra-cmake-modules-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=ffeb4951bf09b2b8ee17ef24a28b6de650c0db0f59ddffb9009b37cac63af348",
+          "callIndex": 0,
+          "declarationSha256": "6c41d8c29575e7a01acc12315b6b2e0a99207cbdef4d6d43d0c0a62cfae49df6",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_extra_cmake_modules"
+        }
+      ]
+    },
+    {
+      "binarySha256": "1b275992dace0c159c72bc0ca9772d6a83d3b5c0a6b64dab6595092ec2381cdd",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899691",
+      "name": "ext_ffmpeg",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 5301,
+        "mode": 420,
+        "path": "recipes/ext_ffmpeg/CMakeLists.txt",
+        "sha256": "2dc330b7f12263b7b38bf89d0faee8124ed54978249042edcc6a1ca0a84ca88d"
+      },
+      "runtimeSelectedFileCount": 6,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://gitlab.freedesktop.org/gstreamer/meson-ports/ffmpeg.git",
+          "GIT_TAG": "7601055639e789cdeeff793c48eaaf3186a70aad",
+          "callIndex": 0,
+          "declarationSha256": "70ff5987ab3773be29b4c38cf497cc81f61cf3f98d62a8454e1b6d5b3e50622f",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 27,
+          "target": "ext_ffmpeg"
+        }
+      ]
+    },
+    {
+      "binarySha256": "8027ea9cbf2a5f5b516ec33dd36d88cb1af668cf402927f5cdfbdda929700eec",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894675",
+      "name": "ext_fftw3",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1112,
+        "mode": 420,
+        "path": "recipes/ext_fftw3/CMakeLists.txt",
+        "sha256": "952229135f1e9c5e623de17d48b9d7aeab6e0f2b57687fbc83d4a5cbc7cf2f58"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://fftw.org/fftw-3.3.10.tar.gz",
+          "URL_HASH": "SHA256=56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467",
+          "callIndex": 0,
+          "declarationSha256": "b2bb237609ab1982bf096019a9a04a2a8cac30475247fbaa5cccc323785a67da",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 21,
+          "target": "ext_fftw3"
+        }
+      ]
+    },
+    {
+      "binarySha256": "741ea83c2f2693293e9d8550b8e9bb48719d98ccb950479cab033981a9ccf91f",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898353",
+      "name": "ext_flac",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1189,
+        "mode": 420,
+        "path": "recipes/ext_flac/CMakeLists.txt",
+        "sha256": "c30a5ee1e07668c49565183cf9cffb0538ad5b1455d8c287425417d16c7aff4c"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/xiph/flac.git",
+          "GIT_TAG": "1.4.2",
+          "callIndex": 0,
+          "declarationSha256": "556c133f3d5b87b2fb2381ec8bd724354cb8670026b4ef04845ac99dee42dd5d",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_flac"
+        }
+      ]
+    },
+    {
+      "binarySha256": "75d27764d35d356f1d5c8468d498095ff73645ddfd34bcbc7085e1d22a06561b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898901",
+      "name": "ext_fontconfig",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1323,
+        "mode": 420,
+        "path": "recipes/ext_fontconfig/CMakeLists.txt",
+        "sha256": "bb8128b9739349db9e455ed7491e30a15bbb67c9b6a4c50df808b5e88c999f7c"
+      },
+      "runtimeSelectedFileCount": 24,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.0.tar.gz",
+          "URL_HASH": "SHA256=b8f607d556e8257da2f3616b4d704be30fd73bd71e367355ca78963f9a7f0434",
+          "callIndex": 0,
+          "declarationSha256": "97d62ff2f6e0aa176ba60882edf2e0a7000e722dc00d6630064d0b156075abff",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 12,
+          "target": "ext_fontconfig"
+        }
+      ]
+    },
+    {
+      "binarySha256": "3461c4365d782a64944e45832bbe0ac479a60c36162296f27597741e44b910b6",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788896237",
+      "name": "ext_freetype",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 3590,
+        "mode": 420,
+        "path": "recipes/ext_freetype/CMakeLists.txt",
+        "sha256": "57dadb1b480eea2548b1d7bed41dad73e4ca5acec217bdaafb63c507be1acc3e"
+      },
+      "runtimeSelectedFileCount": 4,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://downloads.sourceforge.net/project/freetype/freetype2/2.12.1/freetype-2.12.1.tar.xz",
+          "URL_HASH": "SHA256=4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f",
+          "callIndex": 0,
+          "declarationSha256": "99e2abc08ca309e4c78647b1cc5afe1e6baecccf7f90d6dadb22c5d18761cd65",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 20,
+          "target": "ext_freetype_bootstrap"
+        },
+        {
+          "URL": "https://github.com/harfbuzz/harfbuzz/releases/download/5.3.1/harfbuzz-5.3.1.tar.xz",
+          "URL_HASH": "SHA256=4a6ce097b75a8121facc4ba83b5b083bfec657f45b003cd5a3424f2ae6b4434d",
+          "callIndex": 1,
+          "declarationSha256": "cebb7c8f1fa4f2f29c77ad99b312f07347cd055cce740a2ca9dd26ab872a259f",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 47,
+          "target": "ext_harfbuzz"
+        },
+        {
+          "URL": "https://downloads.sourceforge.net/project/freetype/freetype2/2.12.1/freetype-2.12.1.tar.xz",
+          "URL_HASH": "SHA256=4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f",
+          "callIndex": 2,
+          "declarationSha256": "f95e106ce3e6afba9bd0de8b73dcfa48129cb0db61a5043d7e8b3bea657123bc",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 73,
+          "target": "ext_freetype"
+        }
+      ]
+    },
+    {
+      "binarySha256": "81b63c7841d5d5ee37e61239aad5ab0624eee018f617fca0dd4397f45d8d9462",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893551",
+      "name": "ext_fribidi",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 773,
+        "mode": 420,
+        "path": "recipes/ext_fribidi/CMakeLists.txt",
+        "sha256": "a8289aaa31730e112ff6ea97d0899a116a85f4eb83fd7efa52a8500b83063c68"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/fribidi/fribidi/releases/download/v1.0.11/fribidi-1.0.11.tar.xz",
+          "URL_HASH": "SHA256=30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d",
+          "callIndex": 0,
+          "declarationSha256": "120169313b17407bb2198ac843717baad17022039856fce5a08091139187211e",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 11,
+          "target": "ext_fribidi"
+        }
+      ]
+    },
+    {
+      "binarySha256": "9a2b1d4aa53cc04876ce33b004b69f05a7fdfc38bed4b40da1dd02b8ddd96baf",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894114",
+      "name": "ext_gettext",
+      "noticeCandidates": [
+        "deps/cldr-license.txt",
+        "deps/gettext-license.txt",
+        "deps/iconv-license.txt"
+      ],
+      "recipeFile": {
+        "bytes": 2421,
+        "mode": 420,
+        "path": "recipes/ext_gettext/CMakeLists.txt",
+        "sha256": "7b002905065d29e06f009660122090e975427c7c3eb1dfe0b366cdfd15c95113"
+      },
+      "runtimeSelectedFileCount": 39,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/mlocati/gettext-iconv-windows/releases/download/v0.21-v1.16/gettext0.21-iconv1.16-static-64.zip",
+          "URL_HASH": "SHA256=721395c2e057eeed321f0c793311732e57cb4fa30d5708672a13902a69a77d43",
+          "callIndex": 0,
+          "declarationSha256": "f4b0d81b36392617f88a793fab928bc71bdde28340364cd9bcb15eea004bd01a",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 10,
+          "target": "ext_gettext_bin"
+        },
+        {
+          "URL": "https://files.kde.org/krita/build/dependencies/gettext-0.21.tar.xz",
+          "URL_MD5": "40996bbaf7d1356d3c22e33a8b255b31",
+          "callIndex": 1,
+          "declarationSha256": "3bfd85f787a5026ccacd1729c8ee9d133c18fb3916a71623f583b57d48e245f5",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 23,
+          "target": "ext_gettext_lib"
+        }
+      ]
+    },
+    {
+      "binarySha256": "e9450ec71d36903f23020bd0f932e96cd399e20d7a8b11b68649fc9d02a53b3d",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894695",
+      "name": "ext_giflib",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 740,
+        "mode": 420,
+        "path": "recipes/ext_giflib/CMakeLists.txt",
+        "sha256": "0ed70cd1a93d2735982e58c58e7cb75fd7b9408f0e8833be291354c316d1f9fc"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://sourceforge.net/projects/giflib/files/giflib-5.x/giflib-5.2.1.tar.gz/download",
+          "URL_MD5": "6f03aee4ebe54ac2cc1ab3e4b0a049e5",
+          "callIndex": 0,
+          "declarationSha256": "39cac7691c666a4f05a12123171414e2079da179aef881a602111d9c9ba39783",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_giflib"
+        }
+      ]
+    },
+    {
+      "binarySha256": "15fde455b0733b971e43fb3a5014c03110c8526b6da086b7d6d4970c3e16e3cb",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788896160",
+      "name": "ext_googleangle",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 8801,
+        "mode": 420,
+        "path": "recipes/ext_googleangle/CMakeLists.txt",
+        "sha256": "a04bb0c9858ee65ee5f080625f434e5d3d5bf5a1f68b392da9d4c7b305f7530a"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "angle-f2280c0c5f935dccbaf528343d474c8fcdebe63a.tar.gz",
+          "URL": "https://github.com/google/angle/archive/f2280c0c5f935dccbaf528343d474c8fcdebe63a.tar.gz",
+          "URL_HASH": "SHA256=9d3ff60560b953dae7d7613b69dda643aef62390574114fdb1c9d4eada672049",
+          "callIndex": 0,
+          "declarationSha256": "2680a532bff9621cef0672517f38efb9aa564459641d78a7bc7c522a1bf6b4c0",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 60,
+          "target": "ext_googleangle"
+        },
+        {
+          "GIT_REPOSITORY": "https://github.com/dimula73/google-zlib.git",
+          "GIT_TAG": "a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0",
+          "callIndex": 1,
+          "declarationSha256": "99088dc45a406190ad386b752779244ed3a80deb432fe2ccd152b080933ce831",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 126,
+          "target": "ext_googleangle_zlib"
+        }
+      ]
+    },
+    {
+      "binarySha256": "0da95193a64fdc2cdc5e83949c656dc23a8ecc2ba22417b042736f2651b8c779",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894015",
+      "name": "ext_gperf",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 684,
+        "mode": 420,
+        "path": "recipes/ext_gperf/CMakeLists.txt",
+        "sha256": "3b6dd1d91c187e60e6aee210779b816ce7535bf3fab9edffc96a7fe2874615e5"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://gitlab.freedesktop.org/tpm/gperf.git",
+          "GIT_TAG": "meson",
+          "callIndex": 0,
+          "declarationSha256": "38e6172a226e13ad56e07a5276c067be422f041eab317e0ac2dbbe2e03d28694",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 11,
+          "target": "ext_gperf"
+        }
+      ]
+    },
+    {
+      "binarySha256": "fe927071c9db7030a0fe6b021d806eb169a5289cc817ec9e60d4d8ef74135f65",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894772",
+      "name": "ext_gsl",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1695,
+        "mode": 420,
+        "path": "recipes/ext_gsl/CMakeLists.txt",
+        "sha256": "93b06edd887df9f60b1a594aacfa97ef6f1627b575a4e5fbc2d25b8187a35183"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "gsl-8eac3b0b5cffb90004a729f0675011e718f41379.zip",
+          "URL": "https://github.com/ampl/gsl/archive/8eac3b0b5cffb90004a729f0675011e718f41379.zip",
+          "URL_HASH": "SHA256=124bf79bfd2c3cb07df02a2b0e80e13d29a94cab8acae1c2c1e086474381a6c2",
+          "callIndex": 1,
+          "declarationSha256": "859544bbdfebfa105726664322700f5dea8a5d2c42121c3856c52d6c0609cda7",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 28,
+          "target": "ext_gsl"
+        }
+      ]
+    },
+    {
+      "binarySha256": "f8edfb888d576a7de72f960d5c0378f644d3bdaa30de98b4d0454e892bb19036",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893645",
+      "name": "ext_highway",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1144,
+        "mode": 420,
+        "path": "recipes/ext_highway/CMakeLists.txt",
+        "sha256": "fb9972ada607550d2072a11c32c131e46d6f6d6e77d22f27ea1cde0022654e03"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "highway-1.1.0.tar.gz",
+          "URL": "https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz",
+          "URL_HASH": "SHA256=354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9",
+          "callIndex": 0,
+          "declarationSha256": "78111e1d990d2f8fc5d3a664b20cc13709399b8ad76ea637d046d65233657a50",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 20,
+          "target": "ext_highway"
+        }
+      ]
+    },
+    {
+      "binarySha256": "8419fe0b38cda38ec38168dda54bfe05373679fc62c8a93a20d858cc0c6787f6",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893915",
+      "name": "ext_iconv",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1128,
+        "mode": 420,
+        "path": "recipes/ext_iconv/CMakeLists.txt",
+        "sha256": "91880ed626454172e1d27c89e34214a51a8840ba6e748f7687c9255f3667a3d4"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "win-iconv-v0.0.8.tar.gz",
+          "URL": "https://github.com/win-iconv/win-iconv/archive/v0.0.8.tar.gz",
+          "URL_MD5": "e4574721c2d9667af32283175c828833",
+          "callIndex": 0,
+          "declarationSha256": "4fe8a92d923c69aa53f05c7acf86bf4fa15d4559dbef5e380c888bc281dd0e16",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 14,
+          "target": "ext_iconv"
+        }
+      ]
+    },
+    {
+      "binarySha256": "216a1a27c8ba61647f57845d08e7ddc84caca2b56dd49f258ab09d3f9d436a5c",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788896173",
+      "name": "ext_icoutils",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1751,
+        "mode": 420,
+        "path": "recipes/ext_icoutils/CMakeLists.txt",
+        "sha256": "a4301b28d5d2ac4c500ef6883510bc53e140355503bb4d116999fe902d69bd70"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.kde.org/krita/build/dependencies/icoutils-0.32.3.tar.bz2",
+          "URL_HASH": "SHA256=17abe02d043a253b68b47e3af69c9fc755b895db68fdc8811786125df564c6e0",
+          "callIndex": 0,
+          "declarationSha256": "d527b6f63c84c4c2bf0782a22c97b8d25215660b3437ca6ba51f87c8440bf000",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 16,
+          "target": "ext_icoutils"
+        }
+      ]
+    },
+    {
+      "binarySha256": "3eaa0a7e0d5967200392115afe1aebc9bbc41c2a3ea349a53ba46d836917580c",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894899",
+      "name": "ext_icu",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 2573,
+        "mode": 420,
+        "path": "recipes/ext_icu/CMakeLists.txt",
+        "sha256": "218e41aa277587f7f570160f24120a1292a734b8bf669384ae96e5d5208e0c39"
+      },
+      "runtimeSelectedFileCount": 4,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "icu_72.1-2_patch.zip",
+          "URL": "https://wrapdb.mesonbuild.com/v2/icu_72.1-2/get_patch",
+          "URL_HASH": "SHA256=60451c5db7a25d2cb0ada6e216ba528fbd39839e80a01cb018c548a0afb2bf83",
+          "callIndex": 0,
+          "declarationSha256": "aa7ce4075542739a91882441539a0b847ca5a2581110f5adff796f9b773933e0",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 11,
+          "target": "ext_icu_meson"
+        },
+        {
+          "URL": "https://github.com/unicode-org/icu/releases/download/release-72-1/icu4c-72_1-src.tgz",
+          "URL_HASH": "SHA256=a2d2d38217092a7ed56635e34467f92f976b370e20182ad325edea6681a71d68",
+          "callIndex": 1,
+          "declarationSha256": "65e91367a87eeb9cb87cbe0ddbd7eac4290d5d1c5587824a1e06146a793c4e3e",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 27,
+          "target": "ext_icu"
+        }
+      ]
+    },
+    {
+      "binarySha256": "63d559e48bbd490ef1d3e20f90d29a89a2e4dce498a7ffd78f6263a9facde678",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893670",
+      "name": "ext_immer",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 632,
+        "mode": 420,
+        "path": "recipes/ext_immer/CMakeLists.txt",
+        "sha256": "7a4468642dfb3aae3071c50fbaed556839074aed9d9b07b03cf9b0f27fe4e07f"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/arximboldi/immer.git",
+          "GIT_TAG": "42e6beafed53f2ecd971360270f421f9c2e36642",
+          "callIndex": 0,
+          "declarationSha256": "09ca956a3717d4cf6d5868c5b0ca0f051a145e6acda20443b1cfc586a3a6795a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_immer"
+        }
+      ]
+    },
+    {
+      "binarySha256": "0b21ff2f4101144c1beabec88d692f390ed2890f330d7531fe9d02044a19f73f",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893690",
+      "name": "ext_jpeg",
+      "noticeCandidates": [
+        "deps/share/doc/libjpeg-turbo/LICENSE.md"
+      ],
+      "recipeFile": {
+        "bytes": 1228,
+        "mode": 420,
+        "path": "recipes/ext_jpeg/CMakeLists.txt",
+        "sha256": "cde19c407718cd0253f93bc97892073150075da6573131bc78418046147b8147"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://downloads.sourceforge.net/project/libjpeg-turbo/2.1.4/libjpeg-turbo-2.1.4.tar.gz",
+          "URL_HASH": "SHA256=d3ed26a1131a13686dfca4935e520eb7c90ae76fbc45d98bb50a8dc86230342b",
+          "callIndex": 1,
+          "declarationSha256": "e2665a3ccb50e6aac75cf836a872a2276b491fdecc179a67f6846a15d690c080",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 21,
+          "target": "ext_jpeg"
+        }
+      ]
+    },
+    {
+      "binarySha256": "c984b75db0ce2a71b32339ccec83f07eef1c8f3381d92f6874c485ce372b2e2d",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788896280",
+      "name": "ext_jpegxl",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1579,
+        "mode": 420,
+        "path": "recipes/ext_jpegxl/CMakeLists.txt",
+        "sha256": "a954c5dabc31c2637722b19450666d76a5b2965219004417199ad0065be4a507"
+      },
+      "runtimeSelectedFileCount": 3,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "libjxl-v0.11.1.tar.gz",
+          "URL": "https://github.com/libjxl/libjxl/archive/refs/tags/v0.11.1.tar.gz",
+          "URL_HASH": "SHA256=1492dfef8dd6c3036446ac3b340005d92ab92f7d48ee3271b5dac1d36945d3d9",
+          "callIndex": 0,
+          "declarationSha256": "2628065659950f9aa558a3190efc0452c185509eb8b5a029fb8419d6a5e484ba",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 20,
+          "target": "ext_jpegxl"
+        }
+      ]
+    },
+    {
+      "binarySha256": "de40ffe57aa3f077b9d211740b60a90f1032e89fe7f9a4a8066a4099d98a8783",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893718",
+      "name": "ext_json_c",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 690,
+        "mode": 493,
+        "path": "recipes/ext_json_c/CMakeLists.txt",
+        "sha256": "b332896c93dff4c254d6c02e0fb0192f21928267099d46db744cc549db8f211e"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/json-c/json-c/archive/refs/tags/json-c-0.18-20240915.zip",
+          "URL_HASH": "SHA256=eb023faa92d2f2f8f7f28e1a4db0322a47363a89d9fed376b997781e1bc7ecce",
+          "callIndex": 0,
+          "declarationSha256": "8328597ed056c3e0bb320736dd8eb211db4caa68381357aaf244ab40d1eeb3d2",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_json_c"
+        }
+      ]
+    },
+    {
+      "binarySha256": "a1f218ea3f2102eb0ee52a63da78e0859ec53977795a41ac2a13b88f313c3e02",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898944",
+      "name": "ext_karchive",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 921,
+        "mode": 420,
+        "path": "recipes/ext_karchive/CMakeLists.txt",
+        "sha256": "cd6aee92b52e8fc583cf1fe10f09b75f9c336ed80e2984667e2f12be792fec52"
+      },
+      "runtimeSelectedFileCount": 44,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/karchive-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=123a268352ab63d548ba5e3c3e8fbf1d737025e4c5189821cf10e3328ab4de15",
+          "callIndex": 0,
+          "declarationSha256": "5ee6c22220f1b345b193865e46abf9bef7b2b76a3fa8e2c85529187dd908607a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 14,
+          "target": "ext_karchive"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d177a6a987f10354198912dfcb61885badc90d052ce24a1759b3f956d6c89186",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898989",
+      "name": "ext_kcodecs",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 679,
+        "mode": 420,
+        "path": "recipes/ext_kcodecs/CMakeLists.txt",
+        "sha256": "5cb48f32b28c93e1e9425cb15027e8aacdcb84bec0cfb2301c050ceeaf4ab317"
+      },
+      "runtimeSelectedFileCount": 103,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kcodecs-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=5051fe783803d94444a231c79635b96f1266594942b836f59ae8460497c788c5",
+          "callIndex": 0,
+          "declarationSha256": "c9bb781782e59c16a6572fc8452d3236e227c51718eecc52806dbdf3f33209d2",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kcodecs"
+        }
+      ]
+    },
+    {
+      "binarySha256": "703264c32d2910684b5b7dc3eafea4f4b0124867295344566beb5bb1b56ef908",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899887",
+      "name": "ext_kcolorscheme",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 684,
+        "mode": 420,
+        "path": "recipes/ext_kcolorscheme/CMakeLists.txt",
+        "sha256": "4d7de70ae64b9e173c41d17f1d28a5731dbaa9e721c87f3985c8fa9038bd462f"
+      },
+      "runtimeSelectedFileCount": 45,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kcolorscheme-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=95a8a37817765f910c59b269a9958557505b99ff698fd6d220bcb166d5e302f5",
+          "callIndex": 0,
+          "declarationSha256": "098df284bdd2996fca93631b4e3e5286acf7161fba4fcf3874f3855ea1e0befa",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kcolorscheme"
+        }
+      ]
+    },
+    {
+      "binarySha256": "effe0f765b20c62e98afbd6c1737c1514496fff6e4ab49a3560d9c81c0a0586a",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899939",
+      "name": "ext_kcompletion",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 678,
+        "mode": 420,
+        "path": "recipes/ext_kcompletion/CMakeLists.txt",
+        "sha256": "3ea0cd196eef8fe873cff866b78e62d3edf6a88724d46adf359f57c6c8f18fc9"
+      },
+      "runtimeSelectedFileCount": 104,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kcompletion-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=e4138d525eb9e27a9222d655e412c0de8b4bd7b34289d1c7ca5a808e20b53238",
+          "callIndex": 0,
+          "declarationSha256": "207ffe6bc1809b720faee390584a03e90eae83a2f8b24f76bfa98410d395e539",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kcompletion"
+        }
+      ]
+    },
+    {
+      "binarySha256": "a59fbaa136139f0a811de8ae5e007f94aac684af0a09d90d5b5b742edf8f9321",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899046",
+      "name": "ext_kconfig",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 859,
+        "mode": 420,
+        "path": "recipes/ext_kconfig/CMakeLists.txt",
+        "sha256": "67859fad1dc772e8a26eb7cee410c27f94f20b9a300720a624b4da3a42420b2d"
+      },
+      "runtimeSelectedFileCount": 102,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kconfig-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=8c675c9d35a866fbf1b564354a589019b429cca949f7ba3ba0adb9f2fa15959c",
+          "callIndex": 0,
+          "declarationSha256": "830d34a4d3463d116dfe470ac15a5d72cd6ecd82c5c16b276461e2b0db79b6dc",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kconfig"
+        }
+      ]
+    },
+    {
+      "binarySha256": "998d8b34c29eb916bf562c1df03e0a663c9d055a8ff6a6701270b846fec500e7",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899106",
+      "name": "ext_kcoreaddons",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 706,
+        "mode": 420,
+        "path": "recipes/ext_kcoreaddons/CMakeLists.txt",
+        "sha256": "ef44e03b644bd1dcc3f6987e0ee306610b2c44949bff5ae7332d5579e96bc86b"
+      },
+      "runtimeSelectedFileCount": 116,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kcoreaddons-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=e7f0825576dc44af0c7194538e48114aa240f8fd3402f27047771f009e161a7e",
+          "callIndex": 0,
+          "declarationSha256": "bece81a5a2a23d27cb01d44b08f01151bfedd2474f3cecc0b7e030dfc2ea5384",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kcoreaddons"
+        }
+      ]
+    },
+    {
+      "binarySha256": "124591033ec096d6b95da8c920107dc3331b5c30b62f0f13a1ea6c7325022112",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898465",
+      "name": "ext_kdcraw",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 754,
+        "mode": 420,
+        "path": "recipes/ext_kdcraw/CMakeLists.txt",
+        "sha256": "3bcc5bd4957d014349fc5821350eb52b8b73b5a0b1e14f66bf0585219d6e4e01"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/release-service/24.12.2/src/libkdcraw-24.12.2.tar.xz",
+          "URL_HASH": "SHA256=ef05c88669201701556eac097f51cf264a297d3b45db8c06465f2345ff5ceb96",
+          "callIndex": 0,
+          "declarationSha256": "fe8b3146928a5f826cc16922fbfeb6f78ee8a0093e56d804f64fa38fd5d4fbe7",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kdcraw"
+        }
+      ]
+    },
+    {
+      "binarySha256": "50ba8393a8a771ac285ba4e9f5be076042fc214a43cdf47a1035cbb60f05aa8c",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899157",
+      "name": "ext_kguiaddons",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 965,
+        "mode": 420,
+        "path": "recipes/ext_kguiaddons/CMakeLists.txt",
+        "sha256": "ec7d74e2a2766004482cad95a66329dc29df737f04fde1e56c22fd4476680996"
+      },
+      "runtimeSelectedFileCount": 5,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kguiaddons-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=38850963cb91978d08e781d81b147c7b66f78f4204ad820631e42ab1ef5ef76b",
+          "callIndex": 0,
+          "declarationSha256": "7deae16320adcef21535d2a3f294bc72e9237e89be27c0c23bf705e51c692227",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kguiaddons"
+        }
+      ]
+    },
+    {
+      "binarySha256": "668f718c084e8deaeb90c169d09408e18149a483ed748a8d4f0ea88e097f8ce6",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899232",
+      "name": "ext_ki18n",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1190,
+        "mode": 420,
+        "path": "recipes/ext_ki18n/CMakeLists.txt",
+        "sha256": "f2b6784eb41c71dc4ee223f29d23031fe6068c9a80d836df0f83f41632e33ae1"
+      },
+      "runtimeSelectedFileCount": 141,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/ki18n-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=7fbac8bc88f5cb1af00f6a667381c4bcebba6f417dc6a3c7eef8bded6c9161de",
+          "callIndex": 0,
+          "declarationSha256": "2e4eb1b06f26c8a0c375379403d0ab44ed209cb64f63f675ded968fc5d812f9f",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_ki18n"
+        }
+      ]
+    },
+    {
+      "binarySha256": "8bddbc086788cb1068d80445b995aefe8f4be87c29a807b42e00a337f1302a22",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899284",
+      "name": "ext_kimageformats",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 784,
+        "mode": 420,
+        "path": "recipes/ext_kimageformats/CMakeLists.txt",
+        "sha256": "ef5da556be72106d436b48460ebd28de06954ee893738cbb55e10333a6520f8e"
+      },
+      "runtimeSelectedFileCount": 18,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kimageformats-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=dfa0e9b16a288a8f94233afcbaffc87c1c5ddc037aca643943aab5a67685f26b",
+          "callIndex": 0,
+          "declarationSha256": "2d013ad9d68c12926fc08bc9a848f7fe26b6948e81ac234262e2fe73d6d31cc7",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kimageformats"
+        }
+      ]
+    },
+    {
+      "binarySha256": "9dea45ef121e2e0a02d9502e2fff80178e19f941755503aadeb7a7a420dd2eb4",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899331",
+      "name": "ext_kitemmodels",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 678,
+        "mode": 420,
+        "path": "recipes/ext_kitemmodels/CMakeLists.txt",
+        "sha256": "3adc7153c338336ecabd39c77e531c123f30fdc4b9128c3ec49a65fbeb5739e4"
+      },
+      "runtimeSelectedFileCount": 5,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kitemmodels-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=ab78119a00b84eac65ffc986df30fbf9b1b8d00635e8fc626372e84580d158ca",
+          "callIndex": 0,
+          "declarationSha256": "636849f8cefc20aef69bbd10f198662d18a6344f20399f912b0495ccf058bd4a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kitemmodels"
+        }
+      ]
+    },
+    {
+      "binarySha256": "c11ff8f9d7654de70c0c9582961f16f7ed11d7d3c3ae75593c63220e42c35860",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899379",
+      "name": "ext_kitemviews",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 674,
+        "mode": 420,
+        "path": "recipes/ext_kitemviews/CMakeLists.txt",
+        "sha256": "e5bfe491e50dd9e6c1a2972f9b31faeef415902df4c03a0a17cd23ba6a5982be"
+      },
+      "runtimeSelectedFileCount": 104,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kitemviews-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=b57f38d6fd184a4b260d0b35d76f6c0fb96bdd80475e3ca7d4151023730e5d3d",
+          "callIndex": 0,
+          "declarationSha256": "ed3ba8765aa992be12b6e97f29d162dc2813c2e77e13efb5f0afa6aab149ff2e",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kitemviews"
+        }
+      ]
+    },
+    {
+      "binarySha256": "3f79a74bf4cdf654e9b06626a542241681220343c1a0136a52caebca6fa64a45",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899451",
+      "name": "ext_kwidgetsaddons",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 718,
+        "mode": 420,
+        "path": "recipes/ext_kwidgetsaddons/CMakeLists.txt",
+        "sha256": "3ba82ced827613faa818d96e7df060ceb43691ffe255d94d6ed071f4921af09d"
+      },
+      "runtimeSelectedFileCount": 104,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kwidgetsaddons-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=8a9f9cde4427ffec37a0501d337aadae3de39736674f571ff8a13d17d1e6c938",
+          "callIndex": 0,
+          "declarationSha256": "669865f4cdc644c47610a9b161582eddf5542b1905ac86e1c9a4e5cdb268b876",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kwidgetsaddons"
+        }
+      ]
+    },
+    {
+      "binarySha256": "b648c62ad96414c4877c20963c383e9e96cf68b888b22fa050a3ed146862fbb9",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899499",
+      "name": "ext_kwindowsystem",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 686,
+        "mode": 420,
+        "path": "recipes/ext_kwindowsystem/CMakeLists.txt",
+        "sha256": "46bb6d33df6b9781dc227da5f8a9747abd7765eab9ffcf27ac78b432799349a0"
+      },
+      "runtimeSelectedFileCount": 107,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.kde.org/stable/frameworks/6.25/kwindowsystem-6.25.0.tar.xz",
+          "URL_HASH": "SHA256=b51448a7669efa18190ab7fa8d6f5e0f77d8f9879cf457dadb4629b245a02434",
+          "callIndex": 0,
+          "declarationSha256": "4c66a5b82df2298642022ead9b85097fa40b7ff8028eca6a4002c09957c5b7fc",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_kwindowsystem"
+        }
+      ]
+    },
+    {
+      "binarySha256": "f5d76ea874e60a444443b0186da289032e3fd715f4f67ddfa9270be84aa23001",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894921",
+      "name": "ext_lager",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1321,
+        "mode": 420,
+        "path": "recipes/ext_lager/CMakeLists.txt",
+        "sha256": "99c8c755e2ebe50071a920a7551ee0014e7609d26a31c36bba8174de65478b2e"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/dimula73/lager.git",
+          "GIT_TAG": "0b6ab3e0e880bc36be5da4984d768fde03b7cf19",
+          "callIndex": 0,
+          "declarationSha256": "cb2334c7fa6ae54f52e3b3723ed9b80707259fadf9084fee362ebea824690d04",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 17,
+          "target": "ext_lager"
+        }
+      ]
+    },
+    {
+      "binarySha256": "ba39be9af1294d5ba0e556ec230923dd2ef903337ea3b0c3666647f6455078bb",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895228",
+      "name": "ext_lame",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1561,
+        "mode": 420,
+        "path": "recipes/ext_lame/CMakeLists.txt",
+        "sha256": "76b923d91468d5c99406bf61e0d66a94ca121afb0164009f1329c06faf2a7b2b"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "lame_3.100-9_patch.zip",
+          "URL": "https://wrapdb.mesonbuild.com/v2/lame_3.100-9/get_patch",
+          "URL_HASH": "SHA256=bedda639a621b2046fb04110a51870d6c9640f2f4282b5d877bc452e9943c22e",
+          "callIndex": 0,
+          "declarationSha256": "72a57213d6bab4ea4cfdeff5d284e15c757ea7745a561ffe3fc1152fcf28dbed",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 11,
+          "target": "ext_lame_meson"
+        },
+        {
+          "URL": "https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz",
+          "URL_HASH": "SHA256=ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+          "callIndex": 1,
+          "declarationSha256": "887a890a9b9ba8f8980bebe867900401f3f03e360b1346404b261e276c6f6894",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 27,
+          "target": "ext_lame"
+        }
+      ]
+    },
+    {
+      "binarySha256": "1cc1fdd15b44b46b58b86aec1989cc1879d4733817da65b77d3a2a4e17a9fb7d",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894945",
+      "name": "ext_lcms2",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 956,
+        "mode": 420,
+        "path": "recipes/ext_lcms2/CMakeLists.txt",
+        "sha256": "7f29640a3ac9e130b9ee55227db4918408952242c477d234e92c51464ee4a928"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz",
+          "URL_HASH": "SHA256=28474ea6f6591c4d4cee972123587001a4e6e353412a41b3e9e82219818d5740",
+          "callIndex": 0,
+          "declarationSha256": "023d1c5c8ca2e37c1eabdc325e95615b6dfd54f85c88b45938e45eb47991eb9a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_lcms2"
+        }
+      ]
+    },
+    {
+      "binarySha256": "411ed9b9ef4b3d54d1c862ecc0b7025974efcf71e0fef06d44871e88363a23c4",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895547",
+      "name": "ext_libaom",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1475,
+        "mode": 420,
+        "path": "recipes/ext_libaom/CMakeLists.txt",
+        "sha256": "aad7676b222bbdb45ffe740f2f2d919c2996e37d1a436314d75e07724d065fd2"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz",
+          "URL_HASH": "SHA256=19e45a5a7192d690565229983dad900e76b513a02306c12053fb9a262cbeca7d",
+          "callIndex": 0,
+          "declarationSha256": "34ef7aa0a3fe9fb05d040574aa98be50cbd14b5f7b5aeaa5ad103d9483f949a3",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 21,
+          "target": "ext_libaom"
+        }
+      ]
+    },
+    {
+      "binarySha256": "1a345c3c65de92c532a23c97f5ffb37bbc63c4ed0cc569caa16a0d4e56131b72",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895719",
+      "name": "ext_libde265",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 663,
+        "mode": 420,
+        "path": "recipes/ext_libde265/CMakeLists.txt",
+        "sha256": "678c93cff1fefff7cf2114c68e35404106bf5e6ba3c4acc002b893332dce94c0"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/strukturag/libde265/releases/download/v1.0.16/libde265-1.0.16.tar.gz",
+          "URL_HASH": "SHA256=b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7",
+          "callIndex": 0,
+          "declarationSha256": "8208292255c496fad6b328571f6f3fc40c46d2b8d601554f979af6f0e07f2ac8",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_libde265"
+        }
+      ]
+    },
+    {
+      "binarySha256": "f78611280c41f196232861430abc46b2aa2c66df887d9be2396f6e3238db4a1b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899736",
+      "name": "ext_libheif",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 679,
+        "mode": 420,
+        "path": "recipes/ext_libheif/CMakeLists.txt",
+        "sha256": "32b43293b9d2e5788577e8134cca24624898e2c556c7d39baf2e8d983d5ff539"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz",
+          "URL_HASH": "SHA256=75f530b7154bc93e7ecf846edfc0416bf5f490612de8c45983c36385aa742b42",
+          "callIndex": 0,
+          "declarationSha256": "92f57abc3ce57c744e2e14a8244f6854c953226eadbede4d6b8916577413dcb1",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_libheif"
+        }
+      ]
+    },
+    {
+      "binarySha256": "22af0dad30a0ac218d1365a89837874ac4e13d1b5e26b7c29b9fa39ed6afac46",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895252",
+      "name": "ext_libogg",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 773,
+        "mode": 420,
+        "path": "recipes/ext_libogg/CMakeLists.txt",
+        "sha256": "5bfbf071e1cae10b19618416170e511b5d6825b6773af7247d397fc09c0913ea"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.gz",
+          "URL_HASH": "SHA256=0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664",
+          "callIndex": 0,
+          "declarationSha256": "d2d82fbfe59d4a577645df23889697b628c3a0f21722794ae42fa7e848fd9cc4",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 10,
+          "target": "ext_libogg"
+        }
+      ]
+    },
+    {
+      "binarySha256": "b3fbc046e1e8e3196d88f8cf48fc84fc73afc1aae8b62bfeefb905a7212bb5f5",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895957",
+      "name": "ext_libraw",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1050,
+        "mode": 420,
+        "path": "recipes/ext_libraw/CMakeLists.txt",
+        "sha256": "04a910431585a12d8ccf67e4fc4151088576fdae81b2925dc1e24e6857308b75"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://www.libraw.org/data/LibRaw-0.20.2.tar.gz",
+          "URL_HASH": "SHA256=dc1b486c2003435733043e4e05273477326e51c3ea554c6864a4eafaff1004a6",
+          "callIndex": 0,
+          "declarationSha256": "9edaeb57ecdb9cf69f37eac1629fc37eafa050dd201287676f44063c9652bef5",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 16,
+          "target": "ext_libraw"
+        }
+      ]
+    },
+    {
+      "binarySha256": "2312cde756f6e534ff8c91244fab076799ce934dcc461d5dfab225bc38d02786",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898375",
+      "name": "ext_libtheora",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1834,
+        "mode": 420,
+        "path": "recipes/ext_libtheora/CMakeLists.txt",
+        "sha256": "3dcde4774b3d216898d047b1ed8feb1a5cc9a09d4030fd5106ac14ce48b4af2a"
+      },
+      "runtimeSelectedFileCount": 3,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "theora_1.1.1-4_patch.zip",
+          "URL": "https://wrapdb.mesonbuild.com/v2/theora_1.1.1-4/get_patch",
+          "URL_HASH": "SHA256=210af99fbc5a1b34d0f32270c25ecfb6fae7e76c1ae9dc6971b063317c97a826",
+          "callIndex": 0,
+          "declarationSha256": "a2c1cb7fc3780cf7049e08c9c6fff7ba2f95fb161abb84c159a820c8cd8550f2",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 11,
+          "target": "ext_libtheora_meson"
+        },
+        {
+          "GIT_REPOSITORY": "https://gitlab.xiph.org/xiph/theora.git",
+          "GIT_TAG": "7180717276af1ebc7da15c83162d6c5d6203aabf",
+          "callIndex": 1,
+          "declarationSha256": "d7614a0ceb1af4bfb66b32a636d7258ee9234e5fb4d497cfd29a044231f8ae89",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 27,
+          "target": "ext_libtheora"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d42660644b772c66eb900f7206c70a5c72c40e451dce7af6eecbe9c8cda6185b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895269",
+      "name": "ext_libvorbis",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 795,
+        "mode": 420,
+        "path": "recipes/ext_libvorbis/CMakeLists.txt",
+        "sha256": "2227aadb2ea249a72bb83d951199054e1c0c8583760e5d7ac5057cced7ac3cfa"
+      },
+      "runtimeSelectedFileCount": 3,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz",
+          "URL_HASH": "SHA256=b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b",
+          "callIndex": 0,
+          "declarationSha256": "f35d276ac818c6f4af343236001f437d9878bbe306467894efa890b4a2a2c730",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 10,
+          "target": "ext_libvorbis"
+        }
+      ]
+    },
+    {
+      "binarySha256": "c4ddf5cd5c3b3966edada7a36b54454102160432dd7da6505acb99f179a6dfd4",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898424",
+      "name": "ext_libx265",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 3137,
+        "mode": 420,
+        "path": "recipes/ext_libx265/CMakeLists.txt",
+        "sha256": "3cee684251d38033a541a5d9c55aa71e8885cd7a7cddbcaafad5fea1166e1fea"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/HandBrake/HandBrake-contribs/releases/download/contribs2/x265-snapshot-20260216-13309.tar.gz",
+          "URL_HASH": "SHA256=a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2",
+          "callIndex": 0,
+          "declarationSha256": "d3679a2f370cbfd0934d59672d818b7798f43957538c1665f2f3cb7b2f9480a4",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 25,
+          "target": "ext_libx265"
+        }
+      ]
+    },
+    {
+      "binarySha256": "58d8d6b6a76d549f20a58bb43313a9ff56bc30e15949ad0950594edf1dc04e38",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895825",
+      "name": "ext_libx265_10bit",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 3197,
+        "mode": 420,
+        "path": "recipes/ext_libx265_10bit/CMakeLists.txt",
+        "sha256": "72f23a182b12767bf6ea1311b4092cf3865b13d982953a6f4060185a5d02020b"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/HandBrake/HandBrake-contribs/releases/download/contribs2/x265-snapshot-20260216-13309.tar.gz",
+          "URL_HASH": "SHA256=a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2",
+          "callIndex": 0,
+          "declarationSha256": "f0af1be28adeae1e07bc059f5a6c71a385225251c1732905415e39213354cd70",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 25,
+          "target": "ext_libx265_10bit"
+        }
+      ]
+    },
+    {
+      "binarySha256": "7ea16b4513e960c6b01d5fef21e8183cdd2aaca14a20563783e338a37323fbe2",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895930",
+      "name": "ext_libx265_12bit",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 3218,
+        "mode": 420,
+        "path": "recipes/ext_libx265_12bit/CMakeLists.txt",
+        "sha256": "bdee1805e772657a1b2535a39119867c0c11650b881a69f7479ebffe87e6821c"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/HandBrake/HandBrake-contribs/releases/download/contribs2/x265-snapshot-20260216-13309.tar.gz",
+          "URL_HASH": "SHA256=a0882bb90826da62a96676c1a7cb7a7beb7f1db901f2775299cbeed03c3eb2a2",
+          "callIndex": 0,
+          "declarationSha256": "31d04ffb5065255ab242323e7e0694f8432434f3b49e69ad6a9f710d900237f1",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 25,
+          "target": "ext_libx265_12bit"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d151441ae1c90cc51a685b9bfecf9e64c120512f60167b2a7868ac13a249f7d3",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893924",
+      "name": "ext_lzma",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1858,
+        "mode": 420,
+        "path": "recipes/ext_lzma/CMakeLists.txt",
+        "sha256": "5d06811b9e5ed5ca6581311ce7dbc757e6d4950245a3d18bef7af42a291c1533"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://tukaani.org/xz/xz-5.2.6-windows.zip",
+          "URL_HASH": "SHA256=6fd6dad79e5b0d3b24a43bc3f79472b62a48d210f1aaa02fb06e5dfad89a4ebc",
+          "callIndex": 0,
+          "declarationSha256": "055d1efdd2ffb19d258d356ba53b9992efdb8e0daf125795c47e6c76353a0c1c",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 15,
+          "target": "ext_lzma"
+        }
+      ]
+    },
+    {
+      "binarySha256": "37480a8e7957ac31ffd5fa1f266ac527986a0c2c7035f9cefb9df4df7cb95ee6",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899977",
+      "name": "ext_mlt",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 2324,
+        "mode": 420,
+        "path": "recipes/ext_mlt/CMakeLists.txt",
+        "sha256": "7b36753100b5ceb153be3316cf5513eb0f3f098ca28331c27491c29cf006cf1b"
+      },
+      "runtimeSelectedFileCount": 326,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/mltframework/mlt/releases/download/v7.28.0/mlt-7.28.0.tar.gz",
+          "URL_HASH": "SHA256=bc425bf9602213f5f4855b78cfbbcd43eeb78097c508588bde44415963955aa1",
+          "callIndex": 0,
+          "declarationSha256": "7a0a3aeee3f03e2024e7b957c5f8e422fce9b4813b763c9759e3669baf2fac3b",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 29,
+          "target": "ext_mlt"
+        }
+      ]
+    },
+    {
+      "binarySha256": "a25b4013ea5ee174150a90bcc6a0b4f4dfd1518477daa5c3977ad1a00c768397",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894961",
+      "name": "ext_mypaint",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1241,
+        "mode": 420,
+        "path": "recipes/ext_mypaint/CMakeLists.txt",
+        "sha256": "5b799166a7f2fc8af358d5d9a360560cf6d6cc763a014784483b530ab99c59de"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz",
+          "URL_HASH": "SHA256=741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f",
+          "callIndex": 0,
+          "declarationSha256": "911797efa5851a4ec1b1661bab7a6cb93c2d17e3ce7a97cd0e5272790e6bb5f4",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_mypaint"
+        }
+      ]
+    },
+    {
+      "binarySha256": "393187cd351651a13a6f0a1d6f8ab24bed8edb8367b59feb38c4eab49fac521a",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893724",
+      "name": "ext_nasm",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 2210,
+        "mode": 420,
+        "path": "recipes/ext_nasm/CMakeLists.txt",
+        "sha256": "9f9fad4b1fe3af08f1953e24bdb57da3058ccc7becc065ed931c39618fd91b39"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.kde.org/krita/build/dependencies/nasm-2.15.05-win64.zip",
+          "URL_HASH": "SHA256=f5c93c146f52b4f1664fa3ce6579f961a910e869ab0dae431bd871bdd2584ef2",
+          "callIndex": 0,
+          "declarationSha256": "032af8ba49e7b8011830902ef2d1e3886121f0c816413a43e5b406e10a74c2ae",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 10,
+          "target": "ext_nasm"
+        }
+      ]
+    },
+    {
+      "binarySha256": "91bf773e482128ae3013582ecc74347d7642d76a2e39fb635ef208be77ec65fb",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895680",
+      "name": "ext_ocio",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1169,
+        "mode": 420,
+        "path": "recipes/ext_ocio/CMakeLists.txt",
+        "sha256": "2dd5a5fc33ca001f8392c0f8ebec705e2f581f65c10106e3a27da6ec09e6acb9"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "OpenColorIO-v2.5.1.tar.gz",
+          "URL": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+          "URL_HASH": "SHA256=49ab04d023d7a7a7237e24f2cfead3171b0ff7f466ce20e6e32859ec8c7cc94b",
+          "callIndex": 0,
+          "declarationSha256": "a50043407fe1913dc09b094a41c4df1a920ab823b8e1e95ff60c963b8cffa8f8",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_ocio"
+        }
+      ]
+    },
+    {
+      "binarySha256": "31d12809c830dd7ec35858d315c4217492c8ead8400386e16b0ff96fbc0e29fa",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895034",
+      "name": "ext_openexr",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 749,
+        "mode": 420,
+        "path": "recipes/ext_openexr/CMakeLists.txt",
+        "sha256": "3a372e8ce43a96faa55485fad33a44840783b6f0beb3db617244b3637ebe7d2a"
+      },
+      "runtimeSelectedFileCount": 7,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "openexr-v2.5.9.tar.gz",
+          "URL": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v2.5.9.tar.gz",
+          "URL_HASH": "SHA256=05bb9c2da3ff3508eee51c30f59c7f2c59bf068f3b636d12d5991e8bbaf13e01",
+          "callIndex": 0,
+          "declarationSha256": "8abe833e8e864eafd9e9a0c4fc90e302f0c8641cf0692abf8c0dc149772dfd3b",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_openexr"
+        }
+      ]
+    },
+    {
+      "binarySha256": "f8d088b680b2d1ce59fe461fa272c91bd7145b5222ac5ae97819d60ca25a3dfb",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895311",
+      "name": "ext_openh264",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 955,
+        "mode": 420,
+        "path": "recipes/ext_openh264/CMakeLists.txt",
+        "sha256": "eafaa3728a06616861c24c015e528dd7f5621654761629e4a20146e41d044f9a"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "openh264-v2.3.1.tar.gz",
+          "URL": "https://github.com/cisco/openh264/archive/v2.3.1.tar.gz",
+          "URL_HASH": "SHA256=453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32",
+          "callIndex": 0,
+          "declarationSha256": "97ebb57ca99b5a2349cd5f711bb5d46a712a6a778653651450139791589e66ce",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 11,
+          "target": "ext_openh264"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d04a113aabb80ee5e8c1a3a6690dc5ea6d8656ac3c8a523c94ff3438a8dfca4e",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895072",
+      "name": "ext_openjpeg",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 762,
+        "mode": 493,
+        "path": "recipes/ext_openjpeg/CMakeLists.txt",
+        "sha256": "7f917eb0e363622d3fba253e6718a014c4ff03b834d1513c05ba06deec26ff83"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "openjpeg-v2.5.4.tar.gz",
+          "URL": "https://github.com/uclouvain/openjpeg/archive/v2.5.4.tar.gz",
+          "URL_HASH": "SHA256=a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a",
+          "callIndex": 0,
+          "declarationSha256": "648ebbeee6c317c689d664fa1504fae598f915f9048bd2b92169491a72fe9775",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_openjpeg"
+        }
+      ]
+    },
+    {
+      "binarySha256": "a90f9f7a37f27efc325e68ec611d1c2a510c3207ac648e05433e84655bb936ea",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894122",
+      "name": "ext_openssl",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 5246,
+        "mode": 420,
+        "path": "recipes/ext_openssl/CMakeLists.txt",
+        "sha256": "65fc6ca966f11576ec392a24b30c95e1a44fe128b781e0457b90ef4c5e84a76b"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.kde.org/krita/build/dependencies/openssl-1.1.1l_4-win64-mingw.zip",
+          "URL_HASH": "SHA256=6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a",
+          "callIndex": 1,
+          "declarationSha256": "3a4f335c1949467526c9f6641fb2661df120f63aaa3bfa66f290414c5e2d1c1f",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 32,
+          "target": "ext_openssl"
+        }
+      ]
+    },
+    {
+      "binarySha256": "7be74709140ec346ff38354e7ff012d6d4b188c1062f3e9dceb18e018f684747",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893773",
+      "name": "ext_opus",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 718,
+        "mode": 420,
+        "path": "recipes/ext_opus/CMakeLists.txt",
+        "sha256": "7e8678b7b919b72270252d8ca39033c4c394ea3716534431d227e4dde4beab5e"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://gitlab.xiph.org/xiph/opus.git",
+          "GIT_TAG": "v1.5.2",
+          "callIndex": 0,
+          "declarationSha256": "fa536fc719b4004161200d8411529c5c0b5794b230b5d0aac16bb4e97a72342a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_opus"
+        }
+      ]
+    },
+    {
+      "binarySha256": "8862e72536b4e0e5c04313c69485574524260b5c32a8b7157ce3c83c59c4fb94",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894025",
+      "name": "ext_patch",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 899,
+        "mode": 420,
+        "path": "recipes/ext_patch/CMakeLists.txt",
+        "sha256": "4c8df3c934d759a47c2ce8f765b72a2a2ecb1857a45a277946572614620dc2df"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "http://files.kde.org/krita/build/dependencies/patch-2.5.9-7-bin.zip",
+          "URL_MD5": "b9c8b31d62f4b2e4f1887bbb63e8a905",
+          "callIndex": 0,
+          "declarationSha256": "5eaca3d1263d77cfa01ed68b365d13b5d1e89f8ada869b6060084332fde4d5c2",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 9,
+          "target": "ext_patch"
+        }
+      ]
+    },
+    {
+      "binarySha256": "868502959004d6438f58ce8ae361d16cc5ca60109533bc0693a8b74e2c159d7e",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894141",
+      "name": "ext_pkgconfig",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1832,
+        "mode": 420,
+        "path": "recipes/ext_pkgconfig/CMakeLists.txt",
+        "sha256": "7b4955067d2f322e9e394d31d57e0cbc4d94b622a377db49392b38185d6b5d11"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/pkgconf/pkgconf.git",
+          "GIT_TAG": "pkgconf-1.9.3",
+          "callIndex": 1,
+          "declarationSha256": "4b23170cb3a04f908bec066e6082b999905ea38740363a69bc68bf6cb8397d6a",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 25,
+          "target": "ext_pkgconfig"
+        }
+      ]
+    },
+    {
+      "binarySha256": "626a8ddf06a57cb516425c4b0f61d226cf4566089e706ee3a4c87cec26c790e3",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895094",
+      "name": "ext_png",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 816,
+        "mode": 420,
+        "path": "recipes/ext_png/CMakeLists.txt",
+        "sha256": "b07b7362528e527821a037480b02f21322d92cb6abf52a43e8944c593354012a"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://downloads.sourceforge.net/project/libpng/libpng16/1.6.51/libpng-1.6.51.tar.xz",
+          "URL_HASH": "SHA256=a050a892d3b4a7bb010c3a95c7301e49656d72a64f1fc709a90b8aded192bed2",
+          "callIndex": 0,
+          "declarationSha256": "824c54c62f186a3860bc6dcbfa1d26a4cb32784aacd2cc416d6c78400cfdf964",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_png"
+        }
+      ]
+    },
+    {
+      "binarySha256": "617aedfa2801aad8a6398d3158702400b6f4a19bb6462954462b9babab5b9be9",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899840",
+      "name": "ext_poppler",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1112,
+        "mode": 420,
+        "path": "recipes/ext_poppler/CMakeLists.txt",
+        "sha256": "78b86e16f47895cf7ebc590c4613f045a5d29c299e33dcb622961c0843cd9832"
+      },
+      "runtimeSelectedFileCount": 3,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://poppler.freedesktop.org/poppler-26.02.0.tar.xz",
+          "URL_HASH": "SHA256=DDED8621F7B2F695C91063AAB1558691C8418374CD583501E89ED39487E7AB77",
+          "callIndex": 0,
+          "declarationSha256": "0f3678660f34b14a23aadd2b933d0991cdf005937a23f225cb1932bc165948e9",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_poppler"
+        }
+      ]
+    },
+    {
+      "binarySha256": "9b263cab464704c22a3b6e398431cfa059b87c8c6c3a2b7500fca3aad65fe8d4",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898504",
+      "name": "ext_pyqt-builder",
+      "noticeCandidates": [
+        "deps/lib/site-packages/pyqt_builder-0.0.0.dist-info/licenses/LICENSE",
+        "deps/lib/site-packages/pyqtbuild/bundle/qt_wheel_distinfo/LICENSE.gpl3",
+        "deps/lib/site-packages/pyqtbuild/bundle/qt_wheel_distinfo/LICENSE.lgpl3"
+      ],
+      "recipeFile": {
+        "bytes": 2612,
+        "mode": 420,
+        "path": "recipes/ext_pyqt-builder/CMakeLists.txt",
+        "sha256": "a47a2a0dc23a2dd9f88bbe899a376763f89ae3081cc81fb81175de14128c0bd4"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.pythonhosted.org/packages/61/f6/f3b504b4d55a7c4d3393cb90378501f1f5fc7f233bd85c0375674f84d2af/pyqt_builder-1.19.1.tar.gz",
+          "URL_HASH": "SHA256=6af6646ba29668751b039bfdced51642cb510e300796b58a4d68b7f956a024d8",
+          "callIndex": 1,
+          "declarationSha256": "e702b275ccac9deec44819ecb31d9655b3f054dcb4ba91e9acfce27f181b4586",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 41,
+          "target": "ext_pyqt-builder"
+        }
+      ]
+    },
+    {
+      "binarySha256": "0aa19f9e473c0f7cbd399b153a84540174ee86a6ed9aa3a91adc65829acb4b26",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898830",
+      "name": "ext_pyqt6",
+      "noticeCandidates": [
+        "deps/lib/site-packages/pyqt6-6.11.0.dist-info/licenses/LICENSE"
+      ],
+      "recipeFile": {
+        "bytes": 4457,
+        "mode": 420,
+        "path": "recipes/ext_pyqt6/CMakeLists.txt",
+        "sha256": "0bc46531505231a2f9a41fcfe36fbd8dd5f8cf70b488f482b0b7750412894600"
+      },
+      "runtimeSelectedFileCount": 598,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.pythonhosted.org/packages/8b/47/b25c13eca5bebc6505394d0223e46d7ebf0c57dcac2ed908d7d19b18ab6b/pyqt6-6.11.0.tar.gz",
+          "URL_HASH": "SHA256=45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889",
+          "callIndex": 1,
+          "declarationSha256": "3d0db0b266cd9b28a2a8439f84824fdd874b9b05510ae02483eaf31ede44631b",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 76,
+          "target": "ext_pyqt6"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d373325d4ba7e66215a330ef8654237f9969a92be40ea4ddcce0df096f6a3cab",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898877",
+      "name": "ext_pyqt6-sip",
+      "noticeCandidates": [
+        "deps/lib/site-packages/pyqt6_sip-13.11.1.dist-info/licenses/LICENSE"
+      ],
+      "recipeFile": {
+        "bytes": 2682,
+        "mode": 420,
+        "path": "recipes/ext_pyqt6-sip/CMakeLists.txt",
+        "sha256": "f4a11aeba87ccd239b6e8db6888061ac0502370e347308a3d9fa205e881c0ed7"
+      },
+      "runtimeSelectedFileCount": 9,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.pythonhosted.org/packages/90/24/a753e1af94b9ae5b2da63d4598457308da3cdbf0838c959381db086ccc86/pyqt6_sip-13.11.1.tar.gz",
+          "URL_HASH": "SHA256=869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be",
+          "callIndex": 1,
+          "declarationSha256": "cbc58bb8abf3fa68dd9758c89124ddb531dd4a28a1476d089825d11b2ace35f0",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 35,
+          "target": "ext_pyqt6-sip"
+        }
+      ]
+    },
+    {
+      "binarySha256": "3b71f039bcca3b18b0642cabeed3e836ea1cfb1da593c924da69a891e63e55e9",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893962",
+      "name": "ext_python",
+      "noticeCandidates": [
+        "deps/python/LICENSE.txt"
+      ],
+      "recipeFile": {
+        "bytes": 6654,
+        "mode": 420,
+        "path": "recipes/ext_python/CMakeLists.txt",
+        "sha256": "251d2ea8155db00d052eb25a8ddb705691665f596fa2fde4e1e6276cb184cc11"
+      },
+      "runtimeSelectedFileCount": 36,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://www.python.org/ftp/python/3.13.5/python-3.13.5-embed-amd64.zip",
+          "URL_MD5": "370a345dbea8bbc1830a2385f24632d2",
+          "callIndex": 2,
+          "declarationSha256": "d51015f6239952270ae91edd7bd3652bd9b94efdbacc6890b704f95909ab658a",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 105,
+          "target": "ext_python"
+        }
+      ]
+    },
+    {
+      "binarySha256": "766c8bef1577a76bba55f059bfb54afc352d1d38f47593365b1f544516974495",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898275",
+      "name": "ext_qt",
+      "noticeCandidates": [
+        "deps/lib/cmake/Qt6/3rdparty/extra-cmake-modules/COPYING-CMAKE-SCRIPTS",
+        "deps/lib/cmake/Qt6/3rdparty/kwin/COPYING-CMAKE-SCRIPTS"
+      ],
+      "recipeFile": {
+        "bytes": 14728,
+        "mode": 420,
+        "path": "recipes/ext_qt/CMakeLists.txt",
+        "sha256": "ab0d9c4ca4ecc22af4a49a5a567b8e0f061b368f0c4ce2d06ebae5c1cba3e025"
+      },
+      "runtimeSelectedFileCount": 2084,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/dimula73/qt5.git",
+          "GIT_TAG": "571b5489c7d0987959b8cf81f62df674da79c418",
+          "callIndex": 0,
+          "declarationSha256": "8b48cdcfe9a490b6ecd964c2070821d349ea529b19faff680fc3bbcf533f8ace",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 103,
+          "target": "ext_qt"
+        }
+      ]
+    },
+    {
+      "binarySha256": "59cef61a674f69efc6a64834c96d343fd6a8adb6ecf59d885e054a0b03cfa1b6",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788898334",
+      "name": "ext_quazip",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1032,
+        "mode": 420,
+        "path": "recipes/ext_quazip/CMakeLists.txt",
+        "sha256": "bf08770f74e80011216245bd01b7ac1d1074d04fdc34cbc870a056e03190baf1"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "quazip-v1.5.tar.gz",
+          "URL": "https://github.com/stachenov/quazip/archive/refs/tags/v1.5.tar.gz",
+          "URL_HASH": "SHA256=405b72b6e76c8987ff41a762523b8f64876ba406d8a831d268ee0b63f1369582",
+          "callIndex": 0,
+          "declarationSha256": "4b45fdfa49ed96d1ed75b154515842dc8848dd4d029d13cad19c43292dfe5709",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 19,
+          "target": "ext_quazip"
+        }
+      ]
+    },
+    {
+      "binarySha256": "bec90d4998902046b54f274a89ec814679f05793d960bd16f2e4e8aaec68c11b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893902",
+      "name": "ext_sdl2",
+      "noticeCandidates": [
+        "deps/share/licenses/SDL2/LICENSE.txt"
+      ],
+      "recipeFile": {
+        "bytes": 1531,
+        "mode": 420,
+        "path": "recipes/ext_sdl2/CMakeLists.txt",
+        "sha256": "19cc343fce4ecefaf018270c2645d42fc495db7e79597509eddb43365217ccd1"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/libsdl-org/SDL/releases/download/release-2.26.0/SDL2-2.26.0.tar.gz",
+          "URL_HASH": "SHA256=8000d7169febce93c84b6bdf376631f8179132fd69f7015d4dadb8b9c2bdb295",
+          "callIndex": 1,
+          "declarationSha256": "f6cf31f4720238884b2fec71030351688aefc26267d11cf45c568de4aeef7c72",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 27,
+          "target": "ext_sdl2"
+        }
+      ]
+    },
+    {
+      "binarySha256": "9470cc0bba15a9488bfa410b3d7bc541e8e0a29cc8bc14702d5236e9b4c8554d",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788899556",
+      "name": "ext_seexpr",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 668,
+        "mode": 420,
+        "path": "recipes/ext_seexpr/CMakeLists.txt",
+        "sha256": "69743629b508399c3d6ddb2ab7d78941f2987493a05b1fa98f3652085b1ab1cf"
+      },
+      "runtimeSelectedFileCount": 28,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://invent.kde.org/graphics/kseexpr.git",
+          "GIT_TAG": "v6.0.0.0",
+          "callIndex": 0,
+          "declarationSha256": "b3f0bf2a9965e8dbb0f74a9c43e64f384b4b182d837c662040343eeb2de1176d",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_seexpr"
+        }
+      ]
+    },
+    {
+      "binarySha256": "34234c25e336b8a75ff57f19629ae72f6ba4fd4eada10e8b2d10e859eb43cad1",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895976",
+      "name": "ext_sip",
+      "noticeCandidates": [
+        "deps/lib/site-packages/sip-0.0.0.dist-info/licenses/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/10/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/10/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/12/10/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/12/11/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/11/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/12/11/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/12/12/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/12/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/12/12/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/12/13/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/13/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/12/13/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/12/14/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/15/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/16/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/17/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/18/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/9/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/12/9/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/12/9/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/1/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/1/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/13/1/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/10/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/11/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/2/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/2/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/13/2/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/3/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/3/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/13/3/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/4/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/4/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/13/4/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/5/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/5/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/13/5/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/6/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/6/LICENSE-GPL2",
+        "deps/lib/site-packages/sipbuild/module/source/13/6/LICENSE-GPL3",
+        "deps/lib/site-packages/sipbuild/module/source/13/7/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/8/LICENSE",
+        "deps/lib/site-packages/sipbuild/module/source/13/9/LICENSE"
+      ],
+      "recipeFile": {
+        "bytes": 3045,
+        "mode": 420,
+        "path": "recipes/ext_sip/CMakeLists.txt",
+        "sha256": "98985e85c9b0d8242afe1b3c0c5996281bdfc5abba7a5f2a84493e0acf6d0d3f"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.pythonhosted.org/packages/02/b1/79bff1c49a9e19ffe0211cb8905cc514c3f6b8f3f7ae55a40403d346c076/sip-6.15.3.tar.gz",
+          "URL_HASH": "SHA256=bb2516983f9f716d321e5157c00d0de0c12422eba73b8f43a44610a0f6622438",
+          "callIndex": 1,
+          "declarationSha256": "b56e15760738c8d4af3daa2b3064c2bf9827c699c2ef99f93a2bc1c3559e5177",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 45,
+          "target": "ext_sip"
+        }
+      ]
+    },
+    {
+      "binarySha256": "9dd3edf955b8e0327e300a29be0ed5bdb614d2cafbef14989976b153032aee4b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894074",
+      "name": "ext_strawberryperl",
+      "noticeCandidates": [
+        "deps/Strawberry/licenses/License.rtf",
+        "deps/Strawberry/licenses/fribidi/COPYING",
+        "deps/Strawberry/licenses/gcc-toolchain/binutils/COPYING",
+        "deps/Strawberry/licenses/gcc-toolchain/binutils/COPYING.LIB",
+        "deps/Strawberry/licenses/gcc-toolchain/binutils/COPYING.LIBGLOSS",
+        "deps/Strawberry/licenses/gcc-toolchain/binutils/COPYING.NEWLIB",
+        "deps/Strawberry/licenses/gcc-toolchain/gcc/COPYING",
+        "deps/Strawberry/licenses/gcc-toolchain/gcc/COPYING.LIB",
+        "deps/Strawberry/licenses/gcc-toolchain/gcc/COPYING.RUNTIME",
+        "deps/Strawberry/licenses/gcc-toolchain/gdb/COPYING",
+        "deps/Strawberry/licenses/gcc-toolchain/gdb/COPYING.LIB",
+        "deps/Strawberry/licenses/gcc-toolchain/gdb/COPYING.LIBGLOSS",
+        "deps/Strawberry/licenses/gcc-toolchain/gdb/COPYING.NEWLIB",
+        "deps/Strawberry/licenses/gcc-toolchain/make/COPYING",
+        "deps/Strawberry/licenses/gcc-toolchain/mingw-w64/COPYING",
+        "deps/Strawberry/licenses/gcc-toolchain/mingw-w64/COPYING.MinGW-w64-runtime.txt",
+        "deps/Strawberry/licenses/gcc-toolchain/mingw-w64/COPYING.MinGW-w64.txt",
+        "deps/Strawberry/licenses/gcc-toolchain/winpthreads/COPYING",
+        "deps/Strawberry/licenses/graphite2/COPYING",
+        "deps/Strawberry/licenses/graphite2/LICENSE",
+        "deps/Strawberry/licenses/harfbuzz/COPYING",
+        "deps/Strawberry/licenses/libbzip2/LICENSE",
+        "deps/Strawberry/licenses/libdb-BerkeleyDB/LICENSE",
+        "deps/Strawberry/licenses/libexpat/COPYING",
+        "deps/Strawberry/licenses/libffi/LICENSE",
+        "deps/Strawberry/licenses/libfontconfig/COPYING",
+        "deps/Strawberry/licenses/libfreeglut/COPYING",
+        "deps/Strawberry/licenses/libfreetype/LICENSE.TXT",
+        "deps/Strawberry/licenses/libgd/COPYING",
+        "deps/Strawberry/licenses/libgdbm/COPYING",
+        "deps/Strawberry/licenses/libgif/COPYING",
+        "deps/Strawberry/licenses/libgmp/COPYING",
+        "deps/Strawberry/licenses/libiconv/COPYING",
+        "deps/Strawberry/licenses/libidn2/COPYING",
+        "deps/Strawberry/licenses/libmpc/COPYING.LESSER",
+        "deps/Strawberry/licenses/libmpfr/COPYING",
+        "deps/Strawberry/licenses/libpng/LICENSE",
+        "deps/Strawberry/licenses/libssh2/COPYING",
+        "deps/Strawberry/licenses/libt1/LICENSE",
+        "deps/Strawberry/licenses/libtiff/COPYRIGHT",
+        "deps/Strawberry/licenses/libunistring/COPYING",
+        "deps/Strawberry/licenses/libwebp/COPYING",
+        "deps/Strawberry/licenses/libxml2/COPYING",
+        "deps/Strawberry/licenses/libxpm/COPYING",
+        "deps/Strawberry/licenses/libxslt/COPYING",
+        "deps/Strawberry/licenses/libxz/COPYING",
+        "deps/Strawberry/licenses/libxz/COPYING.GPLv2",
+        "deps/Strawberry/licenses/libxz/COPYING.GPLv3",
+        "deps/Strawberry/licenses/libxz/COPYING.LGPLv2.1",
+        "deps/Strawberry/licenses/mysql/COPYING",
+        "deps/Strawberry/licenses/openssl/LICENSE",
+        "deps/Strawberry/licenses/patch/COPYING",
+        "deps/Strawberry/licenses/perl/Copying",
+        "deps/Strawberry/licenses/pexports/COPYING",
+        "deps/Strawberry/licenses/postgresql/COPYRIGHT",
+        "deps/Strawberry/licenses/readline/COPYING",
+        "deps/Strawberry/licenses/termcap/COPYING",
+        "deps/Strawberry/perl/lib/Module/CPANTS/Kwalitee/License.pm",
+        "deps/Strawberry/perl/lib/Software/License.pm"
+      ],
+      "recipeFile": {
+        "bytes": 2004,
+        "mode": 420,
+        "path": "recipes/ext_strawberryperl/CMakeLists.txt",
+        "sha256": "69242a3a3bdeca7897d01beb3f256080690e806f29ca45e07fc6283c900cf613"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://files.kde.org/krita/build/dependencies/strawberry-perl-5.32.1.1-32bit-portable.zip",
+          "URL_HASH": "SHA1=28bca91cadd6651c2b2463db8587c170bf17f2fa",
+          "callIndex": 0,
+          "declarationSha256": "044016259c34d6521c391f304406620151c65d46481f05137cb5a5a1525db4ed",
+          "inputKind": "prebuilt-input-not-corresponding-source",
+          "line": 14,
+          "target": "ext_strawberryperl"
+        }
+      ]
+    },
+    {
+      "binarySha256": "75b95c16c3d3cece964507ca57b2ac4d81c13e497d58c7ccd79d2020f8e4846e",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895135",
+      "name": "ext_tiff",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 641,
+        "mode": 420,
+        "path": "recipes/ext_tiff/CMakeLists.txt",
+        "sha256": "3a83b6486712e740c498df4723eaba0867987857c0831c19c75b0a24e63a1f9b"
+      },
+      "runtimeSelectedFileCount": 2,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://download.osgeo.org/libtiff/tiff-4.4.0.tar.gz",
+          "URL_HASH": "SHA256=917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed",
+          "callIndex": 0,
+          "declarationSha256": "1fbdf1e3c2832e7cab21d355d603ecb059ace94c75b3272053d52d0f8d54893c",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_tiff"
+        }
+      ]
+    },
+    {
+      "binarySha256": "2b349c23182339c88148165fd6f26aa17c7c5cf68052c60514129dc8d006c030",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895146",
+      "name": "ext_unibreak",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 802,
+        "mode": 420,
+        "path": "recipes/ext_unibreak/CMakeLists.txt",
+        "sha256": "6ee7f558861605e0be3ab4095196177d684530c12bbb3eba7931702e71e7f960"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/adah1972/libunibreak/releases/download/libunibreak_5_0/libunibreak-5.0.tar.gz",
+          "URL_HASH": "SHA256=58f2fe4f9d9fc8277eb324075ba603479fa847a99a4b134ccb305ca42adf7158",
+          "callIndex": 0,
+          "declarationSha256": "79991c561eb1c64a815a7f0af98cd7dcb4264b44b3a94819d2ada19f59212343",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_unibreak"
+        }
+      ]
+    },
+    {
+      "binarySha256": "a8f4335a3550464a71d6296aa20ae4b2095f3a7c60621f4be1f6b349a43963f9",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893952",
+      "name": "ext_vpl",
+      "noticeCandidates": [
+        "deps/share/vpl/examples/api1x_core/legacy-decode/License.txt",
+        "deps/share/vpl/examples/api1x_core/legacy-encode/License.txt",
+        "deps/share/vpl/examples/api1x_core/legacy-vpp/License.txt",
+        "deps/share/vpl/examples/api2x/hello-decode/License.txt",
+        "deps/share/vpl/examples/api2x/hello-decvpp/License.txt",
+        "deps/share/vpl/examples/api2x/hello-encode-jpeg/License.txt",
+        "deps/share/vpl/examples/api2x/hello-encode/License.txt",
+        "deps/share/vpl/examples/api2x/hello-sharing-dx11/License.txt",
+        "deps/share/vpl/examples/api2x/hello-sharing-ocl/License.txt",
+        "deps/share/vpl/examples/api2x/hello-transcode/License.txt",
+        "deps/share/vpl/examples/api2x/hello-vpp/License.txt",
+        "deps/share/vpl/examples/interop/vpl-infer/License.txt",
+        "deps/share/vpl/examples/tutorials/01_transition/License.txt",
+        "deps/share/vpl/licensing/license.txt"
+      ],
+      "recipeFile": {
+        "bytes": 538,
+        "mode": 420,
+        "path": "recipes/ext_vpl/CMakeLists.txt",
+        "sha256": "42d737505e3c04ef61cc3c7cc3c53cf812d7a3617fc1b09b414aa0c760b4c066"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/intel/libvpl.git",
+          "GIT_TAG": "v2.14.0",
+          "callIndex": 0,
+          "declarationSha256": "998587c2945d9df4f69a30023406ac2f8df62a2713d90b811842bc1380486b05",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_vpl"
+        }
+      ]
+    },
+    {
+      "binarySha256": "3c30018567245445a60b8bb23255f679bde515ab1afe93c0ed07898dda597b8b",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895379",
+      "name": "ext_vpx",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1491,
+        "mode": 420,
+        "path": "recipes/ext_vpx/CMakeLists.txt",
+        "sha256": "74085d0722436686dce74c3a09f4d8780194f3d3315f11c4f478b559fa53b511"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/dimula73/libvpx.git",
+          "GIT_TAG": "meson-2",
+          "callIndex": 0,
+          "declarationSha256": "4672f6bbeb68a65ee7f0cc95aecc991d9a3c4f323e383c76b43e4a3d3846f3d0",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 21,
+          "target": "ext_vpx"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d10df272b320bb41143dd83d9e22db7e4259a5a2e3c20fe0bf0b3179558aa0db",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895187",
+      "name": "ext_webp",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 991,
+        "mode": 420,
+        "path": "recipes/ext_webp/CMakeLists.txt",
+        "sha256": "4cd9e299fe1b8f57a87dfcec11402e6f71ffadb62589d807cd8289d82a9999bd"
+      },
+      "runtimeSelectedFileCount": 5,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz",
+          "URL_HASH": "SHA256=2a499607df669e40258e53d0ade8035ba4ec0175244869d1025d460562aa09b4",
+          "callIndex": 0,
+          "declarationSha256": "9c314e4ddee16ea3195f16421620c8d76791aa6f474d00504587f7ae52bfeddf",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_webp"
+        }
+      ]
+    },
+    {
+      "binarySha256": "5a94ad6c34355fd30f3d0b7e27f6379e75aadb6d269c69262807838038a25dd7",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788895199",
+      "name": "ext_xsimd",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 672,
+        "mode": 420,
+        "path": "recipes/ext_xsimd/CMakeLists.txt",
+        "sha256": "48ae4e1088418225c22902c7333108cb8e5bb588deeae8bd172f7a48f7f1d555"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "DOWNLOAD_NAME": "xsimd-13.1.0.tar.gz",
+          "URL": "https://github.com/xtensor-stack/xsimd/archive/refs/tags/13.1.0.tar.gz",
+          "URL_HASH": "SHA256=88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4",
+          "callIndex": 0,
+          "declarationSha256": "eae2ebde489a482d270a7ccaf59cd1a14f95baa5d690040a448af8a57b61ac0c",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_xsimd"
+        }
+      ]
+    },
+    {
+      "binarySha256": "4f712600755d067cbbd85dd17ad68f02e298e5b12254e4e4bfa9bc7cd300fff4",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788894095",
+      "name": "ext_zlib",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 1939,
+        "mode": 420,
+        "path": "recipes/ext_zlib/CMakeLists.txt",
+        "sha256": "e11ae4aa59f0298f984f34dc96aca741575486639e27a5dbe2e9418656749aee"
+      },
+      "runtimeSelectedFileCount": 1,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "URL": "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+          "URL_HASH": "SHA256=9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+          "callIndex": 0,
+          "declarationSha256": "a5754a5bde8da9ce0f7f09d14cf77eac9fdb8f6dca697254549a42eb42cb3e3d",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 10,
+          "target": "ext_zlib"
+        }
+      ]
+    },
+    {
+      "binarySha256": "516c8d03e29fcb9d776cb25f5fdc46a45fa204ea8d8c5c5087001bb44a0355f8",
+      "binaryVersion": "transition.now-update-qt-to-6.11.0-1788893735",
+      "name": "ext_zug",
+      "noticeCandidates": [],
+      "recipeFile": {
+        "bytes": 620,
+        "mode": 420,
+        "path": "recipes/ext_zug/CMakeLists.txt",
+        "sha256": "2779fbb08fc2a8882214323367b44d1fbb6722ab0cc7847afd7404d867753550"
+      },
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "windowsInputs": [
+        {
+          "GIT_REPOSITORY": "https://github.com/arximboldi/zug.git",
+          "GIT_TAG": "deb266f4c7c35d325de7eb3d033f06e0809495f2",
+          "callIndex": 0,
+          "declarationSha256": "d82a825a0b6f3b3f83b7053fde3a1fd555f98a247285b4bca14783516a24cb58",
+          "inputKind": "upstream-source-or-source-overlay",
+          "line": 9,
+          "target": "ext_zug"
+        }
+      ]
+    },
+    {
+      "binarySha256": "d14a2022c095b83404b64a249406478d852821d31beaa32abe31c932832b3538",
+      "binaryVersion": "20251118",
+      "name": "llvm-mingw",
+      "noticeCandidates": [
+        "tools/llvm/LICENSE.TXT",
+        "tools/llvm/aarch64-w64-mingw32/share/mingw32/COPYING",
+        "tools/llvm/aarch64-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+        "tools/llvm/aarch64-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+        "tools/llvm/aarch64-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+        "tools/llvm/aarch64-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+        "tools/llvm/arm64ec-w64-mingw32/share/mingw32/COPYING",
+        "tools/llvm/arm64ec-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+        "tools/llvm/arm64ec-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+        "tools/llvm/arm64ec-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+        "tools/llvm/arm64ec-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+        "tools/llvm/armv7-w64-mingw32/share/mingw32/COPYING",
+        "tools/llvm/armv7-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+        "tools/llvm/armv7-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+        "tools/llvm/armv7-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+        "tools/llvm/armv7-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+        "tools/llvm/i686-w64-mingw32/share/mingw32/COPYING",
+        "tools/llvm/i686-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+        "tools/llvm/i686-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+        "tools/llvm/i686-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+        "tools/llvm/i686-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt",
+        "tools/llvm/python/lib/python3.12/LICENSE.txt",
+        "tools/llvm/share/gendef/COPYING",
+        "tools/llvm/share/widl/COPYING",
+        "tools/llvm/x86_64-w64-mingw32/share/mingw32/COPYING",
+        "tools/llvm/x86_64-w64-mingw32/share/mingw32/COPYING.MinGW-w64-runtime.txt",
+        "tools/llvm/x86_64-w64-mingw32/share/mingw32/COPYING.MinGW-w64.txt",
+        "tools/llvm/x86_64-w64-mingw32/share/mingw32/COPYING.winpthreads.txt",
+        "tools/llvm/x86_64-w64-mingw32/share/mingw32/COPYING.winstorecompat.txt"
+      ],
+      "runtimeSelectedFileCount": 4,
+      "sourceAndLicenseReviewComplete": false,
+      "sourceStatus": "tool-source-and-bundled-runtime-review-required",
+      "toolSourceCommit": "259cd18db3419d4c68571f6edb87828f8dc77894"
+    },
+    {
+      "binarySha256": "81aa9964dbabd71fe02e7ec50472fd3ad56138c49944515ece9001efbff8d719",
+      "binaryVersion": "3.31.8",
+      "name": "cmake",
+      "noticeCandidates": [
+        "tools/cmake/doc/cmake/Copyright.txt",
+        "tools/cmake/doc/cmake/cmcppdap/NOTICE",
+        "tools/cmake/doc/cmake/cmcurl/COPYING",
+        "tools/cmake/doc/cmake/cmlibarchive/COPYING",
+        "tools/cmake/doc/cmake/cmliblzma/COPYING",
+        "tools/cmake/doc/cmake/cmlibrhash/COPYING",
+        "tools/cmake/doc/cmake/cmlibuv/LICENSE",
+        "tools/cmake/doc/cmake/cmnghttp2/COPYING",
+        "tools/cmake/doc/cmake/cmsys/Copyright.txt",
+        "tools/cmake/doc/cmake/cmzlib/Copyright.txt",
+        "tools/cmake/doc/cmake/cmzstd/LICENSE"
+      ],
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "sourceStatus": "tool-source-and-bundled-runtime-review-required",
+      "toolSourceCommit": "dbe9d4593f4b7a2b1eb87826949f09af0268240a"
+    },
+    {
+      "binarySha256": "07fc8261b42b20e71d1720b39068c2e14ffcee6396b76fb7a795fb460b78dc65",
+      "binaryVersion": "1.13.2",
+      "name": "ninja",
+      "noticeCandidates": [],
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "sourceStatus": "tool-source-and-bundled-runtime-review-required",
+      "toolSourceCommit": "3441b633c2fe2c494e958780ba0f4227b1327634"
+    },
+    {
+      "binarySha256": "fc496ae8aa3f7318704e24c4885c0cc0e3e6060c6e8af28aaa266226c01d96a1",
+      "binaryVersion": "3.13.5",
+      "name": "python-sdk",
+      "noticeCandidates": [
+        "tools/python-sdk/tools/LICENSE.txt",
+        "tools/python-sdk/tools/Lib/site-packages/pip-25.1.1.dist-info/licenses/LICENSE.txt"
+      ],
+      "runtimeSelectedFileCount": 0,
+      "sourceAndLicenseReviewComplete": false,
+      "sourceStatus": "tool-source-and-bundled-runtime-review-required",
+      "toolSourceCommit": "6cb20a219a860eaf687b2d968b41c480c7461909"
+    }
+  ],
+  "recipeFileCount": 498,
+  "recipeRepository": {
+    "commit": "993af62fdf291eaec05a1824d9b420782717fc44",
+    "tree": "c7c208f011a7123df1b99d6fe7f59276b5025e84",
+    "url": "https://invent.kde.org/packaging/krita-deps-management.git"
+  },
+  "recipesSourcePlanSha256": "de745e136c915a3b9b9f2ef041e06d731f6cd0c2340508728b803a41a2c5d580",
+  "schema": 1
+}
