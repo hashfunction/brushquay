@@ -38,10 +38,17 @@ class ArgumentReader { static void Main(string[] args) {
     try {if(-not $process.WaitForExit(15000) -or $process.ExitCode -ne 0){throw 'Actual argument reader child failed'}}finally{if(-not $process.HasExited){$process.Kill();$process.WaitForExit()};$process.Dispose()}
     # Windows PowerShell 5.1 emits the JSON array as one pipeline object.
     # Assign its parsed value directly; @(...pipeline...) would wrap it again.
-    $actual=Get-Content -LiteralPath $resultPath -Raw|ConvertFrom-Json
+    # The child writes UTF-8 without a BOM; PS5.1 Get-Content defaults to ANSI.
+    $actual=[IO.File]::ReadAllText($resultPath,[Text.Encoding]::UTF8)|ConvertFrom-Json
     if($actual -isnot [array]){throw 'Actual child argument result must be a JSON array'}
     if($actual.Count -ne $values.Count){throw "Argument count differs: $($actual.Count) versus $($values.Count)"}
-    for($i=0;$i -lt $values.Count;$i++){if($actual[$i] -cne $values[$i]){throw "Native argument $i did not round-trip"}}
+    for($i=0;$i -lt $values.Count;$i++){
+        if($actual[$i] -cne $values[$i]){
+            $expectedCodes=($values[$i].ToCharArray()|ForEach-Object {[int]$_}) -join ','
+            $actualCodes=([string]$actual[$i]).ToCharArray()|ForEach-Object {[int]$_}
+            throw "Native argument $i did not round-trip; expected UTF-16 [$expectedCodes], actual [$($actualCodes -join ',')]"
+        }
+    }
     $before=(Get-FileHash -LiteralPath $resultPath).Hash
     $rejected=$false;try{New-BristluneObserverStartInfo $hostExecutable @('bad'+[char]0+'value')|Out-Null}catch{$rejected=$true}
     if(-not $rejected){throw 'NUL argument was accepted'}
