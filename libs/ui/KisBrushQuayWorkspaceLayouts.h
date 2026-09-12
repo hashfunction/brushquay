@@ -16,7 +16,7 @@ namespace KisBrushQuayWorkspaceLayouts {
 enum class Kind { Illustration, Inking };
 inline QString name(Kind kind)
 {
-    return kind==Kind::Illustration?QStringLiteral("BrushQuay Illustration"):QStringLiteral("BrushQuay Inking");
+    return kind==Kind::Illustration?QStringLiteral("Bristlune Illustration"):QStringLiteral("Bristlune Inking");
 }
 inline QStringList dockerIds()
 {
@@ -24,7 +24,7 @@ inline QStringList dockerIds()
 }
 inline bool arrange(QMainWindow &window,Kind kind,QString &error)
 {
-    if (kind!=Kind::Illustration && kind!=Kind::Inking) { error="Unknown BrushQuay workspace";return false; }
+    if (kind!=Kind::Illustration && kind!=Kind::Inking) { error="Unknown Bristlune workspace";return false; }
     QMap<QString,QDockWidget *> docks;
     const auto all=window.findChildren<QDockWidget *>(QString(),Qt::FindDirectChildrenOnly);
     for (const auto &id:dockerIds()) {

@@ -232,7 +232,7 @@ void KisKHelpMenu::aboutKDE()
 void KisKHelpMenu::reportBug()
 {
 #ifdef KRITA_STABLE
-    QDesktopServices::openUrl(QUrl("https://brushquay.trieflow.com/support"));
+    QDesktopServices::openUrl(QUrl("https://bristlune.trieflow.com/support"));
 #else
     if (!d->mBugReport) {
         d->mBugReport = new KisKBugReport(d->mAboutData, d->mParent);

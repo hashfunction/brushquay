@@ -1,4 +1,4 @@
-# BrushQuay export preset domain
+# Bristlune export preset domain
 
 The version 1 domain stores a UUID, Unicode display name, MIME type, extension and explicitly typed format options. The reviewed adapters are PNG and JPEG. Unknown formats, native document formats, arbitrary property names, paths, byte arrays, plug-in objects and unsupported value types are rejected. This boundary is deliberate: a format needs its own reviewed option adapter before appearing in the preset chooser. Ordinary advanced export retains the application's other available formats.
 
@@ -6,7 +6,7 @@ PNG/JPEG options use the existing export plug-ins' property names. Integers and 
 
 `KisExportPresetStore` defaults beneath the application's data directory in `brushquay/export-presets-v1.json`. It requires a successful load before Save or Delete. Malformed and future-version stores remain intact; an exclusive recovery copy preserves their exact bytes when writable. Every mutation stays blocked until the user explicitly repairs or moves the original and reloads. The UI must surface the original/recovery paths and provide Reload; it must not turn a load error into an empty writable store.
 
-Writes use a sibling QSaveFile with direct-write fallback disabled. QLockFile serializes cooperating BrushQuay writers; loaded bytes are checked before and after staging to reject stale UI state. Cancellation leaves disk and memory unchanged. This is atomic file publication with cooperating-writer locking, **not** a cross-process compare-and-swap against arbitrary external writers. Export destinations need their separate no-replace and recovery protocol; this preference-store API never authorizes an image overwrite.
+Writes use a sibling QSaveFile with direct-write fallback disabled. QLockFile serializes cooperating Bristlune writers; loaded bytes are checked before and after staging to reject stale UI state. Cancellation leaves disk and memory unchanged. This is atomic file publication with cooperating-writer locking, **not** a cross-process compare-and-swap against arbitrary external writers. Export destinations need their separate no-replace and recovery protocol; this preference-store API never authorizes an image overwrite.
 
 The Qt-only test target can run without opening a window:
 
@@ -32,7 +32,7 @@ The standalone suite adds 16 filesystem cases/data rows (18 QtTest passes includ
 
 ## Native integration (awaiting full Windows compilation)
 
-The File menu action is registered in the actual `kritamenu.action` and `krita5.xmlgui` resources. `KisExportPresetDialog` uses each installed PNG/JPEG plug-in's real configuration widget, offers New/Save/Update/Delete/Reload, and returns a copied preset without exporting. Save and Delete remain disabled after a load failure. The new chooser explicitly disables its built-in overwrite question; an asynchronous identity/content capture precedes BrushQuay's replacement question, and that exact consent snapshot reaches the worker. Existing KoFileDialog callers retain the default overwrite prompt.
+The File menu action is registered in the actual `kritamenu.action` and `krita5.xmlgui` resources. `KisExportPresetDialog` uses each installed PNG/JPEG plug-in's real configuration widget, offers New/Save/Update/Delete/Reload, and returns a copied preset without exporting. Save and Delete remain disabled after a load failure. The new chooser explicitly disables its built-in overwrite question; an asynchronous identity/content capture precedes Bristlune's replacement question, and that exact consent snapshot reaches the worker. Existing KoFileDialog callers retain the default overwrite prompt.
 
 `KisExportPresetJob` uses `KisDocument::exportDocument` and filters its actual `sigCompleteBackgroundSaving` by the private staged path. It keeps native export warning/options dialogs. Successful rendering is decoded and checked for expected format/dimensions off the GUI thread before publication; input hashing and final publication also run off the GUI thread. Document paths, file-layer paths and external reference-image paths are protected. Closing the source cancels publication. Outcomes distinguish cancelled/failed/unpublished from published output, retain recovery paths, and update last-export state only after verified publication. The underlying document's ordinary completion notification still concerns its private rendering stage; the final Export Result dialog reports destination publication separately.
 

@@ -102,7 +102,7 @@ private Q_SLOTS:
         // Use the real resource model, refusing any same-name file replacement.
         KisResourceModel model(ResourceType::Workspaces);
         QBuffer importedBytes(&data);QVERIFY(importedBytes.open(QIODevice::ReadOnly));
-        const QString filename="BrushQuay_"+name.section(' ',1)+".kws";
+        const QString filename="Bristlune_"+name.section(' ',1)+".kws";
         auto imported=model.importResource(filename,&importedBytes,false);QVERIFY(imported);
         QVERIFY(model.indexForResource(imported).isValid());QCOMPARE(imported->name(),name);
         QVERIFY(!model.resourcesForFilename(filename).isEmpty());

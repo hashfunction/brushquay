@@ -24,7 +24,7 @@ class PackageTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.install = self.root/'install'
         (self.install/'bin').mkdir(parents=True)
-        (self.install/'bin/brushquay.exe').write_bytes(b'fixture executable; not a native binary')
+        (self.install/'bin/bristlune.exe').write_bytes(b'fixture executable; not a native binary')
         (self.install/'share/licenses').mkdir(parents=True)
         (self.install/'share/licenses/source.txt').write_text('Fixture license and source location')
         self.audit = {'schema':1, 'sourceCommit':'a'*40, 'licenseReviewComplete':True,
@@ -35,7 +35,7 @@ class PackageTests(unittest.TestCase):
                 'license':'GPL-3.0-or-later','source':'https://example.invalid/fixture-source'})
         self.props=self.root/'identity.props'
         self.props.write_text('''<Project><PropertyGroup>
-<PackageName>Fixture.BrushQuay</PackageName><Publisher>CN=Fixture Only</Publisher>
+<PackageName>Fixture.Bristlune</PackageName><Publisher>CN=Fixture Only</Publisher>
 <Version>1.0.0.0</Version><MinWindowsVersion>10.0.17763.0</MinWindowsVersion>
 <MaxWindowsVersionTested>10.0.26100.0</MaxWindowsVersionTested>
 </PropertyGroup></Project>''')
@@ -55,12 +55,22 @@ class PackageTests(unittest.TestCase):
         names=[node.attrib.get('Name') for node in doc.iter() if node.tag.endswith('Capability')]
         self.assertEqual(names,['runFullTrust'])
         applications=[n for n in doc.iter() if n.tag.endswith('Application')]
-        self.assertEqual(applications[0].attrib['Executable'],'BrushQuay\\bin\\brushquay.exe')
+        self.assertEqual(applications[0].attrib['Executable'],'Bristlune\\bin\\bristlune.exe')
         self.assertFalse(any('Extension' in n.tag for n in doc.iter()))
+    def test_renamed_manifest_preserves_application_id_and_rejects_old_display_name(self):
+        data=package.manifest_bytes(self.identity)
+        self.assertIn(b'Id="BrushQuay"',data)
+        self.assertIn(b'<DisplayName>Bristlune</DisplayName>',data)
+        self.assertIn(b'<PublisherDisplayName>hashfunction</PublisherDisplayName>',data)
+        for before,after in ((b'<DisplayName>Bristlune',b'<DisplayName>BrushQuay'),
+                             (b'DisplayName="Bristlune"',b'DisplayName="BrushQuay"'),
+                             (b'<PublisherDisplayName>hashfunction',b'<PublisherDisplayName>foreign')):
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                package.verify_manifest_identity(data.replace(before,after),self.identity)
     def test_missing_placeholder_or_upstream_identity_rejected(self):
         original=self.props.read_text()
         for value in ('49800KritaProject.Krita','REQUIRED_FROM_PARTNER_CENTER','bad/name',''):
-            self.props.write_text(original.replace('Fixture.BrushQuay',value))
+            self.props.write_text(original.replace('Fixture.Bristlune',value))
             with self.assertRaises(ValueError): package.load_identity(self.props)
         self.props.write_text(original.replace('CN=Fixture Only','CN=03E730BB-6849-4762-9BDB-10CD7FFDB2C1'))
         with self.assertRaises(ValueError): package.load_identity(self.props)
@@ -97,7 +107,7 @@ class PackageTests(unittest.TestCase):
                 approved=package.load_identity(self.props)
                 node=ET.fromstring(package.manifest_bytes(approved)).find('{http://schemas.microsoft.com/appx/manifest/foundation/windows10}Identity')
                 self.assertEqual(node.attrib['Publisher'],publisher)
-                self.assertEqual(node.attrib['Name'],'Fixture.BrushQuay')
+                self.assertEqual(node.attrib['Name'],'Fixture.Bristlune')
                 self.assertEqual(node.attrib['Version'],'1.0.0.0')
                 self.assertEqual(node.attrib['ProcessorArchitecture'],'x64')
     def test_generation_rejects_template_identity_drift(self):
@@ -114,9 +124,9 @@ class PackageTests(unittest.TestCase):
         expected=self.stage();manifest=self.root/'payload/AppxManifest.xml';original=manifest.read_bytes()
         foundation='{http://schemas.microsoft.com/appx/manifest/foundation/windows10}'
         restricted='{http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities}'
-        changes=[('Identity','Name','Different.BrushQuay'),('Identity','Publisher','CN=Different'),
+        changes=[('Identity','Name','Different.Bristlune'),('Identity','Publisher','CN=Different'),
                  ('Identity','Version','2.0.0.0'),('Identity','ProcessorArchitecture','arm64'),
-                 ('Applications/Application','Executable','BrushQuay\\bin\\other.exe'),
+                 ('Applications/Application','Executable','Bristlune\\bin\\other.exe'),
                  ('Applications/Application','Id','Different'),
                  ('Applications/Application','EntryPoint','Other.EntryPoint'),
                  ('Dependencies/TargetDeviceFamily','Name','Windows.Universal'),
@@ -159,12 +169,12 @@ class PackageTests(unittest.TestCase):
         for name in ('../escape','bin/CON.exe','bin/thing:stream','bin/a.','bin\\bad'):
             bad=json.loads(json.dumps(self.audit));bad['files'][0]['path']=name
             with self.assertRaises(ValueError): package.validate_audit(bad)
-        bad=json.loads(json.dumps(self.audit));bad['files'].append(dict(bad['files'][0],path='BIN/brushquay.exe'))
+        bad=json.loads(json.dumps(self.audit));bad['files'].append(dict(bad['files'][0],path='BIN/bristlune.exe'))
         with self.assertRaises(ValueError): package.validate_audit(bad)
         (self.install/'extra.dll').write_bytes(b'unreviewed')
         with self.assertRaises(ValueError): self.stage()
     def test_source_bytes_changed_and_symlink_rejected(self):
-        path=self.install/'bin/brushquay.exe';path.write_bytes(b'changed')
+        path=self.install/'bin/bristlune.exe';path.write_bytes(b'changed')
         with self.assertRaises(ValueError): self.stage()
     def test_directory_symlink_rejected(self):
         linked=self.root/'linked'
@@ -175,7 +185,7 @@ class PackageTests(unittest.TestCase):
         original={p.relative_to(self.install).as_posix():p.read_bytes() for p in self.install.rglob('*') if p.is_file()}
         expected=self.stage()
         package.verify_payload(self.root/'payload',expected)
-        self.assertTrue('BrushQuay/bin/brushquay.exe' in expected)
+        self.assertTrue('Bristlune/bin/bristlune.exe' in expected)
         self.assertTrue('Assets/StoreLogo.png' in expected)
         self.assertEqual(original,{p.relative_to(self.install).as_posix():p.read_bytes() for p in self.install.rglob('*') if p.is_file()})
     def test_existing_stage_refused(self):
@@ -183,14 +193,14 @@ class PackageTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.stage()
         self.assertEqual((self.root/'payload/owner').read_text(),'owner')
     def test_payload_tamper_after_stage_detected(self):
-        expected=self.stage();(self.root/'payload/BrushQuay/bin/brushquay.exe').write_bytes(b'changed')
+        expected=self.stage();(self.root/'payload/Bristlune/bin/bristlune.exe').write_bytes(b'changed')
         with self.assertRaises(ValueError): package.verify_payload(self.root/'payload',expected)
     def test_container_exact_hash_verification(self):
         expected=self.stage();result=verify_msix(self.zip(expected),expected,self.identity)
         self.assertEqual(result['verifiedPayloadFiles'],len(expected))
     def test_container_extra_alias_or_escape_rejected(self):
         expected=self.stage()
-        for name in ('extra.dll','brushquay/bin/brushquay.exe','../escape'):
+        for name in ('extra.dll','brushquay/bin/bristlune.exe','../escape'):
             with self.assertRaises(ValueError): verify_msix(self.zip(expected,{name:b'bad'}),expected,self.identity)
     def test_container_changed_manifest_rejected(self):
         expected=self.stage();(self.root/'payload/AppxManifest.xml').write_bytes(b'<changed/>')
@@ -241,10 +251,10 @@ class PackageTests(unittest.TestCase):
         self.assertFalse(record['signed'])
         self.assertEqual(record['audit']['sourceCommit'],'a'*40)
         for parsed in (record['unpackedManifest'],record['verification']['manifest']):
-            self.assertEqual(parsed['package'],{'Name':'Fixture.BrushQuay','Publisher':'CN=Fixture Only','Version':'1.0.0.0','ProcessorArchitecture':'x64'})
-            self.assertEqual(parsed['application']['Executable'],r'BrushQuay\bin\brushquay.exe')
+            self.assertEqual(parsed['package'],{'Name':'Fixture.Bristlune','Publisher':'CN=Fixture Only','Version':'1.0.0.0','ProcessorArchitecture':'x64'})
+            self.assertEqual(parsed['application']['Executable'],r'Bristlune\bin\bristlune.exe')
             self.assertEqual(parsed['capabilities'],['runFullTrust'])
-        verify_msix(output/'BrushQuay.msix',record['payload'],record['identity'])
+        verify_msix(output/'Bristlune.msix',record['payload'],record['identity'])
     def test_driver_late_output_owner_is_not_replaced(self):
         audit,sdk=self.sdk_fixture();output=self.root/'release'
         def collision(command,**kwargs):

@@ -41,7 +41,7 @@ class KisExportPresetIntegrationTest : public QObject {
     static KisImageSP image()
     {
         const auto *space=KoColorSpaceRegistry::instance()->rgb8();
-        KisImageSP result=new KisImage(nullptr,32,24,space,"BrushQuay generated fixture");
+        KisImageSP result=new KisImage(nullptr,32,24,space,"Bristlune generated fixture");
         KisPaintLayerSP layer=new KisPaintLayer(result,"Own generated solid color",OPACITY_OPAQUE_U8);
         layer->paintDevice()->fill(result->bounds(),KoColor(QColor(32,96,160),space));
         result->addNode(layer,result->root()); result->waitForDone(); return result;

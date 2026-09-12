@@ -62,14 +62,23 @@ def verify_manifest_identity(data,identity):
     package=nodes[FOUNDATION+'Identity']
     attributes(package,{'Name':identity['PackageName'],'Publisher':identity['Publisher'],
         'Version':identity['Version'],'ProcessorArchitecture':'x64'},'package identity')
+    properties=nodes[FOUNDATION+'Properties']
+    expected_properties={'DisplayName':'Bristlune','PublisherDisplayName':'hashfunction',
+        'Description':'Painting, illustration and reusable local export presets','Logo':r'Assets\StoreLogo.png'}
+    if properties.attrib or len(properties)!=len(expected_properties) or {
+        n.tag:n.text for n in properties}!={FOUNDATION+k:v for k,v in expected_properties.items()} or any(n.attrib or len(n) for n in properties):
+        raise ValueError('Manifest product presentation differs from the approved rename')
     target=child('Dependencies',FOUNDATION+'TargetDeviceFamily')
     attributes(target,{'Name':'Windows.Desktop','MinVersion':identity['MinWindowsVersion'],
         'MaxVersionTested':identity['MaxWindowsVersionTested']},'target device family')
     application=child('Applications',FOUNDATION+'Application')
-    attributes(application,{'Id':'BrushQuay','Executable':r'BrushQuay\bin\brushquay.exe',
+    attributes(application,{'Id':'BrushQuay','Executable':r'Bristlune\bin\bristlune.exe',
         'EntryPoint':'Windows.FullTrustApplication'},'application identity')
     if len(application)!=1 or application[0].tag!=UAP+'VisualElements' or len(application[0]):
         raise ValueError('Manifest application may contain only its approved visual elements; extensions are forbidden')
+    attributes(application[0],{'DisplayName':'Bristlune',
+        'Description':'Painting, illustration and reusable local export presets','BackgroundColor':'transparent',
+        'Square150x150Logo':r'Assets\Square150x150Logo.png','Square44x44Logo':r'Assets\Square44x44Logo.png'},'visual elements')
     capability=child('Capabilities',RESTRICTED+'Capability')
     attributes(capability,{'Name':'runFullTrust'},'capabilities')
     if any(len(node) for node in (package,target,capability)):

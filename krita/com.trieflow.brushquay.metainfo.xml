@@ -5,12 +5,12 @@
   <id>com.trieflow.brushquay</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <name>BrushQuay</name>
+  <name>Bristlune</name>
   <summary>Paint, illustrate and export with reusable local presets</summary>
   <developer id="com.trieflow"><name>Trieflow LLC</name></developer>
-  <description><p>BrushQuay is an independent painting application based on Krita. Save typed PNG and JPEG export presets and inspect each export before publication.</p></description>
+  <description><p>Bristlune is an independent painting application based on Krita. Save typed PNG and JPEG export presets and inspect each export before publication.</p></description>
   <launchable type="desktop-id">com.trieflow.brushquay.desktop</launchable>
-  <url type="homepage">https://brushquay.trieflow.com</url>
-  <url type="help">https://brushquay.trieflow.com/support</url>
-  <url type="bugtracker">https://brushquay.trieflow.com/support</url>
+  <url type="homepage">https://bristlune.trieflow.com</url>
+  <url type="help">https://bristlune.trieflow.com/support</url>
+  <url type="bugtracker">https://bristlune.trieflow.com/support</url>
 </component>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2026 Trieflow LLC
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Build an unsigned BrushQuay MSIX from an explicitly audited install tree.
+"""Build an unsigned Bristlune MSIX from an explicitly audited install tree.
 
 No NSIS extraction, shell extension, signing service, tool discovery or downloads.
 The release owner supplies identity, source/license closure and exact SDK tools.
@@ -74,7 +74,7 @@ def validate_audit(audit):
         if any(not isinstance(row[k],str) or not row[k].strip() or re.search(r'NOASSERTION|NONE|REQUIRED',row[k],re.I) for k in ('license','source')):
             raise ValueError('Unresolved file license or source')
         expected[row['path']]={'bytes':row['bytes'],'sha256':row['sha256']}
-    if 'bin/brushquay.exe' not in expected: raise ValueError('BrushQuay executable is missing')
+    if 'bin/bristlune.exe' not in expected: raise ValueError('Bristlune executable is missing')
     return expected
 
 def reject_link(path):
@@ -125,7 +125,7 @@ def stage_payload(install,audit,destination,identity):
     if os.path.lexists(destination): raise ValueError('Existing payload is never replaced')
     destination.mkdir()
     for rel,record in expected.items():
-        target=destination/'BrushQuay'/rel;target.parent.mkdir(parents=True,exist_ok=True)
+        target=destination/'Bristlune'/rel;target.parent.mkdir(parents=True,exist_ok=True)
         with regular_stream(install/rel) as source, target.open('xb') as output:
             shutil.copyfileobj(source,output,1024*1024)
         with regular_stream(target) as stream:
@@ -141,7 +141,7 @@ def stage_payload(install,audit,destination,identity):
         if {'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}!=record: raise ValueError('Original artwork hash mismatch: '+rel)
         write_new(destination/rel,data)
     write_new(destination/'AppxManifest.xml',manifest_bytes(identity))
-    payload={'BrushQuay/'+rel:record for rel,record in expected.items()}
+    payload={'Bristlune/'+rel:record for rel,record in expected.items()}
     payload.update(asset_lock)
     manifest=(destination/'AppxManifest.xml').read_bytes()
     payload['AppxManifest.xml']={'bytes':len(manifest),'sha256':hashlib.sha256(manifest).hexdigest()}
@@ -176,8 +176,8 @@ def build(install,audit_path,identity_path,tools_path,output):
     try:
         payload=temporary/'payload';expected=stage_payload(install,audit,payload,identity)
         commands=[[sdk['makepri']['path'],'new','/pr',str(payload),'/mn',str(payload/'AppxManifest.xml'),'/cf',str(HERE/'priconfig.xml'),'/of',str(payload/'resources.pri')],
-                  [sdk['makeappx']['path'],'pack','/d',str(payload),'/p',str(temporary/'BrushQuay.msix'),'/no','/v','/h','SHA256'],
-                  [sdk['makeappx']['path'],'unpack','/p',str(temporary/'BrushQuay.msix'),'/d',str(temporary/'unpacked'),'/no','/v']]
+                  [sdk['makeappx']['path'],'pack','/d',str(payload),'/p',str(temporary/'Bristlune.msix'),'/no','/v','/h','SHA256'],
+                  [sdk['makeappx']['path'],'unpack','/p',str(temporary/'Bristlune.msix'),'/d',str(temporary/'unpacked'),'/no','/v']]
         for number,command in enumerate(commands):
             confirm_tools(tools_path,sdk) # Recheck against the original immutable tool snapshot.
             with (temporary/f'sdk-{number+1}.log').open('xb') as log:
@@ -186,7 +186,7 @@ def build(install,audit_path,identity_path,tools_path,output):
                 with regular_stream(payload/'resources.pri') as stream: expected['resources.pri']=digest_stream(stream)
                 if expected['resources.pri']['bytes']==0: raise ValueError('Empty resources.pri')
             verify_payload(payload,expected)
-        container=verify_msix(temporary/'BrushQuay.msix',expected,identity)
+        container=verify_msix(temporary/'Bristlune.msix',expected,identity)
         with regular_stream(temporary/'unpacked/AppxManifest.xml') as stream:
             unpacked_identity=verify_manifest_identity(stream.read(MAX_MANIFEST_BYTES+1),identity)
         # SDK-unpacked content must also agree; only container metadata may be extra.

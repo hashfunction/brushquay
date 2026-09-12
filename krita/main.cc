@@ -723,7 +723,7 @@ if (!qEnvironmentVariableIsEmpty("KRITA_OPENGL_DEBUG")) {
                             KAboutLicense::GPL_V3,
                             i18nc("@info:credit", "© 2026 Trieflow LLC. Based on Krita; © 1999–2026 The Krita Developers. GPL-3.0-or-later."));
     aboutData.setLicense(KAboutLicense::GPL_V3, KAboutLicense::OrLaterVersions);
-    aboutData.setBugAddress("https://brushquay.trieflow.com/support");
+    aboutData.setBugAddress("https://bristlune.trieflow.com/support");
     aboutData.setHomepage(QString::fromLatin1(KisBrushQuayIdentity::ProductUrl));
     aboutData.setOrganizationDomain("trieflow.com");
     aboutData.setDesktopFileName("com.trieflow.brushquay");

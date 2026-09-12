@@ -13,6 +13,8 @@ import time
 import uuid
 
 from locked_windows_deps import LockError, canonical, load_lock, sha, verify_stage
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'packaging/windows/qualification'))
+from runtime_stage import measure, measure_tree
 
 
 def configuration(stage, source, build, install, host):
@@ -111,6 +113,8 @@ def main():
     evidence = args.evidence.resolve() / (time.strftime('%Y%m%d-%H%M%S') + '-' + uuid.uuid4().hex)
     evidence.mkdir(parents=True)
     record = {'schema': 1, 'status': 'not_built', 'lockSha256': sha(canonical(lock)),
+              'workflowRunId': os.environ.get('GITHUB_RUN_ID'),
+              'workflowRunAttempt': os.environ.get('GITHUB_RUN_ATTEMPT'),
               'licenseAuditComplete': False, 'windows': platform.platform(),
               'bootstrapPython': sys.version, 'bootstrapExecutable': sys.executable,
               'bootstrapExecutableSha256': hashlib.sha256(Path(sys.executable).read_bytes()).hexdigest(),
@@ -168,16 +172,18 @@ def main():
                  '--timeout', '180', '--output-on-failure', '--output-junit', str(evidence / 'product-tests.xml')],
                 evidence / 'product-tests.log', test_environment, source)
             record['productTests'] = sorted(expected_tests)
+            record['productTestReport'] = measure(evidence / 'product-tests.xml')
             record['status'] = 'compiled_and_product_tests_passed'
             run([command[0], '--install', str(build)], evidence / 'install.log', environment, source)
             record['installedApplicationFiles'] = []
-            for relative in ('bin/brushquay.exe', 'bin/brushquay.com', 'bin/brushquay.dll'):
+            for relative in ('bin/bristlune.exe', 'bin/bristlune.com', 'bin/bristlune.dll'):
                 installed_file = install / relative
                 if not installed_file.is_file() or installed_file.stat().st_size == 0:
                     raise LockError('Missing installed product binary: ' + relative)
                 record['installedApplicationFiles'].append({'path': relative, 'bytes': installed_file.stat().st_size,
                     'sha256': hashlib.sha256(installed_file.read_bytes()).hexdigest()})
             record['status'] = 'compiled_and_installed_not_packaged'
+            record['installedTree'] = measure_tree(install)
         verify_stage(lock, cache, stage)
         record['inputStageUnchanged'] = True
     except Exception as error:

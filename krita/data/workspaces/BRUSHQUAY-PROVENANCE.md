@@ -1,4 +1,4 @@
-# BrushQuay original workspace provenance
+# Bristlune original workspace provenance
 
 Original layout recipes authored September 11, 2026 for Trieflow LLC, with the resulting layout-only resource files dedicated by Trieflow LLC to CC0-1.0. The generation code is GPL-3.0-or-later and retained in source. It copies no upstream workspace state or embedded art.
 

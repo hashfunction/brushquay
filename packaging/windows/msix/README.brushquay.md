@@ -1,8 +1,8 @@
-# Explicit audited BrushQuay packaging
+# Explicit audited Bristlune packaging
 
 Run this builder from the exact reviewed **source checkout**, after the native Windows build/runtime and all redistributed inputs have passed their separate review. It never installs packaging tools into the app, extracts NSIS, copies a shell extension, registers file associations or COM, signs, sends to a notary service, downloads, or publishes.
 
-Identity is a required `.props` file matching `distribution/PackageIdentity.props.example`. All five values must be supplied; placeholders, paired `@…@` template markers in any field, and inherited Store identity values are rejected. XML field ordering does not affect rendering. Ordinary XML punctuation, Unicode and a single `@` in an email address are preserved as literal values. Root obtains the actual Name/Publisher from the product's Partner Center registration and the signing certificate workflow. The application ID `BrushQuay` inside the manifest is only a local application identifier. Version and actual supported/tested Windows range are explicit release inputs. Product strings are BrushQuay / Trieflow LLC, and the sole capability is `runFullTrust`.
+Identity is a required `.props` file matching `distribution/PackageIdentity.props.example`. All five values must be supplied; placeholders, paired `@…@` template markers in any field, and inherited Store identity values are rejected. XML field ordering does not affect rendering. Ordinary XML punctuation, Unicode and a single `@` in an email address are preserved as literal values. Root obtains the actual Name/Publisher from the product's Partner Center registration and the signing certificate workflow. The application ID `Bristlune` inside the manifest is only a local application identifier. Version and actual supported/tested Windows range are explicit release inputs. Product strings are Bristlune / hashfunction, and the sole capability is `runFullTrust`.
 
 The audited runtime directory is read only. Its JSON inventory must have exactly:
 
@@ -13,7 +13,7 @@ The audited runtime directory is read only. Its JSON inventory must have exactly
   "licenseReviewComplete": true,
   "correspondingSourceComplete": true,
   "files": [
-    {"path":"bin/brushquay.exe", "bytes":123, "sha256":"<actual 64 hex characters>",
+    {"path":"bin/bristlune.exe", "bytes":123, "sha256":"<actual 64 hex characters>",
      "license":"<reviewed SPDX expression>", "source":"<corresponding source bundle/location>"}
   ]
 }
@@ -42,12 +42,12 @@ python build-tools/ci-scripts/build-windows-package.py `
   --identity <approved-identity.props> --sdk-tools <sdk-tools.json> `
   --output <new-output-directory>
 python packaging/windows/msix/verify_brushquay_msix.py `
-  --package <new-output-directory>/BrushQuay.msix `
+  --package <new-output-directory>/Bristlune.msix `
   --record <new-output-directory>/package-record.json
 ```
 
 The builder creates a private sibling stage, copies only verified bytes, generates original Store assets and manifest, runs makepri, then makeappx pack/unpack with no overwrite and normal semantic validation. It parses the generated, SDK-unpacked and independently read container manifests and compares the exact package name, publisher, version, architecture, application ID/executable/entry point, capability list and target-device-family values with the approved identity. Duplicate sections, surplus applications/dependencies/capabilities and application extensions fail. The parsed SDK/container identity fields are recorded in the evidence. Both SDK-unpacked files and the independent ZIP payload must also match the exact expected hashes before native no-replace directory publication. Hash agreement cannot authorize a different identity. It retains the payload, unpacked tree, unsigned package, SDK logs and JSON record. Failures retain the private recovery/evidence directory; a concurrent final output owner is preserved. The original runtime directory is never modified. Temporary stages must be on a trusted local filesystem; hostile ancestor renames and power loss can require manual recovery.
 
-Assets are three original Qt-rendered PNG derivatives of `krita/pics/branding/BrushQuay/sc-apps-brushquay.svg`, CC0-1.0 / Trieflow LLC, with exact hashes in `assets.lock.json`. They replace inherited Store artwork. Derivation used Qt 6.11.2 QSvgRenderer, AppleClang 21.0.0.21000101 and the committed headless art generator; no upstream mascot, embedded font or external artwork was used.
+Assets are three original Qt-rendered PNG derivatives of `krita/pics/branding/Bristlune/sc-apps-bristlune.svg`, CC0-1.0 / Trieflow LLC, with exact hashes in `assets.lock.json`. They replace inherited Store artwork. Derivation used Qt 6.11.2 QSvgRenderer, AppleClang 21.0.0.21000101 and the committed headless art generator; no upstream mascot, embedded font or external artwork was used.
 
 The 26 local tests use synthetic byte/ZIP/SDK fixtures and real filesystem publication. They do not run Microsoft's SDK or prove a valid installable package. Actual SDK pack/unpack, signed test install/upgrade/uninstall, DLL/resource closure, full Windows runtime tests and WACK remain mandatory. See Microsoft documentation for [MakeAppx commands and validation limits](https://learn.microsoft.com/en-us/windows/msix/package/create-app-package-with-makeappx-tool) and [MakePRI command options](https://learn.microsoft.com/en-us/windows/uwp/app-resources/makepri-exe-command-options).

@@ -241,7 +241,7 @@ KisApplication::KisApplication(const QString &key, int &argc, char **argv)
     QCoreApplication::addLibraryPath(QCoreApplication::applicationDirPath());
 
 #ifndef Q_OS_MACOS
-    setWindowIcon(QIcon(QStringLiteral(":/brushquay.svg")));
+    setWindowIcon(QIcon(QStringLiteral(":/bristlune.svg")));
 #endif
 
     if (qgetenv("KRITA_NO_STYLE_OVERRIDE").isEmpty()) {

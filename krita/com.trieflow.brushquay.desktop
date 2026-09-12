@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: 2026 Trieflow LLC
 # SPDX-License-Identifier: CC0-1.0
 [Desktop Entry]
-Name=BrushQuay
+Name=Bristlune
 GenericName=Digital Painting
 Comment=Paint, illustrate and export with reusable local presets
-Exec=brushquay %F
-Icon=brushquay
+Exec=bristlune %F
+Icon=bristlune
 Type=Application
 Terminal=false
 Categories=Graphics;2DGraphics;RasterGraphics;

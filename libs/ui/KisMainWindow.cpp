@@ -3340,7 +3340,7 @@ void KisMainWindow::initializeGeometry()
 
 void KisMainWindow::showManual()
 {
-    QDesktopServices::openUrl(QUrl("https://brushquay.trieflow.com/support"));
+    QDesktopServices::openUrl(QUrl("https://bristlune.trieflow.com/support"));
 }
 
 void KisMainWindow::showDockerTitleBars(bool show)

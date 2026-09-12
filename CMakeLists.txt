@@ -381,7 +381,7 @@ if(BUILD_WITH_QT6 AND NOT "QT6" IN_LIST ALLOW_UNSTABLE)
 endif()
 
 # The independent distribution always uses its original product artwork.
-set(BRANDING "BrushQuay")
+set(BRANDING "Bristlune")
 
 message(STATUS "Branding selected: ${BRANDING}")
 

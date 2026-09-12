@@ -154,7 +154,7 @@ KisKBugReport::KisKBugReport(const KAboutData &aboutData, QWidget *_parent)
     // Point to the web form
 
     lay->addSpacing(10);
-    QString text = i18n("<qt><p>Open BrushQuay support for help or to report a problem.</p>"
+    QString text = i18n("<qt><p>Open Bristlune support for help or to report a problem.</p>"
                         "<p>You can review and copy the diagnostic information below. "
                         "Opening support does not automatically send it.</p></qt>");
     QLabel *label = new QLabel(text, this);
@@ -210,7 +210,7 @@ KisKBugReport::~KisKBugReport()
 
 void KisKBugReportPrivate::_k_updateUrl()
 {
-    url = QUrl(QStringLiteral("https://brushquay.trieflow.com/support"));
+    url = QUrl(QStringLiteral("https://bristlune.trieflow.com/support"));
 }
 
 void KisKBugReport::accept()

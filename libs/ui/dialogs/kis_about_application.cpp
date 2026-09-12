@@ -32,7 +32,7 @@ public:
 KisAboutApplication::KisAboutApplication(QWidget *parent)
     : KoDialog(parent)
 {
-    setWindowTitle(i18n("About BrushQuay"));
+    setWindowTitle(i18n("About Bristlune"));
     setButtons(KoDialog::Close);
 
     WdgAboutApplication *wdgTab = new WdgAboutApplication(this);
@@ -46,7 +46,7 @@ KisAboutApplication::KisAboutApplication(QWidget *parent)
     QString authors = i18n("<html>"
                           "<head/>"
                           "<body>"
-                          "<h1 align=\"center\">BrushQuay by Trieflow LLC</h1><p>Based on Krita. Independent distribution.</p><h2>Upstream developers</h2>"
+                          "<h1 align=\"center\">Bristlune by Trieflow LLC</h1><p>Based on Krita. Independent distribution.</p><h2>Upstream developers</h2>"
                           "<p>");
 
     QFile fileDevelopers(":/developers.txt");
@@ -93,7 +93,7 @@ KisAboutApplication::KisAboutApplication(QWidget *parent)
         "<html><body><h1>Upstream sponsor acknowledgments</h1>"
         "<p>The upstream Krita project acknowledges Intel, Epic MegaGrants, Broken Rules, "
         "Gamechuck, FossHub and ASIFA-Hollywood for their support.</p>"
-        "<p>These historical credits do not imply sponsorship or endorsement of BrushQuay.</p>"
+        "<p>These historical credits do not imply sponsorship or endorsement of Bristlune.</p>"
         "</body></html>");
     wdgTab->lblKickstarter->setText(sponsors);
 
@@ -128,11 +128,11 @@ KisAboutApplication::KisAboutApplication(QWidget *parent)
                            "<head/>"
                            "<body>"
                            "<h1 align=\"center\"><b>Your Rights</b></h1>"
-                           "<p>BrushQuay is an independent Trieflow LLC product based on Krita, released under the GNU General Public License (version 3 or any later version).</p>"
+                           "<p>Bristlune is an independent Trieflow LLC product based on Krita, released under the GNU General Public License (version 3 or any later version).</p>"
                            "<p>This license grants people a number of freedoms:</p>"
                            "<ul>"
-                           "<li>You may use, study and modify BrushQuay.</li>"
-                           "<li>You may redistribute BrushQuay under the GNU GPL, including its source obligations.</li>"
+                           "<li>You may use, study and modify Bristlune.</li>"
+                           "<li>You may redistribute Bristlune under the GNU GPL, including its source obligations.</li>"
                            "</ul>"
                            "<h1 align=\"center\">Your artwork</h1>"
                            "<p>The application license does not impose licensing terms on your independently created artwork.</p>"

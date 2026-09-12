@@ -156,13 +156,13 @@ KisWelcomePageWidget::KisWelcomePageWidget(QWidget *parent)
     recentDocumentsListView->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(recentDocumentsListView, SIGNAL(customContextMenuRequested(QPoint)), SLOT(slotRecentDocContextMenuRequest(QPoint)));
 
-    // BrushQuay starts offline. No upstream news, donation service, or update client.
+    // Bristlune starts offline. No upstream news, donation service, or update client.
     m_networkIsAllowed=false;
     newsWidget->hide(); btnNewsOptions->hide(); labelNoFeed->hide();
     supporterBadge->hide(); wdgAndroidSupportBanner->hide();
     versionNotificationLabel->hide(); updaterFrame->hide();
     labelSupportText->setFont(largerFont());
-    labelSupportText->setText(i18n("BrushQuay by Trieflow LLC. An independent painting application based on Krita."));
+    labelSupportText->setText(i18n("Bristlune by Trieflow LLC. An independent painting application based on Krita."));
     newsFrame->hide();
 
     // Drop area..
@@ -279,12 +279,12 @@ void KisWelcomePageWidget::slotUpdateThemeColors()
     const auto link=[&](const QString &url,const QString &label) {
         return QString("<a style=\"color:%1\" href=\"%2\">%3</a>").arg(blendedColor.name(),url,label.toHtmlEscaped());
     };
-    userCommunityLink->setText(link("https://brushquay.trieflow.com/support",i18n("Support")));
-    gettingStartedLink->setText(link("https://brushquay.trieflow.com/support",i18n("Getting Started")));
-    manualLink->setText(link("https://brushquay.trieflow.com/support",i18n("Help")));
-    supportKritaLink->setText(link("https://brushquay.trieflow.com/privacy",i18n("Privacy")));
-    kritaWebsiteLink->setText(link("https://brushquay.trieflow.com",i18n("BrushQuay Website")));
-    sourceCodeLink->setText(link("https://brushquay.trieflow.com/#source",i18n("Source and Licenses")));
+    userCommunityLink->setText(link("https://bristlune.trieflow.com/support",i18n("Support")));
+    gettingStartedLink->setText(link("https://bristlune.trieflow.com/support",i18n("Getting Started")));
+    manualLink->setText(link("https://bristlune.trieflow.com/support",i18n("Help")));
+    supportKritaLink->setText(link("https://bristlune.trieflow.com/privacy",i18n("Privacy")));
+    kritaWebsiteLink->setText(link("https://bristlune.trieflow.com",i18n("Bristlune Website")));
+    sourceCodeLink->setText(link("https://bristlune.trieflow.com/#source",i18n("Source and Licenses")));
     poweredByKDELink->setText(i18n("Based on Krita and KDE Frameworks"));
     labelNoFeed->clear();
 
@@ -383,7 +383,7 @@ void KisWelcomePageWidget::changeEvent(QEvent *event)
 {
     if (event->type() == QEvent::FontChange) {
         labelSupportText->setFont(largerFont());
-    labelSupportText->setText(i18n("BrushQuay by Trieflow LLC. An independent painting application based on Krita."));
+    labelSupportText->setText(i18n("Bristlune by Trieflow LLC. An independent painting application based on Krita."));
     newsFrame->hide();
     }
 }
@@ -512,7 +512,7 @@ void KisWelcomePageWidget::showDevVersionHighlight()
     if (isDevelopmentBuild()) {
         QString devBuildLabelText = QString("<a style=\"color: " +
                                            blendedColor.name() +
-                                           " \" href=\"https://brushquay.trieflow.com/support#"
+                                           " \" href=\"https://bristlune.trieflow.com/support#"
                                            + QStringLiteral("diagnostics") + "\">")
                                   .append(i18n("DEV BUILD")).append("</a>");
 

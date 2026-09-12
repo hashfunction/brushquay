@@ -1,4 +1,4 @@
-name: BrushQuay Windows product qualification
+name: Bristlune Windows product qualification
 on:
   workflow_dispatch:
   push:
@@ -21,22 +21,31 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Locked dependency tests failed.' }
           python -m unittest discover -s packaging/windows/msix/tests -v
           if ($LASTEXITCODE -ne 0) { throw 'MSIX source validation tests failed.' }
+          python -m unittest discover -s packaging/windows/qualification -v
+          if ($LASTEXITCODE -ne 0) { throw 'Installed qualification safety tests failed.' }
+          ./packaging/windows/qualification/test_input_guard.ps1
+          ./packaging/windows/qualification/test_display_modes.ps1
+          ./packaging/windows/qualification/test_qualify.ps1
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
       - name: Compile and test the native Qt 6 product
         shell: pwsh
         run: ./build-tools/ci-scripts/build-locked-windows.ps1 -Python python -Jobs 2
+      - name: Qualify disposable installed painting and export
+        shell: pwsh
+        run: ./packaging/windows/qualification/qualify.ps1 -Python python
       - name: Preserve metadata only
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: BrushQuay-Windows-foundation-qualification
+          name: Bristlune-Windows-foundation-qualification
           path: |
             .brushquay/evidence/**/*.json
             .brushquay/evidence/**/*.log
             .brushquay/evidence/**/*.xml
             .brushquay/evidence/**/*.kws
+            .brushquay/evidence/**/*.png
             .brushquay/build/product-test-reports/*.xml
             .brushquay/build/product-test-reports/*.log
           include-hidden-files: true

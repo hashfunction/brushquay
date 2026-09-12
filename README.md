@@ -1,113 +1,31 @@
-![Picture](https://krita.org/images/krita-logo-light.svg)
+# Bristlune
 
-| CI Name     | Master | Stable | Release |
-| ------------------- | ---------------- | ------ | ------- |
-| Pipeline | [![pipeline status](https://invent.kde.org/graphics/krita/badges/master/pipeline.svg)](https://invent.kde.org/graphics/krita/-/commits/master) | [![pipeline status](https://invent.kde.org/graphics/krita/badges/krita/5.2/pipeline.svg)](https://invent.kde.org/graphics/krita/-/commits/krita/5.2) | [![Latest Release](https://invent.kde.org/graphics/krita/-/badges/release.svg)](https://invent.kde.org/graphics/krita/-/releases) |
+Bristlune 1.0.1 is a painting and illustration application based on Krita, with
+local PNG/JPEG export presets and original workspace layouts.
 
-Note: Nightly builds are not covered by this table atm
+- [Product](https://bristlune.trieflow.com)
+- [Privacy](https://bristlune.trieflow.com/privacy)
+- [Support](https://bristlune.trieflow.com/support)
+- [Source and licenses](https://bristlune.trieflow.com/source)
 
-Krita is a free and open source digital painting application. It is for artists who want to create professional work from start to end. Krita is used by comic book artists, illustrators, concept artists, matte and texture painters and in the digital VFX industry.
+The Windows entry points are `bin/bristlune.exe` and `bin/bristlune.com`.
+Existing BrushQuay settings, resource profiles and export-preset data keep their
+original paths. The assigned Store identity and application ID are unchanged.
 
-If you are reading this on GitHub, be aware that this is just a mirror. Our real code repository is provided by KDE: https://invent.kde.org/graphics/krita.git
+The original BrushQuay Windows run 34675482940 compiled the full application,
+passed all six required Qt product suites and installed the CMake tree. It did
+not qualify a deployed runtime, installed MSIX or public binary distribution.
+The renamed Bristlune build and real artwork/export workflow require new native
+evidence. The source/license and complete runtime audits remain open.
 
-![Picture](https://krita.org/images/hero-image-50.webp)
+See [product identity](distribution/BRANDING.md),
+[locked native pipeline](distribution/WINDOWS-BASELINE.md),
+[audited MSIX release gate](packaging/windows/msix/README.brushquay.md), and
+[export presets](distribution/EXPORT-PRESETS.md).
 
-### Repository Status
-
-For branch: `master`
-
-| Freeze type    | Status                                                               |
-|----------------|----------------------------------------------------------------------|
-| Feature Freeze | freeze, features are not allowed                                     |
-| String Freeze  | freeze, strings are not allowed                                      |
-
-
-### User Manual
-https://docs.krita.org/en/user_manual.html
-
-### Development Notes and Build Instructions
-
-Please follow [the online documentation](https://docs.krita.org/en/untranslatable_pages/building_krita.html).
-
-Other developer guides, notes and wiki:
-
-https://docs.krita.org/en/untranslatable_pages.html
-
-Apidox:
-
-https://api.kde.org/legacy/krita/html/index.html
-
-### Bugs and Wishes
-
-https://bugs.kde.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=CONFIRMED&bug_status=ASSIGNED&bug_status=REOPENED&list_id=1315444&product=krita&query_format=advanced
-
-### Discussion Forum
-
-* https://krita-artists.org/
-
-### IRC channel
-
-Most of the developers hang out here. If you are interested in helping with the project this is a great place to start.
-
-libera.chat, #krita
-
-### Project Website
-
-https://www.krita.org
-
-### Nightly builds
-
-#### Unstable
-
-* https://cdn.kde.org/ci-builds/graphics/krita/master/
-
-#### Stable
-
-* https://cdn.kde.org/ci-builds/graphics/krita/krita-5.2/
-
-#### Developers builds
-
-##### Linux build with debug symbols in Qt and Krita
-
-1) Go to Jobs section of Krita's CI: https://invent.kde.org/graphics/krita/-/jobs
-2) Search for the latest `linux-debug-weekly` job
-3) Enter the job and click on Artifacts->Browse
-4) Download the AppImage
-
-##### Linux build with ASAN in Qt and Krita
-
-1) Go to Jobs section of Krita's CI: https://invent.kde.org/graphics/krita/-/jobs
-2) Search for the latest `linux-asan-weekly` job
-3) Enter the job and click on Artifacts->Browse
-4) Download the AppImage
-5) Set up environment variable for ASAN:
-    ```bash
-        export ASAN_OPTIONS=new_delete_type_mismatch=0:detect_leaks=0
-    ```
-6) Run the AppImage in the modified environment
-
-##### Windows build with ASAN in Qt and Krita
-
-1) Go to Jobs section of Krita's CI: https://invent.kde.org/graphics/krita/-/jobs
-2) Search for the latest `windows-asan-weekly` job
-3) Enter the job and click on Artifacts->Browse
-4) Download the .zip file
-5) Open terminal
-6) Set up environment variable for ASAN:
-    ```
-        set ASAN_OPTIONS=new_delete_type_mismatch=0:detect_leaks=0
-    ```
-7) Change working directory to `c:\path\where\you\downloaded\krita-5.3.0-prealpha-git12345\bin`.
-   That is important, otherwise ASAN will not be able to locate llvm-symbolizer.exe and the
-   backtraces generated by ASAN will not contain proper symbols.
-    ```
-        cd c:\path\where\you\downloaded\krita-5.3.0-prealpha-git12345\bin
-    ```
-8) Run krita
-    ```
-        krita.com
-    ```
-
-### License
-
-Krita as a whole is licensed under the GNU Public License, Version 3. Individual files may have a different, but compatible license.
+Bristlune modifications are Copyright 2026 Trieflow LLC. The application is based
+on Krita, Copyright the Krita Developers, and distributed under GPL-3.0-or-later.
+Original author and license notices remain in each source and resource file.
+The [upstream README](distribution/UPSTREAM-README.md) is retained unchanged.
+Historical native dependency locks, source records and verification logs retain
+their original names and evidence; they do not claim a renamed Windows success.

@@ -5,12 +5,12 @@
 #include <QCoreApplication>
 namespace KisBrushQuayIdentity {
 inline constexpr char ApplicationId[]="brushquay";
-inline constexpr char DisplayName[]="BrushQuay";
-inline constexpr char Version[]="1.0.0";
+inline constexpr char DisplayName[]="Bristlune";
+inline constexpr char Version[]="1.0.1";
 inline constexpr char Publisher[]="Trieflow LLC";
-inline constexpr char ProductUrl[]="https://brushquay.trieflow.com";
-inline constexpr char PrivacyUrl[]="https://brushquay.trieflow.com/privacy";
-inline constexpr char SupportUrl[]="https://brushquay.trieflow.com/support";
+inline constexpr char ProductUrl[]="https://bristlune.trieflow.com";
+inline constexpr char PrivacyUrl[]="https://bristlune.trieflow.com/privacy";
+inline constexpr char SupportUrl[]="https://bristlune.trieflow.com/support";
 inline void apply()
 {
     QCoreApplication::setApplicationName(QString::fromLatin1(ApplicationId));

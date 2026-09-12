@@ -2507,7 +2507,7 @@ KisDlgPreferences::KisDlgPreferences(QWidget* parent, const char* name)
     : KPageDialog(parent)
 {
     Q_UNUSED(name);
-    setWindowTitle(i18n("Configure BrushQuay"));
+    setWindowTitle(i18n("Configure Bristlune"));
     setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel | QDialogButtonBox::RestoreDefaults);
 
     setFaceType(KPageDialog::List);

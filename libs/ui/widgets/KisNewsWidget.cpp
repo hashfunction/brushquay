@@ -117,7 +117,7 @@ bool KisNewsWidget::eventFilter(QObject *watched, QEvent *event)
 void KisNewsWidget::toggleNewsLanguage(QString langCode, bool enabled)
 {
     Q_UNUSED(langCode); Q_UNUSED(enabled);
-    // No upstream feeds are available in BrushQuay.
+    // No upstream feeds are available in Bristlune.
 }
 
 void KisNewsWidget::toggleNews(bool toggle)

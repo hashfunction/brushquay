@@ -14,7 +14,7 @@ endif()
 set(krita_SRCS main.cc)
 
 # Original application artwork, including conventional macOS ICNS generation.
-file(GLOB ICON_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/pics/branding/${BRANDING}/*-apps-brushquay.png")
+file(GLOB ICON_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/pics/branding/${BRANDING}/*-apps-bristlune.png")
 
 if (WIN32)
     # Private headers are needed for main.cc to enable WinTab support
@@ -27,12 +27,12 @@ endif()
 
 if (WIN32)
     set(krita_windows_stub_ICONS_SRCS "")
-    ecm_add_app_icon(krita_windows_stub_ICONS_SRCS ICONS ${ICON_SRCS} OUTFILE_BASENAME brushquay)
+    ecm_add_app_icon(krita_windows_stub_ICONS_SRCS ICONS ${ICON_SRCS} OUTFILE_BASENAME bristlune)
 
-    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/brushquay.ico
+    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/bristlune.ico
         DESTINATION ${CMAKE_INSTALL_PREFIX}/installer)
 elseif(APPLE)
-    ecm_add_app_icon(krita_SRCS OUTFILE_BASENAME brushquay ICONS ${ICON_SRCS})
+    ecm_add_app_icon(krita_SRCS OUTFILE_BASENAME bristlune ICONS ${ICON_SRCS})
 else()
     ecm_add_app_icon(krita_SRCS ICONS ${ICON_SRCS})
 endif()
@@ -145,7 +145,7 @@ elseif (WIN32)
 else()
     add_executable(krita ${krita_SRCS})
 endif()
-set_target_properties(krita PROPERTIES OUTPUT_NAME "brushquay")
+set_target_properties(krita PROPERTIES OUTPUT_NAME "bristlune")
 
 target_link_libraries(krita
     PRIVATE
@@ -168,12 +168,12 @@ if (APPLE)
         @loader_path/../Frameworks;@executable_path/../../../../lib;@executable_path/../lib;@executable_path/../Frameworks")
     set_target_properties(krita PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/Info.plist.template)
     set_target_properties(krita PROPERTIES MACOSX_BUNDLE_GUI_IDENTIFIER "com.trieflow.brushquay")
-    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "BrushQuay")
-    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_ICON_FILE "brushquay")
-    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_LONG_VERSION_STRING ${KRITA_VERSION_STRING})
-    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_SHORT_VERSION_STRING ${KRITA_VERSION_NUMBER_STRING})
-    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_BUNDLE_VERSION ${KRITA_VERSION_NUMBER_STRING})
-    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_COPYRIGHT "BrushQuay © 2026 Trieflow LLC. Based on Krita. GNU GPL version 3 or any later version.")
+    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "Bristlune")
+    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_ICON_FILE "bristlune")
+    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_LONG_VERSION_STRING "1.0.1")
+    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0.1")
+    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_BUNDLE_VERSION "1.0.1")
+    set_target_properties(krita PROPERTIES MACOSX_BUNDLE_COPYRIGHT "Bristlune © 2026 Trieflow LLC. Based on Krita. GNU GPL version 3 or any later version.")
 endif ()
 
 if (NOT ANDROID)
@@ -257,7 +257,7 @@ if (WIN32)
     endif()
     set_target_properties(krita_windows_stub_exe
         PROPERTIES
-            OUTPUT_NAME "brushquay"
+            OUTPUT_NAME "bristlune"
     )
     if (MSVC)
         target_link_options(krita_windows_stub_exe PRIVATE "/DEBUG:NONE")
@@ -273,7 +273,7 @@ if (WIN32)
     set_target_properties(krita_windows_stub_com
         PROPERTIES
             WIN32_EXECUTABLE false
-            OUTPUT_NAME "brushquay"
+            OUTPUT_NAME "bristlune"
             SUFFIX ".com"
     )
     if (MSVC)

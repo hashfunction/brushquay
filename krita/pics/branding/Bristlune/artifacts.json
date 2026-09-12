@@ -5,59 +5,59 @@
   "renderer": "Qt 6.11.2 QSvgRenderer",
   "files": [
     {
-      "path": "1024-apps-brushquay.png",
+      "path": "1024-apps-bristlune.png",
       "bytes": 89362,
       "sha256": "0988314f2b66bb5410eb784cac0fbd826774deffe7232f19a3f092746c4fd1e7"
     },
     {
-      "path": "128-apps-brushquay.png",
+      "path": "128-apps-bristlune.png",
       "bytes": 5665,
       "sha256": "6bbd80d1dc32366379e3fa772f3adaff70250b42697a5f9eac60e488f36739b0"
     },
     {
-      "path": "16-apps-brushquay.png",
+      "path": "16-apps-bristlune.png",
       "bytes": 615,
       "sha256": "4b6628f5905b73750c51177a53d51e8a4f08eb29cf5f4deb4c1dbf82aeda2557"
     },
     {
-      "path": "22-apps-brushquay.png",
+      "path": "22-apps-bristlune.png",
       "bytes": 856,
       "sha256": "19c328b0d1a74a9aa5c9ff2ed460ceaca9fcd33150e6780e32f443df549a10aa"
     },
     {
-      "path": "256-apps-brushquay.png",
+      "path": "256-apps-bristlune.png",
       "bytes": 13038,
       "sha256": "1f00d70f4c81d2883bc9e1ec7e5d0eeae07a320b7f301330c34101acff39c36c"
     },
     {
-      "path": "32-apps-brushquay.png",
+      "path": "32-apps-bristlune.png",
       "bytes": 1215,
       "sha256": "c56cf783b444682960af04aac884a6d2db2dcf522c5700516d9edd3c74645d3e"
     },
     {
-      "path": "48-apps-brushquay.png",
+      "path": "48-apps-bristlune.png",
       "bytes": 1975,
       "sha256": "192bb97fa81bddc9a3b4be41a3b658abe591359d53e3419314b7ad33e2c29598"
     },
     {
-      "path": "512-apps-brushquay.png",
+      "path": "512-apps-bristlune.png",
       "bytes": 31604,
       "sha256": "0ac3ae8068e30fbf1ea2e2ac1a7c0ea0bddaf5f092d872443f5ada89a12f2407"
     },
     {
-      "path": "64-apps-brushquay.png",
+      "path": "64-apps-bristlune.png",
       "bytes": 2479,
       "sha256": "fdaf518825576eebecd3c379d78ee6a43e08d7c0d2428a0cb1337c4ea789a364"
     },
     {
       "path": "banner.svg",
       "bytes": 372,
-      "sha256": "06691e80415515a59a094413847478a62d30168cc2a2d64ea47cb5fbaa660ad0"
+      "sha256": "db05743648ec279c875bfde64e6af7e91f72425ecf2d6694d89df0e0b4811e0f"
     },
     {
-      "path": "sc-apps-brushquay.svg",
+      "path": "sc-apps-bristlune.svg",
       "bytes": 1001,
-      "sha256": "c424fd377dfae13a3dbdd3c5595530b86164dee0d7a70cad9f64a425d92f24b7"
+      "sha256": "86a49cba5292a951f1776706b8f49c67a33af118ad12cba82e0b4616df2f1e6e"
     },
     {
       "path": "splash.png",
@@ -67,7 +67,13 @@
     {
       "path": "splash.svg",
       "bytes": 1104,
-      "sha256": "a63a6fddd293fb30bb6f33cb42dd91bc3e48332e597ab6a8d5fed86e65b0617e"
+      "sha256": "10f41c647e9519c4a94a5595f9d6f71444c295ab7d2b9de55f7757c2ff82bc65"
     }
-  ]
+  ],
+  "rename": {
+    "product": "Bristlune",
+    "source_base": "5a7de71e347f65f9efca503d60724c8a8d68aeac",
+    "raster_bytes_unchanged": true,
+    "svg_wordmark_updated": true
+  }
 }

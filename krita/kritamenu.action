@@ -1784,10 +1784,10 @@
     <text>Settings</text>
     <Action name="options_configure">
       <icon>configure</icon>
-      <text>&amp;Configure BrushQuay...</text>
+      <text>&amp;Configure Bristlune...</text>
       <whatsThis></whatsThis>
-      <toolTip>Configure BrushQuay</toolTip>
-      <iconText>Configure BrushQuay</iconText>
+      <toolTip>Configure Bristlune</toolTip>
+      <iconText>Configure Bristlune</iconText>
       <activationFlags>0</activationFlags>
       <activationConditions>0</activationConditions>
       <shortcut></shortcut>
@@ -1942,10 +1942,10 @@
     <text>Help</text>
     <Action name="help_contents">
       <icon>help-contents</icon>
-      <text>BrushQuay &amp;Help</text>
+      <text>Bristlune &amp;Help</text>
       <whatsThis></whatsThis>
-      <toolTip>BrushQuay Help</toolTip>
-      <iconText>BrushQuay Help</iconText>
+      <toolTip>Bristlune Help</toolTip>
+      <iconText>Bristlune Help</iconText>
       <shortcut>F1</shortcut>
       <isCheckable>false</isCheckable>
       <statusTip></statusTip>
@@ -1962,10 +1962,10 @@
     </Action>
     <Action name="help_about_app">
       <icon>krita</icon>
-      <text>&amp;About BrushQuay</text>
+      <text>&amp;About Bristlune</text>
       <whatsThis></whatsThis>
-      <toolTip>About BrushQuay</toolTip>
-      <iconText>About BrushQuay</iconText>
+      <toolTip>About Bristlune</toolTip>
+      <iconText>About Bristlune</iconText>
       <shortcut></shortcut>
       <isCheckable>false</isCheckable>
       <statusTip></statusTip>
