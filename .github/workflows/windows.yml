@@ -27,6 +27,14 @@ jobs:
           ./packaging/windows/qualification/test_display_modes.ps1
           ./packaging/windows/qualification/test_qualify.ps1
           ./packaging/windows/qualification/test_operation_scope.ps1
+      - name: Verify native Appx host before compiling
+        shell: powershell
+        run: |
+          ./packaging/windows/qualification/test_installer_host.ps1
+          ./packaging/windows/qualification/test_input_guard.ps1
+          ./packaging/windows/qualification/test_display_modes.ps1
+          ./packaging/windows/qualification/test_qualify.ps1
+          ./packaging/windows/qualification/test_operation_scope.ps1
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
@@ -34,7 +42,7 @@ jobs:
         shell: pwsh
         run: ./build-tools/ci-scripts/build-locked-windows.ps1 -Python python -Jobs 2
       - name: Qualify disposable installed painting and export
-        shell: pwsh
+        shell: powershell
         run: ./packaging/windows/qualification/qualify.ps1 -Python python
       - name: Preserve metadata only
         if: always()

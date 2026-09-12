@@ -78,6 +78,18 @@
       "url": "https://github.com/hashfunction/brushquay/actions/runs/34675482940",
       "artifactPath": "evidence/20260912-052956-5cf0b911f1cf4c5eacb8b389c3eaa616/native-build.json",
       "scope": "Historical pre-rename native build only. Same dependency lock; not a Bristlune installed-workflow result."
+    },
+    {
+      "path": "evidence/openssl-producer-1496.json",
+      "bytes": 4682,
+      "sha256": "762a18d197211df9d1e920cb07978599deae93f029e8c0ef4a479d488b13dff3",
+      "provenance": "Source-only event allowlist, exact producer URLs, private original log/API body hashes and lines are embedded."
+    },
+    {
+      "path": "evidence/moving-source-boundaries.json",
+      "bytes": 3035,
+      "sha256": "2a3107f2fa03869f267da420399a7fcb8a5891cd9207c8bad21a2192b8439214",
+      "provenance": "Existing locked archive/member hashes bind read-only binary version and DWARF observations; immutable candidate source URLs/hashes are discovery only."
     }
   ]
 }

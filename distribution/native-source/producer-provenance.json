@@ -405,5 +405,13 @@
     ],
     "nestedLibraryMemberCount": 540,
     "tclTkOrTkinterMembers": []
+  },
+  "opensslProducerBinding": {
+    "commit": "2fb8b5ba0980996bb04d5a779457e45390abe6bc",
+    "evidence": "evidence/openssl-producer-1496.json",
+    "builderSourcePlan": "openssl-builder-source-plan.json",
+    "builderSourceReceipt": "openssl-builder-collection-receipt.json",
+    "binaryInputSha256": "6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a",
+    "scope": "Exact producer revision and selected source-code materialization established; final file/notice/license and installed application closure remain separate."
   }
 }

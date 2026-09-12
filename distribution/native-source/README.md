@@ -30,7 +30,9 @@ pin, a build-observed short revision resolved to a full commit, an unproved buil
 default, and an unresolved moving branch. The follow-up materialization now
 contains 117 verified archives: 83 source tarballs/overlays and 34 Git trees.
 See [MATERIALIZATION.md](MATERIALIZATION.md) for receipts, exact provenance gaps,
-notice findings and commands. The downloaded OpenColorIO 2.5.1 source was SHA-256 checked
+notice findings and commands. The exact OpenSSL producer revision is now
+bound by its original AppVeyor artifact hash; a separately verified 28-file
+builder-code archive accompanies the prior 117 source archives. The downloaded OpenColorIO 2.5.1 source was SHA-256 checked
 against its recipe; the five retained `Install*.cmake` excerpts come from those
 exact bytes and preserve their upstream headers.
 

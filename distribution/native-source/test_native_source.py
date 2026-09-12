@@ -206,6 +206,41 @@ endif()
 
 
 class RetainedEvidenceTests(unittest.TestCase):
+    def test_openssl_producer_checkout_and_hash_bind_exact_locked_binary_and_sources(self):
+        root = inventory.HERE
+        proof = subject.read_json(root / 'evidence/openssl-producer-1496.json')
+        producer = proof['producer']; binary = proof['binaryInput']
+        events = [item['text'] for item in proof['records']]
+        self.assertEqual(producer['status'], 'success')
+        self.assertRegex(producer['commit'], r'^[0-9a-f]{40}$')
+        self.assertTrue(any(line.endswith('git checkout -qf ' + producer['commit']) for line in events))
+        self.assertEqual(sum(line.endswith('SHA256(' + binary['filename'] + ')= ' + binary['sha256']) for line in events), 2)
+        self.assertTrue(any(binary['filename'] + ': ' + str(binary['bytes']) + ' bytes ' in line for line in events))
+        record = next(p for p in subject.read_json(root / 'inventory.json')['packages'] if p['name'] == binary['owner'])
+        self.assertEqual(record['windowsInputs'][0]['URL_HASH'], 'SHA256=' + binary['sha256'])
+        materials = subject.read_json(root / 'materialized-inputs.json')['materials']
+        self.assertTrue(any(p['sha256'] == proof['sourceInput']['sha256'] and binary['owner'] in p['owners'] for p in materials))
+        self.assertFalse(proof['originalLog']['published'])
+        for line in events:
+            for forbidden in ('CI_JOB_TOKEN', 'PASSWORD=', 'SECRET=', 'secure:'):
+                self.assertNotIn(forbidden, line)
+        plan = subject.read_json(root / proof['builderSourcePlan'])
+        subject.validate_plan(plan)
+        self.assertEqual(plan['provenance']['commit'], producer['commit'])
+        self.assertEqual(plan['provenance']['tree'], producer['tree'])
+        self.assertEqual(plan['provenance']['owners'], [binary['owner']])
+        self.assertEqual(set(plan['provenance']['gitBlobIds']), set(plan['files']))
+        receipt = subject.read_json(root / proof['builderSourceReceipt'])
+        self.assertEqual(receipt['sourcePlanSha256'], subject.digest(subject.canonical(plan) + b'\n'))
+        self.assertEqual(receipt['memberCount'], len(plan['files']))
+        for path in plan['files']:
+            self.assertTrue(path.endswith(('.sh', '.py', '/README.md', '/LICENSE.md')))
+        for local, original in [('curl-dl-2fb8b5ba.sh', '_dl.sh'), ('curl-openssl-2fb8b5ba.sh', 'openssl.sh')]:
+            data = (root / 'evidence' / local).read_bytes(); path = 'curl-for-win/' + original
+            self.assertEqual(subject.digest(data), plan['files'][path]['sha256'])
+            self.assertEqual(hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest(), plan['provenance']['gitBlobIds'][path])
+        self.assertFalse(proof['correspondingSourceComplete']); self.assertFalse(proof['licenseReviewComplete'])
+
     def test_inventory_covers_all_locked_inputs_including_compiled_in_libraries(self):
         report = subject.read_json(inventory.HERE / 'inventory.json')
         lock = subject.read_json(inventory.LOCK)

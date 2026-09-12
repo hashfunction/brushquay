@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "scope": "Reviewed source checkout/configuration and artifact hash events only; original public log remains private and is not a publication member.",
+  "producer": {
+    "repository": "https://github.com/curl/curl-for-win.git",
+    "commit": "2fb8b5ba0980996bb04d5a779457e45390abe6bc",
+    "tree": "019be0982e2883f7db0fd8c80fb70984ba0388d4",
+    "buildId": 40566147,
+    "version": "1.0.1496",
+    "status": "success",
+    "created": "2021-08-29T22:05:48.1639755+00:00",
+    "jobId": "0fa4pitayo014mr6",
+    "url": "https://ci.appveyor.com/project/curlorg/curl-for-win/build/1.0.1496"
+  },
+  "metadata": {
+    "url": "https://ci.appveyor.com/api/projects/curlorg/curl-for-win/build/1.0.1496",
+    "bytes": 2894,
+    "sha256": "a6326e0cd2607bc50312009ebc093e4180c5d6560f83f300365ffc0a9886c375",
+    "retainedPrivateFile": "/private/tmp/bristlune-producer-followup/appveyor-build-1496.json"
+  },
+  "originalLog": {
+    "url": "https://ci.appveyor.com/api/buildjobs/0fa4pitayo014mr6/log",
+    "bytes": 2690727,
+    "sha256": "f6994d859eccd81a43ac146626f2687193b79e52b8b93368361d51757031e26d",
+    "retainedPrivateFile": "/private/tmp/bristlune-producer-followup/appveyor-1496-original.log",
+    "published": false
+  },
+  "binaryInput": {
+    "filename": "openssl-1.1.1l_4-win64-mingw.zip",
+    "bytes": 4544386,
+    "sha256": "6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a",
+    "owner": "ext_openssl",
+    "matchesOriginalRecipeAndRetainedBinary": true
+  },
+  "sourceInput": {
+    "version": "1.1.1l",
+    "sha256": "0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1",
+    "alreadyMaterialized": true
+  },
+  "records": [
+    {
+      "line": 2,
+      "text": "[00:00:03] git clone -q --depth=8 --branch=main https://github.com/curl/curl-for-win.git /home/appveyor/projects/curl-for-win"
+    },
+    {
+      "line": 3,
+      "text": "[00:00:04] git checkout -qf 2fb8b5ba0980996bb04d5a779457e45390abe6bc"
+    },
+    {
+      "line": 3339,
+      "text": "[00:03:33] + export OPENSSL_VER_=1.1.1l"
+    },
+    {
+      "line": 3340,
+      "text": "[00:03:33] + export OPENSSL_HASH=0b7a3e5e59c34827fe0c3a74b7ec8baef302b98fa80088d7f9153aa16fa76bd1"
+    },
+    {
+      "line": 8396,
+      "text": "[00:08:13] + time ./openssl.sh 1.1.1l"
+    },
+    {
+      "line": 8425,
+      "text": "[00:08:13] + options=mingw64"
+    },
+    {
+      "line": 8427,
+      "text": "[00:08:13] + options=mingw64 no-filenames"
+    },
+    {
+      "line": 8429,
+      "text": "[00:08:13] + options=mingw64 no-filenames enable-ec_nistp_64_gcc_128 -Wl,--high-entropy-va -Wl,--image-base,0x151000000"
+    },
+    {
+      "line": 8434,
+      "text": "[00:08:13] + sed s|die \"Directory given with --prefix|print \"Directory given with --prefix|g"
+    },
+    {
+      "line": 8435,
+      "text": "[00:08:13] + chmod a+x ./Configure-patched"
+    },
+    {
+      "line": 8436,
+      "text": "[00:08:13] + _prefix=C:/Windows/System32/OpenSSL"
+    },
+    {
+      "line": 8440,
+      "text": "[00:08:13] + options=mingw64 no-filenames enable-ec_nistp_64_gcc_128 -Wl,--high-entropy-va -Wl,--image-base,0x151000000 no-idea"
+    },
+    {
+      "line": 8442,
+      "text": "[00:08:13] + ./Configure-patched mingw64 no-filenames enable-ec_nistp_64_gcc_128 -Wl,--high-entropy-va -Wl,--image-base,0x151000000 no-idea shared --cross-compile-prefix=x86_64-w64-mingw32- -fno-ident -Wl,--nxcompat -Wl,--dynamicbase no-unit-test no-tests no-makedepend --prefix=C:/Windows/System32/OpenSSL --openssldir=C:/Windows/System32/OpenSSL/ssl"
+    },
+    {
+      "line": 9593,
+      "text": "[00:12:34] openssl-1.1.1l_4-win64-mingw.zip: 4544386 bytes 2021-08-24 13:38:47.000000000 +0000"
+    },
+    {
+      "line": 9596,
+      "text": "[00:12:34] SHA256(openssl-1.1.1l_4-win64-mingw.zip)= 6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a"
+    },
+    {
+      "line": 9599,
+      "text": "[00:12:34] SHA512(openssl-1.1.1l_4-win64-mingw.zip)= e3374f7d2250f49e0caa94fbcb0033f2e98d707808027252b13fdb897256d6fb327a472249b034891582d6570a5dc6b2a2e65dd76704f55d8d7a15acdf261fc1"
+    },
+    {
+      "line": 17175,
+      "text": "[00:23:56] SHA256(openssl-1.1.1l_4-win64-mingw.zip)= 6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a"
+    },
+    {
+      "line": 17176,
+      "text": "[00:23:56] SHA512(openssl-1.1.1l_4-win64-mingw.zip)= e3374f7d2250f49e0caa94fbcb0033f2e98d707808027252b13fdb897256d6fb327a472249b034891582d6570a5dc6b2a2e65dd76704f55d8d7a15acdf261fc1"
+    }
+  ],
+  "builderSourcePlan": "openssl-builder-source-plan.json",
+  "builderSourceReceipt": "openssl-builder-collection-receipt.json",
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false
+}

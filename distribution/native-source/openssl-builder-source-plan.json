@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "kind": "source-materials-only",
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false,
+  "provenance": {
+    "repository": "https://github.com/curl/curl-for-win.git",
+    "commit": "2fb8b5ba0980996bb04d5a779457e45390abe6bc",
+    "tree": "019be0982e2883f7db0fd8c80fb70984ba0388d4",
+    "owners": [
+      "ext_openssl"
+    ],
+    "scope": "Original builder shell/Python code plus original license/readme. CI configuration, images, signing/encrypted credential material and binary payloads are not in this selected source-code archive.",
+    "gitBlobIds": {
+      "curl-for-win/LICENSE.md": "f272473cd420514ed807d08fc0f16ed051eb6b6c",
+      "curl-for-win/README.md": "330562923c0e4689bc6e5faaaea0e8e75ab5bc1c",
+      "curl-for-win/_build.sh": "0b56853e2cda853dbeaec1d54ee85ce422e90297",
+      "curl-for-win/_ci-linux-debian.sh": "764e8b0d6c598df49a272194b365cc0a9ffb9dfa",
+      "curl-for-win/_ci-mac-homebrew.sh": "9785cecf07f6d8403fe5ef24eb4134803d205698",
+      "curl-for-win/_ci-win-msys2.sh": "5486dd67d9481f6716eee9992426d05f39a0ed32",
+      "curl-for-win/_dl.sh": "a386d0602949085cc74b533346d293d4dac0f2ac",
+      "curl-for-win/_peclean.py": "e66d57d252e1a2d3101812273b469fb9ac6b1847",
+      "curl-for-win/_pkg.sh": "d6b2f9d1677a756034aa9a24c0936a2654674246",
+      "curl-for-win/_sign-code.sh": "26faff656434000f4ac70797426997d02ca7ee0c",
+      "curl-for-win/_sign-pkg.sh": "c85152aec1559b44095706ea216367f459876a0b",
+      "curl-for-win/_ul.sh": "4481a57b6c4daa831714d64deecf91e9a90f7467",
+      "curl-for-win/brotli.sh": "47d70d8e83c1501f50babd123387777673ca90d1",
+      "curl-for-win/c-ares.sh": "222b9dacd7f5ede7928247069887a995c612149f",
+      "curl-for-win/curl.sh": "0f4ee85c897ede03bf82d3cc1d95e06cacae4370",
+      "curl-for-win/curl_cmake-WIP.sh": "6dd62f4b347bc747c187ec92749810896868d98b",
+      "curl-for-win/libgsasl.sh": "3b77bd26b3b87aa3b0703bdfb9edbdd3bc1ec711",
+      "curl-for-win/libidn2.sh": "c8580482da0fbc366643e6a566e1a656687702fd",
+      "curl-for-win/libssh2.sh": "8d0856b214e3911912169af06476e1300d7668c0",
+      "curl-for-win/libssh2_cmake-WIP.sh": "e974f997104997c72a2b8b4c83d36cc29ad0b58a",
+      "curl-for-win/nghttp2.sh": "eaa70d4c33c5ac9eacdaa65fa4013a7b7efa960b",
+      "curl-for-win/nghttp3.sh": "d87cbd4879e48db5f43ffad30d7966ceaecd50da",
+      "curl-for-win/ngtcp2.sh": "624682de244be828a61298a07087f166af6f3a52",
+      "curl-for-win/openssl.sh": "5d7afa2bae5d80caef83d90b87fbc3e2a28c0057",
+      "curl-for-win/osslsigncode.sh": "3a85c2ce1b5130d34f22f0cb2c6065edbf3a7432",
+      "curl-for-win/zlib.sh": "3a52d3a9ff42466a7d956c0e48d026ac301c1861",
+      "curl-for-win/zlibng.sh": "c72cd3f2cb0392219110d3128ffba60bd474c7ef",
+      "curl-for-win/zstd.sh": "f335e3a79c7a97c9625e236a0a5c381c78eb033b"
+    },
+    "producerBuild": "https://ci.appveyor.com/project/curlorg/curl-for-win/build/1.0.1496",
+    "producerJob": "0fa4pitayo014mr6"
+  },
+  "files": {
+    "curl-for-win/LICENSE.md": {
+      "bytes": 1102,
+      "sha256": "1239f7be871bfd5aa8e53305f6bc86bb7b0db998e41d0e8ad70d95f3af49c86e",
+      "mode": 420
+    },
+    "curl-for-win/README.md": {
+      "bytes": 7075,
+      "sha256": "9466b5a58674f40ec8f176ff21d9293256456175ea2b00ab61c423f77ea0f930",
+      "mode": 420
+    },
+    "curl-for-win/_build.sh": {
+      "bytes": 8890,
+      "sha256": "8f59ffad6f639e3f0da920f331595a8f8fdbc8547da2329f1d3e4d06037c848a",
+      "mode": 493
+    },
+    "curl-for-win/_ci-linux-debian.sh": {
+      "bytes": 536,
+      "sha256": "c121f0531cfcbb2ad3a9ce57358985218b6b5dabe74d9dc608335ec39f79398f",
+      "mode": 493
+    },
+    "curl-for-win/_ci-mac-homebrew.sh": {
+      "bytes": 429,
+      "sha256": "a243a2471f688ccb6f7d6130adcb0fb47e9cc6e6c143f2481bc0af9b8ef7fb20",
+      "mode": 493
+    },
+    "curl-for-win/_ci-win-msys2.sh": {
+      "bytes": 542,
+      "sha256": "62d190bbd8f6d0719fe99553502b2e298190de674f86ab944605da15443b1642",
+      "mode": 493
+    },
+    "curl-for-win/_dl.sh": {
+      "bytes": 8482,
+      "sha256": "ddbc2e53e72d9963afcad1325a46558ef23ee42c70116c847cd0dd9ea0a396b2",
+      "mode": 493
+    },
+    "curl-for-win/_peclean.py": {
+      "bytes": 868,
+      "sha256": "38694f5b9b7551a2b2f89b5e0965a08684dd835a05290b9884c000b27580c855",
+      "mode": 493
+    },
+    "curl-for-win/_pkg.sh": {
+      "bytes": 3867,
+      "sha256": "e92074a08461f6e139df46eb775caeb117b764363a60cb7aa328c185e86bcb45",
+      "mode": 493
+    },
+    "curl-for-win/_sign-code.sh": {
+      "bytes": 728,
+      "sha256": "cc848d3974f582891f0609beadbd4fdc19178c4ce6c36d15bc07dec0fad8700c",
+      "mode": 493
+    },
+    "curl-for-win/_sign-pkg.sh": {
+      "bytes": 586,
+      "sha256": "e273e12a3e14b6faac6d6ead5fcdad4688411772e8299b38b85c49534fc2ce33",
+      "mode": 493
+    },
+    "curl-for-win/_ul.sh": {
+      "bytes": 1673,
+      "sha256": "7869c3afb14684712e8576caac051551958dfdd6c332003e695517b4a9862d44",
+      "mode": 493
+    },
+    "curl-for-win/brotli.sh": {
+      "bytes": 4082,
+      "sha256": "67e463411a8ed0848803074dec10ff8a4438190f6fd4315772ea389bac26362b",
+      "mode": 493
+    },
+    "curl-for-win/c-ares.sh": {
+      "bytes": 4276,
+      "sha256": "bc958e109f947647948e9b87e892ed4c856cabdd1d1580c8a4eb7a66a701689f",
+      "mode": 493
+    },
+    "curl-for-win/curl.sh": {
+      "bytes": 10477,
+      "sha256": "04a214d19092fb0162e3a93860b5b186e3188b374502bd557fb1e56c6a68b341",
+      "mode": 493
+    },
+    "curl-for-win/curl_cmake-WIP.sh": {
+      "bytes": 13469,
+      "sha256": "d9e11db4a1508995d25b268d51a4ead3d32190b82df7713d6911d31d51bd7823",
+      "mode": 493
+    },
+    "curl-for-win/libgsasl.sh": {
+      "bytes": 3097,
+      "sha256": "bead6a9dfd79f68fd39cc32b4f43eb444097399cdaa314a0798e1a7f12343f0a",
+      "mode": 493
+    },
+    "curl-for-win/libidn2.sh": {
+      "bytes": 3300,
+      "sha256": "a803c9662fbdeb885400528274d1b7b02abb1f28c31978ea3b734a62dea40a28",
+      "mode": 493
+    },
+    "curl-for-win/libssh2.sh": {
+      "bytes": 4011,
+      "sha256": "7eabcb9437bf02ba778f2edb96348be1406fe4c91f77b2c9d66648547128e58f",
+      "mode": 493
+    },
+    "curl-for-win/libssh2_cmake-WIP.sh": {
+      "bytes": 6783,
+      "sha256": "0b3cf44031eb36027a921fb041407d2cf13996cb3c233b3bc21ddbe0b0cdf268",
+      "mode": 493
+    },
+    "curl-for-win/nghttp2.sh": {
+      "bytes": 3525,
+      "sha256": "0420e604a8c1519c4f6689d06031410191a785d174a11c99858b096f25a00e6a",
+      "mode": 493
+    },
+    "curl-for-win/nghttp3.sh": {
+      "bytes": 3525,
+      "sha256": "78cc29f75ca3d0793f3431733ecae8ddd29a3c70d79c700e662bd80ba14dbddc",
+      "mode": 493
+    },
+    "curl-for-win/ngtcp2.sh": {
+      "bytes": 2395,
+      "sha256": "45d46bb3d94c7f6b74844736f4c14d27b6c0828870cca1331e6f534e0365348c",
+      "mode": 493
+    },
+    "curl-for-win/openssl.sh": {
+      "bytes": 8501,
+      "sha256": "b7fdf32e0b1bce41d71389c5c0176520e7a257679e49b2e7c488e068288e1f39",
+      "mode": 493
+    },
+    "curl-for-win/osslsigncode.sh": {
+      "bytes": 877,
+      "sha256": "f66c2261ef447da90ec974c7b0be634ea03f443ad2636ccc3000f8cd4b940ac2",
+      "mode": 493
+    },
+    "curl-for-win/zlib.sh": {
+      "bytes": 4235,
+      "sha256": "48161236b2c448c1f2de3e9b1375f356fad980aaaf05842dd1db2dad9e9cc741",
+      "mode": 493
+    },
+    "curl-for-win/zlibng.sh": {
+      "bytes": 4294,
+      "sha256": "7e606d7ff9b4c6570864cf2c0980423da7396d102adfde67f5a9d6cde8eb68fe",
+      "mode": 493
+    },
+    "curl-for-win/zstd.sh": {
+      "bytes": 5824,
+      "sha256": "6c263450a10dafbe07195363648a76bbcd0918ba1f3c04b7687639ae6ee0bb59",
+      "mode": 493
+    }
+  }
+}

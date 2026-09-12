@@ -150,7 +150,8 @@ class MaterializationTests(unittest.TestCase):
         research=json.loads((root/'producer-research.json').read_text())
         self.assertEqual({x['package'] for x in research['movingBranches']},{'ext_vpx','ext_gperf'})
         self.assertTrue(all(x['actualProducerCommit'] is None for x in research['movingBranches']))
-        self.assertIsNone(research['openssl']['actualProducerCommit'])
+        producer=json.loads((root/research['openssl']['producerEvidence']).read_text())
+        self.assertEqual(research['openssl']['actualProducerCommit'],producer['producer']['commit'])
         self.assertFalse(receipt['licenseReviewComplete']);self.assertFalse(receipt['correspondingSourceComplete'])
 
     def test_python_producer_sbom_binds_original_embed_and_materialized_external_sources(self):

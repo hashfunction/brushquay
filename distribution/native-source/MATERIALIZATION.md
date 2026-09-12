@@ -70,16 +70,48 @@ original builder checked out. `producer-research.json` preserves this distinctio
 Obtain the original Git resolution/source cache or an immutable producer receipt;
 do not replace these with today's tips or a chronology-based guess.
 
-**OpenSSL:** the exact original curl-for-win ZIP supplies the staged
-`libssl-1_1-x64.dll` and `libcrypto-1_1-x64.dll` bytes and identifies OpenSSL 1.1.1l.
-The matching unmodified source tarball passed SHA-256. Historical curl-for-win
-commit `2fb8b5ba0980996bb04d5a779457e45390abe6bc` declares version 1.1.1l, revision 4
-and that source checksum; its retained scripts describe a Configure prefix patch
-and build options. It is a compatible historical builder candidate, **not a
-proved producer commit**. The original ZIP readme has no revision binding; the
-queried original release endpoints are unavailable. Retain the exact producer
-build/patch evidence if this binary remains in the package and finish the actual
-OpenSSL/SSLeay notice and combined-license review.
+The follow-up `evidence/moving-source-boundaries.json` records an additional
+read-only check of the hash-verified original gperf/vpx archives. The actual
+libvpx DLL contains only `v1.13.1`, with no Git suffix. Its inspected candidate
+Meson implementation can fall back to the project version, so that string does
+not identify the checkout. gperf's candidate version script reads `src/version.cc`
+rather than a Git revision. The binaries' 48/226 DWARF line tables are version 4;
+no source checksum table was observed. The only original Windows job artifact
+member is the retained build log; there is no source checkout/resolution cache
+in that artifact. Both producer commits remain null. gperf contributes zero
+files to the current runtime selection and is tracked here as a build tool;
+that provenance gap does not by itself establish a shipped gperf component.
+
+**OpenSSL producer revision is now established.** The exact original
+curl-for-win ZIP supplies the staged `libssl-1_1-x64.dll` and
+`libcrypto-1_1-x64.dll` bytes and identifies OpenSSL 1.1.1l. The matching source
+tarball already passed SHA-256. The retained public
+[AppVeyor build 1.0.1496](https://ci.appveyor.com/project/curlorg/curl-for-win/build/1.0.1496)
+binds its successful job `0fa4pitayo014mr6` to commit
+`2fb8b5ba0980996bb04d5a779457e45390abe6bc`. Its log explicitly checks out that
+commit and prints the exact 4,544,386-byte ZIP SHA-256
+`6582432d4f537323bfa032a1d91b4eee12efdf0c72e4fabdacc0ac5dd1685e9a`, twice.
+This matches the original KDE pin and retained ZIP; no date/current-tip inference
+is used. `evidence/openssl-producer-1496.json` retains only reviewed source
+checkout, source hash, Configure patch/options and artifact hash events. The
+original 2,690,727-byte public log stays private, alongside its full digest and
+API build metadata. The original 18 MB KDE environment log also remains private.
+
+The producer's actual Configure prefix patch and build options are therefore
+bound to the DLL input. The earlier `_dl.sh` and `openssl.sh` excerpts were
+independently compared with the exact Git blobs. A separate deterministic
+**28-file, 153,600-byte** selected builder-code archive is now retained as
+`/private/tmp/bristlune-source-collection-final/Bristlune-OpenSSL-producer-scripts-2fb8b5ba.tar`.
+Its reviewed `openssl-builder-source-plan.json` records all Git blob IDs,
+SHA-256 values, modes and the exact tree
+`019be0982e2883f7db0fd8c80fb70984ba0388d4`; the receipt binds the independent
+canonical-tar readback. The archive contains all repository shell/Python scripts
+and original license/readme. It is a selected source-code collection, separate
+from the 117 earlier source archives. CI configuration, images and signing/key
+material are not included or represented as supplied. The source revision is
+resolved; final file-to-notice mapping and actual OpenSSL/SSLeay combined-license
+review remain open. A bit-identical toolchain/signature reproduction is not
+being substituted for that review.
 
 **XZ:** the original XZ 5.2.6 Windows ZIP's x86-64 `liblzma.dll` matches the stage.
 The matching XZ source tarball, including Windows build instructions, passed the
@@ -189,3 +221,29 @@ Qt superproject passed the independent Git CLI verifier. The original producer
 SPDX bytes use CRLF; Git's whitespace check passes with `cr-at-eol` enabled so
 that this evidence is preserved byte for byte. No new native build was run for
 these source-only tools, and no Windows/product gate is claimed by these checks.
+
+## Producer follow-up verification
+
+The 28 builder files were read from the fetched immutable commit, independently
+hashed with Git's blob framing, and collected with the existing strict canonical
+source-tar verifier. This command rechecks their supplied separate plan:
+
+```sh
+python3 distribution/native-source/native_source.py verify \
+  --archive /private/tmp/bristlune-source-collection-final/Bristlune-OpenSSL-producer-scripts-2fb8b5ba.tar \
+  --plan distribution/native-source/openssl-builder-source-plan.json
+```
+
+The AppVeyor source/configuration/hash event lines were compared byte-for-byte
+with the retained full original log after rechecking its SHA-256; the API build
+record, original KDE ZIP, matching source tarball and all selected Git blobs were
+rechecked independently. No live native build, runtime selection, DLL exclusion,
+installed qualifier, binary package, source-delivery attestation or release/site
+status changes are part of this follow-up. Root owns review and publication.
+
+Validation for this producer follow-up: **24 focused tests passed**, Python
+compilation passed, the separate 28-file canonical archive passed independent
+verification, and the original 117 source archives passed a fresh complete
+hash/size/owner check. The new retained-evidence test binds the producer checkout,
+two identical artifact hash events, original recipe pin, materialized source
+hash, builder plan and preserved source excerpt blobs.

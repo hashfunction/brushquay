@@ -1,0 +1,14 @@
+{
+  "bytes": 153600,
+  "sha256": "f80616db35c24ce2301f4469473c2f34755d83c44eba96024bd85df3ab024d80",
+  "memberCount": 28,
+  "sourcePlanSha256": "05bd00841a0fdaa7d73c73022f52e3f5cf68b4981b92114353a47cf79393d04f",
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false,
+  "file": "Bristlune-OpenSSL-producer-scripts-2fb8b5ba.tar",
+  "plan": "openssl-builder-source-plan.json",
+  "scope": "Original builder shell/Python code plus original license/readme. CI configuration, images, signing/encrypted credential material and binary payloads are not in this selected source-code archive.",
+  "owners": [
+    "ext_openssl"
+  ]
+}

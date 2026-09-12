@@ -59,8 +59,23 @@ function Invoke-OwnedUninstall($State,[string]$Python){
     if(@(Get-AppxPackage -Name 'Trieflow.Bristlune.Qualification').Count){throw 'Owned package registration remains after uninstall'}
     $State.uninstalled=$true
 }
+function Assert-InstallerHost {
+    # Server 2022's Appx module requires its native Windows PowerShell host.
+    # Avoid remoting proxies: ownership receipts use the original package objects.
+    if([Environment]::OSVersion.Platform -ne [PlatformID]::Win32NT -or
+        $PSVersionTable.PSEdition -cne 'Desktop' -or $PSVersionTable.PSVersion.Major -ne 5 -or
+        $PSVersionTable.PSVersion.Minor -ne 1 -or -not [Environment]::Is64BitProcess){
+        throw 'Native x64 Windows PowerShell 5.1 is required for Appx qualification.'
+    }
+    Import-Module Appx -ErrorAction Stop
+    foreach($name in @('Get-AppxPackage','Add-AppxPackage','Remove-AppxPackage')){
+        $command=Get-Command $name -CommandType Cmdlet -ErrorAction Stop
+        if($command.ModuleName -cne 'Appx'){throw ('Original Appx cmdlet required: '+$name)}
+    }
+}
 function Invoke-InstalledQualification([string]$Python){
-    if(-not $IsWindows -or $env:GITHUB_ACTIONS -cne 'true' -or $env:RUNNER_OS -cne 'Windows'){throw 'Only the disposable native GitHub Windows runner is supported'}
+    Assert-InstallerHost
+    if($env:GITHUB_ACTIONS -cne 'true' -or $env:RUNNER_OS -cne 'Windows'){throw 'Only the disposable native GitHub Windows runner is supported'}
     $source=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))
     $run=$env:GITHUB_RUN_ID;$attempt=$env:GITHUB_RUN_ATTEMPT
     if($run -notmatch '^[1-9][0-9]*$' -or $attempt -notmatch '^[1-9][0-9]*$'){throw 'Exact GitHub run and attempt are required'}

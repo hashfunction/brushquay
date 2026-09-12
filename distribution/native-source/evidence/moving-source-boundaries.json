@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "scope": "Additional bounded investigation. No moving branch is promoted to an original producer commit. Debugging DLL selection remains unchanged.",
+  "binaries": [
+    {
+      "archiveSha256": "0da95193a64fdc2cdc5e83949c656dc23a8ecc2ba22417b042736f2651b8c779",
+      "archiveMember": "bin/gperf.exe",
+      "binarySha256": "8b2883ffde4ded3dc3f33ea50ca627fd2c6fe30faa9db70715c787384fc37776",
+      "bytes": 403968,
+      "package": "ext_gperf",
+      "observedVersion": "3.1",
+      "dwarfLineTableUnits": 48,
+      "dwarfLineTableVersions": [
+        4
+      ],
+      "sourceChecksumTableObserved": false,
+      "resolvedProducerCommit": null,
+      "versionBoundary": "Candidate version.py extracts the release string from src/version.cc, not a Git revision. gperf.exe is not selected by the current dependency runtime selector (runtimeSelectedFileCount=0); this is a build-tool provenance gap, not evidence that gperf ships in the app."
+    },
+    {
+      "archiveSha256": "3c30018567245445a60b8bb23255f679bde515ab1afe93c0ed07898dda597b8b",
+      "archiveMember": "bin/libvpx-8.dll",
+      "binarySha256": "1c0d685e79e4d670f789ac72e06a2ec1e0166624e4833fe0d579846fff1f4141",
+      "bytes": 10112000,
+      "package": "ext_vpx",
+      "observedVersion": "v1.13.1",
+      "dwarfLineTableUnits": 226,
+      "dwarfLineTableVersions": [
+        4
+      ],
+      "sourceChecksumTableObserved": false,
+      "resolvedProducerCommit": null,
+      "versionBoundary": "DLL contains only v1.13.1, with no Git suffix. Inspected candidate Meson source can fall back to project_version when git describe fails; the short version cannot prove its candidate commit."
+    }
+  ],
+  "sourceInspections": [
+    {
+      "name": "vpx-meson.build",
+      "url": "https://raw.githubusercontent.com/dimula73/libvpx/8cad1044d14fe78649a276918bd4dd524a352676/meson.build",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "bytes": 55210,
+      "sha256": "794d3e8f866fcaedce7c34341f2249ec1cbfba934b0711b5cb71f2cb8cb55165",
+      "binding": "Candidate source code inspected at an immutable commit; not an assertion that the producer used this commit."
+    },
+    {
+      "name": "gperf-version.py",
+      "url": "https://gitlab.freedesktop.org/tpm/gperf/-/raw/c24359b4eab86d71c655c3b3fc969f13aac879ce/version.py",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "bytes": 1401,
+      "sha256": "15f097d3b9898ff4ee6dc43b90b34772445b27b6f1e300b9d54e1d9db6e3937d",
+      "binding": "Candidate source code inspected at an immutable commit; not an assertion that the producer used this commit."
+    }
+  ],
+  "originalProducerArtifact": "Only seed-packages-win64.log is present in original-windows-artifacts.zip; no source checkout or CMake/Meson resolution cache was available there.",
+  "needed": "A retained original Git checkout/commit receipt or complete independent preferred-source match; current branch dates and release strings remain insufficient.",
+  "correspondingSourceComplete": false,
+  "licenseReviewComplete": false
+}

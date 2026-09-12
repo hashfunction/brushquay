@@ -32,7 +32,8 @@
       "requestedRef": "meson-2",
       "currentObservedCommit": "8cad1044d14fe78649a276918bd4dd524a352676",
       "actualProducerCommit": null,
-      "reason": "Original producer log identifies branch and version 1.13.1 only. Current history predates build but there is no immutable original ref-resolution receipt."
+      "reason": "Original producer log identifies branch and version 1.13.1 only. Current history predates build but there is no immutable original ref-resolution receipt.",
+      "additionalBinaryInvestigation": "evidence/moving-source-boundaries.json"
     },
     {
       "package": "ext_gperf",
@@ -40,14 +41,17 @@
       "requestedRef": "meson",
       "currentObservedCommit": "c24359b4eab86d71c655c3b3fc969f13aac879ce",
       "actualProducerCommit": null,
-      "reason": "Original producer log identifies branch and version 3.1 only. Current history is not the producer checkout record."
+      "reason": "Original producer log identifies branch and version 3.1 only. Current history is not the producer checkout record.",
+      "additionalBinaryInvestigation": "evidence/moving-source-boundaries.json"
     }
   ],
   "openssl": {
-    "actualProducerCommit": null,
-    "compatibleHistoricalBuilder": "2fb8b5ba0980996bb04d5a779457e45390abe6bc",
+    "actualProducerCommit": "2fb8b5ba0980996bb04d5a779457e45390abe6bc",
     "repository": "https://github.com/curl/curl-for-win.git",
-    "evidence": "_dl.sh declares _REV=4, OPENSSL_VER_=1.1.1l and strong original source hash; openssl.sh includes Configure prefix patch and options. Exact ZIP README names curl-for-win but no commit. No archived checksum/build receipt binds this builder commit to the ZIP. GitHub release tag 1.1.1l_4 and 7.78.0_4 plus curl.se/windows/dl-7.78.0_4 ZIP returned 404. No inference of producer commit."
+    "evidence": "Original AppVeyor build 1.0.1496/job 0fa4pitayo014mr6 checks out full commit 2fb8b5ba0980996bb04d5a779457e45390abe6bc and emits the exact SHA-256 and 4,544,386-byte size of the KDE/locked OpenSSL ZIP. See evidence/openssl-producer-1496.json. This resolves the producer revision without inferring it from chronology.",
+    "producerEvidence": "evidence/openssl-producer-1496.json",
+    "builderSourcePlan": "openssl-builder-source-plan.json",
+    "builderSourceReceipt": "openssl-builder-collection-receipt.json"
   },
   "microsoftDebug": {
     "sourceRequirement": "Microsoft debug redistributables are not treated as LGPL DrMinGW source. Applicable SDK/redistribution terms and exact original producer version remain to be retained if shipped.",
