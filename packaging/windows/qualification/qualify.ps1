@@ -20,6 +20,26 @@ function Write-NewJson([string]$Path,$Value){
     try{$bytes=[Text.UTF8Encoding]::new($false).GetBytes(($Value|ConvertTo-Json -Depth 40));$stream.Write($bytes,0,$bytes.Length)}finally{$stream.Dispose()}
 }
 function Invoke-Native([string]$Exe,[string[]]$Arguments){& $Exe @Arguments;if($LASTEXITCODE -ne 0){throw "$Exe exited $LASTEXITCODE"}}
+function New-BristluneObserverStartInfo([string]$Executable,[string[]]$Values){
+    # Windows PowerShell 5.1 uses .NET Framework: ArgumentList is unavailable.
+    # Quote each value using the Windows CRT backslash/quote rules. No shell is used.
+    $arguments=[Collections.Generic.List[string]]::new()
+    foreach($value in $Values){
+        if($value.IndexOf([char]0) -ge 0){throw 'Observer arguments must not contain NUL'}
+        $quoted=[Text.StringBuilder]::new();$null=$quoted.Append('"');$slashes=0
+        foreach($character in $value.ToCharArray()){
+            if($character -eq [char]92){$slashes++;continue}
+            if($character -eq [char]34){$null=$quoted.Append([char]92,($slashes*2+1))}
+            else{$null=$quoted.Append([char]92,$slashes)}
+            $null=$quoted.Append($character);$slashes=0
+        }
+        $null=$quoted.Append([char]92,($slashes*2));$null=$quoted.Append('"')
+        $arguments.Add($quoted.ToString())
+    }
+    $start=[Diagnostics.ProcessStartInfo]::new($Executable)
+    $start.UseShellExecute=$false;$start.Arguments=[string]::Join(' ',$arguments)
+    return $start
+}
 function Assert-NoLinks([string]$Path){
     $current=[IO.Path]::GetFullPath($Path)
     while($current){$item=Get-Item -LiteralPath $current -Force;if($item.Attributes -band [IO.FileAttributes]::ReparsePoint){throw "Reparse path refused: $current"};$current=[IO.Path]::GetDirectoryName($current)}
@@ -115,7 +135,7 @@ function Invoke-InstalledQualification([string]$Python){
         $refs=Join-Path ${env:ProgramFiles(x86)} 'Reference Assemblies/Microsoft/Framework/.NETFramework/v4.8'
         $arguments=@('/nologo','/target:exe','/platform:x64',('/out:'+$state.probe),'/r:System.Core.dll','/r:System.Drawing.dll','/r:System.Windows.Forms.dll','/r:System.Web.Extensions.dll')
         foreach($name in @('WindowsBase','UIAutomationClient','UIAutomationTypes')){$arguments+=('/r:'+(Join-Path $refs ($name+'.dll')))}
-        foreach($name in @('GuiProbe.cs','InputGuard.cs','OwnedJob.cs')){$arguments+=(Join-Path $PSScriptRoot $name)}
+        foreach($name in @('GuiProbe.cs','InputGuard.cs','OwnedJob.cs','ModuleEvidence.cs')){$arguments+=(Join-Path $PSScriptRoot $name)}
         Invoke-Native $csc $arguments
         $state.probeHash=Measure-File $state.probe
     }
@@ -160,10 +180,9 @@ function Invoke-InstalledQualification([string]$Python){
         foreach($lease in @($state.fixtureLease,$state.profileLease)){Invoke-Native $Python @((Join-Path $PSScriptRoot 'ownership.py'),'verify','--lease',$lease)}
         Start-GuiDisplay $state
         $exe=Join-Path $state.installLocation 'Bristlune/bin/bristlune.exe';$expected=$state.record.payload.'Bristlune/bin/bristlune.exe';Assert-File $exe $expected
-        Write-NewJson (Join-Path $gui 'probe-input.json') @{payload=$state.record.payload;sourceCommit=$state.commit;run=$run;attempt=$attempt}
+        Write-NewJson (Join-Path $gui 'probe-input.json') @{payload=$state.record.payload;sourceCommit=$state.commit;sourceTree=$state.record.sourceTree;run=$run;attempt=$attempt;nativeEvidence=$state.record.nativeEvidence;unsignedPackage=$state.record.package}
         Assert-File $state.probe $state.probeHash
-        $start=[Diagnostics.ProcessStartInfo]::new($state.probe);$start.UseShellExecute=$false
-        foreach($value in @($gui,$state.fixture,$exe,$state.packageFullName,$expected.sha256,($state.family+'!BrushQuay'))){$start.ArgumentList.Add([string]$value)}
+        $start=New-BristluneObserverStartInfo $state.probe @($gui,$state.fixture,$exe,$state.packageFullName,$expected.sha256,($state.family+'!BrushQuay'))
         $state.activationAttempted=$true;$state.observer=[Diagnostics.Process]::Start($start);$null=$state.observer.Handle
         if(-not $state.observer.WaitForExit(600000)){throw 'Standalone installed UI observer exceeded ten minutes'}
         $proofPath=Read-StopProof $state;$proof=Get-Content -LiteralPath $proofPath -Raw|ConvertFrom-Json

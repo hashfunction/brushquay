@@ -78,6 +78,93 @@ pwsh -NoLogo -NoProfile -File packaging/windows/qualification/test_qualify.ps1
 ```
 
 `GuiProbe.csproj` and its locked reference-assembly package support compilation
-review on another host. Native CI compiles the same three C# files using the
+review on another host. Native CI compiles the same four C# files using the
 installed Windows Framework compiler and reference assemblies. No product code
 or published runtime assembly is loaded into PowerShell or this observer.
+
+## Observer launch compatibility
+
+The native installer host remains x64 Windows PowerShell 5.1. Its .NET Framework
+`ProcessStartInfo` lacks `ArgumentList`; the observer now receives the same six
+values through `Arguments`, each quoted using the documented Windows
+[backslash and quotation rules](https://learn.microsoft.com/en-us/cpp/c-language/parsing-c-command-line-arguments).
+The executable, direct `Process.Start`, retained handle, activation-attempt flag,
+timeout, ownership checks and cleanup order are unchanged. Embedded NUL is refused.
+
+`test_observer_arguments.ps1` round-trips eight values through a real child
+process, including empty, Unicode, quote, backslash, trailing slash and newline
+values. On Windows it compiles a .NET Framework reader and tests its actual
+`Main(string[] args)` under both CI PowerShell hosts before dependency fetching.
+It also checks a real process-start failure through the original lifecycle core,
+retaining the primary exception and separate cleanup error. Local PowerShell
+7.6.6 replay passed; Windows PowerShell 5.1 execution is still required in CI.
+Run 34706011185 failed earlier during dependency transport (WinError 10054) and
+produced no artifacts; it provides no native result for this correction.
+
+```text
+pwsh -NoProfile -File packaging/windows/qualification/test_observer_arguments.ps1
+```
+
+## Read-only native dependency observations
+
+After the existing exact native/install/stage checks and runtime materialization,
+`prepare.py` writes `staged-pe-imports.json` before calling the package SDK. Each
+selected EXE, DLL, PYD and COM records its original application/locked owners and
+paths, bytes and SHA-256, plus separate normal and delay import descriptors. The
+record binds the exact source commit/tree, run/attempt, dependency lock and native
+build receipt. It never changes runtime selection or executes a payload file.
+
+The reader is `tools/llvm/bin/llvm-readobj.exe` from the already locked
+llvm-mingw 20251118 archive. Original archive SHA-256:
+`d14a2022c095b83404b64a249406478d852821d31beaa32abe31c932832b3538`.
+Its 1,545,216-byte reader has SHA-256
+`2911b6a130c7d88e74a894368d493e5fa80a0baae3bc6ed35e06b543e360fd4e`,
+measured directly from that rehashed archive. The production collector checks the
+reader against the original verified stage owner/size/hash before and after use.
+It uses the documented [LLVM COFF import reader](https://llvm.org/docs/CommandGuide/llvm-readobj.html),
+with output grammar checked against retained LLVM source revision
+`a832a5222e489298337fbb5876f8dcaf072c5cca` (`COFFDumper.cpp` and
+`COFFObjectFile.cpp`). Named imports retain the hint; ordinal imports remain
+explicit. A real PE fixture exercises both directories using the exact Windows
+reader after dependency fetch and before the long native build.
+
+Bounds are 1,024 PE files, 8 MiB of reader output per file, a 20-second reader
+process timeout, a five-minute budget checked between files, eight file errors,
+and 16 MiB of retained rows plus bounded context/errors. Unknown/truncated output,
+changed inputs, missing tools and write failures yield typed `incomplete`
+observations. Output is exclusive; existing evidence is preserved. The original
+SDK/package error remains primary even when this observation is incomplete.
+
+The installed observer separately records `module-observation-startup.json` and
+either `module-observation-workflow-complete.json` or the best available failure
+snapshot. It reads only the retained, package-verified process after owned job
+assignment, validates that process before and after enumeration, and records
+full paths and stable file bytes/SHA-256 for package and Windows modules. Package
+modules must match the exact payload to receive an observed result. Source/tree,
+run/attempt, process identity/start, unsigned-package/native-receipt records and
+the exact `probe-input.json` digest accompany each snapshot. Module observations
+are capped at 1,024 paths, 2 GiB of aggregate file bytes and a fifteen-second
+budget checked between reads and before accepting a snapshot. Outside paths,
+missing/mutated payloads, ownership changes or query errors remain incomplete
+metadata; their errors cannot replace the primary GUI or cleanup error.
+
+The original late `Modules()` check still requires actual Qt core and platform
+modules and rejects modules outside the package/Windows boundary. Its acceptance
+logic, normal close, file/pixel oracles and cleanup remain unchanged. These new
+records explicitly set `observationOnly: true` and `releaseReady: false`; an
+`observed` status means the bounded observation completed, not source or license
+approval. They add no binary uploads. The remaining libvpx/gperf producer pins
+and debug-runtime license/source review are separate; no debug or libvpx file
+has been excluded.
+
+Focused validation includes real native-file measurements and seven module
+ownership/query/hash refusals; normal/delay/name/ordinal parsing, real child
+reader timeout/output/exit failures, reader/input mutations, exclusive retention,
+and the original package failure following incomplete metadata. Local Framework
+compilation and PowerShell replays passed. The locked Windows reader and actual
+installed module enumeration still require a fresh native run.
+
+```text
+python -m unittest discover -s packaging/windows/qualification -v
+pwsh -NoProfile -File packaging/windows/qualification/test_module_evidence.ps1
+```

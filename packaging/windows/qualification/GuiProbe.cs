@@ -472,6 +472,52 @@ namespace BristluneQualification
                 Save(Path.Combine(output, stage + "-capture.json"), capture);
             }
         }
+        static readonly List<object> moduleObservations = new List<object>();
+        static void ObserveModules(string phase)
+        {
+            var summary = D("phase", phase, "observationOnly", true, "releaseReady", false, "status", "incomplete");
+            moduleObservations.Add(summary); report["moduleObservations"] = moduleObservations;
+            try
+            {
+                if (!ownedProcess || !assignedJob) throw new InvalidOperationException("Owned module observer requires the retained assigned process");
+                Alive();
+                string inputPath = Path.Combine(output, "probe-input.json");
+                var inputBytes = ModuleEvidence.Measure(inputPath);
+                if ((long)inputBytes["bytes"] > 16000000) throw new IOException("Module input metadata exceeds bound");
+                var input = (Dictionary<string, object>)Json.DeserializeObject(File.ReadAllText(inputPath));
+                var after = ModuleEvidence.Measure(inputPath);
+                if ((long)after["bytes"] != (long)inputBytes["bytes"] || (string)after["sha256"] != (string)inputBytes["sha256"])
+                    throw new IOException("Module input metadata changed");
+                foreach (string key in new[] { "sourceCommit", "sourceTree", "run", "attempt" })
+                {
+                    string pattern = key == "run" || key == "attempt" ? "^[1-9][0-9]*$" : "^[0-9a-f]{40}$";
+                    if (!(input[key] is string) || !System.Text.RegularExpressions.Regex.IsMatch((string)input[key], pattern))
+                        throw new IOException("Module observation source/run binding is incomplete");
+                }
+                var observation = ModuleEvidence.Capture(Path.GetDirectoryName(Path.GetDirectoryName(expectedExe)),
+                    Environment.GetFolderPath(Environment.SpecialFolder.Windows), (Dictionary<string, object>)input["payload"], Alive,
+                    delegate {
+                        app.Refresh(); Alive(); var paths = new List<string>();
+                        foreach (ProcessModule module in app.Modules) paths.Add(module.FileName);
+                        return paths.ToArray();
+                    });
+                observation.Add("phase", phase); observation.Add("processId", app.Id);
+                observation.Add("processStartUtc", started.ToString("o")); observation.Add("executable", expectedExe);
+                observation.Add("executableSha256", expectedHash); observation.Add("packageFullName", expectedPackage);
+                foreach (string key in new[] { "sourceCommit", "sourceTree", "run", "attempt", "nativeEvidence", "unsignedPackage" })
+                    observation.Add(key, input[key]);
+                observation.Add("probeInput", inputBytes);
+                string path = Path.Combine(output, "module-observation-" + phase + ".json");
+                Save(path, observation);
+                summary["status"] = observation["status"]; summary.Add("path", path);
+                summary.Add("file", ModuleEvidence.Measure(path)); summary.Add("errors", observation["errors"]);
+            }
+            catch (Exception error)
+            {
+                summary["status"] = "incomplete";
+                string text = error.ToString(); summary["observationError"] = text.Substring(0, Math.Min(4096, text.Length));
+            }
+        }
         static void Modules()
         {
             Alive();
@@ -559,6 +605,7 @@ namespace BristluneQualification
             MainReady("artwork.png");
             SaveAs("reopened.kra", false);
             Observe("03-reopened-export", MainWindow(), true);
+            ObserveModules("workflow-complete");
             Modules();
             Chord(MainWindow(), 0x11, 0x51);
             if (!app.WaitForExit(30000) || app.ExitCode != 0)
@@ -613,6 +660,7 @@ namespace BristluneQualification
                 job.Assign(app);
                 assignedJob = true;
                 report["jobAssigned"] = true;
+                ObserveModules("startup");
                 var w = WaitWindow(e => e.Current.ClassName == "KisMainWindow" && e.Current.Name.Contains("Bristlune"), "Bristlune main window");
                 main = Handle(w);
                 if (GetWindow(main, 4) != IntPtr.Zero)
@@ -625,6 +673,7 @@ namespace BristluneQualification
             catch (Exception error)
             {
                 report["error"] = error.ToString();
+                if (ownedProcess && assignedJob) ObserveModules("failure");
                 try
                 {
                     if (ownedProcess && app != null && !app.HasExited)

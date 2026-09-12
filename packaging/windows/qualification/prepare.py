@@ -16,6 +16,7 @@ from source_state import require_clean_source
 from build_msix import manifest_bytes, load_tools, confirm_tools, write_new
 from verify_brushquay_msix import verify_msix
 from manifest_identity import verify_manifest_identity
+from pe_imports import retain_imports
 
 IDENTITY={'PackageName':'Trieflow.Bristlune.Qualification','Publisher':'CN=Bristlune-CI-Qualification',
           'Version':'1.0.1.0','MinWindowsVersion':'10.0.19041.0','MaxWindowsVersionTested':'10.0.26100.0'}
@@ -98,6 +99,10 @@ def prepare(source,output,evidence,tool_lock,commit,run,attempt):
     try:
         payload=output/'payload';payload.mkdir()
         materialize(install,locked,selected,payload/'Bristlune')
+        reader_name='tools/llvm/bin/llvm-readobj.exe'
+        record['peImportObservation']=retain_imports(evidence/'staged-pe-imports.json',payload/'Bristlune',selected,
+            locked/reader_name,manifest['files'].get(reader_name,{}),
+            {k:record[k] for k in ('sourceCommit','sourceTree','workflowRunId','workflowRunAttempt','nativeEvidence','lockSha256')})
         conf=payload/'Bristlune/bin/qt.conf';write_new(conf,QT_CONF)
         record['runtimeGeneratedFiles']={'Bristlune/bin/qt.conf':measure(conf)}
         asset_root=ROOT/'packaging/windows/msix';assets=json.loads((asset_root/'assets.lock.json').read_text())

@@ -24,6 +24,8 @@ jobs:
           python -m unittest discover -s packaging/windows/qualification -v
           if ($LASTEXITCODE -ne 0) { throw 'Installed qualification safety tests failed.' }
           ./packaging/windows/qualification/test_input_guard.ps1
+          ./packaging/windows/qualification/test_module_evidence.ps1
+          ./packaging/windows/qualification/test_observer_arguments.ps1
           ./packaging/windows/qualification/test_display_modes.ps1
           ./packaging/windows/qualification/test_qualify.ps1
           ./packaging/windows/qualification/test_operation_scope.ps1
@@ -32,12 +34,22 @@ jobs:
         run: |
           ./packaging/windows/qualification/test_installer_host.ps1
           ./packaging/windows/qualification/test_input_guard.ps1
+          ./packaging/windows/qualification/test_module_evidence.ps1
+          ./packaging/windows/qualification/test_observer_arguments.ps1
           ./packaging/windows/qualification/test_display_modes.ps1
           ./packaging/windows/qualification/test_qualify.ps1
           ./packaging/windows/qualification/test_operation_scope.ps1
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
+      - name: Exercise the exact locked PE import reader
+        shell: pwsh
+        run: |
+          $env:BRISTLUNE_TEST_PE_READER = (Resolve-Path '.brushquay/locked/tools/llvm/bin/llvm-readobj.exe').Path
+          try {
+            python -m unittest discover -s packaging/windows/qualification -p test_pe_imports.py -v
+            if ($LASTEXITCODE -ne 0) { throw 'Actual locked PE reader fixture failed.' }
+          } finally { Remove-Item Env:BRISTLUNE_TEST_PE_READER }
       - name: Compile and test the native Qt 6 product
         shell: pwsh
         run: ./build-tools/ci-scripts/build-locked-windows.ps1 -Python python -Jobs 2
