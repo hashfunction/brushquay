@@ -15,6 +15,10 @@ from manifest_identity import identity_for_mode,family_for_mode,verify_manifest_
 from build_msix import manifest_bytes,canonical
 from runtime_stage import measure,measure_tree
 
+# Independent expected sequence from the original C# Workflow/Picker calls.
+WORKFLOW_STAGES=('01-installed-ready','new-document-settings','picker-02-blank.kra','picker-03-artwork.kra','02-painted-artwork','picker-05-artwork.png','png-export-options','picker-07-artwork.png','picker-08-reopened.kra','03-reopened-export')
+CAPTURE_STAGES=('01-installed-ready','new-document-settings','02-painted-artwork','png-export-options','03-reopened-export')
+
 class OriginalLifecycleReplay(unittest.TestCase):
  def setUp(self):
   f=input_fixture.ReleaseInputTests('test_reviewed_inputs_and_original_notice');f.setUp();self.addCleanup(f.doCleanups)
@@ -63,12 +67,14 @@ class OriginalLifecycleReplay(unittest.TestCase):
   self.write(root/'artwork-verification.json',artwork)
   inp=dict(payload=payload,sourceCommit='c'*40,sourceTree='d'*40,run='42',attempt='1',nativeEvidence=self.context['nativeEvidence'],unsignedPackage=measure(package));self.write(root/'gui/probe-input.json',inp)
   pid=100 if mode=='qualification' else 200;started='2026-09-12T20:00:00+00:00';exe=payload['Bristlune/bin/bristlune.exe']['sha256'];steps=[]
-  for i,stage in enumerate(export.STAGES,1):
-   item=dict(stage=stage,timeUtc='2026-09-12T20:00:0'+str(i)+'+00:00',processId=pid,processStartUtc=started,packageFullName=full,executableSha256=exe,handle=123,nodes=[])
+  for i,stage in enumerate(WORKFLOW_STAGES,1):
+   item=dict(stage=stage,timeUtc=f'2026-09-12T20:00:{i:02d}+00:00',processId=pid,processStartUtc=started,packageFullName=full,executableSha256=exe,handle=123,nodes=[])
    self.write(root/'gui'/(stage+'-observation.json'),item)
-   png=root/'gui'/(stage+'.png');self.write(png,b'fixture screenshot bytes')
-   capture=dict(path=str(png),sha256=measure(png)['sha256'],bounds=[0,0,1472,1080],unedited=True,purpose='installed consumer qualification',processId=pid,handle=123,executableSha256=exe)
-   self.write(root/'gui'/(stage+'-capture.json'),capture);item['capture']=capture;steps.append(item)
+   if stage in CAPTURE_STAGES:
+    png=root/'gui'/(stage+'.png');self.write(png,b'fixture screenshot bytes')
+    capture=dict(path=str(png),sha256=measure(png)['sha256'],bounds=[0,0,1472,1080],unedited=True,purpose='installed consumer qualification',processId=pid,handle=123,executableSha256=exe)
+    self.write(root/'gui'/(stage+'-capture.json'),capture);item['capture']=capture
+   steps.append(item)
   modules=[dict(path=installation+'/'+n,kind='package',payloadPath=n,**row) for n,row in payload.items() if n in ('Bristlune/bin/Qt6Core.dll','Bristlune/plugins/platforms/qwindows.dll')]
   summaries=[]
   for phase in ('startup','workflow-complete'):
@@ -92,6 +98,24 @@ class OriginalLifecycleReplay(unittest.TestCase):
  def test_both_complete_original_lifecycles(self):
   for mode in ('qualification','store'):
    self.construct(mode);self.assertEqual(self.verify(mode)['mode'],mode)
+ def test_picker_order_presence_identity_and_capture_policy_remain_exact(self):
+  self.construct('store')
+  for mutation in ('omit-picker','duplicate-picker','reorder-picker','foreign-picker','picker-capture','missing-capture'):
+   with self.subTest(mutation=mutation):
+    self.restore();path=self.root/'gui/gui-observations.json';gui=json.loads(path.read_bytes());steps=gui['steps']
+    if mutation=='omit-picker':steps.pop(2)
+    elif mutation=='duplicate-picker':steps.insert(3,copy.deepcopy(steps[2]))
+    elif mutation=='reorder-picker':steps[2],steps[3]=steps[3],steps[2]
+    elif mutation=='foreign-picker':
+     steps[2]['processId']=999
+     self.write(self.root/'gui'/(steps[2]['stage']+'-observation.json'),steps[2])
+    elif mutation=='picker-capture':steps[2]['capture']=copy.deepcopy(steps[0]['capture'])
+    else:steps[0].pop('capture')
+    self.write(path,gui)
+    receipt=json.loads((self.root/'installation-result.json').read_bytes())
+    for name in receipt['originalEvidence']:receipt['originalEvidence'][name]=measure(self.root/name)
+    self.write(self.root/'installation-result.json',receipt)
+    with self.assertRaises(ValueError):self.verify('store')
  def test_current_sdk_payload_and_unsigned_container_mutations_refused(self):
   self.construct('store')
   proof=json.loads((self.root/'installation-result.json').read_bytes());directory=Path(proof['packageDirectory'])

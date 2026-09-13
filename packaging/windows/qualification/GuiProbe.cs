@@ -369,7 +369,7 @@ namespace BristluneQualification
             var w = WaitWindow(e => e.Current.Name == caption && (e.Current.ClassName == "#32770" || e.Current.ClassName == "QFileDialog"), caption);
             Owner(Handle(w));
             Foreground(w);
-            Observe("picker-" + Path.GetFileName(path), w, false);
+            Observe("picker-" + steps.Count.ToString("D2", System.Globalization.CultureInfo.InvariantCulture) + "-" + Path.GetFileName(path), w, false);
             var edit = Find(w, e => e.Current.ControlType == ControlType.Edit && (Id(e, "fileNameEdit") || e.Current.AutomationId == "1001" || e.Current.Name == "File name:"), "owned file name edit");
             var b = Snapshot(w, edit, false, 0, 0);
             InputGuard.Validate(b, app.Id, main.ToInt64(), false);

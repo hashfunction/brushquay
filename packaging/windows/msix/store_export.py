@@ -10,7 +10,8 @@ from release_inputs import read_json,hashed,digest
 from release_build import current_inputs,helper_inventory,reviewed_runtime,assert_release_record,CONTEXT
 from runtime_stage import ROOT,measure,measure_tree,no_links
 
-STAGES=('01-installed-ready','new-document-settings','02-painted-artwork','png-export-options','03-reopened-export')
+STAGES=('01-installed-ready','new-document-settings','picker-02-blank.kra','picker-03-artwork.kra','02-painted-artwork','picker-05-artwork.png','png-export-options','picker-07-artwork.png','picker-08-reopened.kra','03-reopened-export')
+CAPTURE_STAGES=('01-installed-ready','new-document-settings','02-painted-artwork','png-export-options','03-reopened-export')
 PACKAGE='Bristlune_1.0.1.0_x64.msix'
 
 def require(condition,message):
@@ -83,7 +84,7 @@ def validate_gui(root,record,package,context):
  probe=read_json(root/'gui/probe-input.json')
  expected=dict(payload=package['payload'],sourceCommit=context['sourceCommit'],sourceTree=context['sourceTree'],run=context['workflowRunId'],attempt=context['workflowRunAttempt'],nativeEvidence=context['nativeEvidence'],unsignedPackage=package['package'])
  require(probe==expected,'Original observer input differs from current package')
- steps=gui.get('steps');require(isinstance(steps,list) and [v.get('stage') for v in steps]==list(STAGES),'Complete original five-stage consumer flow required')
+ steps=gui.get('steps');require(isinstance(steps,list) and [v.get('stage') for v in steps]==list(STAGES),'Complete original ordered consumer observations required')
  full_name=record['packageFullName'];previous=None
  for step in steps:
   stage=step['stage'];original=read_json(root/'gui'/(stage+'-observation.json'))
@@ -92,6 +93,9 @@ def validate_gui(root,record,package,context):
   require(type(step.get('handle')) is int and step['handle']>0 and isinstance(step.get('nodes'),list) and len(step['nodes'])<=3000,'Original window snapshot incomplete')
   time=datetime.fromisoformat(step['timeUtc'].replace('Z','+00:00'));require(previous is None or time>=previous,'Workflow observation order differs');previous=time
   require(0<=(time-datetime.fromisoformat(started.replace('Z','+00:00'))).total_seconds()<=600,'Original consumer workflow exceeded ten-minute observer bound')
+  if stage not in CAPTURE_STAGES:
+   require('capture' not in step,'Picker observation unexpectedly claims a screenshot')
+   continue
   capture=read_json(root/'gui'/(stage+'-capture.json'));require(capture==step.get('capture'),'Original capture differs from workflow')
   require(capture.get('unedited') is True and capture.get('purpose')=='installed consumer qualification' and capture.get('processId')==pid and capture.get('handle')==step['handle'] and capture.get('executableSha256')==exe['sha256'],'Foreign or edited capture')
   png=root/'gui'/(stage+'.png');require(window_path(capture['path'])==window_path(str(png)) and capture.get('sha256')==measure(png)['sha256'],'Original raw screenshot differs')
@@ -147,7 +151,8 @@ def verify_lifecycle(source,root,mode,context,selected,helpers,binding):
  verify_payload(directory/'payload',expected)
  snapshots=original_snapshots(root,record.get('originalEvidence'))
  required={'installed-files.json','installed-files-after-close.json','artwork-verification.json','gui/probe-input.json','gui/gui-observations.json','gui/module-observation-startup.json','gui/module-observation-workflow-complete.json'}
- for stage in STAGES:required.update('gui/'+stage+suffix for suffix in ('-observation.json','-capture.json','.png'))
+ for stage in STAGES:required.add('gui/'+stage+'-observation.json')
+ for stage in CAPTURE_STAGES:required.update('gui/'+stage+suffix for suffix in ('-capture.json','.png'))
  require(set(snapshots)==required,'Complete exact original evidence file set differs')
  actual={p.relative_to(root).as_posix() for p in (root/'gui').iterdir() if p.is_file() and p.suffix in ('.json','.png')}
  require(actual=={n for n in required if n.startswith('gui/')},'Extra unbound GUI evidence')

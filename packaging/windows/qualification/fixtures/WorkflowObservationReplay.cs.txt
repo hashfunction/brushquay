@@ -1,0 +1,119 @@
+// Controlled leaves for the actual C# workflow evidence sequencing regression.
+// No Windows API, product, image encoder, or native success is simulated.
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading;
+public static class ObservationReplay
+{
+    class Rect { public double X=0,Y=0,Width=800,Height=600; }
+    class ControlType {
+        public string ProgrammaticName="fixture";
+        public static readonly ControlType Button=new ControlType(), Edit=new ControlType(), MenuItem=new ControlType();
+    }
+    class Current {
+        public string Name="",AutomationId="",ClassName="";
+        public ControlType ControlType=ControlType.Button;
+        public int ProcessId=72; public bool IsEnabled=true,IsOffscreen=false;
+        public Rect BoundingRectangle=new Rect();
+    }
+    class AutomationElement {
+        public Current Current=new Current();
+        public List<AutomationElement> Children=new List<AutomationElement>();
+        public ValuePattern Value=new ValuePattern();
+        public void SetFocus() {}
+        public bool TryGetCurrentPattern(object pattern,out object value) {value=Value;return pattern==ValuePattern.Pattern;}
+        public List<AutomationElement> FindAll(object scope,object condition) {return Children;}
+    }
+    class ValuePattern {
+        public static readonly object Pattern=new object();
+        public class Info {public bool IsReadOnly=false;public string Value="";}
+        public Info Current=new Info();
+        public void SetValue(string value) {FilenameInputs++;Current.Value=value;}
+    }
+    class InvokePattern {public static readonly object Pattern=new object();}
+    class TreeScope {public static readonly object Descendants=new object();}
+    class Condition {public static readonly object TrueCondition=new object();}
+    class SnapshotValue {public double[] windowBounds=new double[]{0,0,800,600};}
+    class InputGuard {
+        public static void Validate(SnapshotValue value,int pid,long main,bool pointer) {}
+        public static void Stable(SnapshotValue a,SnapshotValue b,int pid,long main,bool pointer) {}
+        public static object DiagnosticBounds(double[] bounds) {return bounds;}
+    }
+    // The production exclusive Save is retained; only JSON encoding is a leaf.
+    // The Python lifecycle replay separately validates original JSON bodies.
+    class Serializer {public string Serialize(object value) {return "controlled sequencing fixture";}}
+    class Bitmap:IDisposable {
+        public object Size=new object(); public Bitmap(int width,int height) {}
+        public void Save(Stream stream,object format) {stream.WriteByte(42);}
+        public void Dispose() {}
+    }
+    class Graphics:IDisposable {
+        public static Graphics FromImage(Bitmap image) {return new Graphics();}
+        public void CopyFromScreen(int x,int y,int a,int b,object size,object operation) {}
+        public void Dispose() {}
+    }
+    class CopyPixelOperation {public static readonly object SourceCopy=new object();}
+    class ImageFormat {public static readonly object Png=new object();}
+    class App {public int Id=72,ExitCode=0;public bool Exit;public bool WaitForExit(int timeout){return Exit;}}
+    class Job {public bool Empty;public bool WaitEmpty(int timeout){return Empty;}}
+    struct Mouse {public uint Flags;}
+    struct Union {public Mouse Mouse;}
+    struct Input {public uint Type;public Union Value;}
+    static readonly Serializer Json=new Serializer();
+    static readonly List<object> steps=new List<object>();
+    static readonly Dictionary<string,object> report=new Dictionary<string,object>();
+    static string output,fixture,expectedHash="fixture",expectedPackage="fixture";
+    static DateTime started;static IntPtr main=new IntPtr(100);static App app;static Job job;
+    static Queue<AutomationElement> windows;static AutomationElement mainWindow;
+    public static int FilenameInputs,PointerInputs,CloseInputs;
+    static AutomationElement Element(string name,string klass,ControlType type,string id) {
+        var e=new AutomationElement();e.Current.Name=name;e.Current.ClassName=klass;e.Current.ControlType=type;e.Current.AutomationId=id;return e;
+    }
+    static AutomationElement Dialog(string title,string klass,string button) {
+        var w=Element(title,klass,ControlType.Button,"");
+        w.Children.Add(Element("File name:","Edit",ControlType.Edit,"fileNameEdit"));
+        w.Children.Add(Element(button,"Button",ControlType.Button,""));return w;
+    }
+    static AutomationElement WaitWindow(Func<AutomationElement,bool> predicate,string label) {
+        var w=windows.Dequeue();if(!predicate(w))throw new Exception("Actual predicate refused controlled window: "+label);return w;
+    }
+    static List<AutomationElement> FindAll(AutomationElement w,Func<AutomationElement,bool> predicate) {return w.Children.Where(predicate).ToList();}
+    static AutomationElement Find(AutomationElement w,Func<AutomationElement,bool> predicate,string label) {return FindAll(w,predicate).Single();}
+    static bool Id(AutomationElement e,string id) {return e.Current.AutomationId==id;}
+    static IntPtr Handle(AutomationElement e) {return main;}
+    static long Owner(IntPtr handle) {return main.ToInt64();}
+    static void Foreground(AutomationElement e) {}
+    static void Activate(AutomationElement w,AutomationElement target) {}
+    static SnapshotValue Snapshot(AutomationElement w,AutomationElement target,bool pointer,int x,int y) {return new SnapshotValue();}
+    static double[] Bounds(Rect r) {return new double[]{r.X,r.Y,r.Width,r.Height};}
+    static AutomationElement MainWindow() {return mainWindow;}
+    static void MainReady(string name) {}
+    static void Chord(AutomationElement w,params int[] keys) {if(keys.SequenceEqual(new int[]{0x11,0x51}))CloseInputs++;}
+    static void SetNumber(AutomationElement w,string id,double value) {if(!((id=="doubleWidth"&&value==512)||(id=="doubleHeight"&&value==384)))throw new Exception("Dimension differs");}
+    static void FileReady(string name) {string path=Path.Combine(fixture,name);if(!File.Exists(path))File.WriteAllText(path,"controlled file leaf "+name);}
+    static void Pointer(AutomationElement w,AutomationElement target,int x,int y,int flags) {PointerInputs++;}
+    static void Packet(Input[] input) {throw new Exception("Unexpected recovery input");}
+    static void ObserveModules(string phase) {if(phase!="workflow-complete")throw new Exception("Unexpected phase");}
+    static void Modules() {}
+    public static void Run(string root,bool normalExit,bool emptyJob,string existingObservation) {
+        steps.Clear();report.Clear();FilenameInputs=PointerInputs=CloseInputs=0;started=DateTime.UtcNow;
+        app=new App{Exit=normalExit};job=new Job{Empty=emptyJob};
+        fixture=Path.GetFullPath(Path.Combine(root,"fixture"));output=Path.GetFullPath(Path.Combine(root,"output"));
+        Directory.CreateDirectory(fixture);Directory.CreateDirectory(output);
+        if(!String.IsNullOrEmpty(existingObservation))File.WriteAllText(Path.Combine(output,existingObservation),"protected original");
+        mainWindow=Element("Bristlune","KisMainWindow",ControlType.Button,"");
+        mainWindow.Children.Add(Element("Canvas","KisQPainterCanvas",ControlType.Button,""));
+        mainWindow.Children.Add(Element("E&xport...","",ControlType.MenuItem,""));
+        var png=Dialog("PNG options","KoDialog","OK");png.Children.Add(Element("","KisWdgOptionsPNG",ControlType.Button,""));
+        windows=new Queue<AutomationElement>(new[]{Dialog("Create new document","KisOpenPane","Create"),Dialog("Saving As","QFileDialog","Save"),Dialog("Saving As","QFileDialog","Save"),Dialog("Exporting","QFileDialog","Save"),png,Dialog("Open Images","QFileDialog","Open"),Dialog("Saving As","QFileDialog","Save")});
+        Workflow();if(windows.Count!=0)throw new Exception("Actual workflow omitted controlled windows");
+    }
+    public static string[] Stages() {return steps.Cast<Dictionary<string,object>>().Select(s=>(string)s["stage"]).ToArray();}
+    public static string[] Captures() {return steps.Cast<Dictionary<string,object>>().Where(s=>s.ContainsKey("capture")).Select(s=>(string)s["stage"]).ToArray();}
+    public static bool NormalClose() {return report.ContainsKey("normalClosePassed")&&(bool)report["normalClosePassed"];}
+/* ORIGINAL_METHODS */
+}
