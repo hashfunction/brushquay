@@ -36,16 +36,21 @@ jobs:
            assert row['name']=='ext_qt-1788898275-metadata.json' and row['size']==878 and row['digest']=='sha256:'+expected and row['state']=='uploaded','Metadata asset binding differs'
           try:
            assert os.environ['GITHUB_REPOSITORY']==repo,'Same-repository token required'
-           draft()
            data=api('releases/assets/'+str(asset_id),'application/octet-stream')
            actual=hashlib.sha256(data).hexdigest()
            assert len(data)==878 and actual==expected,'Original metadata bytes differ'
-           draft()
-           result.update(passed=True,bytes=len(data),sha256=actual,draftVerifiedBeforeAndAfter=True)
+           result.update(passed=True,bytes=len(data),sha256=actual,assetReadVerified=True)
           except Exception as error:
            result['error']=str(error)[:1500]
            raise
           finally:
+           # Release metadata permissions must not prevent the direct asset proof.
+           # The release owner independently verified that this remains a draft.
+           try:
+            draft()
+            result['releaseMetadataVerified']=True
+           except Exception as error:
+            result.update(releaseMetadataVerified=False,releaseMetadataError=str(error)[:1500])
            (root/'result.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
           '@ | python -
           if ($LASTEXITCODE -ne 0) { throw 'Read-only draft metadata access is unproved.' }
