@@ -1,0 +1,60 @@
+name: Bristlune private SDK transfer and cache proof
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fetch:
+    permissions:
+      contents: write
+    uses: ./.github/workflows/private-sdk-fetch.yml
+    secrets:
+      BRISTLUNE_SDK_TRANSFER_KEY: ${{ secrets.BRISTLUNE_SDK_TRANSFER_KEY }}
+  verify-cache-only:
+    needs: fetch
+    permissions:
+      contents: read
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.10'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: Bristlune-encrypted-SDK-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .brushquay/encrypted-sdk-transfer
+      - name: Authenticate and admit only the original cache bytes
+        shell: pwsh
+        env:
+          BRISTLUNE_SDK_TRANSFER_KEY: ${{ secrets.BRISTLUNE_SDK_TRANSFER_KEY }}
+        run: |
+          node build-tools/ci-scripts/private_sdk_transfer.cjs seed
+          if ($LASTEXITCODE -ne 0) { throw 'Private SDK authentication/cache admission failed.' }
+      - name: Recheck originals through unchanged dependency verifier
+        shell: pwsh
+        run: |
+          @'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0,'build-tools/ci-scripts')
+          import locked_windows_deps as deps
+          lock=deps.load_lock('build-tools/ci-scripts/brushquay-dependency-lock.json')
+          qt=next(p for p in lock['packages'] if p['name']=='ext_qt');cache=Path('.brushquay/cache')
+          for row in (qt,qt['metadata']):deps.verify_artifact(cache/row['sha256'],row)
+          deps.check_metadata(qt,cache)
+          print('Original Qt archive and metadata independently verified; no build or input execution.')
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { throw 'Original locked Qt verification failed.' }
+      - name: Preserve preseed receipt only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-private-SDK-preseed-receipt
+          path: .brushquay/evidence/private-sdk-seed.json
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error

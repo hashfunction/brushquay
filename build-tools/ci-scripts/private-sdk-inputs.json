@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "repository": "hashfunction/brushquay",
+  "releaseId": 393572515,
+  "tag": "bristlune-locked-build-inputs-20260922",
+  "files": [
+    {
+      "assetId": 581002655,
+      "name": "766c8bef1577a76bba55f059bfb54afc352d1d38f47593365b1f544516974495",
+      "bytes": 787742720,
+      "sha256": "766c8bef1577a76bba55f059bfb54afc352d1d38f47593365b1f544516974495"
+    },
+    {
+      "assetId": 580969685,
+      "name": "ext_qt-1788898275-metadata.json",
+      "bytes": 878,
+      "sha256": "26f5453f0c92cd8d0556f75aa77f1c24619bc2b62b8a8b2ac1ae790285cf9cbe"
+    }
+  ]
+}

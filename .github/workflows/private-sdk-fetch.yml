@@ -1,0 +1,51 @@
+name: Bristlune private SDK fetch only
+on:
+  workflow_call:
+    secrets:
+      BRISTLUNE_SDK_TRANSFER_KEY:
+        required: true
+permissions:
+  contents: read
+jobs:
+  fetch-only:
+    permissions:
+      contents: write
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Test exact private transport boundaries
+        shell: pwsh
+        run: |
+          node --test build-tools/ci-scripts/tests/test_private_sdk_transfer.cjs
+          if ($LASTEXITCODE -ne 0) { throw 'Private SDK transport tests failed.' }
+      - name: Fetch exact unpublished inputs and encrypt for this run
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRISTLUNE_SDK_TRANSFER_KEY: ${{ secrets.BRISTLUNE_SDK_TRANSFER_KEY }}
+        run: |
+          node build-tools/ci-scripts/private_sdk_transfer.cjs fetch
+          if ($LASTEXITCODE -ne 0) { throw 'Private SDK fetch/encryption failed.' }
+      - name: Transfer encrypted bytes only
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-encrypted-SDK-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .brushquay/encrypted-sdk-transfer/*.aesgcm
+            .brushquay/encrypted-sdk-transfer/transfer.json
+          include-hidden-files: true
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
+      - name: Preserve fetch metadata only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-private-SDK-fetch-receipt
+          path: .brushquay/evidence/private-sdk-fetch.json
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: warn

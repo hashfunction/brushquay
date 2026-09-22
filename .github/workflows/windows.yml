@@ -12,11 +12,22 @@ on:
 permissions:
   contents: read
 jobs:
+  private-sdk-inputs:
+    permissions:
+      contents: write
+    uses: ./.github/workflows/private-sdk-fetch.yml
+    secrets:
+      BRISTLUNE_SDK_TRANSFER_KEY: ${{ secrets.BRISTLUNE_SDK_TRANSFER_KEY }}
   windows-x64:
+    needs: private-sdk-inputs
+    permissions:
+      contents: read
     runs-on: windows-2022
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.12.10'
@@ -53,6 +64,18 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.release == true
         shell: powershell
         run: ./packaging/windows/msix/release.ps1 -Python python -PreflightOnly
+      - name: Download only this run's encrypted private inputs
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: Bristlune-encrypted-SDK-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .brushquay/encrypted-sdk-transfer
+      - name: Authenticate original private inputs into the locked cache
+        shell: pwsh
+        env:
+          BRISTLUNE_SDK_TRANSFER_KEY: ${{ secrets.BRISTLUNE_SDK_TRANSFER_KEY }}
+        run: |
+          node build-tools/ci-scripts/private_sdk_transfer.cjs seed
+          if ($LASTEXITCODE -ne 0) { throw 'Original private input preseed failed.' }
       - name: Fetch and verify immutable dependencies
         shell: pwsh
         run: ./build-tools/ci-scripts/fetch-locked-windows-deps.ps1 -Python python
