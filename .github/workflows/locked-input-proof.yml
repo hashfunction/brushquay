@@ -5,14 +5,18 @@ permissions:
   contents: read
 jobs:
   metadata-only:
+    permissions:
+      contents: write
     runs-on: windows-2022
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.12.10'
-      - name: Prove read-only job token access to original draft metadata
+      - name: Prove job-scoped token access to original draft metadata
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
@@ -24,7 +28,7 @@ jobs:
           tag='bristlune-locked-build-inputs-20260922'
           expected='26f5453f0c92cd8d0556f75aa77f1c24619bc2b62b8a8b2ac1ae790285cf9cbe'
           root=Path('.brushquay/evidence/private-input-proof');root.mkdir(parents=True,exist_ok=False)
-          result=dict(schema=1,scope='878-byte private metadata access only; no SDK or product qualification',passed=False,sourceCommit=os.environ['GITHUB_SHA'],run=os.environ['GITHUB_RUN_ID'],attempt=os.environ['GITHUB_RUN_ATTEMPT'],releaseId=release_id,assetId=asset_id)
+          result=dict(schema=1,scope='878-byte private metadata access only; no SDK or product qualification',requestedJobTokenPermission='contents:write',passed=False,sourceCommit=os.environ['GITHUB_SHA'],run=os.environ['GITHUB_RUN_ID'],attempt=os.environ['GITHUB_RUN_ATTEMPT'],releaseId=release_id,assetId=asset_id)
           def api(path,accept='application/vnd.github+json'):
            return subprocess.check_output(['gh','api','repos/'+repo+'/'+path,'-H','Accept: '+accept],timeout=90)
           def draft():
@@ -36,24 +40,21 @@ jobs:
            assert row['name']=='ext_qt-1788898275-metadata.json' and row['size']==878 and row['digest']=='sha256:'+expected and row['state']=='uploaded','Metadata asset binding differs'
           try:
            assert os.environ['GITHUB_REPOSITORY']==repo,'Same-repository token required'
+           draft()
+           result['draftVerifiedBefore']=True
            data=api('releases/assets/'+str(asset_id),'application/octet-stream')
            actual=hashlib.sha256(data).hexdigest()
            assert len(data)==878 and actual==expected,'Original metadata bytes differ'
-           result.update(passed=True,bytes=len(data),sha256=actual,assetReadVerified=True)
+           result.update(bytes=len(data),sha256=actual,assetReadVerified=True)
+           draft()
+           result.update(passed=True,draftVerifiedAfter=True)
           except Exception as error:
            result['error']=str(error)[:1500]
            raise
           finally:
-           # Release metadata permissions must not prevent the direct asset proof.
-           # The release owner independently verified that this remains a draft.
-           try:
-            draft()
-            result['releaseMetadataVerified']=True
-           except Exception as error:
-            result.update(releaseMetadataVerified=False,releaseMetadataError=str(error)[:1500])
            (root/'result.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
           '@ | python -
-          if ($LASTEXITCODE -ne 0) { throw 'Read-only draft metadata access is unproved.' }
+          if ($LASTEXITCODE -ne 0) { throw 'Job-scoped draft metadata access is unproved.' }
       - name: Preserve access receipt only
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
