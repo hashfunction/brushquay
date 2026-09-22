@@ -1,0 +1,60 @@
+name: Bristlune private locked-input access proof
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  metadata-only:
+    runs-on: windows-2022
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.10'
+      - name: Prove read-only job token access to original draft metadata
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          @'
+          import hashlib,json,os,subprocess
+          from pathlib import Path
+          repo='hashfunction/brushquay';release_id=393572515;asset_id=580969685
+          tag='bristlune-locked-build-inputs-20260922'
+          expected='26f5453f0c92cd8d0556f75aa77f1c24619bc2b62b8a8b2ac1ae790285cf9cbe'
+          root=Path('.brushquay/evidence/private-input-proof');root.mkdir(parents=True,exist_ok=False)
+          result=dict(schema=1,scope='878-byte private metadata access only; no SDK or product qualification',passed=False,sourceCommit=os.environ['GITHUB_SHA'],run=os.environ['GITHUB_RUN_ID'],attempt=os.environ['GITHUB_RUN_ATTEMPT'],releaseId=release_id,assetId=asset_id)
+          def api(path,accept='application/vnd.github+json'):
+           return subprocess.check_output(['gh','api','repos/'+repo+'/'+path,'-H','Accept: '+accept],timeout=90)
+          def draft():
+           release=json.loads(api('releases/'+str(release_id)))
+           assert release['id']==release_id and release['tag_name']==tag and release['draft'] is True and release['published_at'] is None,'Exact draft release required'
+           rows=[a for a in release['assets'] if a['id']==asset_id]
+           assert len(rows)==1,'Exact metadata asset required'
+           row=rows[0]
+           assert row['name']=='ext_qt-1788898275-metadata.json' and row['size']==878 and row['digest']=='sha256:'+expected and row['state']=='uploaded','Metadata asset binding differs'
+          try:
+           assert os.environ['GITHUB_REPOSITORY']==repo,'Same-repository token required'
+           draft()
+           data=api('releases/assets/'+str(asset_id),'application/octet-stream')
+           actual=hashlib.sha256(data).hexdigest()
+           assert len(data)==878 and actual==expected,'Original metadata bytes differ'
+           draft()
+           result.update(passed=True,bytes=len(data),sha256=actual,draftVerifiedBeforeAndAfter=True)
+          except Exception as error:
+           result['error']=str(error)[:1500]
+           raise
+          finally:
+           (root/'result.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { throw 'Read-only draft metadata access is unproved.' }
+      - name: Preserve access receipt only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-private-input-access-proof
+          path: .brushquay/evidence/private-input-proof/result.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14

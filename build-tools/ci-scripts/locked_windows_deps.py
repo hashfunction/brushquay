@@ -19,6 +19,7 @@ import sys
 import tarfile
 import tempfile
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
@@ -181,6 +182,8 @@ def fetch_one(artifact, cache, opener):
         except FileExistsError:
             # A competing cache writer may only supply these same pinned bytes.
             verify_artifact(destination, artifact)
+    except urllib.error.URLError as error:
+        raise LockError('Download failed for ' + artifact['url'] + ' (SHA256 ' + artifact['sha256'] + '): ' + str(error)) from error
     finally:
         temporary.unlink(missing_ok=True)
 

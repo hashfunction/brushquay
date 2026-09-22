@@ -8,6 +8,7 @@ import sys
 import tarfile
 import tempfile
 import unittest
+import urllib.error
 from unittest import mock
 import zipfile
 
@@ -86,6 +87,28 @@ class LockedWindowsDepsTest(unittest.TestCase):
             self.fetch(self.freeze())
         self.assertEqual(list(self.cache.iterdir()), [])
         self.assertFalse(self.stage.exists())
+
+    def test_transport_failure_reports_locked_url_hash_and_cause_without_retry(self):
+        package = self.package('one', {'bin/app.dll': b'native'})
+        metadata = {'url': 'https://fixtures.invalid/one/metadata.json', 'sha256': 'f' * 64}
+        for artifact in (package, metadata):
+            for error in (urllib.error.HTTPError('https://redirect.invalid/object', 404, 'Not Found', {}, None),
+                          urllib.error.URLError('certificate verification failed')):
+                with self.subTest(url=artifact['url'], error=type(error).__name__):
+                    calls = []
+                    def opener(request, **kwargs):
+                        calls.append(request.full_url)
+                        raise error
+                    with self.assertRaises(deps.LockError) as raised:
+                        deps.fetch_one(artifact, self.cache, opener)
+                    self.assertIs(raised.exception.__cause__, error)
+                    self.assertIn(artifact['url'], str(raised.exception))
+                    self.assertIn(artifact['sha256'], str(raised.exception))
+                    self.assertIn(str(error), str(raised.exception))
+                    self.assertNotIn('redirect.invalid', str(raised.exception))
+                    self.assertEqual(calls, [artifact['url']])
+                    self.assertEqual(list(self.cache.iterdir()), [])
+                    self.assertFalse(self.stage.exists())
 
     def test_does_not_replace_corrupt_cache_entry(self):
         package = self.package('one', {'bin/app.dll': b'native'})
