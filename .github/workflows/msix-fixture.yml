@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: '3.12.10'
       - name: Exercise original SDK tools and production unsigned builder
-        shell: powershell
+        shell: pwsh
         run: |
           python -m unittest discover -s packaging/windows/msix/tests -p test_pri_assets.py -v
           if ($LASTEXITCODE -ne 0) { throw 'Small actual SDK packaging fixture failed.' }

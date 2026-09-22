@@ -2,12 +2,33 @@
 import hashlib,json,os,subprocess,sys,tempfile,unittest
 from pathlib import Path
 import xml.etree.ElementTree as ET
+from unittest.mock import patch
 import test_brushquay_msix as fixture
 import build_msix as package
 
 RUNTIME='qml/QtQuick/Controls/FluentWinUI3/light/images/pageindicatordelegate-indicator-delegate-current-pressed@3x.png'
 
+def observe_sdk(script):
+ # Python inherits the PS7 module path; Windows PowerShell must construct its
+ # own default path instead of loading incompatible PS7 signature/hash modules.
+ child_env={k:v for k,v in os.environ.items() if k.upper()!='PSMODULEPATH'}
+ return subprocess.run(['powershell.exe','-NoLogo','-NoProfile','-NonInteractive','-Command',script],capture_output=True,timeout=60,env=child_env)
+
 class PriAssetsTests(unittest.TestCase):
+ def test_observer_child_does_not_inherit_foreign_module_search_path(self):
+  real_run=subprocess.run
+  # Execute a real child with the observer's exact process options; replace only
+  # the Windows command so the environment boundary also runs on other hosts.
+  def child(command,**options):
+   self.assertEqual(command,['powershell.exe','-NoLogo','-NoProfile','-NonInteractive','-Command','fixture script'])
+   return real_run([sys.executable,'-c',"import os,json;print(json.dumps({k:v for k,v in os.environ.items() if k.upper()=='PSMODULEPATH' or k=='BRISTLUNE_FIXTURE_SENTINEL'}))"],**options)
+  for key in ('PSModulePath','PSMODULEPATH','psmodulepath'):
+   with self.subTest(key=key),patch.dict(os.environ,{key:'foreign incompatible modules','BRISTLUNE_FIXTURE_SENTINEL':'preserve unchanged'}):
+    original=dict(os.environ)
+    with patch.object(subprocess,'run',side_effect=child):result=observe_sdk('fixture script')
+    result.check_returncode()
+    self.assertEqual(json.loads(result.stdout),{'BRISTLUNE_FIXTURE_SENTINEL':'preserve unchanged'})
+    self.assertEqual(dict(os.environ),original)
  def fixture(self):
   f=fixture.PackageTests('test_stage_is_exact_copy_without_mutating_install');f.setUp();self.addCleanup(f.doCleanups)
   path=f.install/RUNTIME;path.parent.mkdir(parents=True);path.write_bytes((package.HERE/'pkg/Assets/StoreLogo.png').read_bytes())
@@ -41,7 +62,7 @@ foreach($name in @('makepri','makeappx','signtool')) {
  $rows[$name]=[ordered]@{path=$path;bytes=(Get-Item -LiteralPath $path).Length;sha256=(Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant();status=[string]$signature.Status;subject=$signature.SignerCertificate.Subject;thumbprint=$signature.SignerCertificate.Thumbprint;originalFilename=$version.OriginalFilename;fileVersion=$version.FileVersion;fileVersionParts=@($version.FileMajorPart,$version.FileMinorPart,$version.FileBuildPart,$version.FilePrivatePart)}
 }
 $rows | ConvertTo-Json -Depth 5'''
-  probe=subprocess.run(['powershell.exe','-NoLogo','-NoProfile','-NonInteractive','-Command',script],capture_output=True,timeout=60)
+  probe=observe_sdk(script)
   (root/'sdk-versions.json').write_bytes(probe.stdout);(root/'sdk-versions.log').write_bytes(probe.stderr);probe.check_returncode()
   versions=json.loads(probe.stdout.decode('utf-8-sig'));tools={'sdkVersion':'10.0.26100.0'}
   self.assertEqual(set(versions),{'makepri','makeappx','signtool'})

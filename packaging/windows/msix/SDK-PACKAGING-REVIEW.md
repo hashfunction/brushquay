@@ -97,3 +97,54 @@ pipeline before dependency acquisition or compilation.
 Actual Windows SDK fixture, fresh dual installed lifecycles, Store export, and
 marketing capture remain pending. Reviewed runtime/source/license binding and
 the null final marketing package binding are unchanged.
+
+## Windows fixture success and the subsequent parent-shell failure
+
+The exact-source small Windows SDK run `35702195418` passed with public source
+`f1ceb4e58fe679dbee82f9dc6b4b8fc4f2ed53f7`: its retained result records the
+271-character runtime path, exactly three PRI logo candidates, original runtime
+preservation, and verified unsigned pack/unpack. The original numeric versions
+are `[10, 0, 26100, 7705]` for all three SDK tools, including SignTool's distinct
+`4.00 (WinBuild.160101.0800)` display. These original receipts are retained under
+`/private/tmp/bristlune-sdk-35702195418` and the release owner's certification
+evidence; they are not rewritten by this follow-up.
+
+Full release run `35702503993` then stopped before dependency acquisition or
+native compilation. The sole failing test was the SDK fixture's initial
+`powershell.exe` child; the remaining 58 package tests passed. Original artifact
+`10682408869` is 718 bytes, SHA256
+`00559a177f8a94cc66ad198fdb3681eb882152a56e887719864f71dece5bcf94`.
+The unchanged ZIP and extracted original files are retained under
+`/private/tmp/bristlune-35702503993-review`, with the full failed log at
+`/private/tmp/bristlune-35702503993-failed.log`.
+Its `sdk-versions.json` is empty; `sdk-versions.log` reports that
+`Get-AuthenticodeSignature` was found in `Microsoft.PowerShell.Security` but the
+module could not load (`CouldNotAutoloadMatchingModule`). No SDK signature was
+rejected, and no packaging or installed lifecycle ran in this release attempt.
+
+The successful manual workflow used Windows PowerShell as its outer shell. The
+full test step uses PowerShell 7, then Python, then Windows PowerShell. Microsoft
+documents this exact [intermediate-process module-path inheritance problem](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_psmodulepath?view=powershell-7.6#starting-windows-powershell-from-powershell-7):
+the PowerShell 7 path survives the Python intermediary, so Windows PowerShell can
+resolve incompatible modules ahead of its own built-ins. The original failure
+does not retain the selected module's full path; the diagnosis follows the
+observed command failure, the differing launch chains, and that documented
+behavior.
+
+The fixture now follows Microsoft's specific Python remedy: omit `PSModulePath`
+(case-insensitively) only from the environment passed to the Windows PowerShell
+child, allowing it to construct its own default path. The parent environment and
+all signature, version, hash, payload, PRI, and unpack assertions are unchanged.
+The manual-only workflow now also uses `pwsh` as its outer shell so that it
+exercises the same chain as the full pipeline. Product and installed qualifier
+code are unchanged by this follow-up.
+
+The focused regression executes real child processes using the observer's process
+options, substituting Python only for the platform-specific executable. All three
+environment-variable spelling cases failed before the correction and pass after
+it; the unrelated sentinel and entire parent environment stay unchanged.
+`python3 -m unittest discover -s packaging/windows/msix/tests -p test_pri_assets.py -v`
+passes both local tests (three child-environment cases), with the actual Windows
+SDK test explicitly skipped on macOS. `git diff --check` passes. Windows validation
+of the corrected PowerShell 7 launch chain and full release qualification remain
+pending; the earlier successful SDK pack/unpack remains valid evidence.
