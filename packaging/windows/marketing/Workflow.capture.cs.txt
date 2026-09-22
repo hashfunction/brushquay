@@ -1,0 +1,94 @@
+        static void Workflow()
+        {
+            report["purpose"] = "marketing capture only";
+            report["consumerAcceptance"] = false;
+            Action<string, AutomationElement> frame = (stage, active) =>
+            {
+                Foreground(active);
+                Observe(stage, active, false);
+                var before = Snapshot(active, active, false, 0, 0);
+                InputGuard.Validate(before, app.Id, main.ToInt64(), false);
+                var parent = MainWindow();
+                var bounds = Bounds(parent.Current.BoundingRectangle);
+                if (Pid(main) != app.Id || Owner(Handle(active)) != main.ToInt64() ||
+                    !InputGuard.Contains(before.desktop, bounds) || !InputGuard.Contains(bounds, before.windowBounds) ||
+                    bounds[2] < 1366 || bounds[3] < 768)
+                    throw new InvalidOperationException("Complete owned marketing frame is not visible");
+                var path = Path.Combine(output, stage + ".png");
+                using (var bitmap = new Bitmap((int)bounds[2], (int)bounds[3]))
+                {
+                    using (var g = Graphics.FromImage(bitmap))
+                        g.CopyFromScreen((int)bounds[0], (int)bounds[1], 0, 0, bitmap.Size, CopyPixelOperation.SourceCopy);
+                    InputGuard.Stable(before, Snapshot(active, active, false, 0, 0), app.Id, main.ToInt64(), false);
+                    if (!bounds.SequenceEqual(Bounds(MainWindow().Current.BoundingRectangle)) || Pid(main) != app.Id)
+                        throw new InvalidOperationException("Owned marketing frame moved during capture");
+                    using (var file = new FileStream(path, FileMode.CreateNew)) bitmap.Save(file, ImageFormat.Png);
+                }
+                Save(Path.Combine(output, stage + "-capture.json"), D("purpose", "marketing capture only", "unedited", true,
+                    "path", path, "sha256", Hash(path), "bounds", bounds, "activeBounds", before.windowBounds,
+                    "mainHandle", main.ToInt64(), "activeHandle", Handle(active).ToInt64(), "processId", app.Id,
+                    "processStartUtc", started.ToString("o"), "executableSha256", expectedHash, "packageFullName", expectedPackage));
+            };
+            MainReady(null);
+            var start = Snapshot(MainWindow(), MainWindow(), false, 0, 0);
+            InputGuard.Validate(start, app.Id, main.ToInt64(), false);
+            object windowTransform;
+            if (!MainWindow().TryGetCurrentPattern(TransformPattern.Pattern, out windowTransform) ||
+                !((TransformPattern)windowTransform).Current.CanMove || !((TransformPattern)windowTransform).Current.CanResize)
+                throw new InvalidOperationException("Owned main window does not expose normal move/resize controls");
+            ((TransformPattern)windowTransform).Resize(1500, 820);
+            InputGuard.Validate(Snapshot(MainWindow(), MainWindow(), false, 0, 0), app.Id, main.ToInt64(), false);
+            ((TransformPattern)windowTransform).Move(50, 25);
+            MainReady(null);
+            InputGuard.Validate(Snapshot(MainWindow(), MainWindow(), false, 0, 0), app.Id, main.ToInt64(), false);
+            report["windowPreparation"] = D("method", "normal UIA TransformPattern", "requestedBounds", new[] { 50, 25, 1500, 820 }, "observedBounds", Bounds(MainWindow().Current.BoundingRectangle));
+            Chord(MainWindow(), 0x11, 0x4f);
+            Picker("Open Images", Path.Combine(fixture, "Moonlit Garden.ora"), false);
+            MainReady("Moonlit Garden.ora");
+            SaveAs("Moonlit Garden.kra", false);
+            Chord(MainWindow(), 0x32); // Source-defined Fit Canvas shortcut.
+            frame("01-painting-workspace", MainWindow());
+            Chord(MainWindow(), 0x12, 0x46);
+            Activate(MainWindow(), Find(MainWindow(), e => e.Current.ControlType == ControlType.MenuItem &&
+                e.Current.Name.Replace("&", "") == "Export with Preset...", "Export with Preset action"));
+            var presets = WaitWindow(e => e.Current.Name == "Export with Preset" && e.Current.ClassName == "KisExportPresetDialog", "named export presets");
+            Foreground(presets);
+            Find(presets, e => e.Current.ClassName == "KisWdgOptionsPNG", "actual PNG preset options");
+            var name = Find(presets, e => Id(e, "exportPresetName") && e.Current.ClassName == "QLineEdit", "preset name");
+            var snapshot = Snapshot(presets, name, false, 0, 0);
+            InputGuard.Validate(snapshot, app.Id, main.ToInt64(), false);
+            name.SetFocus();
+            InputGuard.Stable(snapshot, Snapshot(presets, name, false, 0, 0), app.Id, main.ToInt64(), false);
+            object pattern;
+            if (!name.TryGetCurrentPattern(ValuePattern.Pattern, out pattern) || ((ValuePattern)pattern).Current.IsReadOnly)
+                throw new InvalidOperationException("Preset name has no writable normal UI value pattern");
+            ((ValuePattern)pattern).SetValue("Moonlit Garden - PNG");
+            if (((ValuePattern)pattern).Current.Value != "Moonlit Garden - PNG")
+                throw new InvalidOperationException("Actual preset name readback differs");
+            Activate(presets, Find(presets, e => Id(e, "saveExportPreset") && e.Current.ControlType == ControlType.Button, "Save Preset"));
+            Find(presets, e => e.Current.ControlType == ControlType.ListItem && e.Current.Name == "Moonlit Garden - PNG", "saved named preset");
+            frame("02-export-preset", presets);
+            Activate(presets, Find(presets, e => Id(e, "chooseExportDestination") && e.Current.ControlType == ControlType.Button, "Choose Destination"));
+            Picker("Export with Preset", Path.Combine(fixture, "Moonlit Garden.png"), true);
+            var outcome = WaitWindow(e => e.Current.Name == "Export Result" && e.Current.ClassName == "QMessageBox", "actual preset export result");
+            Foreground(outcome);
+            Find(outcome, e => e.Current.Name == "Export created: " + Path.Combine(fixture, "Moonlit Garden.png").Replace('\\', '/'), "exact successful export destination");
+            Observe("export-result", outcome, false);
+            Button(outcome, "OK");
+            FileReady("Moonlit Garden.png");
+            MainReady("Moonlit Garden.kra");
+            Chord(MainWindow(), 0x11, 0x4f);
+            Picker("Open Images", Path.Combine(fixture, "Moonlit Garden.png"), false);
+            MainReady("Moonlit Garden.png");
+            SaveAs("Moonlit Garden Reopened.kra", false);
+            Chord(MainWindow(), 0x32);
+            frame("03-exported-illustration", MainWindow());
+            ObserveModules("workflow-complete");
+            Modules();
+            Chord(MainWindow(), 0x11, 0x51);
+            if (!app.WaitForExit(30000) || app.ExitCode != 0)
+                throw new InvalidOperationException("Normal application close did not exit zero");
+            if (!job.WaitEmpty(3000)) throw new InvalidOperationException("A product child process remained after normal close");
+            report["normalExitCode"] = app.ExitCode;
+            report["normalClosePassed"] = true;
+        }

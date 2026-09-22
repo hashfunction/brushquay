@@ -1,0 +1,33 @@
+name: Bristlune small Windows SDK packaging fixture
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sdk-fixture:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.10'
+      - name: Exercise original SDK tools and production unsigned builder
+        shell: powershell
+        run: |
+          python -m unittest discover -s packaging/windows/msix/tests -p test_pri_assets.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Small actual SDK packaging fixture failed.' }
+          python -m unittest discover -s packaging/windows/msix/tests -p test_store_lifecycle_replay.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Original receipt contract replay failed.' }
+      - name: Preserve fixture metadata only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-small-SDK-fixture
+          path: |
+            .brushquay/evidence/sdk-fixture-*/**/*.json
+            .brushquay/evidence/sdk-fixture-*/**/*.log
+            .brushquay/evidence/sdk-fixture-*/**/*.xml
+          include-hidden-files: true
+          retention-days: 14
+          if-no-files-found: error

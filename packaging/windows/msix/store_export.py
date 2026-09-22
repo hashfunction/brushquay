@@ -135,7 +135,9 @@ def verify_lifecycle(source,root,mode,context,selected,helpers,binding):
  require(sdk.get('sdkVersion')=='10.0.26100.0' and package.get('sdk')==sdk and record.get('sdk')==sdk,'Current SDK tools differ')
  for name in ('makepri','makeappx','signtool'):
   auth=record.get('sdkAuthenticode',{}).get(name,{})
-  require(isinstance(auth.get('subject'),str) and 'O=Microsoft Corporation' in auth['subject'] and re.fullmatch('[0-9A-Fa-f]{40}',auth.get('thumbprint','')) and str(auth.get('fileVersion','')).startswith('10.0.26100.'),'Original SDK signature/version evidence incomplete')
+  parts=auth.get('fileVersionParts')
+  numeric=isinstance(parts,list) and len(parts)==4 and all(type(v) is int for v in parts) and parts[:3]==[10,0,26100] and 0<=parts[3]<=65535
+  require(isinstance(auth.get('subject'),str) and 'O=Microsoft Corporation' in auth['subject'] and re.fullmatch('[0-9A-Fa-f]{40}',auth.get('thumbprint','')) and isinstance(auth.get('fileVersion'),str) and bool(auth['fileVersion'].strip()) and numeric,'Original SDK signature/version evidence incomplete')
  sign_tool=record.get('signTool');require(isinstance(sign_tool,dict) and hashed(sign_tool)==measure(sign_tool['path']) and Path(sign_tool['path']).name.lower()=='signtool.exe' and Path(sign_tool['path']).parent==Path(sdk['makeappx']['path']).parent,'Current SDK signing tool differs')
  require(record.get('probe')==measure(directory.parent/'GuiProbe.exe'),'Retained compiled observer bytes differ')
  expected=expected_payload(source,reviewed['audit'],mode,package['payload']['resources.pri'])

@@ -1,0 +1,59 @@
+name: Bristlune exact-package marketing capture
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  capture:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: capture
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          path: capture
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.10'
+      - name: Require a reviewed final package binding
+        id: binding
+        shell: pwsh
+        run: |
+          python packaging/windows/marketing/capture_checks.py --binding-output $env:GITHUB_OUTPUT
+          if ($LASTEXITCODE -ne 0) { throw 'Exact final Store binding is absent or invalid.' }
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ steps.binding.outputs.qualified_source }}
+          path: qualified
+      - name: Check capture-only source boundaries
+        shell: pwsh
+        run: |
+          python -m unittest discover -s packaging/windows/marketing -p 'test_*.py' -v
+          if ($LASTEXITCODE -ne 0) { throw 'Capture boundary tests failed.' }
+          ./packaging/windows/marketing/test_capture_lifecycle.ps1 -Python python
+          ./packaging/windows/marketing/test_capture_labels.ps1
+      - name: Read back original final package and both installed lifecycle receipts
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python packaging/windows/marketing/prepare_capture.py --qualified-source "$env:GITHUB_WORKSPACE/qualified" --output "$env:RUNNER_TEMP/bristlune-capture-inputs"
+          if ($LASTEXITCODE -ne 0) { throw 'Original qualified package inputs failed verification.' }
+      - name: Capture actual workspace preset and reopened illustration
+        shell: powershell
+        run: ./packaging/windows/marketing/capture.ps1 -Inputs "$env:RUNNER_TEMP/bristlune-capture-inputs" -QualifiedSource "$env:GITHUB_WORKSPACE/qualified" -Output "$env:RUNNER_TEMP/bristlune-marketing-output"
+      - name: Retain only raw screenshots and capture metadata
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Bristlune-real-Windows-marketing
+          path: |
+            ${{ runner.temp }}/bristlune-marketing-output/*.json
+            ${{ runner.temp }}/bristlune-marketing-output/gui/*.json
+            ${{ runner.temp }}/bristlune-marketing-output/gui/*.png
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14

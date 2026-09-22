@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "title": "Moonlit Garden",
+  "license": "CC0-1.0",
+  "purpose": "Original generated layered demo artwork, not application screenshot",
+  "width": 512,
+  "height": 384,
+  "layerNames": [
+    "Moon and stars",
+    "Botanical silhouettes",
+    "Evening landscape"
+  ],
+  "archive": {
+    "bytes": 106517,
+    "sha256": "fe54bc72bca33a4e5b09cb48919582058c63990f2ab009ee57868ee033a2856c"
+  },
+  "members": {
+    "mimetype": {
+      "bytes": 16,
+      "sha256": "6ff9869d75bef2c16a4551178dd6a80ab321ac0d2875e42fb29a5d7ae3dfc1f4"
+    },
+    "mergedimage.png": {
+      "bytes": 48689,
+      "sha256": "6826f3f113c34fcce2b9ea6c80f233ec38f3161c3a97da08e325deade6f91feb"
+    },
+    "data/layer0.png": {
+      "bytes": 7179,
+      "sha256": "b9957ad403661a6e42551d9d254ae8fbc4343cb2dc910372937ab7004094ec1c"
+    },
+    "data/layer1.png": {
+      "bytes": 47167,
+      "sha256": "f8b1b51f07b865a65a95b08d68c9b054df8b495552f21dd31399c10138594f70"
+    },
+    "data/layer2.png": {
+      "bytes": 5880,
+      "sha256": "426b1647472f60a03e53788c010ac1c4fddaccfbbf12e23cbf6d257ec6e406fa"
+    },
+    "stack.xml": {
+      "bytes": 475,
+      "sha256": "81606f28dbcaf6ba9a3fad070954f537f494282a1eff257cc655e2764ab58bec"
+    }
+  }
+}

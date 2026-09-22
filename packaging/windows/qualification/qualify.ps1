@@ -134,7 +134,7 @@ function Invoke-InstalledQualification([string]$Python,[string]$ReleaseMode=''){
             if($signature.Status -ne 'Valid' -or $signature.SignerCertificate.Subject -notmatch 'O=Microsoft Corporation'){throw "Unproved Microsoft SDK tool signature: $path"}
             $version=(Get-Item -LiteralPath $path).VersionInfo
             if($version.FileMajorPart -ne 10 -or $version.FileMinorPart -ne 0 -or $version.FileBuildPart -ne 26100 -or $version.OriginalFilename -ine ($name+'.exe')){throw "SDK version/original filename differs: $path"}
-            $state.sdkAuthenticode[$name]=[ordered]@{subject=$signature.SignerCertificate.Subject;thumbprint=$signature.SignerCertificate.Thumbprint;fileVersion=$version.FileVersion}
+            $state.sdkAuthenticode[$name]=[ordered]@{subject=$signature.SignerCertificate.Subject;thumbprint=$signature.SignerCertificate.Thumbprint;fileVersion=$version.FileVersion;fileVersionParts=@($version.FileMajorPart,$version.FileMinorPart,$version.FileBuildPart,$version.FilePrivatePart)}
             $record=[ordered]@{path=$path;sha256=$value.sha256;bytes=$value.bytes}
             if($name -eq 'signtool'){$state.signTool=$record}else{$state.sdk[$name]=$record}
         }

@@ -5,7 +5,8 @@
 		<autoResourcePackage qualifier="Scale"/>
 		<autoResourcePackage qualifier="DXFeatureLevel"/>
 	</packaging> -->
-	<index root="\" startIndexAt="\">
+	<!-- Qt loads Bristlune runtime files itself; only manifest logos use MRT. -->
+	<index root="\" startIndexAt="Assets">
 		<default>
 			<qualifier name="Language" value="en-us"/>
 			<qualifier name="Contrast" value="standard"/>

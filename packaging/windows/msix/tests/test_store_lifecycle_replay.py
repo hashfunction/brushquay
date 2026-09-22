@@ -61,7 +61,7 @@ class OriginalLifecycleReplay(unittest.TestCase):
   self.write(directory/'release-record.json',rec);self.write(root/'package/qualification-package.json',rec)
   proof=dict(passed=True,primaryError=None,cleanupErrors=[],uninstalled=True,fixtureRemoved=True,profileRemoved=True,certificateRemoved=True,publicCertificateRemoved=True,signedCopyRemoved=True,
    **{k:self.context[k] for k in ('sourceCommit','sourceTree','workflowRunId','workflowRunAttempt')},releaseCandidate=True,mode=mode,qualificationOnly=mode=='qualification',packageFamilyName=family,packageFullName=full,packageDirectory=str(directory),installLocation=installation,windowsRoot='C:\\Windows',packageRecord=measure(directory/'release-record.json'),sdk=sdk,
-   sdkAuthenticode={n:dict(subject='CN=Microsoft Windows, O=Microsoft Corporation',thumbprint='a'*40,fileVersion='10.0.26100.1') for n in ('makepri','makeappx','signtool')},signTool=sign,probe=measure(work/'GuiProbe.exe'),unsignedPackage=measure(package),signedPackage=digest(b'original signed copy'),display=dict(restore_verified=True,restored={'width':1024},before={'width':1024},registry_updated=False,unsafe_modes_enabled=False,dpi_changed=False,renderer_emulation_used=False))
+   sdkAuthenticode={n:dict(subject='CN=Microsoft Windows, O=Microsoft Corporation',thumbprint='a'*40,fileVersion=('4.00 (WinBuild.160101.0800)' if n=='signtool' else '10.0.26100.7705 (WinBuild.160101.0800)'),fileVersionParts=[10,0,26100,7705]) for n in ('makepri','makeappx','signtool')},signTool=sign,probe=measure(work/'GuiProbe.exe'),unsignedPackage=measure(package),signedPackage=digest(b'original signed copy'),display=dict(restore_verified=True,restored={'width':1024},before={'width':1024},registry_updated=False,unsafe_modes_enabled=False,dpi_changed=False,renderer_emulation_used=False))
   for n in ('installed-files.json','installed-files-after-close.json'):self.write(root/n,dict(verifiedPayloadFiles=len(payload),installedManifest=payload['AppxManifest.xml']))
   artwork={'dimensions':[512,384],'changed_pixels':1000,'export_matches_saved_artwork':True,'reopened_pixels_match':True,'protected_files_unchanged':True,'pixel_sha256':'a'*64,'files':{n:digest(n.encode()) for n in ('blank.kra','artwork.kra','artwork.png','reopened.kra')}}
   self.write(root/'artwork-verification.json',artwork)
@@ -116,6 +116,12 @@ class OriginalLifecycleReplay(unittest.TestCase):
     for name in receipt['originalEvidence']:receipt['originalEvidence'][name]=measure(self.root/name)
     self.write(self.root/'installation-result.json',receipt)
     with self.assertRaises(ValueError):self.verify('store')
+ def test_numeric_sdk_version_signature_and_original_display_are_required(self):
+  self.construct('store')
+  for field,value in [('fileVersionParts',None),('fileVersionParts',[10,0,26101,7705]),('fileVersionParts',[10,0,26100]),('fileVersionParts',[10,0,26100,True]),('fileVersionParts',[10,0,26100,65536]),('fileVersionParts',[10,0,26100,-1]),('fileVersion',''),('subject','CN=Foreign publisher'),('thumbprint','not-a-thumbprint')]:
+   with self.subTest(field=field,value=value):
+    self.restore();path=self.root/'installation-result.json';proof=json.loads(path.read_bytes());proof['sdkAuthenticode']['signtool'][field]=value;self.write(path,proof)
+    with self.assertRaisesRegex(ValueError,'Original SDK signature/version evidence incomplete'):self.verify('store')
  def test_current_sdk_payload_and_unsigned_container_mutations_refused(self):
   self.construct('store')
   proof=json.loads((self.root/'installation-result.json').read_bytes());directory=Path(proof['packageDirectory'])
